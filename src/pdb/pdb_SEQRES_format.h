@@ -28,6 +28,7 @@
 #include <iomanip>
 #include <stdexcept>
 #include <algorithm>
+#include <ctype.h>
 
 #include "pdb_sections_and_records.h"
 
@@ -130,14 +131,15 @@ pdb_seqres_record read_pdb_seqres_record( char buffer[] ){
 		">chain_id_1", i.e. ">A"
 */
 pdb_seqres_record read_fasta(std::string fasta){
+  fasta.erase(std::remove_if(fasta.begin(), fasta.end(), [](char ch){if(ch==' ' or ch=='\n') return true; return false;}), fasta.end());
 	pdb_seqres_record record;
 	unsigned int i = 0;
-	while(fasta[i]!='>'){
+	while(fasta[i]!='>' or not std::isalpha(fasta[i+1]) ){
 		++i;
 	}
 	char cur_ch;
 	for(; i< fasta.size(); ++i){
-		if(fasta[i]=='>'){
+		if(fasta[i]=='>' and std::isalpha(fasta[i+1]) ){
 			++i;
 			cur_ch = fasta[i]; 
 		}
@@ -148,5 +150,14 @@ pdb_seqres_record read_fasta(std::string fasta){
 	return record;
 }
 
+std::string print_fasta(pdb_seqres_record& seqres){
+  std::string fasta = "";
+  for(pdb_seqres_record::iterator ch = seqres.begin(); ch!= seqres.end(); ++ch){
+    fasta+=">";
+    fasta+=ch->first;
+    fasta+=ch->second;
+  }
+  return fasta;
+}
 } // end namespace
 #endif

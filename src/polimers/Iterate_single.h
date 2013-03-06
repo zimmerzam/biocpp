@@ -105,14 +105,14 @@ template< typename item, typename Function,
           typename is_cont = typename std::enable_if< is_container_of< container, item >::value, item >::type,
           typename is_parent = void,
           typename not_parent = typename std::enable_if< not std::is_same< typename container::child_type, item >::value, item >::type >
-void Iterate( container& cont, Function todo );
+void Iterate( container& cont, Function& todo );
 
 template< typename item, typename Function,
           typename container,
           typename is_cont = typename std::enable_if< is_container_of< container, item >::value, item >::type,
           typename is_parent = typename std::enable_if< std::is_same< typename container::child_type, item >::value, item >::type,
           typename not_parent = void >
-void Iterate( container& cont, Function todo, bool b=true );
+void Iterate( container& cont, Function& todo, bool b=true );
 
 
 /*! \brief Iterate over container and applies a functor to each possible iterator that point to a required type 
@@ -193,14 +193,14 @@ template< typename item, typename Function,
           typename is_cont = typename std::enable_if< is_container_of< container, item >::value, item >::type,
           typename is_parent = void,
           typename not_parent = typename std::enable_if< not std::is_same< typename container::child_type, item >::value, item >::type >
-void Iterate_iter( container& cont, Function todo );
+void Iterate_iter( container& cont, Function& todo );
 
 template< typename item, typename Function,
           typename container,
           typename is_cont = typename std::enable_if< is_container_of< container, item >::value, item >::type,
           typename is_parent = typename std::enable_if< std::is_same< typename container::child_type, item >::value, item >::type,
           typename not_parent = void >
-void Iterate_iter( container& cont, Function todo, bool b=true );
+void Iterate_iter( container& cont, Function& todo, bool b=true );
 
 }// end namespace
 
@@ -209,7 +209,7 @@ template< typename item, typename Function,
           typename is_cont,
           typename is_parent,
           typename not_parent >
-void BioCpp::Iterate( container& cont, Function todo ){
+void BioCpp::Iterate( container& cont, Function& todo ){
   for( typename container::iterator it = cont.begin(); it!=cont.end(); ++it ){
     BioCpp::Iterate<item, Function>( *it, todo );
   }
@@ -220,7 +220,7 @@ template< typename item, typename Function,
           typename is_cont,
           typename is_parent,
           typename not_parent >
-void BioCpp::Iterate( container& cont, Function todo, bool b ){
+void BioCpp::Iterate( container& cont, Function& todo, bool b ){
   for( typename container::iterator it = cont.begin(); it!=cont.end(); ++it ){
     todo( *it );
   }
@@ -231,7 +231,7 @@ template< typename item, typename Function,
           typename is_cont,
           typename is_parent,
           typename not_parent >
-void BioCpp::Iterate_iter( container& cont, Function todo ){
+void BioCpp::Iterate_iter( container& cont, Function& todo ){
   for( typename container::iterator it = cont.begin(); it!=cont.end(); ++it ){
     BioCpp::Iterate_iter<item, Function>( *it, todo );
   }
@@ -242,7 +242,7 @@ template< typename item, typename Function,
           typename is_cont,
           typename is_parent,
           typename not_parent >
-void BioCpp::Iterate_iter( container& cont, Function todo, bool b ){
+void BioCpp::Iterate_iter( container& cont, Function& todo, bool b ){
   for( typename container::iterator it = cont.begin(); it!=cont.end(); ++it ){
     todo( it );
   }

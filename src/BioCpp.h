@@ -38,6 +38,7 @@
 #include "polimers/atom_id.h"
 #include "polimers/amino_acid_id.h"
 #include "polimers/base_container.h"
+#include "polimers/is_container_of.h"
 #include "polimers/Iterate_single.h"
 #include "polimers/Iterate_pair.h"
 

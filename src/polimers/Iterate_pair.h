@@ -109,7 +109,7 @@ template< typename item1, typename item2,
           typename is_parent2 = typename std::enable_if< std::is_same< typename container2::child_type, item2 >::value, item2 >::type,
           typename not_parent1 = void,
           typename not_parent2 = void >
-void Iterate( container1& cont1, container2& cont2, Function todo );
+void Iterate( container1& cont1, container2& cont2, Function& todo );
 
 template< typename item1, typename item2,
           typename Function,
@@ -120,7 +120,7 @@ template< typename item1, typename item2,
           typename is_parent2 = void,
           typename not_parent1 = void,
           typename not_parent2 = typename std::enable_if< not std::is_same< typename container2::child_type, item2 >::value, item2 >::type >
-void Iterate( container1& cont1, container2& cont2, Function todo, bool a = true );
+void Iterate( container1& cont1, container2& cont2, Function& todo, bool a = true );
 
 template< typename item1, typename item2,
           typename Function,
@@ -131,7 +131,7 @@ template< typename item1, typename item2,
           typename is_parent2 = typename std::enable_if< std::is_same< typename container2::child_type, item2 >::value, item2 >::type,
           typename not_parent1 = typename std::enable_if< not std::is_same< typename container1::child_type, item1 >::value, item1 >::type,
           typename not_parent2 = void >
-void Iterate( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true );
+void Iterate( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true );
 
 template< typename item1, typename item2,
           typename Function,
@@ -142,7 +142,7 @@ template< typename item1, typename item2,
           typename is_parent2 = void,
           typename not_parent1 = typename std::enable_if< not std::is_same< typename container1::child_type, item1 >::value, item1 >::type,
           typename not_parent2 = typename std::enable_if< not std::is_same< typename container2::child_type, item2 >::value, item2 >::type >
-void Iterate( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true, bool c = true );
+void Iterate( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true, bool c = true );
 
 
 /*! \brief Iterate over a pair of container and apply a functor to each possible pair of (iterator to item1, iterator to item2) 
@@ -228,7 +228,7 @@ template< typename item1, typename item2,
           typename is_parent2 = typename std::enable_if< std::is_same< typename container2::child_type, item2 >::value, item2 >::type,
           typename not_parent1 = void,
           typename not_parent2 = void >
-void Iterate_iter( container1& cont1, container2& cont2, Function todo );
+void Iterate_iter( container1& cont1, container2& cont2, Function& todo );
 
 template< typename item1, typename item2,
           typename Function,
@@ -239,7 +239,7 @@ template< typename item1, typename item2,
           typename is_parent2 = void,
           typename not_parent1 = void,
           typename not_parent2 = typename std::enable_if< not std::is_same< typename container2::child_type, item2 >::value, item2 >::type >
-void Iterate_iter( container1& cont1, container2& cont2, Function todo, bool a = true );
+void Iterate_iter( container1& cont1, container2& cont2, Function& todo, bool a = true );
 
 template< typename item1, typename item2,
           typename Function,
@@ -250,7 +250,7 @@ template< typename item1, typename item2,
           typename is_parent2 = typename std::enable_if< std::is_same< typename container2::child_type, item2 >::value, item2 >::type,
           typename not_parent1 = typename std::enable_if< not std::is_same< typename container1::child_type, item1 >::value, item1 >::type,
           typename not_parent2 = void >
-void Iterate_iter( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true );
+void Iterate_iter( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true );
 
 template< typename item1, typename item2,
           typename Function,
@@ -261,7 +261,7 @@ template< typename item1, typename item2,
           typename is_parent2 = void,
           typename not_parent1 = typename std::enable_if< not std::is_same< typename container1::child_type, item1 >::value, item1 >::type,
           typename not_parent2 = typename std::enable_if< not std::is_same< typename container2::child_type, item2 >::value, item2 >::type >
-void Iterate_iter( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true, bool c = true );
+void Iterate_iter( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true, bool c = true );
 
 }// end namespace
 
@@ -275,7 +275,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate( container1& cont1, container2& cont2, Function todo ){
+void BioCpp::Iterate( container1& cont1, container2& cont2, Function& todo ){
   for( typename container1::iterator it1 = cont1.begin(); it1!=cont1.end(); ++it1 ){
     for( typename container2::iterator it2 = cont2.begin(); it2!=cont2.end(); ++it2 ){
       todo( *it1, *it2 );
@@ -292,7 +292,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate( container1& cont1, container2& cont2, Function todo, bool a = true ){
+void BioCpp::Iterate( container1& cont1, container2& cont2, Function& todo, bool a = true ){
   for( typename container2::iterator it2 = cont2.begin(); it2!=cont2.end(); ++it2 ){
     BioCpp::Iterate<item1, item2>( cont1, *it2, todo );
   }
@@ -307,7 +307,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true ){
+void BioCpp::Iterate( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true ){
   for( typename container1::iterator it1 = cont1.begin(); it1!=cont1.end(); ++it1 ){
     BioCpp::Iterate<item1, item2>( *it1, cont2, todo );
   }
@@ -322,7 +322,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true, bool c = true ){
+void BioCpp::Iterate( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true, bool c = true ){
   for( typename container1::iterator it1 = cont1.begin(); it1!=cont1.end(); ++it1 ){
     for( typename container2::iterator it2 = cont2.begin(); it2!=cont2.end(); ++it2 ){
       BioCpp::Iterate<item1, item2>( *it1, *it2, todo );
@@ -340,7 +340,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function todo ){
+void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function& todo ){
   for( typename container1::iterator it1 = cont1.begin(); it1!=cont1.end(); ++it1 ){
     for( typename container2::iterator it2 = cont2.begin(); it2!=cont2.end(); ++it2 ){
       todo( it1, it2 );
@@ -357,7 +357,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function todo, bool a = true ){
+void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function& todo, bool a = true ){
   for( typename container2::iterator it2 = cont2.begin(); it2!=cont2.end(); ++it2 ){
     BioCpp::Iterate_iter<item1, item2>( cont1, *it2, todo );
   }
@@ -372,7 +372,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true ){
+void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true ){
   for( typename container1::iterator it1 = cont1.begin(); it1!=cont1.end(); ++it1 ){
     BioCpp::Iterate_iter<item1, item2>( *it1, cont2, todo );
   }
@@ -387,7 +387,7 @@ template< typename item1, typename item2,
           typename is_parent2,
           typename not_parent1,
           typename not_parent2 >
-void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function todo, bool a = true, bool b = true, bool c = true ){
+void BioCpp::Iterate_iter( container1& cont1, container2& cont2, Function& todo, bool a = true, bool b = true, bool c = true ){
   for( typename container1::iterator it1 = cont1.begin(); it1!=cont1.end(); ++it1 ){
     for( typename container2::iterator it2 = cont2.begin(); it2!=cont2.end(); ++it2 ){
       BioCpp::Iterate_iter<item1, item2>( *it1, *it2, todo );

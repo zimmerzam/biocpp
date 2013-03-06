@@ -85,7 +85,7 @@ struct is_container_of{
     \endcode
     
 */
-template <typename child_id, typename obj, typename id, typename item, template <typename, typename, typename> class container>
+template < template <typename, typename, typename> class container, typename item, typename child_id, typename obj, typename id>
 struct is_container_of< container<child_id, obj, id>, item >{
 	static bool const value = std::is_same<obj, item>::value or is_container_of<obj,item>::value;
 };

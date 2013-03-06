@@ -55,9 +55,9 @@ class pdb{
     char* buffer;    /*!< The pdb contents. */
     std::map<int, std::streampos> model_beg_pos; /*!< Positions (in the buffer stream) of the begin of each model. */
     std::map<int, std::streampos> model_end_pos; /*!< Positions (in the buffer stream) of the end of each model. */
-    int warning;
-    int error;
   public:
+    BioCpp::warning warning;
+    BioCpp::error error;
     int n_models; /*!< Total number of models found in the file */
     pdb_seqres_record TseqRes; /*!< The sequence as read from SEQRES record */
     pdb_seqres_record RseqRes; /*!< The sequence as read from ATOM record */
@@ -102,8 +102,8 @@ class pdb{
 pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MODEL) ){
   filename = pdb_name;
   n_models = 0;
-  warning=0;
-  error=0;
+  warning=WAR_NONE;
+  error=ERR_NONE;
   std::ifstream file;
   file.open(filename, std::ios::binary);
   
@@ -179,7 +179,7 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
           double pept_bond_length = (cur_n-prev_c).norm();
           if( (pept_bond_length >= 1.4 or pept_bond_length <= 1.27) and not first_residue ){
             RseqRes[atm.chainId] += "-";
-            warning = warning|PDB_BACKBONE_HOLE;
+            warning = (BioCpp::warning)(warning|PDB_BACKBONE_HOLE);
           }
         }
       }
@@ -200,7 +200,7 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
     model_end_pos.insert( std::make_pair(1, file_end) );
   }
   else if(atom_section_found==false){
-    error = error|PDB_COORDINATE_NOT_FOUND;
+    error = (BioCpp::error)(error|PDB_COORDINATE_NOT_FOUND);
   }
 
   /* fill TseqRes */
@@ -211,7 +211,7 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
     TseqRes = read_pdb_seqres_record( seqres );
   }
   else{
-    warning = warning|PDB_SEQRES_NOT_FOUND;
+    warning = (BioCpp::warning)(warning|PDB_SEQRES_NOT_FOUND);
   }
 }
 

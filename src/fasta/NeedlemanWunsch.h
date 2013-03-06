@@ -45,6 +45,10 @@ double NeedlemanWunsch(std::string& S1, std::string& S2, substitution_matrix& ma
   std::replace_if( s2.begin(), s2.end(), 
        [&warnings](char ch){if(ch=='O' or ch=='U'){ warnings=(BioCpp::warning)(ALIGN_NOT_A_VALID_SEQUENCE|warnings); return true;} return false;}, 'X');
   
+  if(s1!=s2){
+    warnings = (BioCpp::warning)(ALIGN_SEQUENCE_NEQ_FASTA|warnings);
+  }
+  
   unsigned int size1 = s1.size(), size2 = s2.size();
   
   // fill alignment matrix F
@@ -65,7 +69,6 @@ double NeedlemanWunsch(std::string& S1, std::string& S2, substitution_matrix& ma
   }
   // save score
   double score = F(size1, size2);
-  std::cout << score << std::endl; 
   if(score < 0){
     errors=(BioCpp::error)(ALIGN_FAILED|errors);
     return score;
