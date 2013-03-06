@@ -19,49 +19,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*! \mainpage BioCpp Documentation
+#ifndef ALIGNMENT_MATRIX_H
+#define ALIGNMENT_MATRIX_H
 
-    BioCpp is a simple C++ template library for basic operation on protein structures.
+#include <map>
 
-    \section get_it How to get it
-    You can download BioCpp from https://github.com/zimmer/biocpp .
-    \section Installation
-    BioCpp is an header-only library: just copy the downloaded folder into your 
-    project directory and include "/path/to/your/project/BioCpp/BioCpp.h" into
-    your project file
-*/
+namespace BioCpp{
+namespace fasta{
 
-#ifndef BIOCPP_H
-#define BIOCPP_H
+class substitution_matrix{
+  typedef std::map< char, std::map< char , double > > align_map;
+  private:
+    align_map map;
+  public:
+    substitution_matrix( align_map map1 ){map=map1;};
+    double operator()(char s1, char s2);
+};
 
-#include "polimers/element_id.h"
-#include "polimers/atom_id.h"
-#include "polimers/amino_acid_id.h"
-#include "polimers/base_container.h"
-#include "polimers/Iterate_single.h"
-#include "polimers/Iterate_pair.h"
+inline double substitution_matrix::operator()(char s1, char s2){
+  return map[s1][s2];
+}
 
-#include "polimers/dpss/dpss_id.h"
-#include "polimers/dpss/h_bridge_energy.h"
-
-#include "polimers/morphology/surface_area_lcpo.h"
-
-#include "polimers/reconstruction/bb_hydrogen.h"
-
-#include "pdb/pdb.h"
-
-#include "fasta/PAM30.h"
-#include "fasta/PAM70.h"
-#include "fasta/BLOSUM45.h"
-#include "fasta/BLOSUM62.h"
-#include "fasta/BLOSUM80.h"
-#include "fasta/NeedlemanWunsch.h"
-
-/*! \example dpss.cpp */
-/*! \example iterate.cpp */
-/*! \example pdb.cpp */
-/*! \example fasta_align.cpp */
-/*! \example container.cpp */
-/*! \example ids.cpp */
+}// end fasta
+}// end biocpp
 
 #endif

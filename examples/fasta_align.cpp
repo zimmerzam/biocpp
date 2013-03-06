@@ -12,15 +12,16 @@
 int main(int argc, char* argv[]){
   std::string fasta1 = argc > 1 ? argv[1] : "ABD-G-";
   std::string fasta2 = argc > 2 ? argv[2] : "-BDEFGRE";
-
-  BioCpp::fasta::StrictNeedlemanWunschAlignment align;
-
-  BioCpp::error err = align(fasta1, fasta2);
   
-  if(err==0)
-    std::cout << fasta1 << std::endl 
-              << fasta2 << std::endl; // output ABDEFGRE\n  ^BDEFGRE
-  else
-    std::cout << "failed" << std::endl;
+  BioCpp::error err = BioCpp::ERR_NONE;
+  BioCpp::warning war = BioCpp::WAR_NONE;
+
+  BioCpp::fasta::NeedlemanWunsch(fasta1,fasta2, BioCpp::fasta::BLOSUM62, err, war);
+
+  std::cout << fasta1 << std::endl 
+            << fasta2 << std::endl; // output ABDEFGRE\n  ^BDEFGRE
+            
+  std::cout << "Warnings: " << BioCpp::warning_to_string[war] << std::endl;
+  std::cout << "Errors:   " << BioCpp::error_to_string[err] << std::endl;
   return 0;
 }
