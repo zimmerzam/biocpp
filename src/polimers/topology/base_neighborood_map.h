@@ -45,6 +45,10 @@ class base_neighborood_map{
 		std::set< obj >& operator [] (obj key){
 		  return neighbors[key];
 		};
+		
+		unsigned int size(){
+		  return neighbors.size();
+		}
 };
 
 } // end namespace

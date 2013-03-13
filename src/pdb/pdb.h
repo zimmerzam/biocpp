@@ -40,6 +40,7 @@ namespace BioCpp{
 
 /*! \brief These flags can be passed to pdb constructor to customize its behaviour while reading a file */
 enum pdb_init_flags{
+  PDB_INIT_COMPLETE    = 0,
   PDB_INIT_FAST        = (1<<1),  /*!< Do not read the structure sequence from the first model, but only read SeqRes section */
   PDB_INIT_FIRST_MODEL = (1<<2)   /*!< Read only the first model */
 };

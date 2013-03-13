@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -msse2 -O2 -Wall -std=c++0x -static
 
-EXECUTABLE = container ids pdb fasta_align iterate dpss
+EXECUTABLE = container ids pdb fasta_align iterate dpss zimm_align surface_area
 
 all: $(EXECUTABLE)
 

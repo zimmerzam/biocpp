@@ -76,13 +76,6 @@ std::ostream& print_pdb_atom_line( std::ostream& out, int& serial, atom::id& id,
 														 
 /*! \brief Print an ATOM line from a pdb_atom_info
 		
-		@param out the output stream (i.e. `std::cout`)
-		@param info the pdb_atom_info to be printed 
-*/
-std::ostream& print_pdb_atom_line( std::ostream& out, pdb_atom_info& info);
-
-/*! \brief Print an ATOM line from a pdb_atom_info
-		
 		This output operator has been defined for convenience
 		@param out the output stream (i.e. `std::cout`)
 		@param info the pdb_atom_info to be printed
@@ -135,53 +128,66 @@ pdb_atom_info read_pdb_atom_line(std::string& line){
   return info;
 };
 
-std::ostream& print_pdb_atom_line( std::ostream& out, int& serial, atom::id& id, char& altLoc, 
-														 amino_acid::id& resName, char& chainId, int& resSeq, char& iCode, 
-														 Eigen::Vector3d& coordinate, double& occupancy, 
-														 double& tempFactor, element::id& element, double& charge ){
-	out << "ATOM  ";
-	out << std::setw(5) << serial;
-	out << " ";
-	out << id;
-	out << altLoc;
-	out << resName;
-	out << " ";
-	out << chainId;
-	out << std::setw(4) << resSeq;
-	out << iCode;
-	out << "   ";
-	out << std::fixed << std::setprecision(3);
-	out << std::setw(8) << coordinate(0);
-	out << std::setw(8) << coordinate(1);
-	out << std::setw(8) << coordinate(2);
-	out << std::fixed << std::setprecision(2);
-	out << std::setw(6) << occupancy;
-	out << std::setw(6) << tempFactor;
-	out << "          "; // blank
-	out << element;
-	if( charge == 0. )
-		out << "  ";
-	else{
-		out << std::setprecision(0) << fabs(charge);
-		if( charge > 0 )
-			out << '+';
-		else if(charge < 0){
-			out << '-';
-		}
-	}
-	out << std::endl;
-	return out;
+/*! \brief Print an ATOM line from a pdb_atom_info
+		
+		@param out the output stream (i.e. `std::cout`)
+		@param info the pdb_atom_info to be printed 
+*/
+struct print_atom_line{
+  std::ostream& out;
+
+  print_atom_line(std::ostream& dev): out(dev) {};
+
+  std::ostream& operator()( int& serial, atom::id& id, char& altLoc, 
+														amino_acid::id& resName, char& chainId, int& resSeq, char& iCode, 
+														Eigen::Vector3d& coordinate, double& occupancy, 
+														double& tempFactor, element::id& element, double& charge ){
+	  out << "ATOM  ";
+	  out << std::setw(5) << serial;
+	  out << " ";
+	  out << BioCpp::atom::id_to_string[id];
+	  out << altLoc;
+	  out << BioCpp::amino_acid::id_to_string[resName];
+	  out << " ";
+	  out << chainId;
+	  out << std::setw(4) << resSeq;
+	  out << iCode;
+	  out << "   ";
+	  out << std::fixed << std::setprecision(3);
+	  out << std::setw(8) << coordinate(0);
+	  out << std::setw(8) << coordinate(1);
+	  out << std::setw(8) << coordinate(2);
+	  out << std::fixed << std::setprecision(2);
+	  out << std::setw(6) << occupancy;
+	  out << std::setw(6) << tempFactor;
+	  out << "          "; // blank
+	  out << BioCpp::element::id_to_string[element];
+	  if( charge == 0. )
+		  out << "  ";
+	  else{
+		  out << std::setprecision(0) << fabs(charge);
+		  if( charge > 0 )
+			  out << '+';
+		  else if(charge < 0){
+			  out << '-';
+		  }
+	  }
+	  out << std::endl;
+	  return out;
+  };
+
+  std::ostream& operator()( pdb_atom_info& info){
+	  return (*this)( info.serial, info.id, info.altLoc, 
+									  info.resName, info.chainId, info.resSeq, 
+									  info.iCode, info.coordinate, info.occupancy, 
+									  info.tempFactor, info.element, info.charge );
+  }
+
 };
 
-std::ostream& print_pdb_atom_line( std::ostream& out, pdb_atom_info& info){
-	return print_pdb_atom_line( out, info.serial, info.id, info.altLoc, 
-														 info.resName, info.chainId, info.resSeq, 
-														 info.iCode, info.coordinate, info.occupancy, 
-														 info.tempFactor, info.element, info.charge );
-}
-
 std::ostream& operator << (std::ostream& out, pdb_atom_info& info ){
-	return print_pdb_atom_line( out, info);
+  print_atom_line print(out);
+	return print( info);
 }
 
 } // end namespace

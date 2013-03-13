@@ -108,6 +108,7 @@ std::map< std::string, id > string_to_id =
     ( "HN11", H)( "1HN1", H)( "HN12", H)( "2HN1", H)( "HN13", H)( "3HN1", H)
     ( "HN21", H)( "1HN2", H)( "HN22", H)( "2HN2", H)( "HN23", H)( "3HN2", H)
     ( " HZ ", H)( " HZ1", H)( "1HZ ", H)( " HZ2", H)( "2HZ ", H)( " HZ3", H)( "3HZ ", H)
+    ( " H1 ", H)( " H2 ", H)( " H3 ", H)
     ( " N  ", N)( " ND ", N)
     ( " ND1", N)( " ND2", N)( " NE ", N)( " NE1", N)
     ( " NE2", N)( " NH ", N)( " NH1", N)( " NH2", N)

@@ -56,7 +56,9 @@
 #include "fasta/BLOSUM45.h"
 #include "fasta/BLOSUM62.h"
 #include "fasta/BLOSUM80.h"
+#include "fasta/ZIMM1.h"
 #include "fasta/NeedlemanWunsch.h"
+#include "fasta/StrictNeedlemanWunsch.h"
 
 /*! \example dpss.cpp */
 /*! \example iterate.cpp */
