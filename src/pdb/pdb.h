@@ -169,19 +169,19 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
           prev_c = atm.coordinate;
           first_residue = false;
         }
-        if(atm.resSeq<=prev_resseq)
+        if(atm.resSeq<=prev_resseq or atm.altLoc!=' ' )
           continue;
-        else{
-          RseqRes[atm.chainId] += amino_acid::id_to_1_letter[ atm.resName ];
-          prev_resseq=atm.resSeq;
-        }
-        if(atm.id==atom::N_){
+        else if(atm.id==atom::N_){
           cur_n = atm.coordinate;
           double pept_bond_length = (cur_n-prev_c).norm();
           if( (pept_bond_length >= 1.4 or pept_bond_length <= 1.27) and not first_residue ){
             RseqRes[atm.chainId] += "-";
             warning = (BioCpp::warning)(warning|PDB_BACKBONE_HOLE);
           }
+        }
+        else{
+          RseqRes[atm.chainId] += amino_acid::id_to_1_letter[ atm.resName ];
+          prev_resseq=atm.resSeq;
         }
       }
     }

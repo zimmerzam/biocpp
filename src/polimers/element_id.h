@@ -34,7 +34,7 @@ namespace element{
 /*! \brief id list of the standard atom elements
 
 */
-enum id { Ac, Ag, Al, Am, Ar, As, At, Au, B, Ba, Be, Bh, Bi, Bk, Br,
+enum id { Unk, Ac, Ag, Al, Am, Ar, As, At, Au, B, Ba, Be, Bh, Bi, Bk, Br,
           C, Ca, Cd, Ce, Cf, Cl, Cm, Cn, Co, Cr, Cs, Cu, Db, Ds, Dy,
           Er, Es, Eu, F, Fe, Fm, Fr, Ga, Gd, Ge, H, He, Hf, Hg, Ho,
           Hs, I, In, Ir, K, Kr, La, Li, Lr, Lu, Md, Mg, Mn, Mo, Mt,
@@ -66,6 +66,7 @@ enum id { Ac, Ag, Al, Am, Ar, As, At, Au, B, Ba, Be, Bh, Bi, Bk, Br,
 std::map< std::string, id > string_to_id = 
         map_list_of_type< std::string, id >
     /* these map PDB element entries (chars 76 and 77) to element_id */
+    ("Unk", Unk)
     ("Ac", Ac)("Ag", Ag)("Al", Al)("Am", Am)("Ar", Ar)("As", As)("At", At)
     ("Au", Au)(" B",  B)("Ba", Ba)("Be", Be)("Bh", Bh)("Bi", Bi)("Bk", Bk)
     ("Br", Br)(" C",  C)("Ca", Ca)("Cd", Cd)("Ce", Ce)("Cf", Cf)("Cl", Cl)
@@ -84,7 +85,7 @@ std::map< std::string, id > string_to_id =
     ("uh", Uuh)("uo", Uuo)("up", Uup)("uq", Uuq)("us", Uus)("ut", Uut)
     (" V",  V)(" W",  W)("Xe", Xe)(" Y",  Y)("Yb", Yb)("Zn", Zn)("Zr", Zr)
     /* these map PDB atom id entries (chars 12, 13, 14 and 15) to element_id */
-    (" C  ", C)( " CA ", C)( " CB ", C)( " CD ", C)
+    ( " C  ", C)( " CA ", C)( " CB ", C)( " CD ", C)
     ( " CD1", C)( " CD2", C)( " CD3", C)( " CE ", C)
     ( " CE1", C)( " CE2", C)( " CE3", C)( " CG ", C)
     ( " CG1", C)( " CG2", C)( " CG3", C)( " CZ ", C)
@@ -134,6 +135,7 @@ std::map< std::string, id > string_to_id =
 */
 std::map< id, std::string > id_to_string = 
         map_list_of_type< id, std::string >
+    (Unk, "Unk")
     ( Ac, "Ac")( Ag, "Ag")( Al, "Al")( Am, "Am")( Ar, "Ar")( As, "As")( At, "At")( Au, "Au")
     ( B, " B")( Ba, "Ba")( Be, "Be")( Bh, "Bh")( Bi, "Bi")( Bk, "Bk")( Br, "Br")( C, " C")
     ( Ca, "Ca")( Cd, "Cd")( Ce, "Ce")( Cf, "Cf")( Cl, "Cl")( Cm, "Cm")( Cn, "Cn")( Co, "Co")

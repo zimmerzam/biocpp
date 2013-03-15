@@ -70,6 +70,7 @@ enum id { X_, C_, CA, CB,
 */
 std::map< std::string, id > string_to_id = 
         map_list_of_type< std::string, id >
+    ( " X  ", X_)
     ( " C  ", C_)( " CA ", CA)( " CB ", CB)( " CD ", CD)
     ( " CD1", CD1)( " CD2", CD2)( " CD3", CD3)( " CE ", CE)
     ( " CE1", CE1)( " CE2", CE2)( " CE3", CE3)( " CG ", CG)
@@ -120,6 +121,7 @@ std::map< std::string, id > string_to_id =
 */
 std::map< id, std::string > id_to_string = 
         map_list_of_type< id, std::string >
+    ( X_, " X  ")
     ( C_, " C  ")( CA, " CA ")( CB, " CB ")( CD, " CD ")
     ( CD1, " CD1")( CD2, " CD2")( CD3, " CD3")( CE, " CE ")
     ( CE1, " CE1")( CE2, " CE2")( CE3, " CE3")( CG, " CG ")
