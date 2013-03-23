@@ -27,6 +27,13 @@
 namespace BioCpp{
 namespace fasta{
 
+/*!
+    This represent a substitution matrix. Substitution matrix are fundamental when
+    dealing with sequence alignment.
+    
+    The current implementation is very simply, only consisting on a copy constructor
+    and an operator for accessing its elements.
+*/
 class substitution_matrix{
   typedef std::map< char, std::map< char , double > > align_map;
   private:

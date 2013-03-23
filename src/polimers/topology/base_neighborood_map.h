@@ -27,6 +27,9 @@
 
 namespace BioCpp{
 
+/*!
+    \brief Neighborood map
+*/
 template <typename obj>
 class base_neighborood_map{
     typedef std::map<obj, std::set<obj> > neighbor_list;

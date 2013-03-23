@@ -24,7 +24,7 @@
     BioCpp is a simple C++ template library for basic operation on protein structures.
 
     \section get_it How to get it
-    You can download BioCpp from https://github.com/zimmer/biocpp .
+    You can download BioCpp from https://github.com/zimmerzam/biocpp .
     \section Installation
     BioCpp is an header-only library: just copy the downloaded folder into your 
     project directory and include "/path/to/your/project/BioCpp/BioCpp.h" into

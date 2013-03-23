@@ -30,6 +30,17 @@
 namespace BioCpp{
 namespace fasta{
 
+/*!
+  This is an implementation of the Needlemann-Wunsch alignment algorithm.
+  
+  \param S1 the first sequence
+  \param S2 the second sequence
+  \param matrix the substitution matrix to be used during the alignment
+  \param errors a BioCpp::error object. This is going to be modified
+  \param warnings a BioCpp::warning object. This is going to be modified
+  
+  \note input sequences are transformed to uppercase!
+*/
 double NeedlemanWunsch(std::string& S1, std::string& S2, substitution_matrix& matrix, BioCpp::error& errors, BioCpp::warning& warnings){
 
   // input string have to be uppercase

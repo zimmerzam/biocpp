@@ -45,3 +45,4 @@ examples/fasta_align
 examples/pdb
 examples/dpss
 examples/iterate
+examples/has_coordinate

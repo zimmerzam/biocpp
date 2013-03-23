@@ -21,6 +21,10 @@
 
 #include "../geometry/Eigen/Core"
 
+
+/*! 
+    \brief Check if a class has a coordinate property.
+*/
 template<typename T>
 class has_coordinate{
     struct Fallback { Eigen::Vector3d coordinate; };
