@@ -138,12 +138,16 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
     else if(get_pdb_record(line) == PDB_MODEL){
       n_models++;
       model_beg_pos.insert( std::make_pair(n_models, prev_pos) );
+      model_end_pos.insert( std::make_pair(n_models, file_end) );
       if( seqres_beg != file_beg and seqres_end == file_end)
          seqres_end = prev_pos;
     }
     /* end MODEL */
     else if(get_pdb_record(line) == PDB_ENDMDL){
-      model_end_pos.insert( std::make_pair(n_models, prev_pos) );
+      if( model_beg_pos.find(n_models)==model_beg_pos.end() ){
+        model_beg_pos.insert( std::make_pair(n_models, file_beg) );
+      }
+      model_end_pos[n_models] = prev_pos;
       if(first_model)
         first_model=false;
       if(init_flag&PDB_INIT_FIRST_MODEL)

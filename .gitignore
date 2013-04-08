@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+*pyc
 
 # Packages #
 ############
@@ -38,11 +39,9 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# examples
-examples/container
-examples/ids
-examples/fasta_align
-examples/pdb
-examples/dpss
-examples/iterate
-examples/has_coordinate
+# Data #
+########
+*.dat
+*.ps
+*.png
+*.pdb
