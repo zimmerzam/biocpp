@@ -178,7 +178,7 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
         else if(atm.id==atom::N_){
           cur_n = atm.coordinate;
           double pept_bond_length = (cur_n-prev_c).norm();
-          if( (pept_bond_length >= 1.4 or pept_bond_length <= 1.27) and not first_residue ){
+          if( (pept_bond_length >= 1.5 or pept_bond_length <= 1.2) and not first_residue ){
             RseqRes[atm.chainId] += "-";
             warning = (BioCpp::warning)(warning|PDB_BACKBONE_HOLE);
           }

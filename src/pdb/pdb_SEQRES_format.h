@@ -131,7 +131,7 @@ pdb_seqres_record read_pdb_seqres_record( char buffer[] ){
 		">chain_id_1", i.e. ">A"
 */
 pdb_seqres_record read_fasta(std::string fasta){
-  fasta.erase(std::remove_if(fasta.begin(), fasta.end(), [](char ch){if(ch==' ' or ch=='\n') return true; return false;}), fasta.end());
+  fasta.erase(std::remove_if(fasta.begin(), fasta.end(), [](char ch){if(ch==' ' or ch=='\n' or ch=='\r') return true; return false;}), fasta.end());
 	pdb_seqres_record record;
 	unsigned int i = 0;
 	while(fasta[i]!='>' or not std::isalpha(fasta[i+1]) ){
