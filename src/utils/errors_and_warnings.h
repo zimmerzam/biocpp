@@ -46,7 +46,7 @@ std::map< BioCpp::warning, std::string > warning_to_string =
                 (WAR_NONE, "No warnings ")
                 (PDB_SEQRES_NOT_FOUND, "No SEQRES section found")
                 (PDB_BACKBONE_HOLE, "Chain break detected: one ore more residues may be missing")
-                (ALIGN_SEQUENCE_NEQ_FASTA, "Protein sequence in the pdb file is different from the primary sequence")
+                (ALIGN_SEQUENCE_NEQ_FASTA, "Protein sequence in the model structure is different from the primary sequence")
                 (ALIGN_NOT_A_VALID_SEQUENCE, "Not a valid sequence")
                 ;
 
