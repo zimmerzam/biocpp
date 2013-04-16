@@ -1,4 +1,5 @@
 #include <map>
+#include <iterator>
 #include "../src/BioCpp_default.h"
 
 typedef std::pair< char,int > residue;
@@ -73,6 +74,65 @@ struct contact_map{
       it->second/=fact;
     }
   }
+  void chain_average(){
+    bool failed = false;
+    int first = xfirst.begin()->second;
+    int last =  xlast.begin()->second;
+    if( xchainId.size()==ychainId.size() ){
+      for(std::set<char>::iterator i = xchainId.begin(), j=ychainId.begin(); i != xchainId.end(); ++i, ++j){
+        if( (*i)!=(*j) ){
+          failed=true;
+        }
+      }
+    }
+    else{
+      failed=true;
+    }
+    for(std::map<char,int>::iterator i = xfirst.begin(); i != xfirst.end(); ++i){
+      if(i->second!=first)
+        failed=true;
+    }
+    for(std::map<char,int>::iterator i = yfirst.begin(); i != yfirst.end(); ++i){
+      if(i->second!=first)
+        failed=true;
+    }
+    for(std::map<char,int>::iterator i = xlast.begin(); i != xlast.end(); ++i){
+      if(i->second!=last)
+        failed=true;
+    }
+    for(std::map<char,int>::iterator i = ylast.begin(); i != ylast.end(); ++i){
+      if(i->second!=last)
+        failed=true;
+    }
+    if(failed){
+      std::cout << "You can average each chain only if they have the same name, start and end" << std::endl
+                << "The matrix has not been averaged" << std::endl;
+      return;
+    }
+    
+    for(int ri = first; ri <= last; ++ri){
+      for(int rj = first; rj <= last; ++rj){
+        for(std::set<char>::iterator j = xchainId.begin(); j != xchainId.end(); ++j){
+          std::set<char>::iterator ti = xchainId.begin(), tj = j;
+          int steps = std::distance( j, xchainId.end() );
+          double val = 0.;
+          for( ; tj != xchainId.end(); ++tj, ++ti ){
+          residue resi = std::make_pair( *ti, ri );
+              residue resj = std::make_pair( *tj, rj );
+            val += contacts[ std::make_pair(resi, resj) ];
+          }
+          val /= double(steps);
+          ti = xchainId.begin(); tj = j;
+          for( ; tj != xchainId.end(); ++tj, ++ti ){
+            residue resi = std::make_pair( *ti, ri );
+            residue resj = std::make_pair( *tj, rj );
+            contacts[ std::make_pair(resi, resj) ] = val;
+            contacts[ std::make_pair(resj, resi) ] = val;
+          }
+        }
+      }
+    }
+  }
 };
 
 std::ostream& operator << (std::ostream& out, contact_map map){
@@ -143,6 +203,7 @@ int main(int argc, char* argv[]){
     BioCpp::standard::complex cmp( all_info, PDB.RseqRes );
     BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,map);
   }
+  map.chain_average();
   map.normalize(PDB.n_models);
   std::cout << map;
   return 0;

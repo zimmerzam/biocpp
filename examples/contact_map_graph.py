@@ -1,68 +1,85 @@
-import sys
-import string
-import math
-import numpy as np
-import matplotlib.cm as cm
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import numpy as np
+import sys
 
-total_x_ticks = 5
-total_y_ticks = 5
+def imsave(filename, X, xtics, xtics_labels, ytics, ytics_labels, title, **kwargs):
+  fig = plt.figure()    # Create a figure
+  ax = fig.add_subplot(111)
+  ax.grid()
+  plt.xticks(xtics, xtics_labels, rotation=45)
+  plt.yticks(ytics, ytics_labels)
+  plt.title( title )
+  xylabel = r"$chainId-resSeq$"
+  plt.xlabel(xylabel)
+  plt.ylabel(xylabel)
+  imgplot = plt.imshow(X , origin='lower', interpolation='nearest', **kwargs) # Plot figure
+  plt.colorbar(drawedges=False, **kwargs)  # Add the colorbar
+  plt.savefig(filename, dpi=1000, bbox_inches='tight')  # Save to file
+  plt.close(fig)
 
-def SaveImage(num, filename, x_axis, y_axis, values, hist2d, axis_range, title, axis_names):
-  plt.figure(num)
-  plt.subplot(121)
-  plt.title(title)
-  plt.hexbin(x_axis, y_axis, values, bins='log', cmap=cm.jet)
-  plt.axis( [ axis_range[0], axis_range[1], axis_range[2], axis_range[3] ] )
-  plt.xlabel(axis_names[0])
-  plt.ylabel(axis_names[1])
+for num, filename in enumerate(sys.argv[1:]): # Save a matrix of contacts and print to a png file
+  print "Now producing a graph for ", filename, " file."
+  contact_file=open(filename)                                                   # open file
+  title = contact_file.readline()
+  first_line = contact_file.readline()                                          # Read first line
+  [x_name, x_start, x_end] = first_line.split( "  ")                           # Read first line
+  second_line = contact_file.readline()                                         # Read second line
+  [y_name, y_start, y_end] = second_line.split("  ")                          # Read second line
 
-  plt.subplot(122)
-  plt.contour(hist2d,20)
-  plt.axis(axis_range)
-  plt.colorbar()
-  plt.savefig(filename)
+  x_names = [ n for n in x_name.split(',')]
+  x_starts = [int(n) for n in x_start.split(',')]
+  x_ends = [int(n) for n in x_end.split(',')]
+  y_names = [ n for n in y_name.split(',')]
+  y_starts = [int(n) for n in y_start.split(',')]
+  y_ends = [int(n) for n in y_end.split(',')]
+  xoffsets = {x_names[0]:0}
+  yoffsets = {y_names[0]:0}
+  xstarts = {}
+  ystarts = {}
+  
+  if( len(x_names)!=len(x_starts) or len(x_names)!=len(x_ends) ):
+    print "file formatting error"
+  if( len(y_names)!=len(y_starts) or len(y_names)!=len(y_ends) ):
+    print "file formatting error"
 
-for num, filename in enumerate(sys.argv[1:]): # loop over input files
-  print(filename)
-  hist2d_file=open(filename)                                                   # open file
-  first_line = hist2d_file.readline()                                          # Read first line
-  print string.split(first_line, "  ")
-  [chains, starts, ends] = string.split(first_line, "  ")   # first line
-  chain = [n for n in chains.split(',')]
-  start = [int(n) for n in starts.split(',')]
-  end   = [int(n) for n in ends.split(',')]
-
-  size = 0.;
-  for i in range(len(chain)):
-    size += end[i]-start[i] + 1
-  hist2d = np.zeros([ int(size), int(size)], float)                # histogram 2d
-
-  x_axis=[]        # it contains x-coordinates of non-null values on the hist
-  y_axis=[]        # it contains y-coordinates of non-null values on the hist
-  values=[]        # values[i] contains the value of the histogram at coordinates (x_axis[i],y_axis[i])
-  hist2d = np.zeros([ int(size), int(size)], float)                # histogram 2d
-
-  axis_range = ( 0, size, 0,size )
-  axis_labels = ("residue","residue")
-
-  for line in hist2d_file:
-    [x_ch, x_am, y_ch, y_am, value]=string.split(line, "  ")                               # Read data
-    x_am = int(x_am)
-    y_am = int(y_am)
-    for i in range(len(chain)):
-      if (chain[i]==x_ch): 
-        x_am -= start[i]
-        break
-      else: x_am += end[i]-start[i] + 1
-    for i in range(len(chain)):
-      if (chain[i]==y_ch): 
-        y_am -= start[i]
-        break
-      else: y_am += end[i]-start[i] + 1
-    x_axis.append(x_am)                                                  # store x
-    y_axis.append(y_am)                                                  # store y
-    values.append( float(value) )                                     # store value at (x,y)
-    hist2d[x_am][y_am]=float(value)                      # store histogram values at (x_bin,y_bin)
-  SaveImage(num, filename[:-3]+'png', x_axis, y_axis, values, hist2d, axis_range, "", axis_labels) # save image
-  hist2d_file.close()                                                                                  # close file
+  x_sizes = [ 0 for n in range(len(x_names)) ]
+  y_sizes = [ 0 for n in range(len(y_names)) ]
+  cols = 0;
+  rows = 0;
+  for i in range(len(x_names)):
+    x_sizes[i] = x_ends[i] - x_starts[i] + 1
+    cols = cols + x_sizes[i]
+    xstarts[x_names[i]] = x_starts[i]
+    if(i>0):
+      xoffsets[x_names[i]] = xoffsets[x_names[i-1]]+x_sizes[i]
+  for i in range(len(y_names)):
+    y_sizes[i] = y_ends[i] - y_starts[i] + 1
+    rows = rows + y_sizes[i]
+    ystarts[y_names[i]] = y_starts[i]
+    if(i>0):
+      yoffsets[y_names[i]] = yoffsets[y_names[i-1]]+y_sizes[i]
+      
+  contactmap = np.zeros([int(cols),int(rows)], float)                              # Initialize contact map
+  for line in contact_file:
+    [xch,xam,ych,yam,value]=line.split("  ")                               # Read contact map from file
+    x = xoffsets[xch]+int(xam)-xstarts[xch]
+    y = yoffsets[ych]+int(yam)-ystarts[ych]
+    contactmap[int(y)][int(x)]=float(value) if float(value)>0. else np.nan                                   # Update contact map
+  
+  xtics = [ xoffsets[n] for n in x_names ]
+  ytics = [ yoffsets[n] for n in y_names ]
+  xtics.append(cols-1)
+  ytics.append(rows-1)
+  
+  xtics_labels = []
+  ytics_labels = []
+  for i in range(len(x_names)):
+    xtics_labels.append(r"$"+ x_names[i]+str(x_starts[i])+"$" )
+  xtics_labels.append(r"$"+ x_names[len(x_names)-1]+str(x_ends[len(x_names)-1])+"$"  )
+  for i in range(len(y_names)):
+    ytics_labels.append(r"$"+ y_names[i]+str(y_starts[i])+"$"  )
+  ytics_labels.append(r"$"+ y_names[len(y_names)-1]+str(y_ends[len(y_names)-1])+"$"  )
+  
+  imsave(filename[:-3]+'png', contactmap, xtics, xtics_labels, ytics, ytics_labels, title, cmap=plt.cm.jet )            # Print contact map to file
+  contact_file.close()                                                          # close file
