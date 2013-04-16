@@ -1,5 +1,6 @@
 #include <map>
 #include <iterator>
+#include <sstream>
 #include "../src/BioCpp_default.h"
 
 typedef std::pair< char,int > residue;
@@ -190,20 +191,58 @@ std::ostream& operator << (std::ostream& out, contact_map map){
 }
 
 int main(int argc, char* argv[]){
-  const char* filename = argv[1];
+  bool file_flag = false;
+  bool average_flag = false;
+  const char* contactfile;
+  std::stringstream sstitle;
   
   contact_map map;
-  map.use_hydrogens = bool(atoi(argv[2]));
-  map.contact_distance = atof(argv[3]);
+  map.use_hydrogens = false;
+  map.contact_distance = 4.5;
   map.title = "Contact Probability";
-  
-  BioCpp::pdb PDB(filename, 0);
+
+  int c;
+	while ((c = getopt (argc, argv, "f:t:d:ha")) != -1){
+		switch (c){
+			case 'f':
+			  file_flag = true;
+				contactfile = optarg;
+				break;
+      case 't':
+        sstitle << optarg;
+        sstitle >> map.title;
+        break;
+      case 'd':
+        map.contact_distance = atof(optarg);
+        break;
+      case 'h':
+        map.use_hydrogens=true;
+        break;
+      case 'a':
+        average_flag = true;
+        break;
+      
+		}
+	}
+
+  if( not file_flag ){
+    std::cout << "usage: .contact_map -f 'structure.pdb' -d distance -t title -h" << std::endl
+              << "Options: " << std::endl 
+              << "\t-h:  use hydrogens (default false)" << std::endl
+              << "\t-d:  set contact distance in Angstrom (default: 4.5)" << std::endl
+              << "\t-t:  set map title (default: 'Contact Probability')" << std::endl;
+    return 1;
+  }
+
+  BioCpp::pdb PDB(contactfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
     BioCpp::pdb_model all_info = PDB.getModel(mdl);
     BioCpp::standard::complex cmp( all_info, PDB.RseqRes );
     BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,map);
   }
-  map.chain_average();
+  if(average_flag){
+    map.chain_average();
+  }
   map.normalize(PDB.n_models);
   std::cout << map;
   return 0;
