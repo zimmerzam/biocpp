@@ -55,9 +55,10 @@ int main(int argc, char* argv[]){
   bool eigenvalues_flag = false;
   bool eigenvectors_flag = false;
   bool mobility_flag = false;
+  bool entropy_flag = false;
   
   int c;
-	while ((c = getopt (argc, argv, "f:vVm")) != -1){
+	while ((c = getopt (argc, argv, "f:vVme")) != -1){
 		switch (c){
 			case 'f':
 				file_flag = true;
@@ -84,6 +85,13 @@ int main(int argc, char* argv[]){
         else
           other_flag=true;
         break;
+      case 'e':
+        entropy_flag = true;
+        if(other_flag)
+          too_much_flags = true;
+        else
+          other_flag=true;
+        break;
 		}
 	}
 
@@ -92,6 +100,7 @@ int main(int argc, char* argv[]){
               << "Options: " << std::endl 
               << "\t-v:  print eigenvalues" << std::endl
               << "\t-V:  print eigenvectors" << std::endl
+              << "\t-e:  print entropy" << std::endl
               << "\t-m:  print mobility" << std::endl;
     return 1;
   }
@@ -175,6 +184,14 @@ int main(int argc, char* argv[]){
       mobility += mode/eigensolver.eigenvalues()[c];
     }
     std::cout << mobility << std::endl;
+  }
+  else if(entropy_flag){
+  	Eigen::ArrayXd entropy = Eigen::VectorXd::Zero(x_size).array();
+    for(int c = 1; c!= y_size; ++c){
+      Eigen::ArrayXd mode = eigensolver.eigenvectors().col(c).array()*eigensolver.eigenvectors().col(c).array();
+      entropy -= mode*log( eigensolver.eigenvalues()[c] );
+    }
+    std::cout << entropy << std::endl;
   }
   return 0;
 }
