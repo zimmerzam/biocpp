@@ -217,7 +217,7 @@ inline void base_container<childID, childType, ID>::Append(childID id, childType
   if(child.find(id)==child.end()){
     children.push_back( ch );
     child.insert(std::make_pair(id, &(*(rbegin())) ));
- }
+  }
 }
 
 template <typename childID, typename childType, typename ID>
