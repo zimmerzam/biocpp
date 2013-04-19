@@ -49,6 +49,7 @@ contact_info get_info(std::string line){
 
 int main(int argc, char* argv[]){
   char* contactfile;
+  double threshold = 0.;
   bool other_flag = false;
   bool too_much_flags = false;
   bool file_flag = false;
@@ -56,13 +57,20 @@ int main(int argc, char* argv[]){
   bool eigenvectors_flag = false;
   bool mobility_flag = false;
   bool entropy_flag = false;
+  bool fuzzy_flag = false;
   
   int c;
-	while ((c = getopt (argc, argv, "f:vVme")) != -1){
+	while ((c = getopt (argc, argv, "f:t:vVme")) != -1){
 		switch (c){
 			case 'f':
 				file_flag = true;
 				contactfile = optarg;
+				break;
+			case 't':
+				threshold = atof(optarg);
+				break;
+			case 'F':
+				fuzzy_flag = true;
 				break;
       case 'v':
         eigenvalues_flag=true;
@@ -96,7 +104,9 @@ int main(int argc, char* argv[]){
 	}
 
   if( not file_flag or not other_flag or too_much_flags ){
-    std::cout << "usage: .gaussian_network_model -f 'contact_file.dat' [options (only one!)]" << std::endl
+    std::cout << "usage: .gaussian_network_model -f <contact_file.dat> -t <threshold> - F [options (only one!)]" << std::endl
+    					<< "\t-F: fuzzy; spring constant is proportional to entry in contact file (default=false)" << std::endl
+    					<< "\t-t: threshold; consider only pair with entry in contact matrix greater than the threshold (default=0.)" << std::endl
               << "Options: " << std::endl 
               << "\t-v:  print eigenvalues" << std::endl
               << "\t-V:  print eigenvectors" << std::endl
@@ -154,6 +164,14 @@ int main(int argc, char* argv[]){
           y_am >= y_info_beg_end[y_ch].first and y_am <= y_info_beg_end[y_ch].second ){
         int x = x_am - x_info_beg_end[x_ch].first + x_info_size_offset[x_ch].second;
         int y = y_am - y_info_beg_end[y_ch].first + y_info_size_offset[y_ch].second;
+        if( not fuzzy_flag ){
+        	if( value > threshold ){
+        		value = 1.;
+        	}
+        	else{
+        		value = 0.;
+        	}
+        }
         F(x,y) = -value;
       }
     }

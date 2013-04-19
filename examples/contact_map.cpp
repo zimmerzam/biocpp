@@ -15,6 +15,9 @@ struct contact_map{
   std::map<char,int> yfirst, ylast;
   bool use_hydrogens;
   double contact_distance;
+  
+  typedef std::map<double, int> contact_probability;
+  
   void operator()( BioCpp::standard::residue& res1, BioCpp::standard::residue& res2 ){
     for( BioCpp::standard::residue::iterator r1 = res1.begin(); r1 !=res1.end(); ++r1 ){
       if( r1==res1.begin() ){
@@ -134,6 +137,15 @@ struct contact_map{
       }
     }
   }
+  
+  contact_probability probability_distribution(){
+  	contact_probability prob;
+  	for( contact_map_data::iterator it = contacts.begin(); it != contacts.end(); ++it ){
+  		++prob[it->second];
+  	}
+  	return prob;
+  }
+  
 };
 
 std::ostream& operator << (std::ostream& out, contact_map map){
@@ -193,6 +205,8 @@ std::ostream& operator << (std::ostream& out, contact_map map){
 int main(int argc, char* argv[]){
   bool file_flag = false;
   bool average_flag = false;
+  bool distribution_flag = false;
+  bool map_flag = false;
   const char* contactfile;
   std::stringstream sstitle;
   
@@ -202,7 +216,7 @@ int main(int argc, char* argv[]){
   map.title = "Contact Probability";
 
   int c;
-	while ((c = getopt (argc, argv, "f:t:d:ha")) != -1){
+	while ((c = getopt (argc, argv, "f:t:d:hacp")) != -1){
 		switch (c){
 			case 'f':
 			  file_flag = true;
@@ -221,13 +235,21 @@ int main(int argc, char* argv[]){
       case 'a':
         average_flag = true;
         break;
+      case 'p':
+        distribution_flag = true;
+        break;
+      case 'c':
+      	map_flag = true;
+      	break;
       
 		}
 	}
 
-  if( not file_flag ){
-    std::cout << "usage: .contact_map -f 'structure.pdb' -d distance -t title -h" << std::endl
+  if( not file_flag or not map_flag^distribution_flag ){
+    std::cout << "usage: .contact_map -f 'structure.pdb' -d distance -h [-c -t title OR -p]" << std::endl
               << "Options: " << std::endl 
+              << "\t-c:  print contact map (default false)" << std::endl
+              << "\t-p:  print contact probability distribution (default false)" << std::endl
               << "\t-h:  use hydrogens (default false)" << std::endl
               << "\t-d:  set contact distance in Angstrom (default: 4.5)" << std::endl
               << "\t-t:  set map title (default: 'Contact Probability')" << std::endl;
@@ -244,6 +266,14 @@ int main(int argc, char* argv[]){
     map.chain_average();
   }
   map.normalize(PDB.n_models);
-  std::cout << map;
+  if(map_flag){
+	  std::cout << map;
+	}
+	else if(distribution_flag){
+		contact_map::contact_probability prob = map.probability_distribution();
+		for( contact_map::contact_probability::iterator it = prob.begin(); it != prob.end(); ++it ){
+			std::cout << it->first << "  " << it->second << std::endl;
+		}
+	}
   return 0;
 }
