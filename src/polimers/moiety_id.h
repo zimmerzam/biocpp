@@ -35,7 +35,10 @@ enum id{ UNK,       /*!< Unknown moiety */
          THIOL,     /*!< Thiol SH */
          ALCOHOL,   /*!< Alcohol OH */
          CARBONYL,  /*< Carbonil CO */
-         CARBOXYL   /*!< Carboxyl COOH*/
+         CARBOXYL,  /*!< Carboxyl COOH*/
+         PHENYL,    /*!< Phenil C6H5*/
+         PYRROLE,   /*!< Pyrrole C4H4NH*/
+         INDOLE     /*!< Indole C8H6NH*/
         };
 
 std::map< std::string, id > string_to_id = 
@@ -43,6 +46,7 @@ std::map< std::string, id > string_to_id =
                 ("PRI_AM  ", PRI_AMINE)("SEC_AM  ", SEC_AMINE)
                 ("DISULF  ", DISULFIDE)("THIOL   ", THIOL)
                 ("ALCOHOL ", ALCOHOL)  ("CARBOXYL", CARBOXYL)("CARBONYL", CARBONYL)
+                ("PHENIL  ", PHENYL)   ("PYRROLE ", PYRROLE) ("INDOLE  ",INDOLE)
                 ("UNK     ", UNK);
 
 std::map< id, std::string > id_to_string = 
@@ -50,6 +54,7 @@ std::map< id, std::string > id_to_string =
                 (PRI_AMINE, "PRI_AM  ")(SEC_AMINE, "SEC_AM  ")
                 (DISULFIDE, "DISULF  ")(THIOL, "THIOL   ")
                 (ALCOHOL, "ALCOHOL ")(CARBOXYL, "CARBOXYL")(CARBONYL, "CARBONYL")
+                (PHENYL, "PHENIL  ")(PYRROLE, "PYRROLE ")(INDOLE, "INDOLE  ")
                 (UNK, "UNK     ");
 
 } // end moiety
