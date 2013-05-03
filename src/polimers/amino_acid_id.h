@@ -150,7 +150,7 @@ std::map< id, std::string > id_to_1_letter =
       }
     \endcode
 */
-std::ostream& operator << (std::ostream& out, BioCpp::amino_acid::id amino_acid_id ){
+std::ostream& operator << (std::ostream& out, BioCpp::amino_acid::id amino_acid_id ) {
   out << BioCpp::amino_acid::id_to_string[amino_acid_id];
   return out;
 }

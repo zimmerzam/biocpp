@@ -116,7 +116,8 @@ std::map< std::string, id > string_to_id =
     ( " NZ ", N)( " O  ", O)( " OD ", O)( " OD1", O)
     ( " OD2", O)( " OE ", O)( " OE1", O)( " OE2", O)
     ( " OH ", O)( " OH1", O)( " OH2", O)( " OXT", O)
-    ( " OG ", O)( " OG1", O)( " SD ", S)( " SG ", S);
+    ( " OG ", O)( " OG1", O)( " OG2", O)
+    ( " SD ", S)( " SG ", S);
 
 /*! \brief Map element id to a two-letter string
 

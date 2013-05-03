@@ -19,53 +19,45 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*! \mainpage BioCpp Documentation
+#ifndef MOIETY_ID
+#define MOIETY_ID
 
-    BioCpp is a simple C++ template library for basic operation on protein structures.
+#include <map>
+#include "../utils/list_of_type.h"
 
-    \section get_it How to get it
-    You can download BioCpp from https://github.com/zimmerzam/biocpp .
-    \section Installation
-    BioCpp is an header-only library: just copy the downloaded folder into your 
-    project directory and include "/path/to/your/project/BioCpp/BioCpp.h" into
-    your project file
-*/
+namespace BioCpp{
+namespace moiety{
 
-#ifndef BIOCPP_H
-#define BIOCPP_H
+enum id{ UNK,       /*!< Unknown moiety */ 
+         PRI_AMINE, /*!< Primary Amine NH2 */
+         SEC_AMINE, /*!< Secondary Amine NH */
+         DISULFIDE, /*!< Disulfide SS */
+         THIOL,     /*!< Thiol SH */
+         ALCOHOL,   /*!< Alcohol OH */
+         CARBONYL,  /*< Carbonil CO */
+         CARBOXYL   /*!< Carboxyl COOH*/
+        };
 
-#include "polimers/element_id.h"
-#include "polimers/atom_id.h"
-#include "polimers/amino_acid_id.h"
-#include "polimers/moiety_id.h"
-#include "polimers/base_container.h"
-#include "polimers/is_container_of.h"
-#include "polimers/Iterate_single.h"
-#include "polimers/Iterate_pair.h"
+std::map< std::string, id > string_to_id = 
+        map_list_of_type< std::string, id >
+                ("PRI_AM  ", PRI_AMINE)("SEC_AM  ", SEC_AMINE)
+                ("DISULF  ", DISULFIDE)("THIOL   ", THIOL)
+                ("ALCOHOL ", ALCOHOL)  ("CARBOXYL", CARBOXYL)("CARBONYL", CARBONYL)
+                ("UNK     ", UNK);
 
-#include "polimers/dpss/dpss_id.h"
-#include "polimers/dpss/h_bridge_energy.h"
+std::map< id, std::string > id_to_string = 
+        map_list_of_type< id, std::string >
+                (PRI_AMINE, "PRI_AM  ")(SEC_AMINE, "SEC_AM  ")
+                (DISULFIDE, "DISULF  ")(THIOL, "THIOL   ")
+                (ALCOHOL, "ALCOHOL ")(CARBOXYL, "CARBOXYL")(CARBONYL, "CARBONYL")
+                (UNK, "UNK     ");
 
-#include "polimers/morphology/surface_area_lcpo.h"
+} // end moiety
+} // end BioCpp
 
-#include "polimers/reconstruction/bb_hydrogen.h"
-
-#include "pdb/pdb.h"
-
-#include "fasta/PAM30.h"
-#include "fasta/PAM70.h"
-#include "fasta/BLOSUM45.h"
-#include "fasta/BLOSUM62.h"
-#include "fasta/BLOSUM80.h"
-#include "fasta/ZIMM1.h"
-#include "fasta/NeedlemanWunsch.h"
-#include "fasta/StrictNeedlemanWunsch.h"
-
-/*! \example dpss.cpp */
-/*! \example iterate.cpp */
-/*! \example pdb.cpp */
-/*! \example fasta_align.cpp */
-/*! \example container.cpp */
-/*! \example ids.cpp */
+std::ostream& operator << (std::ostream& out, BioCpp::moiety::id moiety_id ) {
+  out << BioCpp::moiety::id_to_string[moiety_id];
+  return out;
+}
 
 #endif

@@ -48,7 +48,7 @@ enum id { X_, C_, CA, CB,
           HZ, HZ1, HZ2, HZ3,
           H1, H2, H3,
           N_, ND, ND1, ND2, NE, NE1, NE2, NH, NH1, NH2, NZ,
-          O_, OD, OD1, OD2, OE, OE1, OE2, OH, OH1, OH2, OXT, OG, OG1, 
+          O_, OD, OD1, OD2, OE, OE1, OE2, OH, OH1, OH2, OXT, OG, OG1, OG2,
           SD, SG
         };
 /*! \brief Map a string to an atom id
@@ -103,7 +103,7 @@ std::map< std::string, id > string_to_id =
     ( " NZ ", NZ)( " O  ", O_)( " OD ", OD)( " OD1", OD1)
     ( " OD2", OD2)( " OE ", OE)( " OE1", OE1)( " OE2", OE2)
     ( " OH ", OH)( " OH1", OH1)( " OH2", OH2)( " OXT", OXT)
-    ( " OG ", OG)( " OG1", OG1)( " SD ", SD)( " SG ", SG);
+    ( " OG ", OG)( " OG1", OG1)( " OG2", OG2)( " SD ", SD)( " SG ", SG);
 
 /*! \brief Map atom id to a four-letter string
 
@@ -154,7 +154,8 @@ std::map< id, std::string > id_to_string =
     ( NZ, " NZ ")( O_, " O  ")( OD, " OD ")( OD1, " OD1")
     ( OD2, " OD2")( OE, " OE ")( OE1, " OE1")( OE2, " OE2")
     ( OH, " OH ")( OH1, " OH1")( OH2, " OH2")( OXT, " OXT")
-    ( OG, " OG ")( OG1, " OG1")( SD, " SD ")( SG, " SG ");
+    ( OG, " OG ")( OG1, " OG1")( OG2, " OG2")
+    ( SD, " SD ")( SG, " SG ");
 
 } //end atom
 } //end BioCpp
