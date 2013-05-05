@@ -43,24 +43,24 @@ enum id{ UNK,       /*!< Unknown moiety */
 
 std::map< std::string, id > string_to_id = 
         map_list_of_type< std::string, id >
-                ("PRI_AM  ", PRI_AMINE)("SEC_AM  ", SEC_AMINE)
-                ("DISULF  ", DISULFIDE)("THIOL   ", THIOL)
-                ("ALCOHOL ", ALCOHOL)  ("CARBOXYL", CARBOXYL)("CARBONYL", CARBONYL)
-                ("PHENIL  ", PHENYL)   ("PYRROLE ", PYRROLE) ("INDOLE  ",INDOLE)
-                ("UNK     ", UNK);
+                ("PAM", PRI_AMINE)("SAM", SEC_AMINE)
+                ("DSU", DISULFIDE)("THI", THIOL)
+                ("ALC", ALCOHOL)  ("CXY", CARBOXYL)("CNY", CARBONYL)
+                ("PHE", PHENYL)   ("PYR", PYRROLE) ("IND",INDOLE)
+                ("UNK", UNK);
 
 std::map< id, std::string > id_to_string = 
         map_list_of_type< id, std::string >
-                (PRI_AMINE, "PRI_AM  ")(SEC_AMINE, "SEC_AM  ")
-                (DISULFIDE, "DISULF  ")(THIOL, "THIOL   ")
-                (ALCOHOL, "ALCOHOL ")(CARBOXYL, "CARBOXYL")(CARBONYL, "CARBONYL")
-                (PHENYL, "PHENIL  ")(PYRROLE, "PYRROLE ")(INDOLE, "INDOLE  ")
-                (UNK, "UNK     ");
+                (PRI_AMINE, "PAM")(SEC_AMINE, "SAM")
+                (DISULFIDE, "DSU")(THIOL, "THI")
+                (ALCOHOL, "ALC")(CARBOXYL, "CXY")(CARBONYL, "CNY")
+                (PHENYL, "PHE")(PYRROLE, "PYR")(INDOLE, "IND")
+                (UNK, "UNK");
 
 } // end moiety
 } // end BioCpp
 
-std::ostream& operator << (std::ostream& out, BioCpp::moiety::id moiety_id ) {
+std::ostream& operator << (std::ostream& out, const BioCpp::moiety::id moiety_id ) {
   out << BioCpp::moiety::id_to_string[moiety_id];
   return out;
 }
