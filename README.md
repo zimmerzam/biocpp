@@ -7,14 +7,18 @@ BioCpp uses Eigen3 for atom coordinates, geometrical transformations and this ki
 from [here](http://eigen.tuxfamily.org/). Eigen3 needs no istallation: simply extract the sources in BioCpp/src/geometry/Eigen/
 and you're done.
 
-In order to use BioCpp in your project simply include BioCpp.h
+In order to use BioCpp in your project simply
+
++ add `export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to/BioCpp/src/` to your `.bashrc` file
+
++ import BioCpp header file
 
 ```c++
-#include "/path-to-BioCpp-folder/src/BioCpp.h"
+#include <BioCpp.h>
 ```
 or
 ```c++
-#include "/path-to-BioCpp-folder/src/BioCpp_default.h"
+#include <BioCpp_default.h>
 ```
 
 You need gcc4.6 or newer in order to be able to compile it!
