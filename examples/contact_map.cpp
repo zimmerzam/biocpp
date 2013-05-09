@@ -206,7 +206,7 @@ int main(int argc, char* argv[]){
   bool file_flag = false;
   bool average_flag = false;
   bool distribution_flag = false;
-  bool map_flag = false;
+  bool map_flag = true;
   const char* contactfile;
   std::stringstream sstitle;
   
@@ -237,9 +237,11 @@ int main(int argc, char* argv[]){
         break;
       case 'p':
         distribution_flag = true;
+        map_flag = false;
         break;
       case 'c':
       	map_flag = true;
+      	distribution_flag = false;
       	break;
       
 		}
@@ -252,11 +254,12 @@ int main(int argc, char* argv[]){
               << "\t-p:  print contact probability distribution (default false)" << std::endl
               << "\t-h:  use hydrogens (default false)" << std::endl
               << "\t-d:  set contact distance in Angstrom (default: 4.5)" << std::endl
+              << "\t-a:  average each chain (default: false)" << std::endl
               << "\t-t:  set map title (default: 'Contact Probability')" << std::endl;
     return 1;
   }
 
-  BioCpp::pdb PDB(contactfile, 0);
+  BioCpp::pdb PDB(contactfile, 0);  
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
     BioCpp::pdb_model all_info = PDB.getModel(mdl);
     BioCpp::standard::complex cmp( all_info, PDB.RseqRes );

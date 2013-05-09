@@ -3,7 +3,7 @@ import matplotlib.image as mpimg
 import numpy as np
 import sys
 
-def imsave(filename, X, xtics, xtics_labels, ytics, ytics_labels, title, **kwargs):
+def imsave(filename, X, xtics, xtics_labels, ytics, ytics_labels, title, colorbar, **kwargs):
   fig = plt.figure()    # Create a figure
   ax = fig.add_subplot(111)
   ax.grid()
@@ -14,7 +14,8 @@ def imsave(filename, X, xtics, xtics_labels, ytics, ytics_labels, title, **kwarg
   plt.xlabel(xylabel)
   plt.ylabel(xylabel)
   imgplot = plt.imshow(X , origin='lower', interpolation='nearest', **kwargs) # Plot figure
-  plt.colorbar(drawedges=False, **kwargs)  # Add the colorbar
+  if(colorbar):
+    plt.colorbar(drawedges=False, **kwargs)  # Add the colorbar
   plt.savefig(filename, dpi=1000, bbox_inches='tight')  # Save to file
   plt.close(fig)
 
@@ -59,13 +60,14 @@ for num, filename in enumerate(sys.argv[1:]): # Save a matrix of contacts and pr
     ystarts[y_names[i]] = y_starts[i]
     if(i>0):
       yoffsets[y_names[i]] = yoffsets[y_names[i-1]]+y_sizes[i]
-      
+  
+  colorbar = False
   contactmap = np.zeros([int(cols),int(rows)], float)                              # Initialize contact map
   for line in contact_file:
     [xch,xam,ych,yam,value]=line.split("  ")                               # Read contact map from file
     x = xoffsets[xch]+int(xam)-xstarts[xch]
     y = yoffsets[ych]+int(yam)-ystarts[ych]
-    contactmap[int(y)][int(x)]=float(value) if float(value)>0. else np.nan                                   # Update contact map
+    contactmap[int(y)][int(x)]=1. if float(value)>0.5 else np.nan                                   # Update contact map
   
   xtics = [ xoffsets[n] for n in x_names ]
   ytics = [ yoffsets[n] for n in y_names ]
@@ -81,5 +83,5 @@ for num, filename in enumerate(sys.argv[1:]): # Save a matrix of contacts and pr
     ytics_labels.append(r"$"+ y_names[i]+str(y_starts[i])+"$"  )
   ytics_labels.append(r"$"+ y_names[len(y_names)-1]+str(y_ends[len(y_names)-1])+"$"  )
   
-  imsave(filename[:-3]+'png', contactmap, xtics, xtics_labels, ytics, ytics_labels, title, cmap=plt.cm.jet )            # Print contact map to file
+  imsave(filename[:-3]+'png', contactmap, xtics, xtics_labels, ytics, ytics_labels, title, colorbar, cmap=plt.cm.jet )            # Print contact map to file
   contact_file.close()                                                          # close file
