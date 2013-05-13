@@ -34,8 +34,10 @@ enum id{ UNK,       /*!< Unknown moiety */
          DISULFIDE, /*!< Disulfide SS */
          THIOL,     /*!< Thiol SH */
          ALCOHOL,   /*!< Alcohol OH */
+         CH_GROUP,  /*!< CH */
          CARBONYL,  /*< Carbonil CO */
          CARBOXYL,  /*!< Carboxyl COOH*/
+         CHARGED_CARBONYL, /*< Carbonil CO- */
          PHENYL,    /*!< Phenil C6H5*/
          PYRROLE,   /*!< Pyrrole C4H4NH*/
          INDOLE     /*!< Indole C8H6NH*/
@@ -46,6 +48,7 @@ std::map< std::string, id > string_to_id =
                 ("PAM", PRI_AMINE)("SAM", SEC_AMINE)
                 ("DSU", DISULFIDE)("THI", THIOL)
                 ("ALC", ALCOHOL)  ("CXY", CARBOXYL)("CNY", CARBONYL)
+                ("CHg", CH_GROUP) ("CCY", CHARGED_CARBONYL)
                 ("PHE", PHENYL)   ("PYR", PYRROLE) ("IND",INDOLE)
                 ("UNK", UNK);
 
@@ -54,6 +57,7 @@ std::map< id, std::string > id_to_string =
                 (PRI_AMINE, "PAM")(SEC_AMINE, "SAM")
                 (DISULFIDE, "DSU")(THIOL, "THI")
                 (ALCOHOL, "ALC")(CARBOXYL, "CXY")(CARBONYL, "CNY")
+                (CH_GROUP, "CHg")(CHARGED_CARBONYL, "CCY")
                 (PHENYL, "PHE")(PYRROLE, "PYR")(INDOLE, "IND")
                 (UNK, "UNK");
 

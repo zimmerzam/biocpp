@@ -23,7 +23,7 @@
 #define BIOCPP_DEFAULT_H
 
 #include "BioCpp.h"
-
+#include <list>
 namespace BioCpp{
 namespace standard{
 
@@ -44,6 +44,8 @@ typedef BioCpp::base_container<int, residue, char> chain;
 typedef BioCpp::base_container<char, chain, std::string> complex;
 /*! \brief A standard H_bridge_map */
 typedef BioCpp::base_h_bridge_map<chain::iterator> h_bridge_map;
+
+typedef std::pair< BioCpp::moiety::id, std::list<BioCpp::atom::id> > moiety_info;
 
 }
 }
