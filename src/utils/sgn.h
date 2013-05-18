@@ -19,55 +19,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*! \mainpage BioCpp Documentation
+#ifndef SGN_H
+#define SGN_H
 
-    BioCpp is a simple C++ template library for basic operation on protein structures.
-
-    \section get_it How to get it
-    You can download BioCpp from https://github.com/zimmerzam/biocpp .
-    \section Installation
-    BioCpp is an header-only library: just copy the downloaded folder into your 
-    project directory and include "/path/to/your/project/BioCpp/BioCpp.h" into
-    your project file
-*/
-
-#ifndef BIOCPP_H
-#define BIOCPP_H
-
-#include "polimers/element_id.h"
-#include "polimers/atom_id.h"
-#include "polimers/amino_acid_id.h"
-#include "polimers/moiety_id.h"
-#include "polimers/base_container.h"
-#include "polimers/is_container_of.h"
-#include "polimers/Iterate_single.h"
-#include "polimers/Iterate_pair.h"
-
-#include "polimers/dpss/dpss_id.h"
-#include "polimers/dpss/h_bridge_energy.h"
-
-#include "polimers/morphology/surface_area_lcpo.h"
-
-#include "polimers/reconstruction/bb_hydrogen.h"
-
-#include "pdb/pdb.h"
-
-#include "fasta/PAM30.h"
-#include "fasta/PAM70.h"
-#include "fasta/BLOSUM45.h"
-#include "fasta/BLOSUM62.h"
-#include "fasta/BLOSUM80.h"
-#include "fasta/ZIMM1.h"
-#include "fasta/NeedlemanWunsch.h"
-#include "fasta/StrictNeedlemanWunsch.h"
-
-#include "utils/sgn.h"
-
-/*! \example dpss.cpp */
-/*! \example iterate.cpp */
-/*! \example pdb.cpp */
-/*! \example fasta_align.cpp */
-/*! \example container.cpp */
-/*! \example ids.cpp */
+template <typename T> int sgn(T val) {
+    return (T(0) < val) - (val < T(0));
+}
 
 #endif
