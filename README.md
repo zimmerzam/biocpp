@@ -12,8 +12,9 @@ This is a simple template library for basic operations on proteins.
 ## Installation and setup ##
 
 BioCpp uses Eigen3 for atom coordinates, geometrical transformations and this 
-kind of stuffs. So you need to download itfrom [here](http://eigen.tuxfamily.org/). 
-Eigen3 needs no istallation: simply extract the sources in 
+kind of stuffs. So you need to download it from [here](http://eigen.tuxfamily.org/).  
+
+Eigen3 needs no installation: simply extract the sources in 
 *path-to-BioCpp/src/geometry/Eigen/* and you're done.  
 
 In order to use BioCpp in your project simply
