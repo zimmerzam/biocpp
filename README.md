@@ -28,7 +28,7 @@ to your `.bashrc` and/or `.bash_profile` file
 ```
 or
 ```c++
-#include <BioCpp_default.h>
+#include <BioCpp_standard.h>
 ```
 
 ## Documentation ##

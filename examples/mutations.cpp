@@ -2,7 +2,7 @@
 #include <sstream>
 #include <string>
 #include <algorithm>
-#include "../src/BioCpp_default.h"
+#include "../src/BioCpp_standard.h"
 
 struct mutation{
   char chainId;
