@@ -45,3 +45,7 @@ Thumbs.db
 *.ps
 *.png
 *.pdb
+
+# Documentation #
+#################
+*.html
