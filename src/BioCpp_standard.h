@@ -19,8 +19,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_DEFAULT_H
-#define BIOCPP_DEFAULT_H
+#ifndef BIOCPP_STANDARD_H
+#define BIOCPP_STANDARD_H
 
 #include "BioCpp.h"
 #include <list>
