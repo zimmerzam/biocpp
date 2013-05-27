@@ -19,8 +19,15 @@ Eigen3 needs no installation: simply extract the sources in
 
 In order to use BioCpp in your project simply
 
-+ add `export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to/BioCpp/src/` 
-to your `.bashrc` and/or `.bash_profile` file
++ add the path containing the source code to your CPLUS_INCLUDE_PATH. In order 
+to do this you can modify the `C_INC_PATH` flag to point to your 
+`/path-to/BioCpp/src/`. Alternatively you can export the path at login by adding
+
+    + `export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to/BioCpp/src/` 
+to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* shell.
+    + `set CPLUS_INCLUDE_PATH = ($CPLUS_INCLUDE_PATH /path-to/BioCpp/src/)`
+to your `.cshrc` file if you are using *tcsh* or *csh*.
+
 + import BioCpp header file
 
 ```c++

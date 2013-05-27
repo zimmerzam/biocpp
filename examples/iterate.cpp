@@ -12,8 +12,8 @@
 #include <iostream>
 #include <utility>
 
-#include "../src/polimers/Iterate_single.h"
-#include "../src/polimers/Iterate_pair.h"
+#include <polimers/Iterate_single.h>
+#include <polimers/Iterate_pair.h>
 
 // print functor. It can accept both char or iterator to char
 struct print{

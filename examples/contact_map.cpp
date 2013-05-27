@@ -1,7 +1,7 @@
 #include <map>
 #include <iterator>
 #include <sstream>
-#include "../src/BioCpp_standard.h"
+#include <BioCpp_standard.h>
 
 typedef std::pair< char,int > residue;
 typedef std::pair< residue, residue > contact;

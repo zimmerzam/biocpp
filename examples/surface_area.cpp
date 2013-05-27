@@ -5,7 +5,7 @@
 */
 
 #include <iostream>
-#include "../src/BioCpp.h"
+#include <BioCpp.h>
 
 struct point{
   Eigen::Vector3d coordinate;

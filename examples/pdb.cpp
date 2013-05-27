@@ -8,7 +8,7 @@
 */
 
 #include <iostream>
-#include "../src/BioCpp.h"
+#include <BioCpp.h>
 
 int main( int argc, char* argv[] ){
   const char* filename = argc>1 ? argv[1] : "2RNM.pdb"; // if a pdb is passed, read that. else read an example pdb

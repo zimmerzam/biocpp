@@ -7,7 +7,7 @@
 */
 
 #include <iostream>
-#include "../src/BioCpp.h"
+#include <BioCpp.h>
 
 int main(){
 

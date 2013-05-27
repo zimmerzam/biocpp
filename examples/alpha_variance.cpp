@@ -1,5 +1,5 @@
 #include <map>
-#include "../src/BioCpp_standard.h"
+#include <BioCpp_standard.h>
 
 typedef std::pair<char, int> residue;
 

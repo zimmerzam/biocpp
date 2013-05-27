@@ -5,7 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include <map>
-#include "../src/geometry/Eigen/Dense"
+#include <geometry/Eigen/Dense>
 
 typedef std::map<char, std::pair<int, int> > contact_info;
 
