@@ -29,7 +29,6 @@ to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* sh
 to your `.cshrc` file if you are using *tcsh* or *csh*.
 
 + import BioCpp header file
-
 ```c++
 #include <BioCpp.h>
 ```
