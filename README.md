@@ -28,9 +28,13 @@ to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* sh
     + 
 ```
 if ( $?CPLUS_INCLUDE_PATH ) then
+
   setenv CPLUS_INCLUDE_PATH {$CPLUS_INCLUDE_PATH}:/path-to/BioCpp/src/
+
 else
+
   setenv CPLUS_INCLUDE_PATH /path-to/BioCpp/src/
+
 endif
 ```
 to your `.cshrc` file if you are using *tcsh* or *csh*.
