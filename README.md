@@ -26,12 +26,12 @@ to do this you can modify the `C_INC_PATH` flag to point to your
     + `export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to/BioCpp/src/` 
 to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* shell.
     + 
-```
-// if ( $?CPLUS_INCLUDE_PATH ) then
-//   setenv CPLUS_INCLUDE_PATH {$CPLUS_INCLUDE_PATH}:/path-to/BioCpp/src/
-// else
-//   setenv CPLUS_INCLUDE_PATH /path-to/BioCpp/src/
-// endif
+```bash
+if ( $?CPLUS_INCLUDE_PATH ) then
+  setenv CPLUS_INCLUDE_PATH {$CPLUS_INCLUDE_PATH}:/path-to/BioCpp/src/
+else
+  setenv CPLUS_INCLUDE_PATH /path-to/BioCpp/src/
+endif
 ```
 to your `.cshrc` file if you are using *tcsh* or *csh*.
 
