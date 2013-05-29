@@ -23,12 +23,11 @@ In order to use BioCpp in your project simply
 to do this you can modify the `C_INC_PATH` flag to point to your 
 `/path-to/BioCpp/src/`. Alternatively you can export the path at login by adding
 
-    + 
 ```bash
 $ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to/BioCpp/src/
 ``` 
 to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* shell.
-    + 
+
 ```bash
 $ if ( $?CPLUS_INCLUDE_PATH ) then
 $   setenv CPLUS_INCLUDE_PATH {$CPLUS_INCLUDE_PATH}:/path-to/BioCpp/src/
