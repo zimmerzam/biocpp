@@ -27,9 +27,9 @@ to do this you can modify the `C_INC_PATH` flag to point to your
 ```bash
 $ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to/BioCpp/src/
 ``` 
-to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* shell.
+to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* 
+shell or, alternatively
 
-    + 
 ```bash
 $ if ( $?CPLUS_INCLUDE_PATH ) then
 $   setenv CPLUS_INCLUDE_PATH {$CPLUS_INCLUDE_PATH}:/path-to/BioCpp/src/
@@ -39,7 +39,7 @@ $ endif
 ```
 to your `.cshrc` file if you are using *tcsh* or *csh*.
 
-2. import BioCpp header file
+1. import BioCpp header file
 ```c++
 #include <BioCpp.h>
 ```
