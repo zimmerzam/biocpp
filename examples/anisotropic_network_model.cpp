@@ -92,10 +92,12 @@ int main(int argc, char* argv[]){
 	
 	if( not file_flag or usage_flag){
     std::cout << "usage: .anisotropic_network_model -f file.pdb [options]" << std::endl
+    					<< "Options: " << std::endl
     					<< "\t-p: rescale distance exponent (default = 0)" << std::endl
     					<< "\t-K: spring constant for adjacent residues (default = 1.)" << std::endl
     					<< "\t-k: spring constant for other residues (default = 1.)" << std::endl
-    					<< "\t-h: help" << std::endl;
+    					<< "\t-h: help" << std::endl
+    					<< "No holes are allowed!! Residues in the same chain must have consecutive resSeq" << std::endl;
     return 1;
   }
 	
