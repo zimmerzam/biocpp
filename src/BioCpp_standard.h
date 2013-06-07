@@ -72,6 +72,7 @@ base_container<char, standard::chain, std::string>::base_container(pdb_model& at
   		standard::chain tmp_chain;
 	    Append(it->chainId,tmp_chain);
 	    (*this)[it->chainId].Reserve( TseqRes[it->chainId].size() );
+	    (*this)[it->chainId].type = it->chainId;
 	    prev_chain = it->chainId;
 	  }
 	  if( it->resSeq != prev_residue ){
