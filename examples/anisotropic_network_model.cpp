@@ -127,13 +127,15 @@ int main(int argc, char* argv[]){
 	double k1 = 1., k2 = 1.;
   bool file_flag = false;
   bool usage_flag = false;
-  bool eigenvalues_flag = true;
+  bool eigenvalues_flag = false;
   bool eigenvectors_flag = false;
   bool mobility_flag = false;
   bool entropy_flag = false;
+  bool other_flag = false;
+  bool too_much_flags = false;
   
 	int c;
-	while ((c = getopt (argc, argv, "f:p:K:k:h")) != -1){
+	while ((c = getopt (argc, argv, "f:p:K:k:vVmeh")) != -1){
 		switch (c){
 			case 'f':
 				file_flag = true;
@@ -148,20 +150,53 @@ int main(int argc, char* argv[]){
 			case 'k':
 				k2 = atof(optarg);
 				break;
+      case 'v':
+        eigenvalues_flag=true;
+        if(other_flag)
+          too_much_flags=true;
+        else
+          other_flag=true;
+        break;
+      case 'V':
+        eigenvectors_flag=true;
+        if(other_flag)
+          too_much_flags=true;
+        else
+          other_flag=true;
+        break;
+      case 'm':
+        mobility_flag = true;
+        if(other_flag)
+          too_much_flags = true;
+        else
+          other_flag=true;
+        break;
+      case 'e':
+        entropy_flag = true;
+        if(other_flag)
+          too_much_flags = true;
+        else
+          other_flag=true;
+        break;
 			case 'h':
 				usage_flag = true;
 				break;
 		}
 	}
 	
-	if( not file_flag or usage_flag){
+	if( not file_flag or usage_flag or too_much_flags){
     std::cout << "usage: .anisotropic_network_model -f file.pdb [options]" << std::endl
     					<< "Options: " << std::endl
     					<< "\t-p: rescale distance exponent (default = 0)" << std::endl
     					<< "\t-K: spring constant for adjacent residues (default = 1.)" << std::endl
     					<< "\t-k: spring constant for other residues (default = 1.)" << std::endl
+    					<< "\t-v: print eigenvalues" << std::endl
+              << "\t-V: print eigenvectors" << std::endl
+              << "\t-e: print entropy" << std::endl
+              << "\t-m: print mobility" << std::endl
     					<< "\t-h: help" << std::endl
-    					<< "No holes are allowed!! Residues in the same chain must have consecutive resSeq" << std::endl;
+    					<< "No holes are allowed!! Residues in the same chain must have consecutive resSeq" << std::endl
+    					<< "You can use only one option among 'v', 'V', 'm' and 'e'.";
     return 1;
   }
 	
@@ -199,18 +234,22 @@ int main(int argc, char* argv[]){
   // print mobility
   else if(mobility_flag){
     Eigen::ArrayXd mobility = Eigen::VectorXd::Zero(size).array();
+    Eigen::VectorXd evalues = hessian.eigenvalues();
+    Eigen::MatrixXd evector = hessian.eigenvectors();
     for(int c = 1; c!= size; ++c){
-      Eigen::ArrayXd mode = hessian.eigenvectors().col(c).array()*hessian.eigenvectors().col(c).array();
-      mobility += mode/hessian.eigenvalues()[c];
+      Eigen::ArrayXd mode = evector.col(c).array()*evector.col(c).array();
+      mobility += mode/evalues[c];
     }
     std::cout << mobility << std::endl;
   }
   // print entropy
   else if(entropy_flag){
   	Eigen::ArrayXd entropy = Eigen::VectorXd::Zero(size).array();
+  	Eigen::VectorXd evalues = hessian.eigenvalues();
+    Eigen::MatrixXd evector = hessian.eigenvectors();
     for(int c = 1; c!= size; ++c){
-      Eigen::ArrayXd mode = hessian.eigenvectors().col(c).array()*hessian.eigenvectors().col(c).array();
-      entropy -= mode*log( hessian.eigenvalues()[c] );
+      Eigen::ArrayXd mode = evector.col(c).array()*evector.col(c).array();
+      entropy -= mode*log( evalues[c] );
     }
     std::cout << entropy << std::endl;
   }
