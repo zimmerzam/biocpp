@@ -11,16 +11,19 @@ struct anisotropic{
 	offset_t offset;
 	
 	Eigen::MatrixXd matrix;
+	Eigen::MatrixXd mass;
+	std::map<BioCpp::amino_acid::id, double> residue_mass;
 	
-	anisotropic(unsigned int size, range_t ran):range(ran), matrix(Eigen::MatrixXd::Zero(size,size)){
+	anisotropic(unsigned int size, range_t ran):range(ran), matrix(Eigen::MatrixXd::Zero(size,size)), mass(Eigen::MatrixXd::Zero(size,size)){
 		range_t::iterator it = ran.begin();
 		offset[it->first] = 0;
-		std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
+//		std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
 		++it;
 		for(range_t::iterator itm = ran.begin(); it != ran.end(); ++it, ++itm){
 			offset[it->first] = offset[itm->first] + itm->second.second-itm->second.first;
-			std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
+//			std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
 		}
+		residue_mass = {}
 	}
 	
 	void operator()( BioCpp::standard::residue res1, BioCpp::standard::residue res2 ){
@@ -38,13 +41,21 @@ struct anisotropic{
 		
 		double factor = 0;
 		double dist_p = pow( (c1-c2).norm(),2.+ p );
-		if( std::abs(j-i)==1 ){
+		if( j-i < 0 ){
+			return;
+		}
+		else if(j-i==0){
+			mass(3*i,3*i) = residue_mass[ res1[BioCpp::atom::id::CA].resName ];
+			mass(3*i+1,3*i+1) = mass(3*i,3*i);
+			mass(3*i+2,3*i+2) = mass(3*i,3*i);
+			return;
+		}
+		else if( std::abs(j-i)==1 ){
 			factor = -k1/dist_p;
 		}
 		else if( std::abs(j-i)>1 ){
 			factor = -k2/dist_p;
 		}
-		
 		matrix(3*i,3*j)     = factor*( c2(0)-c1(0) )*( c2(0)-c1(0) );
 		matrix(3*i,3*j+1)   = factor*( c2(0)-c1(0) )*( c2(1)-c1(1) );
 		matrix(3*i,3*j+2)   = factor*( c2(0)-c1(0) )*( c2(2)-c1(2) );
@@ -54,6 +65,36 @@ struct anisotropic{
 		matrix(3*i+2,3*j)   = factor*( c2(2)-c1(2) )*( c2(0)-c1(0) );
 		matrix(3*i+2,3*j+1) = factor*( c2(2)-c1(2) )*( c2(1)-c1(1) );
 		matrix(3*i+2,3*j+2) = factor*( c2(2)-c1(2) )*( c2(2)-c1(2) );
+		
+		matrix(3*j,3*i)     = matrix(3*i,3*j);
+		matrix(3*j,3*i+1)   = matrix(3*i,3*j+1);
+		matrix(3*j,3*i+2)   = matrix(3*i,3*j+2);
+		matrix(3*j+1,3*i)   = matrix(3*i+1,3*j);
+		matrix(3*j+1,3*i+1) = matrix(3*i+1,3*j+1);
+		matrix(3*j+1,3*i+2) = matrix(3*i+1,3*j+2);
+		matrix(3*j+2,3*i)   = matrix(3*i+2,3*j);
+		matrix(3*j+2,3*i+1) = matrix(3*i+2,3*j+1);
+		matrix(3*j+2,3*i+2) = matrix(3*i+2,3*j+2);
+	}
+	
+	void fill_diagonal(){
+	int n_res = matrix.cols()/3;
+	
+	for( int i=0; i<n_res; ++i  ){
+		for( int j=0; j<n_res; ++j  ){
+			if(i==j){
+				continue;
+			}
+			matrix(3*i,3*i)     -= matrix(3*i,3*j);
+			matrix(3*i,3*i+1)   -= matrix(3*i,3*j+1);
+			matrix(3*i,3*i+2)   -= matrix(3*i,3*j+2);
+			matrix(3*i+1,3*i)   -= matrix(3*i+1,3*j);
+			matrix(3*i+1,3*i+1) -= matrix(3*i+1,3*j+1);
+			matrix(3*i+1,3*i+2) -= matrix(3*i+1,3*j+2);
+			matrix(3*i+2,3*i)   -= matrix(3*i+2,3*j);
+			matrix(3*i+2,3*i+1) -= matrix(3*i+2,3*j+1);
+			matrix(3*i+2,3*i+2) -= matrix(3*i+2,3*j+2);
+		}
 	}
 };
 
