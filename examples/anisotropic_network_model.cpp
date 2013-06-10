@@ -12,6 +12,7 @@ struct anisotropic{
 	
 	Eigen::MatrixXd matrix;
 	Eigen::MatrixXd mass;
+	
 	std::map<BioCpp::amino_acid::id, double> residue_mass;
 	
 	anisotropic(unsigned int size, range_t ran):range(ran), matrix(Eigen::MatrixXd::Zero(size,size)), mass(Eigen::MatrixXd::Zero(size,size)){
@@ -20,10 +21,21 @@ struct anisotropic{
 //		std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
 		++it;
 		for(range_t::iterator itm = ran.begin(); it != ran.end(); ++it, ++itm){
-			offset[it->first] = offset[itm->first] + itm->second.second-itm->second.first;
+			offset[it->first] = offset[itm->first] + itm->second.second-itm->second.first+1;
 //			std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
 		}
-		residue_mass = {}
+		residue_mass = std::map<BioCpp::amino_acid::id, double>
+										 { { BioCpp::amino_acid::ALA, 71.079 },{ BioCpp::amino_acid::ARG, 156.188 },
+										 { BioCpp::amino_acid::ASN, 114.104 },{ BioCpp::amino_acid::ASP, 115.089 },
+         						 { BioCpp::amino_acid::CYS, 103.144 },{ BioCpp::amino_acid::GLN, 128.131 },
+         						 { BioCpp::amino_acid::GLU, 129.116 },{ BioCpp::amino_acid::GLY, 57.052 },
+        						 { BioCpp::amino_acid::HIS, 137.142 },{ BioCpp::amino_acid::ILE, 113.160 },
+        						 { BioCpp::amino_acid::LEU, 113.160 },{ BioCpp::amino_acid::LYS, 128.174 },
+         						 { BioCpp::amino_acid::MET, 131.198 },{ BioCpp::amino_acid::PHE, 147.177 },
+         						 { BioCpp::amino_acid::PRO, 97.117 },{ BioCpp::amino_acid::SER, 87.078 },
+        						 { BioCpp::amino_acid::THR, 101.105 },{ BioCpp::amino_acid::TRP, 186.213 },
+        						 { BioCpp::amino_acid::TYR, 163.170 },{ BioCpp::amino_acid::VAL, 99.133 },
+         					 };
 	}
 	
 	void operator()( BioCpp::standard::residue res1, BioCpp::standard::residue res2 ){
@@ -33,8 +45,8 @@ struct anisotropic{
 		char ch2  = res2[BioCpp::atom::id::CA].chainId;
 		int nres2 = res2[BioCpp::atom::id::CA].resSeq;
 		
-		int i = offset[ch1] + nres1 - range[ch1].first + 1;
-		int j = offset[ch2] + nres2 - range[ch2].first + 1;
+		int i = offset[ch1] + nres1 - range[ch1].first;
+		int j = offset[ch2] + nres2 - range[ch2].first;
 		
 		Eigen::Vector3d c1 = res1[BioCpp::atom::id::CA].coordinate;
 		Eigen::Vector3d c2 = res2[BioCpp::atom::id::CA].coordinate;
@@ -78,23 +90,29 @@ struct anisotropic{
 	}
 	
 	void fill_diagonal(){
-	int n_res = matrix.cols()/3;
+		int n_res = matrix.cols()/3;
 	
-	for( int i=0; i<n_res; ++i  ){
-		for( int j=0; j<n_res; ++j  ){
-			if(i==j){
-				continue;
+		for( int i=0; i<n_res; ++i  ){
+			for( int j=0; j<n_res; ++j  ){
+				if(i==j){
+					continue;
+				}
+				matrix(3*i,3*i)     -= matrix(3*i,3*j);
+				matrix(3*i,3*i+1)   -= matrix(3*i,3*j+1);
+				matrix(3*i,3*i+2)   -= matrix(3*i,3*j+2);
+				matrix(3*i+1,3*i)   -= matrix(3*i+1,3*j);
+				matrix(3*i+1,3*i+1) -= matrix(3*i+1,3*j+1);
+				matrix(3*i+1,3*i+2) -= matrix(3*i+1,3*j+2);
+				matrix(3*i+2,3*i)   -= matrix(3*i+2,3*j);
+				matrix(3*i+2,3*i+1) -= matrix(3*i+2,3*j+1);
+				matrix(3*i+2,3*i+2) -= matrix(3*i+2,3*j+2);
 			}
-			matrix(3*i,3*i)     -= matrix(3*i,3*j);
-			matrix(3*i,3*i+1)   -= matrix(3*i,3*j+1);
-			matrix(3*i,3*i+2)   -= matrix(3*i,3*j+2);
-			matrix(3*i+1,3*i)   -= matrix(3*i+1,3*j);
-			matrix(3*i+1,3*i+1) -= matrix(3*i+1,3*j+1);
-			matrix(3*i+1,3*i+2) -= matrix(3*i+1,3*j+2);
-			matrix(3*i+2,3*i)   -= matrix(3*i+2,3*j);
-			matrix(3*i+2,3*i+1) -= matrix(3*i+2,3*j+1);
-			matrix(3*i+2,3*i+2) -= matrix(3*i+2,3*j+2);
 		}
+	}
+	
+	Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> solve(){
+		Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(matrix);
+		return eigensolver;
 	}
 };
 
@@ -161,10 +179,11 @@ int main(int argc, char* argv[]){
 	hessian.k2 = k2;
   
   BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,hessian);
-
+	hessian.fill_diagonal();
+	
 	int size = 3*n_res;
 
-	Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(hessian.matrix);
+	Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver = hessian.solve();
   if (eigensolver.info() != Eigen::Success) abort();
   // print eigenvalues
   if(eigenvalues_flag){
