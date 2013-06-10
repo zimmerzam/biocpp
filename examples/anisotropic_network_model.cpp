@@ -57,7 +57,7 @@ struct anisotropic{
 			return;
 		}
 		else if(j-i==0){
-			mass(3*i,3*i) = residue_mass[ res1[BioCpp::atom::id::CA].resName ];
+			mass(3*i,3*i) = 1./sqrt( residue_mass[ res1[BioCpp::atom::id::CA].resName ] );
 			mass(3*i+1,3*i+1) = mass(3*i,3*i);
 			mass(3*i+2,3*i+2) = mass(3*i,3*i);
 			return;
@@ -110,9 +110,14 @@ struct anisotropic{
 		}
 	}
 	
-	Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> solve(){
-		Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(matrix);
-		return eigensolver;
+	Eigen::VectorXd eigenvalues(){
+		Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(mass*matrix*mass);
+		return eigensolver.eigenvalues();
+	}
+	
+	Eigen::MatrixXd eigenvectors(){
+		Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver(mass*matrix*mass);
+		return mass*eigensolver.eigenvectors();
 	}
 };
 
@@ -183,22 +188,20 @@ int main(int argc, char* argv[]){
 	
 	int size = 3*n_res;
 
-	Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigensolver = hessian.solve();
-  if (eigensolver.info() != Eigen::Success) abort();
   // print eigenvalues
   if(eigenvalues_flag){
-    std::cout << eigensolver.eigenvalues() << std::endl;
+    std::cout << hessian.eigenvalues() << std::endl;
   }
   // print eigenvectors
   else if(eigenvectors_flag){
-    std::cout << eigensolver.eigenvectors() << std::endl;
+    std::cout << hessian.eigenvectors() << std::endl;
   }
   // print mobility
   else if(mobility_flag){
     Eigen::ArrayXd mobility = Eigen::VectorXd::Zero(size).array();
     for(int c = 1; c!= size; ++c){
-      Eigen::ArrayXd mode = eigensolver.eigenvectors().col(c).array()*eigensolver.eigenvectors().col(c).array();
-      mobility += mode/eigensolver.eigenvalues()[c];
+      Eigen::ArrayXd mode = hessian.eigenvectors().col(c).array()*hessian.eigenvectors().col(c).array();
+      mobility += mode/hessian.eigenvalues()[c];
     }
     std::cout << mobility << std::endl;
   }
@@ -206,8 +209,8 @@ int main(int argc, char* argv[]){
   else if(entropy_flag){
   	Eigen::ArrayXd entropy = Eigen::VectorXd::Zero(size).array();
     for(int c = 1; c!= size; ++c){
-      Eigen::ArrayXd mode = eigensolver.eigenvectors().col(c).array()*eigensolver.eigenvectors().col(c).array();
-      entropy -= mode*log( eigensolver.eigenvalues()[c] );
+      Eigen::ArrayXd mode = hessian.eigenvectors().col(c).array()*hessian.eigenvectors().col(c).array();
+      entropy -= mode*log( hessian.eigenvalues()[c] );
     }
     std::cout << entropy << std::endl;
   }
