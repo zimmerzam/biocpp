@@ -1,4 +1,4 @@
-CC = g++46
+CC = g++
 C_INC_PATH = -I /usr/include/
 CFLAGS = -msse2 -O2 -Wall -std=c++0x -static
 
