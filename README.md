@@ -17,7 +17,7 @@ kind of stuffs. So you need to download it from [here](http://eigen.tuxfamily.or
 Eigen3 needs no installation: simply extract the sources in 
 *path-to-BioCpp/src/geometry/Eigen/* and you're done.  
 
-In order to use BioCpp in your project simply
+In order to use BioCpp in your project simply:
 
 + add the path containing the source code to your CPLUS_INCLUDE_PATH. In order 
 to do this you can modify the `C_INC_PATH` flag to point to your 
@@ -66,7 +66,7 @@ add them by using one (or more) of the following *directives*:
 | BIOCPP\_INCLUDE\_SUBST\_MATRIX\_ALL             | Add all the features provided by *BioCpp*                      |
 
 By default, if no directives are defined, only *base_container* and *iterators* 
-are included (see [Documentation][] and examples).  
+are included (see [Documentation][Documentation] and examples).  
 
 In order to add *directives* you can both  
 ```c++
