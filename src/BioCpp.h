@@ -36,67 +36,84 @@
 
 /* include atom,element,... identifiers */
 #if defined BIOCPP_INCLUDE_ID || defined BIOCPP_INCLUDE_ALL
-  #include "polimers/element_id.h"
-  #include "polimers/atom_id.h"
-  #include "polimers/amino_acid_id.h"
-  #include "polimers/moiety_id.h"
+  #include "BioCpp/polimers/element_id.h"
+  #include "BioCpp/polimers/atom_id.h"
+  #include "BioCpp/polimers/amino_acid_id.h"
+  #include "BioCpp/polimers/moiety_id.h"
 #endif
 
-#include "polimers/base_container.h"
-#include "polimers/is_container_of.h"
-#include "polimers/Iterate_single.h"
-#include "polimers/Iterate_pair.h"
+#include "BioCpp/polimers/base_container.h"
+#include "BioCpp/polimers/is_container_of.h"
+#include "BioCpp/polimers/Iterate_single.h"
+#include "BioCpp/polimers/Iterate_pair.h"
 
 /* Include dssp definitions */
 #if defined BIOCPP_INCLUDE_DPSS || defined BIOCPP_INCLUDE_ALL
-  #include "polimers/dpss/dpss_id.h"
-  #include "polimers/dpss/h_bridge_energy.h"
+  #include "BioCpp/polimers/dpss/dpss_id.h"
+  #include "BioCpp/polimers/dpss/h_bridge_energy.h"
 #endif
 
 /* Include header files for protein morphology */
 #if defined BIOCPP_INCLUDE_MORPHOLOGY || defined BIOCPP_INCLUDE_ALL
-  #include "polimers/morphology/surface_area_lcpo.h"
+  #include "BioCpp/polimers/morphology/surface_area_lcpo.h"
 #endif
 
 /* Include header files for reconstructing atom coordinates */
 #if defined BIOCPP_INCLUDE_RECONSTRUCTION || defined BIOCPP_INCLUDE_ALL
-  #include "polimers/reconstruction/bb_hydrogen.h"
+  #include "BioCpp/polimers/reconstruction/bb_hydrogen.h"
 #endif
 
 /* Include header files for reading/writing files in pdb format */
 #if defined BIOCPP_INCLUDE_PDB || defined BIOCPP_INCLUDE_ALL
-  #include "pdb/pdb.h"
+  #include "BioCpp/pdb/pdb.h"
 #endif
 
 /* Include header files for sequence alignment */
+#if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_PAM30 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_PAM70
+  #define BIOCPP_INCLUDE_FASTA_SUBST_MATRIX
+#endif
+#if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_BLOSUM45 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_BLOSUM62 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_BLOSUM80
+  #define BIOCPP_INCLUDE_FASTA_SUBST_MATRIX
+#endif
+#if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ZIMM1 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ALL
+  #define BIOCPP_INCLUDE_FASTA_SUBST_MATRIX
+#endif
+#if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX || defined BIOCPP_INCLUDE_FASTA_ALIGNMENT
+  #define BIOCPP_INCLUDE_FASTA
+#endif
 #if defined BIOCPP_INCLUDE_FASTA || defined BIOCPP_INCLUDE_ALL
   #if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX || defined BIOCPP_INCLUDE_ALL
     #if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_PAM30 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ALL || defined BIOCPP_INCLUDE_ALL
-      #include "fasta/PAM30.h"
+      #include "BioCpp/fasta/PAM30.h"
     #endif
     #if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_PAM70 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ALL || defined BIOCPP_INCLUDE_ALL
-    #include "fasta/PAM70.h"
+    #include "BioCpp/fasta/PAM70.h"
     #endif
     #if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_BLOSUM45 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ALL || defined BIOCPP_INCLUDE_ALL
-    #include "fasta/BLOSUM45.h"
+    #include "BioCpp/fasta/BLOSUM45.h"
     #endif
     #if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_BLOSUM62 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ALL || defined BIOCPP_INCLUDE_ALL
-    #include "fasta/BLOSUM62.h"
-    #endif    
+    #include "BioCpp/fasta/BLOSUM62.h"
+    #endif
     #if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_BLOSUM80 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ALL || defined BIOCPP_INCLUDE_ALL
-    #include "fasta/BLOSUM80.h"
+    #include "BioCpp/fasta/BLOSUM80.h"
     #endif    
     #if defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ZIMM1 || defined BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_ALL || defined BIOCPP_INCLUDE_ALL
-    #include "fasta/ZIMM1.h"
+    #include "BioCpp/fasta/ZIMM1.h"
     #endif
   #endif
   #if defined BIOCPP_INCLUDE_FASTA_ALIGNMENT || defined BIOCPP_INCLUDE_ALL
-    #include "fasta/NeedlemanWunsch.h"
-    #include "fasta/StrictNeedlemanWunsch.h"
+    #include "BioCpp/fasta/NeedlemanWunsch.h"
+    #include "BioCpp/fasta/StrictNeedlemanWunsch.h"
   #endif
 #endif
 
-#include "utils/sgn.h"
+#include "BioCpp/utils/sgn.h"
+
+/* Include standard definitions of residue, chain, ... */
+#if defined BIOCPP_INCLUDE_STANDARD || defined BIOCPP_INCLUDE_ALL
+  #include "BioCpp/standard.h"
+#endif
 
 /*! \example dpss.cpp */
 /*! \example iterate.cpp */
