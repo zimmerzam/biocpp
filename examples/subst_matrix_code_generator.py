@@ -24,18 +24,32 @@ import sys
 name = sys.argv[1]
 filename = sys.argv[2]
 
+with open(filename) as f:
+  for i, l in enumerate(f):
+    pass
+filelen = i+1
+
 file = open(filename,'r')
 chars = []
-print "substitution_matrix "+name+"( map_list_of_type< char, std::map< char, double > >",
+print("substitution_matrix "+name+"( {")
 for idx,line in enumerate(file):
   if(idx==0):
     chars = line.split(";")
   else:
     token = line.split(";")
     first = token[0][1:2]
-    print "('" + first + "', map_list_of_type< char, double >",
+    print("    ", end="")
+    print("{'" + first + "', {", end="")
     for index, value in enumerate(token[1:]):
       second = chars[index+1][1:2]
-      print "('" + second + "'," + str(float(value)) + ")",
-    print " )"
-print ");"
+      print("{'" + second + "'," + str(float(value)) + "}", end="")
+      if(index==len(token)-2):
+        pass
+      else:
+        print(",", end="")
+    print("}}", end="")
+    if(idx!=(filelen-1)):
+      print(",", end="")
+    print("")
+print("  } ", end="")
+print(");")
