@@ -1,5 +1,5 @@
-#include <BioCpp_standard.h>
-#include <geometry/Eigen/Dense>
+#include <BioCpp.h>
+#include <BioCpp/geometry/Eigen/Dense>
 #include <getopt.h>
 
 struct anisotropic{
@@ -122,7 +122,7 @@ struct anisotropic{
 };
 
 int main(int argc, char* argv[]){
-	char* pdbfilename;
+	const char* pdbfilename;
 	double p = 0;
 	double k1 = 1., k2 = 1.;
   bool file_flag = false;

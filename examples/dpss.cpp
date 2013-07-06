@@ -5,7 +5,7 @@
     The example shows how to determine a protein secondary structure according to dpss definition
 */
 
-#include <BioCpp_standard.h>
+#include <BioCpp.h>
 
 // this functor takes two iterators to residue as parameters, check if they 
 // belong to a secondary structure and print some info.

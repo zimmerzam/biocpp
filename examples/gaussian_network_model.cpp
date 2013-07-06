@@ -5,7 +5,8 @@
 #include <fstream>
 #include <iostream>
 #include <map>
-#include <geometry/Eigen/Dense>
+#include <getopt.h>
+#include <BioCpp/geometry/Eigen/Dense>
 
 typedef std::map<char, std::pair<int, int> > contact_info;
 
@@ -48,7 +49,7 @@ contact_info get_info(std::string line){
 }
 
 int main(int argc, char* argv[]){
-  char* contactfile;
+  char* contactfile = 'x';
   double threshold = 0.;
   bool other_flag = false;
   bool too_much_flags = false;

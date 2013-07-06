@@ -1,5 +1,5 @@
 #include <iostream>
-#include <utils/has_coordinate.h>
+#include <BioCpp/utils/has_coordinate.h>
 
 struct yes{
   Eigen::Vector3d coordinate;

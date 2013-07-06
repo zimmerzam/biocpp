@@ -1,5 +1,6 @@
 #include <map>
-#include <BioCpp_standard.h>
+#include <getopt.h>
+#include <BioCpp.h>
 
 typedef std::pair<char, int> residue;
 

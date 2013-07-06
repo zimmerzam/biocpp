@@ -1,7 +1,10 @@
 #include <map>
+#include <set>
 #include <iterator>
 #include <sstream>
-#include <BioCpp_standard.h>
+#include <iostream>
+#include <getopt.h>
+#include <BioCpp.h>
 
 typedef std::pair< char,int > residue;
 typedef std::pair< residue, residue > contact;
