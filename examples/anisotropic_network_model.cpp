@@ -62,7 +62,7 @@ struct anisotropic{
 			mass(3*i+2,3*i+2) = mass(3*i,3*i);
 			return;
 		}
-		else if( std::abs(j-i)==1 ){
+		else if( std::abs(j-i)==1 ){ //TODO they have to belong to the same chain!!
 			factor = -k1/dist_p;
 		}
 		else if( std::abs(j-i)>1 ){
