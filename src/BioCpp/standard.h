@@ -22,8 +22,11 @@
 #ifndef BIOCPP_STANDARD_H
 #define BIOCPP_STANDARD_H
 
-#include "BioCpp.h"
 #include <list>
+#include "polimers/moiety_id.h"
+#include "polimers/dpss/dpss_id.h"
+#include "polimers/dpss/h_bridge_energy.h"
+#include "pdb/pdb.h"
 namespace BioCpp{
 namespace standard{
 

@@ -7,7 +7,7 @@
 /*    BioCpp is free software: you can redistribute it and/or modify          */
 /*    it under the terms of the GNU General Public License as published by    */
 /*    the Free Software Foundation, either version 3 of the License, or       */
-/*    (at your option) any later version.                                     */
+/*    {at your option) any later version.                                     */
 /*                                                                            */
 /*    BioCpp is distributed in the hope that it will be useful,               */
 /*    but WITHOUT ANY WARRANTY; without even the implied warranty of          */
@@ -41,22 +41,20 @@ enum error{
 };
 
 /*!  */
-std::map< BioCpp::warning, std::string > warning_to_string = 
-        map_list_of_type< BioCpp::warning, std::string >
-                (WAR_NONE, "No warnings ")
-                (PDB_SEQRES_NOT_FOUND, "No SEQRES section found")
-                (PDB_BACKBONE_HOLE, "Chain break detected: one ore more residues may be missing")
-                (ALIGN_SEQUENCE_NEQ_FASTA, "Protein sequence in the model structure is different from the primary sequence")
-                (ALIGN_NOT_A_VALID_SEQUENCE, "Not a valid sequence")
-                ;
+std::map< BioCpp::warning, std::string > warning_to_string = {
+    {WAR_NONE, "No warnings "},
+    {PDB_SEQRES_NOT_FOUND, "No SEQRES section found"},
+    {PDB_BACKBONE_HOLE, "Chain break detected: one ore more residues may be missing"},
+    {ALIGN_SEQUENCE_NEQ_FASTA, "Protein sequence in the model structure is different from the primary sequence"},
+    {ALIGN_NOT_A_VALID_SEQUENCE, "Not a valid sequence"}
+  };
 
-std::map< BioCpp::error, std::string > error_to_string = 
-        map_list_of_type< BioCpp::error, std::string >
-                (ERR_NONE, "Success")
-                (PDB_COORDINATE_NOT_FOUND, "No ATOM section found")
-                (ALIGN_MISSING_PRIMARY_SEQUENCE, "Alignment is not possible due to missing target sequence")
-                (ALIGN_FAILED, "Alignment failed")
-                (UNSPECIFIED, "Unspecified problem. Sorry")
-                ;
+std::map< BioCpp::error, std::string > error_to_string = {
+    {ERR_NONE, "Success"},
+    {PDB_COORDINATE_NOT_FOUND, "No ATOM section found"},
+    {ALIGN_MISSING_PRIMARY_SEQUENCE, "Alignment is not possible due to missing target sequence"},
+    {ALIGN_FAILED, "Alignment failed"},
+    {UNSPECIFIED, "Unspecified problem. Sorry"}
+  };
 } //end namespace
 #endif

@@ -23,6 +23,7 @@
 #define PDB_SEQRES_FORMAT_H
 
 #include <string>
+#include <cstring>
 #include <sstream>
 #include <map>
 #include <iomanip>
@@ -31,7 +32,7 @@
 #include <ctype.h>
 
 #include "pdb_sections_and_records.h"
-
+#include "../polimers/amino_acid_id.h"
 namespace BioCpp{
 /*! \brief Describes a SEQRES record of a pdb file
 		
