@@ -40,10 +40,51 @@ to your `.cshrc` file if you are using *tcsh* or *csh*.
 ```c++
 #include <BioCpp.h>
 ```
-or
+
+### Preprocessor directives ###
+
+Including the whole library in your project is usually not necessary. This is why
+*BioCpp.h* provides only few basic features. If your project requires more features, 
+add them by using one (or more) of the following *directives*:  
+
+| Directive                                       | Description                                                    |
+| :---------------------------------------------: | :------------------------------------------------------------: |
+| BIOCPP\_INCLUDE\_ID                             | Add standard identifiers for amino acids, atoms, elements, ... |
+| BIOCPP\_INCLUDE\_DPSS                           | Add definitions of secondary stuctures according to dssp       |
+| BIOCPP\_INCLUDE\_MORPHOLOGY                     | Compute solvent-accessible surface area                        |
+| BIOCPP\_INCLUDE\_RECONSTRUCTION                 | Compute position of missing atoms                              |
+| BIOCPP\_INCLUDE\_PDB                            | Read and write *pdb* files                                     |
+| BIOCPP\_INCLUDE\_FASTA_ALIGN                    | Sequence alignment using *NeedlemanWunsch* algorithm           |
+| BIOCPP\_INCLUDE\_FASTA\_SUBST\_MATRIX\_PAM30    | Use PAM30 substitution matrix                                  |
+| BIOCPP\_INCLUDE\_FASTA\_SUBST\_MATRIX\_PAM70    | Use PAM70 substitution matrix                                  |
+| BIOCPP\_INCLUDE\_FASTA\_SUBST\_MATRIX\_BLOSUM45 | Use BLOSUM45 substitution matrix                               |
+| BIOCPP\_INCLUDE\_FASTA\_SUBST\_MATRIX\_BLOSUM62 | Use BLOSUM62 substitution matrix                               |
+| BIOCPP\_INCLUDE\_FASTA\_SUBST\_MATRIX\_BLOSUM80 | Use BLOSUM80 substitution matrix                               |
+| BIOCPP\_INCLUDE\_FASTA\_SUBST\_MATRIX\_ZIMM1    | Use a strict version of BLOSUM62                               |
+| BIOCPP\_INCLUDE\_FASTA\_SUBST\_MATRIX\_MATRIX   | Use all the substitution matrices                              |
+| BIOCPP\_INCLUDE\_STANDARD                       | Add standard definitions of residue, chain, complex and moiety |
+| BIOCPP\_INCLUDE\_SUBST\_MATRIX\_ALL             | Add all the features provided by *BioCpp*                      |
+
+By default, if no directives are defined, only *base_container* and *iterators* 
+are included (see [Documentation][] and examples).  
+
+In order to add *directives* you can both  
 ```c++
-#include <BioCpp_standard.h>
-```
+#define DIRECTIVE_NAME
+```  
+**before** including *BioCpp.h*, **or** pass the directive name to your compiler.
+If you use *g++*, simply  
+```bash
+g++ -D DIRECTIVE_NAME ...
+```  
+(see Makefile provided in the *examples* folder).
+
+## Warning ##
+
+This is a **developing code**. Newer versions of BioCpp may not be compatible with
+older ones.  
+If you distribute code based on BioCpp, please also provide the version of 
+BioCpp on which it is based.  
 
 ## Documentation ##
 
