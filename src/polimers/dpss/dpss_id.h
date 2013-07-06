@@ -23,7 +23,6 @@
 #define DPSS_ID_H
 
 #include <map>
-#include "../../utils/list_of_type.h"
 #include "base_h_bridge_map.h"
 
 namespace BioCpp{
@@ -42,12 +41,12 @@ enum id{
 	NOT_A_SECONDARY_STRUCTURE /*!< \brief not a recognized secondary structure */
 	};
 
-std::map< id, std::string > id_to_string = 
-        map_list_of_type< id, std::string >
-                (NOT_A_SECONDARY_STRUCTURE, "NOT A SECONDARY STRUCTURE")
-                (PARA_BRIDGE, "PARALLEL BRIDGE")
-                (ANTI_BRIDGE, "ANTIPARALLEL BRIDGE")
-                (FOUR_HELIX, "FOUR HELIX");
+std::map< id, std::string > id_to_string = {
+    {NOT_A_SECONDARY_STRUCTURE, "NOT A SECONDARY STRUCTURE"},
+    {PARA_BRIDGE, "PARALLEL BRIDGE"},
+    {ANTI_BRIDGE, "ANTIPARALLEL BRIDGE"},
+    {FOUR_HELIX, "FOUR HELIX"}
+  };
 
 /*! \brief To be used if a classification of protein secondary structure is needed.
 

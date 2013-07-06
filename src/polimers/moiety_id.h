@@ -7,7 +7,7 @@
 /*    BioCpp is free software: you can redistribute it and/or modify          */
 /*    it under the terms of the GNU General Public License as published by    */
 /*    the Free Software Foundation, either version 3 of the License, or       */
-/*    (at your option) any later version.                                     */
+/*    {at your option) any later version.                                     */
 /*                                                                            */
 /*    BioCpp is distributed in the hope that it will be useful,               */
 /*    but WITHOUT ANY WARRANTY; without even the implied warranty of          */
@@ -23,7 +23,6 @@
 #define MOIETY_ID
 
 #include <map>
-#include "../utils/list_of_type.h"
 
 namespace BioCpp{
 namespace moiety{
@@ -43,23 +42,23 @@ enum id{ UNK,       /*!< Unknown moiety */
          INDOLE     /*!< Indole C8H6NH*/
         };
 
-std::map< std::string, id > string_to_id = 
-        map_list_of_type< std::string, id >
-                ("PAM", PRI_AMINE)("SAM", SEC_AMINE)
-                ("DSU", DISULFIDE)("THI", THIOL)
-                ("ALC", ALCOHOL)  ("CXY", CARBOXYL)("CNY", CARBONYL)
-                ("CHg", CH_GROUP) ("CCY", CHARGED_CARBONYL)
-                ("PHE", PHENYL)   ("PYR", PYRROLE) ("IND",INDOLE)
-                ("UNK", UNK);
+std::map< std::string, id > string_to_id = {
+    {"PAM", PRI_AMINE},{"SAM", SEC_AMINE},
+    {"DSU", DISULFIDE},{"THI", THIOL},
+    {"ALC", ALCOHOL},{"CXY", CARBOXYL},{"CNY", CARBONYL},
+    {"CHg", CH_GROUP},{"CCY", CHARGED_CARBONYL},
+    {"PHE", PHENYL},{"PYR", PYRROLE},{"IND",INDOLE},
+    {"UNK", UNK}
+  };
 
-std::map< id, std::string > id_to_string = 
-        map_list_of_type< id, std::string >
-                (PRI_AMINE, "PAM")(SEC_AMINE, "SAM")
-                (DISULFIDE, "DSU")(THIOL, "THI")
-                (ALCOHOL, "ALC")(CARBOXYL, "CXY")(CARBONYL, "CNY")
-                (CH_GROUP, "CHg")(CHARGED_CARBONYL, "CCY")
-                (PHENYL, "PHE")(PYRROLE, "PYR")(INDOLE, "IND")
-                (UNK, "UNK");
+std::map< id, std::string > id_to_string = {
+    {PRI_AMINE, "PAM"},{SEC_AMINE, "SAM"},
+    {DISULFIDE, "DSU"},{THIOL, "THI"},
+    {ALCOHOL, "ALC"},{CARBOXYL, "CXY"},{CARBONYL, "CNY"},
+    {CH_GROUP, "CHg"},{CHARGED_CARBONYL, "CCY"},
+    {PHENYL, "PHE"},{PYRROLE, "PYR"},{INDOLE, "IND"},
+    {UNK, "UNK"}
+  };
 
 } // end moiety
 } // end BioCpp
