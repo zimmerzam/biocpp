@@ -66,7 +66,7 @@ add them by using one (or more) of the following *directives*:
 | BIOCPP\_INCLUDE\_SUBST\_MATRIX\_ALL             | Add all the features provided by *BioCpp*                      |
 
 By default, if no directives are defined, only *base_container* and *iterators* 
-are included (see [Documentation](#-documentation) and examples).  
+are included (see [Documentation](#documentation) and examples).  
 
 In order to add *directives* you can both  
 ```c++
