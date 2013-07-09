@@ -48,45 +48,98 @@ typedef BioCpp::base_container<char, chain, std::string> complex;
 /*! \brief A standard H_bridge_map */
 typedef BioCpp::base_h_bridge_map<chain::iterator> h_bridge_map;
 
-typedef std::pair< BioCpp::moiety::id, std::list<BioCpp::atom::id> > moiety_info;
-
 }
 }
 
 /*!	\brief Simple constructor from a pdb_model
     
     \note You may want to overwrite this!
-    \note This does not take the TseqRes into account
-    
-    \todo check!
-    \todo use TseqRes
-    \todo enhance with a more complete version
 */
 namespace BioCpp{
 template<>
 template<>
-base_container<char, standard::chain, std::string>::base_container(pdb_model& atom_list, pdb_seqres_record& TseqRes){
+inline base_container<char, standard::chain, std::string>::base_container(pdb_model& atom_list, pdb_seqres_record& RseqRes, pdb_seqres_record& TseqRes){
   this->Reserve(TseqRes.size());
-  char prev_chain = ' ';
-  int prev_residue = -9999;
-  for(BioCpp::pdb_model::iterator it=atom_list.begin(); it!=atom_list.end(); ++it){
-  	
-  	if( it->chainId != prev_chain ){
-  		standard::chain tmp_chain;
-	    Append(it->chainId,tmp_chain);
-	    (*this)[it->chainId].Reserve( TseqRes[it->chainId].size() );
-	    (*this)[it->chainId].type = it->chainId;
-	    prev_chain = it->chainId;
-	  }
-	  if( it->resSeq != prev_residue ){
-	  	standard::residue tmp_res;
-	  	tmp_res.type = it->resName;
-	    (*this)[it->chainId].Append(it->resSeq,tmp_res);
-  	  (*this)[it->chainId][it->resSeq].Reserve(30);
-  	  prev_residue = it->resSeq;
-  	}
-    (*this)[prev_chain][prev_residue].Append(it->id, *it);
+  BioCpp::pdb_seqres_record rseqres, tseqres;
+  //replace gap with three virtual residues
+  for( pdb_seqres_record::iterator ch = TseqRes.begin(); ch!=TseqRes.end(); ++ch ){
+    tseqres[ch->first] = "";
+    for(std::string::iterator s = ch->second.begin(); s != ch->second.end(); ++s){
+      if((*s)!='-')
+        tseqres[ch->first]+=(*s);
+      else
+        tseqres[ch->first]+="^^^";
+    }
   }
+  for( pdb_seqres_record::iterator ch = RseqRes.begin(); ch!=RseqRes.end(); ++ch ){
+    rseqres[ch->first] = "";
+    for(std::string::iterator s = ch->second.begin(); s != ch->second.end(); ++s){
+      if((*s)!='-')
+        rseqres[ch->first]+=(*s);
+      else
+        rseqres[ch->first]+="^^^";
+    }
+  }
+  //for each chain...
+	for( pdb_seqres_record::iterator ch = tseqres.begin(); ch!=tseqres.end(); ++ch ){
+		standard::chain tmp_chain;
+		tmp_chain.type = ch->first;
+	  Append(ch->first, tmp_chain);
+	  (*this)[ch->first].Reserve( ch->second.size() );
+	  
+	  BioCpp::pdb_model::iterator it=atom_list.begin(); //first atom in list
+	  while( it->chainId != ch->first and it!=atom_list.end() ){ //skip atoms belonging to unwanted chains
+	  	++it;
+	  }
+	  //now 'it' is the first atom of current chain
+	  unsigned int res = 0;
+	  int first_res = it->resSeq;
+	  if( RseqRes[ch->first][0] == '^' ){ //count initial missing residue (in order to adjust first_res)
+	  	while( rseqres[ch->first][res] == '^' ){
+	  		--first_res;
+	  		++res;
+	  	}
+	  }
+	  res = 0;
+		while( res < (ch->second.size()) ){
+	  	if( rseqres[ch->first][res] == '^' ){
+	  		standard::residue tmp_res;
+        if( ch->second[res]=='^' ){
+          tmp_res.type = BioCpp::amino_acid::UNK;
+        }
+        else{
+  	  		std::stringstream sstype;
+	    		sstype << ch->second[res];
+	  	  	tmp_res.type = BioCpp::amino_acid::string_to_id[ sstype.str() ];
+	  	  }
+  	    (*this)[ch->first].Append(first_res+res,tmp_res);
+		    ++res;
+	  	}
+	  	else{
+	  		standard::residue tmp_res;
+		  	std::stringstream sstype;
+	  		sstype << ch->second[res];
+		  	tmp_res.type = BioCpp::amino_acid::string_to_id[ sstype.str() ];
+		    (*this)[ch->first].Append(first_res+res,tmp_res);
+		    (*this)[ch->first][first_res+res].Reserve(40);
+		    int prev_res = it->resSeq;
+		    char prev_icode = it->iCode;
+		    char prev_altloc = it->altLoc;
+		  	while(it->resSeq == prev_res and it->iCode==prev_icode ){
+		  	  if(it->altLoc!=prev_altloc){
+		  	    ++it;
+		  	    continue;
+		  	  }
+		  		(*this)[ch->first][first_res+res].Append(it->id, *it);
+   				if( it != (atom_list.end()-1) )
+  			  	++it;
+  			  else
+  			    break;
+			  }
+		    ++res;
+	  	}
+	  }
+	}
 }
 
 /*!	\brief Constructor from a reference to a protein complex
