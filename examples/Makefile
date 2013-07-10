@@ -1,4 +1,4 @@
-CC = g++
+CC = g++46
 BIOCPP_PATH = /home/zimmer/Desktop/BioCpp/src/
 CFLAGS = -msse2 -O2 -Wall -std=c++0x -static
 
