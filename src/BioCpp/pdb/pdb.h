@@ -173,10 +173,6 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
           prev_c = atm.coordinate;
           first_residue = false;
         }
-        //
-        if(atm.id==atom::X_){
-          std::cout << line;
-        }
         if(atm.resSeq<=prev_resseq or atm.altLoc!=' ' )
           continue;
         else if(atm.id==atom::N_){

@@ -126,11 +126,13 @@ inline base_container<char, standard::chain, std::string>::base_container(pdb_mo
 		    char prev_icode = it->iCode;
 		    char prev_altloc = it->altLoc;
 		  	while(it->resSeq == prev_res and it->iCode==prev_icode ){
-		  	  if(it->altLoc!=prev_altloc){
-		  	    ++it;
-		  	    continue;
-		  	  }
-		  		(*this)[ch->first][first_res+res].Append(it->id, *it);
+		  	  //if(it->altLoc!=prev_altloc){
+		  	  //  ++it;
+		  	  //  continue;
+		  	  //}
+		  	  if( not (*this)[ch->first][first_res+res].exists(it->id) ){
+			  		(*this)[ch->first][first_res+res].Append(it->id, *it);
+					}
    				if( it != (atom_list.end()-1) )
   			  	++it;
   			  else
