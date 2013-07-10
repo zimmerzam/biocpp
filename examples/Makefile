@@ -54,6 +54,8 @@ mutations:
 	$(CC) -I$(BIOCPP_PATH) $(CFLAGS) $(INCLUDESTANDARD) $@.cpp -o $@
 alpha_variance:
 	$(CC) -I$(BIOCPP_PATH) $(CFLAGS) $(INCLUDESTANDARD) $@.cpp -o $@
+test:
+	$(CC) -I$(BIOCPP_PATH) $(CFLAGS) $(INCLUDESTANDARD) $@.cpp -o $@
 
 clean:
 	rm -f $(EXECUTABLE) $(addprefix $(BIOCPP_PATH),$(PRECOMPILE)) *~
