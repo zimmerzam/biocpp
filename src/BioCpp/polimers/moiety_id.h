@@ -91,7 +91,7 @@ std::list< info > ResidueToMoietyInfo( BioCpp::amino_acid::id resId, bool first,
 
   switch(resId){
     case BioCpp::amino_acid::PRO:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB1 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::HG1, BioCpp::atom::HG2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD, BioCpp::atom::HD1, BioCpp::atom::HD2 }} ) );
       return info;
@@ -105,79 +105,79 @@ std::list< info > ResidueToMoietyInfo( BioCpp::amino_acid::id resId, bool first,
       info.push_back( std::make_pair( BioCpp::moiety::CH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG2, BioCpp::atom::HG21, BioCpp::atom::HG22, BioCpp::atom::HG23 }} ) );
       return info;
     case BioCpp::amino_acid::LEU:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD1, BioCpp::atom::HD11, BioCpp::atom::HD12, BioCpp::atom::HD13 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD2, BioCpp::atom::HD21, BioCpp::atom::HD22, BioCpp::atom::HD23 }} ) );
       return info;
     case BioCpp::amino_acid::ILE:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG1, BioCpp::atom::HG12, BioCpp::atom::HG13 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG1, BioCpp::atom::HG11, BioCpp::atom::HG12 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG2, BioCpp::atom::HG21, BioCpp::atom::HG22, BioCpp::atom::HG23 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD1, BioCpp::atom::HD11, BioCpp::atom::HD12, BioCpp::atom::HD13 }} ) );
       return info;
     case BioCpp::amino_acid::MET:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::HG1, BioCpp::atom::HG2 }} ) );
-      info.push_back( std::make_pair( BioCpp::moiety::SCH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::SD, BioCpp::atom::CD2, BioCpp::atom::HE1, BioCpp::atom::HE2, BioCpp::atom::HE3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::SCH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::SD, BioCpp::atom::CE, BioCpp::atom::HE1, BioCpp::atom::HE2, BioCpp::atom::HE3 }} ) );
       return info;
     case BioCpp::amino_acid::CYS:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
-      info.push_back( std::make_pair( BioCpp::moiety::THIOL, std::list<BioCpp::atom::id>{{ BioCpp::atom::SG }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::THIOL, std::list<BioCpp::atom::id>{{ BioCpp::atom::SG, BioCpp::atom::HG }} ) );
       return info;
     case BioCpp::amino_acid::SER:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::ALCOHOL, std::list<BioCpp::atom::id>{{ BioCpp::atom::OG, BioCpp::atom::HG }} ) );
       return info;
     case BioCpp::amino_acid::THR:
-      info.push_back( std::make_pair( BioCpp::moiety::CH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG1, BioCpp::atom::HG1, BioCpp::atom::HG2, BioCpp::atom::HG3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG2, BioCpp::atom::HG21, BioCpp::atom::HG22, BioCpp::atom::HG23 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::ALCOHOL, std::list<BioCpp::atom::id>{{ BioCpp::atom::OG1, BioCpp::atom::HG1 }} ) );
       return info;
     case BioCpp::amino_acid::ASP:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CARBOXYL, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::OD1, BioCpp::atom::OD2 }} ) );
       return info;
     case BioCpp::amino_acid::GLU:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::HG1, BioCpp::atom::HG2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CARBOXYL, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD, BioCpp::atom::OE1, BioCpp::atom::OE2 }} ) );
       return info;
     case BioCpp::amino_acid::ASN:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::PEPTIDE, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::OD1, BioCpp::atom::ND2, BioCpp::atom::HD21, BioCpp::atom::HD22 }} ) );
       return info;
     case BioCpp::amino_acid::GLN:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::HG1, BioCpp::atom::HG2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::PEPTIDE, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD, BioCpp::atom::OE1, BioCpp::atom::NE2, BioCpp::atom::HE21, BioCpp::atom::HE22 }} ) );
       return info;
     case BioCpp::amino_acid::LYS:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::HG1, BioCpp::atom::HG2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD, BioCpp::atom::HD1, BioCpp::atom::HD2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CE, BioCpp::atom::HE1, BioCpp::atom::HE2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::PRT_AMINE, std::list<BioCpp::atom::id>{{ BioCpp::atom::NZ, BioCpp::atom::HZ1, BioCpp::atom::HZ2, BioCpp::atom::HZ3 }} ) );
       return info;
     case BioCpp::amino_acid::ARG:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::HG1, BioCpp::atom::HG2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CD, BioCpp::atom::HD1, BioCpp::atom::HD2 }} ) );
-      info.push_back( std::make_pair( BioCpp::moiety::N3H5, std::list<BioCpp::atom::id>{{ BioCpp::atom::NE, BioCpp::atom::NH1, BioCpp::atom::NH2, BioCpp::atom::HE, BioCpp::atom::HH11, BioCpp::atom::HH12, BioCpp::atom::HH21, BioCpp::atom::HH22 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::N3H5, std::list<BioCpp::atom::id>{{ BioCpp::atom::NE, BioCpp::atom::HE, BioCpp::atom::CZ, BioCpp::atom::NH1, BioCpp::atom::HH11, BioCpp::atom::HH12, BioCpp::atom::NH2, BioCpp::atom::HH21, BioCpp::atom::HH22 }} ) );
       return info;
     case BioCpp::amino_acid::HIS: 
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
-      info.push_back( std::make_pair( BioCpp::moiety::C3N2H3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::ND1, BioCpp::atom::HD1, BioCpp::atom::CE1, BioCpp::atom::HE1, BioCpp::atom::CD2, BioCpp::atom::HD2, BioCpp::atom::NE2, BioCpp::atom::HE2}} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::C3N2H3, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::ND1, BioCpp::atom::CE1, BioCpp::atom::HE1, BioCpp::atom::NE2, BioCpp::atom::HE2, BioCpp::atom::CD2, BioCpp::atom::HD2 }} ) );
       return info;
     case BioCpp::amino_acid::PHE:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::PHENYL, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::CD1, BioCpp::atom::HD1, BioCpp::atom::CE1, BioCpp::atom::HE1, BioCpp::atom::CD2, BioCpp::atom::HD2, BioCpp::atom::CE2, BioCpp::atom::HE2, BioCpp::atom::CZ, BioCpp::atom::HZ }} ) );
       return info;
     case BioCpp::amino_acid::TYR:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::PHENYL, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::CD1, BioCpp::atom::CE1, BioCpp::atom::CD2, BioCpp::atom::CE2, BioCpp::atom::CZ, BioCpp::atom::HD1, BioCpp::atom::HD2, BioCpp::atom::HE1, BioCpp::atom::HE2 }} ) );
       info.push_back( std::make_pair( BioCpp::moiety::ALCOHOL, std::list<BioCpp::atom::id>{{ BioCpp::atom::OH, BioCpp::atom::HH }} ) );
       return info;
     case BioCpp::amino_acid::TRP:
-      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB2, BioCpp::atom::HB3 }} ) );
-      info.push_back( std::make_pair( BioCpp::moiety::C8NH6, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::CD1, BioCpp::atom::NE1, BioCpp::atom::CD2, BioCpp::atom::CE3, BioCpp::atom::CZ3, BioCpp::atom::CE2, BioCpp::atom::CH2, BioCpp::atom::CZ2, BioCpp::atom::HE1, BioCpp::atom::HD1, BioCpp::atom::HH2, BioCpp::atom::HE3, BioCpp::atom::HZ2, BioCpp::atom::HZ3 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
+      info.push_back( std::make_pair( BioCpp::moiety::C8NH6, std::list<BioCpp::atom::id>{{ BioCpp::atom::CG, BioCpp::atom::CD1, BioCpp::atom::HD1, BioCpp::atom::NE1,  BioCpp::atom::HE1, BioCpp::atom::CE2, BioCpp::atom::CZ2, BioCpp::atom::HZ2, BioCpp::atom::CH2,  BioCpp::atom::HH2, BioCpp::atom::CZ3, BioCpp::atom::HZ3, BioCpp::atom::CE3, BioCpp::atom::HE3, BioCpp::atom::CD2 }} ) );
       return info;
     default:
       return info;
