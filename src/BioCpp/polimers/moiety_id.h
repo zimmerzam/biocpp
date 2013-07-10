@@ -75,7 +75,7 @@ typedef std::pair< id, std::list<BioCpp::atom::id> > info;
 
 std::list< info > ResidueToMoietyInfo( BioCpp::amino_acid::id resId, bool first, bool last ){
   std::list< info > info;
-
+/*
   // first residue along the chain...  
   if( first and resId!= BioCpp::amino_acid::PRO ){
     info.push_back( std::make_pair( BioCpp::moiety::PRT_AMINE, std::list<BioCpp::atom::id>{{ BioCpp::atom::N_ , BioCpp::atom::H1  }} ) );
@@ -88,7 +88,7 @@ std::list< info > ResidueToMoietyInfo( BioCpp::amino_acid::id resId, bool first,
   if(last){
     info.push_back( std::make_pair( BioCpp::moiety::CARBOXYL, std::list<BioCpp::atom::id>{{ BioCpp::atom::C_ , BioCpp::atom::O_, BioCpp::atom::OXT  }} ) );
   }
-
+*/
   switch(resId){
     case BioCpp::amino_acid::PRO:
       info.push_back( std::make_pair( BioCpp::moiety::CH2, std::list<BioCpp::atom::id>{{ BioCpp::atom::CB, BioCpp::atom::HB1, BioCpp::atom::HB2 }} ) );
