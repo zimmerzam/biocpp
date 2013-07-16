@@ -23,6 +23,7 @@
 #define DPSS_ID_H
 
 #include <map>
+#include <string>
 #include "base_h_bridge_map.h"
 
 namespace BioCpp{
