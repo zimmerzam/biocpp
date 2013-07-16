@@ -265,7 +265,7 @@ int main(int argc, char* argv[]){
   BioCpp::pdb PDB(contactfile, 0);  
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
     BioCpp::pdb_model all_info = PDB.getModel(mdl);
-    BioCpp::standard::complex cmp( all_info, PDB.RseqRes );
+    BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
     BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,map);
   }
   if(average_flag){

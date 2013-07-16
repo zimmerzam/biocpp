@@ -109,7 +109,7 @@ int main(int argc, char* argv[]){
   BioCpp::pdb PDB(contactfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
     BioCpp::pdb_model all_info = PDB.getModel(mdl);
-    BioCpp::standard::complex cmp( all_info, PDB.RseqRes );
+    BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
     for( std::vector<mutation>::iterator mt = mutations.begin(); mt != mutations.end(); ++mt ){
       if( not cmp.exists(mt->chainId) ){
         std::cout << "Error: chain " << mt->chainId << " is not present in the target structure" << std::endl;

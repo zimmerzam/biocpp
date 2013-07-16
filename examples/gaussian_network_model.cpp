@@ -49,7 +49,7 @@ contact_info get_info(std::string line){
 }
 
 int main(int argc, char* argv[]){
-  char* contactfile = 'x';
+  char* contactfile;
   double threshold = 0.;
   bool other_flag = false;
   bool too_much_flags = false;

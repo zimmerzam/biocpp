@@ -206,7 +206,7 @@ int main(int argc, char* argv[]){
 	for(BioCpp::pdb_seqres_record::iterator it = PDB.RseqRes.begin(); it!=PDB.RseqRes.end(); ++it){
 		n_res+=it->second.size();
 	}
-	BioCpp::standard::complex cmp(all_info, PDB.RseqRes);
+	BioCpp::standard::complex cmp(all_info, PDB.RseqRes, PDB.RseqRes);
 	
 	std::map< char, std::pair<unsigned int, unsigned int> > range;
 	for( BioCpp::standard::complex::iterator it = cmp.begin(); it != cmp.end(); ++it ){

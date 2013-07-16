@@ -28,7 +28,7 @@ int main(){
   BioCpp::pdb PDB("2RNM.pdb");		// read a pdb file
 
   BioCpp::pdb_model all_info = PDB.getModel(1); // get the first model
-  BioCpp::standard::complex cmp(all_info, PDB.TseqRes); // build a complex
+  BioCpp::standard::complex cmp(all_info, PDB.TseqRes, PDB.TseqRes); // build a complex
   
   print_sec print; // initialize the print_sec functor
   print.map = BioCpp::standard::h_bridge_map(cmp); // compute the h_bridge_map
