@@ -7,6 +7,7 @@ struct anisotropic{
 	typedef std::map< char, int> offset_t;
 	double p;
 	double k1, k2;
+	double thres;
 	range_t range;
 	offset_t offset;
 	
@@ -52,7 +53,9 @@ struct anisotropic{
 		Eigen::Vector3d c2 = res2[BioCpp::atom::id::CA].coordinate;
 		
 		double factor = 0;
-		double dist_p = pow( (c1-c2).norm(),2.+ p );
+		double dist = (c1-c2).norm();
+		double dist_p = pow( dist, 2. + p );
+		int cnt = 1 ? dist < thres : 0;
 		if( j-i < 0 ){
 			return;
 		}
@@ -62,11 +65,11 @@ struct anisotropic{
 			mass(3*i+2,3*i+2) = mass(3*i,3*i);
 			return;
 		}
-		else if( std::abs(j-i)==1 ){ //TODO they have to belong to the same chain!!
+		else if( std::abs(j-i)==1 and ch1==ch2){ 
 			factor = -k1/dist_p;
 		}
 		else if( std::abs(j-i)>1 ){
-			factor = -k2/dist_p;
+			factor = -cnt*k2/dist_p;
 		}
 		matrix(3*i,3*j)     = factor*( c2(0)-c1(0) )*( c2(0)-c1(0) );
 		matrix(3*i,3*j+1)   = factor*( c2(0)-c1(0) )*( c2(1)-c1(1) );
@@ -125,6 +128,7 @@ int main(int argc, char* argv[]){
 	const char* pdbfilename;
 	double p = 0;
 	double k1 = 1., k2 = 1.;
+	double threshold = 4.5;
   bool file_flag = false;
   bool usage_flag = false;
   bool eigenvalues_flag = false;
@@ -135,7 +139,7 @@ int main(int argc, char* argv[]){
   bool too_much_flags = false;
   
 	int c;
-	while ((c = getopt (argc, argv, "f:p:K:k:vVmeh")) != -1){
+	while ((c = getopt (argc, argv, "f:p:K:k:T:vVmeh")) != -1){
 		switch (c){
 			case 'f':
 				file_flag = true;
@@ -149,6 +153,9 @@ int main(int argc, char* argv[]){
 				break;
 			case 'k':
 				k2 = atof(optarg);
+				break;
+			case 'T':
+				threshold = atof(optarg);
 				break;
       case 'v':
         eigenvalues_flag=true;
@@ -190,13 +197,14 @@ int main(int argc, char* argv[]){
     					<< "\t-p: rescale distance exponent (default = 0)" << std::endl
     					<< "\t-K: spring constant for adjacent residues (default = 1.)" << std::endl
     					<< "\t-k: spring constant for other residues (default = 1.)" << std::endl
+    					<< "\t-T: threshold distance for non-consecutive residues (default = 4.5)" << std::endl
     					<< "\t-v: print eigenvalues" << std::endl
               << "\t-V: print eigenvectors" << std::endl
               << "\t-e: print entropy" << std::endl
               << "\t-m: print mobility" << std::endl
     					<< "\t-h: help" << std::endl
     					<< "No holes are allowed!! Residues in the same chain must have consecutive resSeq" << std::endl
-    					<< "You can use only one option among 'v', 'V', 'm' and 'e'.";
+    					<< "You can use only one option among 'v', 'V', 'm' and 'e'." << std::endl;
     return 1;
   }
 	
@@ -217,6 +225,7 @@ int main(int argc, char* argv[]){
 	hessian.p = p;
 	hessian.k1 = k1;
 	hessian.k2 = k2;
+	hessian.thres = threshold;
   
   BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,hessian);
 	hessian.fill_diagonal();
