@@ -1,16 +1,21 @@
-#include <BioCpp.h>
-#include <BioCpp/geometry/Eigen/Dense>
+#include <BioCpp_standard.h>
+#include <geometry/Eigen/Dense>
 #include <getopt.h>
+#include <algorithm>
 
 struct anisotropic{
 	typedef std::map< char, std::pair<unsigned int, unsigned int> > range_t;
 	typedef std::map< char, int> offset_t;
+
+        std::string ss;
+        bool subunit_flag;
+        bool inter_flag;
 	double p;
-	double k1, k2;
+        double k1, k2, ki;
 	double thres;
 	range_t range;
 	offset_t offset;
-	
+
 	Eigen::MatrixXd matrix;
 	Eigen::MatrixXd mass;
 	
@@ -54,8 +59,28 @@ struct anisotropic{
 		
 		double factor = 0;
 		double dist = (c1-c2).norm();
-		double dist_p = pow( dist, 2. + p );
-		int cnt = 1 ? dist < thres : 0;
+		double dist_p = pow( dist,2.+ p );
+
+		if (subunit_flag){
+		  std::size_t nc1 = ss.find_first_of(ch1);
+		  std::size_t nc2 = ss.find_first_of(ch2);
+		  std::string subs = ss.substr(nc1,nc2-nc1+1);
+		  inter_flag =  ( subs.find_first_of(":") == std::string::npos) ? false : true;
+//		  std::cout  << ss << "  " << (int)nc1 << "  " << (int)nc2 << "  " << subs << "  " << inter_flag << std::endl;
+		}
+		else inter_flag = false;
+		/* std::cout << ch1 << ch2 << inter_flag << ki << std::endl; */
+		
+		double min_dist = 1000;
+		for(BioCpp::standard::residue::iterator at1 = res1.begin(); at1!=res1.end(); ++at1){
+			for(BioCpp::standard::residue::iterator at2 = res2.begin(); at2!=res2.end(); ++at2){
+				if( (at1->coordinate - at2->coordinate).norm() < min_dist ){
+					min_dist = (at1->coordinate - at2->coordinate).norm();
+				}
+			}
+		}
+//		std::cout  << ch1 << nres1  << "  " << ch2 << nres2 << "  " << min_dist << std::endl;
+		int cnt = min_dist < thres ? 1 : 0;
 		if( j-i < 0 ){
 			return;
 		}
@@ -65,11 +90,17 @@ struct anisotropic{
 			mass(3*i+2,3*i+2) = mass(3*i,3*i);
 			return;
 		}
-		else if( std::abs(j-i)==1 and ch1==ch2){ 
+		else if( std::abs(j-i)==1 and ch1==ch2){
 			factor = -k1/dist_p;
+//			std::cout << 1 << std::endl;
 		}
-		else if( std::abs(j-i)>1 ){
+		else if (inter_flag){
+			factor = -cnt*ki/dist_p;
+//			std::cout  << ch1 << nres1  << "  " << ch2 << nres2 << "  " << min_dist << std::endl;
+		}
+		else{
 			factor = -cnt*k2/dist_p;
+//			std::cout  << "same chain" << std::endl;
 		}
 		matrix(3*i,3*j)     = factor*( c2(0)-c1(0) )*( c2(0)-c1(0) );
 		matrix(3*i,3*j+1)   = factor*( c2(0)-c1(0) )*( c2(1)-c1(1) );
@@ -111,6 +142,7 @@ struct anisotropic{
 				matrix(3*i+2,3*i+2) -= matrix(3*i+2,3*j+2);
 			}
 		}
+//		std::cout << matrix << std::endl;
 	}
 	
 	Eigen::VectorXd eigenvalues(){
@@ -125,11 +157,13 @@ struct anisotropic{
 };
 
 int main(int argc, char* argv[]){
-	const char* pdbfilename;
-	double p = 0;
-	double k1 = 1., k2 = 1.;
-	double threshold = 4.5;
+  char* pdbfilename;
+  char* s;
+  double p = 0;
+  double k1 = 1., k2 = 1., ki = 1.;
+  double threshold = 7.;
   bool file_flag = false;
+  bool subunit_flag = false;
   bool usage_flag = false;
   bool eigenvalues_flag = false;
   bool eigenvectors_flag = false;
@@ -139,7 +173,7 @@ int main(int argc, char* argv[]){
   bool too_much_flags = false;
   
 	int c;
-	while ((c = getopt (argc, argv, "f:p:K:k:T:vVmeh")) != -1){
+	while ((c = getopt (argc, argv, "f:p:K:k:i:s:T:vVmeh")) != -1){
 		switch (c){
 			case 'f':
 				file_flag = true;
@@ -153,6 +187,13 @@ int main(int argc, char* argv[]){
 				break;
 			case 'k':
 				k2 = atof(optarg);
+				break;
+			case 'i':
+				ki = atof(optarg);
+				break;
+			case 's':
+			        subunit_flag = true;
+				s = optarg;
 				break;
 			case 'T':
 				threshold = atof(optarg);
@@ -197,24 +238,43 @@ int main(int argc, char* argv[]){
     					<< "\t-p: rescale distance exponent (default = 0)" << std::endl
     					<< "\t-K: spring constant for adjacent residues (default = 1.)" << std::endl
     					<< "\t-k: spring constant for other residues (default = 1.)" << std::endl
-    					<< "\t-T: threshold distance for non-consecutive residues (default = 4.5)" << std::endl
+    					<< "\t-i: spring constant for inter-subunit residue pairs (default = 1.)" << std::endl
+    					<< "\t-s: subunit_string (example: ABC:DE)" << std::endl
+					<< "\t-T: change threshold for non-consecutive residue (default:7.0)" << std::endl
     					<< "\t-v: print eigenvalues" << std::endl
               << "\t-V: print eigenvectors" << std::endl
               << "\t-e: print entropy" << std::endl
               << "\t-m: print mobility" << std::endl
     					<< "\t-h: help" << std::endl
     					<< "No holes are allowed!! Residues in the same chain must have consecutive resSeq" << std::endl
-    					<< "You can use only one option among 'v', 'V', 'm' and 'e'." << std::endl;
+    					<< "You can use only one option among 'v', 'V', 'm' and 'e'." << std::endl
+    					<< "You have to provide subunit_string in order to use the -i option" << std::endl ;
     return 1;
-  }
+	}
 	
 	BioCpp::pdb PDB(pdbfilename, BioCpp::PDB_INIT_COMPLETE);
 	BioCpp::pdb_model all_info = PDB.getModel(1);
 	unsigned int n_res = 0;
+	unsigned int n_ch_in_s = 0;
+	unsigned int n_ch_in_pdb = 0;
+	std::string ss = std::string(s);
 	for(BioCpp::pdb_seqres_record::iterator it = PDB.RseqRes.begin(); it!=PDB.RseqRes.end(); ++it){
+		it->second.erase(std::remove_if(it->second.begin(), it->second.end(), [](char ch){if(ch=='-') return true; return false;}), it->second.end());
 		n_res+=it->second.size();
+		n_ch_in_pdb++;
+		/* std::cout << it->first << it->second  << std::endl;*/
+		if ( subunit_flag and ss.find_first_of(it->first) < std::string::npos ){ 
+			++n_ch_in_s;
+		}
 	}
-	BioCpp::standard::complex cmp(all_info, PDB.RseqRes, PDB.RseqRes);
+	if (subunit_flag){
+	  if (n_ch_in_s<n_ch_in_pdb){
+	    std::cout << "You have to provide all pdb chains in subunit_string s" << std::endl ;
+	    return 1;
+	  }
+	} 
+	
+	BioCpp::standard::complex cmp(all_info, PDB.RseqRes);
 	
 	std::map< char, std::pair<unsigned int, unsigned int> > range;
 	for( BioCpp::standard::complex::iterator it = cmp.begin(); it != cmp.end(); ++it ){
@@ -225,6 +285,9 @@ int main(int argc, char* argv[]){
 	hessian.p = p;
 	hessian.k1 = k1;
 	hessian.k2 = k2;
+	hessian.ki = ki;
+	hessian.ss = ss;
+	hessian.subunit_flag = subunit_flag;
 	hessian.thres = threshold;
   
   BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,hessian);
