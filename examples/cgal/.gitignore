@@ -1,0 +1,4 @@
+*
+!.gitignore
+!alpha_shapes.cpp
+!CMakeLists.txt
