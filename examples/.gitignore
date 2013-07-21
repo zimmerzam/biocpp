@@ -9,6 +9,7 @@ surface_area
 contact_map
 gaussian_network_model
 mutations
-alpha_variance
+C_alpha_variance
 anisotropic_network_model
-test
+print_atom_coordinate
+alpha_shapes
