@@ -22,7 +22,7 @@
 #ifndef H_BRIDGE_ENERGY
 #define H_BRIDGE_ENERGY
 
-#include "../../geometry/Eigen/Core"
+#include <Eigen/Core>
 
 namespace BioCpp{
 namespace dpss{

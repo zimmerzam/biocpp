@@ -27,7 +27,7 @@
 #include <map>
 #include <stdexcept>
 
-#include "../geometry/Eigen/Core"
+#include <Eigen/Core>
 #include "../polimers/amino_acid_id.h"
 #include "../polimers/atom_id.h"
 #include "../polimers/element_id.h"

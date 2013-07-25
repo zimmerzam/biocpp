@@ -24,7 +24,7 @@
 
 #include <string>
 #include "substitution_matrix.h"
-#include "../geometry/Eigen/Core"
+#include <Eigen/Core>
 #include "../utils/errors_and_warnings.h"
 
 namespace BioCpp{

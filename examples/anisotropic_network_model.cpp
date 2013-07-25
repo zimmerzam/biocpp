@@ -1,5 +1,5 @@
 #include <BioCpp.h>
-#include <BioCpp/geometry/Eigen/Dense>
+#include <Eigen/Dense>
 #include <getopt.h>
 #include <algorithm>
 
