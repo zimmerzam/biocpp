@@ -34,7 +34,7 @@ namespace standard{
 
     Each atom is identified by an atom::id
 */
-typedef BioCpp::base_container<BioCpp::atom::id, BioCpp::pdb_atom_info, BioCpp::amino_acid::id> residue;
+typedef BioCpp::base_container<BioCpp::atom::id, BioCpp::pdb::atom_info, BioCpp::amino_acid::id> residue;
 /*! \brief A standard chain 
 
     Each residue is identified by an int (usually its seqRes)
@@ -51,18 +51,18 @@ typedef BioCpp::base_h_bridge_map<chain::iterator> h_bridge_map;
 }
 }
 
-/*!	\brief Simple constructor from a pdb_model
+/*!	\brief Simple constructor from a pdb::model
     
     \note You may want to overwrite this!
 */
 namespace BioCpp{
 template<>
 template<>
-inline base_container<char, standard::chain, std::string>::base_container(pdb_model& atom_list, pdb_seqres_record& RseqRes, pdb_seqres_record& TseqRes){
+inline base_container<char, standard::chain, std::string>::base_container(pdb::model& atom_list, pdb::seqres_record& RseqRes, pdb::seqres_record& TseqRes){
   this->Reserve(TseqRes.size());
-  BioCpp::pdb_seqres_record rseqres, tseqres;
+  BioCpp::pdb::seqres_record rseqres, tseqres;
   //replace gap with three virtual residues
-  for( pdb_seqres_record::iterator ch = TseqRes.begin(); ch!=TseqRes.end(); ++ch ){
+  for( pdb::seqres_record::iterator ch = TseqRes.begin(); ch!=TseqRes.end(); ++ch ){
     tseqres[ch->first] = "";
     for(std::string::iterator s = ch->second.begin(); s != ch->second.end(); ++s){
       if((*s)!='-')
@@ -71,7 +71,7 @@ inline base_container<char, standard::chain, std::string>::base_container(pdb_mo
         tseqres[ch->first]+="^^^";
     }
   }
-  for( pdb_seqres_record::iterator ch = RseqRes.begin(); ch!=RseqRes.end(); ++ch ){
+  for( pdb::seqres_record::iterator ch = RseqRes.begin(); ch!=RseqRes.end(); ++ch ){
     rseqres[ch->first] = "";
     for(std::string::iterator s = ch->second.begin(); s != ch->second.end(); ++s){
       if((*s)!='-')
@@ -81,13 +81,13 @@ inline base_container<char, standard::chain, std::string>::base_container(pdb_mo
     }
   }
   //for each chain...
-	for( pdb_seqres_record::iterator ch = tseqres.begin(); ch!=tseqres.end(); ++ch ){
+	for( pdb::seqres_record::iterator ch = tseqres.begin(); ch!=tseqres.end(); ++ch ){
 		standard::chain tmp_chain;
 		tmp_chain.type = ch->first;
 	  Append(ch->first, tmp_chain);
 	  (*this)[ch->first].Reserve( ch->second.size() );
 	  
-	  BioCpp::pdb_model::iterator it=atom_list.begin(); //first atom in list
+	  BioCpp::pdb::model::iterator it=atom_list.begin(); //first atom in list
 	  while( it->chainId != ch->first and it!=atom_list.end() ){ //skip atoms belonging to unwanted chains
 	  	++it;
 	  }

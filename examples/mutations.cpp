@@ -13,7 +13,7 @@ struct mutation{
 };
 
 struct strict_residue_printer{
-  BioCpp::print_atom_line printer;
+  BioCpp::pdb::print_atom_line printer;
   
   strict_residue_printer(std::ostream& dev): printer(dev) {};
   
@@ -106,9 +106,9 @@ int main(int argc, char* argv[]){
     return 1;
   }
   strict_residue_printer printer(std::cout);
-  BioCpp::pdb PDB(contactfile, 0);
+  BioCpp::pdb::pdb PDB(contactfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
-    BioCpp::pdb_model all_info = PDB.getModel(mdl);
+    BioCpp::pdb::model all_info = PDB.getModel(mdl);
     BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
     for( std::vector<mutation>::iterator mt = mutations.begin(); mt != mutations.end(); ++mt ){
       if( not cmp.exists(mt->chainId) ){

@@ -34,12 +34,13 @@
 #include "pdb_sections_and_records.h"
 
 namespace BioCpp{
+namespace pdb{
 
 /*! \brief ATOM line in pdb file
 
 		According to [pdb specification 3.3 for ATOM record ](http://www.wwpdb.org/documentation/format33/sect9.html#ATOM ) 
 */
-struct pdb_atom_info{
+struct atom_info{
   int serial;                     /*!< serial (progressive) number */
  	atom::id id;                     /*!< atom identifier (CA, CB, ...) */
  	char altLoc;                    /*!< alternative location */
@@ -54,42 +55,14 @@ struct pdb_atom_info{
  	double charge;                  /*!< charge */
 };
 
-/*! \brief Print an ATOM line
-		@param out the output stream (i.e. `std::cout`)
-		@param serial atom serial number
-		@param id atom identifier
-		@param altLoc alternative location
-		@param resName residue name
-		@param chainId chain identifier
-		@param resSeq residue number
-		@param iCode code for insertion of residues
-		@param coordinate atom coordinate
-		@param occupancy occupancy
-		@param tempFactor temperature factor
-		@param element element type
-		@param charge atom charge 
-*/
-std::ostream& print_pdb_atom_line( std::ostream& out, int& serial, atom::id& id, char& altLoc, 
-														 amino_acid::id& resName, char& chainId, int& resSeq, char& iCode, 
-														 Eigen::Vector3d& coordinate, double& occupancy, 
-														 double& tempFactor, element::id& element, double& charge );
-														 
-/*! \brief Print an ATOM line from a pdb_atom_info
-		
-		This output operator has been defined for convenience
-		@param out the output stream (i.e. `std::cout`)
-		@param info the pdb_atom_info to be printed
-*/
-std::ostream& operator << (std::ostream& out, pdb_atom_info& info );
-
 /*! \brief Get atom line info from a pdb ATOM line 
 		
-		\return a pdb_atom_info containing all informations from the ATOM line
+		\return a atom_info containing all informations from the ATOM line
 		@param line the ATOM line
 */
-pdb_atom_info read_pdb_atom_line(std::string& line){
-	pdb_atom_info info;
-	if(get_pdb_record(line) == PDB_ATOM){
+atom_info read_atom_line(std::string& line){
+	atom_info info;
+	if(get_record(line) == ATOM){
 	  info.serial = atoi(line.substr(6, 5).c_str()); 
   	info.id = atom::string_to_id[line.substr(12, 4)];
   	info.altLoc = line.substr(16, 1).c_str()[0]=='A' ? ' ' : line.substr(16, 1).c_str()[0];
@@ -128,16 +101,31 @@ pdb_atom_info read_pdb_atom_line(std::string& line){
   return info;
 };
 
-/*! \brief Print an ATOM line from a pdb_atom_info
+/*! \brief Print an ATOM line from a atom_info
 		
 		@param out the output stream (i.e. `std::cout`)
-		@param info the pdb_atom_info to be printed 
+		@param info the atom_info to be printed 
 */
 struct print_atom_line{
   std::ostream& out;
 
   print_atom_line(std::ostream& dev): out(dev) {};
 
+  /*! \brief Print an ATOM line
+		@param out the output stream (i.e. `std::cout`)
+		@param serial atom serial number
+		@param id atom identifier
+		@param altLoc alternative location
+		@param resName residue name
+		@param chainId chain identifier
+		@param resSeq residue number
+		@param iCode code for insertion of residues
+		@param coordinate atom coordinate
+		@param occupancy occupancy
+		@param tempFactor temperature factor
+		@param element element type
+		@param charge atom charge 
+  */
   std::ostream& operator()( int& serial, atom::id& id, char& altLoc, 
 														amino_acid::id& resName, char& chainId, int& resSeq, char& iCode, 
 														Eigen::Vector3d& coordinate, double& occupancy, 
@@ -176,19 +164,21 @@ struct print_atom_line{
 	  return out;
   };
 
-  std::ostream& operator()( pdb_atom_info& info){
+  std::ostream& operator()( atom_info& info){
 	  return (*this)( info.serial, info.id, info.altLoc, 
 									  info.resName, info.chainId, info.resSeq, 
 									  info.iCode, info.coordinate, info.occupancy, 
 									  info.tempFactor, info.element, info.charge );
-  }
+  };
 
 };
 
-std::ostream& operator << (std::ostream& out, pdb_atom_info& info ){
-  print_atom_line print(out);
+} // end namespace
+} // end namespace
+
+std::ostream& operator << (std::ostream& out, BioCpp::pdb::atom_info& info ){
+  BioCpp::pdb::print_atom_line print(out);
 	return print( info);
 }
 
-} // end namespace
 #endif

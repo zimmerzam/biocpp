@@ -252,13 +252,13 @@ int main(int argc, char* argv[]){
     return 1;
   }
   
-  BioCpp::pdb PDB(pdbfilename, BioCpp::PDB_INIT_COMPLETE);
-  BioCpp::pdb_model all_info = PDB.getModel(1);
+  BioCpp::pdb::pdb PDB(pdbfilename, BioCpp::pdb::INIT_COMPLETE);
+  BioCpp::pdb::model all_info = PDB.getModel(1);
   unsigned int n_res = 0;
   unsigned int n_ch_in_s = 0;
   unsigned int n_ch_in_pdb = 0;
   std::string ss = std::string(s);
-  for(BioCpp::pdb_seqres_record::iterator it = PDB.RseqRes.begin(); it!=PDB.RseqRes.end(); ++it){
+  for(BioCpp::pdb::seqres_record::iterator it = PDB.RseqRes.begin(); it!=PDB.RseqRes.end(); ++it){
     it->second.erase(std::remove_if(it->second.begin(), it->second.end(), [](char ch){if(ch=='-') return true; return false;}), it->second.end());
     n_res+=it->second.size();
     n_ch_in_pdb++;

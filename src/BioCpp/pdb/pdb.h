@@ -37,12 +37,13 @@
 #include "../utils/errors_and_warnings.h"
 
 namespace BioCpp{
+namespace pdb{
 
 /*! \brief These flags can be passed to pdb constructor to customize its behaviour while reading a file */
-enum pdb_init_flags{
-  PDB_INIT_COMPLETE    = 0,
-  PDB_INIT_FAST        = (1<<1),  /*!< Do not read the structure sequence from the first model, but only read SeqRes section */
-  PDB_INIT_FIRST_MODEL = (1<<2)   /*!< Read only the first model */
+enum init_flags{
+  INIT_COMPLETE    = 0,
+  INIT_FAST        = (1<<1),  /*!< Do not read the structure sequence from the first model, but only read SeqRes section */
+  INIT_FIRST_MODEL = (1<<2)   /*!< Read only the first model */
 };
 
 /*! \brief This is a `pdb file` object.
@@ -60,8 +61,8 @@ class pdb{
     BioCpp::warning warning;
     BioCpp::error error;
     int n_models; /*!< Total number of models found in the file */
-    pdb_seqres_record TseqRes; /*!< The sequence as read from SEQRES record */
-    pdb_seqres_record RseqRes; /*!< The sequence as read from ATOM record */
+    seqres_record TseqRes; /*!< The sequence as read from SEQRES record */
+    seqres_record RseqRes; /*!< The sequence as read from ATOM record */
     
     /*! \brief Read a pdb file 
         
@@ -69,7 +70,7 @@ class pdb{
         according to the `init_flag` parameter.
         
         @param pdb_name the pdb filename
-        @param init_flag can be any combination of pdb_init_flags
+        @param init_flag can be any combination of pdb::init_flags
         \code
           #include <iostream>
           #include "BioCpp/BioCpp.h"
@@ -78,8 +79,8 @@ class pdb{
             const char* filename = argc>1 ? argv[1] : "2RNM.pdb"; // if a pdb is passed, read that. else read an example pdb
   
             BioCpp::pdb PDB(filename, 0); // read all the models and get the sequence from ATOM lines of the first model.
-            BioCpp::pdb PDB(filename, BioCpp::PDB_INIT_FIRST_MODEL); // read the first model only and get the sequence from ATOM lines.
-            BioCpp::pdb PDB(filename, BioCpp::PDB_INIT_FAST); // read all the models and but don't get the sequence from ATOM lines of the first model. 
+            BioCpp::pdb PDB(filename, BioCpp::INIT_FIRST_MODEL); // read the first model only and get the sequence from ATOM lines.
+            BioCpp::pdb PDB(filename, BioCpp::INIT_FAST); // read all the models and but don't get the sequence from ATOM lines of the first model. 
           }
         \endcode
     */
@@ -93,14 +94,14 @@ class pdb{
     
     /*! \brief Retrive informations about a specific model.
     
-        \return a container of pdb_atom_info
+        \return a container of pdb::atom_info
         \note This can be useful for structure alignment and/or other operations that do not involve structural informations (residues, sequence, ..)
         but are atom-based.
     */
-    pdb_model getModel(int mdl);
+    model getModel(int mdl);
 };
 
-pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MODEL) ){
+pdb::pdb(const char* pdb_name, int init_flag = (INIT_FAST|INIT_FIRST_MODEL) ){
   filename = pdb_name;
   n_models = 0;
   warning=WAR_NONE;
@@ -130,12 +131,12 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
   while (file.good()) {
     getline(file, line);
     /* SEQRES section */
-    if(get_pdb_record(line) == PDB_SEQRES ){
+    if(get_record(line) == SEQRES ){
       if(seqres_beg == file_beg)
         seqres_beg = prev_pos;
     }
     /* MODEL section */
-    else if(get_pdb_record(line) == PDB_MODEL){
+    else if(get_record(line) == MODEL){
       n_models++;
       model_beg_pos.insert( std::make_pair(n_models, prev_pos) );
       model_end_pos.insert( std::make_pair(n_models, file_end) );
@@ -143,25 +144,25 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
          seqres_end = prev_pos;
     }
     /* end MODEL */
-    else if(get_pdb_record(line) == PDB_ENDMDL){
+    else if(get_record(line) == ENDMDL){
       if( model_beg_pos.find(n_models)==model_beg_pos.end() ){
         model_beg_pos.insert( std::make_pair(n_models, file_beg) );
       }
       model_end_pos[n_models] = prev_pos;
       if(first_model)
         first_model=false;
-      if(init_flag&PDB_INIT_FIRST_MODEL)
+      if(init_flag&INIT_FIRST_MODEL)
         break;
     }
     /* COORDINATE section */
-    else if(get_pdb_record(line) == PDB_ATOM){ 
+    else if(get_record(line) == ATOM){ 
       if(atom_section_found==false)
         atom_section_found = true;
       if( seqres_beg != file_beg and seqres_end == file_end)
         seqres_end = prev_pos;
       /* read RseqRes if required */
-      if( first_model and not (init_flag&PDB_INIT_FAST) ){
-        pdb_atom_info atm=read_pdb_atom_line(line);
+      if( first_model and not (init_flag&INIT_FAST) ){
+        atom_info atm=read_atom_line(line);
         if(atm.chainId!=prev_chain){
           prev_chain=atm.chainId;
           prev_c=Eigen::Vector3d(DBL_MAX,DBL_MAX,DBL_MAX); 
@@ -213,24 +214,25 @@ pdb::pdb(const char* pdb_name, int init_flag = (PDB_INIT_FAST|PDB_INIT_FIRST_MOD
     int length = seqres_end-seqres_beg;
     char seqres[length+1];
     std::memcpy(seqres, buffer + seqres_beg, length);
-    TseqRes = read_pdb_seqres_record( seqres );
+    TseqRes = read_seqres_record( seqres );
   }
   else{
     warning = (BioCpp::warning)(warning|PDB_SEQRES_NOT_FOUND);
   }
 }
 
-pdb_model pdb::getModel(int mdl){
+model pdb::getModel(int mdl){
   if(mdl>n_models){
-    pdb_model record;
+    model record;
     return record;
   }
   int length = model_end_pos[mdl] - model_beg_pos[mdl];
   char mdl_buf[ length + 1 ];
   std::memcpy(mdl_buf, buffer + model_beg_pos[mdl], length);
-  return read_pdb_model_record( mdl_buf );
+  return read_model_record( mdl_buf );
 }
 
+} // end namespace
 } // end namespace
 
 #endif
