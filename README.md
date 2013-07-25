@@ -14,27 +14,31 @@ This is a simple template library for basic operations on proteins.
 BioCpp uses Eigen3 for atom coordinates, geometrical transformations and this 
 kind of stuffs. So you need to download it from [here](http://eigen.tuxfamily.org/).  
 
-Eigen3 needs no installation: simply extract the sources in 
-*path-to-BioCpp/src/geometry/Eigen/* and you're done.  
-
-In order to use BioCpp in your project simply:
-
-+ add the path containing the source code to your CPLUS_INCLUDE_PATH. In order 
-to do this you can modify the `C_INC_PATH` flag to point to your 
-`/path-to/BioCpp/src/`. Alternatively you can export the path at login by adding
+Eigen3 needs no installation: the only thing to keep in mind is that the 
+compiler must be able to find the Eigen header files. Simply add the path to 
+the extracted folder to your `CPLUS_INCLUDE_PATH`. In order to achieve this you 
+can export the path at login by adding
 ```bash
-export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to/BioCpp/src/
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to-header-files/
 ``` 
 to your `.bashrc` and/or `.bash_profile` file if you are using *bash* or *sh* 
 shell or, alternatively,
 ```bash
 if ( $?CPLUS_INCLUDE_PATH ) then
-  setenv CPLUS_INCLUDE_PATH {$CPLUS_INCLUDE_PATH}:/path-to/BioCpp/src/
+  setenv CPLUS_INCLUDE_PATH {$CPLUS_INCLUDE_PATH}:/path-to-header-files/
 else
-  setenv CPLUS_INCLUDE_PATH /path-to/BioCpp/src/
+  setenv CPLUS_INCLUDE_PATH /path-to-header-files/
 endif
 ```
 to your `.cshrc` file if you are using *tcsh* or *csh*.
+
+
+Finally, in order to use BioCpp in your project simply:
+
++ add the path containing the source code to your `CPLUS_INCLUDE_PATH`. In order 
+to do this you can modify the `C_INC_PATH` flag to point to your 
+`/path-to/biocpp/src/`. Alternatively you can export `/path-to/biocpp/src/` by 
+following the previous instructions.
 
 + import BioCpp header file
 ```c++
@@ -77,16 +81,17 @@ If you use *g++*, simply
 ```bash
 g++ -D DIRECTIVE_NAME ...
 ```  
-(see Makefile provided in the *examples* folder).
+(see CMakeLists.txt provided in the *examples* folder).
 
 ## Warning ##
 
 This is a **developing code**. Newer versions of BioCpp may not be compatible with
 older ones.  
-If you distribute code based on BioCpp, please also provide the version of 
-BioCpp on which it is based.  
+For this reason, if you distribute code based on BioCpp, please also provide 
+the version of BioCpp on which it is based.  
 
 ## Documentation ##
 
 Documentation is available in both [html](http://biocpp.zimlotech.com/html/) and 
-[pdf](http://biocpp.zimlotech.com/pdf/refman.pdf) format.
+[pdf](http://biocpp.zimlotech.com/pdf/refman.pdf) format.  
+**Documentation is not updated!!**
