@@ -31,7 +31,18 @@ if ( NOT Boost_FOUND )
   return()  
 endif()
 
+add_definitions( -msse2 -O2 -Wall -std=c++0x -static )
+
 # Alpha Shape
 project( alpha_shapes )
 add_executable(alpha_shapes alpha_shapes.cpp)
 target_link_libraries(alpha_shapes ${CGAL_LIBRARIES})
+
+# kernel
+project( kernel )
+set_property(
+  SOURCE kernel.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB 
+)
+add_executable(kernel kernel.cpp)
+target_link_libraries(kernel ${CGAL_LIBRARIES})

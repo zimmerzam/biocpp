@@ -55,7 +55,7 @@
 
 /* Include header files for protein morphology */
 #if defined BIOCPP_INCLUDE_MORPHOLOGY || defined BIOCPP_INCLUDE_ALL
-  #include "BioCpp/polimers/morphology/surface_area_lcpo.h"
+  #include "BioCpp/morphology/surface_area_lcpo.h"
 #endif
 
 /* Include header files for reconstructing atom coordinates */
