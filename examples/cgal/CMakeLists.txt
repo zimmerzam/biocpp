@@ -31,7 +31,24 @@ if ( NOT Boost_FOUND )
   return()  
 endif()
 
+add_definitions( -msse2 -O2 -Wall -std=c++0x -static )
+
 # Alpha Shape
 project( alpha_shapes )
 add_executable(alpha_shapes alpha_shapes.cpp)
 target_link_libraries(alpha_shapes ${CGAL_LIBRARIES})
+
+# Alpha Shape
+project( triang3_boost_zip )
+add_executable(triang3_boost_zip triang3_boost_zip.cpp)
+target_link_libraries(triang3_boost_zip ${CGAL_LIBRARIES})
+
+project( protein_surface )
+set_property(
+  SOURCE protein_surface.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_STANDARD
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_CGAL
+)
+add_executable(protein_surface protein_surface.cpp)
+target_link_libraries(protein_surface ${CGAL_LIBRARIES})

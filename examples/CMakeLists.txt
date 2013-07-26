@@ -89,3 +89,10 @@ set_property(
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_STANDARD
 )
 add_executable(C_alpha_variance C_alpha_variance.cpp)
+
+project( print_atom_coordinate )
+set_property(
+  SOURCE print_atom_coordinate.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_STANDARD
+)
+add_executable(print_atom_coordinate print_atom_coordinate.cpp)
