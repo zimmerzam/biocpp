@@ -27,32 +27,34 @@
 #include "pdb_sections_and_records.h"
 
 namespace BioCpp{
+namespace pdb{
 
 /*! \brief A container with all the atoms of a model in the pdb file
 
 		@tparam int is the serial number of the `atom`
-		@tparam pdb_atom_info stores the info relative to a specific atom
+		@tparam atom_info stores the info relative to a specific atom
 */
-typedef base_container<int, pdb_atom_info> pdb_model;
+typedef base_container<int, atom_info> model;
 
 /*! \brief read a buffer of `char` describing a model and get structured informations.
 
 		@param buffer a string containing a pdb model
-		\return a pdb_model containing all the info read from the buffer
+		\return a model containing all the info read from the buffer
 */
-pdb_model read_pdb_model_record( char buffer[] ){
-	std::vector< std::pair<int,pdb_atom_info> > all_info;
+model read_model_record( char buffer[] ){
+	std::vector< std::pair<int,atom_info> > all_info;
 	char* c_line = strtok(buffer, "\n");
 	while(c_line){
 		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
-		if(get_pdb_record(line) == PDB_ATOM){
-			pdb_atom_info info = read_pdb_atom_line(line);
+		if(get_record(line) == ATOM){
+			atom_info info = read_atom_line(line);
 			all_info.push_back( std::make_pair( info.serial, info ) );
 		}
 		c_line = strtok(NULL, "\n");
 	}
-	return pdb_model(all_info);
+	return model(all_info);
 }
 
+} // end namespace
 } //end namespace
 #endif

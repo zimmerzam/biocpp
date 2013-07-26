@@ -1,7 +1,7 @@
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Delaunay_triangulation_3.h>
 #include <CGAL/Alpha_shape_3.h>
-#include <BioCpp/geometry/Eigen/Core>
+#include <Eigen/Core>
 
 #include <fstream>
 #include <list>

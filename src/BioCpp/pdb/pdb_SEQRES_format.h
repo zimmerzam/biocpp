@@ -34,13 +34,15 @@
 #include "pdb_sections_and_records.h"
 #include "../polimers/amino_acid_id.h"
 namespace BioCpp{
+namespace pdb{
+
 /*! \brief Describes a SEQRES record of a pdb file
 		
 		@tparam char the chain id
 		@tparam std::string the FASTA sequence corresponding to the given chain
 		
 		\see [FASTA sequence representation](http://en.wikipedia.org/wiki/FASTA_format) */
-typedef std::map< char, std::string > pdb_seqres_record;
+typedef std::map< char, std::string > seqres_record;
 
 /*! \brief Print a SEQRES record
 		
@@ -48,7 +50,7 @@ typedef std::map< char, std::string > pdb_seqres_record;
 		@param out the output stream (i.e. `std::cout`)
 		@param chainId the chain identifier
 		@param sequence the FASTA sequence */
-std::ostream& print_pdb_seqres_record( std::ostream& out, char chainId, std::string sequence){
+std::ostream& print_seqres_record( std::ostream& out, char chainId, std::string sequence){
 	int numRes = sequence.size();
 	int line = numRes/13+1;
 	for(int serNum = 0; serNum < line; ++serNum){
@@ -78,30 +80,30 @@ std::ostream& print_pdb_seqres_record( std::ostream& out, char chainId, std::str
 /*! \brief Print a SEQRES record 
 		
 		@param out the output stream (i.e. `std::cout`)
-		@param seqres a pdb_seqres_record (i.e. BioCpp::pdb.TseqRes)
-		\see print_pdb_seqres_record( std::ostream&, char, std::string), pdb
+		@param seqres a seqres_record (i.e. BioCpp::pdb.TseqRes)
+		\see print_seqres_record( std::ostream&, char, std::string), pdb
 */
-std::ostream& print_pdb_seqres_record( std::ostream& out, const pdb_seqres_record& seqres){
-	for(pdb_seqres_record::const_iterator seq=seqres.begin(); seq!=seqres.end(); ++seq){
-		BioCpp::print_pdb_seqres_record(out, seq->first, seq->second);
+std::ostream& print_seqres_record( std::ostream& out, const seqres_record& seqres){
+	for(seqres_record::const_iterator seq=seqres.begin(); seq!=seqres.end(); ++seq){
+		print_seqres_record(out, seq->first, seq->second);
 	}
 	return out;
 }
 
 /*! \brief Read a SEQRES record from a buffer
 		
-		\return a pdb_seqres_record object
+		\return a seqres_record object
 		@param buffer a buffer containing a pdb SEQRES record
 */
-pdb_seqres_record read_pdb_seqres_record( char buffer[] ){
-	pdb_seqres_record record;
+seqres_record read_seqres_record( char buffer[] ){
+	seqres_record record;
 	char* c_line = strtok(buffer, "\n");
 	while(c_line){
 		std::string line(c_line, std::find(c_line, c_line + 80, '\0'));
 		
 		char chain_id;
 		std::string s_res = "   ";
-		if(get_pdb_record(line) == PDB_SEQRES){
+		if(get_record(line) == SEQRES){
 			chain_id = isdigit( line.substr(11, 1).c_str()[0] ) ? char( 'A'+atoi(line.substr(11, 1).c_str()) ) : line.substr(11, 1).c_str()[0];
 			chain_id = (chain_id==' ') ? 'A' : chain_id;
 			for(int col = 19; col < 70; col+=4){
@@ -127,13 +129,13 @@ pdb_seqres_record read_pdb_seqres_record( char buffer[] ){
 
 /*! \brief Read a SEQRES record from a FASTA string 
 		
-		\return a pdb_seqres_record object
+		\return a seqres_record object
 		@param fasta a string containing info about the sequences. Chain identifier has to be
 		">chain_id_1", i.e. ">A"
 */
-pdb_seqres_record read_fasta(std::string& fasta){
+seqres_record read_fasta(std::string& fasta){
   fasta.erase(std::remove_if(fasta.begin(), fasta.end(), [](char ch){if( std::isalpha(ch) or ch=='>' or ch=='-'  ) return false; return true;}), fasta.end());
-	pdb_seqres_record record;
+	seqres_record record;
 	unsigned int i = 0;
 	while(fasta[i]!='>' or not std::isalpha(fasta[i+1]) ){
 		++i;
@@ -151,14 +153,16 @@ pdb_seqres_record read_fasta(std::string& fasta){
 	return record;
 }
 
-std::string print_fasta(pdb_seqres_record& seqres){
+std::string print_fasta(seqres_record& seqres){
   std::string fasta = "";
-  for(pdb_seqres_record::iterator ch = seqres.begin(); ch!= seqres.end(); ++ch){
+  for(seqres_record::iterator ch = seqres.begin(); ch!= seqres.end(); ++ch){
     fasta+=">";
     fasta+=ch->first;
     fasta+=ch->second;
   }
   return fasta;
 }
+
+} // end namespace
 } // end namespace
 #endif

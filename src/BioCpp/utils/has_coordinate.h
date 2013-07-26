@@ -19,8 +19,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../geometry/Eigen/Core"
-
+#include <Eigen/Core>
 
 /*! 
     \brief Check if a class has a coordinate property.

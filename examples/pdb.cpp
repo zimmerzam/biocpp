@@ -13,13 +13,13 @@
 int main( int argc, char* argv[] ){
   const char* filename = argc>1 ? argv[1] : "2RNM.pdb"; // if a pdb is passed, read that. else read an example pdb
   
-  BioCpp::pdb PDB(filename, 0); // read the pdb file. 
+  BioCpp::pdb::pdb PDB(filename, 0); // read the pdb file. 
   std::cout << filename << std::endl;
   std::cout << "# models: " << PDB.n_models << std::endl;  // number of models
   std::cout << "# chains: " << PDB.RseqRes.size() << std::endl; // chains per model
   std::cout << "**********" << std::endl;
   std::cout << "id  size" << std::endl;
-  for( BioCpp::pdb_seqres_record::iterator ch = PDB.RseqRes.begin(); ch != PDB.RseqRes.end(); ++ch ){
+  for( BioCpp::pdb::seqres_record::iterator ch = PDB.RseqRes.begin(); ch != PDB.RseqRes.end(); ++ch ){
     std::cout << ch->first << "    " << ch->second.size() << std::endl; // chain_id and chain size
   }
   std::cout << "**********" << std::endl;

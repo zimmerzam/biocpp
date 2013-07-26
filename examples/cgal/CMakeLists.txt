@@ -52,3 +52,12 @@ set_property(
 )
 add_executable(protein_surface protein_surface.cpp)
 target_link_libraries(protein_surface ${CGAL_LIBRARIES})
+
+# kernel
+project( kernel )
+set_property(
+  SOURCE kernel.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB 
+)
+add_executable(kernel kernel.cpp)
+target_link_libraries(kernel ${CGAL_LIBRARIES})

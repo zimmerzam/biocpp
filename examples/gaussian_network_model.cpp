@@ -6,7 +6,7 @@
 #include <iostream>
 #include <map>
 #include <getopt.h>
-#include <BioCpp/geometry/Eigen/Dense>
+#include <Eigen/Dense>
 
 typedef std::map<char, std::pair<int, int> > contact_info;
 
