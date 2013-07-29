@@ -98,7 +98,8 @@ class pdb{
         \note This can be useful for structure alignment and/or other operations that do not involve structural informations (residues, sequence, ..)
         but are atom-based.
     */
-    model getModel(int mdl);
+    template<typename atom_t>
+    typename model<atom_t>::type getModel(int mdl);
 };
 
 pdb::pdb(const char* pdb_name, int init_flag = (INIT_FAST|INIT_FIRST_MODEL) ){
@@ -162,7 +163,7 @@ pdb::pdb(const char* pdb_name, int init_flag = (INIT_FAST|INIT_FIRST_MODEL) ){
         seqres_end = prev_pos;
       /* read RseqRes if required */
       if( first_model and not (init_flag&INIT_FAST) ){
-        atom_info atm=read_atom_line(line);
+        atom_info atm=read_atom_line<atom_info>(line);
         if(atm.chainId!=prev_chain){
           prev_chain=atm.chainId;
           prev_c=Eigen::Vector3d(DBL_MAX,DBL_MAX,DBL_MAX); 
@@ -221,15 +222,16 @@ pdb::pdb(const char* pdb_name, int init_flag = (INIT_FAST|INIT_FIRST_MODEL) ){
   }
 }
 
-model pdb::getModel(int mdl){
+template <typename atom_t>
+typename model<atom_t>::type pdb::getModel(int mdl){
   if(mdl>n_models){
-    model record;
+    typename model<atom_t>::type record;
     return record;
   }
   int length = model_end_pos[mdl] - model_beg_pos[mdl];
   char mdl_buf[ length + 1 ];
   std::memcpy(mdl_buf, buffer + model_beg_pos[mdl], length);
-  return read_model_record( mdl_buf );
+  return read_model_record<atom_t>( mdl_buf );
 }
 
 } // end namespace

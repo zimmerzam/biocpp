@@ -51,13 +51,13 @@ set_property(
 )
 add_executable(dpss dpss.cpp)
 
-project( surface_area )
+project( surface_area_lcpo )
 set_property(
-  SOURCE surface_area.cpp
+  SOURCE surface_area_lcpo.cpp
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_MORPHOLOGY
 )
-add_executable(surface_area surface_area.cpp)
+add_executable(surface_area_lcpo surface_area_lcpo.cpp)
 
 project( contact_map )
 set_property(

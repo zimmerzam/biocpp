@@ -5,7 +5,7 @@
 
 namespace BioCpp{
 namespace morphology{
-namespace kernel{
+namespace cgal_extensible_kernel{
 
 //TODO check it point_t has coordinate
 template <typename point_t>

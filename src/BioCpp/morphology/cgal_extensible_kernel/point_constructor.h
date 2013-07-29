@@ -5,7 +5,7 @@
 
 namespace BioCpp{
 namespace morphology{
-namespace kernel{
+namespace cgal_extensible_kernel{
 
 template <typename point_t, typename K, typename OldK>
 class point_constructor{

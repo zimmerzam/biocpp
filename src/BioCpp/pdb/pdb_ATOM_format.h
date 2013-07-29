@@ -42,16 +42,16 @@ namespace pdb{
 */
 struct atom_info{
   int serial;                     /*!< serial (progressive) number */
- 	atom::id id;                     /*!< atom identifier (CA, CB, ...) */
+ 	atom::id id;                    /*!< atom identifier (CA, CB, ...) */
  	char altLoc;                    /*!< alternative location */
- 	amino_acid::id resName;          /*!< residue name */
+ 	amino_acid::id resName;         /*!< residue name */
  	char chainId;                   /*!< chain identifier */
  	int resSeq;                     /*!< residue number */
  	char iCode;                     /*!< code for insertion of residues */
  	Eigen::Vector3d coordinate;     /*!< coordinate */
  	double occupancy;               /*!< occupancy */
  	double tempFactor;              /*!< temperature factor */
- 	element::id element;             /*!< element type (carbon, oxygen, ...) */
+ 	element::id element;            /*!< element type (carbon, oxygen, ...) */
  	double charge;                  /*!< charge */
 };
 
@@ -60,8 +60,9 @@ struct atom_info{
 		\return a atom_info containing all informations from the ATOM line
 		@param line the ATOM line
 */
-atom_info read_atom_line(std::string& line){
-	atom_info info;
+template <typename atom_t>
+atom_t read_atom_line(std::string& line){
+	atom_t info;
 	if(get_record(line) == ATOM){
 	  info.serial = atoi(line.substr(6, 5).c_str()); 
   	info.id = atom::string_to_id[line.substr(12, 4)];
@@ -163,8 +164,9 @@ struct print_atom_line{
 	  out << std::endl;
 	  return out;
   };
-
-  std::ostream& operator()( atom_info& info){
+  
+  template <typename atom_t>
+  std::ostream& operator()( atom_t& info){
 	  return (*this)( info.serial, info.id, info.altLoc, 
 									  info.resName, info.chainId, info.resSeq, 
 									  info.iCode, info.coordinate, info.occupancy, 

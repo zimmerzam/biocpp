@@ -27,7 +27,7 @@ struct print_sec{
 int main(){
   BioCpp::pdb::pdb PDB("2RNM.pdb");		// read a pdb file
 
-  BioCpp::pdb::model all_info = PDB.getModel(1); // get the first model
+  BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(1); // get the first model
   BioCpp::standard::complex cmp(all_info, PDB.TseqRes, PDB.TseqRes); // build a complex
   
   print_sec print; // initialize the print_sec functor

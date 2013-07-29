@@ -56,7 +56,7 @@ int main(int argc, char* argv[]){
 	alphaVariance variance;
   BioCpp::pdb::pdb PDB(pdbfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
-    BioCpp::pdb::model all_info = PDB.getModel(mdl);
+    BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(mdl);
     BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
     BioCpp::Iterate< BioCpp::standard::residue >(cmp, variance);
   }

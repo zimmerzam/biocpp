@@ -10,7 +10,7 @@
 
 namespace BioCpp{
 namespace morphology{
-namespace kernel{
+namespace cgal_extensible_kernel{
 
 template < typename point_t, typename K_, typename K_Base >
 class cartesian : public K_Base::template Base<K_>::Type {

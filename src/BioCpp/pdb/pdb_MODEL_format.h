@@ -34,25 +34,30 @@ namespace pdb{
 		@tparam int is the serial number of the `atom`
 		@tparam atom_info stores the info relative to a specific atom
 */
-typedef base_container<int, atom_info> model;
+template <typename atom_t>
+class model{
+  public:
+    typedef base_container<int, atom_t> type;
+};
 
 /*! \brief read a buffer of `char` describing a model and get structured informations.
 
 		@param buffer a string containing a pdb model
 		\return a model containing all the info read from the buffer
-*/
-model read_model_record( char buffer[] ){
-	std::vector< std::pair<int,atom_info> > all_info;
+*/  
+template <typename atom_t>
+typename model<atom_t>::type read_model_record( char buffer[] ){
+	std::vector< std::pair<int,atom_t> > all_info;
 	char* c_line = strtok(buffer, "\n");
 	while(c_line){
 		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
 		if(get_record(line) == ATOM){
-			atom_info info = read_atom_line(line);
+			atom_t info = read_atom_line<atom_t>(line);
 			all_info.push_back( std::make_pair( info.serial, info ) );
 		}
 		c_line = strtok(NULL, "\n");
 	}
-	return model(all_info);
+	return typename model<atom_t>::type(all_info);
 }
 
 } // end namespace

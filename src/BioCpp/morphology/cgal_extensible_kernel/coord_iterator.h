@@ -5,7 +5,7 @@
 
 namespace BioCpp{
 namespace morphology{
-namespace kernel{
+namespace cgal_extensible_kernel{
 
 class coord_iterator {
 public:

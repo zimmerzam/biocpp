@@ -7,7 +7,7 @@
 
 namespace BioCpp{
 namespace morphology{
-namespace kernel{
+namespace cgal_extensible_kernel{
 
 template <typename ConstructBbox>
 class bbox : public ConstructBbox {

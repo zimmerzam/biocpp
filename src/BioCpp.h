@@ -59,7 +59,7 @@
   #define BIOCPP_INCLUDE_CGAL
 #endif
 #if defined BIOCPP_INCLUDE_CGAL
-  #include "BioCpp/morphology/alpha_exposed.h"
+  #include "BioCpp/morphology/cgal_extensible_kernel.h"
 #endif
 
 /* Include header files for reconstructing atom coordinates */

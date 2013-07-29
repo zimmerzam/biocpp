@@ -253,7 +253,7 @@ int main(int argc, char* argv[]){
   }
   
   BioCpp::pdb::pdb PDB(pdbfilename, BioCpp::pdb::INIT_COMPLETE);
-  BioCpp::pdb::model all_info = PDB.getModel(1);
+  BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(1);
   unsigned int n_res = 0;
   unsigned int n_ch_in_s = 0;
   unsigned int n_ch_in_pdb = 0;
