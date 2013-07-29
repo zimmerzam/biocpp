@@ -35,21 +35,56 @@ namespace standard{
     Each atom is identified by an atom::id
 */
 typedef BioCpp::base_container<BioCpp::atom::id, BioCpp::pdb::atom_info, BioCpp::amino_acid::id> residue;
+
 /*! \brief A standard chain 
 
     Each residue is identified by an int (usually its seqRes)
 */
 typedef BioCpp::base_container<int, residue, char> chain;
+
 /*! \brief A standard complex
 
     Each chain is identified by a char (usually its chainId)
 */
 typedef BioCpp::base_container<char, chain, std::string> complex;
+
+/*! \brief A standard pdb::model
+
+*/
+typedef BioCpp::pdb::model<BioCpp::pdb::atom_info>::type model;
+
 /*! \brief A standard H_bridge_map */
 typedef BioCpp::base_h_bridge_map<chain::iterator> h_bridge_map;
+}
+}
 
-}
-}
+#if defined BIOCPP_INCLUDE_CGAL
+  #include <CGAL/basic.h>
+  #include <CGAL/Filtered_kernel.h>
+  #include <CGAL/Delaunay_triangulation_3.h>
+  #include <CGAL/Alpha_shape_3.h>
+  namespace BioCpp{
+  namespace standard{
+  namespace morphology{
+    typedef BioCpp::morphology::cgal_extensible_kernel::point<BioCpp::pdb::atom_info>           atom;
+    typedef BioCpp::pdb::model<atom>::type                                                      model;
+    typedef BioCpp::morphology::cgal_extensible_kernel::kernel<BioCpp::pdb::atom_info, double>  extKernel;
+    typedef CGAL::Filtered_kernel_adaptor<extKernel>                              kernel;
+    typedef CGAL::Alpha_shape_vertex_base_3<kernel>                               vertex_base;
+    typedef CGAL::Alpha_shape_cell_base_3<kernel>                                 cell_base;
+    typedef CGAL::Triangulation_data_structure_3<vertex_base,cell_base>           triangulation_data_structure;
+    typedef CGAL::Delaunay_triangulation_3<kernel, triangulation_data_structure>  triangulation_3;
+    typedef CGAL::Alpha_shape_3<triangulation_3>                                  alpha_shape_3;
+  }
+  }
+  }
+#endif
+
+
+/********************************************************************/
+/*********** Classes and function specializations go here ***********/
+/*********** \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ ***********/
+/********************************************************************/
 
 /*!	\brief Simple constructor from a pdb::model
     
