@@ -3,5 +3,5 @@
 !*.cpp
 !CMakeLists.txt
 !python*
-!cgal
+!cgal_support
 !substitution_matrix_csv
