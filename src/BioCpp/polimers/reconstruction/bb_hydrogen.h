@@ -22,7 +22,7 @@
 #ifndef BACKBONE_HYDROGEN_RECONSTRUCTION_H
 #define BACKBONE_HYDROGEN_RECONSTRUCTION_H
 
-#include "../../geometry/Eigen/Core"
+#include <Eigen/Core>
 
 namespace BioCpp{
 /*! \brief Estimates the position of the hydrogen backbone atom.

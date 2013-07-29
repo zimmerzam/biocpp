@@ -22,7 +22,7 @@
 #ifndef BETA_CARBON_RECONSTRUCTION_H
 #define BETA_CARBOM_RECONSTRUCTION_H
 
-#include "../geometry.h"
+#include <Eigen/Core>
 
 namespace BioCpp{
 /*! \brief Estimates the position of the beta_carbon atom.

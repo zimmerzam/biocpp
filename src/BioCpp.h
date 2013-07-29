@@ -56,7 +56,9 @@
 /* Include header files for protein morphology */
 #if defined BIOCPP_INCLUDE_MORPHOLOGY || defined BIOCPP_INCLUDE_ALL
   #include "BioCpp/morphology/surface_area_lcpo.h"
-  #define BIOCPP_INCLUDE_CGAL
+  #if not defined BIOCPP_DONT_INCLUDE_CGAL
+    #define BIOCPP_INCLUDE_CGAL
+  #endif
 #endif
 #if defined BIOCPP_INCLUDE_CGAL
   #include "BioCpp/morphology/cgal_extensible_kernel.h"
