@@ -30,30 +30,10 @@
 namespace BioCpp{
 namespace standard{
 
-/*! \brief A standard residue 
-
-    Each atom is identified by an atom::id
-*/
 typedef BioCpp::base_container<BioCpp::atom::id, BioCpp::pdb::atom_info, BioCpp::amino_acid::id> residue;
-
-/*! \brief A standard chain 
-
-    Each residue is identified by an int (usually its seqRes)
-*/
 typedef BioCpp::base_container<int, residue, char> chain;
-
-/*! \brief A standard complex
-
-    Each chain is identified by a char (usually its chainId)
-*/
 typedef BioCpp::base_container<char, chain, std::string> complex;
-
-/*! \brief A standard pdb::model
-
-*/
 typedef BioCpp::pdb::model<BioCpp::pdb::atom_info>::type model;
-
-/*! \brief A standard H_bridge_map */
 typedef BioCpp::base_h_bridge_map<chain::iterator> h_bridge_map;
 }
 }
