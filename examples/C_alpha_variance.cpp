@@ -1,13 +1,14 @@
 #include <map>
+#include <list>
 #include <getopt.h>
 #include <BioCpp.h>
 
 typedef std::pair<char, int> residue;
 
 struct alphaVariance{
-	std::map<residue, std::vector< Eigen::Vector3d > > data;
+	std::map<residue, std::list< Eigen::Vector3d > > data;
 	
-	void operator()(BioCpp::standard::residue& res){
+	void operator()(BioCpp::standard::base::residue& res){
 		if( not res.exists(BioCpp::atom::id::CA) ){
 			return;
 		}
@@ -20,17 +21,17 @@ struct alphaVariance{
 	}
 	
 	void compute_and_print(){
-		for( std::map<residue, std::vector< Eigen::Vector3d > >::iterator r = data.begin(); r != data.end(); ++r ){
+		for( std::map<residue, std::list< Eigen::Vector3d > >::iterator r = data.begin(); r != data.end(); ++r ){
 			Eigen::Vector3d mean = Eigen::Vector3d::Zero();
-			for( std::vector< Eigen::Vector3d >::iterator c = r->second.begin(); c != r->second.end(); ++c ){
+			for( std::list< Eigen::Vector3d >::iterator c = r->second.begin(); c != r->second.end(); ++c ){
 				mean += (*c);
 			}
 			mean /= r->second.size();
 			double var = 0;
-			for( std::vector< Eigen::Vector3d >::iterator c = r->second.begin(); c != r->second.end(); ++c ){
+			for( std::list< Eigen::Vector3d >::iterator c = r->second.begin(); c != r->second.end(); ++c ){
 				var += ( (*c) - mean ).norm() * ( (*c) - mean ).norm()/( r->second.size()-1 );
 			}
-			std::cout << var << "  " << r->second.size() << std::endl;
+			std::cout << r->first.first << r->first.second << "  " << var << std::endl;
 		}
 	}
 };
@@ -56,9 +57,11 @@ int main(int argc, char* argv[]){
 	alphaVariance variance;
   BioCpp::pdb::pdb PDB(pdbfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
-    BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(mdl);
-    BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
-    BioCpp::Iterate< BioCpp::standard::residue >(cmp, variance);
+    std::cout << "Now processing model " << mdl << "/" << PDB.n_models << std::endl;
+    BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(mdl);
+    BioCpp::standard::base::complex_constructor cmp_constr;
+    BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
+    BioCpp::Iterate< BioCpp::standard::base::residue >(cmp, variance);
   }
 	variance.compute_and_print();
 	

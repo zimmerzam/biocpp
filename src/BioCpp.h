@@ -34,23 +34,24 @@
 #ifndef BIOCPP_H
 #define BIOCPP_H
 
+#include "BioCpp/base_container/base_container.h"
+#include "BioCpp/base_container/is_container_of.h"
+#include "BioCpp/base_container/Iterate_single.h"
+#include "BioCpp/base_container/Iterate_pair.h"
+#include "BioCpp/base_atom/base_atom.h"
+
 /* include atom,element,... identifiers */
 #if defined BIOCPP_INCLUDE_ID || defined BIOCPP_INCLUDE_ALL
-  #include "BioCpp/polimers/element_id.h"
-  #include "BioCpp/polimers/atom_id.h"
-  #include "BioCpp/polimers/amino_acid_id.h"
-  #include "BioCpp/polimers/moiety_id.h"
+  #include "BioCpp/standard/ids/element_id.h"
+  #include "BioCpp/standard/ids/atom_id.h"
+  #include "BioCpp/standard/ids/amino_acid_id.h"
+  #include "BioCpp/standard/ids/moiety_id.h"
 #endif
-
-#include "BioCpp/polimers/base_container.h"
-#include "BioCpp/polimers/is_container_of.h"
-#include "BioCpp/polimers/Iterate_single.h"
-#include "BioCpp/polimers/Iterate_pair.h"
 
 /* Include dssp definitions */
 #if defined BIOCPP_INCLUDE_DPSS || defined BIOCPP_INCLUDE_ALL
-  #include "BioCpp/polimers/dpss/dpss_id.h"
-  #include "BioCpp/polimers/dpss/h_bridge_energy.h"
+  #include "BioCpp/polimers/proteins/dpss/dpss_id.h"
+  #include "BioCpp/polimers/proteins/dpss/h_bridge_energy.h"
 #endif
 
 /* Include header files for protein morphology */
@@ -67,7 +68,7 @@
 
 /* Include header files for reconstructing atom coordinates */
 #if defined BIOCPP_INCLUDE_RECONSTRUCTION || defined BIOCPP_INCLUDE_ALL
-  #include "BioCpp/polimers/reconstruction/bb_hydrogen.h"
+  #include "BioCpp/polimers/proteins/reconstruction/bb_hydrogen.h"
 #endif
 
 /* Include header files for reading/writing files in pdb format */

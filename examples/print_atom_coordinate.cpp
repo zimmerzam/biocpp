@@ -12,7 +12,7 @@
 #include <BioCpp.h>
 
 struct print_coordinate{
-  void operator()(BioCpp::pdb::atom_info& atom){
+  void operator()(BioCpp::standard::base::atom& atom){
     if(atom.element==BioCpp::element::id::H){
       return;
     }
@@ -27,7 +27,7 @@ struct count_atoms{
   count_atoms(){
     atoms = 0;
   }
-  void operator()(BioCpp::pdb::atom_info& atom){
+  void operator()(BioCpp::standard::base::atom& atom){
     if(atom.element==BioCpp::element::id::H){
       return;
     }
@@ -39,12 +39,13 @@ int main( int argc, char* argv[] ){
   const char* filename = argc>1 ? argv[1] : "2RNM.pdb"; // if a pdb is passed, read that. else read an example pdb
   
   BioCpp::pdb::pdb PDB(filename, 0); // read the pdb file. 
-  BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(1);
-  BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
+  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1);
+  BioCpp::standard::base::complex_constructor cmp_constr;
+  BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
   count_atoms count;
-  BioCpp::Iterate<BioCpp::pdb::atom_info>(cmp,count);
+  BioCpp::Iterate<BioCpp::standard::base::atom>(cmp,count);
   std::cout << count.atoms << std::endl;
   print_coordinate printer;
-  BioCpp::Iterate<BioCpp::pdb::atom_info>(cmp,printer);
+  BioCpp::Iterate<BioCpp::standard::base::atom>(cmp,printer);
  return 0;
 }

@@ -19,36 +19,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PDB_MODEL_FORMAT_H
-#define PDB_MODEL_FORMAT_H
+#ifndef ATOM_H
+#define ATOM_H
 
-#include "model.h"
-#include "pdb_ATOM_format.h"
-#include "pdb_sections_and_records.h"
+#include <Eigen/Core>
+#include <BioCpp/standard/ids/amino_acid_id.h>
+#include <BioCpp/standard/ids/atom_id.h>
+#include <BioCpp/standard/ids/element_id.h>
+
 
 namespace BioCpp{
-namespace pdb{
 
-/*! \brief read a buffer of `char` describing a model and get structured informations.
+/*! \brief ATOM line in pdb file
 
-		@param buffer a string containing a pdb model
-		\return a model containing all the info read from the buffer
-*/  
-template <typename atom_t>
-typename model<atom_t>::type read_model_record( char buffer[] ){
-	std::vector< std::pair<int,atom_t> > all_info;
-	char* c_line = strtok(buffer, "\n");
-	while(c_line){
-		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
-		if(get_record(line) == ATOM){
-			atom_t info = read_atom_line<atom_t>(line);
-			all_info.push_back( std::make_pair( info.serial, info ) );
-		}
-		c_line = strtok(NULL, "\n");
-	}
-	return typename model<atom_t>::type(all_info);
+		According to [pdb specification 3.3 for ATOM record ](http://www.wwpdb.org/documentation/format33/sect9.html#ATOM ) 
+*/
+class base_atom{
+  public:
+    int serial;                     /*!< serial (progressive) number */
+ 	  atom::id id;                    /*!< atom identifier (CA, CB, ...) */
+ 	  char altLoc;                    /*!< alternative location */
+ 	  amino_acid::id resName;         /*!< residue name */
+ 	  char chainId;                   /*!< chain identifier */
+ 	  int resSeq;                     /*!< residue number */
+ 	  char iCode;                     /*!< code for insertion of residues */
+ 	  Eigen::Vector3d coordinate;     /*!< coordinate */
+ 	  double occupancy;               /*!< occupancy */
+ 	  double tempFactor;              /*!< temperature factor */
+ 	  element::id element;            /*!< element type (carbon, oxygen, ...) */
+ 	  double charge;                  /*!< charge */
+};
+
 }
 
-} // end namespace
-} //end namespace
 #endif

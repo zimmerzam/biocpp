@@ -19,36 +19,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PDB_MODEL_FORMAT_H
-#define PDB_MODEL_FORMAT_H
+#ifndef BIOCPP_DPSS_H_BRIDGE_MAP
+#define BIOCPP_DPSS_H_BRIDGE_MAP
 
-#include "model.h"
-#include "pdb_ATOM_format.h"
-#include "pdb_sections_and_records.h"
+#include <BioCpp/base_contact_map/binary_contact_map.h>
 
 namespace BioCpp{
-namespace pdb{
+namespace dpss{
 
-/*! \brief read a buffer of `char` describing a model and get structured informations.
+template <typename T>
+class base_h_bridge_map{
+  public:
+    typedef typename binary_contact_map<T>::type type;
+};
 
-		@param buffer a string containing a pdb model
-		\return a model containing all the info read from the buffer
-*/  
-template <typename atom_t>
-typename model<atom_t>::type read_model_record( char buffer[] ){
-	std::vector< std::pair<int,atom_t> > all_info;
-	char* c_line = strtok(buffer, "\n");
-	while(c_line){
-		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
-		if(get_record(line) == ATOM){
-			atom_t info = read_atom_line<atom_t>(line);
-			all_info.push_back( std::make_pair( info.serial, info ) );
-		}
-		c_line = strtok(NULL, "\n");
-	}
-	return typename model<atom_t>::type(all_info);
-}
-
-} // end namespace
-} //end namespace
+} // end dpss
+} // end BioCpp
 #endif

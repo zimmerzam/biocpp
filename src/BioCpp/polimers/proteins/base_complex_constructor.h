@@ -19,36 +19,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PDB_MODEL_FORMAT_H
-#define PDB_MODEL_FORMAT_H
+#ifndef COMPLEX_CONSTRUCTOR_H
+#define COMPLEX_CONSTRUCTOR_H
 
-#include "model.h"
-#include "pdb_ATOM_format.h"
-#include "pdb_sections_and_records.h"
+#include <BioCpp/base_container/base_container.h>
+#include <BioCpp/pdb/pdb.h>
 
 namespace BioCpp{
-namespace pdb{
 
-/*! \brief read a buffer of `char` describing a model and get structured informations.
+template< typename atom_t, 
+          typename res_child_id, typename res_id,
+          typename cha_child_id, typename cha_id,
+          typename cmp_child_id, typename cmp_id
+        >
+class base_complex_constructor{
+  private:
+    typedef base_container<res_child_id, atom_t, res_id> residue_t;
+    typedef base_container<cha_child_id, residue_t, cha_id> chain_t;
+  public:
+    typedef base_container<cmp_child_id, chain_t, cmp_id> complex_type;
+  
+    complex_type operator()( typename pdb::model<atom_t>::type info, pdb::seqres_record& RseqRes );
+    complex_type operator()( typename pdb::model<atom_t>::type info, pdb::seqres_record& RseqRes, pdb::seqres_record& TseqRes );
+};
 
-		@param buffer a string containing a pdb model
-		\return a model containing all the info read from the buffer
-*/  
-template <typename atom_t>
-typename model<atom_t>::type read_model_record( char buffer[] ){
-	std::vector< std::pair<int,atom_t> > all_info;
-	char* c_line = strtok(buffer, "\n");
-	while(c_line){
-		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
-		if(get_record(line) == ATOM){
-			atom_t info = read_atom_line<atom_t>(line);
-			all_info.push_back( std::make_pair( info.serial, info ) );
-		}
-		c_line = strtok(NULL, "\n");
-	}
-	return typename model<atom_t>::type(all_info);
 }
-
-} // end namespace
-} //end namespace
 #endif

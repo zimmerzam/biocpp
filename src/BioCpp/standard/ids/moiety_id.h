@@ -25,8 +25,8 @@
 #include <map>
 #include <list>
 #include <string>
-#include <BioCpp/polimers/atom_id.h>
-#include <BioCpp/polimers/amino_acid_id.h>
+#include "atom_id.h"
+#include "amino_acid_id.h"
 
 namespace BioCpp{
 namespace moiety{

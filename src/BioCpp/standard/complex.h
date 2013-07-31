@@ -19,36 +19,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PDB_MODEL_FORMAT_H
-#define PDB_MODEL_FORMAT_H
+#ifndef STANDARD_COMPLEX_H
+#define STANDARD_COMPLEX_H
 
-#include "model.h"
-#include "pdb_ATOM_format.h"
-#include "pdb_sections_and_records.h"
+#include <string>
+#include <BioCpp/base_container/base_container.h>
+#include "chain.h"
 
 namespace BioCpp{
-namespace pdb{
+namespace standard{
 
-/*! \brief read a buffer of `char` describing a model and get structured informations.
-
-		@param buffer a string containing a pdb model
-		\return a model containing all the info read from the buffer
-*/  
 template <typename atom_t>
-typename model<atom_t>::type read_model_record( char buffer[] ){
-	std::vector< std::pair<int,atom_t> > all_info;
-	char* c_line = strtok(buffer, "\n");
-	while(c_line){
-		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
-		if(get_record(line) == ATOM){
-			atom_t info = read_atom_line<atom_t>(line);
-			all_info.push_back( std::make_pair( info.serial, info ) );
-		}
-		c_line = strtok(NULL, "\n");
-	}
-	return typename model<atom_t>::type(all_info);
+class complex{
+  public:
+    typedef base_container<char, typename chain<atom_t>::type, std::string> type;
+};
+
+}
 }
 
-} // end namespace
-} //end namespace
 #endif

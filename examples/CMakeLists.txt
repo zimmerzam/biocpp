@@ -56,6 +56,7 @@ set_property(
   SOURCE surface_area_lcpo.cpp
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_MORPHOLOGY
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_DONT_INCLUDE_CGAL
 )
 add_executable(surface_area_lcpo surface_area_lcpo.cpp)
 
@@ -96,3 +97,20 @@ set_property(
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_STANDARD
 )
 add_executable(print_atom_coordinate print_atom_coordinate.cpp)
+
+project( complex_constructor )
+set_property(
+  SOURCE complex_constructor.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_STANDARD
+)
+add_executable(complex_constructor complex_constructor.cpp)
+
+project( has_coordinate )
+add_executable(has_coordinate has_coordinate.cpp)
+
+project( restyle )
+set_property(
+  SOURCE restyle.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_ALL  
+)
+add_executable(restyle restyle.cpp)

@@ -19,45 +19,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BASE_H_BRIDGE_MAP_H
-#define BASE_H_BRIDGE_MAP_H
+#ifndef BIOCPP_STANDARD_DPSS_H_BRIDGE_MAP
+#define BIOCPP_STANDARD_DPSS_H_BRIDGE_MAP
 
-#include <map>
+#include <BioCpp/standard/base/chain.h>
+#include <BioCpp/polimers/proteins/dpss/base_h_bridge_map.h>
 
 namespace BioCpp{
+namespace standard{
+namespace base{
+namespace dpss{
 
-/*! \brief Describes the H-bridge network
-		
-		This simple `struct` can be used in order to store all the H-bridges of
-		a particular system.
-		@tparam T usually is the resSeq (`int`) of a residue, or an `iterator`.  
-*/
-template <typename T>
-class base_h_bridge_map{
-		typedef std::map< std::pair< T, T >, bool > bridge_map;
-	private:
-		bridge_map h_bridge;
-	public:
-	  /*! \brief Void constructor */
-		base_h_bridge_map(){};
-		/*! \brief Generic constructor, to be specialized */
-		template <typename structure>
-		base_h_bridge_map(structure& cmp);
-		
-		/*! \brief iterators */
-		typedef typename bridge_map::iterator iterator; /*!< Iterator over the children */
-		typedef typename bridge_map::const_iterator const_iterator; /*!< Const iterator over the children */
-		typedef typename bridge_map::reverse_iterator reverse_iterator; /*!< Reverse iterator */
-		
-		iterator begin(){return h_bridge.begin();}; /*!< Iterator to the first child */
-		iterator end(){return h_bridge.end();}; /*!< \note This is not the last child item */
-		reverse_iterator rbegin(){return h_bridge.rbegin();}; /*!< Iterator to the last child */
-		reverse_iterator rend(){return h_bridge.rend();} /*!< \note This is not the first child */
-		
-		/*! \brief Get an element */
-		bool& operator[]( std::pair< T, T > key ){return h_bridge[key];}
-};
+typedef typename BioCpp::dpss::base_h_bridge_map<BioCpp::standard::base::chain::iterator>::type h_bridge_map;
 
-} // end namespace
-
+}
+}
+}
+}
 #endif

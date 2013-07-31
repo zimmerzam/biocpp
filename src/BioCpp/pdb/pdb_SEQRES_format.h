@@ -32,7 +32,7 @@
 #include <ctype.h>
 
 #include "pdb_sections_and_records.h"
-#include "../polimers/amino_acid_id.h"
+#include "../standard/ids/amino_acid_id.h"
 namespace BioCpp{
 namespace pdb{
 

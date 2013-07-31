@@ -25,8 +25,6 @@
 #include <map>
 #include <cstring>
 
-#include "../utils/list_of_type.h"
-
 namespace BioCpp{
 namespace atom{
 

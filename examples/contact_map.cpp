@@ -21,8 +21,8 @@ struct contact_map{
   
   typedef std::map<double, int> contact_probability;
   
-  void operator()( BioCpp::standard::residue& res1, BioCpp::standard::residue& res2 ){
-    for( BioCpp::standard::residue::iterator r1 = res1.begin(); r1 !=res1.end(); ++r1 ){
+  void operator()( BioCpp::standard::base::residue& res1, BioCpp::standard::base::residue& res2 ){
+    for( BioCpp::standard::base::residue::iterator r1 = res1.begin(); r1 !=res1.end(); ++r1 ){
       if( r1==res1.begin() ){
         xchainId.insert(r1->chainId);
         if( xfirst.find(r1->chainId)==xfirst.end() ){
@@ -38,7 +38,7 @@ struct contact_map{
           xlast[r1->chainId] = r1->resSeq;
         }
       }
-      for( BioCpp::standard::residue::iterator r2 = res2.begin(); r2 !=res2.end(); ++r2 ){
+      for( BioCpp::standard::base::residue::iterator r2 = res2.begin(); r2 !=res2.end(); ++r2 ){
         if( r2==res2.begin() ){
           ychainId.insert(r2->chainId);
           if( yfirst.find(r2->chainId)==yfirst.end() ){
@@ -264,9 +264,10 @@ int main(int argc, char* argv[]){
 
   BioCpp::pdb::pdb PDB(contactfile, 0);  
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
-    BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(mdl);
-    BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
-    BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,map);
+    BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(mdl);
+    BioCpp::standard::base::complex_constructor cmp_constr; 
+    BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
+    BioCpp::Iterate<BioCpp::standard::base::residue, BioCpp::standard::base::residue>(cmp,cmp,map);
   }
   if(average_flag){
     map.chain_average();

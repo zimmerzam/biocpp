@@ -23,7 +23,7 @@
 #define SURFACE_AREA_LCPO_H
 
 #include "../utils/has_coordinate.h"
-#include "../polimers/topology/base_neighborood_map.h"
+#include "../topology/base_neighborood_map.h"
 #include "two_sphere_buried_surface_area.h"
 
 namespace BioCpp{

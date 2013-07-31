@@ -30,11 +30,12 @@
 #include <float.h>
 #include <map>
 
+#include <BioCpp/base_atom/base_atom.h>
+#include <BioCpp/utils/errors_and_warnings.h>
 #include "pdb_SEQRES_format.h"
 #include "pdb_MODEL_format.h"
 #include "pdb_ATOM_format.h"
 #include "pdb_sections_and_records.h"
-#include "../utils/errors_and_warnings.h"
 
 namespace BioCpp{
 namespace pdb{
@@ -163,7 +164,7 @@ pdb::pdb(const char* pdb_name, int init_flag = (INIT_FAST|INIT_FIRST_MODEL) ){
         seqres_end = prev_pos;
       /* read RseqRes if required */
       if( first_model and not (init_flag&INIT_FAST) ){
-        atom_info atm=read_atom_line<atom_info>(line);
+        BioCpp::base_atom atm=read_atom_line<BioCpp::base_atom>(line);
         if(atm.chainId!=prev_chain){
           prev_chain=atm.chainId;
           prev_c=Eigen::Vector3d(DBL_MAX,DBL_MAX,DBL_MAX); 

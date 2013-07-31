@@ -74,15 +74,15 @@ class base_container {
         \todo write an example code
         \todo write a version with two info arguments
     */
-    template <typename list, typename info>
-    base_container(list& lst, info& i);
+//    template <typename list, typename info>
+//    base_container(list& lst, info& i);
     
     /*! \brief General purpose constructor, to be specialized
         \todo write an example code
         \todo write a version with two info arguments
     */
-    template <typename list, typename info>
-    base_container(list& lst, info& i, info& j);
+//    template <typename list, typename info>
+//    base_container(list& lst, info& i, info& j);
     
     typedef typename child_list::iterator iterator; /*!< iterator over children */
     typedef typename child_list::const_iterator const_iterator; /*!< const iterator over children */

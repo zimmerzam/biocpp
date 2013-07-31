@@ -19,20 +19,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIST_OF_TYPE_H
-#define LIST_OF_TYPE_H
+#ifndef STANDARD_RESIDUE_H
+#define STANDARD_RESIDUE_H
 
-#include <map>
+#include "ids/atom_id.h"
+#include "ids/amino_acid_id.h"
+#include <BioCpp/base_container/base_container.h>
 
-/*! \brief Simple `struct` that allows the initialization of `std::map` object
-		with an array of elements */
-template<class K, class V>
-struct map_list_of_type {
-  typedef std::map<K, V> Map;
-  Map data;
-  map_list_of_type(K k, V v) { data[k] = v; }
-  map_list_of_type& operator()(K k, V v) { data[k] = v; return *this; }
-  operator Map const&() const { return data; }
+namespace BioCpp{
+namespace standard{
+
+template <typename atom_t>
+class residue{
+  public:
+    typedef base_container<BioCpp::atom::id, atom_t, BioCpp::amino_acid::id> type;
 };
+
+}
+}
 
 #endif

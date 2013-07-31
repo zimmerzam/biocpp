@@ -17,8 +17,8 @@ struct strict_residue_printer{
   
   strict_residue_printer(std::ostream& dev): printer(dev) {};
   
-  void operator()( BioCpp::standard::residue& res ){
-    for(BioCpp::standard::residue::iterator at = res.begin(); at != res.end(); ++at){
+  void operator()( BioCpp::standard::base::residue& res ){
+    for(BioCpp::standard::base::residue::iterator at = res.begin(); at != res.end(); ++at){
       /* always print backbone atoms */
       if( at->id == BioCpp::atom::id::N_ or at->id == BioCpp::atom::id::CA or 
           at->id == BioCpp::atom::id::C_ or at->id == BioCpp::atom::id::OXT or
@@ -108,8 +108,9 @@ int main(int argc, char* argv[]){
   strict_residue_printer printer(std::cout);
   BioCpp::pdb::pdb PDB(contactfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
-    BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(mdl);
-    BioCpp::standard::complex cmp( all_info, PDB.RseqRes, PDB.RseqRes );
+    BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(mdl);
+    BioCpp::standard::base::complex_constructor cmp_constr;
+    BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
     for( std::vector<mutation>::iterator mt = mutations.begin(); mt != mutations.end(); ++mt ){
       if( not cmp.exists(mt->chainId) ){
         std::cout << "Error: chain " << mt->chainId << " is not present in the target structure" << std::endl;
@@ -131,7 +132,7 @@ int main(int argc, char* argv[]){
       return 1;
     }
     std::cout << "MODEL     1" << std::endl;
-    BioCpp::Iterate<BioCpp::standard::residue>(cmp, printer);    
+    BioCpp::Iterate<BioCpp::standard::base::residue>(cmp, printer);    
     std::cout << "ENDMDL     " << std::endl;
   }
 

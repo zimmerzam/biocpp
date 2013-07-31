@@ -28,32 +28,13 @@
 #include <stdexcept>
 
 #include <Eigen/Core>
-#include "../polimers/amino_acid_id.h"
-#include "../polimers/atom_id.h"
-#include "../polimers/element_id.h"
+#include "../standard/ids/amino_acid_id.h"
+#include "../standard/ids/atom_id.h"
+#include "../standard/ids/element_id.h"
 #include "pdb_sections_and_records.h"
 
 namespace BioCpp{
 namespace pdb{
-
-/*! \brief ATOM line in pdb file
-
-		According to [pdb specification 3.3 for ATOM record ](http://www.wwpdb.org/documentation/format33/sect9.html#ATOM ) 
-*/
-struct atom_info{
-  int serial;                     /*!< serial (progressive) number */
- 	atom::id id;                    /*!< atom identifier (CA, CB, ...) */
- 	char altLoc;                    /*!< alternative location */
- 	amino_acid::id resName;         /*!< residue name */
- 	char chainId;                   /*!< chain identifier */
- 	int resSeq;                     /*!< residue number */
- 	char iCode;                     /*!< code for insertion of residues */
- 	Eigen::Vector3d coordinate;     /*!< coordinate */
- 	double occupancy;               /*!< occupancy */
- 	double tempFactor;              /*!< temperature factor */
- 	element::id element;            /*!< element type (carbon, oxygen, ...) */
- 	double charge;                  /*!< charge */
-};
 
 /*! \brief Get atom line info from a pdb ATOM line 
 		
@@ -177,10 +158,5 @@ struct print_atom_line{
 
 } // end namespace
 } // end namespace
-
-std::ostream& operator << (std::ostream& out, BioCpp::pdb::atom_info& info ){
-  BioCpp::pdb::print_atom_line print(out);
-	return print( info);
-}
 
 #endif

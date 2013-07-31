@@ -10,10 +10,10 @@
 // this functor takes two iterators to residue as parameters, check if they 
 // belong to a secondary structure and print some info.
 struct print_sec{
-  BioCpp::standard::h_bridge_map map; // save your h_bridge_map here!
+  BioCpp::standard::base::dpss::h_bridge_map map; // save your h_bridge_map here!
 
   template <typename T, 
-            typename = typename std::enable_if< std::is_same<typename std::iterator_traits<T>::value_type, BioCpp::standard::residue>::value, BioCpp::standard::residue>::type >
+            typename = typename std::enable_if< std::is_same<typename std::iterator_traits<T>::value_type, BioCpp::standard::base::residue>::value, BioCpp::standard::base::residue>::type >
   void operator()( T& res1, T& res2 ){
     if( BioCpp::dpss::getSecondaryStructure(map, res1, res2) != BioCpp::dpss::NOT_A_SECONDARY_STRUCTURE ){
 				std::cout << (*res1)[BioCpp::atom::CA].chainId << (*res1)[BioCpp::atom::CA].resSeq << "  " 
@@ -25,15 +25,19 @@ struct print_sec{
 };
 
 int main(){
-  BioCpp::pdb::pdb PDB("2RNM.pdb");		// read a pdb file
+  BioCpp::pdb::pdb PDB("2RNM.pdb", BioCpp::pdb::INIT_COMPLETE);		// read a pdb file
 
-  BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(1); // get the first model
-  BioCpp::standard::complex cmp(all_info, PDB.TseqRes, PDB.TseqRes); // build a complex
+  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1); // get the first model
   
-  print_sec print; // initialize the print_sec functor
-  print.map = BioCpp::standard::h_bridge_map(cmp); // compute the h_bridge_map
+  BioCpp::standard::base::complex_constructor cmp_constr;
+  BioCpp::standard::base::complex cmp = cmp_constr(all_info, PDB.RseqRes, PDB.RseqRes); // build a complex
+  
+  BioCpp::standard::base::dpss::h_bridge_map_constructor h_map_constr;
 
-  BioCpp::Iterate_iter<BioCpp::standard::residue, BioCpp::standard::residue>( cmp, cmp, print ); // apply the functor
+  print_sec print; // initialize the print_sec functor
+  print.map = h_map_constr(cmp); // compute the h_bridge_map
+
+  BioCpp::Iterate_iter<BioCpp::standard::base::residue, BioCpp::standard::base::residue>( cmp, cmp, print ); // apply the functor
 
   return 0;
 }

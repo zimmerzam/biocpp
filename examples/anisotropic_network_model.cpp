@@ -44,7 +44,7 @@ struct anisotropic{
                     };
   }
   
-  void operator()( BioCpp::standard::residue res1, BioCpp::standard::residue res2 ){
+  void operator()( BioCpp::standard::base::residue res1, BioCpp::standard::base::residue res2 ){
     char ch1  = res1[BioCpp::atom::id::CA].chainId;
     int nres1 = res1[BioCpp::atom::id::CA].resSeq;
     
@@ -72,8 +72,8 @@ struct anisotropic{
     /* std::cout << ch1 << ch2 << inter_flag << ki << std::endl; */
     
     double min_dist = 1000;
-    for(BioCpp::standard::residue::iterator at1 = res1.begin(); at1!=res1.end(); ++at1){
-      for(BioCpp::standard::residue::iterator at2 = res2.begin(); at2!=res2.end(); ++at2){
+    for(BioCpp::standard::base::residue::iterator at1 = res1.begin(); at1!=res1.end(); ++at1){
+      for(BioCpp::standard::base::residue::iterator at2 = res2.begin(); at2!=res2.end(); ++at2){
         if( (at1->coordinate - at2->coordinate).norm() < min_dist ){
           min_dist = (at1->coordinate - at2->coordinate).norm();
         }
@@ -240,7 +240,7 @@ int main(int argc, char* argv[]){
               << "\t-k: spring constant for other residues (default = 1.)" << std::endl
               << "\t-i: spring constant for inter-subunit residue pairs (default = 1.)" << std::endl
               << "\t-s: subunit_string (example: ABC:DE)" << std::endl
-          << "\t-T: change threshold for non-consecutive residue (default:7.0)" << std::endl
+              << "\t-T: change threshold for non-consecutive residue (default:7.0)" << std::endl
               << "\t-v: print eigenvalues" << std::endl
               << "\t-V: print eigenvectors" << std::endl
               << "\t-e: print entropy" << std::endl
@@ -253,7 +253,7 @@ int main(int argc, char* argv[]){
   }
   
   BioCpp::pdb::pdb PDB(pdbfilename, BioCpp::pdb::INIT_COMPLETE);
-  BioCpp::pdb::model<BioCpp::pdb::atom_info>::type all_info = PDB.getModel<BioCpp::pdb::atom_info>(1);
+  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1);
   unsigned int n_res = 0;
   unsigned int n_ch_in_s = 0;
   unsigned int n_ch_in_pdb = 0;
@@ -273,11 +273,12 @@ int main(int argc, char* argv[]){
       return 1;
     }
   } 
-  
-  BioCpp::standard::complex cmp(all_info, PDB.RseqRes, PDB.RseqRes);
+
+  BioCpp::standard::base::complex_constructor cmp_constr;
+  BioCpp::standard::base::complex cmp = cmp_constr(all_info, PDB.RseqRes, PDB.RseqRes);
   
   std::map< char, std::pair<unsigned int, unsigned int> > range;
-  for( BioCpp::standard::complex::iterator it = cmp.begin(); it != cmp.end(); ++it ){
+  for( BioCpp::standard::base::complex::iterator it = cmp.begin(); it != cmp.end(); ++it ){
     range[it->type] = std::make_pair( (*(it->begin()))[BioCpp::atom::id::CA].resSeq, (*(it->rbegin()))[BioCpp::atom::id::CA].resSeq );
   }
   
@@ -290,7 +291,7 @@ int main(int argc, char* argv[]){
   hessian.subunit_flag = subunit_flag;
   hessian.thres = threshold;
   
-  BioCpp::Iterate<BioCpp::standard::residue, BioCpp::standard::residue>(cmp,cmp,hessian);
+  BioCpp::Iterate<BioCpp::standard::base::residue, BioCpp::standard::base::residue>(cmp,cmp,hessian);
   hessian.fill_diagonal();
   
   int size = 3*n_res;

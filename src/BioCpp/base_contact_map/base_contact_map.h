@@ -19,36 +19,47 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PDB_MODEL_FORMAT_H
-#define PDB_MODEL_FORMAT_H
+#ifndef BIOCPP_BASE_CONTACT_MAP_H
+#define BIOCPP_BASE_CONTACT_MAP_H
 
-#include "model.h"
-#include "pdb_ATOM_format.h"
-#include "pdb_sections_and_records.h"
+#include <map>
 
 namespace BioCpp{
-namespace pdb{
 
-/*! \brief read a buffer of `char` describing a model and get structured informations.
-
-		@param buffer a string containing a pdb model
-		\return a model containing all the info read from the buffer
-*/  
-template <typename atom_t>
-typename model<atom_t>::type read_model_record( char buffer[] ){
-	std::vector< std::pair<int,atom_t> > all_info;
-	char* c_line = strtok(buffer, "\n");
-	while(c_line){
-		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
-		if(get_record(line) == ATOM){
-			atom_t info = read_atom_line<atom_t>(line);
-			all_info.push_back( std::make_pair( info.serial, info ) );
+/*! \brief Describes a table
+		
+		This simple `struct` can be used in order to store all the H-bridges of
+		a particular system.
+		@tparam T usually is the resSeq (`int`) of a residue, or an `iterator`.  
+*/
+template <typename T, typename value_t>
+class base_contact_map{
+	protected:
+	  typedef std::map< std::pair< T, T >, value_t > map;
+		map data;
+	public:
+	  /*! \brief Void constructor */
+		base_contact_map(){};
+		
+		/*! \brief iterators */
+		typedef typename map::iterator iterator; /*!< Iterator over the children */
+		typedef typename map::const_iterator const_iterator; /*!< Const iterator over the children */
+		typedef typename map::reverse_iterator reverse_iterator; /*!< Reverse iterator */
+		
+		iterator begin(){return data.begin();}; /*!< Iterator to the first child */
+		iterator end(){return data.end();}; /*!< \note This is not the last child item */
+		reverse_iterator rbegin(){return data.rbegin();}; /*!< Iterator to the last child */
+		reverse_iterator rend(){return data.rend();} /*!< \note This is not the first child */
+		
+		/*! \brief Get an element */
+		value_t& operator[]( std::pair< T, T > key ){return data[key];}
+		
+		/*! \brief Get an element */
+		value_t& operator()( T key1, T key2 ){
+		  return (*this)[std::make_pair(key1, key2)];
 		}
-		c_line = strtok(NULL, "\n");
-	}
-	return typename model<atom_t>::type(all_info);
-}
+};
 
 } // end namespace
-} //end namespace
+
 #endif

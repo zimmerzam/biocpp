@@ -23,7 +23,6 @@
 #define PDB_SECTIONS_AND_RECORDS_H
 
 #include <map>
-#include "../utils/list_of_type.h"
 
 namespace BioCpp{
 namespace pdb{
@@ -100,20 +99,20 @@ enum record_id{
 /*! Map a six-char string to its corresponding record_id
 
 */
-std::map< std::string, record_id > string_to_record_id = 
-				map_list_of_type< std::string, record_id >
-        	("HEADER",HEADER)("OBSLTE",OBSLTE)("TITLE ",TITLE)("SPLT  ",SPLT)
-					("CAVEAT",CAVEAT)("COMPND",COMPND)("SOURCE",SOURCE)("KEYWDS",KEYWDS)
-					("EXPDTA",EXPDTA)("NUMMDL",NUMMDL)("MDLTYP",MDLTYP)("AUTHOR",AUTHOR)
-					("REVDAT",REVDAT)("SPRSDE",SPRSDE)("JRNL  ",JRNL)("REMARK",REMARK)
-					("DBREF ",DBREF)("DBREF1",DBREF1)("DBREF2",DBREF2)("SEQADV",SEQADV)
-					("SEQRES",SEQRES)("MODRES",MODRES)("HET   ",HET)("FORMUL",FORMUL)
-					("HETNAM",HETNAM)("HETSYN",HETSYN)("HELIX ",HELIX)("SHEET ",SHEET)
-					("SSBOND",SSBOND)("LINK  ",LINK)("CISPEP",CISPEP)("SITE  ",SITE)
-					("CRYST1",CRYST1)("MTRIXn",MTRIXn)("ORIGXn",ORIGXn)("SCALEn",SCALEn)
-					("MODEL ",MODEL)("ATOM  ",ATOM)("ANISOU",ANISOU)("TER   ",TER)
-					("HETATM",HETATM)("ENDMDL",ENDMDL)("CONECT",CONECT)("MASTER",MASTER)
-					("END   ",END);
+std::map< std::string, record_id > string_to_record_id = {
+        	{"HEADER",HEADER},{"OBSLTE",OBSLTE},{"TITLE ",TITLE },{"SPLT  ",SPLT  },
+					{"CAVEAT",CAVEAT},{"COMPND",COMPND},{"SOURCE",SOURCE},{"KEYWDS",KEYWDS},
+					{"EXPDTA",EXPDTA},{"NUMMDL",NUMMDL},{"MDLTYP",MDLTYP},{"AUTHOR",AUTHOR},
+					{"REVDAT",REVDAT},{"SPRSDE",SPRSDE},{"JRNL  ",JRNL  },{"REMARK",REMARK},
+					{"DBREF ",DBREF },{"DBREF1",DBREF1},{"DBREF2",DBREF2},{"SEQADV",SEQADV},
+					{"SEQRES",SEQRES},{"MODRES",MODRES},{"HET   ",HET   },{"FORMUL",FORMUL},
+					{"HETNAM",HETNAM},{"HETSYN",HETSYN},{"HELIX ",HELIX },{"SHEET ",SHEET },
+					{"SSBOND",SSBOND},{"LINK  ",LINK  },{"CISPEP",CISPEP},{"SITE  ",SITE  },
+					{"CRYST1",CRYST1},{"MTRIXn",MTRIXn},{"ORIGXn",ORIGXn},{"SCALEn",SCALEn},
+					{"MODEL ",MODEL },{"ATOM  ",ATOM  },{"ANISOU",ANISOU},{"TER   ",TER   },
+					{"HETATM",HETATM},{"ENDMDL",ENDMDL},{"CONECT",CONECT},{"MASTER",MASTER},
+					{"END   ",END}
+};
 
 /*! \brief Get the pdb record described by a pdb line
 

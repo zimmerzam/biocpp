@@ -24,7 +24,6 @@
 
 #include <map>
 #include <string>
-#include "base_h_bridge_map.h"
 
 namespace BioCpp{
 namespace dpss{
@@ -124,8 +123,8 @@ inline id getSecondaryStructure(short contact, int distance){
 		@param  i   the first object of the pair. It may be one of the keys of [map](@ref h_bridge_map) or not.
 		@param  j   the second object of the pair. It may be one of the keys of [map](@ref h_bridge_map) or not.
 		\see getDpssClass */
-template <typename T, typename bridge_map >
-inline id getSecondaryStructure( bridge_map& map, T& i, T& j ){
+template <typename T, typename cnt_map >
+inline id getSecondaryStructure( cnt_map& map, T& i, T& j ){
 	short contact = (map[std::make_pair(i-1,j)]<<7)|(map[std::make_pair(i-1,j+1)]<<6)|(map[std::make_pair(i,j)]<<5)|
 									(map[std::make_pair(i,j+1)]<<4)|(map[std::make_pair(j-1,i)]<<3)|(map[std::make_pair(j-1,i+1)]<<2)|
 									(map[std::make_pair(j,i+1)]<<1)|(map[std::make_pair(j,i)]<<0);
