@@ -107,10 +107,3 @@ add_executable(complex_constructor complex_constructor.cpp)
 
 project( has_coordinate )
 add_executable(has_coordinate has_coordinate.cpp)
-
-project( restyle )
-set_property(
-  SOURCE restyle.cpp
-  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_ALL  
-)
-add_executable(restyle restyle.cpp)
