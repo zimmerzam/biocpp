@@ -13,7 +13,8 @@ void alpha_vertices( typename BioCpp::pdb::model<atom_t>::type& all_info,
                      double radius, 
                      std::vector<typename alpha_shape_t::Vertex_handle>& surface,
                      typename alpha_shape_t::Mode mode= alpha_shape_t::GENERAL,
-                     std::list<typename alpha_shape_t::Classification_type> classification = {alpha_shape_t::REGULAR,alpha_shape_t::EXTERIOR,alpha_shape_t::SINGULAR} ){
+                     std::list<typename alpha_shape_t::Classification_type> classification = 
+                     std::list<typename alpha_shape_t::Classification_type>{alpha_shape_t::REGULAR,alpha_shape_t::EXTERIOR,alpha_shape_t::SINGULAR} ){
 
   alpha_shape_t as( all_info.begin(), all_info.end(), radius, mode );
 
@@ -28,7 +29,8 @@ void alpha_vertices( std::vector<atom_t>& all_info,
                      double radius, 
                      std::vector<typename alpha_shape_t::Vertex_handle>& surface,
                      typename alpha_shape_t::Mode mode= alpha_shape_t::GENERAL,
-                     std::list<typename alpha_shape_t::Classification_type> classification = {alpha_shape_t::REGULAR,alpha_shape_t::EXTERIOR,alpha_shape_t::SINGULAR} ){
+                     std::list<typename alpha_shape_t::Classification_type> classification = 
+                     std::list<typename alpha_shape_t::Classification_type>{alpha_shape_t::REGULAR,alpha_shape_t::EXTERIOR,alpha_shape_t::SINGULAR} ){
 
   alpha_shape_t as( all_info.begin(), all_info.end(), radius, mode );
 
