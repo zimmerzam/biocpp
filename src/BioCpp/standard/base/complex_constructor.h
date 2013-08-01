@@ -29,7 +29,7 @@ namespace BioCpp{
 namespace standard{
 namespace base{
 
-typedef BioCpp::standard::complex_constructor<atom>::type complex_constructor;
+typedef BioCpp::standard::complex_constructor<atom> complex_constructor;
 
 }
 }

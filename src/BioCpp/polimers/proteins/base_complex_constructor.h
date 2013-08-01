@@ -33,14 +33,15 @@ template< typename atom_t,
           typename cmp_child_id, typename cmp_id
         >
 class base_complex_constructor{
-  private:
-    typedef base_container<res_child_id, atom_t, res_id> residue_t;
-    typedef base_container<cha_child_id, residue_t, cha_id> chain_t;
+  protected:
+    typedef base_container<res_child_id, atom_t, res_id> residue_type;
+    typedef base_container<cha_child_id, residue_type, cha_id> chain_type;
+    typedef base_container<cmp_child_id, chain_type, cmp_id> complex_type;
   public:
-    typedef base_container<cmp_child_id, chain_t, cmp_id> complex_type;
   
-    complex_type operator()( typename pdb::model<atom_t>::type info, pdb::seqres_record& RseqRes );
-    complex_type operator()( typename pdb::model<atom_t>::type info, pdb::seqres_record& RseqRes, pdb::seqres_record& TseqRes );
+    virtual complex_type operator()( typename pdb::model<atom_t>::type& info, pdb::seqres_record& RseqRes, pdb::seqres_record& TseqRes ) = 0;
+    
+    virtual complex_type operator()( typename pdb::model<atom_t>::type& info, pdb::seqres_record& RseqRes ) = 0;
 };
 
 }
