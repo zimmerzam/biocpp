@@ -131,6 +131,9 @@ class complex_constructor : public BioCpp::base_complex_constructor< atom_t,
       return cmp;
     }
 
+    typename standard::complex<atom_t>::type operator()( typename pdb::model<atom_t>::type& info, pdb::seqres_record& RseqRes){
+      return (*this)(info, RseqRes);
+    }
 
 };
   
