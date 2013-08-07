@@ -19,36 +19,49 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MORPHOLOGY_KERNEL_ATOM_H
-#define MORPHOLOGY_KERNEL_ATOM_H
+#ifndef PIVOT_H
+#define PIVOT_H
 
+#include <boost/graph/breadth_first_search.hpp>
 #include <Eigen/Core>
+#include <Eigen/Dense>
+#include <Eigen/Geometry>
+#include <BioCpp/topology/topology.h>
 
-namespace BioCpp{
-namespace morphology{
-namespace cgal_extensible_kernel{
-
-//TODO check it point_t has coordinate
-template <typename point_t>
-class point : public point_t{
+template < typename atom_prop, typename bond_prop >
+class pivot{
+  protected:
+  
+    class bfs_rotate_visitor : public boost::default_bfs_visitor {
+      protected:
+        Eigen::Vector3d base;
+        Eigen::Matrix3d rotation;
+        
+      public:
+        bfs_rotate_visitor( Eigen::Vector3d& source, Eigen::Vector3d& target, double rotangle ): base(source){
+          Eigen::Vector3d axis = target-source;
+          axis = axis/axis.norm();
+          Eigen::AngleAxisd rot(rotangle, axis);
+          rotation = rot.toRotationMatrix();
+        }
+        
+        template < typename Vertex, typename Graph >
+        void discover_vertex(Vertex u, const Graph & G) const {
+          G[u].atom->coordinate = rotation*(G[u].atom->coordinate - base) + base;
+//          std::cout << G[u].atom->chainId << G[u].atom->resSeq << "  " << G[u].atom->id << std::endl;
+        }
+    };
+  
   public:
-    const double& x() const { return this->coordinate(0); }
-    const double& y() const { return this->coordinate(1); }
-    const double& z() const { return this->coordinate(2); }
-    double& x() { return this->coordinate(0); }
-    double& y() { return this->coordinate(1); }
-    double& z() { return this->coordinate(2); }
-    
-    point(){};
-    
-    point( double x, double y, double z ){
-      this->coordinate = Eigen::Vector3d(x,y,z);
+    void operator()( BioCpp::topology<atom_prop,bond_prop>& topo, typename BioCpp::topology<atom_prop,bond_prop>::edge_iterator& ei, double angle ){
+      topo.getGraph()[(*ei)].edge.set();
+      typename BioCpp::topology<atom_prop,bond_prop>::vertex_t u = boost::source(*ei, topo.getGraph());
+      typename BioCpp::topology<atom_prop,bond_prop>::vertex_t v = boost::target(*ei, topo.getGraph());
+      bfs_rotate_visitor rotate( topo.getGraph()[u].atom->coordinate, topo.getGraph()[v].atom->coordinate, angle );
+      boost::breadth_first_search( topo.getGraph(), v, boost::visitor(rotate) );
     }
- 
+
 };
 
-}
-}
-}
 
 #endif

@@ -19,35 +19,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MORPHOLOGY_KERNEL_COORD_ITERATOR_H
-#define MORPHOLOGY_KERNEL_COORD_ITERATOR_H
-
-#include "point.h"
+#ifndef BIOCPP_ATOM_DICTIONARY_H
+#define BIOCPP_ATOM_DICTIONARY_H
 
 namespace BioCpp{
-namespace morphology{
-namespace cgal_extensible_kernel{
+namespace residue{
 
-class coord_iterator {
-public:
-  template < typename point_t >
-  const double* operator()(const point<point_t>& p){
-    return &p.x();
-  }
-
-  template < typename point_t >
-  const double* operator()(const point<point_t>& p, int k){
-    if(k==0) return &p.x();
-    if(k==1) return &p.y();
-    if(k==2) return &p.z();
-    const double* pzptr = &p.z();
-    pzptr++;
-    return pzptr;
-  }
+class dictionary : public base_dictionary {
+  protected:
+    std::map< int, std::list< std::vector<int> > > children;
+    std::map< int, std::list< std::pair<int,int> > > connections;
+  public:
+    void readFromFile( std::string filename ){
+    
+    };
+    
+    std::pair<int, std::map< int, int > > get_children( std::vector<int>& child );
 };
 
 }
 }
-}
-
 #endif

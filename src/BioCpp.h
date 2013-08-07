@@ -123,6 +123,18 @@
   #include "BioCpp/standard.h"
 #endif
 
+/* Use topology */
+#if defined BIOCPP_INCLUDE_TOPOLOGY || defined BIOCPP_INCLUDE_ALL
+  #include "BioCpp/topology/topology.h"
+#endif
+
+/* Use Denavit-Hartenberg notation */
+#if defined BIOCPP_INCLUDE_DENAVIT_HARTENBERG || defined BIOCPP_INCLUDE_ALL
+  #include "BioCpp/topology/denavit_hartenberg/dh_matrix.h"
+  #include "BioCpp/topology/denavit_hartenberg/dh_edge.h"
+  #include "BioCpp/topology/denavit_hartenberg/dh_chain.h"
+#endif
+
 /*! \example dpss.cpp */
 /*! \example iterate.cpp */
 /*! \example pdb.cpp */

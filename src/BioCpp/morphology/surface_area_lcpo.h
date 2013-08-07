@@ -22,7 +22,7 @@
 #ifndef SURFACE_AREA_LCPO_H
 #define SURFACE_AREA_LCPO_H
 
-#include "../utils/has_coordinate.h"
+#include "../base_atom/has_coordinate.h"
 #include "../topology/base_neighborood_map.h"
 #include "two_sphere_buried_surface_area.h"
 

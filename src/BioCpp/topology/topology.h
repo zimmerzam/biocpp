@@ -19,35 +19,35 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MORPHOLOGY_KERNEL_COORD_ITERATOR_H
-#define MORPHOLOGY_KERNEL_COORD_ITERATOR_H
+#ifndef BIOCPP_TOPOLOGY_H
+#define BIOCPP_TOPOLOGY_H
 
-#include "point.h"
+#include <boost/graph/graph_traits.hpp>
+#include <boost/graph/adjacency_list.hpp>
 
 namespace BioCpp{
-namespace morphology{
-namespace cgal_extensible_kernel{
 
-class coord_iterator {
-public:
-  template < typename point_t >
-  const double* operator()(const point<point_t>& p){
-    return &p.x();
-  }
-
-  template < typename point_t >
-  const double* operator()(const point<point_t>& p, int k){
-    if(k==0) return &p.x();
-    if(k==1) return &p.y();
-    if(k==2) return &p.z();
-    const double* pzptr = &p.z();
-    pzptr++;
-    return pzptr;
-  }
+template < typename atom_prop, typename bond_prop >
+class topology{
+  
+  public:
+    typedef typename boost::adjacency_list<boost::listS, boost::vecS, boost::directedS, atom_prop, bond_prop > Graph;
+    typedef typename boost::graph_traits<Graph>::vertex_descriptor vertex_t;
+    typedef typename boost::graph_traits<Graph>::edge_descriptor edge_t;
+    typedef typename boost::graph_traits<Graph>::vertex_iterator vertex_iterator;
+    typedef typename boost::graph_traits<Graph>::edge_iterator edge_iterator;
+  
+    Graph& getGraph();
+    
+  protected:
+    Graph G;
 };
 
+template < typename atom_prop, typename bond_prop >
+typename topology<atom_prop,bond_prop>::Graph& topology<atom_prop,bond_prop>::getGraph(){
+  return G;
 }
-}
+
 }
 
 #endif
