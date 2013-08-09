@@ -24,8 +24,8 @@ struct print_sec{
   }
 };
 
-int main(){
-  BioCpp::pdb::pdb PDB("2RNM.pdb", BioCpp::pdb::INIT_COMPLETE);		// read a pdb file
+int main(int argc, char* argv[]){
+  BioCpp::pdb::pdb PDB(argv[1], BioCpp::pdb::INIT_COMPLETE);		// read a pdb file
 
   BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1); // get the first model
   
