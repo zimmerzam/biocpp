@@ -64,7 +64,9 @@ class chain{
 		
 		Eigen::Matrix4d M( );
 		template <class V> Eigen::Matrix4d M( V& theta );
-		template <class V> Eigen::Matrix4d Mp(int i, V& theta);
+		
+		Eigen::Matrix4d Mp( int i );
+		template <class V> Eigen::Matrix4d Mp( int i, V& theta );
 };
 
 template <typename atom_t>
@@ -238,6 +240,32 @@ Eigen::Matrix4d chain<atom_t>::M( V& theta ){
 		result*=X;
 	}
 	return result;
+}
+
+template <typename atom_t>
+Eigen::Matrix4d chain<atom_t>::Mp( int i ){
+	if(i < 0 or i > n_edges - 1){
+		std::cout << "cannot derive by theta_" << i << "." << std::endl;
+		exit(1);
+	}
+	
+	int k;
+	Eigen::Matrix4d dhmtx, Z, X;
+	dhmtx.setIdentity();
+	for(k = 0; k < n_edges - 1 ; k++){
+		if( k==i ){
+			Z = MatrixZt( getTheta(k), getD(k) );
+			X = MatrixX( getAlpha(k), getR(k) );		
+		}
+		else{
+			Z = MatrixZ( getTheta(k), getD(k) );
+			X = MatrixX( getAlpha(k), getR(k) );
+		}
+		dhmtx*=Z;
+		dhmtx*=X;
+	}
+
+	return dhmtx;
 }
 
 template <typename atom_t>
