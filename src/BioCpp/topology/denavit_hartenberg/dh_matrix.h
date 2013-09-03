@@ -35,9 +35,24 @@ Eigen::Matrix4d Matrix( double d, double r, double alpha, double theta ){
 	double st = sin(theta);
 	double ct = cos(theta);
 	result << ct , -st*ca , st*sa  , r*ct ,
-	          st , ct*sa  , -ct*sa , r*st ,
-	          0  , sa     , ca     , d    ,
+	          st , ct*ca  , -ct*sa , r*st , // st , ct*sa  , -ct*sa , r*st ,
+	          0.  , sa     , ca     , d    ,
 	          0. , 0.     , 0.     , 1.   ;
+	
+	return result;
+}
+
+// first derivative with respect to theta
+Eigen::Matrix4d Matrixp( double d, double r, double alpha, double theta ){
+	Eigen::Matrix4d result;
+	double sa = sin(alpha);
+	double ca = cos(alpha);
+	double st = sin(theta);
+	double ct = cos(theta);
+	result << -st , -ct*ca , ct*sa  , -r*st ,
+	          ct  , -st*ca , st*sa  , r*ct  ,
+	          0.  , 0.     , 0.     , 0.    ,
+	          0.  , 0.     , 0.     , 0.    ;
 	
 	return result;
 }
@@ -49,10 +64,10 @@ Eigen::Matrix4d MatrixZ( double theta, double d ){
 	Eigen::Matrix4d result;
 	double ct = cos(theta);
 	double st = sin(theta);
-	result << ct , -st , 0 , 0 ,
-	          st ,  ct , 0 , 0 ,
-	          0  ,  0  , 1 , d ,
-	          0  ,  0  , 0 , 1 ;
+	result << ct  , -st  , 0. , 0. ,
+	          st  ,  ct  , 0. , 0. ,
+	          0.  ,  0.  , 1. , d  ,
+	          0.  ,  0.  , 0. , 1. ;
 	return result;
 }
 
@@ -61,10 +76,10 @@ Eigen::Matrix4d MatrixZt( double theta, double d ){
 	Eigen::Matrix4d result;
 	double ct = cos(theta);
 	double st = sin(theta);
-	result << -st , -ct , 0 , 0 ,
-	          ct  , -st , 0 , 0 ,
-	          0   ,  0  , 0 , 0 ,
-	          0   ,  0  , 0 , 0 ;
+	result << -st  , -ct  , 0. , 0. ,
+	          ct   , -st  , 0. , 0. ,
+	          0.   ,  0.  , 0. , 0. ,
+	          0.   ,  0.  , 0. , 0. ;
 	return result;
 }
 
@@ -73,10 +88,10 @@ Eigen::Matrix4d MatrixZtt( double theta, double d ){
 	Eigen::Matrix4d result;
 	double ct = cos(theta);
 	double st = sin(theta);
-	result << -ct ,  st , 0 , 0 ,
-	          -st , -ct , 0 , 0 ,
-	          0   ,  0  , 0 , 0 ,
-	          0   ,  0  , 0 , 0 ;
+	result << -ct  ,  st  , 0. , 0. ,
+	          -st  , -ct  , 0. , 0. ,
+	          0.   ,  0.  , 0. , 0. ,
+	          0.   ,  0.  , 0. , 0. ;
 	return result;
 }
 
@@ -87,10 +102,10 @@ Eigen::Matrix4d MatrixX( double alpha, double r ){
 	Eigen::Matrix4d result;
 	double ca = cos(alpha);
 	double sa = sin(alpha);
-	result << 1 , 0  , 0  , r ,
-	          0 , ca , -sa, 0 ,
-	          0 , sa , ca , 0 ,
-	          0 , 0  , 0  , 1 ;
+	result << 1. , 0.  , 0.  , r  ,
+	          0. , ca  , -sa , 0. ,
+	          0. , sa  , ca  , 0. ,
+	          0. , 0.  , 0.  , 1. ;
 	return result; 
 }
 

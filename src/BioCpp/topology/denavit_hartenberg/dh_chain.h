@@ -250,16 +250,18 @@ Eigen::Matrix4d chain<atom_t>::Mp( int i ){
 	}
 	
 	int k;
-	Eigen::Matrix4d dhmtx, Z, X;
+	Eigen::Matrix4d dhmtx, Z, X, P;
 	dhmtx.setIdentity();
 	for(k = 0; k < n_edges - 1 ; k++){
 		if( k==i ){
 			Z = MatrixZt( getTheta(k), getD(k) );
-			X = MatrixX( getAlpha(k), getR(k) );		
+			X = MatrixX( getAlpha(k), getR(k) );
+//			P = Matrixp( getD(k), getR(k), getAlpha(k), getTheta(k) );		
 		}
 		else{
 			Z = MatrixZ( getTheta(k), getD(k) );
 			X = MatrixX( getAlpha(k), getR(k) );
+//			P = Matrix( getD(k), getR(k), getAlpha(k), getTheta(k) );
 		}
 		dhmtx*=Z;
 		dhmtx*=X;
