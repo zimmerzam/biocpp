@@ -35,13 +35,16 @@ namespace pdb{
 		\return a model containing all the info read from the buffer
 */  
 template <typename atom_t>
-typename model<atom_t>::type read_model_record( char buffer[] ){
+typename model<atom_t>::type read_model_record( char buffer[], int option_flag ){
 	std::vector< std::pair<int,atom_t> > all_info;
 	char* c_line = strtok(buffer, "\n");
 	while(c_line){
 		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
 		if(get_record(line) == ATOM){
 			atom_t info = read_atom_line<atom_t>(line);
+			if(info.element == BioCpp::element::H and option_flag == 1){
+			  continue;
+			}
 			all_info.push_back( std::make_pair( info.serial, info ) );
 		}
 		c_line = strtok(NULL, "\n");

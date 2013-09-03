@@ -47,6 +47,11 @@ enum init_flags{
   INIT_FIRST_MODEL = (1<<2)   /*!< Read only the first model */
 };
 
+enum get_model_flags{
+  GET_ALL_ATOMS    = 0,
+  GET_HEAVY_ONLY   = 1
+};
+
 /*! \brief This is a `pdb file` object.
 
     Use this to read a pdb file and get a list of atom_info.
@@ -100,7 +105,7 @@ class pdb{
         but are atom-based.
     */
     template<typename atom_t>
-    typename model<atom_t>::type getModel(int mdl);
+    typename model<atom_t>::type getModel(int mdl, int option_flag);
 };
 
 pdb::pdb(const char* pdb_name, int init_flag = (INIT_FAST|INIT_FIRST_MODEL) ){
@@ -224,7 +229,7 @@ pdb::pdb(const char* pdb_name, int init_flag = (INIT_FAST|INIT_FIRST_MODEL) ){
 }
 
 template <typename atom_t>
-typename model<atom_t>::type pdb::getModel(int mdl){
+typename model<atom_t>::type pdb::getModel(int mdl, int option_flag = GET_ALL_ATOMS){
   if(mdl>n_models){
     typename model<atom_t>::type record;
     return record;
@@ -232,7 +237,7 @@ typename model<atom_t>::type pdb::getModel(int mdl){
   int length = model_end_pos[mdl] - model_beg_pos[mdl];
   char mdl_buf[ length + 1 ];
   std::memcpy(mdl_buf, buffer + model_beg_pos[mdl], length);
-  return read_model_record<atom_t>( mdl_buf );
+  return read_model_record<atom_t>( mdl_buf, option_flag );
 }
 
 } // end namespace
