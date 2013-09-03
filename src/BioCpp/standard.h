@@ -59,6 +59,7 @@
   #include "standard/morphology/triangulation_data_structure.h"
   #include "standard/morphology/triangulation_3.h"
   #include "standard/morphology/alpha_shape_3.h"
+  #include "standard/morphology/delaunay_3.h"
 #endif
 
 

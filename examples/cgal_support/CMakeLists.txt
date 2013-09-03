@@ -44,3 +44,13 @@ set_property(
 add_executable(alpha_exposed alpha_exposed.cpp)
 target_link_libraries(alpha_exposed ${CGAL_LIBRARIES})
 
+project( delaunay_exposed )
+set_property(
+  SOURCE delaunay_exposed.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_STANDARD
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_CGAL
+)
+add_executable(delaunay_exposed delaunay_exposed.cpp)
+target_link_libraries(delaunay_exposed ${CGAL_LIBRARIES})
+
