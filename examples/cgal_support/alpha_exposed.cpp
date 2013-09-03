@@ -7,7 +7,7 @@ int main( int argc, char* argv[] ){
   
   std::list<BioCpp::standard::morphology::alpha_shape_3::Classification_type> classification_type = {BioCpp::standard::morphology::alpha_shape_3::REGULAR, BioCpp::standard::morphology::alpha_shape_3::EXTERIOR, BioCpp::standard::morphology::alpha_shape_3::SINGULAR};
   std::vector<BioCpp::standard::morphology::alpha_shape_3::Vertex_handle> vertices2;
-  BioCpp::morphology::alpha_vertices<BioCpp::standard::morphology::alpha_shape_3, BioCpp::standard::morphology::atom>(all_info,radius,vertices2, BioCpp::standard::morphology::alpha_shape_3::GENERAL, classification_type);
+  BioCpp::morphology::alpha_surface<BioCpp::standard::morphology::alpha_shape_3, BioCpp::standard::morphology::atom>(all_info,radius,vertices2, BioCpp::standard::morphology::alpha_shape_3::GENERAL, classification_type);
 
   std::size_t nbf2 = vertices2.size();
   for(std::size_t i = 0; i < nbf2; ++i){

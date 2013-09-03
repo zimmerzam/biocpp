@@ -30,7 +30,7 @@ namespace BioCpp{
 namespace morphology{
 
 template<typename alpha_shape_t, typename atom_t>
-void alpha_vertices( typename BioCpp::pdb::model<atom_t>::type& all_info, 
+void alpha_surface( typename BioCpp::pdb::model<atom_t>::type& all_info, 
                      double radius, 
                      std::vector<typename alpha_shape_t::Vertex_handle>& surface,
                      typename alpha_shape_t::Mode mode= alpha_shape_t::GENERAL,
@@ -46,7 +46,7 @@ void alpha_vertices( typename BioCpp::pdb::model<atom_t>::type& all_info,
 }
 
 template<typename alpha_shape_t, typename atom_t>
-void alpha_vertices( std::vector<atom_t>& all_info, 
+void alpha_surface( std::vector<atom_t>& all_info, 
                      double radius, 
                      std::vector<typename alpha_shape_t::Vertex_handle>& surface,
                      typename alpha_shape_t::Mode mode= alpha_shape_t::GENERAL,

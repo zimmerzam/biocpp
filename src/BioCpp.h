@@ -64,6 +64,7 @@
 #if defined BIOCPP_INCLUDE_CGAL
   #include "BioCpp/morphology/cgal_extensible_kernel.h"
   #include "BioCpp/morphology/cgal_alpha_shape_3/alpha_vertices.h"
+  #include "BioCpp/morphology/cgal_delaunay_3/delaunay_vertices.h"
 #endif
 
 /* Include header files for reconstructing atom coordinates */
