@@ -43,7 +43,7 @@ Eigen::Matrix4d Matrix( double d, double r, double alpha, double theta ){
 }
 
 // first derivative with respect to theta
-Eigen::Matrix4d Matrixp( double d, double r, double alpha, double theta ){
+Eigen::Matrix4d MatrixP( double d, double r, double alpha, double theta ){
 	Eigen::Matrix4d result;
 	double sa = sin(alpha);
 	double ca = cos(alpha);
