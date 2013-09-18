@@ -10,8 +10,16 @@ int main( int argc, char* argv[] ){
 
   std::size_t nbf2 = vertices2.size();
   for(std::size_t i = 0; i < nbf2; ++i){
-    std::cout << vertices2[i]->point().coordinate.transpose() << std::endl;
+    std::cout << vertices2[i]->point().serial << " " 
+              << vertices2[i]->point().id << " "
+              << vertices2[i]->point().resName << "   "
+              << vertices2[i]->point().resSeq << "   "
+              << 1
+              << std::endl;
   }
+  std::cout << "---------------------------------------" << std::endl
+            << "Number of surface atoms    =   " << nbf2 << std::endl
+            << "Number of buried atoms     =   " << all_info.size()-nbf2 << std::endl;
   return 0;
 }
 

@@ -52,6 +52,10 @@ class base_neighborood_map{
 		unsigned int size(){
 		  return neighbors.size();
 		}
+		
+		unsigned int size(obj key){
+		  return neighbors[key].size();
+		}
 };
 
 } // end namespace

@@ -60,6 +60,16 @@ set_property(
 )
 add_executable(surface_area_lcpo surface_area_lcpo.cpp)
 
+project( lcpo_exposed )
+set_property(
+  SOURCE lcpo_exposed.cpp
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_STANDARD
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_MORPHOLOGY
+  PROPERTY COMPILE_DEFINITIONS BIOCPP_DONT_INCLUDE_CGAL
+)
+add_executable(lcpo_exposed lcpo_exposed.cpp)
+
 project( contact_map )
 set_property(
   SOURCE contact_map.cpp
