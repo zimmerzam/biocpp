@@ -34,6 +34,8 @@
 #ifndef BIOCPP_H
 #define BIOCPP_H
 
+#include "BioCpp/version.h"
+
 #include "BioCpp/base_container/base_container.h"
 #include "BioCpp/base_container/is_container_of.h"
 #include "BioCpp/base_container/Iterate_single.h"
