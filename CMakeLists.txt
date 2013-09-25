@@ -1,5 +1,25 @@
 cmake_minimum_required(VERSION 2.6.2)
 
+if("${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}" VERSION_GREATER 2.6)
+  if("${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}.${CMAKE_PATCH_VERSION}" VERSION_GREATER 2.8.3)
+    cmake_policy(VERSION 2.8.4)
+  else()
+    cmake_policy(VERSION 2.6)
+  endif()
+endif()
+
+set( CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS true )
+ 
+if ( COMMAND cmake_policy )
+  cmake_policy( SET CMP0003 NEW )  
+endif()
+
+# CGAL and its components
+find_package( CGAL QUIET COMPONENTS  )
+
+# Boost and its components
+find_package( Boost REQUIRED )
+
 add_definitions( -std=c++0x )
 
 SET( CMAKE_CXX_FLAGS_DEBUG "-Wall" )
@@ -38,3 +58,18 @@ INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/C_alpha_variance.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/print_atom_coordinate.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/complex_constructor.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/has_coordinate.cmake )
+
+if ( NOT Boost_FOUND )
+  message(STATUS "Projects that require the Boost library will not be compiled.")
+  return()  
+endif()
+
+if ( NOT CGAL_FOUND )
+  message(STATUS "Projects that require the CGAL library will not be compiled.")
+  return()  
+endif()
+# include helper file
+include( ${CGAL_USE_FILE} )
+
+INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/alpha_exposed.cmake )
+INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/delaunay_exposed.cmake )
