@@ -19,22 +19,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_MD_INTEGRATOR_ALGORITHM_VELOCITY_VERLET_H
-#define BIOCPP_MD_INTEGRATOR_ALGORITHM_VELOCITY_VERLET_H
+#ifndef BIOCPP_MD_THERMOSTAT_VELOCITY_RESCALING_H
+#define BIOCPP_MD_THERMOSTAT_VELOCITY_RESCALING_H
 
-#include "integrator_algorithm.h"
+#include "../thermostat.h"
 
-class velocity_verlet : integrator_algorithm{
+class velocity_rescaling : thermostat{
+  
   public:
-    template <typename Config, typename Potential, typename ImplicitWater>
-    void step( Config& system, Potential& V, ImplicitWater& water ){
-      system.gen_coordinate = system.gen_coordinate + system.gen_velocity*dt + 0.5*system.gen_acceleration*dt*dt;
-      system.set( system.gen_coordinate );
-      system.gen_force  = system.project( -V.gradient( system ) );
-      system.gen_force += system.project( water.force( system ) );
-      system.gen_velocity = system.gen_velocity + 0.5*( system.gen_acceleration + system.gen_mass.inverse()*system.gen_force )*dt;
-      system.gen_acceleration = system.gen_mass.inverse()*system.gen_force;
-    }
+    template < typename Config >
+    void equilibrate ( Config& system ){
+      double kinetic_energy = system.gen_velocity.transpose()*system.gen_mass*system.gen_velocity;
+      double alpha = sqrt(  system.dof*Kb*temperature/(2.*kinetic_energy) );
+      system.gen_velocity = alpha*system.gen_velocity;
+    }; 
+
 };
 
 #endif

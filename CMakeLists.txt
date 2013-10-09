@@ -58,6 +58,7 @@ INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/C_alpha_variance.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/print_atom_coordinate.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/complex_constructor.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/has_coordinate.cmake )
+INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/md_gas_of_identical_particles.cmake )
 
 if ( NOT Boost_FOUND )
   message(STATUS "Projects that require the Boost library will not be compiled.")

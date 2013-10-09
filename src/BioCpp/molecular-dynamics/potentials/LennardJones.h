@@ -19,21 +19,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_MD_INTEGRATOR_ALGORITHM_VELOCITY_VERLET_H
-#define BIOCPP_MD_INTEGRATOR_ALGORITHM_VELOCITY_VERLET_H
+#ifndef BIOCPP_MD_POTENTIAL_LJ_H
+#define BIOCPP_MD_POTENTIAL_LJ_H
 
-#include "integrator_algorithm.h"
-
-class velocity_verlet : integrator_algorithm{
+template< typename Parameter, unsigned int exp=6 >
+class LennardJones{
   public:
-    template <typename Config, typename Potential, typename ImplicitWater>
-    void step( Config& system, Potential& V, ImplicitWater& water ){
-      system.gen_coordinate = system.gen_coordinate + system.gen_velocity*dt + 0.5*system.gen_acceleration*dt*dt;
-      system.set( system.gen_coordinate );
-      system.gen_force  = system.project( -V.gradient( system ) );
-      system.gen_force += system.project( water.force( system ) );
-      system.gen_velocity = system.gen_velocity + 0.5*( system.gen_acceleration + system.gen_mass.inverse()*system.gen_force )*dt;
-      system.gen_acceleration = system.gen_mass.inverse()*system.gen_force;
+    double value( Parameter& param, double distance ){
+      double factor6 = pow( param.sigma/distance, exp );
+      return 4.*param.epsilon*( factor6*factor6 - factor6 );
+    };
+    
+    double first_derivative( Parameter& param, double distance ){
+      double factor6 = pow( param.sigma/distance, exp );
+      return 4.*exp*param.epsilon/distance*( -2.*factor6*factor6 + factor6 ); 
     }
 };
 

@@ -19,44 +19,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_INTEGRATOR_H
-#define BIOCPP_INTEGRATOR_H
+#ifndef BIOCPP_MD_POTENTIAL_H
+#define BIOCPP_MD_POTENTIAL_H
 
-class integrator{
+template < typename FunctionalForm, typename ParameterTable, typename Compute >
+class potential{
   private:
-    unsigned int t_start;
-    unsigned int t_end;
-    double dt;
-    
-    bool conditional_stop;
-    
-    unsigned int do_every_n_timesteps;
-    unsigned int equilibrate_every_n_timesteps;
+    ParameterTable parameter;
+    FunctionalForm equation; 
   public:
-    integrator(double start, double end, double delta): t_start(start), t_end(end), dt(delta){};
-
-    template< typename Config, typename Potential, typename Functor >    
-    void start( Config& xvaf, Potential& V, Functor& todo );
+    template <typename Config>
+    double value( Config& system );
+    
+    template< typename Config, unsigned int dof >
+    Eigen::Matrix<double, dof, 1> gradient( Config& system );
+    
 };
-
-template< typename Config, typename Potential, typename Functor, typename Stop& >
-void integrator::start( Config& xvaf, Potential& V, Functor& todo, Stop& stop ){
-  unsigned int step = 0;
-  double t = t_start;
-  while( (not conditional_stop and t < t_end) and ( conditional_stop and stop(xva) ) ){
-    if( step%do_every_n_timesteps == 0 ){
-      todo( xva, force, energy );
-    }
-    if( step%equilibrate_every_n_timesteps == 0 ){
-      thermostat( xva, force, energy );
-    }
-    
-    config XVAF = V( Projector.inverse() )
-    
-    
-    t+=dt;    
-    ++step;
-  }
-}
 
 #endif

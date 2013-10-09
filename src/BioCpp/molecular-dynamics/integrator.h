@@ -19,22 +19,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_MD_INTEGRATOR_ALGORITHM_VELOCITY_VERLET_H
-#define BIOCPP_MD_INTEGRATOR_ALGORITHM_VELOCITY_VERLET_H
+#ifndef BIOCPP_MD_INTEGRATOR_ALGORITHM_H
+#define BIOCPP_MD_INTEGRATOR_ALGORITHM_H
 
-#include "integrator_algorithm.h"
-
-class velocity_verlet : integrator_algorithm{
+class integrator_algorithm{
   public:
     template <typename Config, typename Potential, typename ImplicitWater>
-    void step( Config& system, Potential& V, ImplicitWater& water ){
-      system.gen_coordinate = system.gen_coordinate + system.gen_velocity*dt + 0.5*system.gen_acceleration*dt*dt;
-      system.set( system.gen_coordinate );
-      system.gen_force  = system.project( -V.gradient( system ) );
-      system.gen_force += system.project( water.force( system ) );
-      system.gen_velocity = system.gen_velocity + 0.5*( system.gen_acceleration + system.gen_mass.inverse()*system.gen_force )*dt;
-      system.gen_acceleration = system.gen_mass.inverse()*system.gen_force;
-    }
+    void step( Config& system, Potential& V, ImplicitWater& water );
 };
 
 #endif
