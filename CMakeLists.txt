@@ -14,16 +14,34 @@ if ( COMMAND cmake_policy )
   cmake_policy( SET CMP0003 NEW )  
 endif()
 
+# store these variables cause CGAL will override them..
+SET( BUILD_TYPE ${CMAKE_BUILD_TYPE} )
+SET( CXX_FLAGS "${CMAKE_CXX_FLAGS}" )
+
 # CGAL and its components
 find_package( CGAL QUIET COMPONENTS  )
+if ( CGAL_FOUND )
+  # include helper file
+  include( ${CGAL_USE_FILE} )
+endif()
+if ( NOT CGAL_FOUND )
+  message(STATUS "Projects that require the CGAL library will not be compiled.")
+  return()  
+endif()
 
 # Boost and its components
 find_package( Boost REQUIRED )
+if ( NOT Boost_FOUND )
+  message(STATUS "Projects that require the Boost library will not be compiled.")
+endif()
 
-add_definitions( -std=c++0x )
+# restore these variables to its original value
+SET( CMAKE_BUILD_TYPE ${BUILD_TYPE} )
+SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CXX_FLAGS}" )
 
-SET( CMAKE_CXX_FLAGS_DEBUG "-Wall" )
-SET( CMAKE_CXX_FLAGS_RELEASE "-msse2 -O2" )
+SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x") 
+SET( CMAKE_CXX_FLAGS_DEBUG " -Wall")
+SET( CMAKE_CXX_FLAGS_RELEASE " -msse2 -O2")
 
 SET( BIOCPP_BASE ${CMAKE_SOURCE_DIR} )
 SET( BIOCPP_SOURCES ${BIOCPP_BASE}/src/BioCpp/ )
@@ -59,17 +77,7 @@ INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/print_atom_coordinate.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/complex_constructor.cmake )
 INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/has_coordinate.cmake )
 
-if ( NOT Boost_FOUND )
-  message(STATUS "Projects that require the Boost library will not be compiled.")
-  return()  
+if( CGAL_FOUND AND Boost_FOUND )
+  INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/alpha_exposed.cmake )
+  INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/delaunay_exposed.cmake )
 endif()
-
-if ( NOT CGAL_FOUND )
-  message(STATUS "Projects that require the CGAL library will not be compiled.")
-  return()  
-endif()
-# include helper file
-include( ${CGAL_USE_FILE} )
-
-INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/alpha_exposed.cmake )
-INCLUDE( ${BIOCPP_EXAMPLE_CONFIG_FOLDER}/delaunay_exposed.cmake )
