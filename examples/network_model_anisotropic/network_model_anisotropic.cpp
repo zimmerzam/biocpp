@@ -7,11 +7,11 @@ struct anisotropic{
   typedef std::map< char, std::pair<unsigned int, unsigned int> > range_t;
   typedef std::map< char, int> offset_t;
 
-        std::string ss;
-        bool subunit_flag;
-        bool inter_flag;
+  std::string ss;
+  bool subunit_flag;
+  bool inter_flag;
   double p;
-        double k1, k2, ki;
+  double k1, k2, ki;
   double thres;
   range_t range;
   offset_t offset;
@@ -24,24 +24,22 @@ struct anisotropic{
   anisotropic(unsigned int size, range_t ran):range(ran), matrix(Eigen::MatrixXd::Zero(size,size)), mass(Eigen::MatrixXd::Zero(size,size)){
     range_t::iterator it = ran.begin();
     offset[it->first] = 0;
-//    std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
     ++it;
     for(range_t::iterator itm = ran.begin(); it != ran.end(); ++it, ++itm){
       offset[it->first] = offset[itm->first] + itm->second.second-itm->second.first+1;
-//      std::cout << it->first << "  " << offset[it->first] << "  " << it->second.first << "  " << it->second.second << std::endl;
     }
     residue_mass = std::map<BioCpp::amino_acid::id, double>
-                     { { BioCpp::amino_acid::ALA, 71.079 },{ BioCpp::amino_acid::ARG, 156.188 },
-                     { BioCpp::amino_acid::ASN, 114.104 },{ BioCpp::amino_acid::ASP, 115.089 },
-                      { BioCpp::amino_acid::CYS, 103.144 },{ BioCpp::amino_acid::GLN, 128.131 },
-                      { BioCpp::amino_acid::GLU, 129.116 },{ BioCpp::amino_acid::GLY, 57.052 },
-                     { BioCpp::amino_acid::HIS, 137.142 },{ BioCpp::amino_acid::ILE, 113.160 },
-                     { BioCpp::amino_acid::LEU, 113.160 },{ BioCpp::amino_acid::LYS, 128.174 },
-                      { BioCpp::amino_acid::MET, 131.198 },{ BioCpp::amino_acid::PHE, 147.177 },
-                      { BioCpp::amino_acid::PRO, 97.117 },{ BioCpp::amino_acid::SER, 87.078 },
-                     { BioCpp::amino_acid::THR, 101.105 },{ BioCpp::amino_acid::TRP, 186.213 },
-                     { BioCpp::amino_acid::TYR, 163.170 },{ BioCpp::amino_acid::VAL, 99.133 },
-                    };
+                   { { BioCpp::amino_acid::ALA, 71.079 },{ BioCpp::amino_acid::ARG, 156.188 },
+                   { BioCpp::amino_acid::ASN, 114.104 },{ BioCpp::amino_acid::ASP, 115.089 },
+                   { BioCpp::amino_acid::CYS, 103.144 },{ BioCpp::amino_acid::GLN, 128.131 },
+                   { BioCpp::amino_acid::GLU, 129.116 },{ BioCpp::amino_acid::GLY, 57.052 },
+                   { BioCpp::amino_acid::HIS, 137.142 },{ BioCpp::amino_acid::ILE, 113.160 },
+                   { BioCpp::amino_acid::LEU, 113.160 },{ BioCpp::amino_acid::LYS, 128.174 },
+                   { BioCpp::amino_acid::MET, 131.198 },{ BioCpp::amino_acid::PHE, 147.177 },
+                   { BioCpp::amino_acid::PRO, 97.117 },{ BioCpp::amino_acid::SER, 87.078 },
+                   { BioCpp::amino_acid::THR, 101.105 },{ BioCpp::amino_acid::TRP, 186.213 },
+                   { BioCpp::amino_acid::TYR, 163.170 },{ BioCpp::amino_acid::VAL, 99.133 },
+                  };
   }
   
   void operator()( BioCpp::standard::base::residue res1, BioCpp::standard::base::residue res2 ){
@@ -66,21 +64,19 @@ struct anisotropic{
       std::size_t nc2 = ss.find_first_of(ch2);
       std::string subs = ss.substr(nc1,nc2-nc1+1);
       inter_flag =  ( subs.find_first_of(":") == std::string::npos) ? false : true;
-//      std::cout  << ss << "  " << (int)nc1 << "  " << (int)nc2 << "  " << subs << "  " << inter_flag << std::endl;
     }
     else inter_flag = false;
-    /* std::cout << ch1 << ch2 << inter_flag << ki << std::endl; */
     
-    double min_dist = 1000;
-    for(BioCpp::standard::base::residue::iterator at1 = res1.begin(); at1!=res1.end(); ++at1){
-      for(BioCpp::standard::base::residue::iterator at2 = res2.begin(); at2!=res2.end(); ++at2){
-        if( (at1->coordinate - at2->coordinate).norm() < min_dist ){
-          min_dist = (at1->coordinate - at2->coordinate).norm();
-        }
-      }
-    }
-//    std::cout  << ch1 << nres1  << "  " << ch2 << nres2 << "  " << min_dist << std::endl;
-    int cnt = min_dist < thres ? 1 : 0;
+//    double min_dist = 1000;
+//    for(BioCpp::standard::base::residue::iterator at1 = res1.begin(); at1!=res1.end(); ++at1){
+//      for(BioCpp::standard::base::residue::iterator at2 = res2.begin(); at2!=res2.end(); ++at2){
+//        if( (at1->coordinate - at2->coordinate).norm() < min_dist ){
+//          min_dist = (at1->coordinate - at2->coordinate).norm();
+//        }
+//      }
+//    }
+//    int cnt = min_dist < thres ? 1 : 0;
+    int cnt = dist < thres ? 1 : 0;
     if( j-i < 0 ){
       return;
     }
@@ -92,15 +88,12 @@ struct anisotropic{
     }
     else if( std::abs(j-i)==1 and ch1==ch2){
       factor = -k1/dist_p;
-//      std::cout << 1 << std::endl;
     }
     else if (inter_flag){
       factor = -cnt*ki/dist_p;
-//      std::cout  << ch1 << nres1  << "  " << ch2 << nres2 << "  " << min_dist << std::endl;
     }
     else{
       factor = -cnt*k2/dist_p;
-//      std::cout  << "same chain" << std::endl;
     }
     matrix(3*i,3*j)     = factor*( c2(0)-c1(0) )*( c2(0)-c1(0) );
     matrix(3*i,3*j+1)   = factor*( c2(0)-c1(0) )*( c2(1)-c1(1) );
@@ -142,7 +135,6 @@ struct anisotropic{
         matrix(3*i+2,3*i+2) -= matrix(3*i+2,3*j+2);
       }
     }
-//    std::cout << matrix << std::endl;
   }
   
   Eigen::VectorXd eigenvalues(){
@@ -262,7 +254,6 @@ int main(int argc, char* argv[]){
     it->second.erase(std::remove_if(it->second.begin(), it->second.end(), [](char ch){if(ch=='-') return true; return false;}), it->second.end());
     n_res+=it->second.size();
     n_ch_in_pdb++;
-    /* std::cout << it->first << it->second  << std::endl;*/
     if ( subunit_flag and ss.find_first_of(it->first) < std::string::npos ){ 
       ++n_ch_in_s;
     }
