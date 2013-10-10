@@ -1,7 +1,0 @@
-*
-!.gitignore
-!*.cpp
-!CMakeLists.txt
-!python*
-!cgal_support
-!substitution_matrix_csv
