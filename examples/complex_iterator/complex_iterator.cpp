@@ -59,6 +59,7 @@ int main( int argc, char* argv[] ){
               << BIOCCP_VERSION_MAJOR << "." << BIOCPP_VERSION_MINOR
               << std::endl
               << std::endl;
+    return 1;
   }
 
   const char* filename = argv[1];

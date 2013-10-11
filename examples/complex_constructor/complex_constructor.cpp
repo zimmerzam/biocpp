@@ -14,7 +14,9 @@ int main(int argc, char* argv[]){
               << BIOCCP_VERSION_MAJOR << "." << BIOCPP_VERSION_MINOR
               << std::endl
               << std::endl;
+    return 1;
   }
+  
   const char* filename = argv[1];
   // Initialize a pdb object: store SEQRES, number of models, number of chains per model...
   BioCpp::pdb::pdb PDB(filename, BioCpp::pdb::INIT_COMPLETE);
