@@ -6,18 +6,23 @@ This is a simple template library for basic operations on proteins.
 
 + Operating system: GNU/Linux
 + C++ compiler: gcc4.6 (or newer) or equivalent
++ [Eigen3](http://eigen.tuxfamily.org/) (required)
++ [boost](www.boost.org), [cgal](www.cgal.org) (optional)
 
 **BioCpp** is C++0x standard.
 
 ## Installation and setup ##
 
+### External libraries ###
+
 BioCpp uses Eigen3 for atom coordinates, geometrical transformations and this 
 kind of stuffs. So you need to download it from [here](http://eigen.tuxfamily.org/).  
 
-Eigen3 needs no installation: the only thing to keep in mind is that the 
-compiler must be able to find the Eigen header files. Simply add the path to 
-the extracted folder to your `CPLUS_INCLUDE_PATH`. In order to achieve this you 
-can export the path at login by adding
+Eigen3 needs no installation: simply download the source code and extract it.
+The only thing to keep in mind is that the compiler must be able to find the 
+Eigen header files. Simply add the path to the extracted folder to your 
+`CPLUS_INCLUDE_PATH`. In order to achieve this you can export the path at 
+login by adding
 ```bash
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/path-to-header-files/
 ``` 
@@ -32,13 +37,36 @@ endif
 ```
 to your `.cshrc` file if you are using *tcsh* or *csh*.
 
+Some optional functionalities require other external libraries:
 
-Finally, in order to use BioCpp in your project simply:
++ **topology** is based on *boost graph library*. You can download *boost* from
+[here](http://www.boost.org/). Please notice that in the near future *boost* 
+will be used extensively in BioCpp
+
++ **morphology** uses [*cgal*](www.cgal.org) for protein surface reconstruction.
+
+### How to compile the examples ###
+
+BioCpp now uses [*cmake*](www.cmake.org) as building system. A typical usage is
+```bash
+cd /path-to-biocpp/build/debug/
+cmake ../..
+make all
+```
+You can adapt the compilation to your setup by passing flags to the compiler.
+For examples
+```bash
+CXX=g++46 cmake ../../ -DCMAKE_CXX_FLAGS="${CMAKE_CXX_FLAGS} 
+-Wl,-rpath,/usr/local/gcc46/lib64" -DCMAKE_BUILD_TYPE=Debug
+```
+
+### Usage ###
+
+In order to use BioCpp in your project simply:
 
 + add the path containing the source code to your `CPLUS_INCLUDE_PATH`. In order 
-to do this you can modify the `C_INC_PATH` flag to point to your 
-`/path-to/biocpp/src/`. Alternatively you can export `/path-to/biocpp/src/` by 
-following the previous instructions.
+to do this you can pass the path `/path-to/biocpp/src/` to cmake. Alternatively 
+you can export `/path-to/biocpp/src/` by following the previous instructions.
 
 + import BioCpp header file
 ```c++
