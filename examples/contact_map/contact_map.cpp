@@ -151,6 +151,7 @@ struct contact_map{
   
 };
 
+// How to print a contact map
 std::ostream& operator << (std::ostream& out, contact_map map){
   out << map.title << std::endl;
   for( std::set<char>::iterator ch = map.xchainId.begin(); ch != map.xchainId.end(); ++ch ){
