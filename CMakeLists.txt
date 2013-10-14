@@ -33,7 +33,8 @@ else (  )
   message(STATUS "Projects that require the CGAL library will not be compiled.")
 endif()
 
-if( CXX=*icc OR CXX=*icpc )
+if( CMAKE_CXX_COMPILER MATCHES "^icc" OR CMAKE_CXX_COMPILER MATCHES "^icpc")
+  message("-- You are using an Intel compiler")
   set( CMAKE_CXX_FLAGS "-fp-model strict" )
 endif()
 
