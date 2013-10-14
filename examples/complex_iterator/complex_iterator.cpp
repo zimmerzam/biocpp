@@ -56,7 +56,7 @@ int main( int argc, char* argv[] ){
               << "Usage: ./complex_iterator file.pdb"
               << std::endl
               << "This example is based on BioCpp " 
-              << BIOCCP_VERSION_MAJOR << "." << BIOCPP_VERSION_MINOR
+              << BIOCPP_VERSION_MAJOR << "." << BIOCPP_VERSION_MINOR
               << std::endl
               << std::endl;
     return 1;
