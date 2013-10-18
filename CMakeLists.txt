@@ -33,6 +33,11 @@ else (  )
   message(STATUS "Projects that require the CGAL library will not be compiled.")
 endif()
 
+if( CMAKE_CXX_COMPILER MATCHES "^icc" OR CMAKE_CXX_COMPILER MATCHES "^icpc")
+  message("-- You are using an Intel compiler")
+  set( CMAKE_CXX_FLAGS "-fp-model strict" )
+endif()
+
 # Set compiler flags and build type
 set( CMAKE_BUILD_TYPE ${BUILD_TYPE} )
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CXX_FLAGS} -std=c++0x " )
