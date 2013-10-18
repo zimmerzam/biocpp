@@ -38,7 +38,7 @@ class pivot{
         Eigen::Matrix3d rotation;
         
       public:
-        bfs_rotate_visitor( Eigen::Vector3d& source, Eigen::Vector3d& target, double rotangle ): base(source){
+        bfs_rotate_visitor( Eigen::Vector3d& source, Eigen::Vector3d& target, double rotangle ): base(target){
           Eigen::Vector3d axis = target-source;
           axis = axis/axis.norm();
           Eigen::AngleAxisd rot(rotangle, axis);
@@ -47,8 +47,12 @@ class pivot{
         
         template < typename Vertex, typename Graph >
         void discover_vertex(Vertex u, const Graph & G) const {
+          if( base == G[u].atom->coordinate ){
+            return;
+          }
           G[u].atom->coordinate = rotation*(G[u].atom->coordinate - base) + base;
-//          std::cout << G[u].atom->chainId << G[u].atom->resSeq << "  " << G[u].atom->id << std::endl;
+//          std::cout << G[u].atom->chainId << G[u].atom->resSeq << "  " << G[u].atom->id << "  "
+//                    << G[u].atom->coordinate.transpose() << std::endl;
         }
     };
   

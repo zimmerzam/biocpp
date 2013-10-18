@@ -74,6 +74,7 @@ chain<atom_t>::chain(std::vector< edge<atom_t> >& links){
 	/* Copy the links */
 	for( typename std::vector< edge<atom_t> >::iterator lk = links.begin(); lk != links.end(); ++lk){
 		edges.push_back(*lk);
+		edges.back().set();
 	}
 	/* Store the number of links */
 	n_edges=links.size();
