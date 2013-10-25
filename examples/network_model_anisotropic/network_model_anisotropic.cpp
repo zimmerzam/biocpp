@@ -184,7 +184,7 @@ int main(int argc, char* argv[]){
         ki = atof(optarg);
         break;
       case 's':
-              subunit_flag = true;
+        subunit_flag = true;
         s = optarg;
         break;
       case 'T':
@@ -300,18 +300,23 @@ int main(int argc, char* argv[]){
     Eigen::ArrayXd mobility = Eigen::VectorXd::Zero(size).array();
     Eigen::VectorXd evalues = hessian.eigenvalues();
     Eigen::MatrixXd evector = hessian.eigenvectors();
-    for(int c = 1; c!= size; ++c){
+    Eigen::ArrayXd mode = evector.col(1).array()*evector.col(1).array();
+    for(int c = 6; c!= size; ++c){
       Eigen::ArrayXd mode = evector.col(c).array()*evector.col(c).array();
       mobility += mode/evalues[c];
     }
-    std::cout << mobility << std::endl;
+    Eigen::ArrayXd res_mob = Eigen::VectorXd::Zero(size/3.-2.).array();
+    for(int c = 0; c != size/3.-2.; ++c){
+      res_mob[c] = mobility[3*c]+mobility[3*c+1]+mobility[3*c+2];
+    }
+    std::cout << res_mob << std::endl;
   }
   // print entropy
   else if(entropy_flag){
     Eigen::ArrayXd entropy = Eigen::VectorXd::Zero(size).array();
     Eigen::VectorXd evalues = hessian.eigenvalues();
     Eigen::MatrixXd evector = hessian.eigenvectors();
-    for(int c = 1; c!= size; ++c){
+    for(int c = 6; c!= size; ++c){
       Eigen::ArrayXd mode = evector.col(c).array()*evector.col(c).array();
       entropy -= mode*log( evalues[c] );
     }
