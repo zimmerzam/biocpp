@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zimmer/Desktop/biocpp/examples/anisotropic_network_model.cpp
+BioCpp.h
+-
+Eigen/Dense
+-
+getopt.h
+-
+algorithm
+-
+

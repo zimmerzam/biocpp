@@ -34,7 +34,7 @@ struct rngs{
 
   rngs(std::string filename = "seed_file.dat", unsigned long int seed = 0 );
 
-  int RandomUniformInteger(int min_val, int max_val);  /* values in [ min_val, max_val ) */
+  int RandomUniformInteger(int min_val, int max_val);  /* values in [ min_val, max_val ] */
   double RandomUniformDouble(double min_val, double max_val);
   double RandomGaussianDouble(double average, double sigma);
   void SaveStatus();

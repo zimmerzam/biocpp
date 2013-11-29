@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zimmer/Desktop/biocpp/examples/mutations.cpp
+set
+-
+sstream
+-
+string
+-
+algorithm
+-
+getopt.h
+-
+BioCpp.h
+-
+

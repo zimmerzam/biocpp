@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/strict_align.dir/strict_align.cpp.o  -o strict_align -rdynamic 

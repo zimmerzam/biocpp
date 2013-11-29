@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zimmer/Desktop/biocpp/examples/gaussian_network_model.cpp
+string
+-
+sstream
+-
+istream
+-
+iterator
+-
+fstream
+-
+iostream
+-
+map
+-
+getopt.h
+-
+Eigen/Dense
+-
+

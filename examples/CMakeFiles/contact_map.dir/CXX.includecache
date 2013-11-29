@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zimmer/Desktop/biocpp/examples/contact_map.cpp
+map
+-
+set
+-
+iterator
+-
+sstream
+-
+iostream
+-
+getopt.h
+-
+BioCpp.h
+-
+
