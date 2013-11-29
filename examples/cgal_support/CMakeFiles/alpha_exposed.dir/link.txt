@@ -1,1 +1,0 @@
-/usr/bin/c++   -g -O2  -frounding-math -O3 -DNDEBUG  -Wl,-Bsymbolic-functions CMakeFiles/alpha_exposed.dir/alpha_exposed.cpp.o  -o alpha_exposed -rdynamic -lCGAL -lgmpxx -lmpfr -lgmp -lboost_thread-mt -lCGAL -lgmpxx -lmpfr -lgmp -lboost_thread-mt 

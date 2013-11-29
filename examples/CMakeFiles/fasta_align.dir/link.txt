@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/fasta_align.dir/fasta_align.cpp.o  -o fasta_align -rdynamic 

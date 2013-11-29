@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/C_alpha_variance.dir/C_alpha_variance.cpp.o  -o C_alpha_variance -rdynamic 

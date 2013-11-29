@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/contact_map.dir/contact_map.cpp.o  -o contact_map -rdynamic 

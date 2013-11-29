@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/print_atom_coordinate.dir/print_atom_coordinate.cpp.o  -o print_atom_coordinate -rdynamic 
