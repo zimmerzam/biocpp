@@ -43,16 +43,20 @@ class metropolis_t{
 		bool check( Topology_t& before, Topology_t& after ){
 			double E_bef = E(before);
 			double E_aft = E(after );
-			return check(E_bef, E_aft);
+			bool res = check(E_bef, E_aft);
+			E.done(after, res);
+			return res;
 		}
 	
 		bool check( Topology_t& after ){
 			double E_aft = E(after );
-			return check(E_value_before, E_aft);
+			bool res = check(E_value_before, E_aft);
+			E.done(after, res);
+			return res;
 		}
 	
 		bool check( double E_bef, double E_aft ){
-			if(E_aft < E_bef){
+			if(E_aft <= E_bef){
 				E_value_before = E_aft;
 				return true;
 			}

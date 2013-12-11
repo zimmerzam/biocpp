@@ -64,11 +64,14 @@ for num, filename in enumerate(sys.argv[1:]): # Save a matrix of contacts and pr
   colorbar = False
   contactmap = np.zeros([int(cols),int(rows)], float)                              # Initialize contact map
   for line in contact_file:
-    [xch,xam,ych,yam,value]=line.split("  ")                               # Read contact map from file
-    x = xoffsets[xch]+int(xam)-xstarts[xch]
-    y = yoffsets[ych]+int(yam)-ystarts[ych]
-    contactmap[int(y)][int(x)]=1. if float(value)>0.5 else np.nan                                   # Update contact map
-  
+    try:
+      [xch,xam,ych,yam,value]=line.split()                               # Read contact map from file
+      x = xoffsets[xch]+int(xam)-xstarts[xch]
+      y = yoffsets[ych]+int(yam)-ystarts[ych]
+      contactmap[int(y)][int(x)]=1. if float(value)>0.5 else np.nan                                   # Update contact map
+#      contactmap[int(y)][int(x)]=5*float(value) if float(value)>0. else np.nan                                   # Update contact map
+    except:
+      continue
   xtics = [ xoffsets[n] for n in x_names ]
   ytics = [ yoffsets[n] for n in y_names ]
   xtics.append(cols-1)

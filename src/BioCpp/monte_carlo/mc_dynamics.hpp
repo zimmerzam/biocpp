@@ -70,9 +70,6 @@ class dynamic_t{
 		  move_t<Topology_t>& move = get_move(rng.RandomUniformDouble(0.,1.));
       move.update();    // Generate new parameters for the move
 		  move.apply();     // Apply the move
-//		  if( excluded_volume.check() == false ){
-//			  move.apply_inverse();
-//		  }
 		  if( metropolis.check(move.target) == false ){
 			  move.apply_inverse();
 		  }
