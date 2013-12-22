@@ -1,9 +1,9 @@
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 int main( int argc, char* argv[] ){
-  BioCpp::pdb::pdb PDB(argv[1], 0);  
+  BioCpp::pdb::file PDB(argv[1], 0);  
   double radius = atof(argv[2]);
-  BioCpp::standard::morphology::model all_info = PDB.getModel< BioCpp::standard::morphology::atom >(1);
+  BioCpp::standard::morphology::model all_info = BioCpp::pdb::readModel< BioCpp::standard::morphology::atom >(PDB,1);
   
   std::list<BioCpp::standard::morphology::alpha_shape_3::Classification_type> classification_type = {BioCpp::standard::morphology::alpha_shape_3::REGULAR, BioCpp::standard::morphology::alpha_shape_3::EXTERIOR, BioCpp::standard::morphology::alpha_shape_3::SINGULAR};
   std::vector<BioCpp::standard::morphology::alpha_shape_3::Vertex_handle> vertices2;

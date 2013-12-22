@@ -1,4 +1,4 @@
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 struct exposition{
   double threshold;
@@ -46,9 +46,9 @@ struct exposition{
 };
 
 int main(int argc, char* argv[]){
-  BioCpp::pdb::pdb PDB(argv[1], BioCpp::pdb::INIT_COMPLETE);		// read a pdb file
-  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1); // get the first model
-  BioCpp::standard::base::complex_constructor cmp_constr;
+  BioCpp::pdb::file PDB(argv[1], BioCpp::pdb::INIT_COMPLETE);		// read a pdb file
+  BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB,1); // get the first model
+  BioCpp::standard::base::complex_constructor cmp_constr(BioCpp::residue::dictionary);
   BioCpp::standard::base::complex cmp = cmp_constr(all_info, PDB.RseqRes, PDB.RseqRes); // build a complex
 
   double radius = atof(argv[2]);

@@ -1,4 +1,4 @@
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 #include <Eigen/Dense>
 #include <getopt.h>
 #include <algorithm>
@@ -19,7 +19,7 @@ struct anisotropic{
   Eigen::MatrixXd matrix;
   Eigen::MatrixXd mass;
   
-  std::map<BioCpp::amino_acid::id, double> residue_mass;
+  std::map<int, double> residue_mass;
   
   anisotropic(unsigned int size, range_t ran):range(ran), matrix(Eigen::MatrixXd::Zero(size,size)), mass(Eigen::MatrixXd::Zero(size,size)){
     range_t::iterator it = ran.begin();
@@ -28,17 +28,17 @@ struct anisotropic{
     for(range_t::iterator itm = ran.begin(); it != ran.end(); ++it, ++itm){
       offset[it->first] = offset[itm->first] + itm->second.second-itm->second.first+1;
     }
-    residue_mass = std::map<BioCpp::amino_acid::id, double>
-                   { { BioCpp::amino_acid::ALA, 71.079 },{ BioCpp::amino_acid::ARG, 156.188 },
-                   { BioCpp::amino_acid::ASN, 114.104 },{ BioCpp::amino_acid::ASP, 115.089 },
-                   { BioCpp::amino_acid::CYS, 103.144 },{ BioCpp::amino_acid::GLN, 128.131 },
-                   { BioCpp::amino_acid::GLU, 129.116 },{ BioCpp::amino_acid::GLY, 57.052 },
-                   { BioCpp::amino_acid::HIS, 137.142 },{ BioCpp::amino_acid::ILE, 113.160 },
-                   { BioCpp::amino_acid::LEU, 113.160 },{ BioCpp::amino_acid::LYS, 128.174 },
-                   { BioCpp::amino_acid::MET, 131.198 },{ BioCpp::amino_acid::PHE, 147.177 },
-                   { BioCpp::amino_acid::PRO, 97.117 },{ BioCpp::amino_acid::SER, 87.078 },
-                   { BioCpp::amino_acid::THR, 101.105 },{ BioCpp::amino_acid::TRP, 186.213 },
-                   { BioCpp::amino_acid::TYR, 163.170 },{ BioCpp::amino_acid::VAL, 99.133 },
+    residue_mass = std::map<int, double>
+                   { { BioCpp::residue::ALA, 71.079 },{ BioCpp::residue::ARG, 156.188 },
+                   { BioCpp::residue::ASN, 114.104 },{ BioCpp::residue::ASP, 115.089 },
+                   { BioCpp::residue::CYS, 103.144 },{ BioCpp::residue::GLN, 128.131 },
+                   { BioCpp::residue::GLU, 129.116 },{ BioCpp::residue::GLY, 57.052 },
+                   { BioCpp::residue::HIS, 137.142 },{ BioCpp::residue::ILE, 113.160 },
+                   { BioCpp::residue::LEU, 113.160 },{ BioCpp::residue::LYS, 128.174 },
+                   { BioCpp::residue::MET, 131.198 },{ BioCpp::residue::PHE, 147.177 },
+                   { BioCpp::residue::PRO, 97.117 },{ BioCpp::residue::SER, 87.078 },
+                   { BioCpp::residue::THR, 101.105 },{ BioCpp::residue::TRP, 186.213 },
+                   { BioCpp::residue::TYR, 163.170 },{ BioCpp::residue::VAL, 99.133 },
                   };
   }
   
@@ -184,7 +184,7 @@ int main(int argc, char* argv[]){
         ki = atof(optarg);
         break;
       case 's':
-        subunit_flag = true;
+              subunit_flag = true;
         s = optarg;
         break;
       case 'T':
@@ -244,8 +244,8 @@ int main(int argc, char* argv[]){
     return 1;
   }
   
-  BioCpp::pdb::pdb PDB(pdbfilename, BioCpp::pdb::INIT_COMPLETE);
-  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1);
+  BioCpp::pdb::file PDB(pdbfilename, BioCpp::pdb::INIT_COMPLETE);
+  BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB,1);
   unsigned int n_res = 0;
   unsigned int n_ch_in_s = 0;
   unsigned int n_ch_in_pdb = 0;
@@ -265,7 +265,7 @@ int main(int argc, char* argv[]){
     }
   } 
 
-  BioCpp::standard::base::complex_constructor cmp_constr;
+  BioCpp::standard::base::complex_constructor cmp_constr(BioCpp::residue::dictionary);
   BioCpp::standard::base::complex cmp = cmp_constr(all_info, PDB.RseqRes, PDB.RseqRes);
   
   std::map< char, std::pair<unsigned int, unsigned int> > range;
@@ -300,23 +300,18 @@ int main(int argc, char* argv[]){
     Eigen::ArrayXd mobility = Eigen::VectorXd::Zero(size).array();
     Eigen::VectorXd evalues = hessian.eigenvalues();
     Eigen::MatrixXd evector = hessian.eigenvectors();
-    Eigen::ArrayXd mode = evector.col(1).array()*evector.col(1).array();
-    for(int c = 6; c!= size; ++c){
+    for(int c = 1; c!= size; ++c){
       Eigen::ArrayXd mode = evector.col(c).array()*evector.col(c).array();
       mobility += mode/evalues[c];
     }
-    Eigen::ArrayXd res_mob = Eigen::VectorXd::Zero(size/3.-2.).array();
-    for(int c = 0; c != size/3.-2.; ++c){
-      res_mob[c] = mobility[3*c]+mobility[3*c+1]+mobility[3*c+2];
-    }
-    std::cout << res_mob << std::endl;
+    std::cout << mobility << std::endl;
   }
   // print entropy
   else if(entropy_flag){
     Eigen::ArrayXd entropy = Eigen::VectorXd::Zero(size).array();
     Eigen::VectorXd evalues = hessian.eigenvalues();
     Eigen::MatrixXd evector = hessian.eigenvectors();
-    for(int c = 6; c!= size; ++c){
+    for(int c = 1; c!= size; ++c){
       Eigen::ArrayXd mode = evector.col(c).array()*evector.col(c).array();
       entropy -= mode*log( evalues[c] );
     }

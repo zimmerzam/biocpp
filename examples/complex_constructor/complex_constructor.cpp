@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
-#include <BioCpp.h>
+#include <BioCpp.hxx>
+
+#include <BioCpp/pdb/standard/print_atom.hpp>
 
 int main(int argc, char* argv[]){
   if(argc < 2){
@@ -19,18 +21,16 @@ int main(int argc, char* argv[]){
   
   const char* filename = argv[1];
   // Initialize a pdb object: store SEQRES, number of models, number of chains per model...
-  BioCpp::pdb::pdb PDB(filename, BioCpp::pdb::INIT_COMPLETE);
+  BioCpp::pdb::file PDB(filename, BioCpp::pdb::INIT_COMPLETE);
   // Read the first model and create an unstructured container of atoms
-  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1);
+  BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB, 1);
   // Order atoms in 'all_info' by using informations stored in the pdb: missing residues are 
   //detected and stored as empty residues 
-  BioCpp::standard::base::complex_constructor constr;
+  BioCpp::standard::base::complex_constructor constr(BioCpp::residue::dictionary);
   BioCpp::standard::base::complex cmp = constr(all_info, PDB.RseqRes, PDB.TseqRes);
   
   // Bonus: print all the atoms in the complex by iterating a function that print a single 
   // atom over the whole complex
-  BioCpp::pdb::print_atom_line printer(std::cout);
-  BioCpp::Iterate< BioCpp::standard::base::atom >(cmp, printer);
-
+  BioCpp::Iterate< BioCpp::standard::base::atom >(cmp, BioCpp::pdb::print_atom);
   return 0;
 }

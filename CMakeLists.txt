@@ -40,7 +40,7 @@ endif()
 
 # Set compiler flags and build type
 set( CMAKE_BUILD_TYPE ${BUILD_TYPE} )
-set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CXX_FLAGS} -std=c++0x " )
+set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CXX_FLAGS} -std=c++0x -lconfig++" )
 set( CMAKE_CXX_FLAGS_DEBUG " -Wall")
 set( CMAKE_CXX_FLAGS_RELEASE " -msse2 -O2")
 
@@ -48,12 +48,18 @@ set( CMAKE_CXX_FLAGS_RELEASE " -msse2 -O2")
 set( BIOCPP_BASE ${CMAKE_SOURCE_DIR} )
 
 ## Configure version number ##
-set( BIOCPP_VERSION_MAJOR 1 )
+set( BIOCPP_VERSION_MAJOR 2 )
 set( BIOCPP_VERSION_MINOR 0 )
 configure_file(
   "${BIOCPP_BASE}/src/BioCpp/version.h.ini"
   "${BIOCPP_BASE}/src/BioCpp/version.h"
 )
+
+## Set variables for tests $$
+
+## Add rules to build the library ##
+set( BIOCPP_LIBRARY_FOLDER ${BIOCPP_BASE}/lib )
+add_subdirectory( ${BIOCPP_BASE}/src/BioCpp )
 
 ## Add rules to build all the examples ##
 set( BIOCPP_EXAMPLES ${BIOCPP_BASE}/examples )

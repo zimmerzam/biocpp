@@ -9,7 +9,7 @@
 */
 
 #include <iostream>
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 // This is a very simple functor that can be used to print 
 // information about atoms
@@ -17,7 +17,7 @@ struct print_coordinate{
   // This function takes a reference to an atom as arguments and, in case
   // it is not an hydrogen, it prints its coordinate
   void operator()(BioCpp::standard::base::atom& atom){
-    if(atom.element==BioCpp::element::id::H){
+    if(atom.element==BioCpp::element::H){
       return;
     }
     std::cout << atom.coordinate[0] << "  "
@@ -65,12 +65,12 @@ int main( int argc, char* argv[] ){
   const char* filename = argv[1];
   
   // Initialize a pdb object: store SEQRES, number of models, number of chains per model...
-  BioCpp::pdb::pdb PDB(filename, 0); 
+  BioCpp::pdb::file PDB(filename, 0); 
   // Read the first model and create an unstructured container of atoms
-  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1);
+  BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB,1);
   // Order atoms in 'all_info' by using informations stored in the pdb: missing residues are 
   //detected and stored as empty residues 
-  BioCpp::standard::base::complex_constructor cmp_constr;
+  BioCpp::standard::base::complex_constructor cmp_constr(BioCpp::residue::dictionary);
   BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
   
   // count all the heavy atoms in the complex

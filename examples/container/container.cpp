@@ -10,7 +10,7 @@
 */
 
 #include <iostream>
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 // print functor
 struct print{

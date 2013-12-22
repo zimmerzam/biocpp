@@ -4,7 +4,7 @@
 #include <sstream>
 #include <iostream>
 #include <getopt.h>
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 typedef std::pair< char,int > residue;
 typedef std::pair< residue, residue > contact;
@@ -259,14 +259,18 @@ int main(int argc, char* argv[]){
               << "\t-h:  use hydrogens (default false)" << std::endl
               << "\t-d:  set contact distance in Angstrom (default: 4.5)" << std::endl
               << "\t-a:  average each chain (default: false)" << std::endl
-              << "\t-t:  set map title (default: 'Contact Probability')" << std::endl;
+              << "\t-t:  set map title (default: 'Contact Probability')" << std::endl
+              << "This example is based on BioCpp " 
+              << BIOCPP_VERSION_MAJOR << "." << BIOCPP_VERSION_MINOR
+              << std::endl
+              << std::endl;
     return 1;
   }
 
-  BioCpp::pdb::pdb PDB(contactfile, 0);  
+  BioCpp::pdb::file PDB(contactfile, 0);  
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
-    BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(mdl);
-    BioCpp::standard::base::complex_constructor cmp_constr; 
+    BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB,mdl);
+    BioCpp::standard::base::complex_constructor cmp_constr(BioCpp::residue::dictionary); 
     BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
     BioCpp::Iterate<BioCpp::standard::base::residue, BioCpp::standard::base::residue>(cmp,cmp,map);
   }

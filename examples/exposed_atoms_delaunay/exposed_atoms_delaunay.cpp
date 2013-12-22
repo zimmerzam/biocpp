@@ -1,11 +1,10 @@
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 int main( int argc, char* argv[] ){
-  BioCpp::pdb::pdb PDB(argv[1], 0);  
-  BioCpp::standard::morphology::model all_info = PDB.getModel< BioCpp::standard::morphology::atom >(1);
+  BioCpp::pdb::file PDB(argv[1], 0);  
+  BioCpp::standard::morphology::model all_info = BioCpp::pdb::readModel< BioCpp::standard::morphology::atom >(PDB, 1);
 
   std::vector<BioCpp::standard::morphology::triangulation_3::Vertex_handle> vertices2;
-
   BioCpp::morphology::delaunay_surface<BioCpp::standard::morphology::triangulation_3, BioCpp::standard::morphology::atom>(all_info, vertices2);
 
   std::size_t nbf2 = vertices2.size();

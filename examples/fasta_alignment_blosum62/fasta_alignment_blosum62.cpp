@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <string>
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 int main(int argc, char* argv[]){
   std::string fasta1 = argc > 1 ? argv[1] : "ABD-G-";

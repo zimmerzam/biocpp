@@ -1,7 +1,7 @@
 #include <map>
 #include <list>
 #include <getopt.h>
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 typedef std::pair<char, int> residue;
 
@@ -55,11 +55,11 @@ int main(int argc, char* argv[]){
   }
 
 	alphaVariance variance;
-  BioCpp::pdb::pdb PDB(pdbfile, 0);
+  BioCpp::pdb::file PDB(pdbfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
     std::cout << "Now processing model " << mdl << "/" << PDB.n_models << std::endl;
-    BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(mdl);
-    BioCpp::standard::base::complex_constructor cmp_constr;
+    BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB, mdl);
+    BioCpp::standard::base::complex_constructor cmp_constr(BioCpp::residue::dictionary);
     BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
     BioCpp::Iterate< BioCpp::standard::base::residue >(cmp, variance);
   }

@@ -20,8 +20,7 @@ add_subdirectory( ids )
 add_subdirectory( network_model_anisotropic )
 add_subdirectory( network_model_gaussian )
 
-add_subdirectory( pdb )
-add_subdirectory( pdb_merge )
+add_subdirectory( pdb_read )
 
 add_subdirectory( protein_Calpha_variance )
 add_subdirectory( protein_dpss )

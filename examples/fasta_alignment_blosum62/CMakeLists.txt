@@ -6,3 +6,4 @@ set_property(
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_FASTA_SUBST_MATRIX_BLOSUM62 
 )
 add_executable(${PROJECT_NAME} ${PROJECT_NAME}.cpp)
+target_link_libraries(${PROJECT_NAME} utils)

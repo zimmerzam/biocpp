@@ -3,49 +3,45 @@
 #include <string>
 #include <algorithm>
 #include <getopt.h>
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 struct mutation{
   char chainId;
   int resSeq;
-  BioCpp::amino_acid::id from;
-  BioCpp::amino_acid::id to;
+  int from;
+  int to;
 };
 
 struct strict_residue_printer{
-  BioCpp::pdb::print_atom_line printer;
-  
-  strict_residue_printer(std::ostream& dev): printer(dev) {};
-  
   void operator()( BioCpp::standard::base::residue& res ){
     for(BioCpp::standard::base::residue::iterator at = res.begin(); at != res.end(); ++at){
       /* always print backbone atoms */
-      if( at->id == BioCpp::atom::id::N_ or at->id == BioCpp::atom::id::CA or 
-          at->id == BioCpp::atom::id::C_ or at->id == BioCpp::atom::id::OXT or
-          at->id == BioCpp::atom::id::H_ or at->id == BioCpp::atom::id::O_ or
+      if( at->id == BioCpp::atom::id::N or at->id == BioCpp::atom::id::CA or 
+          at->id == BioCpp::atom::id::C or at->id == BioCpp::atom::id::OXT or
+          at->id == BioCpp::atom::id::H or at->id == BioCpp::atom::id::O or
           at->id == BioCpp::atom::id::HA ){
         at->resName = res.type;
-        printer(*at);
+        BioCpp::pdb::print_atom(*at);
       }
       /* If residue is ALA */
-      else if(res.type == BioCpp::amino_acid::id::ALA){
+      else if(res.type == BioCpp::residue::id::ALA){
         if( at->id == BioCpp::atom::id::CB or at->id == BioCpp::atom::id::HB1 or
             at->id == BioCpp::atom::id::HB2 or at->id == BioCpp::atom::id::HB3 ) {
           at->resName = res.type;
-          printer(*at);
+          BioCpp::pdb::print_atom(*at);
         }
       }
       /* If residue is GLY */
-      else if(res.type == BioCpp::amino_acid::id::ALA){
+      else if(res.type == BioCpp::residue::id::ALA){
         if( at->id == BioCpp::atom::id::HA2 or at->id == BioCpp::atom::id::HA3 ) {
           at->resName = res.type;
-          printer(*at);
+          BioCpp::pdb::print_atom(*at);
         }
       }
       /* If residue is not ALA nor GLY and atom is a side-chain ones */
       else{
         at->resName = res.type;
-        printer(*at);
+        BioCpp::pdb::print_atom(*at);
       }
     }
   }
@@ -92,9 +88,9 @@ int main(int argc, char* argv[]){
     mutation tmpmut;
     tmpmut.chainId = str.substr(3,1)[0];
     tmpmut.resSeq = atoi( str.substr(4,str.size()-7).c_str() );
-    tmpmut.from = BioCpp::amino_acid::string_to_id[ str.substr(0,3) ];
-    tmpmut.to = BioCpp::amino_acid::string_to_id[ str.substr(str.size()-3,3) ];
-    if(tmpmut.to != BioCpp::amino_acid::id::ALA and tmpmut.to != BioCpp::amino_acid::id::GLY){
+    tmpmut.from = BioCpp::residue::dictionary.string_to_id[ str.substr(0,3) ];
+    tmpmut.to = BioCpp::residue::dictionary.string_to_id[ str.substr(str.size()-3,3) ];
+    if(tmpmut.to != BioCpp::residue::id::ALA and tmpmut.to != BioCpp::residue::id::GLY){
       exit_asap = true;
       std::cout << "Sorry! At the moment only mutations to ALA or GLY are supported" << std::endl;
       continue;
@@ -105,11 +101,11 @@ int main(int argc, char* argv[]){
     std::cout << "Error: not even a valid mutation found. Bye!" << std::endl;
     return 1;
   }
-  strict_residue_printer printer(std::cout);
-  BioCpp::pdb::pdb PDB(contactfile, 0);
+  strict_residue_printer printer;
+  BioCpp::pdb::file PDB(contactfile, 0);
   for(int mdl = 1; mdl <= PDB.n_models; ++mdl){
-    BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(mdl);
-    BioCpp::standard::base::complex_constructor cmp_constr;
+    BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB,mdl);
+    BioCpp::standard::base::complex_constructor cmp_constr(BioCpp::residue::dictionary);
     BioCpp::standard::base::complex cmp = cmp_constr( all_info, PDB.RseqRes, PDB.RseqRes );
     for( std::vector<mutation>::iterator mt = mutations.begin(); mt != mutations.end(); ++mt ){
       if( not cmp.exists(mt->chainId) ){

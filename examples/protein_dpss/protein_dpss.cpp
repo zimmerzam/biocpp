@@ -5,7 +5,7 @@
     The example shows how to determine a protein secondary structure according to dpss definition
 */
 
-#include <BioCpp.h>
+#include <BioCpp.hxx>
 
 // this functor takes two iterators to residue as parameters, check if they 
 // belong to a secondary structure and print some info.
@@ -25,11 +25,11 @@ struct print_sec{
 };
 
 int main(int argc, char* argv[]){
-  BioCpp::pdb::pdb PDB(argv[1], BioCpp::pdb::INIT_COMPLETE);		// read a pdb file
+  BioCpp::pdb::file PDB(argv[1], BioCpp::pdb::INIT_COMPLETE);		// read a pdb file
 
-  BioCpp::standard::base::model all_info = PDB.getModel<BioCpp::standard::base::atom>(1); // get the first model
+  BioCpp::standard::base::model all_info = BioCpp::pdb::readModel<BioCpp::standard::base::atom>(PDB,1); // get the first model
   
-  BioCpp::standard::base::complex_constructor cmp_constr;
+  BioCpp::standard::base::complex_constructor cmp_constr(BioCpp::residue::dictionary);
   BioCpp::standard::base::complex cmp = cmp_constr(all_info, PDB.RseqRes, PDB.RseqRes); // build a complex
   
   BioCpp::standard::base::dpss::h_bridge_map_constructor h_map_constr;

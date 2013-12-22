@@ -22,46 +22,40 @@
 #ifndef BIOCPP_STANDARD_H
 #define BIOCPP_STANDARD_H
 
-#include "standard/ids/atom_id.h"
-#include "standard/ids/element_id.h"
-#include "standard/ids/amino_acid_id.h"
-#include "standard/ids/moiety_id.h"
-
 // The following are template classes. The only template parameter is the atom type.
-#include "standard/model.h"
-#include "standard/residue.h"
-#include "standard/chain.h"
-#include "standard/complex.h"
-#include "standard/complex_constructor.h"
+#include "standard/proteins/model.hxx"
+#include "standard/proteins/residue.hxx"
+#include "standard/proteins/chain.hxx"
+#include "standard/proteins/complex.hxx"
+#include "standard/proteins/complex_constructor.hxx"
 
 // The following are fully specialized classes. The atom type is "BioCpp::base_atom"
-#include "standard/base/model.h"
-#include "standard/base/residue.h"
-#include "standard/base/chain.h"
-#include "standard/base/complex.h"
-#include "standard/base/complex_constructor.h"
+#include "standard/proteins/base/model.hpp"
+#include "standard/proteins/base/residue.hpp"
+#include "standard/proteins/base/chain.hpp"
+#include "standard/proteins/base/complex.hpp"
+#include "standard/proteins/base/complex_constructor.hpp"
 
-#include "standard/base/dpss/h_bridge_map.h"
-#include "standard/base/dpss/h_bridge_map_constructor.h"
+#include "standard/proteins/base/dpss/h_bridge_map.hpp"
+#include "standard/proteins/base/dpss/h_bridge_map_constructor.hpp"
 
 // The following are fully specialized classes. The atom type is
 // "BioCpp::morphology::cgal_extensible_kernel::point<BioCpp::base_atom>"
 #if defined BIOCPP_INCLUDE_CGAL
-  #include "standard/morphology/atom.h"
-  #include "standard/morphology/model.h"
-  #include "standard/morphology/residue.h"
-  #include "standard/morphology/chain.h"
-  #include "standard/morphology/complex.h"
-  #include "standard/morphology/complex_constructor.h"
-  #include "standard/morphology/kernel.h"
-  #include "standard/morphology/vertex_base.h"
-  #include "standard/morphology/cell_base.h"
-  #include "standard/morphology/triangulation_data_structure.h"
-  #include "standard/morphology/triangulation_3.h"
-  #include "standard/morphology/alpha_shape_3.h"
-  #include "standard/morphology/delaunay_3.h"
+  #include "standard/proteins/morphology/atom.hpp"
+  #include "standard/proteins/morphology/model.hpp"
+  #include "standard/proteins/morphology/residue.hpp"
+  #include "standard/proteins/morphology/chain.hpp"
+  #include "standard/proteins/morphology/complex.hpp"
+  #include "standard/proteins/morphology/complex_constructor.hpp"
+  #include "standard/proteins/morphology/kernel.hpp"
+  #include "standard/proteins/morphology/vertex_base.hpp"
+  #include "standard/proteins/morphology/cell_base.hpp"
+  #include "standard/proteins/morphology/triangulation_data_structure.hpp"
+  #include "standard/proteins/morphology/triangulation_3.hpp"
+  #include "standard/proteins/morphology/alpha_shape_3.hpp"
+  #include "standard/proteins/morphology/delaunay_3.hpp"
 #endif
-
 
 //namespace BioCpp{
 //namespace standard{
