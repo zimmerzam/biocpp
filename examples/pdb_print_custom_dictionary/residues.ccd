@@ -1,0 +1,246 @@
+// An example configuration file that stores information about residues.
+
+import = [ "residues" ]; // <-- list all settings
+
+residues = (
+	{
+		id = 1;
+		string = ["CYS"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,6,14, 56];
+				bond_list = ([1,2],[1,6],[2,3],[3,4],  [2,14],[14,56]);
+			}
+		);
+	},
+	{
+		id = 2;
+		string = ["PHE"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 23,16,17,20];
+				bond_list = ([1,2],[1,6],[2,3],[3,4],  [2,14],[14,23],[23,16],[23,17],[16,20],[17,21],[20,27],[21,27]);
+			}
+		);
+	},
+	{
+		id = 3;
+		string = ["LEU"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 23,16,17];
+				bond_list = ([1,2],[1,6],[2,3],[3,4],  [2,14],[14,23],[23,16],[23,17] );
+			}
+		);
+	},
+	{
+		id = 4;
+		string = ["TRP"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 23,16,17,37,21,29,32,22,30]
+				bond_list = ([1,2],[1,6],[2,3],[3,4],  [2,14],[14,23],[23,16],[23,17],[16,37],[17,21],[37,21],[21,29],[29,32],[17,22],[22,30],[32,30]);
+			}
+		);
+	},
+	{
+		id = 5;
+		string = ["VAL"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 24, 25];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,24],[14,25]);
+			}
+		);
+	},
+	{
+		id = 6;
+		string = ["ILE"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 24, 25, 16];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,24],[14,25],[24,16]);
+			}
+		);
+	},
+	{
+		id = 7;
+		string = ["MET"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 23, 55, 19];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,23],[23,55],[55,19]);
+			}
+		);
+	},
+	{
+		id = 8;
+		string = ["HIS"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 25];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,25]);
+			}
+		);
+	},
+	{
+		id = 9;
+		string = ["TYR"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 23, 16,17,20,21,27,49];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,23],[23,16],[16,20],[23,17],[17,21],[20,27],[21,27],[27,49]);
+			}
+		);
+	},
+	{
+		id = 10;
+		string = ["ALA"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14]);
+			}
+		);
+	},
+	{
+		id = 11;
+		string = ["GLY"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4];
+				bond_list = ([1,2],[2,3],[3,4]);
+			}
+		);
+	},
+	{
+		id = 12;
+		string = ["PRO"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4];
+				bond_list = ();
+			}
+		);
+	},
+	{
+		id = 13;
+		string = ["ASN"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	},
+	{
+		id = 14;
+		string = ["THR"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	},
+	{
+		id = 15;
+		string = ["SER"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	},
+	{
+		id = 16;
+		string = ["ARG"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	},
+	{
+		id = 17;
+		string = ["GLN"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	},
+	{
+		id = 18;
+		string = ["ASP"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	},
+	{
+		id = 19;
+		string = ["LYS"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	},
+	{
+		id = 20;
+		string = ["GLU"];
+		definition = (
+			{
+				atom_start = 1;
+				atom_end = 3;
+				atom_list = [1,2,3,4,14, 53, 54];
+				bond_list = ([1,2],[2,3],[3,4],  [2,14],[14,53],[14,54]);
+			}
+		);
+	}
+);

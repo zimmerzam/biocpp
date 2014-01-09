@@ -27,7 +27,7 @@
 namespace BioCpp{
 namespace residue{
 
-// in order of ??? -> chiedi ad Antonio
+// in order of ??? -> ask to Antonio
 enum id : signed int{
   UNK = -1 , /* Unknown residue */
   CYS =  1 , /* Cysteine */

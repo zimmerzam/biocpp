@@ -22,6 +22,7 @@ add_subdirectory( network_model_gaussian )
 
 add_subdirectory( pdb_read )
 add_subdirectory( pdb_print )
+add_subdirectory( pdb_print_custom_dictionary )
 
 add_subdirectory( protein_Calpha_variance )
 add_subdirectory( protein_dpss )

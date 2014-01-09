@@ -1,0 +1,584 @@
+// An example configuration file that stores information about atoms.
+
+import = [ "atoms" ]; // <-- list all settings
+
+// Store inventory:
+atoms=
+(
+	// backbone atoms
+	{
+		id = 1;
+		string = [" N  "];
+		definition = { element = 7;};
+	},
+	{
+		id = 2;
+		string = [" CA "];
+		definition = { element = 6;};
+	},
+	{
+		id = 3;
+		string = [" C  "];
+		definition = { element = 6;};
+	},
+	{
+		id = 4;
+		string = [" O  "];
+		definition = { element = 8;};
+	},
+	{
+		id = 5;
+		string = [" OXT"];
+		definition = { element = 8;};
+	},
+	{
+		id = 6;
+		string = [" H  "];
+		definition = { element = 1;};
+	},
+	{
+		id = 7;
+		string = [" HA "];
+		definition = { element = 1;};
+	},
+	{
+		id = 8;
+		string = [" HA1"];
+		definition = { element = 1;};
+	},
+	{
+		id = 9;
+		string = [" HA2"];
+		definition = { element = 1;};
+	},
+	{
+		id = 10;
+		string = [" HA3"];
+		definition = { element = 1;};
+	},
+	{
+		id = 11;
+		string = [" H1 "];
+		definition = { element = 1;};
+	},
+	{
+		id = 12;
+		string = [" H2 "];
+		definition = { element = 1;};
+	},
+	{
+		id = 13;
+		string = [" H3 "];
+		definition = { element = 1;};
+	},
+	 // Side Chain Atoms : Carbon
+  { 
+    id = 14;
+    string = [" CB "];
+    definition = { element = 6;};
+  },
+  { 
+    id = 15;
+    string = [" CD "];
+    definition = { element = 6;};
+  },
+  { 
+    id = 16;
+    string = [" CD1"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 17;
+    string = [" CD2"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 18;
+    string = [" CD3"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 19;
+    string = [" CE "];
+    definition = { element = 6;};
+  },
+  { 
+    id = 20;
+    string = [" CE1"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 21;
+    string = [" CE2"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 22;
+    string = [" CE3"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 23;
+    string = [" CG "];
+    definition = { element = 6;};
+  },
+  { 
+    id = 24;
+    string = [" CG1"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 25;
+    string = [" CG2"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 26;
+    string = [" CG3"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 27;
+    string = [" CZ "];
+    definition = { element = 6;};
+  },
+  { 
+    id = 28;
+    string = [" CZ1"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 29;
+    string = [" CZ2"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 30;
+    string = [" CZ3"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 31;
+    string = [" CH1"];
+    definition = { element = 6;};
+  },
+  { 
+    id = 32;
+    string = [" CH2"];
+    definition = { element = 6;};
+  },
+	// Side Chain Atoms : Nitrogen
+	{ 
+    id = 33;
+    string = [" ND "];
+    definition = { element = 7;};
+  },
+	{ 
+    id = 34;
+    string = [" ND1"];
+    definition = { element = 7;};
+  },
+  { 
+    id = 35;
+    string = [" ND2"];
+    definition = { element = 7;};
+  },
+  { 
+    id = 36;
+    string = [" NE "];
+    definition = { element = 7;};
+  },
+  { 
+    id = 37;
+    string = [" NE1"];
+    definition = { element = 7;};
+  },
+  { 
+    id = 38;
+    string = [" NE2"];
+    definition = { element = 7;};
+  },
+  { 
+    id = 39;
+    string = [" NH "];
+    definition = { element = 7;};
+  },
+  { 
+    id = 40;
+    string = [" NH1"];
+    definition = { element = 7;};
+  },
+  { 
+    id = 41;
+    string = [" NH2"];
+    definition = { element = 7;};
+  },
+  { 
+    id = 42;
+    string = [" NZ "];
+    definition = { element = 7;};
+  },
+	// Side Chain Atoms : Oxygen
+	{ 
+    id = 43;
+    string = [" OD "];
+    definition = { element = 8;};
+  },
+  { 
+    id = 44;
+    string = [" OD1"];
+    definition = { element = 8;};
+  },
+  { 
+    id = 45;
+    string = [" OD2"];
+    definition = { element = 8;};
+  },
+  { 
+    id = 46;
+    string = [" OE "];
+    definition = { element = 8;};
+  },
+  { 
+    id = 47;
+    string = [" OE1"];
+    definition = { element = 8;};
+  },
+  { 
+    id = 48;
+    string = [" OE2"];
+    definition = { element = 8;};
+  },
+  { 
+    id = 49;
+    string = [" OH "];
+    definition = { element = 8;};
+  },
+  { 
+    id = 50;
+    string = [" OH1"];
+    definition = { element = 8;};
+  },
+  { 
+    id = 51;
+    string = [" OH2"];
+    definition = { element = 8;};
+  },
+  { 
+    id = 52;
+    string = [" OG "];
+    definition = { element = 8;};
+  },
+  { 
+    id = 53;
+    string = [" OG1"];
+    definition = { element = 8;};
+  },
+  { 
+    id = 54;
+    string = [" OG2"];
+    definition = { element = 8;};
+  },
+	// Side Chain Atoms : Sulfur
+	{ 
+    id = 55;
+    string = [" SD "];
+    definition = { element = 16;};
+  },
+  { 
+    id = 56;
+    string = [" SG "];
+    definition = { element = 8;};
+  },
+	// Side Chain Atoms : Hydrogen
+	{ 
+    id = 58;
+    string = [" HB "];
+    definition = { element = 1;};
+  },
+  { 
+    id = 59;
+    string = [" HB1"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 60;
+    string = [" HB2"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 61;
+    string = [" HB3"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 62;
+    string = [" HD "];
+    definition = { element = 1;};
+  },
+  { 
+    id = 63;
+    string = [" HD1"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 64;
+    string = [" HD2"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 65;
+    string = [" HD3"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 66;
+    string = ["1HD1", "HD11"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 67;
+    string = ["2HD1", "HD12"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 68;
+    string = ["3HD1","HD13"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 69;
+    string = ["1HD2","HD21"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 70;
+    string = ["2HD2","HD22"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 71;
+    string = ["3HD2","HD23"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 72;
+    string = [" HE "];
+    definition = { element = 1;};
+  },
+  { 
+    id = 73;
+    string = [" HE1"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 74;
+    string = [" HE2"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 75;
+    string = [" HE3"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 76;
+    string = ["1HE1","HE11"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 77;
+    string = ["2HE1","HE12"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 78;
+    string = ["3HE1","HE13"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 79;
+    string = ["1HE2","HE21"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 80;
+    string = ["2HE2","HE22"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 81;
+    string = ["3HE2","HE23"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 82;
+    string = [" HG "];
+    definition = { element = 1;};
+  },
+  { 
+    id = 83;
+    string = [" HG1"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 84;
+    string = [" HG2"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 85;
+    string = [" HG3"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 86;
+    string = ["1HG1","HG11"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 87;
+    string = ["2HG1","HG12"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 88;
+    string = ["3HG1","HG13"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 89;
+    string = ["1HG2","HG21"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 90;
+    string = ["2HG2","HG22"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 91;
+    string = ["3HG2","HG23"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 92;
+    string = [" HH "];
+    definition = { element = 1;};
+  },
+  { 
+    id = 93;
+    string = [" HH1"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 94;
+    string = [" HH2"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 95;
+    string = [" HH3"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 96;
+    string = ["1HH1","HH11"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 97;
+    string = ["2HH1","HH12"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 98;
+    string = ["3HH1","HH13"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 99;
+    string = ["1HH2","HH21"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 100;
+    string = ["2HH2","HH22"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 101;
+    string = ["3HH2","HH23"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 102;
+    string = [" HN "];
+    definition = { element = 1;};
+  },
+  { 
+    id = 103;
+    string = [" HN1"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 104;
+    string = [" HN2"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 105;
+    string = [" HN3"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 106;
+    string = ["1HN1","HN11"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 107;
+    string = ["2HN1","HN12"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 108;
+    string = ["3HN1","HN13"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 109;
+    string = ["1HN2","HN21"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 100;
+    string = ["2HN2","HN22"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 111;
+    string = ["3HN2","HN23"];
+    definition = { element = 1;};
+  },
+	{ 
+    id = 112;
+    string = [" HZ "];
+    definition = { element = 1;};
+  },
+  { 
+    id = 113;
+    string = [" HZ1"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 114;
+    string = [" HZ2"];
+    definition = { element = 1;};
+  },
+  { 
+    id = 115;
+    string = [" HZ3"];
+    definition = { element = 1;};
+  }
+);

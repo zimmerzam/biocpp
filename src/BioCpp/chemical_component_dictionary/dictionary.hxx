@@ -40,7 +40,7 @@ void dictionary<definition_t>::importSetting(libconfig::Setting& setting){
     int import_size = import.getLength();
     std::list<std::string> import_lib;
     for(int i = 0; i != import_size; ++i){
-      import_lib.push_back( std::string(import[i]) );
+      import_lib.push_back( import[i] );
     }
     importSetting( setting, import_lib );
   }
@@ -63,9 +63,10 @@ void dictionary<definition_t>::importSetting(libconfig::Setting& setting, std::l
           libconfig::Setting& strings = item["string"];
           int n_strings = strings.getLength();
           for(int i = 0; i != n_strings; ++i){
-            string_to_id[ std::string(strings[i]) ] = id;
+          	std::string tmp_string = strings[i];
+            string_to_id[ tmp_string ] = id;
             if(i==0){
-              id_to_string[id] = std::string(strings[i]);
+              id_to_string[id] = tmp_string;
             }
           }
           libconfig::Setting& definitions = item["definition"];
