@@ -39,7 +39,7 @@ namespace pdb{
 		@param buffer a buffer containing a pdb SEQRES record
 */
 template <typename resDict>
-BioCpp::io::seqres_record parseSeqres( char buffer[], resDict& res_dict ){
+inline BioCpp::io::seqres_record parseSeqres( char buffer[], resDict& res_dict ){
 	BioCpp::io::seqres_record record;
 	char* c_line = strtok(buffer, "\n");
 	while(c_line){
@@ -73,7 +73,7 @@ BioCpp::io::seqres_record parseSeqres( char buffer[], resDict& res_dict ){
 	return record;
 }
 
-BioCpp::io::seqres_record parseSeqres( char buffer[] ){
+inline BioCpp::io::seqres_record parseSeqres( char buffer[] ){
   return parseSeqres<residue::dictionary_t>(buffer, residue::dictionary);
 };
 

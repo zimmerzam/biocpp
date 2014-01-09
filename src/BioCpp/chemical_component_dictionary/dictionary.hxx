@@ -16,8 +16,8 @@ class dictionary{
     std::map<std::string, int> string_to_id;
     std::map<int, definition_t> definition;
     
-    dictionary( std::map<int, std::string> i2s = {}, std::map<std::string, int> s2i = {},
-                std::map<int, definition_t> des = {} );
+    dictionary( std::map<int, std::string> i2s = std::map<int, std::string>({}), std::map<std::string, int> s2i = std::map<std::string, int>({}), 
+                      std::map<int, definition_t> des = std::map<int, definition_t>({}) );
     
     void importSetting(libconfig::Setting& setting);            
     void importSetting(libconfig::Setting& setting, std::list<std::string> import_lib);

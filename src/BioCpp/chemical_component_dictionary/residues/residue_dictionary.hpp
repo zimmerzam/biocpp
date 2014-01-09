@@ -46,9 +46,9 @@ class definition_t : public BioCpp::definition{
     
         void importSetting(libconfig::Setting& setting);
     };
-
-    std::list<model_t> model;
-    char one_letter_name;    
+		
+		char one_letter_name; 
+    std::list<model_t> model;   
     definition_t();    
     definition_t(char n, std::list<model_t> m );
     void importSetting(libconfig::Setting& setting);

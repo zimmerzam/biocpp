@@ -23,6 +23,7 @@
 #define PDB_SECTIONS_AND_RECORDS_H
 
 #include <map>
+#include <string>
 
 namespace BioCpp{
 namespace io{

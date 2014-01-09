@@ -25,9 +25,6 @@
 #include <BioCpp/io_files/model/model.hxx>
 #include "file_reader.hpp"
 #include "sections_and_records/sections_and_records.hpp"
-#include "parser/parseAtom.hxx"
-#include "parser/parseModel.hxx"
-#include "parser/parseSeqres.hxx"
 
 namespace BioCpp{
 namespace io{
@@ -154,28 +151,6 @@ file::file(const char* pdb_name, int init_flag ) : BioCpp::io::file( pdb_name, i
 }
 
 file::~file(){}
-
-template<typename atom_t, typename eleDict, typename atmDict, typename resDict>
-typename BioCpp::io::model<atom_t>::type file::readModel(int mdl, 
-                                                          eleDict& ele_dict,
-                                                          atmDict& atm_dict,
-                                                          resDict& res_dict){
-  if(mdl > this->n_models){
-    typename BioCpp::io::model<atom_t>::type record;
-    return record;
-  }
-  int length = this->model_end_pos[mdl] - this->model_beg_pos[mdl];
-  char mdl_buf[ length + 1 ];
-  std::memcpy(mdl_buf, this->buffer + this->model_beg_pos[mdl], length);
-  return parseModel<atom_t, eleDict, atmDict, resDict>
-                   ( mdl_buf, ele_dict, atm_dict, res_dict );
-}
-
-template<typename atom_t>
-typename BioCpp::io::model<atom_t>::type file::readModel(int mdl){
-  return readModel<atom_t, element::dictionary_t, atom::dictionary_t, residue::dictionary_t>
-                 (*this, mdl, BioCpp::element::dictionary, BioCpp::atom::dictionary, BioCpp::residue::dictionary);
-};
 
 } // end namespace
 } // end namespace

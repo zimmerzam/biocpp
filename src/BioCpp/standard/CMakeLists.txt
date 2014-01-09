@@ -6,7 +6,8 @@ add_subdirectory(chemicalComponentDictionary)
 add_subdirectory(fileFormat)
 add_subdirectory(proteinDefinitions)
 
-add_library(biocpp-std     alignmentMatrix/BLOSUM45.cpp
+add_library(biocpp-std     
+                           alignmentMatrix/BLOSUM45.cpp
                            alignmentMatrix/BLOSUM62.cpp
                            alignmentMatrix/BLOSUM80.cpp
                            alignmentMatrix/PAM30.cpp

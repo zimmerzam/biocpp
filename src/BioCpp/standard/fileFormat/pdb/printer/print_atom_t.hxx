@@ -29,6 +29,7 @@
 #include <Eigen/Dense>
 
 namespace BioCpp{
+namespace io{
 namespace pdb{
 
 /*! \brief Print an ATOM line from a atom_info
@@ -109,6 +110,7 @@ struct print_atom_t{
 
 };
 
+} // end namespace
 } // end namespace
 } // end namespace
 #endif
