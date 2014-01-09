@@ -16,9 +16,9 @@
 typedef BioCpp::base::atom atom;
 typedef BioCpp::io::model<atom>::type model;
 typedef BioCpp::element::dictionary_t element_dictionary;
-typedef BioCpp::atom::dictionary_t      atom_dictionary;
-typedef BioCpp::residue::dictionary_t  residue_dictionary;
-typedef BioCpp::io::pdb::print_atom_t< element_dictionary, atom_dictionary, residue_dictionary > print_atom;
+typedef BioCpp::atom::dictionary_t    atom_dictionary;
+typedef BioCpp::residue::dictionary_t residue_dictionary;
+typedef BioCpp::io::pdb::print_atom_t< element_dictionary, atom_dictionary, residue_dictionary > print_atom_t;
 
 int main( int argc, char* argv[] ){
   const char* filename = argc>1 ? argv[1] : "2RNM.pdb"; // if a pdb is passed, read that. else read an example pdb
@@ -45,7 +45,7 @@ int main( int argc, char* argv[] ){
   BioCpp::io::pdb::file PDB(filename, 0); // read the pdb file. 
 	
 	model mdl = PDB.readModel<atom>(1);
-	print_atom printer(std::cout, eleDict, atmDict, resDict);
+	print_atom_t printer(std::cout, eleDict, atmDict, resDict);
 //	BioCpp::Iterate<atom>(mdl,printer);
 
   BioCpp::residue::dictionary.writeSetting("out.cfg", "residues");

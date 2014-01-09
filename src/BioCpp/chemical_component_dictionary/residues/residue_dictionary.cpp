@@ -48,9 +48,11 @@ BioCpp::residue::definition_t::definition_t( char n, std::list<model_t> m ) :
     one_letter_name(n), model(m) {};
 
 void BioCpp::residue::definition_t::importSetting(libconfig::Setting& setting){
-  int mdl_size = setting.getLength();
+  setting.lookupValue("one_letter_name", one_letter_name);
+  libconfig::Setting& mdllist = setting["model_list"];
+  int mdl_size = mdllist.getLength();
   for(int i = 0; i != mdl_size; ++i){
     model.push_back( model_t() );
-    model.back().importSetting( setting[i] );
+    model.back().importSetting( mdllist[i] );
   }
 }

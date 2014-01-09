@@ -45,12 +45,15 @@ class topology_constructor : public BioCpp::topology_constructor<vertex_t::atom_
   BioCpp::topology_constructor<vertex_t::atom_t, vertex_t, edge_t>::topology_t 
   operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes, residue::dictionary_t& resdict ){
     topology<vertex_t, edge_t> topo;
-    std::map< std::pair<int,int>, BioCpp::topology< vertex, edge >::vertex_t > added_vertex; // TODO add chain
+    std::map< std::pair< std::pair<char,unsigned int>,int>, BioCpp::topology< vertex, edge >::vertex_t > added_vertex;
     for(io::seqres_record::iterator seq = TseqRes.begin(); seq != TseqRes.end(); ++seq){
+      unsigned int resSeq = 0;
       for(std::string::iterator res = seq->second.begin(); res != seq->second.end(); ++res){
         int resid = resdict.string_to_id[*res];
+        std::pair<char,unsigned int> pos = std::make_pair(seq->first,++resSeq);
         for(residue::dictionary_t::atom_list_t::iterator at = resdict.definition[resid].atomlist.begin(); at != resdict.definition[resid].atomlist.end(); ++at){
           BioCpp::topology< vertex, edge >::vertex_t u = boost::add_vertex(topo.G); // TODO add to added_vertex
+          added_vertex[ std::make_pair(pos,*at) ] = u; 
         }
       }
     }
