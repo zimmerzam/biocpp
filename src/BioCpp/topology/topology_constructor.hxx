@@ -19,24 +19,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TOPOLOGY_CONSTRUCTOR_H
-#define TOPOLOGY_CONSTRUCTOR_H
+#ifndef BIOCPP_TOPOLOGY_CONSTRUCTOR_H
+#define BIOCPP_TOPOLOGY_CONSTRUCTOR_H
 
-#include <BioCpp/base_container/base_container.hxx>
+//#include <BioCpp/base_container/base_container.hxx>
 #include <BioCpp/io_files/model/model.hxx>
 #include <BioCpp/io_files/seqres/seqres_record.hpp>
+#include <BioCpp/chemical_component_dictionary/residues/residue_dictionary.hpp>
+
+#include "topology.hxx"
 
 namespace BioCpp{
 
-template< typename atom_t,
-          typename vertex_t, typename edge_t
-        >
+template< typename atom_t, typename vertex_t, typename edge_t >
 class base_topology_constructor{
   protected:
     typedef topology<vertex_t, edge_t> topology_t;
   public:  
-    virtual topology_t operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes, residue::dictionary_t& resdict ) = 0;
-    virtual topology_t operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, residue::dictionary_t& resdict ) = 0;
+    virtual topology_t operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes, BioCpp::residue::dictionary_t& resdict ) = 0;
+    virtual topology_t operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, BioCpp::residue::dictionary_t& resdict ) = 0;
 };
 
 }

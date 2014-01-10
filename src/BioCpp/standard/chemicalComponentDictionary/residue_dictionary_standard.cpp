@@ -45,14 +45,14 @@ dictionary_t dictionary(
   },
   {
     {UNK, 
-          { 'X',
+          { "X",
             {  
               definition_t::model_t( {}, {}, -1, -1 )
             }
           } 
     },
     {CYS,
-          { 'C',
+          { "C",
             {
               definition_t::model_t(
                 {
@@ -70,7 +70,7 @@ dictionary_t dictionary(
           }
     },
     {PHE, 
-          { 'F',
+          { "F",
             {  
               definition_t::model_t(
                 { 
@@ -91,7 +91,7 @@ dictionary_t dictionary(
           } 
     },
     {LEU, 
-          { 'L',
+          { "L",
             {  
               definition_t::model_t(
                 { 
@@ -110,7 +110,7 @@ dictionary_t dictionary(
           } 
     },
     {TRP, 
-          { 'W',
+          { "W",
             {  
               definition_t::model_t(
                 { 
@@ -132,7 +132,7 @@ dictionary_t dictionary(
           } 
     },
     {VAL, 
-          { 'V',
+          { "V",
             {  
               definition_t::model_t(
                 { 
@@ -150,7 +150,7 @@ dictionary_t dictionary(
           } 
     },
     {ILE, 
-          { 'I',
+          { "I",
             {  
               definition_t::model_t(
                 { 
@@ -169,7 +169,7 @@ dictionary_t dictionary(
           } 
     },
     {MET, 
-          { 'M',
+          { "M",
             {  
               definition_t::model_t(
                 { 
@@ -188,7 +188,7 @@ dictionary_t dictionary(
           } 
     },
     {HIS, 
-          { 'H',
+          { "H",
             {  
               definition_t::model_t(
                 { 
@@ -206,7 +206,7 @@ dictionary_t dictionary(
           } 
     },
     {TYR, 
-          { 'Y',
+          { "Y",
             {  
               definition_t::model_t(
                 { 
@@ -227,7 +227,7 @@ dictionary_t dictionary(
           } 
     },
     {ALA, 
-          { 'A',
+          { "A",
             {  
               definition_t::model_t(
                 { 
@@ -244,7 +244,7 @@ dictionary_t dictionary(
           } 
     },
     {GLY, 
-          { 'G',
+          { "G",
             {  
               definition_t::model_t(
                 { 
@@ -261,7 +261,7 @@ dictionary_t dictionary(
     },
 //    {PRO,{0}},
     {ASN, 
-          { 'N',
+          { "N",
             {  
               definition_t::model_t(
                 { 
@@ -280,7 +280,7 @@ dictionary_t dictionary(
           } 
     },
     {THR, 
-          { 'T',
+          { "T",
             {  
               definition_t::model_t(
                 { 
@@ -298,7 +298,7 @@ dictionary_t dictionary(
           } 
     },
     {SER, 
-          { 'S',
+          { "S",
             {  
               definition_t::model_t(
                 { 
@@ -316,7 +316,7 @@ dictionary_t dictionary(
           } 
     },
     {ARG, 
-          { 'R',
+          { "R",
             {  
               definition_t::model_t(
                 { 
@@ -337,7 +337,7 @@ dictionary_t dictionary(
           } 
     },
     {GLN, 
-          { 'Q',
+          { "Q",
             {  
               definition_t::model_t(
                 { 
@@ -356,7 +356,7 @@ dictionary_t dictionary(
           } 
     },
     {ASP, 
-          { 'D',
+          { "D",
             {  
               definition_t::model_t(
                 { 
@@ -375,7 +375,7 @@ dictionary_t dictionary(
           } 
     },
     {LYS, 
-          { 'K',
+          { "K",
             {  
               definition_t::model_t(
                 { 
@@ -394,7 +394,7 @@ dictionary_t dictionary(
           } 
     },
     {GLU, 
-          { 'E',
+          { "E",
             {  
               definition_t::model_t(
                 { 

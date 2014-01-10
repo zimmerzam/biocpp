@@ -44,7 +44,7 @@ void BioCpp::residue::definition_t::model_t::importSetting(libconfig::Setting& s
 };
 
 BioCpp::residue::definition_t::definition_t(){};    
-BioCpp::residue::definition_t::definition_t( char n, std::list<model_t> m ) : 
+BioCpp::residue::definition_t::definition_t( std::string n, std::list<model_t> m ) : 
     one_letter_name(n), model(m) {};
 
 void BioCpp::residue::definition_t::importSetting(libconfig::Setting& setting){

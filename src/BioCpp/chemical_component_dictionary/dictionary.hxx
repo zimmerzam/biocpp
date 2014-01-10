@@ -9,9 +9,10 @@
 
 namespace BioCpp{
 
-template <typename definition_t>
+template <typename _definition_t>
 class dictionary{
   public:
+  	typedef _definition_t definition_t;
     std::map<int, std::string> id_to_string;
     std::map<std::string, int> string_to_id;
     std::map<int, definition_t> definition;
@@ -24,8 +25,8 @@ class dictionary{
     void writeSetting(std::string filename, std::string configname){};
 };
 
-template <typename definition_t>
-dictionary<definition_t>::dictionary( std::map<int, std::string> i2s, 
+template <typename _definition_t>
+dictionary<_definition_t>::dictionary( std::map<int, std::string> i2s, 
                                       std::map<std::string, int> s2i,
                                       std::map<int, definition_t> des 
                                     ):
@@ -33,8 +34,8 @@ dictionary<definition_t>::dictionary( std::map<int, std::string> i2s,
                                       string_to_id(s2i), 
                                       definition(des) {};
 
-template <typename definition_t>
-void dictionary<definition_t>::importSetting(libconfig::Setting& setting){
+template <typename _definition_t>
+void dictionary<_definition_t>::importSetting(libconfig::Setting& setting){
   try{
     libconfig::Setting& import = setting["import"];
     int import_size = import.getLength();

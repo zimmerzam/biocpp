@@ -19,13 +19,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_PDB_STANDARD_RESIDUE_DICTIONARY_H
-#define BIOCPP_PDB_STANDARD_RESIDUE_DICTIONARY_H
+#ifndef BIOCPP_RESIDUE_DICTIONARY_H
+#define BIOCPP_RESIDUE_DICTIONARY_H
 
 #include "../dictionary.hxx"
 #include "../definition.hpp"
 #include <map>
 #include <set>
+#include <string>
 
 namespace BioCpp{
 namespace residue{
@@ -47,10 +48,10 @@ class definition_t : public BioCpp::definition{
         void importSetting(libconfig::Setting& setting);
     };
 		
-		char one_letter_name; 
+		std::string one_letter_name; 
     std::list<model_t> model;   
     definition_t();    
-    definition_t(char n, std::list<model_t> m );
+    definition_t(std::string n, std::list<model_t> m );
     void importSetting(libconfig::Setting& setting);
     
 };

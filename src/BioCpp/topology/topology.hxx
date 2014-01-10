@@ -29,25 +29,27 @@ namespace BioCpp{
 
 template < typename atom_prop, typename bond_prop >
 class topology{
-  protected:
-    Graph G;  
-  public:
-    typedef typename boost::adjacency_list<boost::listS, boost::vecS, boost::directedS, atom_prop, bond_prop > Graph;
+	public:
+		typedef typename boost::adjacency_list<boost::listS, boost::vecS, boost::directedS, atom_prop, bond_prop > Graph;
     typedef typename boost::graph_traits<Graph>::vertex_descriptor vertex_t;
     typedef typename boost::graph_traits<Graph>::edge_descriptor edge_t;
     typedef typename boost::graph_traits<Graph>::vertex_iterator vertex_iterator;
     typedef typename boost::graph_traits<Graph>::edge_iterator edge_iterator;
   
+  protected:
+    Graph G;  
+  
+  public:
     Graph& getGraph();
     
-    template< typename atom_t, typename vertex_t, typename edge_t>
-    friend class topology_constructor
+//    template< typename atom_t, typename vertex_t, typename edge_t>
+//    friend class topology_constructor;
 };
 
 template < typename atom_prop, typename bond_prop >
 typename topology<atom_prop,bond_prop>::Graph& topology<atom_prop,bond_prop>::getGraph(){
   return G;
-}
+};
 
 }
 
