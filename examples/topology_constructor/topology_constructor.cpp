@@ -6,37 +6,80 @@
     it back in pdb format
 */
 
-
 #include <iostream>
 #include <BioCpp/base_atom/base_atom.hpp>
 #include <BioCpp/standard/fileFormat/pdb/file_reader.hpp>
 #include <BioCpp/topology/topology.hxx>
 #include <BioCpp/standard/proteinTopology/topology_constructor.hxx>
+#include <BioCpp/standard/fileFormat/pdb/printer/print_atom_t.hxx>
+#include <BioCpp/base_container/Iterate_single.hxx>
+#include <BioCpp/fasta/StrictNeedlemanWunsch.hpp>
+#include <BioCpp/standard/alignmentMatrix/ZIMM1.hpp>
 
 typedef BioCpp::base::atom atom;
 typedef BioCpp::io::model<atom>::type model;
-typedef BioCpp::element::dictionary_t ele_dict;
-typedef BioCpp::atom::dictionary_t atm_dict;
-typedef BioCpp::residue::dictionary_t res_dict;
-//typedef BioCpp::io::pdb::print_atom_t< ele_dict, atm_dict, res_dict > print_atom;
+typedef BioCpp::element::dictionary_t element_dictionary;
+typedef BioCpp::atom::dictionary_t atom_dictionary;
+typedef BioCpp::residue::dictionary_t residue_dictionary;
+typedef BioCpp::io::pdb::print_atom_t< element_dictionary, atom_dictionary, residue_dictionary > print_atom;
 
-typedef BioCpp::standard::vertex<atom> vertex;
+typedef BioCpp::standard::vertex<atom> vertex; 
 typedef BioCpp::standard::edge< std::pair<atom,atom> > edge;
 typedef BioCpp::topology<vertex, edge> topology;
 typedef BioCpp::standard::topology_constructor<vertex,edge> topology_constructor;
 
 int main( int argc, char* argv[] ){
-  const char* filename = argc>1 ? argv[1] : "2RNM.pdb"; // if a pdb is passed, read that. else read an example pdb
+  const char* pdb_filename = argv[1];
+  const char* dic_filename = argv[2];
   
-  BioCpp::io::pdb::file PDB(filename, 0); // read the pdb file. 
-  std::cout << filename << std::endl;
+  // reading dictionaries
+  libconfig::Config cfg;
+  cfg.readFile(dic_filename);
+  libconfig::Setting& root = cfg.getRoot();
+  element_dictionary eleDict;
+  eleDict.importSetting(root,{"elements"});
+  atom_dictionary atmDict;
+  atmDict.importSetting(root,{"atoms"});
+  residue_dictionary resDict;
+  resDict.importSetting(root,{"residues"});
+  
+  // reading pdb file
+  BioCpp::io::pdb::file PDB(pdb_filename, 0); // read the pdb file. 
 	
+	// gets the structure, align the sequence from ATOM lines to the one from SEQRES and builds the topology
+	// if SEQRES has not been found and the sequence in ATOM has at least one hole raise an error. if the
+	// sequence from ATOM lines has no holes no error will be raised and the topology will be built.
 	model mdl = PDB.readModel<atom>(1); 
-
 	topology_constructor topo_constr;
-	topology topo = topo_constr( mdl, PDB.TseqRes, PDB.TseqRes, BioCpp::residue::dictionary );
+	BioCpp::error err = PDB.error;
+  BioCpp::warning war = PDB.warning;
+	if(PDB.TseqRes.size() != 0){
+  	for( BioCpp::io::seqres_record::iterator seqres = PDB.TseqRes.begin(); seqres!=PDB.TseqRes.end(); ++seqres ){
+ 	    if( PDB.RseqRes.find(seqres->first)!=PDB.RseqRes.end() and seqres->second!=PDB.RseqRes[seqres->first]){
+      	PDB.RseqRes[seqres->first].insert( PDB.RseqRes[seqres->first].begin(), '-' );
+      	PDB.RseqRes[seqres->first].insert( PDB.RseqRes[seqres->first].end(), '-' );
+        double score = BioCpp::fasta::StrictNeedlemanWunsch(seqres->second, PDB.RseqRes[seqres->first], BioCpp::fasta::ZIMM1, err, war);
+        if(score < 0){
+          std::cout << "Aligment failed!" << std::endl;
+          return 1;
+        }
+      }
+    }
+  }
+  else{
+    for( BioCpp::io::seqres_record::iterator seqres = PDB.RseqRes.begin(); seqres!=PDB.RseqRes.end(); ++seqres ){
+      for( std::string::iterator str = seqres->second.begin(); str != seqres->second.end(); ++str ){
+        if((*str)=='-'){
+          std::cout << "The structure has at least one hole and the SEQRES section is missing. A complete topology cannot be built." << std::endl;
+          return 1;
+        }
+      }
+    }
+  }
+	topology topo = topo_constr( mdl, PDB.RseqRes, PDB.TseqRes, atmDict, resDict );
 	
-//	print_atom printer(std::cout, BioCpp::element::dictionary, BioCpp::atom::dictionary, BioCpp::residue::dictionary);
-//	BioCpp::Iterate<atom>(mdl,printer);
+	// print back the structure with added atoms
+	print_atom printer(std::cout, eleDict, atmDict, resDict); 
+	BioCpp::Iterate<atom>(mdl,printer);
   return 0;
 }

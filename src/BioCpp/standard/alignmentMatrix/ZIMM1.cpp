@@ -22,7 +22,7 @@
 #ifndef BIOCPP_STD_ZIMM1_CPP
 #define BIOCPP_STD_ZIMM1_CPP
 
-#include <BioCpp/fasta/substitution_matrix.hpp>
+#include "ZIMM1.hpp"
 namespace BioCpp{
 namespace fasta{
 

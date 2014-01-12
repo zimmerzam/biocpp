@@ -1,0 +1,6 @@
+*
+!.gitignore
+!*.ccd
+!test_single_chain.pdb
+!test_multiple_chains.pdb
+!test_w_holes.pdb
