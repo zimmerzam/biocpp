@@ -170,6 +170,51 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
     operator()( typename io::model<typename vertex_t::atom_t>::type& info, io::seqres_record& RseqRes, atom::dictionary_t& atmdict, residue::dictionary_t& resdict ){
     	return (*this)( info, RseqRes, RseqRes, atmdict, resdict );
     };
+    
+    typename BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t>::topology_t 
+    operator()( typename io::model<typename vertex_t::atom_t>::type& info, atom::dictionary_t& atmdict, residue::dictionary_t& resdict, int id, unsigned int model ){
+    	typedef typename vertex_t::atom_t atom_t;
+    	typename BioCpp::base_topology_constructor<atom_t, vertex_t, edge_t>::topology_t topo;
+    	if(info.size()!=0){
+    	  return topo;
+    	}
+    	
+    	std::list<residue::dictionary_t::definition_t::model_t>::iterator mit = resdict.definition[id].model.begin();
+    	for(unsigned int i = 0; i!=model;++i,++mit);
+    	residue::dictionary_t::definition_t::model_t res_model = *mit;
+    	
+    	std::map<int, typename BioCpp::topology< vertex_t, edge_t >::vertex_t> added_vertex;
+    	
+    	int serial = 0;
+    	for( residue::dictionary_t::definition_t::model_t::atom_list_t::iterator at = res_model.atom_list.begin();  at != res_model.atom_list.end(); ++at){
+			  typename BioCpp::topology< vertex_t, edge_t >::vertex_t u = boost::add_vertex(topo.getGraph());
+        added_vertex[ *at ] = u;
+        
+	      atom_t tmp_atom;
+	      tmp_atom.serial = ++serial;
+	      tmp_atom.id = *at;
+	      tmp_atom.altLoc = ' ';
+	      tmp_atom.resName = -1;
+	      tmp_atom.chainId = 'A';
+	      tmp_atom.resSeq = 1;
+	      tmp_atom.iCode = ' ';
+	      tmp_atom.coordinate = Eigen::Vector3d(999.,999.,999.);
+	      tmp_atom.occupancy = 0.0;
+	      tmp_atom.tempFactor = 0.0;
+	      tmp_atom.element = atmdict.definition[*at].element;
+	      tmp_atom.charge = 0.0;
+	      info.Append(tmp_atom.serial, tmp_atom);
+	      topo.getGraph()[u].set( info[tmp_atom.serial] );
+	    }
+    	bool b = false;
+			for( residue::dictionary_t::definition_t::model_t::bond_list_t::iterator bn = res_model.bond_list.begin();  bn != res_model.bond_list.end(); ++bn){
+				typename BioCpp::topology< vertex_t, edge_t >::edge_t e;
+       	typename BioCpp::topology< vertex_t, edge_t >::vertex_t u = added_vertex[ bn->first ];
+       	typename BioCpp::topology< vertex_t, edge_t >::vertex_t v = added_vertex[ bn->second ];
+       	boost::tie(e,b) = boost::add_edge(u,v,topo.getGraph());
+			}
+    	return topo;
+    };
 };
 
 }

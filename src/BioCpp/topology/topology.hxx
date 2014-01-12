@@ -30,7 +30,7 @@ namespace BioCpp{
 template < typename atom_prop, typename bond_prop >
 class topology{
 	public:
-		typedef typename boost::adjacency_list<boost::listS, boost::vecS, boost::directedS, atom_prop, bond_prop > Graph;
+		typedef typename boost::adjacency_list<boost::listS, boost::vecS, boost::undirectedS, atom_prop, bond_prop > Graph;
     typedef typename boost::graph_traits<Graph>::vertex_descriptor vertex_t;
     typedef typename boost::graph_traits<Graph>::edge_descriptor edge_t;
     typedef typename boost::graph_traits<Graph>::vertex_iterator vertex_iterator;

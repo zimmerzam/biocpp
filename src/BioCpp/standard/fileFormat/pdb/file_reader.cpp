@@ -39,6 +39,7 @@ file::file(const char* pdb_name, int init_flag ) : BioCpp::io::file( pdb_name, i
   file.open(filename, std::ios::binary);
   
   /* read whole file */
+  file.seekg(0,std::ios::beg);
   std::streampos file_beg = file.tellg();
   file.seekg(0,std::ios::end);
   std::streampos file_end = file.tellg();
@@ -47,9 +48,9 @@ file::file(const char* pdb_name, int init_flag ) : BioCpp::io::file( pdb_name, i
   buffer = new char [file_length];
   file.read(buffer,file_length);
   
-  std::streampos prev_pos = file_beg;
   file.seekg(std::ios::beg);
-  bool atom_section_found = false;
+  std::streampos prev_pos = file_beg;
+  bool atom_section_found = false, seqres_section_found = false;
   std::string line, record;
   std::streamoff seqres_beg = file_beg, seqres_end = file_end;
   bool first_model=true;
@@ -61,8 +62,10 @@ file::file(const char* pdb_name, int init_flag ) : BioCpp::io::file( pdb_name, i
     getline(file, line);
     /* SEQRES section */
     if(get_record(line) == SEQRES ){
-      if(seqres_beg == file_beg)
+      if(seqres_section_found==false){
         seqres_beg = prev_pos;
+        seqres_section_found = true;
+      }
     }
     /* MODEL section */
     else if(get_record(line) == MODEL){
@@ -119,9 +122,8 @@ file::file(const char* pdb_name, int init_flag ) : BioCpp::io::file( pdb_name, i
         }
       }
     }
-    else{ // line is different from MODEL, ENDMDL, SEQRES or ATOM
-      if( seqres_beg != file_beg and seqres_end == file_end)
-         seqres_end = prev_pos;
+    if( get_record(line) != SEQRES and seqres_section_found and seqres_end==file_end ){
+      seqres_end = prev_pos;
     }
     prev_pos = file.tellg();
   }
@@ -139,10 +141,10 @@ file::file(const char* pdb_name, int init_flag ) : BioCpp::io::file( pdb_name, i
   }
 
   /* fill TseqRes */
-  if( seqres_beg!=file_beg or seqres_end!=file_end ){
+  if( seqres_section_found==true ){
     int length = seqres_end-seqres_beg;
-    char seqres[length+1];
-    std::memcpy(seqres, buffer + seqres_beg, length);
+    char seqres[length];
+    std::memcpy(seqres, buffer+seqres_beg-file_beg , length);
     TseqRes = parseSeqres( seqres );
   }
   else{

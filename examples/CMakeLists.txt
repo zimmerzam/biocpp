@@ -31,3 +31,4 @@ add_subdirectory( protein_mutation )
 add_subdirectory( surface_area_lcpo )
 
 add_subdirectory( topology_constructor )
+add_subdirectory( topology_isomorphism )

@@ -1,5 +1,5 @@
 /*!
-    \file topology_constructor.cpp
+    \file topology_isomorphism.cpp
     \brief Read a pdb file, add missing atoms to the structure and print the structure back
     
     In this example we see how to build a topology from a pdb file. In order to see
@@ -16,6 +16,7 @@
 #include <BioCpp/base_container/Iterate_single.hxx>
 #include <BioCpp/fasta/StrictNeedlemanWunsch.hpp>
 #include <BioCpp/standard/alignmentMatrix/ZIMM1.hpp>
+#include <boost/graph/vf2_sub_graph_iso.hpp>
 
 typedef BioCpp::base::atom atom;
 typedef BioCpp::io::model<atom>::type model;
@@ -32,6 +33,7 @@ typedef BioCpp::standard::topology_constructor<vertex,edge> topology_constructor
 int main( int argc, char* argv[] ){
   const char* pdb_filename = argv[1];
   const char* dic_filename = argv[2];
+  const char* moi_filename = argv[3];
   
   // reading dictionaries
   libconfig::Config cfg;
@@ -42,7 +44,12 @@ int main( int argc, char* argv[] ){
   atom_dictionary atmDict;
   atmDict.importSetting(root,{"atoms"});
   residue_dictionary resDict;
-  resDict.importSetting(root,{"residues"}); 
+  resDict.importSetting(root,{"residues"});
+  libconfig::Config moicfg;
+  moicfg.readFile(moi_filename);
+  libconfig::Setting& moi_root = moicfg.getRoot();
+  residue_dictionary moiDict;
+  moiDict.importSetting(moi_root,{"moieties"});
   
   // reading pdb file
   BioCpp::io::pdb::file PDB(pdb_filename, 0); // read the pdb file. 
@@ -79,8 +86,18 @@ int main( int argc, char* argv[] ){
   }
 	topology topo = topo_constr( mdl, PDB.RseqRes, PDB.TseqRes, atmDict, resDict );
 	
-	// print back the structure with added atoms
-	print_atom printer(std::cout, eleDict, atmDict, resDict); 
-	BioCpp::Iterate<atom>(mdl,printer);
+	std::map<int, model>    moiety_model;
+	std::map<int, topology> moiety_topology;
+  for( typename std::map<int, residue_dictionary::definition_t>::iterator r = moiDict.definition.begin(); r != moiDict.definition.end(); ++r ){
+    moiety_topology[r->first] = topo_constr( moiety_model[r->first], atmDict, moiDict, r->first, 0 );
+  }
+  
+  
+  
+  for(std::map<int,topology>::iterator tp = moiety_topology.begin(); tp != moiety_topology.end(); ++tp){
+    boost::vf2_print_callback<topology::Graph, topology::Graph> callback(tp->second.getGraph(), topo.getGraph());
+    boost::vf2_subgraph_iso(tp->second.getGraph(), topo.getGraph(), callback);
+  }
+
   return 0;
 }
