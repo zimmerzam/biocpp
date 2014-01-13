@@ -22,7 +22,7 @@
 #ifndef BIOCPP_BASE_CONTACT_MAP_H
 #define BIOCPP_BASE_CONTACT_MAP_H
 
-#include <map>
+#include <unordered_map>
 
 namespace BioCpp{
 namespace base{
@@ -36,7 +36,7 @@ namespace base{
 template <typename T, typename value_t>
 class contact_map{
 	protected:
-	  typedef std::map< std::pair< T, T >, value_t > map;
+	  typedef std::unordered_map< std::pair< T, T >, value_t > map;
 		map data;
 	public:
 	  /*! \brief Void constructor */
@@ -45,12 +45,12 @@ class contact_map{
 		/*! \brief iterators */
 		typedef typename map::iterator iterator; /*!< Iterator over the children */
 		typedef typename map::const_iterator const_iterator; /*!< Const iterator over the children */
-		typedef typename map::reverse_iterator reverse_iterator; /*!< Reverse iterator */
+//		typedef typename map::reverse_iterator reverse_iterator; /*!< Reverse iterator */
 		
 		iterator begin(){return data.begin();}; /*!< Iterator to the first child */
 		iterator end(){return data.end();}; /*!< \note This is not the last child item */
-		reverse_iterator rbegin(){return data.rbegin();}; /*!< Iterator to the last child */
-		reverse_iterator rend(){return data.rend();} /*!< \note This is not the first child */
+//		reverse_iterator rbegin(){return data.rbegin();}; /*!< Iterator to the last child */
+//		reverse_iterator rend(){return data.rend();} /*!< \note This is not the first child */
 		
 		/*! \brief Get an element */
 		value_t& operator[]( std::pair< T, T > key ){return data[key];}
