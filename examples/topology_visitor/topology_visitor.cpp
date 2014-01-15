@@ -1,5 +1,5 @@
 /*!
-    \file topology_isomorphism.cpp
+    \file topology_constructor.cpp
     \brief Read a pdb file, add missing atoms to the structure and print the structure back
     
     In this example we see how to build a topology from a pdb file. In order to see
@@ -16,7 +16,7 @@
 #include <BioCpp/base_container/Iterate_single.hxx>
 #include <BioCpp/fasta/StrictNeedlemanWunsch.hpp>
 #include <BioCpp/standard/alignmentMatrix/ZIMM1.hpp>
-#include <boost/graph/vf2_sub_graph_iso.hpp>
+#include <boost/graph/breadth_first_search.hpp>
 
 typedef BioCpp::base::atom atom;
 typedef BioCpp::io::model<atom>::type model;
@@ -29,26 +29,21 @@ typedef BioCpp::standard::vertex<atom> vertex;
 typedef BioCpp::standard::edge< std::pair<atom,atom> > edge;
 typedef BioCpp::topology<vertex, edge> topology;
 typedef BioCpp::standard::topology_constructor<vertex,edge> topology_constructor;
+typedef BioCpp::io::pdb::print_atom_t< element_dictionary, atom_dictionary, residue_dictionary > print_atom;
 
-struct vertex_equivalent{
-	topology::Graph* graphSmall;
-	topology::Graph* graphLarge;
-	vertex_equivalent( topology::Graph& graph_small, topology::Graph& graph_large ): graphSmall(&graph_small), graphLarge(&graph_large){};
-	bool operator()(const topology::vertex_t& v1, const topology::vertex_t& v2){
-		return (*graphSmall)[v1].atom->element == (*graphLarge)[v2].atom->element;
-	}
-}; 
-
-struct edge_equivalent{
-	bool operator()(topology::edge_t& e1, topology::edge_t& e2){
-		return true;
-	}
-};
+struct bfs_print_visitor : public boost::default_bfs_visitor {
+	print_atom printer;
+	bfs_print_visitor( element_dictionary& eleDict, atom_dictionary& atmDict, residue_dictionary& resDict ): printer(std::cout, eleDict, atmDict, resDict) {};
+	
+  void discover_vertex(topology::vertex_t u, const topology::Graph& G) {
+  	printer( *(G[u].atom) );
+  };
+  
+};  
 
 int main( int argc, char* argv[] ){
   const char* pdb_filename = argv[1];
   const char* dic_filename = argv[2];
-  const char* moi_filename = argv[3];
   
   // reading dictionaries
   libconfig::Config cfg;
@@ -59,12 +54,7 @@ int main( int argc, char* argv[] ){
   atom_dictionary atmDict;
   atmDict.importSetting(root,{"atoms"});
   residue_dictionary resDict;
-  resDict.importSetting(root,{"residues"});
-  libconfig::Config moicfg;
-  moicfg.readFile(moi_filename);
-  libconfig::Setting& moi_root = moicfg.getRoot();
-  residue_dictionary moiDict;
-  moiDict.importSetting(moi_root,{"moieties"});
+  resDict.importSetting(root,{"residues"}); 
   
   // reading pdb file
   BioCpp::io::pdb::file PDB(pdb_filename, 0); // read the pdb file. 
@@ -73,7 +63,6 @@ int main( int argc, char* argv[] ){
 	// if SEQRES has not been found and the sequence in ATOM has at least one hole raise an error. if the
 	// sequence from ATOM lines has no holes no error will be raised and the topology will be built.
 	model mdl = PDB.readModel<atom>(1); 
-	topology_constructor topo_constr;
 	BioCpp::error err = PDB.error;
   BioCpp::warning war = PDB.warning;
 	if(PDB.TseqRes.size() != 0){
@@ -98,29 +87,14 @@ int main( int argc, char* argv[] ){
         }
       }
     }
-  }
+  } 
+  topology_constructor topo_constr;
 	topology topo = topo_constr( mdl, PDB.RseqRes, PDB.TseqRes, atmDict, resDict );
 	
-	std::map<int, model>    moiety_model;
-	std::map<int, topology> moiety_topology;
-  for( typename std::map<int, residue_dictionary::definition_t>::iterator r = moiDict.definition.begin(); r != moiDict.definition.end(); ++r ){
-    moiety_topology[r->first] = topo_constr( moiety_model[r->first], atmDict, moiDict, r->first, 0 );
-  }
-  
-  for(std::map<int,topology>::iterator tp = moiety_topology.begin(); tp != moiety_topology.end(); ++tp){
-    boost::vf2_print_callback<topology::Graph, topology::Graph> callback(tp->second.getGraph(), topo.getGraph());
-    vertex_equivalent eq_v(tp->second.getGraph(), topo.getGraph());
-		edge_equivalent eq_e;
-    boost::vf2_subgraph_iso( 
-                             tp->second.getGraph(), 
-                             topo.getGraph(), 
-                             callback, 
-                             boost::get(boost::vertex_index, tp->second.getGraph()),
-                             boost::get(boost::vertex_index, topo.getGraph()),
-                             boost::vertex_order_by_mult( tp->second.getGraph() ),  
-                             eq_e, 
-                             eq_v);
-  }
-
+	topology::vertex_iterator v_beg, v_end, v;
+  boost::tie(v_beg, v_end) = boost::vertices( topo.getGraph() );
+	bfs_print_visitor printer(eleDict, atmDict, resDict);
+	boost::breadth_first_search( topo.getGraph(), *v_beg, boost::visitor(printer) );
+	
   return 0;
 }

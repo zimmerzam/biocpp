@@ -24,6 +24,7 @@
 
 #include <map>
 #include <vector>
+#include <list>
 
 namespace BioCpp{
 namespace base{
@@ -41,7 +42,7 @@ namespace base{
 template <typename childID, typename childType, typename ID=int>
 class container {
   private:
-    typedef typename std::vector<childType> child_list;
+    typedef typename std::list<childType> child_list;
   protected:
     /*! \brief a list of pointers to child objects */
     std::map< childID, childType* > child; 
@@ -117,7 +118,7 @@ class container {
           }
         \endcode
     */
-    void Reserve(int n_child);
+//    void Reserve(int n_child);
        
     /*! \brief Append a child 
         
@@ -201,17 +202,17 @@ class container {
 ////////////////////////////////////////////////////////////////////////////////
 template <typename childID, typename childType, typename ID>
 inline base::container<childID, childType, ID>::container(std::vector< std::pair<childID, childType> >& children){
-  Reserve(children.size());
+//  Reserve(children.size());
   for( typename std::vector< std::pair<childID, childType> >::iterator ch = children.begin(); ch < children.end(); ++ch ){
     Append(ch->first, ch->second);
   }
 }
 
 /* operators */
-template <typename childID, typename childType, typename ID>
-inline void base::container<childID, childType, ID>::Reserve(int size){
-  children.reserve(size);
-}
+//template <typename childID, typename childType, typename ID>
+//inline void base::container<childID, childType, ID>::Reserve(int size){
+//  children.reserve(size);
+//}
 
 template <typename childID, typename childType, typename ID>
 inline void base::container<childID, childType, ID>::Append(childID id, childType ch){

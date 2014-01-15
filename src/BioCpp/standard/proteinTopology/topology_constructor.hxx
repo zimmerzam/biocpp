@@ -50,8 +50,8 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
       return *resdict.definition[id].model.begin();
     }
   public:
-	  typename BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t>::topology_t 
-  	operator()( typename io::model<typename vertex_t::atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes, atom::dictionary_t& atmdict, residue::dictionary_t& resdict ){
+  	typedef  typename BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t>::topology_t  topology_t;
+	  topology_t operator()( typename io::model<typename vertex_t::atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes, atom::dictionary_t& atmdict, residue::dictionary_t& resdict ){
 			typedef typename vertex_t::atom_t atom_t;
 		
 			std::map< std::pair<char,unsigned int>, std::set<int> > atom_list;
@@ -103,7 +103,7 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
 			
 			// Build the topology using information from TseqRes.
 			int new_serial = info.rbegin()->serial;
-			typename BioCpp::base_topology_constructor<atom_t, vertex_t, edge_t>::topology_t topo;
+			topology_t topo;
 			for( io::seqres_record::iterator ch =  TseqRes.begin(); ch!=TseqRes.end(); ++ch){
 				unsigned int last_resSeq = -10;
 				int last_end = 3;
@@ -123,9 +123,10 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
           	typename std::map< std::pair< std::pair<char,unsigned int>, int>,  atom_t* >::iterator atm_ref = atom_ref.find( atmId );
             // if the atom exists, put a reference to it in the graph
           	if( atm_ref!=atom_ref.end() ){
-	          	topo.getGraph()[u].set( *(atm_ref->second) );
+          		topo.getGraph()[u].atom =  atm_ref->second;
 	          }
 	          // if the required atom does not exists, creates it, appends it to 'info' and creates a reference to it in the graph; 
+
 	          else{
 	          	atom_t tmp_atom;
 	          	tmp_atom.serial = ++new_serial;
@@ -141,7 +142,7 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
 	          	tmp_atom.element = atmdict.definition[*at].element;
 	          	tmp_atom.charge = 0.0;
 	          	info.Append(tmp_atom.serial, tmp_atom);
-	          	topo.getGraph()[u].set( info[tmp_atom.serial] );
+	          	topo.getGraph()[u].atom =  &info[tmp_atom.serial];
 	          }
 					}
 					// connects atoms in the same residue
@@ -162,19 +163,18 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
           last_resSeq = resSeq;
           last_end = res_model.atom_end;
 				}
+				
 			}
 			return topo;
 		};
 
-  	typename BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t>::topology_t 
-    operator()( typename io::model<typename vertex_t::atom_t>::type& info, io::seqres_record& RseqRes, atom::dictionary_t& atmdict, residue::dictionary_t& resdict ){
+  	topology_t operator()(  typename io::model<typename vertex_t::atom_t>::type& info, io::seqres_record& RseqRes, atom::dictionary_t& atmdict, residue::dictionary_t& resdict ){
     	return (*this)( info, RseqRes, RseqRes, atmdict, resdict );
     };
     
-    typename BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t>::topology_t 
-    operator()( typename io::model<typename vertex_t::atom_t>::type& info, atom::dictionary_t& atmdict, residue::dictionary_t& resdict, int id, unsigned int model ){
+    topology_t operator()(  typename io::model<typename vertex_t::atom_t>::type& info, atom::dictionary_t& atmdict, residue::dictionary_t& resdict, int id, unsigned int model ){
     	typedef typename vertex_t::atom_t atom_t;
-    	typename BioCpp::base_topology_constructor<atom_t, vertex_t, edge_t>::topology_t topo;
+    	topology_t topo;
     	if(info.size()!=0){
     	  return topo;
     	}
@@ -213,7 +213,7 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
        	typename BioCpp::topology< vertex_t, edge_t >::vertex_t v = added_vertex[ bn->second ];
        	boost::tie(e,b) = boost::add_edge(u,v,topo.getGraph());
 			}
-    	return topo;
+			return topo;
     };
 };
 
