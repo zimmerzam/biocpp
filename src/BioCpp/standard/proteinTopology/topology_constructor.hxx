@@ -43,14 +43,14 @@ struct edge{
   bond_t bond;
 };
 
-template <typename vertex_t, typename edge_t>
-class topology_constructor : public BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t >{
+template <typename vertex_t, typename edge_t, typename graph_t>
+class topology_constructor : public BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t, graph_t >{
   private:
     residue::dictionary_t::definition_t::model_t getBestModel(residue::dictionary_t& resdict, int id, std::set<int> atom_list){ //TODO this is a stupid implementation...
       return *resdict.definition[id].model.begin();
     }
   public:
-  	typedef  typename BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t>::topology_t  topology_t;
+  	typedef  typename BioCpp::base_topology_constructor<typename vertex_t::atom_t, vertex_t, edge_t, graph_t>::topology_t  topology_t;
 	  topology_t operator()( typename io::model<typename vertex_t::atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes, atom::dictionary_t& atmdict, residue::dictionary_t& resdict ){
 			typedef typename vertex_t::atom_t atom_t;
 		
@@ -109,7 +109,7 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
 				int last_end = 3;
 				int atm_resSeq = start_resSeq[ch->first];
 				resSeq = 0;
-				std::map< std::pair<unsigned int, int>, typename BioCpp::topology< vertex_t, edge_t >::vertex_t  > added_vertex;
+				std::map< std::pair<unsigned int, int>, typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t  > added_vertex;
 				for(std::string::iterator res = ch->second.begin(); res != ch->second.end() ; ++res,++resSeq,++atm_resSeq){
 				  if(*res == '-' or *res == 'X'){
 				    continue;
@@ -117,7 +117,7 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
 					residue::dictionary_t::definition_t::model_t res_model = getBestModel(resdict,resdict.string_to_id[std::string(1,*res)],atom_list[std::make_pair(ch->first,resSeq)]);
 					std::pair<char,unsigned int> resPos = std::make_pair(ch->first,resSeq);
 					for( residue::dictionary_t::definition_t::model_t::atom_list_t::iterator at = res_model.atom_list.begin();  at != res_model.atom_list.end(); ++at){
-						typename BioCpp::topology< vertex_t, edge_t >::vertex_t u = boost::add_vertex(topo.getGraph());
+						typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t u = boost::add_vertex(topo.getGraph());
           	added_vertex[ std::make_pair(resSeq,*at) ] = u;
           	std::pair< std::pair<char,unsigned int>, int > atmId = std::make_pair(resPos,*at);
           	typename std::map< std::pair< std::pair<char,unsigned int>, int>,  atom_t* >::iterator atm_ref = atom_ref.find( atmId );
@@ -148,16 +148,16 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
 					// connects atoms in the same residue
 					bool b = false;
 					for( residue::dictionary_t::definition_t::model_t::bond_list_t::iterator bn = res_model.bond_list.begin();  bn != res_model.bond_list.end(); ++bn){
-						typename BioCpp::topology< vertex_t, edge_t >::edge_t e;
-          	typename BioCpp::topology< vertex_t, edge_t >::vertex_t u = added_vertex[ std::make_pair(resSeq, bn->first) ];
-          	typename BioCpp::topology< vertex_t, edge_t >::vertex_t v = added_vertex[ std::make_pair(resSeq, bn->second) ];
+						typename BioCpp::topology< vertex_t, edge_t, graph_t >::edge_t e;
+          	typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t u = added_vertex[ std::make_pair(resSeq, bn->first) ];
+          	typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t v = added_vertex[ std::make_pair(resSeq, bn->second) ];
           	boost::tie(e,b) = boost::add_edge(u,v,topo.getGraph());
 					}
 					// connects two consecutive residues
 					if( last_resSeq == (resSeq-1) ){
-  					typename BioCpp::topology< vertex_t, edge_t >::edge_t e;
-            typename BioCpp::topology< vertex_t, edge_t >::vertex_t u = added_vertex[ std::make_pair(last_resSeq, last_end) ];
-            typename BioCpp::topology< vertex_t, edge_t >::vertex_t v = added_vertex[ std::make_pair(resSeq, res_model.atom_start) ];
+  					typename BioCpp::topology< vertex_t, edge_t, graph_t >::edge_t e;
+            typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t u = added_vertex[ std::make_pair(last_resSeq, last_end) ];
+            typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t v = added_vertex[ std::make_pair(resSeq, res_model.atom_start) ];
             boost::tie(e,b) = boost::add_edge(u,v,topo.getGraph());
           }
           last_resSeq = resSeq;
@@ -183,11 +183,11 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
     	for(unsigned int i = 0; i!=model;++i,++mit);
     	residue::dictionary_t::definition_t::model_t res_model = *mit;
     	
-    	std::map<int, typename BioCpp::topology< vertex_t, edge_t >::vertex_t> added_vertex;
+    	std::map<int, typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t> added_vertex;
     	
     	int serial = 0;
     	for( residue::dictionary_t::definition_t::model_t::atom_list_t::iterator at = res_model.atom_list.begin();  at != res_model.atom_list.end(); ++at){
-			  typename BioCpp::topology< vertex_t, edge_t >::vertex_t u = boost::add_vertex(topo.getGraph());
+			  typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t u = boost::add_vertex(topo.getGraph());
         added_vertex[ *at ] = u;
         
 	      atom_t tmp_atom;
@@ -208,9 +208,9 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
 	    }
     	bool b = false;
 			for( residue::dictionary_t::definition_t::model_t::bond_list_t::iterator bn = res_model.bond_list.begin();  bn != res_model.bond_list.end(); ++bn){
-				typename BioCpp::topology< vertex_t, edge_t >::edge_t e;
-       	typename BioCpp::topology< vertex_t, edge_t >::vertex_t u = added_vertex[ bn->first ];
-       	typename BioCpp::topology< vertex_t, edge_t >::vertex_t v = added_vertex[ bn->second ];
+				typename BioCpp::topology< vertex_t, edge_t, graph_t >::edge_t e;
+       	typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t u = added_vertex[ bn->first ];
+       	typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t v = added_vertex[ bn->second ];
        	boost::tie(e,b) = boost::add_edge(u,v,topo.getGraph());
 			}
 			return topo;

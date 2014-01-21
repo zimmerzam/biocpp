@@ -26,8 +26,8 @@ typedef BioCpp::io::pdb::print_atom_t< element_dictionary, atom_dictionary, resi
 
 typedef BioCpp::standard::vertex<atom> vertex; 
 typedef BioCpp::standard::edge< std::pair<atom,atom> > edge;
-typedef BioCpp::topology<vertex, edge> topology;
-typedef BioCpp::standard::topology_constructor<vertex,edge> topology_constructor;
+typedef BioCpp::topology<vertex, edge, boost::undirectedS> topology;
+typedef BioCpp::standard::topology_constructor<vertex,edge, boost::undirectedS> topology_constructor;
 
 int main( int argc, char* argv[] ){
   const char* pdb_filename = argv[1];

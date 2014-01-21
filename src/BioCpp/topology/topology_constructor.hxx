@@ -32,10 +32,10 @@
 
 namespace BioCpp{
 
-template< typename atom_t, typename vertex_t, typename edge_t >
+template< typename atom_t, typename vertex_t, typename edge_t, typename graph_t >
 class base_topology_constructor{
   protected:
-    typedef topology<vertex_t, edge_t> topology_t;
+    typedef topology<vertex_t, edge_t, graph_t> topology_t;
   public:  
     virtual topology_t operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes, BioCpp::atom::dictionary_t& atmdict, BioCpp::residue::dictionary_t& resdict ) = 0;
     virtual topology_t operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, BioCpp::atom::dictionary_t& atmdict, BioCpp::residue::dictionary_t& resdict ) = 0;

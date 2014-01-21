@@ -22,6 +22,7 @@
 #ifndef STANDARD_TEMPLATED_DEFINITION_HXX
 #define STANDARD_TEMPLATED_DEFINITION_HXX
 
+#include <sstream>
 #include <BioCpp/io_files/model/model.hxx>
 #include <BioCpp/proteins/base_complex_constructor.hxx>
 
@@ -123,7 +124,7 @@ class complex_constructor : public BioCpp::base_complex_constructor< atom_t,
               tmp_res.type = -1;
             }
             else{
-      	  		std::stringstream sstype;
+              std::stringstream sstype;
 	        		sstype << ch->second[res];
 	      	  	tmp_res.type = res_dict.string_to_id[ sstype.str() ];
 	      	  }

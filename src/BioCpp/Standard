@@ -19,55 +19,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_BASE_CONTACT_MAP_H
-#define BIOCPP_BASE_CONTACT_MAP_H
+#ifndef BIOCPP_INCLUDE_STANDARD
+#define BIOCPP_INCLUDE_STANDARD
 
-#include <unordered_map>
+#include <BioCpp/standard/alignmentMatrix/BLOSUM45.hpp>
+#include <BioCpp/standard/alignmentMatrix/BLOSUM62.hpp>
+#include <BioCpp/standard/alignmentMatrix/BLOSUM80.hpp>
+#include <BioCpp/standard/alignmentMatrix/PAM30.hpp>
+#include <BioCpp/standard/alignmentMatrix/PAM70.hpp>
+#include <BioCpp/standard/alignmentMatrix/ZIMM1.hpp>
 
-namespace BioCpp{
-namespace base{
+#include <BioCpp/chemical_component_dictionary/atoms/atom_dictionary.hpp>
+#include <BioCpp/chemical_component_dictionary/elements/element_dictionary.hpp>
+#include <BioCpp/chemical_component_dictionary/residues/residue_dictionary.hpp>
+#include <BioCpp/standard/chemicalComponentDictionary/element_dictionary_standard.hpp>
+#include <BioCpp/standard/chemicalComponentDictionary/atom_dictionary_standard.hpp>
+#include <BioCpp/standard/chemicalComponentDictionary/residue_dictionary_standard.hpp>
 
-/*! \brief Describes a table
-		
-		This simple `struct` can be used in order to store all the H-bridges of
-		a particular system.
-		@tparam T usually is the resSeq (`int`) of a residue, or an `iterator`.  
-*/
-template <typename T, typename value_t>
-class contact_map{
-  private:
-    struct pair_hash {
-      size_t operator()(const std::pair<T,T> &p) const {
-        return std::hash<T>(p.first)^std::hash<T>(p.second);
-    };
-};
-	protected:
-	  typedef std::unordered_map< std::pair< T, T >, value_t, pair_hash > map;
-		map data;
-	public:
-	  /*! \brief Void constructor */
-		contact_map(){};
-		
-		/*! \brief iterators */
-		typedef typename map::iterator iterator; /*!< Iterator over the children */
-		typedef typename map::const_iterator const_iterator; /*!< Const iterator over the children */
-//		typedef typename map::reverse_iterator reverse_iterator; /*!< Reverse iterator */
-		
-		iterator begin(){return data.begin();}; /*!< Iterator to the first child */
-		iterator end(){return data.end();}; /*!< \note This is not the last child item */
-//		reverse_iterator rbegin(){return data.rbegin();}; /*!< Iterator to the last child */
-//		reverse_iterator rend(){return data.rend();} /*!< \note This is not the first child */
-		
-		/*! \brief Get an element */
-		value_t& operator[]( std::pair< T, T > key ){return data[key];}
-		
-		/*! \brief Get an element */
-		value_t& operator()( T key1, T key2 ){
-		  return (*this)[std::make_pair(key1, key2)];
-		}
-};
+#include <BioCpp/standard/fileFormat/pdb/sections_and_records/sections_and_records.hpp>
+#include <BioCpp/standard/fileFormat/pdb/file_reader.hpp>
 
-} // end namsepace
-} // end namespace
+//#include <BioCpp/standard/proteinDefinitions/base/dpss/h_bridge_map_constructor.hpp>
 
 #endif

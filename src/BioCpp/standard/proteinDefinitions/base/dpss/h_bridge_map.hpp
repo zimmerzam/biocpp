@@ -19,17 +19,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_STANDARD_DPSS_H_BRIDGE_MAP
-#define BIOCPP_STANDARD_DPSS_H_BRIDGE_MAP
+#ifndef BIOCPP_STANDARD_BASE_DPSS_H_BRIDGE_MAP
+#define BIOCPP_STANDARD_BASE_DPSS_H_BRIDGE_MAP
 
 #include "../../templated.hxx"
 #include <BioCpp/proteins/dpss/base_h_bridge_map.hxx>
+#include "../base.hpp"
 
 namespace BioCpp{
 namespace standard{
 namespace base{
 
-typedef typename BioCpp::dpss::base_h_bridge_map<BioCpp::standard::base::chain::iterator>::type h_bridge_map;
+typedef typename BioCpp::dpss::base_h_bridge_map<BioCpp::standard::base::residue*>::type h_bridge_map;
 
 }
 }

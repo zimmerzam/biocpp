@@ -27,10 +27,10 @@
 
 namespace BioCpp{
 
-template < typename atom_prop, typename bond_prop >
+template < typename atom_prop, typename bond_prop, typename graph_t >
 class topology{
 	public:
-		typedef typename boost::adjacency_list<boost::listS, boost::vecS, boost::undirectedS, atom_prop, bond_prop > Graph;
+		typedef typename boost::adjacency_list<boost::listS, boost::vecS, graph_t, atom_prop, bond_prop > Graph;
     typedef typename boost::graph_traits<Graph>::vertex_descriptor vertex_t;
     typedef typename boost::graph_traits<Graph>::edge_descriptor edge_t;
     typedef typename boost::graph_traits<Graph>::vertex_iterator vertex_iterator;
@@ -46,8 +46,8 @@ class topology{
 //    friend class topology_constructor;
 };
 
-template < typename atom_prop, typename bond_prop >
-typename topology<atom_prop,bond_prop>::Graph& topology<atom_prop,bond_prop>::getGraph(){
+template < typename atom_prop, typename bond_prop, typename graph_t >
+typename topology<atom_prop,bond_prop,graph_t>::Graph& topology<atom_prop,bond_prop,graph_t>::getGraph(){
   return G;
 };
 

@@ -19,10 +19,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_STANDARD_BASE_DPSS_H_BRIDGE_MAP
-#define BIOCPP_STANDARD_BASE_DPSS_H_BRIDGE_MAP
+#ifndef BIOCPP_STANDARD_BASE_DPSS_H_BRIDGE_MAP_CONSTRUCTOR
+#define BIOCPP_STANDARD_BASE_DPSS_H_BRIDGE_MAP_CONSTRUCTOR
 
-#include <BioCpp/standard/proteinDefinitions/base/base.hpp>
+#include "../base.hpp"
 #include "h_bridge_map.hpp"
 #include <BioCpp/proteins/dpss/base_h_bridge_map_constructor.hxx>
 

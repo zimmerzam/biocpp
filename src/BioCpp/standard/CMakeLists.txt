@@ -24,5 +24,4 @@ add_library(biocpp-std
                            fileFormat/pdb/sections_and_records/sections_and_records.cpp
                            fileFormat/pdb/file_reader.cpp
                            
-                           proteinDefinitions/base/dpss/h_bridge_map_constructor.cpp
            )

@@ -59,7 +59,7 @@ class base_h_bridge_map_constructor<BioCpp::standard::base::chain::iterator,BioC
                 h = (*res2)[atom::H].coordinate;
                 double en = h_bridge_energy(c, o, n, h);
                 if(en<-1){
-                  data[std::make_pair(res1, res2)] = true;
+                  data[std::make_pair( &(*res1), &(*res2) )] = true;
                 }
               }
             }
