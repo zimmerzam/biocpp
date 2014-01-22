@@ -75,7 +75,7 @@ class complex_constructor : public BioCpp::base_complex_constructor< atom_t,
     typename standard::complex<atom_t>::type operator()( typename io::model<atom_t>::type& info, io::seqres_record& RseqRes, io::seqres_record& TseqRes ){
       typename standard::complex<atom_t>::type cmp;
     
-      cmp.Reserve(TseqRes.size());
+//      cmp.Reserve(TseqRes.size());
       BioCpp::io::seqres_record rseqres, tseqres;
       //replace gap with three virtual residues
       for( io::seqres_record::iterator ch = TseqRes.begin(); ch!=TseqRes.end(); ++ch ){
@@ -101,9 +101,10 @@ class complex_constructor : public BioCpp::base_complex_constructor< atom_t,
 	    	typename standard::chain<atom_t>::type tmp_chain;
 	    	tmp_chain.type = ch->first;
 	      cmp.Append(ch->first, tmp_chain);
-	      cmp[ch->first].Reserve( ch->second.size() );
+//	      cmp[ch->first].Reserve( ch->second.size() );
     
 	      typename BioCpp::io::model<atom_t>::type::iterator it=info.begin(); //first atom in list
+	      typename BioCpp::io::model<atom_t>::type::iterator last=info.end(); --last; // last atom in list
 	      while( it->chainId != ch->first and it!=info.end() ){ //skip atoms belonging to unwanted chains
 	      	++it;
 	      }
@@ -137,7 +138,7 @@ class complex_constructor : public BioCpp::base_complex_constructor< atom_t,
 	      		sstype << ch->second[res];
 	    	  	tmp_res.type = res_dict.string_to_id[ sstype.str() ];
 	    	    cmp[ch->first].Append(first_res+res,tmp_res);
-	    	    cmp[ch->first][first_res+res].Reserve(40);
+//	    	    cmp[ch->first][first_res+res].Reserve(40);
 	    	    int prev_res = it->resSeq;
 	    	    char prev_icode = it->iCode;
 	    	    char prev_altloc = it->altLoc;
@@ -149,7 +150,7 @@ class complex_constructor : public BioCpp::base_complex_constructor< atom_t,
 	    	  	  if( not cmp[ch->first][first_res+res].exists(it->id) ){
 	    		  		cmp[ch->first][first_res+res].Append(it->id, *it);
 	    				}
-       				if( it != (info.end()-1) )
+       				if( it != last )
       			  	++it;
       			  else
       			    break;

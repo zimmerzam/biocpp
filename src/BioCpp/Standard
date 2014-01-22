@@ -39,6 +39,10 @@
 #include <BioCpp/standard/fileFormat/pdb/sections_and_records/sections_and_records.hpp>
 #include <BioCpp/standard/fileFormat/pdb/file_reader.hpp>
 
+#include <BioCpp/standard/proteinDefinitions/base/base.hpp>
+
+//#include <BioCpp/standard/proteinTopology/topology_constructor.hxx>
+
 //#include <BioCpp/standard/proteinDefinitions/base/dpss/h_bridge_map_constructor.hpp>
 
 #endif

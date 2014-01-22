@@ -19,19 +19,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BIOCPP_INCLUDE_CORE
-#define BIOCPP_INCLUDE_CORE
+#ifndef BIOCPP_STD_BLOSUM62_HPP
+#define BIOCPP_STD_BLOSUM62_HPP
 
-#include <BioCpp/base_atom/base_atom.hpp>
-#include <BioCpp/chemical_component_dictionary/atoms/atom_dictionary.hpp>
-#include <BioCpp/chemical_component_dictionary/elements/element_dictionary.hpp>
-#include <BioCpp/chemical_component_dictionary/residues/residue_dictionary.hpp>
-#include <BioCpp/fasta/NeedlemanWunsch.hpp>
-#include <BioCpp/fasta/StrictNeedlemanWunsch.hpp>
-#include <BioCpp/proteins/dpss/dpss_id.hpp>
-#include <BioCpp/proteins/dpss/h_bridge_energy.hpp>
-#include <BioCpp/proteins/atom_position_reconstruction/bb_hydrogen.hpp>
-#include <BioCpp/proteins/atom_position_reconstruction/beta_carbon.hpp>
-#include <BioCpp/utils/errors_and_warnings/errors_and_warnings.hpp>
+#include <BioCpp/fasta/substitution_matrix.hpp>
+namespace BioCpp{
+namespace fasta{
 
+extern substitution_matrix BLOSUM62;
+
+}//end fasta
+}//end biocpp
 #endif

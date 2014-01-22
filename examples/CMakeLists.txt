@@ -28,6 +28,10 @@ add_subdirectory( pdb_print_custom_dictionary )
 #add_subdirectory( protein_dpss )
 #add_subdirectory( protein_mutation )
 
+#add_subdirectory( statistics_cb_position )
+#add_subdirectory( statistics_h_position )
+add_subdirectory( statistics_o_position )
+
 #add_subdirectory( surface_area_lcpo )
 
 add_subdirectory( topology_constructor )
