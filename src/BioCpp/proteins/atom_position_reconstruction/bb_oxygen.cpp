@@ -19,28 +19,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PROTEIN_GEOMETRY_PARAMETERS_H
-#define PROTEIN_GEOMETRY_PARAMETERS_H
+#include "bb_oxygen.hpp"
 
 namespace BioCpp{
 namespace protein{
 
-const double N_CA_bond_length = 1.449;
-const double CA_C_bond_length = 1.522;
-const double C_N_bond_length = 1.335;
-
-const double N_H_bond_length = 1.0;
-const double C_O_bond_length = 1.229;
-const double CA_CB_bond_length = 1.526;
-
-const double cos_C_N_CA_angle = -0.52843833472;  // angle is 121.9
-const double cos_N_CA_C_angle = -0.34365969458;  // angle is 110.1
-const double cos_CA_C_N_angle = -0.44775908783;  // angle is 116.6 
-const double cos_CA_C_O_angle = -0.50151073715;  // angle is 120.1
-const double cos_O_C_N_angle = -0.54024032047;    // angle is 122.7
-const double cos_N_CA_CB_angle = -0.33380685923; // angle is 109.5
-const double cos_CB_CA_C_angle = -0.35999680812; // angle is 111.1
+inline Eigen::Vector3d BbOxygenPosition( Eigen::Vector3d ca, Eigen::Vector3d c, Eigen::Vector3d n ){
+	Eigen::Vector3d a = ca-c;
+	Eigen::Vector3d b = n-c;
+	a.normalize();
+	b.normalize();
+	double den = a(0)*b(1) - a(1)*b(0);
+	Eigen::Vector3d r;
+	r(0) = ( b(1)*cos_CA_C_O_angle - a(1)*cos_O_C_N_angle )/den;
+	r(1) = ( a(0)*cos_O_C_N_angle - b(0)*cos_CA_C_O_angle )/den;
+	r(2) = 1. - r(0)*r(0) - r(1)*r(1);
+	return c+C_O_bond_length*r;
+}
 
 } // end namespace
 }
-#endif
