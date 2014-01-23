@@ -267,6 +267,50 @@ int main( int argc, char* argv[] ){
   std::cout << average_angle << "  " << dev_angle << std::endl;
   std::cout << "Average distance between reconstructed O and original one: " << std::endl;
   std::cout << average_dist_o << "  " << dev_dist_o << std::endl;
+  
+  // Fourth output: bond length and angles
+  std::cout << "###############################################" << std::endl;
+  std::cout << "Bond length and angles" << std::endl;
+  std::cout << "###############################################" << std::endl;
+  double c_n = 0., n_ca = 0., ca_c = 0., n_ca_c = 0., ca_c_n = 0., c_n_ca = 0.;
+  std::list<double> c_n_list, n_ca_list, ca_c_list, n_ca_c_list, ca_c_n_list, c_n_ca_list;
+  double dev_c_n = 0., dev_n_ca = 0., dev_ca_c = 0., dev_n_ca_c = 0., dev_ca_c_n = 0., dev_c_n_ca = 0.;
+  for(std::list<positions>::iterator p = position_list.begin(); p != position_list.end(); ++p){
+    Eigen::Vector3d cn = p->n-p->pc;
+    c_n += cn.norm();
+    c_n_list.push_back( cn.norm() );
+    Eigen::Vector3d nca = p->ca-p->n;
+    n_ca += nca.norm();
+    n_ca_list.push_back( nca.norm() );
+    Eigen::Vector3d cac = p->c-p->ca;
+    ca_c += cac.norm();
+    ca_c_list.push_back( cac.norm() );
+    Eigen::Vector3d csn = p->sn-p->c;
+    
+    cn.normalize();
+    nca.normalize();
+    cac.normalize();
+    csn.normalize();
+    c_n_ca += acos( nca.dot(cn) );
+    n_ca_c += acos( cac.dot(nca) );
+    ca_c_n += acos( csn.dot(cac) );
+    c_n_ca_list.push_back( acos( nca.dot(cn) ) );
+    n_ca_c_list.push_back( acos( cac.dot(nca) ) );
+    ca_c_n_list.push_back( acos( csn.dot(cac) ) );
+  }
+  c_n/=position_list.size();
+  n_ca/=position_list.size();
+  ca_c/=position_list.size();
+  n_ca_c/=position_list.size();
+  ca_c_n/=position_list.size();
+  c_n_ca/=position_list.size();
+  
+  std::cout << c_n << "  " << dev_c_n << std::endl;
+  std::cout << n_ca << "  " << dev_n_ca << std::endl;
+  std::cout << ca_c << "  " << dev_ca_c << std::endl;
+  std::cout << n_ca_c << "  " << dev_n_ca_c << std::endl;
+  std::cout << ca_c_n << "  " << dev_ca_c_n << std::endl;
+  std::cout << c_n_ca << "  " << dev_c_n_ca << std::endl;
   std::cout << "###############################################"  << std::endl;
   return 0;
 }
