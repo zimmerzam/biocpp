@@ -1,5 +1,5 @@
 
-project( statistics_o_position )
+project( statistics_backbone_reconstruction_parameters )
 set_property(
   SOURCE ${PROJECT_NAME}.cpp
   PROPERTY COMPILE_DEFINITIONS BIOCPP_INCLUDE_PDB 
