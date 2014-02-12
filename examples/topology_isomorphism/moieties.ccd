@@ -5,9 +5,25 @@
 ////////////////////////////////
 
 moieties = (
-	// Peptidic Group
+	// AROMATIC CARBON
 	{
 		id = 1;
+		string = ["CAR"];
+		definition = {
+		  one_letter_name = " ";
+		  model_list = (
+			  {
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [16,23,37,63];
+			  	bond_list = ([23,16,4],[16,37,4],[16,63,1]);
+			  }
+		  );
+	  };
+	},
+	// Peptidic Group
+	{
+		id = 2;
 		string = ["PEP"];
 		definition = {
 		  one_letter_name = " ";
@@ -94,7 +110,7 @@ moieties = (
 	// CO
 	{
 		id = 6;
-		string = ["CO-"];
+		string = ["CO "];
 		definition = {
 		  one_letter_name = " ";
 		  model_list = (
@@ -118,12 +134,12 @@ moieties = (
 			  	atom_start = -1;
 			  	atom_end = -1;
 			  	atom_list = [27,40,41,96,97,99,100];
-			  	bond_list = ([27,40,1],[27,41,1],[40,96,1],[40,97,1],[41,99,1],[41,100,1]);
+			  	bond_list = ([27,40,1],[27,41,2],[40,96,1],[40,97,1],[41,99,1],[41,100,1]);
 			  }
 		  );
 	  };
 	},
-	// NH3 TODO
+	// NH3
 	{
 		id = 8;
 		string = ["NH3"];
@@ -133,8 +149,8 @@ moieties = (
 			  {
 			  	atom_start = -1;
 			  	atom_end = -1;
-			  	atom_list = [];
-			  	bond_list = ();
+			  	atom_list = [42,113,114,115];
+			  	bond_list = ([42,113,1],[42,114,1],[42,115,1]);
 			  }
 		  );
 	  };
@@ -187,5 +203,4 @@ moieties = (
 		  );
 	  };
 	}
-	
 );

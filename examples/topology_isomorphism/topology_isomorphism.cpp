@@ -40,17 +40,23 @@ struct graph_equivalent{
 	const topology::Graph& graphLarge;
 	
 	std::set<topology::vertex_t>& used_vertices;
-	std::list< std::set<topology::vertex_t> >& equivalence;
+	std::set<topology::vertex_t>& tmp_vertices;
+	std::list< std::set<topology::vertex_t> >& subgraphs;
 	
-	graph_equivalent( topology::Graph& graph_small, topology::Graph& graph_large, std::set<topology::vertex_t>& used, std::list< std::set<topology::vertex_t> >& equ ): 
-	  graphSmall(graph_small), graphLarge(graph_large), used_vertices(used), equivalence(equ) {};
+	graph_equivalent( topology::Graph& graph_small, topology::Graph& graph_large, 
+	                              std::set<topology::vertex_t>& used, 
+	                              std::set<topology::vertex_t>& tmp, 
+	                              std::list< std::set<topology::vertex_t> >& sub ): 
+	  graphSmall(graph_small), graphLarge(graph_large), used_vertices(used), tmp_vertices(tmp), subgraphs(sub) {};
   
   bool operator()(const topology::vertex_t& v1, const topology::vertex_t& v2){
+		if( graphSmall[v1].atom->id==0 ){
+			return true;
+		}
 		if( graphSmall[v1].atom->element != graphLarge[v2].atom->element ){
 		  return false;
 		}
-		
-		return used_vertices.find( v2 )==used_vertices.end() ;
+		return used_vertices.find( v2 )==used_vertices.end();
 	}
 	
 	bool operator()(const topology::edge_t& e1, const topology::edge_t& e2){
@@ -63,10 +69,12 @@ struct graph_equivalent{
     boost::tie(v_beg, v_end) = boost::vertices( graphSmall );
     std::set<topology::vertex_t> cur;
     for( topology::vertex_iterator v = v_beg; v != v_end; ++v ){
-      used_vertices.insert( boost::get(f,*v) );
-      cur.insert( boost::get(f,*v) );
+    	if( graphSmall[*v].atom->id!=0 ){
+	      used_vertices.insert( boost::get(f,*v) );
+  	    cur.insert( boost::get(f,*v) );
+  	  }
     }
-    equivalence.push_back(cur);
+    subgraphs.push_back(cur);
     return true;
   }
 
@@ -136,10 +144,11 @@ int main( int argc, char* argv[] ){
   }
   
   std::set<topology::vertex_t> used_vertices;
+  std::set<topology::vertex_t> tmp_vertices;
 	std::list< std::set<topology::vertex_t> > equivalence;
   
   for(std::map<int,topology>::iterator tp = moiety_topology.begin(); tp != moiety_topology.end(); ++tp){
-    graph_equivalent eq_g(tp->second.getGraph(), topo.getGraph(), used_vertices, equivalence);
+    graph_equivalent eq_g(tp->second.getGraph(), topo.getGraph(), used_vertices, tmp_vertices, equivalence);
     boost::vf2_subgraph_iso( 
                              tp->second.getGraph(), 
                              topo.getGraph(), 
