@@ -19,6 +19,7 @@ struct positions{
   Eigen::Vector3d n;
   Eigen::Vector3d h;
 	Eigen::Vector3d ca;
+	Eigen::Vector3d ha;
 	Eigen::Vector3d cb;
 	Eigen::Vector3d c;
 	Eigen::Vector3d o;
@@ -79,12 +80,14 @@ int main( int argc, char* argv[] ){
   			if( pres->exists( BioCpp::atom::CA ) and pres->exists( BioCpp::atom::C )
   			    and res->exists( BioCpp::atom::N ) and res->exists( BioCpp::atom::CA ) and res->exists( BioCpp::atom::C )  
   			    and res->exists( BioCpp::atom::H ) and res->exists( BioCpp::atom::CB ) and res->exists( BioCpp::atom::O )
+  			    and res->exists( BioCpp::atom::HA )
   			    and sres->exists( BioCpp::atom::N ) and sres->exists( BioCpp::atom::H ) and sres->exists( BioCpp::atom::CA ) ){
   				positions pos;
   				pos.pca = (*pres)[BioCpp::atom::CA].coordinate;
   				pos.pc =  (*pres)[BioCpp::atom::C].coordinate;
   				pos.n = (*res)[BioCpp::atom::N].coordinate;
   				pos.ca = (*res)[BioCpp::atom::CA].coordinate;
+  				pos.ha = (*res)[BioCpp::atom::HA].coordinate;
   				pos.c =  (*res)[BioCpp::atom::C].coordinate;
   				pos.h =  (*res)[BioCpp::atom::H].coordinate;
   				pos.cb =  (*res)[BioCpp::atom::CB].coordinate;
@@ -109,6 +112,7 @@ int main( int argc, char* argv[] ){
   average1.h = Eigen::Vector3d::Zero();
   average1.cb = Eigen::Vector3d::Zero();
   average1.o = Eigen::Vector3d::Zero();
+  average1.ha = Eigen::Vector3d::Zero();
   for(std::list<positions>::iterator p = position_list.begin(); p != position_list.end(); ++p){
     positions pos;
   	// H position
@@ -126,6 +130,22 @@ int main( int argc, char* argv[] ){
     	z.normalize();
     	pos.h = Eigen::Vector3d(n_h.dot(x),n_h.dot(y),n_h.dot(z) );
       average1.h+=pos.h;
+    }
+    // HA position
+  	{
+    	Eigen::Vector3d n_ca = p->ca - p->n;
+    	Eigen::Vector3d ca_c = p->c - p->ca;
+    	Eigen::Vector3d ca_ha = p->ha - p->ca;
+    	n_ca.normalize();
+    	ca_c.normalize();
+    	Eigen::Vector3d x = n_ca+ca_c;
+    	Eigen::Vector3d y = n_ca-ca_c;
+    	Eigen::Vector3d z = x.cross(y);
+    	x.normalize();
+    	y.normalize();
+    	z.normalize();
+    	pos.ha = Eigen::Vector3d(ca_ha.dot(x),ca_ha.dot(y),ca_ha.dot(z) );
+      average1.ha+=pos.ha;
     }
   	// CB position
   	{
@@ -163,18 +183,23 @@ int main( int argc, char* argv[] ){
   }
   average1.h /= position_list.size();
   average1.cb /= position_list.size();
+  average1.ha /= position_list.size();
   average1.o /= position_list.size();
-  double var_h = 0., var_cb = 0., var_o = 0.;
+  double var_h = 0., var_cb = 0., var_ha = 0., var_o = 0.;
   for(std::list<positions>::iterator p = frame1_list.begin(); p != frame1_list.end(); ++p){
     var_h += (p->h-average1.h).squaredNorm();
     var_cb += (p->cb-average1.cb).squaredNorm();
+    var_ha += (p->ha-average1.ha).squaredNorm();
     var_o += (p->o-average1.o).squaredNorm();
   }
   var_h = sqrt(var_h/frame1_list.size());
   var_cb = sqrt(var_cb/frame1_list.size());
+  var_ha = sqrt(var_ha/frame1_list.size());
   var_o = sqrt(var_o/frame1_list.size());
   std::cout << "BACKBONE H average position: " << std::endl
             << average1.h.transpose() << "  " << var_h << std::endl;
+  std::cout << "BACKBONE HA average position: " << std::endl
+            << average1.ha.transpose() << "  " << var_ha << std::endl;
   std::cout << "BACKBONE CB average position: " << std::endl
             << average1.cb.transpose() << "  " << var_cb << std::endl;
   std::cout << "BACKBONE O average position: " << std::endl
@@ -189,6 +214,7 @@ int main( int argc, char* argv[] ){
   average2.h = Eigen::Vector3d::Zero();
   average2.cb = Eigen::Vector3d::Zero();
   average2.o = Eigen::Vector3d::Zero();
+  average2.ha = Eigen::Vector3d::Zero();
   for(std::list<positions>::iterator p = position_list.begin(); p != position_list.end(); ++p){
     positions pos;
    	Eigen::Vector3d pca_ca = p->ca - p->pca;
@@ -203,6 +229,10 @@ int main( int argc, char* argv[] ){
   	Eigen::Vector3d ca_h = p->h - p->ca;
   	pos.h = Eigen::Vector3d(ca_h.dot(x),ca_h.dot(y),ca_h.dot(z) );
   	average2.h+=pos.h;
+  	// HA position
+  	Eigen::Vector3d ca_ha = p->ha - p->ca;
+  	pos.ha = Eigen::Vector3d(ca_ha.dot(x),ca_ha.dot(y),ca_ha.dot(z) );
+  	average2.ha+=pos.ha;
   	// CB position
   	Eigen::Vector3d ca_cb = p->cb - p->ca;
   	pos.cb = Eigen::Vector3d(ca_cb.dot(x),ca_cb.dot(y),ca_cb.dot(z) );
@@ -215,18 +245,23 @@ int main( int argc, char* argv[] ){
   }
   average2.h /= position_list.size();
   average2.cb /= position_list.size();
+  average2.ha /= position_list.size();
   average2.o /= position_list.size();
-  double var2_h = 0., var2_cb = 0., var2_o = 0.;
+  double var2_h = 0., var2_ha = 0., var2_cb = 0., var2_o = 0.;
   for(std::list<positions>::iterator p = frame2_list.begin(); p != frame2_list.end(); ++p){
     var2_h += (p->h-average2.h).squaredNorm();
     var2_cb += (p->cb-average2.cb).squaredNorm();
+    var2_ha += (p->ha-average2.ha).squaredNorm();
     var2_o += (p->o-average2.o).squaredNorm();
   }
   var2_h = sqrt(var2_h/frame2_list.size());
   var2_cb = sqrt(var2_cb/frame2_list.size());
+  var2_ha = sqrt(var2_ha/frame2_list.size());
   var2_o = sqrt(var2_o/frame2_list.size());
   std::cout << "BACKBONE H average position: " << std::endl
             << average2.h.transpose() << "  " << var2_h << std::endl;
+  std::cout << "BACKBONE HA average position: " << std::endl
+            << average2.ha.transpose() << "  " << var2_ha << std::endl;
   std::cout << "BACKBONE CB average position: " << std::endl
             << average2.cb.transpose() << "  " << var2_cb << std::endl;
   std::cout << "BACKBONE O average position: " << std::endl
@@ -272,9 +307,9 @@ int main( int argc, char* argv[] ){
   std::cout << "###############################################" << std::endl;
   std::cout << "Bond length and angles" << std::endl;
   std::cout << "###############################################" << std::endl;
-  double c_n = 0., n_ca = 0., ca_c = 0., n_ca_c = 0., ca_c_n = 0., c_n_ca = 0.;
-  std::list<double> c_n_list, n_ca_list, ca_c_list, n_ca_c_list, ca_c_n_list, c_n_ca_list;
-  double dev_c_n = 0., dev_n_ca = 0., dev_ca_c = 0., dev_n_ca_c = 0., dev_ca_c_n = 0., dev_c_n_ca = 0.;
+  double c_n = 0., n_ca = 0., ca_c = 0., ca_ha = 0., n_ca_c = 0., ca_c_n = 0., c_n_ca = 0.;
+  std::list<double> c_n_list, n_ca_list, ca_c_list, ca_ha_list, n_ca_c_list, ca_c_n_list, c_n_ca_list;
+  double dev_c_n = 0., dev_n_ca = 0., dev_ca_c = 0.,  dev_ca_ha = 0., dev_n_ca_c = 0., dev_ca_c_n = 0., dev_c_n_ca = 0.;
   for(std::list<positions>::iterator p = position_list.begin(); p != position_list.end(); ++p){
     Eigen::Vector3d cn = p->n-p->pc;
     c_n += cn.norm();
@@ -286,6 +321,10 @@ int main( int argc, char* argv[] ){
     ca_c += cac.norm();
     ca_c_list.push_back( cac.norm() );
     Eigen::Vector3d csn = p->sn-p->c;
+    
+    Eigen::Vector3d caha = p->ha-p->ca;
+    ca_ha += caha.norm();
+    ca_ha_list.push_back( caha.norm() );
     
     cn.normalize();
     nca.normalize();
@@ -301,6 +340,7 @@ int main( int argc, char* argv[] ){
   c_n/=position_list.size();
   n_ca/=position_list.size();
   ca_c/=position_list.size();
+  ca_ha/=position_list.size();
   n_ca_c/=position_list.size();
   ca_c_n/=position_list.size();
   c_n_ca/=position_list.size();
@@ -308,6 +348,7 @@ int main( int argc, char* argv[] ){
   std::cout << c_n << "  " << dev_c_n << std::endl;
   std::cout << n_ca << "  " << dev_n_ca << std::endl;
   std::cout << ca_c << "  " << dev_ca_c << std::endl;
+  std::cout << ca_ha << "  " << dev_ca_ha << std::endl;
   std::cout << n_ca_c << "  " << dev_n_ca_c << std::endl;
   std::cout << ca_c_n << "  " << dev_ca_c_n << std::endl;
   std::cout << c_n_ca << "  " << dev_c_n_ca << std::endl;
