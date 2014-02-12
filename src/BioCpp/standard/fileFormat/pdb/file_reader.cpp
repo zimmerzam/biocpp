@@ -80,7 +80,7 @@ file::file(const char* pdb_name, int init_flag ) : BioCpp::io::file( pdb_name, i
       if( model_beg_pos.find(n_models)==model_beg_pos.end() ){
         model_beg_pos.insert( std::make_pair(n_models, file_beg) );
       }
-      model_end_pos[n_models] = prev_pos;
+      model_end_pos[n_models] = file.tellg();
       if(first_model)
         first_model=false;
       if(init_flag&BioCpp::io::INIT_FIRST_MODEL)

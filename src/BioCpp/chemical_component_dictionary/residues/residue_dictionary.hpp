@@ -37,8 +37,10 @@ class definition_t : public BioCpp::definition{
       public:
         typedef std::set< int > atom_list_t;
         typedef std::set< std::pair<int,int> > bond_list_t;
+        typedef std::map< std::pair<int,int>, int > bond_type_t;
         atom_list_t atom_list;
         bond_list_t bond_list;
+        bond_type_t bond_type;
         int atom_start;
         int atom_end;
         

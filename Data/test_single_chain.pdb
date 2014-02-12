@@ -1,17 +1,17 @@
-HEADER    PROTEIN FIBRIL                          11-JAN-14   2RNM              
+HEADER    PROTEIN FIBRIL                          24-JAN-08   2RNM              
 TITLE     STRUCTURE OF THE HET-S(218-289) PRION IN ITS AMYLOID FORM             
 TITLE    2 OBTAINED BY SOLID-STATE NMR                                          
 REMARK 100                                                                      
 REMARK 100 THIS ENTRY HAS BEEN MODIFIED BY HAND IN ORDER TO BE USE AS
 REMARK 100 AN EXAMPLE PDB FOR TESTING BIOCPP EXAMPLES.
-REMARK 100 THE RCSB ID CODE OF THE ORIGINAL STRUCTURE IS RCSB150069.                                      
+REMARK 100 THE RCSB ID CODE OF THE ORIGINAL STRUCTURE IS RCSB150069. 
 SEQRES   1 A   79  MET LYS ILE ASP ALA ILE VAL GLY ARG ASN SER ALA LYS          
 SEQRES   2 A   79  ASP ILE ARG THR GLU GLU ARG ALA ARG VAL GLN LEU GLY          
 SEQRES   3 A   79  ASN VAL VAL THR ALA ALA ALA LEU HIS GLY GLY ILE ARG          
 SEQRES   4 A   79  ILE SER ASP GLN THR THR ASN SER VAL GLU THR VAL VAL          
 SEQRES   5 A   79  GLY LYS GLY GLU SER ARG VAL LEU ILE GLY ASN GLU TYR          
 SEQRES   6 A   79  GLY GLY LYS GLY PHE TRP ASP ASN HIS HIS HIS HIS HIS          
-SEQRES   7 A   79  HIS                                                                                                             
+SEQRES   7 A   79  HIS                                                          
 MODEL        1                                                                  
 ATOM      1  N   MET A 217      -5.308   4.213 -16.145  1.00  3.22           N  
 ATOM      2  CA  MET A 217      -5.667   3.781 -14.799  1.00 75.03           C  
@@ -1215,6 +1215,7 @@ ATOM   1199  HB3 HIS A 295     -31.514  45.530  -0.423  1.00 24.24           H
 ATOM   1200  HD1 HIS A 295     -31.407  44.853  -3.876  1.00 10.11           H  
 ATOM   1201  HD2 HIS A 295     -31.686  42.467  -0.486  1.00 40.21           H  
 ATOM   1202  HE1 HIS A 295     -30.652  42.566  -4.599  1.00 44.24           H  
-TER    1203      HIS A 295                                                                                                       
+TER    1203      HIS A 295    
 ENDMDL                                                                          
+MASTER     1448    0    0    0   30    0    0    612028  100    0   35          
 END                                                                             

@@ -10,7 +10,7 @@
 #include <iostream>
 #include <BioCpp/base_atom/base_atom.hpp>
 #include <BioCpp/standard/fileFormat/pdb/file_reader.hpp>
-#include <BioCpp/topology/topology.hxx>
+#include <BioCpp/topology/topology.hxx> 
 #include <BioCpp/standard/proteinTopology/topology_constructor.hxx>
 #include <BioCpp/standard/fileFormat/pdb/printer/print_atom_t.hxx>
 #include <BioCpp/base_container/Iterate_single.hxx>
@@ -26,23 +26,50 @@ typedef BioCpp::residue::dictionary_t residue_dictionary;
 typedef BioCpp::io::pdb::print_atom_t< element_dictionary, atom_dictionary, residue_dictionary > print_atom;
 
 typedef BioCpp::standard::vertex<atom> vertex; 
-typedef BioCpp::standard::edge< std::pair<atom,atom> > edge;
+typedef BioCpp::standard::edge edge;
 typedef BioCpp::topology<vertex, edge, boost::undirectedS> topology;
 typedef BioCpp::standard::topology_constructor<vertex,edge,boost::undirectedS> topology_constructor;
 
-struct vertex_equivalent{
-	topology::Graph* graphSmall;
-	topology::Graph* graphLarge;
-	vertex_equivalent( topology::Graph& graph_small, topology::Graph& graph_large ): graphSmall(&graph_small), graphLarge(&graph_large){};
-	bool operator()(const topology::vertex_t& v1, const topology::vertex_t& v2){
-		return (*graphSmall)[v1].atom->element == (*graphLarge)[v2].atom->element;
-	}
-}; 
+#ifndef BOOST_GRAPH_ITERATION_MACROS_HPP
+#define BOOST_ISO_INCLUDED_ITER_MACROS // local macro, see bottom of file
+#include <boost/graph/iteration_macros.hpp>
+#endif
 
-struct edge_equivalent{
-	bool operator()(topology::edge_t& e1, topology::edge_t& e2){
-		return true;
+struct graph_equivalent{
+  const topology::Graph& graphSmall;
+	const topology::Graph& graphLarge;
+	
+	std::set<topology::vertex_t>& used_vertices;
+	std::list< std::set<topology::vertex_t> >& equivalence;
+	
+	graph_equivalent( topology::Graph& graph_small, topology::Graph& graph_large, std::set<topology::vertex_t>& used, std::list< std::set<topology::vertex_t> >& equ ): 
+	  graphSmall(graph_small), graphLarge(graph_large), used_vertices(used), equivalence(equ) {};
+  
+  bool operator()(const topology::vertex_t& v1, const topology::vertex_t& v2){
+		if( graphSmall[v1].atom->element != graphLarge[v2].atom->element ){
+		  return false;
+		}
+		
+		return used_vertices.find( v2 )==used_vertices.end() ;
 	}
+	
+	bool operator()(const topology::edge_t& e1, const topology::edge_t& e2){
+		return graphSmall[e1].type==graphLarge[e2].type;
+	}
+
+  template <typename CorrespondenceMap1To2, typename CorrespondenceMap2To1>
+  bool operator()(CorrespondenceMap1To2 f, CorrespondenceMap2To1){
+    topology::vertex_iterator v_beg, v_end;
+    boost::tie(v_beg, v_end) = boost::vertices( graphSmall );
+    std::set<topology::vertex_t> cur;
+    for( topology::vertex_iterator v = v_beg; v != v_end; ++v ){
+      used_vertices.insert( boost::get(f,*v) );
+      cur.insert( boost::get(f,*v) );
+    }
+    equivalence.push_back(cur);
+    return true;
+  }
+
 };
 
 int main( int argc, char* argv[] ){
@@ -99,6 +126,7 @@ int main( int argc, char* argv[] ){
       }
     }
   }
+  
 	topology topo = topo_constr( mdl, PDB.RseqRes, PDB.TseqRes, atmDict, resDict );
 	
 	std::map<int, model>    moiety_model;
@@ -107,20 +135,29 @@ int main( int argc, char* argv[] ){
     moiety_topology[r->first] = topo_constr( moiety_model[r->first], atmDict, moiDict, r->first, 0 );
   }
   
+  std::set<topology::vertex_t> used_vertices;
+	std::list< std::set<topology::vertex_t> > equivalence;
+  
   for(std::map<int,topology>::iterator tp = moiety_topology.begin(); tp != moiety_topology.end(); ++tp){
-    boost::vf2_print_callback<topology::Graph, topology::Graph> callback(tp->second.getGraph(), topo.getGraph());
-    vertex_equivalent eq_v(tp->second.getGraph(), topo.getGraph());
-		edge_equivalent eq_e;
+    graph_equivalent eq_g(tp->second.getGraph(), topo.getGraph(), used_vertices, equivalence);
     boost::vf2_subgraph_iso( 
                              tp->second.getGraph(), 
                              topo.getGraph(), 
-                             callback, 
+                             eq_g,
                              boost::get(boost::vertex_index, tp->second.getGraph()),
                              boost::get(boost::vertex_index, topo.getGraph()),
                              boost::vertex_order_by_mult( tp->second.getGraph() ),  
-                             eq_e, 
-                             eq_v);
+                             eq_g, 
+                             eq_g);
+    std::cout << "moiety name  |  list of atoms" << std::endl;
+    for(std::list<std::set<topology::vertex_t> >::iterator set = equivalence.begin(); set != equivalence.end(); ++set ){
+      std::cout << moiDict.id_to_string[tp->first] << "          |";
+      for( std::set< topology::vertex_t >::iterator vert = set->begin(); vert!=set->end(); ++vert ){
+        std::cout << " " << topo.getGraph()[*vert].atom->resSeq << ":" << topo.getGraph()[*vert].atom->id;
+      }
+      std::cout << std::endl;
+    }
+    equivalence.clear();
   }
-
   return 0;
 }

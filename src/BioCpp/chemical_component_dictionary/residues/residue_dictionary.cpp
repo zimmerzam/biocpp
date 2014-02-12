@@ -39,7 +39,9 @@ void BioCpp::residue::definition_t::model_t::importSetting(libconfig::Setting& s
   libconfig::Setting& bndlist = setting["bond_list"];
   int bndlist_size = bndlist.getLength();
   for(int i =0; i!= bndlist_size; ++i){
-    bond_list.insert( std::make_pair( int(bndlist[i][0]), int(bndlist[i][1]) ) );
+    std::pair<int,int> pair = std::make_pair( int(bndlist[i][0]), int(bndlist[i][1]) );
+    bond_list.insert( pair );
+    bond_type[pair] = int(bndlist[i][2]);
   }
 };
 
