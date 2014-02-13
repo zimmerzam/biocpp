@@ -5,25 +5,9 @@
 ////////////////////////////////
 
 moieties = (
-	// AROMATIC CARBON
-	{
-		id = 1;
-		string = ["CAR"];
-		definition = {
-		  one_letter_name = " ";
-		  model_list = (
-			  {
-			  	atom_start = -1;
-			  	atom_end = -1;
-			  	atom_list = [16,23,37,63];
-			  	bond_list = ([23,16,4],[16,37,4],[16,63,1]);
-			  }
-		  );
-	  };
-	},
 	// Peptidic Group
 	{
-		id = 2;
+		id = 1;
 		string = ["PEP"];
 		definition = {
 		  one_letter_name = " ";
@@ -32,7 +16,7 @@ moieties = (
 			  	atom_start = -1;
 			  	atom_end = -1;
 			  	atom_list = [3,4,1,6];
-			  	bond_list = ([3,4,1],[3,1,2],[1,6,1]);
+			  	bond_list = ([3,4,2],[3,1,2],[1,6,1]);
 			  }
 		  );
 	  };
@@ -44,17 +28,17 @@ moieties = (
 		definition = {
 		  one_letter_name = " ";
 		  model_list = (
-			  {
+			  { //C-(S)-C
 			  	atom_start = -1;
 			  	atom_end = -1;
-			  	atom_list = [55];
-			  	bond_list = ();
+			  	atom_list = [-23,55,-19];
+			  	bond_list = ([23,55,1],[55,19,1]);
 			  },
-			  { //TODO CYS
+			  { // C-(SH)
 			  	atom_start = -1;
 			  	atom_end = -1;
-			  	atom_list = [55];
-			  	bond_list = ();
+			  	atom_list = [-14,56,82];
+			  	bond_list = ([14,56,1],[56,82,1]);
 			  }
 		  );
 	  };
@@ -102,7 +86,7 @@ moieties = (
 			  	atom_start = -1;
 			  	atom_end = -1;
 			  	atom_list = [15,47,48];
-			  	bond_list = ([15,47,1],[15,48,1]);
+			  	bond_list = ([15,47,1],[15,48,2]);
 			  }
 		  );
 	  };
@@ -171,9 +155,93 @@ moieties = (
 		  );
 	  };
 	},
-	// NH
+	// OH
 	{
 		id = 10;
+		string = ["OH "];
+		definition = {
+		  one_letter_name = " ";
+		  model_list = (
+			  {
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [52,82];
+			  	bond_list = ([52,82,1]);
+			  }
+		  );
+	  };
+	},
+	// AROMATIC CARBON
+	{
+		id = 11;
+		string = ["CAR"];
+		definition = {
+		  one_letter_name = " ";
+		  model_list = (
+			  {  // N~(CH)~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [-34,20,-38,73];
+			  	bond_list = ([34,20,4],[20,38,4],[20,73,1]);
+			  },
+			  {  // N~(CH)~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [-23,16,-37,63];
+			  	bond_list = ([23,16,4],[16,37,4],[16,63,1]);
+			  },
+			  { // C~(CH)~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [-20,16,-23,63];
+			  	bond_list = ([20,16,4],[16,23,4],[16,63,1]);
+			  },
+			  { // C~[(C)-X]~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [-20,16,-23,0];
+			  	bond_list = ([20,16,4],[16,23,4],[16,0,1]);
+			  },
+			  { // C~[(C)~X]~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [0,21,-17,-29];
+			  	bond_list = ([0,21,4],[17,21,4],[29,21,4]);
+			  },
+			  { // N~[(C)-X]~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [-34,23,-17,0];
+			  	bond_list = ([34,23,4],[23,17,4],[23,0,1]);
+			  },
+			  { // N~[(C)~X]~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [0,21,-17,-29];
+			  	bond_list = ([0,21,4],[17,21,4],[29,21,4]);
+			  }
+		  );
+	  };
+	},
+	// AROMATIC NITROGEN
+	{
+		id = 12;
+		string = ["NAR"];
+		definition = {
+		  one_letter_name = " ";
+		  model_list = (
+			  { // C~(NH)~C
+			  	atom_start = -1;
+			  	atom_end = -1;
+			  	atom_list = [-16,37,-21,73];
+			  	bond_list = ([16,37,4],[37,21,4],[37,73,1]);
+			  }
+		  );
+	  };
+	},
+	// NH
+	{
+		id = 13;
 		string = ["NH "];
 		definition = {
 		  one_letter_name = " ";
@@ -187,18 +255,18 @@ moieties = (
 		  );
 	  };
 	},
-	// OH
+	// CH
 	{
-		id = 11;
-		string = ["OH "];
+		id = 14;
+		string = ["CH "];
 		definition = {
 		  one_letter_name = " ";
 		  model_list = (
 			  {
 			  	atom_start = -1;
 			  	atom_end = -1;
-			  	atom_list = [49,92];
-			  	bond_list = ([49,92,1]);
+			  	atom_list = [23,82];
+			  	bond_list = ([23,82,1]);
 			  }
 		  );
 	  };

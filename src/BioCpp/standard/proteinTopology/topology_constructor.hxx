@@ -187,7 +187,8 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
     	int serial = 0;
     	for( residue::dictionary_t::definition_t::model_t::atom_list_t::iterator at = res_model.atom_list.begin();  at != res_model.atom_list.end(); ++at){
 			  typename BioCpp::topology< vertex_t, edge_t, graph_t >::vertex_t u = boost::add_vertex(topo.getGraph());
-        added_vertex[ *at ] = u;
+        int id = *at>0 ? *at : -*at;
+        added_vertex[ id ] = u;
         
 	      atom_t tmp_atom;
 	      tmp_atom.serial = ++serial;
@@ -200,7 +201,7 @@ class topology_constructor : public BioCpp::base_topology_constructor<typename v
 	      tmp_atom.coordinate = Eigen::Vector3d(999.,999.,999.);
 	      tmp_atom.occupancy = 0.0;
 	      tmp_atom.tempFactor = 0.0;
-	      tmp_atom.element = atmdict.definition[*at].element;
+	      tmp_atom.element = atmdict.definition[id].element;
 	      tmp_atom.charge = 0.0;
 	      info.Append(tmp_atom.serial, tmp_atom);
 	      topo.getGraph()[u].set( info[tmp_atom.serial] );

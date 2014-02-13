@@ -40,14 +40,12 @@ struct graph_equivalent{
 	const topology::Graph& graphLarge;
 	
 	std::set<topology::vertex_t>& used_vertices;
-	std::set<topology::vertex_t>& tmp_vertices;
 	std::list< std::set<topology::vertex_t> >& subgraphs;
 	
 	graph_equivalent( topology::Graph& graph_small, topology::Graph& graph_large, 
 	                              std::set<topology::vertex_t>& used, 
-	                              std::set<topology::vertex_t>& tmp, 
 	                              std::list< std::set<topology::vertex_t> >& sub ): 
-	  graphSmall(graph_small), graphLarge(graph_large), used_vertices(used), tmp_vertices(tmp), subgraphs(sub) {};
+	  graphSmall(graph_small), graphLarge(graph_large), used_vertices(used), subgraphs(sub) {};
   
   bool operator()(const topology::vertex_t& v1, const topology::vertex_t& v2){
 		if( graphSmall[v1].atom->id==0 ){
@@ -55,6 +53,9 @@ struct graph_equivalent{
 		}
 		if( graphSmall[v1].atom->element != graphLarge[v2].atom->element ){
 		  return false;
+		}
+		if( graphSmall[v1].atom->id<0 ){
+			return true;
 		}
 		return used_vertices.find( v2 )==used_vertices.end();
 	}
@@ -69,12 +70,16 @@ struct graph_equivalent{
     boost::tie(v_beg, v_end) = boost::vertices( graphSmall );
     std::set<topology::vertex_t> cur;
     for( topology::vertex_iterator v = v_beg; v != v_end; ++v ){
-    	if( graphSmall[*v].atom->id!=0 ){
-	      used_vertices.insert( boost::get(f,*v) );
-  	    cur.insert( boost::get(f,*v) );
+    	if( graphSmall[*v].atom->id>0 ){
+    	  if( used_vertices.find( boost::get(f,*v) )==used_vertices.end() ){
+  	      used_vertices.insert( boost::get(f,*v) );
+    	    cur.insert( boost::get(f,*v) );
+    	  }
   	  }
     }
-    subgraphs.push_back(cur);
+    if( cur.size() ){
+      subgraphs.push_back(cur);
+    }
     return true;
   }
 
@@ -137,18 +142,20 @@ int main( int argc, char* argv[] ){
   
 	topology topo = topo_constr( mdl, PDB.RseqRes, PDB.TseqRes, atmDict, resDict );
 	
-	std::map<int, model>    moiety_model;
-	std::map<int, topology> moiety_topology;
+	std::map< std::pair<int,unsigned int>, model>    moiety_model;
+	std::map< std::pair<int,unsigned int>, topology> moiety_topology;
   for( typename std::map<int, residue_dictionary::definition_t>::iterator r = moiDict.definition.begin(); r != moiDict.definition.end(); ++r ){
-    moiety_topology[r->first] = topo_constr( moiety_model[r->first], atmDict, moiDict, r->first, 0 );
+    for(unsigned int k = 0; k != r->second.model.size(); ++k){
+      moiety_topology[ std::make_pair(r->first,k) ] = topo_constr( moiety_model[std::make_pair(r->first,k)], atmDict, moiDict, r->first, k );
+    }
   }
   
   std::set<topology::vertex_t> used_vertices;
-  std::set<topology::vertex_t> tmp_vertices;
 	std::list< std::set<topology::vertex_t> > equivalence;
-  
-  for(std::map<int,topology>::iterator tp = moiety_topology.begin(); tp != moiety_topology.end(); ++tp){
-    graph_equivalent eq_g(tp->second.getGraph(), topo.getGraph(), used_vertices, tmp_vertices, equivalence);
+	
+  std::cout << "moiety name  | list of atoms" << std::endl;
+  for(std::map<std::pair<int,unsigned int>,topology>::iterator tp = moiety_topology.begin(); tp != moiety_topology.end(); ++tp){
+    graph_equivalent eq_g(tp->second.getGraph(), topo.getGraph(), used_vertices, equivalence);
     boost::vf2_subgraph_iso( 
                              tp->second.getGraph(), 
                              topo.getGraph(), 
@@ -158,15 +165,27 @@ int main( int argc, char* argv[] ){
                              boost::vertex_order_by_mult( tp->second.getGraph() ),  
                              eq_g, 
                              eq_g);
-    std::cout << "moiety name  |  list of atoms" << std::endl;
+/*
     for(std::list<std::set<topology::vertex_t> >::iterator set = equivalence.begin(); set != equivalence.end(); ++set ){
-      std::cout << moiDict.id_to_string[tp->first] << "          |";
+      std::cout << moiDict.id_to_string[tp->first.first] << "          |";
       for( std::set< topology::vertex_t >::iterator vert = set->begin(); vert!=set->end(); ++vert ){
         std::cout << " " << topo.getGraph()[*vert].atom->resSeq << ":" << topo.getGraph()[*vert].atom->id;
       }
       std::cout << std::endl;
     }
+*/
     equivalence.clear();
+//    std::cout << "used vertices: " << used_vertices.size() << std::endl;
+  }
+  std::cout << "total vertices: " << mdl.size() << std::endl;
+  std::cout << "used  vertices: " << used_vertices.size() << std::endl;
+  
+  topology::vertex_iterator v_beg, v_end;
+  boost::tie(v_beg, v_end) = boost::vertices( topo.getGraph() );
+  for( topology::vertex_iterator v = v_beg; v != v_end; ++v ){
+    if( used_vertices.find(*v)==used_vertices.end() ){
+      std::cout << topo.getGraph()[*v].atom->resSeq << ":" << topo.getGraph()[*v].atom->id << std::endl;
+    }
   }
   return 0;
 }
