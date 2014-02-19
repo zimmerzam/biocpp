@@ -1,0 +1,21 @@
+RESIDUE   09U     16
+CONECT      C1     4 C2   O1   H1   H2  
+CONECT      C2     4 C1   C3   C4   H3  
+CONECT      C3     4 C2   C4   H4   H5  
+CONECT      C4     4 C2   C3   H6   H7  
+CONECT      C5     4 O1   H8   H9   H10 
+CONECT      O1     2 C1   C5  
+CONECT      H1     1 C1  
+CONECT      H2     1 C1  
+CONECT      H3     1 C2  
+CONECT      H4     1 C3  
+CONECT      H5     1 C3  
+CONECT      H6     1 C4  
+CONECT      H7     1 C4  
+CONECT      H8     1 C5  
+CONECT      H9     1 C5  
+CONECT      H10    1 C5  
+END   
+HET    09U             16
+HETNAM     09U (methoxymethyl)cyclopropane
+FORMUL      09U    C5 H10 O1

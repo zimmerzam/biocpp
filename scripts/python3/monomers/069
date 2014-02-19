@@ -1,0 +1,23 @@
+RESIDUE   069     18
+CONECT      C3     3 O3   C2   C4  
+CONECT      O3     2 C3   H3  
+CONECT      C2     3 C3   C1   H2  
+CONECT      C1     3 C2   C    C6  
+CONECT      C      3 C1   O    N   
+CONECT      O      1 C   
+CONECT      N      3 C    O2   H   
+CONECT      C6     3 C1   C5   H6  
+CONECT      C5     3 C6   C4   H5  
+CONECT      C4     3 C3   C5   H4  
+CONECT      O2     2 N    HA  
+CONECT      H3     1 O3  
+CONECT      H2     1 C2  
+CONECT      H4     1 C4  
+CONECT      H6     1 C6  
+CONECT      H      1 N   
+CONECT      HA     1 O2  
+CONECT      H5     1 C5  
+END   
+HET    069             18
+HETNAM     069 N,3-DIHYDROXYBENZAMIDE
+FORMUL      069    C7 H7 N1 O3

@@ -1,0 +1,35 @@
+RESIDUE   0BV     29
+CONECT      OAA    1 CAB 
+CONECT      CAB    3 OAA  CAL  H1  
+CONECT      CAL    4 CAB  CAM  H2   H3  
+CONECT      CAM    3 CAL  CAO  CAK 
+CONECT      CAO    3 CAM  CAH  CAQ 
+CONECT      CAH    3 CAO  CAD  H4  
+CONECT      CAD    3 CAH  CAF  H5  
+CONECT      CAF    3 CAD  CAJ  H6  
+CONECT      CAJ    3 CAF  CAQ  H7  
+CONECT      CAQ    3 CAO  CAJ  CAP 
+CONECT      CAP    3 CAQ  CAI  CAN 
+CONECT      CAI    3 CAP  CAE  H8  
+CONECT      CAE    3 CAI  CAC  H9  
+CONECT      CAC    3 CAE  CAG  H10 
+CONECT      CAG    3 CAC  CAN  H11 
+CONECT      CAN    3 CAP  CAG  CAK 
+CONECT      CAK    3 CAM  CAN  H12 
+CONECT      H1     1 CAB 
+CONECT      H2     1 CAL 
+CONECT      H3     1 CAL 
+CONECT      H4     1 CAH 
+CONECT      H5     1 CAD 
+CONECT      H6     1 CAF 
+CONECT      H7     1 CAJ 
+CONECT      H8     1 CAI 
+CONECT      H9     1 CAE 
+CONECT      H10    1 CAC 
+CONECT      H11    1 CAG 
+CONECT      H12    1 CAK 
+END   
+HET    0BV             29
+HETSYN     0BV 9-ethylphenanthrene, oxidized and bound form
+HETNAM     0BV phenanthren-9-ylacetaldehyde
+FORMUL      0BV    C16 H12 O1

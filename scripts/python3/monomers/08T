@@ -1,0 +1,52 @@
+RESIDUE   08T     45
+CONECT      PA     4 O5'  O1A  O2A  O3A 
+CONECT      PB     4 O1B  O2B  O3A  O3B 
+CONECT      BE     4 F1   F2   O3B  F3  
+CONECT      C5'    4 O5'  C4'  H1   H2  
+CONECT      O5'    2 PA   C5' 
+CONECT      C4'    4 C5'  O4'  C3'  H3  
+CONECT      O4'    2 C4'  C1' 
+CONECT      C3'    4 C4'  O3'  C2'  H4  
+CONECT      O3'    2 C3'  H5  
+CONECT      C2'    4 C3'  O2'  C1'  H6  
+CONECT      O2'    2 C2'  H7  
+CONECT      C1'    4 O4'  C2'  N9   H8  
+CONECT      N1     2 C2   C6  
+CONECT      O1A    2 PA   H9  
+CONECT      O1B    1 PB  
+CONECT      F1     1 BE  
+CONECT      C2     3 N1   N3   H10 
+CONECT      O2A    1 PA  
+CONECT      O2B    2 PB   H11 
+CONECT      F2     1 BE  
+CONECT      N3     2 C2   C4  
+CONECT      O3A    2 PA   PB  
+CONECT      O3B    2 PB   BE  
+CONECT      F3     1 BE  
+CONECT      C4     3 N3   C5   N9  
+CONECT      C5     3 C4   C6   N7  
+CONECT      C6     3 N1   C5   N6  
+CONECT      N6     3 C6   H12  H13 
+CONECT      N7     2 C5   C8  
+CONECT      C8     3 N7   N9   H14 
+CONECT      N9     3 C1'  C4   C8  
+CONECT      H1     1 C5' 
+CONECT      H2     1 C5' 
+CONECT      H3     1 C4' 
+CONECT      H4     1 C3' 
+CONECT      H5     1 O3' 
+CONECT      H6     1 C2' 
+CONECT      H7     1 O2' 
+CONECT      H8     1 C1' 
+CONECT      H9     1 O1A 
+CONECT      H10    1 C2  
+CONECT      H11    1 O2B 
+CONECT      H12    1 N6  
+CONECT      H13    1 N6  
+CONECT      H14    1 C8  
+END   
+HET    08T             45
+HETNAM     08T [[[(2R,3S,4R,5R)-5-(6-aminopurin-9-yl)-3,4-bis(oxidanyl
+HETNAM   2 08T )oxolan-2-yl]methoxy-oxidanyl-phosphoryl]oxy-oxidanyl-p
+HETNAM   3 08T hosphoryl]oxy-tris(fluoranyl)beryllium 
+FORMUL      08T    C10 H14 Be1 F3 N5 O10 P2

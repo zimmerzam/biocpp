@@ -1,0 +1,34 @@
+RESIDUE   0EA     29
+CONECT      O1     2 C5   H2  
+CONECT      C5     3 O1   C6   C7  
+CONECT      C6     3 C5   C10  H9  
+CONECT      C7     3 C5   O5   C8  
+CONECT      O5     2 C7   H10 
+CONECT      C8     3 C7   C9   H11 
+CONECT      C9     3 C8   C10  H12 
+CONECT      C10    3 C6   C9   C11 
+CONECT      C11    4 C10  O8   C12  H13 
+CONECT      O8     2 C11  H14 
+CONECT      C12    4 C11  N6   C14  H15 
+CONECT      N6     3 C12  C13  H16 
+CONECT      C13    4 N6   H18  H19  H20 
+CONECT      C14    3 C12  O3   OXT 
+CONECT      O3     1 C14 
+CONECT      H9     1 C6  
+CONECT      H10    1 O5  
+CONECT      H11    1 C8  
+CONECT      H12    1 C9  
+CONECT      H13    1 C11 
+CONECT      H14    1 O8  
+CONECT      H15    1 C12 
+CONECT      H16    1 N6  
+CONECT      H18    1 C13 
+CONECT      H19    1 C13 
+CONECT      H20    1 C13 
+CONECT      H2     1 O1  
+CONECT      OXT    2 C14  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    0EA             29
+HETNAM     0EA (betaR)-beta,3-dihydroxy-N-methyl-L-tyrosine
+FORMUL      0EA    C10 H13 N1 O5

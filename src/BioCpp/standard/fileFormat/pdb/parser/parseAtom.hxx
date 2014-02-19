@@ -43,7 +43,7 @@ namespace pdb{
 template <typename atom_t, typename eleDict, typename atmDict, typename resDict>
 atom_t parseAtom(std::string& line, eleDict& e, atmDict& a, resDict& r){
 	atom_t info;
-	if(get_record(line) == ATOM){
+	if(get_record(line) == ATOM or get_record(line) == HETATM){
 	  info.serial = atoi(line.substr(6, 5).c_str()); 
   	info.id = a.string_to_id.find(line.substr(12, 4))!=a.string_to_id.end() ? a.string_to_id[line.substr(12, 4)] : -1;
   	info.altLoc = line.substr(16, 1).c_str()[0]=='A' ? ' ' : line.substr(16, 1).c_str()[0];

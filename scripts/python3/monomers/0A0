@@ -1,0 +1,24 @@
+RESIDUE   0A0     19
+CONECT      N      3 CA   HN1  HN2 
+CONECT      CA     4 N    C    CB   CM  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HBC1 HBC2
+CONECT      CG     3 CB   OD1  OD2 
+CONECT      OD1    1 CG  
+CONECT      OD2    2 CG   H8  
+CONECT      OXT    2 C    HXT 
+CONECT      CM     4 CA   HMC1 HMC2 HMC3
+CONECT      HN1    1 N   
+CONECT      HN2    1 N   
+CONECT      HBC1   1 CB  
+CONECT      HBC2   1 CB  
+CONECT      HMC1   1 CM  
+CONECT      HMC2   1 CM  
+CONECT      HMC3   1 CM  
+CONECT      H8     1 OD2 
+CONECT      HXT    1 OXT 
+END   
+HET    0A0             19
+HETNAM     0A0 2-methyl-L-aspartic acid
+FORMUL      0A0    C5 H9 N1 O4

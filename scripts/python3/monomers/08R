@@ -1,0 +1,63 @@
+RESIDUE   08R     57
+CONECT      N02    3 C02  H1   H2  
+CONECT      C02    3 N02  C03  N01 
+CONECT      C03    3 C02  C04  H3  
+CONECT      C04    3 C03  C07  C05 
+CONECT      C07    4 C04  H4   H5   H6  
+CONECT      C05    3 C04  C06  H7  
+CONECT      N01    2 C02  C06 
+CONECT      C06    3 C05  N01  C08 
+CONECT      C08    4 C06  C3'  H8   H9  
+CONECT      C3'    4 C08  C2'  C4'  H10 
+CONECT      C2'    4 C3'  N1'  H11  H12 
+CONECT      N1'    3 C2'  C5'  H13 
+CONECT      C5'    4 N1'  C4'  H15  H16 
+CONECT      C4'    4 C3'  C5'  O09  H17 
+CONECT      O09    2 C4'  C10 
+CONECT      C10    4 O09  C11  H18  H19 
+CONECT      C11    4 C10  N12  H20  H21 
+CONECT      N12    3 C11  C13  H22 
+CONECT      C13    4 N12  C21  H24  H25 
+CONECT      C21    3 C13  C22  C26 
+CONECT      C22    3 C21  O22  C23 
+CONECT      O22    2 C22  C27 
+CONECT      C27    4 O22  H26  H27  H28 
+CONECT      C26    3 C21  C25  H29 
+CONECT      C25    3 C26  C24  H30 
+CONECT      C24    3 C25  C23  H31 
+CONECT      C23    3 C22  C24  H32 
+CONECT      H1     1 N02 
+CONECT      H2     1 N02 
+CONECT      H3     1 C03 
+CONECT      H4     1 C07 
+CONECT      H5     1 C07 
+CONECT      H6     1 C07 
+CONECT      H7     1 C05 
+CONECT      H8     1 C08 
+CONECT      H9     1 C08 
+CONECT      H10    1 C3' 
+CONECT      H11    1 C2' 
+CONECT      H12    1 C2' 
+CONECT      H13    1 N1' 
+CONECT      H15    1 C5' 
+CONECT      H16    1 C5' 
+CONECT      H17    1 C4' 
+CONECT      H18    1 C10 
+CONECT      H19    1 C10 
+CONECT      H20    1 C11 
+CONECT      H21    1 C11 
+CONECT      H22    1 N12 
+CONECT      H24    1 C13 
+CONECT      H25    1 C13 
+CONECT      H26    1 C27 
+CONECT      H27    1 C27 
+CONECT      H28    1 C27 
+CONECT      H29    1 C26 
+CONECT      H30    1 C25 
+CONECT      H31    1 C24 
+CONECT      H32    1 C23 
+END   
+HET    08R             57
+HETNAM     08R 6-{[(3S,4S)-4-{2-[(2-methoxybenzyl)amino]ethoxy}pyrroli
+HETNAM   2 08R din-3-yl]methyl}-4-methylpyridin-2-amine
+FORMUL      08R    C21 H30 N4 O2

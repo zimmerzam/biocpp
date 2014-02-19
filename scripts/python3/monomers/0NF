@@ -1,0 +1,75 @@
+RESIDUE   0NF     68
+CONECT      C4     3 C5   C10  C3  
+CONECT      C5     3 C4   C6   O11 
+CONECT      C6     3 C5   C1   H6  
+CONECT      C8     3 C9   O31  N7  
+CONECT      C10    4 C4   C9   H10  H10A
+CONECT      C13    3 C14  C12  H13 
+CONECT      C15    3 C18  C16  C14 
+CONECT      C17    3 C16  C12  H17 
+CONECT      C20    4 C21  C22  C19  H20 
+CONECT      C21    4 C20  C16  H21  H21A
+CONECT      C22    3 C20  N24  O23 
+CONECT      C26    3 C27  C25  H26 
+CONECT      C28    3 C29  C27  H28 
+CONECT      N33    3 C32  HN33 HN3A
+CONECT      C32    4 N33  C38  C39  C29 
+CONECT      C38    4 C32  H38  H38A H38B
+CONECT      C39    4 C32  H39  H39A H39B
+CONECT      C29    3 C28  C32  C30 
+CONECT      C30    3 C29  C25  H30 
+CONECT      C27    3 C26  C28  C34 
+CONECT      C34    4 C27  F37  F35  F36 
+CONECT      F37    1 C34 
+CONECT      F35    1 C34 
+CONECT      F36    1 C34 
+CONECT      C25    3 C26  C30  N24 
+CONECT      N24    3 C22  C25  HN24
+CONECT      O23    1 C22 
+CONECT      C19    4 C20  C18  H19  H19A
+CONECT      C18    4 C15  C19  H18  H18A
+CONECT      C16    3 C15  C17  C21 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C12    3 C13  C17  O11 
+CONECT      O11    2 C5   C12 
+CONECT      C1     3 C6   N2   H1  
+CONECT      N2     2 C1   C3  
+CONECT      C3     3 C4   N2   N7  
+CONECT      C9     4 C8   C10  H9   H9A 
+CONECT      O31    1 C8  
+CONECT      N7     3 C8   C3   HN7 
+CONECT      H6     1 C6  
+CONECT      H10    1 C10 
+CONECT      H10A   1 C10 
+CONECT      H13    1 C13 
+CONECT      H17    1 C17 
+CONECT      H20    1 C20 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      H26    1 C26 
+CONECT      H28    1 C28 
+CONECT      HN33   1 N33 
+CONECT      HN3A   1 N33 
+CONECT      H38    1 C38 
+CONECT      H38A   1 C38 
+CONECT      H38B   1 C38 
+CONECT      H39    1 C39 
+CONECT      H39A   1 C39 
+CONECT      H39B   1 C39 
+CONECT      H30    1 C30 
+CONECT      HN24   1 N24 
+CONECT      H19    1 C19 
+CONECT      H19A   1 C19 
+CONECT      H18    1 C18 
+CONECT      H18A   1 C18 
+CONECT      H14    1 C14 
+CONECT      H1     1 C1  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      HN7    1 N7  
+END   
+HET    0NF             68
+HETNAM     0NF (2S)-N-[3-(2-aminopropan-2-yl)-5-(trifluoromethyl)pheny
+HETNAM   2 0NF l]-7-[(7-oxo-5,6,7,8-tetrahydro-1,8-naphthyridin-4-yl)o
+HETNAM   3 0NF xy]-1,2,3,4-tetrahydronaphthalene-2-carboxamide
+FORMUL      0NF    C29 H29 F3 N4 O3

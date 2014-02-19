@@ -1,0 +1,27 @@
+RESIDUE   00S     22
+CONECT      N23    3 C16  HN23 H2  
+CONECT      C16    4 N23  C17  H16  H16A
+CONECT      C17    3 C16  C22  C18 
+CONECT      C22    3 C17  C21  H22 
+CONECT      C21    3 C22  C24  H21 
+CONECT      C24    3 C21  C27  C19 
+CONECT      C27    3 C24  N35  N34 
+CONECT      N35    2 C27  HN35
+CONECT      N34    3 C27  HN34 HN3A
+CONECT      C19    3 C24  C18  H19 
+CONECT      C18    3 C17  C19  H18 
+CONECT      HN23   1 N23 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H22    1 C22 
+CONECT      H21    1 C21 
+CONECT      HN35   1 N35 
+CONECT      HN34   1 N34 
+CONECT      HN3A   1 N34 
+CONECT      H19    1 C19 
+CONECT      H18    1 C18 
+CONECT      H2     1 N23 
+END   
+HET    00S             22
+HETNAM     00S 4-(aminomethyl)benzenecarboximidamide
+FORMUL      00S    C8 H11 N3

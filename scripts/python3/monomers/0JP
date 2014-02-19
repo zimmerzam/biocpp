@@ -1,0 +1,43 @@
+RESIDUE   0JP     37
+CONECT      C17    3 C16  C18  H17 
+CONECT      C2     3 C3   C1   H2  
+CONECT      C11    3 C10  N12  H11 
+CONECT      C7     3 N8   N6   H7  
+CONECT      C13    3 N12  S14  H13 
+CONECT      C16    3 C17  C3   C15 
+CONECT      C3     3 C2   C16  C4  
+CONECT      C18    3 C17  C1   O19 
+CONECT      C1     3 C2   C18  O20 
+CONECT      C9     3 C15  C10  N8  
+CONECT      C15    3 C16  C9   N6  
+CONECT      C10    3 C11  C9   S14 
+CONECT      C4     4 C3   C5   H42  H41 
+CONECT      C5     4 C4   N6   H52  H51 
+CONECT      C22    4 O19  H223 H221 H222
+CONECT      C21    4 O20  H213 H212 H211
+CONECT      N12    2 C11  C13 
+CONECT      N8     2 C7   C9  
+CONECT      N6     3 C7   C15  C5  
+CONECT      O19    2 C18  C22 
+CONECT      O20    2 C1   C21 
+CONECT      S14    2 C13  C10 
+CONECT      H17    1 C17 
+CONECT      H2     1 C2  
+CONECT      H11    1 C11 
+CONECT      H7     1 C7  
+CONECT      H13    1 C13 
+CONECT      H42    1 C4  
+CONECT      H41    1 C4  
+CONECT      H52    1 C5  
+CONECT      H51    1 C5  
+CONECT      H223   1 C22 
+CONECT      H221   1 C22 
+CONECT      H222   1 C22 
+CONECT      H213   1 C21 
+CONECT      H212   1 C21 
+CONECT      H211   1 C21 
+END   
+HET    0JP             37
+HETNAM     0JP 8,9-dimethoxy-1-(1,3-thiazol-5-yl)-5,6-dihydroimidazo[5
+HETNAM   2 0JP ,1-a]isoquinoline
+FORMUL      0JP    C16 H15 N3 O2 S1

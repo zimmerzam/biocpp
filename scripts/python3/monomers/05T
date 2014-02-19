@@ -1,0 +1,35 @@
+RESIDUE   05T     30
+CONECT      CAA    4 CAB  CAJ  HAA  HAAA
+CONECT      CAB    4 CAA  NAC  CAG  HAB 
+CONECT      NAC    3 CAB  CAD  HNAC
+CONECT      CAD    3 NAC  NAE  NAF 
+CONECT      NAE    3 CAD  HNAE HNAA
+CONECT      NAF    2 CAD  HNAF
+CONECT      CAG    4 CAB  CAH  HAG  HAGA
+CONECT      CAH    4 CAG  CAI  HAH  HAHA
+CONECT      CAI    4 CAH  CAJ  CAK  HAI 
+CONECT      CAJ    4 CAA  CAI  HAJ  HAJA
+CONECT      CAK    4 CAI  NAL  HAK  HAKA
+CONECT      NAL    3 CAK  HNAL H2  
+CONECT      HAA    1 CAA 
+CONECT      HAAA   1 CAA 
+CONECT      HAB    1 CAB 
+CONECT      HNAC   1 NAC 
+CONECT      HNAE   1 NAE 
+CONECT      HNAA   1 NAE 
+CONECT      HNAF   1 NAF 
+CONECT      HAG    1 CAG 
+CONECT      HAGA   1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAHA   1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAJA   1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAKA   1 CAK 
+CONECT      HNAL   1 NAL 
+CONECT      H2     1 NAL 
+END   
+HET    05T             30
+HETNAM     05T 1-[4-(aminomethyl)cyclohexyl]guanidine
+FORMUL      05T    C8 H18 N4

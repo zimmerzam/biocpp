@@ -1,0 +1,34 @@
+RESIDUE   019     28
+CONECT      C21    3 N74  O76  OXT 
+CONECT      N74    3 C21  C75  C95 
+CONECT      C75    4 N74  C77  H751 H752
+CONECT      O76    1 C21 
+CONECT      C77    3 C75  C80  N83 
+CONECT      C80    3 C77  S81  H80 
+CONECT      S81    2 C80  C82 
+CONECT      C82    3 S81  N83  C85 
+CONECT      N83    2 C77  C82 
+CONECT      C85    4 C82  C86  C90  H85 
+CONECT      C86    4 C85  H861 H862 H863
+CONECT      C90    4 C85  H901 H902 H903
+CONECT      C95    4 N74  H951 H952 H953
+CONECT      H751   1 C75 
+CONECT      H752   1 C75 
+CONECT      H80    1 C80 
+CONECT      H85    1 C85 
+CONECT      H861   1 C86 
+CONECT      H862   1 C86 
+CONECT      H863   1 C86 
+CONECT      H901   1 C90 
+CONECT      H902   1 C90 
+CONECT      H903   1 C90 
+CONECT      H951   1 C95 
+CONECT      H952   1 C95 
+CONECT      H953   1 C95 
+CONECT      OXT    2 C21  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    019             28
+HETNAM     019 methyl{[2-(propan-2-yl)-1,3-thiazol-4-yl]methyl}carbami
+HETNAM   2 019 c acid
+FORMUL      019    C9 H14 N2 O2 S1

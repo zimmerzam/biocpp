@@ -1,0 +1,44 @@
+RESIDUE   0MV     38
+CONECT      O      1 C   
+CONECT      C      3 O    NAM  CA  
+CONECT      NAM    3 C    CAS  H1  
+CONECT      CAS    3 NAM  CAG  CAT 
+CONECT      CAG    3 CAS  CAC  H2  
+CONECT      CAC    3 CAG  CAD  H3  
+CONECT      CAD    3 CAC  CAH  H4  
+CONECT      CAH    3 CAD  CAT  H5  
+CONECT      CAT    3 CAS  CAH  CAP 
+CONECT      CAP    3 CAT  OAA  N   
+CONECT      OAA    1 CAP 
+CONECT      N      3 CAP  CA   H6  
+CONECT      CA     4 C    N    CB   H7  
+CONECT      CB     4 CA   CG   H8   H9  
+CONECT      CG     3 CB   CD2  CD1 
+CONECT      CD2    3 CG   CE3  CE2 
+CONECT      CE3    3 CD2  CZ3  H10 
+CONECT      CZ3    3 CE3  CH2  H11 
+CONECT      CH2    3 CZ3  CZ2  H12 
+CONECT      CZ2    3 CH2  CE2  H13 
+CONECT      CE2    3 CD2  CZ2  NE1 
+CONECT      NE1    3 CE2  CD1  H14 
+CONECT      CD1    3 CG   NE1  H15 
+CONECT      H1     1 NAM 
+CONECT      H2     1 CAG 
+CONECT      H3     1 CAC 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAH 
+CONECT      H6     1 N   
+CONECT      H7     1 CA  
+CONECT      H8     1 CB  
+CONECT      H9     1 CB  
+CONECT      H10    1 CE3 
+CONECT      H11    1 CZ3 
+CONECT      H12    1 CH2 
+CONECT      H13    1 CZ2 
+CONECT      H14    1 NE1 
+CONECT      H15    1 CD1 
+END   
+HET    0MV             38
+HETNAM     0MV (3S)-3-(1H-indol-3-ylmethyl)-3,4-dihydro-1H-1,4-benzodi
+HETNAM   2 0MV azepine-2,5-dione
+FORMUL      0MV    C18 H15 N3 O2

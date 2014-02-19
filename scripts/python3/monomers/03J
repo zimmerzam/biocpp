@@ -1,0 +1,43 @@
+RESIDUE   03J     38
+CONECT      O2     1 C11 
+CONECT      S7     2 C18  C29 
+CONECT      C11    3 O2   C12  OXT 
+CONECT      C12    4 C11  C13  H12  H12A
+CONECT      C13    4 C12  C27  H13  H13A
+CONECT      C14    3 C17  C27  H14 
+CONECT      C15    3 C16  C28  H15 
+CONECT      C16    3 C15  C17  C18 
+CONECT      C17    3 C14  C16  H17 
+CONECT      C18    3 S7   C16  C19 
+CONECT      C19    3 C18  C20  H19 
+CONECT      C20    3 C19  C21  C29 
+CONECT      C21    3 C20  C22  C26 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C23    3 C22  C24  H23 
+CONECT      C24    3 C23  C25  H24 
+CONECT      C25    3 C24  C26  H25 
+CONECT      C26    3 C21  C25  H26 
+CONECT      C27    3 C13  C14  C28 
+CONECT      C28    3 C15  C27  H28 
+CONECT      C29    3 S7   C20  H29 
+CONECT      H12    1 C12 
+CONECT      H12A   1 C12 
+CONECT      H13    1 C13 
+CONECT      H13A   1 C13 
+CONECT      H14    1 C14 
+CONECT      H15    1 C15 
+CONECT      H17    1 C17 
+CONECT      H19    1 C19 
+CONECT      H22    1 C22 
+CONECT      H23    1 C23 
+CONECT      H24    1 C24 
+CONECT      H25    1 C25 
+CONECT      H26    1 C26 
+CONECT      H28    1 C28 
+CONECT      H29    1 C29 
+CONECT      OXT    2 C11  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    03J             38
+HETNAM     03J 3-[4-(4-phenylthiophen-2-yl)phenyl]propanoic acid
+FORMUL      03J    C19 H16 O2 S1

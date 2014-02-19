@@ -1,0 +1,49 @@
+RESIDUE   09B     43
+CONECT      C4     2 C1   N7  
+CONECT      C13    3 C14  C12  H1  
+CONECT      C14    3 C13  C15  H2  
+CONECT      C2     3 C5   C1   H3  
+CONECT      C3     3 C6   C1   H4  
+CONECT      C12    3 C13  C11  H5  
+CONECT      C5     3 C2   C8   H6  
+CONECT      C6     3 C3   C8   H7  
+CONECT      C15    3 C14  C10  H8  
+CONECT      C1     3 C4   C2   C3  
+CONECT      C11    3 C12  C10  C16 
+CONECT      C8     3 C5   C6   C9  
+CONECT      C10    3 C15  C11  N17 
+CONECT      C18    3 C16  N17  O23 
+CONECT      C24    3 C22  O25  O26 
+CONECT      C21    4 C22  C16  H9   H10 
+CONECT      C20    4 C16  N19  H11  H12 
+CONECT      C22    4 C24  C21  N19  H13 
+CONECT      C16    4 C11  C18  C21  C20 
+CONECT      C9     4 C8   O26  H14  H15 
+CONECT      N7     1 C4  
+CONECT      N17    3 C10  C18  H16 
+CONECT      N19    3 C20  C22  H17 
+CONECT      O23    1 C18 
+CONECT      O25    1 C24 
+CONECT      O26    2 C24  C9  
+CONECT      H1     1 C13 
+CONECT      H2     1 C14 
+CONECT      H3     1 C2  
+CONECT      H4     1 C3  
+CONECT      H5     1 C12 
+CONECT      H6     1 C5  
+CONECT      H7     1 C6  
+CONECT      H8     1 C15 
+CONECT      H9     1 C21 
+CONECT      H10    1 C21 
+CONECT      H11    1 C20 
+CONECT      H12    1 C20 
+CONECT      H13    1 C22 
+CONECT      H14    1 C9  
+CONECT      H15    1 C9  
+CONECT      H16    1 N17 
+CONECT      H17    1 N19 
+END   
+HET    09B             43
+HETNAM     09B 4-cyanobenzyl (3S,5'R)-2-oxo-1,2-dihydrospiro[indole-3,
+HETNAM   2 09B 3'-pyrrolidine]-5'-carboxylate
+FORMUL      09B    C20 H17 N3 O3

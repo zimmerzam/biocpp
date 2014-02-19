@@ -1,0 +1,48 @@
+RESIDUE   0M5     42
+CONECT      C01    3 C02  C06  F   
+CONECT      C02    3 C01  C03  CL  
+CONECT      C03    3 C02  C04  H01 
+CONECT      C04    3 C03  C05  H02 
+CONECT      C05    3 C04  C06  N01 
+CONECT      C06    3 C01  C05  H03 
+CONECT      C10    4 C11  C09  C13  H08 
+CONECT      C11    4 C10  C12  H09  H10 
+CONECT      C15    4 C14  C    H17  H16 
+CONECT      CL     1 C02 
+CONECT      F      1 C01 
+CONECT      N01    3 C05  C07  H04 
+CONECT      C07    3 N01  O01  C08 
+CONECT      O01    1 C07 
+CONECT      C08    3 C07  N02  O   
+CONECT      N02    3 C08  C09  H05 
+CONECT      O      1 C08 
+CONECT      C09    4 C10  N02  H06  H07 
+CONECT      C12    4 C11  N    H11  H12 
+CONECT      N      3 C12  C13  C14 
+CONECT      C13    4 C10  N    H13  H14 
+CONECT      C14    4 C15  N    C    H15 
+CONECT      C      4 C15  C14  H    H18 
+CONECT      H01    1 C03 
+CONECT      H02    1 C04 
+CONECT      H03    1 C06 
+CONECT      H08    1 C10 
+CONECT      H09    1 C11 
+CONECT      H10    1 C11 
+CONECT      H17    1 C15 
+CONECT      H16    1 C15 
+CONECT      H04    1 N01 
+CONECT      H05    1 N02 
+CONECT      H06    1 C09 
+CONECT      H07    1 C09 
+CONECT      H11    1 C12 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H14    1 C13 
+CONECT      H15    1 C14 
+CONECT      H      1 C   
+CONECT      H18    1 C   
+END   
+HET    0M5             42
+HETNAM     0M5 N-(4-chloro-3-fluorophenyl)-N'-{[(3R)-1-cyclopropylpyrr
+HETNAM   2 0M5 olidin-3-yl]methyl}ethanediamide
+FORMUL      0M5    C16 H19 Cl1 F1 N3 O2

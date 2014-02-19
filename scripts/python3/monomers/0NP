@@ -1,0 +1,36 @@
+RESIDUE   0NP     30
+CONECT      C2     3 O2   N1   N3  
+CONECT      O2     1 C2  
+CONECT      C6     3 N1   C5   H1  
+CONECT      N19    2 N18  H2  
+CONECT      N18    2 N19  N3' 
+CONECT      N3'    2 N18  C3' 
+CONECT      C3'    4 N3'  C4'  C2'  H3  
+CONECT      C4'    4 C3'  C5'  O4'  H4  
+CONECT      C5'    4 C4'  O5'  H5   H6  
+CONECT      O5'    2 C5'  H7  
+CONECT      O4'    2 C4'  C1' 
+CONECT      C2'    4 C3'  F2'  C1'  H8  
+CONECT      F2'    1 C2' 
+CONECT      C1'    4 O4'  C2'  N1   H9  
+CONECT      N1     3 C2   C6   C1' 
+CONECT      N3     3 C2   C4   H10 
+CONECT      C5     3 C6   C4   H11 
+CONECT      C4     3 N3   C5   O4  
+CONECT      O4     1 C4  
+CONECT      H1     1 C6  
+CONECT      H2     1 N19 
+CONECT      H3     1 C3' 
+CONECT      H4     1 C4' 
+CONECT      H5     1 C5' 
+CONECT      H6     1 C5' 
+CONECT      H7     1 O5' 
+CONECT      H8     1 C2' 
+CONECT      H9     1 C1' 
+CONECT      H10    1 N3  
+CONECT      H11    1 C5  
+END   
+HET    0NP             30
+HETNAM     0NP 2',3'-dideoxy-2'-fluoro-3'-triaza-1,2-dien-2-ium-1-ylur
+HETNAM   2 0NP idine
+FORMUL      0NP    C9 H11 F1 N5 O4 1+

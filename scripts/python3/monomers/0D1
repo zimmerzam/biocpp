@@ -1,0 +1,33 @@
+RESIDUE   0D1     28
+CONECT      CAI    3 CAE  CAQ  H1  
+CONECT      CAE    3 CAI  CAO  H2  
+CONECT      CAO    3 CAE  OAA  CAF 
+CONECT      OAA    2 CAO  H3  
+CONECT      CAF    3 CAO  CAJ  H4  
+CONECT      CAJ    3 CAF  CAQ  H5  
+CONECT      CAQ    3 CAI  CAJ  CAN 
+CONECT      CAN    3 CAQ  CAM  CAR 
+CONECT      CAM    3 CAN  CLD  CLC 
+CONECT      CLD    1 CAM 
+CONECT      CLC    1 CAM 
+CONECT      CAR    3 CAN  CAK  CAL 
+CONECT      CAK    3 CAR  CAG  H6  
+CONECT      CAG    3 CAK  CAP  H7  
+CONECT      CAP    3 CAG  OAB  CAH 
+CONECT      OAB    2 CAP  H8  
+CONECT      CAH    3 CAP  CAL  H9  
+CONECT      CAL    3 CAR  CAH  H10 
+CONECT      H1     1 CAI 
+CONECT      H2     1 CAE 
+CONECT      H3     1 OAA 
+CONECT      H4     1 CAF 
+CONECT      H5     1 CAJ 
+CONECT      H6     1 CAK 
+CONECT      H7     1 CAG 
+CONECT      H8     1 OAB 
+CONECT      H9     1 CAH 
+CONECT      H10    1 CAL 
+END   
+HET    0D1             28
+HETNAM     0D1 4,4'-(2,2-dichloroethene-1,1-diyl)diphenol
+FORMUL      0D1    C14 H10 Cl2 O2

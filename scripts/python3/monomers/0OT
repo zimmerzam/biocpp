@@ -1,0 +1,57 @@
+RESIDUE   0OT     51
+CONECT      CAA    4 CAL  H1   H2   H3  
+CONECT      CAL    4 CAA  OAT  H4   H5  
+CONECT      OAT    2 CAL  CAY 
+CONECT      CAY    3 OAT  CAV  CAX 
+CONECT      CAV    3 CAY  BR2  CAI 
+CONECT      BR2    1 CAV 
+CONECT      CAI    3 CAV  CAU  H6  
+CONECT      CAU    3 CAI  BR1  CAJ 
+CONECT      BR1    1 CAU 
+CONECT      CAJ    3 CAU  CAX  H7  
+CONECT      CAX    3 CAY  CAJ  CAP 
+CONECT      CAP    4 CAX  NAQ  H8   H9  
+CONECT      NAQ    3 CAP  CAN  H10 
+CONECT      CAN    4 NAQ  CAM  H12  H13 
+CONECT      CAM    4 CAN  CAO  H14  H15 
+CONECT      CAO    4 CAM  NAR  H16  H17 
+CONECT      NAR    3 CAO  CAW  H18 
+CONECT      CAW    3 NAR  CAK  NAS 
+CONECT      CAK    3 CAW  CAZ  H19 
+CONECT      CAZ    3 CAK  OAB  CBB 
+CONECT      OAB    1 CAZ 
+CONECT      CBB    3 CAZ  CAH  CBA 
+CONECT      CAH    3 CBB  CAF  H21 
+CONECT      CAF    3 CAH  CAE  H22 
+CONECT      CAE    3 CAF  CAG  H23 
+CONECT      CAG    3 CAE  CBA  H24 
+CONECT      CBA    3 CBB  CAG  NAS 
+CONECT      NAS    3 CAW  CBA  H11 
+CONECT      H1     1 CAA 
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAL 
+CONECT      H5     1 CAL 
+CONECT      H6     1 CAI 
+CONECT      H7     1 CAJ 
+CONECT      H8     1 CAP 
+CONECT      H9     1 CAP 
+CONECT      H10    1 NAQ 
+CONECT      H12    1 CAN 
+CONECT      H13    1 CAN 
+CONECT      H14    1 CAM 
+CONECT      H15    1 CAM 
+CONECT      H16    1 CAO 
+CONECT      H17    1 CAO 
+CONECT      H18    1 NAR 
+CONECT      H19    1 CAK 
+CONECT      H21    1 CAH 
+CONECT      H22    1 CAF 
+CONECT      H23    1 CAE 
+CONECT      H24    1 CAG 
+CONECT      H11    1 NAS 
+END   
+HET    0OT             51
+HETNAM     0OT 2-({3-[(3,5-dibromo-2-ethoxybenzyl)amino]propyl}amino)q
+HETNAM   2 0OT uinolin-4(1H)-one
+FORMUL      0OT    C21 H23 Br2 N3 O2

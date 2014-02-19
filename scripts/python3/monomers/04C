@@ -1,0 +1,92 @@
+RESIDUE   04C     86
+CONECT      C29    3 O37  C30  N28 
+CONECT      O37    1 C29 
+CONECT      C30    4 C29  N31  H1   H2  
+CONECT      N31    3 C30  C36  C32 
+CONECT      O34    2 C35  C33 
+CONECT      C36    4 N31  C35  H4   H5  
+CONECT      C32    4 N31  C33  H10  H11 
+CONECT      C35    4 O34  C36  H6   H7  
+CONECT      C33    4 O34  C32  H8   H9  
+CONECT      N28    3 C29  C27  H12 
+CONECT      C27    4 N28  C26  C38  H13 
+CONECT      C26    3 C27  O39  N25 
+CONECT      O39    1 C26 
+CONECT      C38    4 C27  H14  H15  H16 
+CONECT      N25    3 C26  C24  H17 
+CONECT      C24    4 N25  C40  C23  H18 
+CONECT      C40    4 C24  C41  H19  H20 
+CONECT      C41    3 C40  C48  C42 
+CONECT      C48    3 C41  C47  H21 
+CONECT      C47    3 C48  C44  H22 
+CONECT      C44    3 C47  O45  C43 
+CONECT      O45    2 C44  C46 
+CONECT      C46    4 O45  H23  H24  H25 
+CONECT      C43    3 C44  C42  H26 
+CONECT      C42    3 C41  C43  H27 
+CONECT      C23    3 C24  O49  N22 
+CONECT      O49    1 C23 
+CONECT      N22    3 C23  C8   H28 
+CONECT      C8     4 N22  C9   C7   H29 
+CONECT      C9     4 C8   O21  C10  H30 
+CONECT      O21    2 C9   H31 
+CONECT      C10    4 C9   C11  C12  H32 
+CONECT      C11    4 C10  H33  H34  H35 
+CONECT      C12    4 C10  O13  H36  H37 
+CONECT      O13    2 C12  H38 
+CONECT      C7     4 C8   C6   H39  H40 
+CONECT      C6     3 C7   C5   C1  
+CONECT      C5     3 C6   C4   H41 
+CONECT      C4     3 C5   C3   H42 
+CONECT      C3     3 C4   C2   H43 
+CONECT      C2     3 C3   C1   H44 
+CONECT      C1     3 C6   C2   H45 
+CONECT      H1     1 C30 
+CONECT      H2     1 C30 
+CONECT      H4     1 C36 
+CONECT      H5     1 C36 
+CONECT      H10    1 C32 
+CONECT      H11    1 C32 
+CONECT      H6     1 C35 
+CONECT      H7     1 C35 
+CONECT      H8     1 C33 
+CONECT      H9     1 C33 
+CONECT      H12    1 N28 
+CONECT      H13    1 C27 
+CONECT      H14    1 C38 
+CONECT      H15    1 C38 
+CONECT      H16    1 C38 
+CONECT      H17    1 N25 
+CONECT      H18    1 C24 
+CONECT      H19    1 C40 
+CONECT      H20    1 C40 
+CONECT      H21    1 C48 
+CONECT      H27    1 C42 
+CONECT      H22    1 C47 
+CONECT      H26    1 C43 
+CONECT      H23    1 C46 
+CONECT      H24    1 C46 
+CONECT      H25    1 C46 
+CONECT      H30    1 C9  
+CONECT      H28    1 N22 
+CONECT      H29    1 C8  
+CONECT      H33    1 C11 
+CONECT      H34    1 C11 
+CONECT      H35    1 C11 
+CONECT      H36    1 C12 
+CONECT      H37    1 C12 
+CONECT      H38    1 O13 
+CONECT      H39    1 C7  
+CONECT      H40    1 C7  
+CONECT      H41    1 C5  
+CONECT      H42    1 C4  
+CONECT      H43    1 C3  
+CONECT      H44    1 C2  
+CONECT      H45    1 C1  
+CONECT      H31    1 O21 
+CONECT      H32    1 C10 
+END   
+HET    04C             86
+HETNAM     04C 1,2,4-trideoxy-4-methyl-2-{[N-(morpholin-4-ylacetyl)-L-
+HETNAM   2 04C alanyl-O-methyl-L-tyrosyl]amino}-1-phenyl-D-xylitol
+FORMUL      04C    C31 H44 N4 O7

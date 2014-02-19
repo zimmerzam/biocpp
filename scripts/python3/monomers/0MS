@@ -1,0 +1,55 @@
+RESIDUE   0MS     49
+CONECT      C1     3 C2   C3   H1  
+CONECT      C2     3 C1   C4   H2  
+CONECT      C3     3 C1   C7   H3  
+CONECT      C4     3 C2   C10  H4  
+CONECT      C5     3 C9   C11  H5  
+CONECT      C6     3 C11  N22  H6  
+CONECT      C7     3 C3   C10  C12 
+CONECT      C8     3 C12  C13  C15 
+CONECT      C9     3 C5   C14  C20 
+CONECT      C10    3 C4   C7   CL2 
+CONECT      C11    3 C5   C6   BR2 
+CONECT      C12    3 C7   C8   N23 
+CONECT      C13    3 C8   C21  O27 
+CONECT      C14    3 C9   N22  N24 
+CONECT      C15    3 C8   N25  O26 
+CONECT      C16    4 C18  N24  H7   H8  
+CONECT      C17    4 C19  N24  H9   H10 
+CONECT      C18    4 C16  N25  H11  H12 
+CONECT      C19    4 C17  N25  H13  H14 
+CONECT      C20    4 C9   H15  H16  H17 
+CONECT      C21    4 C13  H18  H19  H20 
+CONECT      N22    2 C6   C14 
+CONECT      N23    2 C12  O27 
+CONECT      N24    3 C14  C16  C17 
+CONECT      N25    3 C15  C18  C19 
+CONECT      O26    1 C15 
+CONECT      O27    2 C13  N23 
+CONECT      CL2    1 C10 
+CONECT      BR2    1 C11 
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H7     1 C16 
+CONECT      H8     1 C16 
+CONECT      H9     1 C17 
+CONECT      H10    1 C17 
+CONECT      H11    1 C18 
+CONECT      H12    1 C18 
+CONECT      H13    1 C19 
+CONECT      H14    1 C19 
+CONECT      H15    1 C20 
+CONECT      H16    1 C20 
+CONECT      H17    1 C20 
+CONECT      H18    1 C21 
+CONECT      H19    1 C21 
+CONECT      H20    1 C21 
+END   
+HET    0MS             49
+HETNAM     0MS [4-(5-bromanyl-3-methyl-pyridin-2-yl)piperazin-1-yl]-[3
+HETNAM   2 0MS -(2-chlorophenyl)-5-methyl-1,2-oxazol-4-yl]methanone
+FORMUL      0MS    C21 H20 Br1 Cl1 N4 O2

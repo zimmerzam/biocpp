@@ -1,0 +1,22 @@
+RESIDUE   060     17
+CONECT      C      4 S    H    HA   HB  
+CONECT      N      3 C2   HN   H3  
+CONECT      S      2 C    C1  
+CONECT      C1     4 S    C2   H1   H1A 
+CONECT      C2     4 N    C1   C13  H2  
+CONECT      O4     2 C13  HO4 
+CONECT      O5     1 C13 
+CONECT      C13    3 C2   O4   O5  
+CONECT      H      1 C   
+CONECT      HA     1 C   
+CONECT      HB     1 C   
+CONECT      HN     1 N   
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H2     1 C2  
+CONECT      HO4    1 O4  
+CONECT      H3     1 N   
+END   
+HET    060             17
+HETNAM     060 S-methyl-D-cysteine
+FORMUL      060    C4 H9 N1 O2 S1

@@ -1,0 +1,29 @@
+RESIDUE   01L     24
+CONECT      C1     4 O2   H11A H12A H13 
+CONECT      O2     2 C1   C2  
+CONECT      C2     4 O2   C3   H21  H22A
+CONECT      C3     4 C2   C4   H31  H32A
+CONECT      C4     4 C3   C5   H41  H42 
+CONECT      C5     4 C4   B    N6   H5  
+CONECT      B      3 C5   O1A  O1B 
+CONECT      O1A    2 B    HOA 
+CONECT      O1B    2 B    HOB 
+CONECT      N6     3 C5   HN6  H2  
+CONECT      H11A   1 C1  
+CONECT      H12A   1 C1  
+CONECT      H13    1 C1  
+CONECT      H21    1 C2  
+CONECT      H22A   1 C2  
+CONECT      H31    1 C3  
+CONECT      H32A   1 C3  
+CONECT      H41    1 C4  
+CONECT      H42    1 C4  
+CONECT      H5     1 C5  
+CONECT      HOA    1 O1A 
+CONECT      HOB    1 O1B 
+CONECT      HN6    1 N6  
+CONECT      H2     1 N6  
+END   
+HET    01L             24
+HETNAM     01L [(1R)-1-amino-4-methoxybutyl]boronic acid
+FORMUL      01L    C5 H14 B1 N1 O3

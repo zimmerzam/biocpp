@@ -1,0 +1,70 @@
+RESIDUE   0MJ     64
+CONECT      C1     4 C3   C4   C7   H1  
+CONECT      O2     2 C5   C6  
+CONECT      C3     3 C1   C5   C9  
+CONECT      C4     3 C1   C6   C8  
+CONECT      C5     3 O2   C3   C10 
+CONECT      C6     3 O2   C4   C11 
+CONECT      C7     4 C1   N16  H2   H3  
+CONECT      C8     3 C4   C13  H4  
+CONECT      C9     3 C3   C12  H5  
+CONECT      C10    3 C5   C14  H6  
+CONECT      C11    3 C6   C15  H7  
+CONECT      C12    3 C9   C14  H8  
+CONECT      C13    3 C8   C15  H9  
+CONECT      C14    3 C10  C12  H10 
+CONECT      C15    3 C11  C13  H11 
+CONECT      N16    3 C7   C17  H12 
+CONECT      C17    3 N16  C18  O24 
+CONECT      C18    4 C17  C19  C23  H13 
+CONECT      C19    4 C18  C22  H14  H15 
+CONECT      C20    4 N21  C22  H16  H17 
+CONECT      N21    3 C20  C23  H18 
+CONECT      C22    4 C19  C20  N25  H20 
+CONECT      C23    4 C18  N21  H21  H22 
+CONECT      O24    1 C17 
+CONECT      N25    3 C22  S26  H23 
+CONECT      S26    4 N25  O27  O28  C29 
+CONECT      O27    1 S26 
+CONECT      O28    1 S26 
+CONECT      C29    3 S26  C30  C34 
+CONECT      C30    3 C29  C33  H24 
+CONECT      C31    3 C32  C33  C35 
+CONECT      C32    3 C31  C34  H25 
+CONECT      C33    3 C30  C31  H26 
+CONECT      C34    3 C29  C32  H27 
+CONECT      C35    4 C31  H28  H29  H30 
+CONECT      H1     1 C1  
+CONECT      H2     1 C7  
+CONECT      H3     1 C7  
+CONECT      H4     1 C8  
+CONECT      H5     1 C9  
+CONECT      H6     1 C10 
+CONECT      H7     1 C11 
+CONECT      H8     1 C12 
+CONECT      H9     1 C13 
+CONECT      H10    1 C14 
+CONECT      H11    1 C15 
+CONECT      H12    1 N16 
+CONECT      H13    1 C18 
+CONECT      H14    1 C19 
+CONECT      H15    1 C19 
+CONECT      H16    1 C20 
+CONECT      H17    1 C20 
+CONECT      H18    1 N21 
+CONECT      H20    1 C22 
+CONECT      H21    1 C23 
+CONECT      H22    1 C23 
+CONECT      H23    1 N25 
+CONECT      H24    1 C30 
+CONECT      H25    1 C32 
+CONECT      H26    1 C33 
+CONECT      H27    1 C34 
+CONECT      H28    1 C35 
+CONECT      H29    1 C35 
+CONECT      H30    1 C35 
+END   
+HET    0MJ             64
+HETNAM     0MJ (3S,5R)-5-{[(4-methylphenyl)sulfonyl]amino}-N-(9H-xanth
+HETNAM   2 0MJ en-9-ylmethyl)piperidine-3-carboxamide
+FORMUL      0MJ    C27 H29 N3 O4 S1

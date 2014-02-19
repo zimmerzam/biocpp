@@ -1,0 +1,22 @@
+RESIDUE   0NC     17
+CONECT      N      3 CA   HN   HNA 
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   HB   HBA  HBB 
+CONECT      HN     1 N   
+CONECT      N1     3 C    C1   HN1 
+CONECT      C1     4 N1   H1   H1A  H1B 
+CONECT      HN1    1 N1  
+CONECT      HNA    1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HBB    1 CB  
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+END   
+HET    0NC             17
+HETNAM     0NC N-methyl-L-alaninamide
+FORMUL      0NC    C4 H10 N2 O1

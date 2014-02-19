@@ -4,6 +4,15 @@
 /////////// ELEMENTS ///////////
 ////////////////////////////////
 elements = (
+	{
+		id = -1;
+		string = [" X"];
+		definition = {
+			vanderwaals_radius = 0;
+			covalent_radius = 0;
+			mass = 0;
+		};
+	},
 	// hydrogen
 	{
 		id = 1;
@@ -61,6 +70,11 @@ elements = (
 ////////////////////////////////
 
 atoms = (
+	{
+		id = -1;
+		string = [" UNK"];
+		definition = { element = -1;};
+	},
 	// backbone atoms
 	{
 		id = 1;
@@ -344,7 +358,7 @@ atoms = (
   { 
     id = 56;
     string = [" SG "];
-    definition = { element = 8;};
+    definition = { element = 16;};
   },
 	// Side Chain Atoms : Hydrogen
 	{ 
@@ -636,6 +650,32 @@ atoms = (
     id = 115;
     string = [" HZ3"];
     definition = { element = 1;};
+  },
+  
+  { 
+    id = 1000;
+    string = [" S  "];
+    definition = { element = 16;};
+  },
+  { 
+    id = 1001;
+    string = [" O1 "];
+    definition = { element = 8;};
+  },
+  { 
+    id = 1002;
+    string = [" O2 "];
+    definition = { element = 8;};
+  },
+  { 
+    id = 1003;
+    string = [" O3 "];
+    definition = { element = 8;};
+  },
+  { 
+    id = 1004;
+    string = [" O4 "];
+    definition = { element = 8;};
   }
 );
 
@@ -649,6 +689,21 @@ atoms = (
 // 4  = AROMATIC
 
 residues = (
+  {
+		id = -1;
+		string = ["UNK"];
+		definition = {
+			one_letter_name = "X";
+			model_list = (
+			  {
+				  atom_start = 0;
+				  atom_end = 0;
+				  atom_list = [];
+				  bond_list = ();
+			  }
+		  );
+		};
+	},
   // Cysteine
 	{
 		id = 1;
@@ -965,6 +1020,39 @@ residues = (
 				  atom_end = 3;
 				  atom_list = [1,2,3,4,6,7,14,15,23,47,48,60,61,84,85];
 				  bond_list = ([1,2,1],[1,6,1],[2,7,1],[2,3,1],[3,4,2],[2,14,1],[14,60,1],[14,61,1],[24,23,1],[23,84,1],[23,85,1],[23,15,1],[15,47,1],[15,48,2]);
+			  }
+			);
+		};
+	},
+	
+	// Water
+	{
+		id = 1000;
+		string = ["HOH"];
+		definition = {
+		  one_letter_name = " ";
+		  model_list = (
+			  {
+				  atom_start = 4;
+				  atom_end = 4;
+				  atom_list = [4];
+				  bond_list = ();
+			  }
+			);
+		};
+	},
+	// SO4
+	{
+		id = 1001;
+		string = ["SO4"];
+		definition = {
+		  one_letter_name = " ";
+		  model_list = (
+			  {
+				  atom_start = -1;
+				  atom_end = -1;
+				  atom_list = [1000,1001,1002,1003,1004];
+				  bond_list = ([1000,1001,2],[1000,1002,2],[1000,1003,1],[1000,1004,1]);
 			  }
 			);
 		};

@@ -1,0 +1,60 @@
+RESIDUE   0DU     54
+CONECT      C10    3 C09  C11  C31 
+CONECT      C13    3 C12  C14  C30 
+CONECT      C15    4 C14  N16  C27  H15 
+CONECT      C17    3 N16  O18  C19 
+CONECT      C20    3 C22  C19  CL1 
+CONECT      C22    3 C20  C23  H22 
+CONECT      C24    3 C23  C25  H24 
+CONECT      C01    4 C02  H01  H01A H01B
+CONECT      C02    3 C01  C03  N34 
+CONECT      C03    3 C02  C04  H03 
+CONECT      C04    3 C03  C05  C09 
+CONECT      C05    4 C04  F06  F07  F08 
+CONECT      F06    1 C05 
+CONECT      F07    1 C05 
+CONECT      F08    1 C05 
+CONECT      C09    3 C10  C04  C32 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 C13  C11  H12 
+CONECT      C14    4 C13  C15  H14  H14A
+CONECT      N16    3 C15  C17  HN16
+CONECT      O18    1 C17 
+CONECT      C19    3 C17  C20  C25 
+CONECT      CL1    1 C20 
+CONECT      C23    3 C22  C24  H23 
+CONECT      C25    3 C24  C19  CL2 
+CONECT      CL2    1 C25 
+CONECT      C27    3 C15  O28  O29 
+CONECT      O28    1 C27 
+CONECT      O29    2 C27  HO29
+CONECT      C30    3 C13  C31  H30 
+CONECT      C31    3 C10  C30  H31 
+CONECT      C32    3 C09  O33  N34 
+CONECT      O33    1 C32 
+CONECT      N34    3 C02  C32  C35 
+CONECT      C35    4 N34  H35  H35A H35B
+CONECT      H15    1 C15 
+CONECT      H22    1 C22 
+CONECT      H24    1 C24 
+CONECT      H01    1 C01 
+CONECT      H01A   1 C01 
+CONECT      H01B   1 C01 
+CONECT      H03    1 C03 
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      HN16   1 N16 
+CONECT      H23    1 C23 
+CONECT      HO29   1 O29 
+CONECT      H30    1 C30 
+CONECT      H31    1 C31 
+CONECT      H35    1 C35 
+CONECT      H35A   1 C35 
+CONECT      H35B   1 C35 
+END   
+HET    0DU             54
+HETNAM     0DU N-(2,6-dichlorobenzoyl)-4-[1,6-dimethyl-2-oxo-4-(triflu
+HETNAM   2 0DU oromethyl)-1,2-dihydropyridin-3-yl]-L-phenylalanine
+FORMUL      0DU    C24 H19 Cl2 F3 N2 O4

@@ -1,0 +1,69 @@
+RESIDUE   04K     63
+CONECT      N1     2 C2   C4  
+CONECT      C2     3 N1   N3   N13 
+CONECT      N3     2 C2   C6  
+CONECT      C4     3 N1   C5   H4  
+CONECT      C5     3 C4   C6   C10 
+CONECT      C6     3 N3   C5   N7  
+CONECT      N7     3 C6   C8   C29 
+CONECT      C8     3 N7   C9   O28 
+CONECT      C9     3 C8   C10  O11 
+CONECT      C10    3 C5   C9   H10 
+CONECT      O11    2 C9   C12 
+CONECT      C12    3 O11  C30  C34 
+CONECT      N13    3 C2   C14  HN13
+CONECT      C14    3 N13  C15  C19 
+CONECT      C15    3 C14  C16  H15 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C17    3 C16  C18  O20 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C14  C18  H19 
+CONECT      O20    2 C17  C21 
+CONECT      C21    4 O20  C22  H21  H21A
+CONECT      C22    4 C21  N23  H22  H22A
+CONECT      N23    3 C22  C24  C26 
+CONECT      C24    4 N23  C25  H24  H24A
+CONECT      C25    4 C24  H25  H25A H25B
+CONECT      C26    4 N23  C27  H26  H26A
+CONECT      C27    4 C26  H27  H27A H27B
+CONECT      O28    1 C8  
+CONECT      C29    4 N7   H29  H29A H29B
+CONECT      C30    3 C12  C31  H30 
+CONECT      C31    3 C30  C32  H31 
+CONECT      C32    3 C31  C33  F35 
+CONECT      C33    3 C32  C34  H33 
+CONECT      C34    3 C12  C33  H34 
+CONECT      F35    1 C32 
+CONECT      H4     1 C4  
+CONECT      H10    1 C10 
+CONECT      HN13   1 N13 
+CONECT      H15    1 C15 
+CONECT      H16    1 C16 
+CONECT      H18    1 C18 
+CONECT      H19    1 C19 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      H22    1 C22 
+CONECT      H22A   1 C22 
+CONECT      H24    1 C24 
+CONECT      H24A   1 C24 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      H25B   1 C25 
+CONECT      H26    1 C26 
+CONECT      H26A   1 C26 
+CONECT      H27    1 C27 
+CONECT      H27A   1 C27 
+CONECT      H27B   1 C27 
+CONECT      H29    1 C29 
+CONECT      H29A   1 C29 
+CONECT      H29B   1 C29 
+CONECT      H30    1 C30 
+CONECT      H31    1 C31 
+CONECT      H33    1 C33 
+CONECT      H34    1 C34 
+END   
+HET    04K             63
+HETNAM     04K 2-({4-[2-(diethylamino)ethoxy]phenyl}amino)-6-(4-fluoro
+HETNAM   2 04K phenoxy)-8-methylpyrido[2,3-d]pyrimidin-7(8H)-one
+FORMUL      04K    C26 H28 F1 N5 O3

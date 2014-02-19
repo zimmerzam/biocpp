@@ -1,0 +1,62 @@
+RESIDUE   0G1     56
+CONECT      CBE    4 OBD  H1   H2   H3  
+CONECT      OBD    2 CBE  CBA 
+CONECT      CBA    3 OBD  CBB  CAZ 
+CONECT      CBB    3 CBA  CBC  H4  
+CONECT      CBC    3 CBB  CAX  H5  
+CONECT      CAZ    3 CBA  CAY  H6  
+CONECT      CAY    3 CAZ  CAX  H7  
+CONECT      CAX    3 CBC  CAY  CAG 
+CONECT      CAG    3 CAX  CAH  CAF 
+CONECT      CAH    3 CAG  CAA  CAI 
+CONECT      CAA    3 CAH  CAB  H8  
+CONECT      CAB    3 CAA  CAC  H9  
+CONECT      CAC    3 CAB  CAJ  CAD 
+CONECT      CAJ    4 CAC  CAK  CAM  OAL 
+CONECT      CAK    4 CAJ  CAO  H10  H11 
+CONECT      CAO    4 CAK  H12  H13  H14 
+CONECT      CAM    4 CAJ  CAN  H15  H16 
+CONECT      CAN    4 CAM  H17  H18  H19 
+CONECT      OAL    2 CAJ  H20 
+CONECT      CAD    3 CAC  CAI  H21 
+CONECT      CAI    3 CAH  CAD  NAE 
+CONECT      NAE    3 CAI  CAF  H22 
+CONECT      CAF    3 CAG  NAE  CAP 
+CONECT      CAP    3 CAF  CAT  NAQ 
+CONECT      CAT    3 CAP  SAS  CAU 
+CONECT      SAS    2 CAT  CAW 
+CONECT      CAW    3 SAS  CAV  H23 
+CONECT      CAV    3 CAW  CAU  H24 
+CONECT      CAU    3 CAT  CAV  NAR 
+CONECT      NAR    3 CAU  NAQ  H25 
+CONECT      NAQ    2 CAP  NAR 
+CONECT      H1     1 CBE 
+CONECT      H2     1 CBE 
+CONECT      H3     1 CBE 
+CONECT      H4     1 CBB 
+CONECT      H5     1 CBC 
+CONECT      H6     1 CAZ 
+CONECT      H7     1 CAY 
+CONECT      H8     1 CAA 
+CONECT      H9     1 CAB 
+CONECT      H10    1 CAK 
+CONECT      H11    1 CAK 
+CONECT      H12    1 CAO 
+CONECT      H13    1 CAO 
+CONECT      H14    1 CAO 
+CONECT      H15    1 CAM 
+CONECT      H16    1 CAM 
+CONECT      H17    1 CAN 
+CONECT      H18    1 CAN 
+CONECT      H19    1 CAN 
+CONECT      H20    1 OAL 
+CONECT      H21    1 CAD 
+CONECT      H22    1 NAE 
+CONECT      H23    1 CAW 
+CONECT      H24    1 CAV 
+CONECT      H25    1 NAR 
+END   
+HET    0G1             56
+HETNAM     0G1 3-[3-(4-methoxyphenyl)-2-(1H-thieno[3,2-c]pyrazol-3-yl)
+HETNAM   2 0G1 -1H-indol-6-yl]pentan-3-ol
+FORMUL      0G1    C25 H25 N3 O2 S1

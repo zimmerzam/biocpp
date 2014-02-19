@@ -1,0 +1,39 @@
+RESIDUE   067     34
+CONECT      NAA    2 NAB  CAF 
+CONECT      NAB    2 NAA  NAG 
+CONECT      CAC    3 CAD  CAH  HAC 
+CONECT      CAD    3 CAC  CAI  HAD 
+CONECT      OAE    1 SAJ 
+CONECT      CAF    3 NAA  CAL  CAP 
+CONECT      NAG    3 NAB  CAH  CAL 
+CONECT      CAH    3 CAC  NAG  CAM 
+CONECT      CAI    3 CAD  SAJ  CAN 
+CONECT      SAJ    4 OAE  CAI  NAK  OAO 
+CONECT      NAK    3 SAJ  HNAK HNAA
+CONECT      CAL    3 CAF  NAG  HAL 
+CONECT      CAM    3 CAH  CAN  HAM 
+CONECT      CAN    3 CAI  CAM  HAN 
+CONECT      OAO    1 SAJ 
+CONECT      CAP    4 RU   CAF  CAQ  CAT 
+CONECT      CAQ    3 RU   CAP  CAR 
+CONECT      CAR    3 RU   CAQ  CAS 
+CONECT      CAS    3 RU   CAR  CAT 
+CONECT      CAT    3 RU   CAP  CAS 
+CONECT      CAU    4 RU   CAV  CAY  HAU 
+CONECT      CAV    3 RU   CAU  CAW 
+CONECT      CAW    3 RU   CAV  CAX 
+CONECT      CAX    3 RU   CAW  CAY 
+CONECT      CAY    3 RU   CAU  CAX 
+CONECT      HAC    1 CAC 
+CONECT      HAD    1 CAD 
+CONECT      HNAK   1 NAK 
+CONECT      HNAA   1 NAK 
+CONECT      HAL    1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HAU    1 CAU 
+END   
+HET    067             34
+HETNAM     067 p-(4-ruthenocenyl-1H-1,2,3-triazol-1-yl)benzenesulfonam
+HETNAM   2 067 ide
+FORMUL      067    C18 H8 N4 O2 Ru1 S1

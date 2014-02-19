@@ -1,0 +1,29 @@
+RESIDUE   0K2     24
+CONECT      O20    1 P17 
+CONECT      P17    4 O20  O18  O19  O16 
+CONECT      O18    2 P17  H1  
+CONECT      O19    2 P17  H2  
+CONECT      O16    2 P17  P13 
+CONECT      P13    4 O16  O15  O14  O29 
+CONECT      O15    1 P13 
+CONECT      O14    2 P13  H3  
+CONECT      O29    2 P13  C28 
+CONECT      C28    4 O29  C27  H4   H5  
+CONECT      C27    4 C28  C30  H6   H7  
+CONECT      C30    4 C27  C13  H8   H9  
+CONECT      C13    3 C30  O33  H10 
+CONECT      O33    1 C13 
+CONECT      H1     1 O18 
+CONECT      H2     1 O19 
+CONECT      H3     1 O14 
+CONECT      H4     1 C28 
+CONECT      H5     1 C28 
+CONECT      H6     1 C27 
+CONECT      H7     1 C27 
+CONECT      H8     1 C30 
+CONECT      H9     1 C30 
+CONECT      H10    1 C13 
+END   
+HET    0K2             24
+HETNAM     0K2 4-oxobutyl trihydrogen diphosphate
+FORMUL      0K2    C4 H10 O8 P2

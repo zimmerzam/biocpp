@@ -1,0 +1,31 @@
+RESIDUE   02Z     26
+CONECT      C1     3 C12  O21  N22 
+CONECT      N1     2 C13  C14 
+CONECT      S1     2 C12  C14 
+CONECT      N2     3 C13  HN2  HN2A
+CONECT      N3     3 C14  C15  HN3 
+CONECT      C12    3 C1   S1   C13 
+CONECT      C13    3 N1   N2   C12 
+CONECT      C14    3 N1   S1   N3  
+CONECT      C15    3 N3   C16  C20 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C17    3 C16  C18  H17 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C18  C20  H19 
+CONECT      C20    3 C15  C19  H20 
+CONECT      O21    1 C1  
+CONECT      N22    3 C1   HN22 HN2B
+CONECT      HN2    1 N2  
+CONECT      HN2A   1 N2  
+CONECT      HN3    1 N3  
+CONECT      H16    1 C16 
+CONECT      H17    1 C17 
+CONECT      H18    1 C18 
+CONECT      H19    1 C19 
+CONECT      H20    1 C20 
+CONECT      HN22   1 N22 
+CONECT      HN2B   1 N22 
+END   
+HET    02Z             26
+HETNAM     02Z 4-amino-2-(phenylamino)-1,3-thiazole-5-carboxamide
+FORMUL      02Z    C10 H10 N4 O1 S1

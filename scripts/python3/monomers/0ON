@@ -1,0 +1,31 @@
+RESIDUE   0ON     25
+CONECT      CAG    3 CAC  CAN  H1  
+CONECT      CAC    3 CAG  CAB  H2  
+CONECT      CAB    3 CAC  CAD  H3  
+CONECT      CAD    3 CAB  CAH  H4  
+CONECT      CAH    3 CAD  CAN  H5  
+CONECT      CAN    3 CAG  CAH  NAL 
+CONECT      NAL    3 CAN  CAM  H6  
+CONECT      CAM    3 NAL  OAA  CAO 
+CONECT      OAA    1 CAM 
+CONECT      CAO    3 CAM  CAI  CAJ 
+CONECT      CAI    3 CAO  CAE  H7  
+CONECT      CAE    3 CAI  CAF  H8  
+CONECT      CAF    3 CAE  NAK  H9  
+CONECT      NAK    2 CAF  CAJ 
+CONECT      CAJ    3 CAO  NAK  H10 
+CONECT      H1     1 CAG 
+CONECT      H2     1 CAC 
+CONECT      H3     1 CAB 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAH 
+CONECT      H6     1 NAL 
+CONECT      H7     1 CAI 
+CONECT      H8     1 CAE 
+CONECT      H9     1 CAF 
+CONECT      H10    1 CAJ 
+END   
+HET    0ON             25
+HETSYN     0ON N-phenylnicotinamide
+HETNAM     0ON N-phenylpyridine-3-carboxamide
+FORMUL      0ON    C12 H10 N2 O1

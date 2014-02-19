@@ -1,0 +1,72 @@
+RESIDUE   0G6     65
+CONECT      N      3 CA   H    H2  
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CE2    3 CD2  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      N1     3 C    CA1  CD  
+CONECT      CA1    4 N1   C1   CB1  HA1 
+CONECT      C1     3 CA1  O1   N2  
+CONECT      O1     1 C1  
+CONECT      CB1    4 CA1  CG1  HB21 HB31
+CONECT      CG1    4 CB1  CD   HG2  HG3 
+CONECT      CD     4 N1   CG1  HD21 HD3 
+CONECT      N2     3 C1   CA2  H1  
+CONECT      CA2    4 N2   C2   CB2  HA2 
+CONECT      C2     4 CA2  O2   C3   H33 
+CONECT      O2     2 C2   H34 
+CONECT      CB2    4 CA2  CG2  HB22 HB32
+CONECT      CG2    4 CB2  CD3  HG21 HG31
+CONECT      CD3    4 CG2  NE   HD22 HD31
+CONECT      NE     3 CD3  CZ1  HE  
+CONECT      CZ1    3 NE   NH1  NH2 
+CONECT      NH1    3 CZ1  HH11 HH12
+CONECT      NH2    3 CZ1  HH21 HH22
+CONECT      C3     4 C2   CL   H11  H21 
+CONECT      CL     1 C3  
+CONECT      H      1 N   
+CONECT      H2     1 N   
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      HA1    1 CA1 
+CONECT      HB21   1 CB1 
+CONECT      HB31   1 CB1 
+CONECT      HG2    1 CG1 
+CONECT      HG3    1 CG1 
+CONECT      HD21   1 CD  
+CONECT      HD3    1 CD  
+CONECT      H1     1 N2  
+CONECT      HA2    1 CA2 
+CONECT      HB22   1 CB2 
+CONECT      HB32   1 CB2 
+CONECT      HG21   1 CG2 
+CONECT      HG31   1 CG2 
+CONECT      HD22   1 CD3 
+CONECT      HD31   1 CD3 
+CONECT      HE     1 NE  
+CONECT      HH11   1 NH1 
+CONECT      HH12   1 NH1 
+CONECT      HH21   1 NH2 
+CONECT      HH22   1 NH2 
+CONECT      H11    1 C3  
+CONECT      H21    1 C3  
+CONECT      H33    1 C2  
+CONECT      H34    1 O2  
+END   
+HET    0G6             65
+HETSYN     0G6 PPACK
+HETNAM     0G6 D-phenylalanyl-N-[(2S,3S)-6-{[amino(iminio)methyl]amino
+HETNAM   2 0G6 }-1-chloro-2-hydroxyhexan-3-yl]-L-prolinamide
+FORMUL      0G6    C21 H34 Cl1 N6 O3 1+

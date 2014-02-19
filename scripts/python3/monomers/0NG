@@ -1,0 +1,22 @@
+RESIDUE   0NG     17
+CONECT      B03    3 O04  O05  C06 
+CONECT      O04    2 B03  H1  
+CONECT      O05    2 B03  H2  
+CONECT      C06    4 B03  N07  H3   H4  
+CONECT      N07    3 C06  S08  H5  
+CONECT      S08    4 N07  O09  O10  C11 
+CONECT      O09    1 S08 
+CONECT      O10    1 S08 
+CONECT      C11    4 S08  CL1  H6   H7  
+CONECT      CL1    1 C11 
+CONECT      H1     1 O04 
+CONECT      H2     1 O05 
+CONECT      H3     1 C06 
+CONECT      H4     1 C06 
+CONECT      H5     1 N07 
+CONECT      H6     1 C11 
+CONECT      H7     1 C11 
+END   
+HET    0NG             17
+HETNAM     0NG ({[(chloromethyl)sulfonyl]amino}methyl)boronic acid
+FORMUL      0NG    C2 H7 B1 Cl1 N1 O4 S1

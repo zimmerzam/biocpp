@@ -1,0 +1,26 @@
+RESIDUE   05N     21
+CONECT      N3     3 C19  C52  H2  
+CONECT      C19    4 N3   C20  C22  H15 
+CONECT      C20    4 C19  C21  C53  H16 
+CONECT      C21    4 C20  O9   C52  H17 
+CONECT      C22    3 C19  O2   O3  
+CONECT      O9     2 C21  H40 
+CONECT      C52    4 N3   C21  H41  H42 
+CONECT      C53    4 C20  H43  H44  H45 
+CONECT      H15    1 C19 
+CONECT      H16    1 C20 
+CONECT      H17    1 C21 
+CONECT      H40    1 O9  
+CONECT      H41    1 C52 
+CONECT      H42    1 C52 
+CONECT      H43    1 C53 
+CONECT      H44    1 C53 
+CONECT      H45    1 C53 
+CONECT      H2     1 N3  
+CONECT      O2     2 C22  H11 
+CONECT      O3     1 C22 
+CONECT      H11    1 O2  
+END   
+HET    05N             21
+HETNAM     05N (3R,4R)-4-hydroxy-3-methyl-L-proline
+FORMUL      05N    C6 H11 N1 O3

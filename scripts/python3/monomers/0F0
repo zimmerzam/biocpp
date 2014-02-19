@@ -1,0 +1,72 @@
+RESIDUE   0F0     66
+CONECT      C01    3 N02  C06  H1  
+CONECT      N02    2 C01  C03 
+CONECT      C03    3 N02  C04  H2  
+CONECT      C04    3 C03  C05  H3  
+CONECT      C05    3 C04  C06  H4  
+CONECT      C06    3 C01  C05  C07 
+CONECT      C07    3 C06  N08  C09 
+CONECT      N08    2 C07  C12 
+CONECT      C09    3 C07  C10  H5  
+CONECT      C10    3 C09  N11  H6  
+CONECT      N11    2 C10  C12 
+CONECT      C12    3 N08  N11  N13 
+CONECT      N13    3 C12  C14  H7  
+CONECT      C14    3 N13  C15  C17 
+CONECT      C15    3 C14  C16  H8  
+CONECT      C16    3 C15  C19  H9  
+CONECT      C17    3 C14  C18  H10 
+CONECT      C18    3 C17  C19  H11 
+CONECT      C19    3 C16  C18  N20 
+CONECT      N20    3 C19  C21  H12 
+CONECT      C21    3 N20  O22  C23 
+CONECT      O22    1 C21 
+CONECT      C23    3 C21  C24  C28 
+CONECT      C24    3 C23  C25  H13 
+CONECT      C25    3 C24  C26  H14 
+CONECT      C26    3 C25  C27  H15 
+CONECT      C27    3 C26  C28  N29 
+CONECT      C28    3 C23  C27  H16 
+CONECT      N29    3 C27  C30  H17 
+CONECT      C30    3 N29  O31  C32 
+CONECT      O31    1 C30 
+CONECT      C32    4 C30  C33  H18  H19 
+CONECT      C33    4 C32  C34  H20  H30 
+CONECT      C34    4 C33  N35  H21  H22 
+CONECT      N35    3 C34  C36  C37 
+CONECT      C36    4 N35  H24  H25  H26 
+CONECT      C37    4 N35  H27  H28  H29 
+CONECT      H1     1 C01 
+CONECT      H2     1 C03 
+CONECT      H3     1 C04 
+CONECT      H4     1 C05 
+CONECT      H5     1 C09 
+CONECT      H6     1 C10 
+CONECT      H7     1 N13 
+CONECT      H8     1 C15 
+CONECT      H9     1 C16 
+CONECT      H10    1 C17 
+CONECT      H11    1 C18 
+CONECT      H12    1 N20 
+CONECT      H13    1 C24 
+CONECT      H14    1 C25 
+CONECT      H15    1 C26 
+CONECT      H16    1 C28 
+CONECT      H17    1 N29 
+CONECT      H18    1 C32 
+CONECT      H19    1 C32 
+CONECT      H20    1 C33 
+CONECT      H21    1 C34 
+CONECT      H22    1 C34 
+CONECT      H24    1 C36 
+CONECT      H25    1 C36 
+CONECT      H26    1 C36 
+CONECT      H27    1 C37 
+CONECT      H28    1 C37 
+CONECT      H29    1 C37 
+CONECT      H30    1 C33 
+END   
+HET    0F0             66
+HETNAM     0F0 3-{[4-(dimethylamino)butanoyl]amino}-N-(4-{[4-(pyridin-
+HETNAM   2 0F0 3-yl)pyrimidin-2-yl]amino}phenyl)benzamide
+FORMUL      0F0    C28 H29 N7 O2

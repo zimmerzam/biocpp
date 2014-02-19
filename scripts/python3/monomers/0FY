@@ -1,0 +1,80 @@
+RESIDUE   0FY     72
+CONECT      C34    3 C35  C33  H34 
+CONECT      C14    3 C15  C13  H14 
+CONECT      C28    3 C10  N27  H28 
+CONECT      C25    3 C10  N26  H25 
+CONECT      C35    3 C34  N36  H35 
+CONECT      C37    3 C38  N36  H37 
+CONECT      C8     3 C9   N7   H8  
+CONECT      C10    3 C28  C25  C9  
+CONECT      C33    3 C34  C38  N32 
+CONECT      C38    3 C37  C33  F39 
+CONECT      C9     3 C8   C10  N5  
+CONECT      C15    3 C14  C18  N16 
+CONECT      C13    3 C14  N12  S17 
+CONECT      C4     3 C3   N5   N7  
+CONECT      C6     3 C1   N5   H6  
+CONECT      C3     3 C4   N2   N12 
+CONECT      C1     3 C6   C11  N2  
+CONECT      C30    3 C29  N32  O31 
+CONECT      C21    4 C22  C20  H211 H212
+CONECT      C22    4 C21  C23  H222 H221
+CONECT      C20    4 C21  N19  H201 H202
+CONECT      C24    4 C23  N19  H242 H241
+CONECT      C23    4 C22  C24  C40  H23 
+CONECT      C11    4 C1   H111 H113 H112
+CONECT      C40    4 C23  H402 H403 H401
+CONECT      C18    4 C15  N19  H181 H182
+CONECT      C29    4 C30  N26  H292 H291
+CONECT      N27    2 C28  N26 
+CONECT      N16    2 C15  S17 
+CONECT      N2     2 C3   C1  
+CONECT      N26    3 C25  C29  N27 
+CONECT      N5     3 C9   C4   C6  
+CONECT      N36    3 C35  C37  H36 
+CONECT      N7     3 C8   C4   H7  
+CONECT      N32    3 C33  C30  H32 
+CONECT      N12    3 C13  C3   H12 
+CONECT      N19    4 C20  C24  C18  H19 
+CONECT      O31    1 C30 
+CONECT      F39    1 C38 
+CONECT      S17    2 C13  N16 
+CONECT      H34    1 C34 
+CONECT      H14    1 C14 
+CONECT      H28    1 C28 
+CONECT      H25    1 C25 
+CONECT      H35    1 C35 
+CONECT      H37    1 C37 
+CONECT      H8     1 C8  
+CONECT      H6     1 C6  
+CONECT      H211   1 C21 
+CONECT      H212   1 C21 
+CONECT      H222   1 C22 
+CONECT      H221   1 C22 
+CONECT      H201   1 C20 
+CONECT      H202   1 C20 
+CONECT      H242   1 C24 
+CONECT      H241   1 C24 
+CONECT      H23    1 C23 
+CONECT      H111   1 C11 
+CONECT      H113   1 C11 
+CONECT      H112   1 C11 
+CONECT      H402   1 C40 
+CONECT      H403   1 C40 
+CONECT      H401   1 C40 
+CONECT      H181   1 C18 
+CONECT      H182   1 C18 
+CONECT      H292   1 C29 
+CONECT      H291   1 C29 
+CONECT      H32    1 N32 
+CONECT      H12    1 N12 
+CONECT      H36    1 N36 
+CONECT      H7     1 N7  
+CONECT      H19    1 N19 
+END   
+HET    0FY             72
+HETNAM     0FY 3-(1-{2-[(3-fluoropyridinium-4-yl)amino]-2-oxoethyl}-1H
+HETNAM   2 0FY -pyrazol-4-yl)-6-methyl-8-[(3-{[(1R,3R)-3-methylpiperid
+HETNAM   3 0FY inium-1-yl]methyl}-1,2-thiazol-5-yl)amino]imidazo[1,2-a
+HETNAM   4 0FY ]pyrazin-1-ium
+FORMUL      0FY    C27 H32 F1 N10 O1 S1 3+

@@ -1,0 +1,89 @@
+RESIDUE   08Y     83
+CONECT      O5     1 C15 
+CONECT      C15    3 O5   C16  N3  
+CONECT      C16    4 C15  C18  C22  H1  
+CONECT      C18    4 C16  N4   H2   H3  
+CONECT      N4     3 C18  C27  C17 
+CONECT      C27    4 N4   H5   H6   H7  
+CONECT      C22    3 C16  C21  H8  
+CONECT      C21    3 C22  C24  C17 
+CONECT      C24    3 C21  C30  C26 
+CONECT      C30    3 C24  C32  H9  
+CONECT      C32    3 C30  C31  H10 
+CONECT      C31    3 C32  C28  H11 
+CONECT      C28    3 C31  C26  N5  
+CONECT      C26    3 C24  C28  C25 
+CONECT      C25    3 C26  C23  C29 
+CONECT      C23    4 C25  C17  H12  H13 
+CONECT      C17    4 N4   C21  C23  H14 
+CONECT      C29    3 C25  N5   BR  
+CONECT      N5     3 C28  C29  H15 
+CONECT      BR     1 C29 
+CONECT      N3     3 C15  C5   H16 
+CONECT      C5     4 N3   O1   C11  C8  
+CONECT      O1     2 C5   C2  
+CONECT      C11    4 C5   C14  C13  H17 
+CONECT      C14    4 C11  H18  H19  H20 
+CONECT      C13    4 C11  H21  H22  H23 
+CONECT      C8     3 C5   O3   N1  
+CONECT      O3     1 C8  
+CONECT      N1     3 C8   C3   C2  
+CONECT      C3     4 N1   C10  C9   H24 
+CONECT      C10    4 C3   C12  H25  H26 
+CONECT      C12    4 C10  C20  C19  H27 
+CONECT      C20    4 C12  H28  H29  H30 
+CONECT      C19    4 C12  H31  H32  H33 
+CONECT      C9     3 C3   O4   N2  
+CONECT      O4     1 C9  
+CONECT      N2     3 C9   C6   C1  
+CONECT      C6     4 N2   C7   H34  H35 
+CONECT      C7     4 C6   C4   H36  H37 
+CONECT      C4     4 C7   C1   H38  H39 
+CONECT      C1     4 N2   C4   C2   H40 
+CONECT      C2     4 O1   N1   C1   O2  
+CONECT      O2     2 C2   H41 
+CONECT      H1     1 C16 
+CONECT      H2     1 C18 
+CONECT      H3     1 C18 
+CONECT      H5     1 C27 
+CONECT      H6     1 C27 
+CONECT      H7     1 C27 
+CONECT      H8     1 C22 
+CONECT      H9     1 C30 
+CONECT      H10    1 C32 
+CONECT      H11    1 C31 
+CONECT      H12    1 C23 
+CONECT      H13    1 C23 
+CONECT      H14    1 C17 
+CONECT      H15    1 N5  
+CONECT      H16    1 N3  
+CONECT      H17    1 C11 
+CONECT      H18    1 C14 
+CONECT      H19    1 C14 
+CONECT      H20    1 C14 
+CONECT      H21    1 C13 
+CONECT      H22    1 C13 
+CONECT      H23    1 C13 
+CONECT      H24    1 C3  
+CONECT      H25    1 C10 
+CONECT      H26    1 C10 
+CONECT      H27    1 C12 
+CONECT      H28    1 C20 
+CONECT      H29    1 C20 
+CONECT      H30    1 C20 
+CONECT      H31    1 C19 
+CONECT      H32    1 C19 
+CONECT      H33    1 C19 
+CONECT      H34    1 C6  
+CONECT      H35    1 C6  
+CONECT      H36    1 C7  
+CONECT      H37    1 C7  
+CONECT      H38    1 C4  
+CONECT      H39    1 C4  
+CONECT      H40    1 C1  
+CONECT      H41    1 O2  
+END   
+HET    08Y             83
+HETSYN     08Y bromocriptine
+HETNAM     08Y bromoergocryptine
+FORMUL      08Y    C32 H40 Br1 N5 O5

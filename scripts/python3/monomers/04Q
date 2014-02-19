@@ -1,0 +1,28 @@
+RESIDUE   04Q     23
+CONECT      N5     3 C9   C10  H2  
+CONECT      C9     4 N5   C16  H91C H92C
+CONECT      C10    4 N5   C17  H101 H102
+CONECT      C16    3 C9   C21  C22 
+CONECT      C17    3 C10  O23  O24 
+CONECT      C21    3 C16  C28  H21 
+CONECT      C22    3 C16  C29  H22 
+CONECT      O23    2 C17  H23 
+CONECT      O24    1 C17 
+CONECT      C28    3 C21  C34  H28 
+CONECT      C29    3 C22  C34  H29 
+CONECT      C34    3 C28  C29  H34 
+CONECT      H91C   1 C9  
+CONECT      H92C   1 C9  
+CONECT      H101   1 C10 
+CONECT      H102   1 C10 
+CONECT      H21    1 C21 
+CONECT      H22    1 C22 
+CONECT      H23    1 O23 
+CONECT      H28    1 C28 
+CONECT      H29    1 C29 
+CONECT      H34    1 C34 
+CONECT      H2     1 N5  
+END   
+HET    04Q             23
+HETNAM     04Q N-benzylglycine
+FORMUL      04Q    C9 H11 N1 O2

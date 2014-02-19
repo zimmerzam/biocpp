@@ -1,0 +1,60 @@
+RESIDUE   0LP     54
+CONECT      CAA    4 CAT  H1   H2   H3  
+CONECT      CAT    3 CAA  OAB  NAR 
+CONECT      OAB    1 CAT 
+CONECT      NAR    3 CAT  CBB  H4  
+CONECT      CBB    4 NAR  CAZ  CBC  H5  
+CONECT      CAZ    4 CBB  OAG  CAV  H6  
+CONECT      OAG    2 CAZ  H7  
+CONECT      CBC    4 CBB  CBA  OAS  H8  
+CONECT      CBA    4 CBC  OAH  CAY  H9  
+CONECT      OAH    2 CBA  H10 
+CONECT      CAY    4 CBA  OAF  CAP  H11 
+CONECT      OAF    2 CAY  H12 
+CONECT      CAP    4 CAY  OAD  H13  H14 
+CONECT      OAD    2 CAP  H15 
+CONECT      OAS    2 CBC  CAW 
+CONECT      CAW    3 OAS  CAU  CAV 
+CONECT      CAU    3 CAW  OAE  OAC 
+CONECT      OAE    2 CAU  H16 
+CONECT      OAC    1 CAU 
+CONECT      CAV    3 CAZ  CAW  CAQ 
+CONECT      CAQ    4 CAV  CAI  H17  H18 
+CONECT      CAI    3 CAQ  CAJ  H19 
+CONECT      CAJ    3 CAI  CAX  H20 
+CONECT      CAX    3 CAJ  CAN  CAO 
+CONECT      CAN    3 CAX  CAL  H21 
+CONECT      CAL    3 CAN  CAK  H22 
+CONECT      CAK    3 CAL  CAM  H23 
+CONECT      CAM    3 CAK  CAO  H24 
+CONECT      CAO    3 CAX  CAM  H25 
+CONECT      H1     1 CAA 
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 NAR 
+CONECT      H5     1 CBB 
+CONECT      H6     1 CAZ 
+CONECT      H7     1 OAG 
+CONECT      H8     1 CBC 
+CONECT      H9     1 CBA 
+CONECT      H10    1 OAH 
+CONECT      H11    1 CAY 
+CONECT      H12    1 OAF 
+CONECT      H13    1 CAP 
+CONECT      H14    1 CAP 
+CONECT      H15    1 OAD 
+CONECT      H16    1 OAE 
+CONECT      H17    1 CAQ 
+CONECT      H18    1 CAQ 
+CONECT      H19    1 CAI 
+CONECT      H20    1 CAJ 
+CONECT      H21    1 CAN 
+CONECT      H22    1 CAL 
+CONECT      H23    1 CAK 
+CONECT      H24    1 CAM 
+CONECT      H25    1 CAO 
+END   
+HET    0LP             54
+HETNAM     0LP 5-(acetylamino)-2,6-anhydro-3,5-dideoxy-3-[(2E)-3-pheny
+HETNAM   2 0LP lprop-2-en-1-yl]-D-glycero-L-altro-non-2-enonic acid
+FORMUL      0LP    C20 H25 N1 O8

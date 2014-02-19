@@ -1,0 +1,23 @@
+RESIDUE   0FO     18
+CONECT      CAD    3 CAE  CAC  H1  
+CONECT      CAE    3 CAD  OAG  OAF 
+CONECT      OAG    1 CAE 
+CONECT      OAF    2 CAE  CAA 
+CONECT      CAA    3 OAF  CAL  CAB 
+CONECT      CAL    3 CAA  CAK  H2  
+CONECT      CAK    3 CAL  CAJ  H3  
+CONECT      CAJ    3 CAK  BR1  CAI 
+CONECT      BR1    1 CAJ 
+CONECT      CAI    3 CAJ  CAB  H4  
+CONECT      CAB    3 CAA  CAI  CAC 
+CONECT      CAC    3 CAD  CAB  OAH 
+CONECT      OAH    2 CAC  H5  
+CONECT      H1     1 CAD 
+CONECT      H2     1 CAL 
+CONECT      H3     1 CAK 
+CONECT      H4     1 CAI 
+CONECT      H5     1 OAH 
+END   
+HET    0FO             18
+HETNAM     0FO 6-bromo-4-hydroxy-2H-chromen-2-one
+FORMUL      0FO    C9 H5 Br1 O3

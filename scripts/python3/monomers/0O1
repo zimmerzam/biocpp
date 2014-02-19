@@ -1,0 +1,71 @@
+RESIDUE   0O1     64
+CONECT      C1     4 N1   C14  H1   H2  
+CONECT      N1     3 C1   C2   H3  
+CONECT      C2     4 N1   C3   H5   H6  
+CONECT      C3     4 C2   C4   H7   H8  
+CONECT      C4     3 C3   C5   C11 
+CONECT      C5     3 C4   N2   C8  
+CONECT      N2     2 C5   C6  
+CONECT      C6     3 N2   N3   N7  
+CONECT      N3     3 C6   C7   H9  
+CONECT      C7     3 N3   C8   O1  
+CONECT      C8     3 C5   C7   C9  
+CONECT      C9     3 C8   C10  H10 
+CONECT      C10    3 C9   C11  N5  
+CONECT      C11    3 C4   C10  N4  
+CONECT      N4     3 C11  C12  H11 
+CONECT      C12    3 N4   N5   N6  
+CONECT      N5     2 C10  C12 
+CONECT      N6     3 C12  C13  H13 
+CONECT      C13    4 N6   C15  H14  H15 
+CONECT      O1     1 C7  
+CONECT      C14    4 C1   C22  C23  H16 
+CONECT      N7     3 C6   H17  H18 
+CONECT      C15    4 C13  C16  H19  H20 
+CONECT      C16    3 C15  C18  C20 
+CONECT      C17    3 C18  C19  H21 
+CONECT      C18    3 C16  C17  H22 
+CONECT      C19    3 C17  C21  H23 
+CONECT      C20    3 C16  C21  H24 
+CONECT      C21    3 C19  C20  H25 
+CONECT      C22    4 C14  C24  H26  H27 
+CONECT      C23    4 C14  C25  H28  H29 
+CONECT      C24    4 C22  C25  H30  H31 
+CONECT      C25    4 C23  C24  H32  H33 
+CONECT      H1     1 C1  
+CONECT      H2     1 C1  
+CONECT      H3     1 N1  
+CONECT      H5     1 C2  
+CONECT      H6     1 C2  
+CONECT      H7     1 C3  
+CONECT      H8     1 C3  
+CONECT      H9     1 N3  
+CONECT      H10    1 C9  
+CONECT      H11    1 N4  
+CONECT      H13    1 N6  
+CONECT      H14    1 C13 
+CONECT      H15    1 C13 
+CONECT      H16    1 C14 
+CONECT      H17    1 N7  
+CONECT      H18    1 N7  
+CONECT      H19    1 C15 
+CONECT      H20    1 C15 
+CONECT      H21    1 C17 
+CONECT      H22    1 C18 
+CONECT      H23    1 C19 
+CONECT      H24    1 C20 
+CONECT      H25    1 C21 
+CONECT      H26    1 C22 
+CONECT      H27    1 C22 
+CONECT      H28    1 C23 
+CONECT      H29    1 C23 
+CONECT      H30    1 C24 
+CONECT      H31    1 C24 
+CONECT      H32    1 C25 
+CONECT      H33    1 C25 
+END   
+HET    0O1             64
+HETNAM     0O1 6-amino-4-{2-[(cyclopentylmethyl)amino]ethyl}-2-[(2-phe
+HETNAM   2 0O1 nylethyl)amino]-3,7-dihydro-8H-imidazo[4,5-g]quinazolin
+HETNAM   3 0O1 -8-one
+FORMUL      0O1    C25 H31 N7 O1

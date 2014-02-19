@@ -1,0 +1,58 @@
+RESIDUE   032     51
+CONECT      C10    3 C09  C11  CL13
+CONECT      C15    3 N14  C16  H15 
+CONECT      C17    3 C16  C18  O19 
+CONECT      C20    3 C21  C18  F26 
+CONECT      C21    3 C20  C22  N27 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C24    3 C18  C23  F25 
+CONECT      C01    3 C02  C04  C07 
+CONECT      C02    3 C01  N03  H02 
+CONECT      N03    2 C02  C06 
+CONECT      C04    3 C01  C05  H04 
+CONECT      N14    3 C15  C06  H18 
+CONECT      C16    3 C15  C17  C05 
+CONECT      C05    3 C04  C16  C06 
+CONECT      C06    3 N03  N14  C05 
+CONECT      C07    3 C01  C08  C12 
+CONECT      C18    3 C17  C20  C24 
+CONECT      C23    3 C22  C24  H23 
+CONECT      F25    1 C24 
+CONECT      F26    1 C20 
+CONECT      N27    3 C21  S28  HN27
+CONECT      S28    4 N27  O29  O30  C31 
+CONECT      O29    1 S28 
+CONECT      O30    1 S28 
+CONECT      C31    4 S28  C32  H31  H31A
+CONECT      C32    4 C31  C33  H32  H32A
+CONECT      C33    4 C32  H33  H33A H33B
+CONECT      C08    3 C07  C09  H08 
+CONECT      C09    3 C10  C08  H09 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 C07  C11  H12 
+CONECT      CL13   1 C10 
+CONECT      H15    1 C15 
+CONECT      H22    1 C22 
+CONECT      H02    1 C02 
+CONECT      H04    1 C04 
+CONECT      H23    1 C23 
+CONECT      HN27   1 N27 
+CONECT      H31    1 C31 
+CONECT      H31A   1 C31 
+CONECT      H32    1 C32 
+CONECT      H32A   1 C32 
+CONECT      H33    1 C33 
+CONECT      H33A   1 C33 
+CONECT      H33B   1 C33 
+CONECT      H08    1 C08 
+CONECT      H09    1 C09 
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      O19    1 C17 
+CONECT      H18    1 N14 
+END   
+HET    032             51
+HETSYN     032 PLX4032
+HETNAM     032 N-(3-{[5-(4-chlorophenyl)-1H-pyrrolo[2,3-b]pyridin-3-yl
+HETNAM   2 032 ]carbonyl}-2,4-difluorophenyl)propane-1-sulfonamide
+FORMUL      032    C23 H18 Cl1 F2 N3 O3 S1

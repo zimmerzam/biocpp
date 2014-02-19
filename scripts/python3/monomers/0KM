@@ -1,0 +1,55 @@
+RESIDUE   0KM     49
+CONECT      O1     1 C1  
+CONECT      C1     3 O1   C2   N2  
+CONECT      C2     4 C1   N1   C5   C11 
+CONECT      N1     3 C2   C3   H22 
+CONECT      C3     3 N1   N2   N3  
+CONECT      N2     3 C1   C3   C4  
+CONECT      N3     2 C3   H1  
+CONECT      C4     4 N2   H3   H4   H5  
+CONECT      C5     3 C2   C6   C10 
+CONECT      C6     3 C5   C7   H6  
+CONECT      C7     3 C6   C8   H7  
+CONECT      C8     3 C7   C9   H8  
+CONECT      C9     3 C8   C10  H9  
+CONECT      C10    3 C5   C9   H10 
+CONECT      C11    3 C2   C12  C16 
+CONECT      C12    3 C11  C13  H11 
+CONECT      C13    3 C12  C14  H12 
+CONECT      C14    3 C13  C15  H13 
+CONECT      C15    3 C14  C16  C19 
+CONECT      C16    3 C11  C15  H14 
+CONECT      C17    3 C21  C22  H15 
+CONECT      C18    3 C19  C22  H16 
+CONECT      C19    3 C15  C18  C20 
+CONECT      C20    3 C19  C21  H17 
+CONECT      C21    3 C17  C20  H18 
+CONECT      C22    3 C17  C18  O2  
+CONECT      O2     2 C22  C23 
+CONECT      C23    4 O2   H19  H20  H21 
+CONECT      H1     1 N3  
+CONECT      H3     1 C4  
+CONECT      H4     1 C4  
+CONECT      H5     1 C4  
+CONECT      H6     1 C6  
+CONECT      H7     1 C7  
+CONECT      H8     1 C8  
+CONECT      H9     1 C9  
+CONECT      H10    1 C10 
+CONECT      H11    1 C12 
+CONECT      H12    1 C13 
+CONECT      H13    1 C14 
+CONECT      H14    1 C16 
+CONECT      H15    1 C17 
+CONECT      H16    1 C18 
+CONECT      H17    1 C20 
+CONECT      H18    1 C21 
+CONECT      H19    1 C23 
+CONECT      H20    1 C23 
+CONECT      H21    1 C23 
+CONECT      H22    1 N1  
+END   
+HET    0KM             49
+HETNAM     0KM (2E,5R)-2-imino-5-(3'-methoxybiphenyl-3-yl)-3-methyl-5-
+HETNAM   2 0KM phenylimidazolidin-4-one
+FORMUL      0KM    C23 H21 N3 O2

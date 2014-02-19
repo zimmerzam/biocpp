@@ -1,0 +1,74 @@
+RESIDUE   044     67
+CONECT      CAA    3 CAH  CAI  OBM 
+CONECT      CAB    3 CAC  CAG  HAB 
+CONECT      CAC    3 CAB  NAD  HAC 
+CONECT      NAD    2 CAC  CAE 
+CONECT      CAE    3 NAD  CAF  CAH 
+CONECT      CAF    3 CAE  CAG  CAJ 
+CONECT      CAG    3 CAB  CAF  OAK 
+CONECT      CAH    3 CAA  CAE  HAH 
+CONECT      CAI    3 CAA  CAJ  HAI 
+CONECT      CAJ    3 CAF  CAI  HAJ 
+CONECT      OAK    2 CAG  CAL 
+CONECT      CAL    3 OAK  CAM  CAN 
+CONECT      CAM    3 CAL  CAQ  HAM 
+CONECT      CAN    3 CAL  CAO  FBG 
+CONECT      CAO    3 CAN  CAP  HAO 
+CONECT      CAP    3 CAO  CAQ  NAR 
+CONECT      CAQ    3 CAM  CAP  HAQ 
+CONECT      NAR    3 CAP  CAU  HNAR
+CONECT      CAS    3 CAT  NAY  OAZ 
+CONECT      CAT    3 CAS  CAU  CAX 
+CONECT      CAU    3 NAR  CAT  OAV 
+CONECT      OAV    1 CAU 
+CONECT      NAW    3 CAX  NAY  CBI 
+CONECT      CAX    3 CAT  NAW  CBH 
+CONECT      NAY    3 CAS  NAW  CBA 
+CONECT      OAZ    1 CAS 
+CONECT      CBA    3 NAY  CBB  CBC 
+CONECT      CBB    3 CBA  CBE  HBB 
+CONECT      CBC    3 CBA  CBD  HBC 
+CONECT      CBD    3 CBC  CBF  HBD 
+CONECT      CBE    3 CBB  CBF  HBE 
+CONECT      CBF    3 CBD  CBE  HBF 
+CONECT      FBG    1 CAN 
+CONECT      CBH    4 CAX  HBH  HBHA HBHB
+CONECT      CBI    4 NAW  CBJ  HBI  HBIA
+CONECT      CBJ    4 CBI  CBK  OBL  HBJ 
+CONECT      CBK    4 CBJ  HBK  HBKA HBKB
+CONECT      OBL    2 CBJ  HOBL
+CONECT      OBM    2 CAA  CBN 
+CONECT      CBN    4 OBM  HBN  HBNA HBNB
+CONECT      HAB    1 CAB 
+CONECT      HAC    1 CAC 
+CONECT      HAH    1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAM    1 CAM 
+CONECT      HAO    1 CAO 
+CONECT      HAQ    1 CAQ 
+CONECT      HNAR   1 NAR 
+CONECT      HBB    1 CBB 
+CONECT      HBC    1 CBC 
+CONECT      HBD    1 CBD 
+CONECT      HBE    1 CBE 
+CONECT      HBF    1 CBF 
+CONECT      HBH    1 CBH 
+CONECT      HBHA   1 CBH 
+CONECT      HBHB   1 CBH 
+CONECT      HBI    1 CBI 
+CONECT      HBIA   1 CBI 
+CONECT      HBJ    1 CBJ 
+CONECT      HBK    1 CBK 
+CONECT      HBKA   1 CBK 
+CONECT      HBKB   1 CBK 
+CONECT      HOBL   1 OBL 
+CONECT      HBN    1 CBN 
+CONECT      HBNA   1 CBN 
+CONECT      HBNB   1 CBN 
+END   
+HET    044             67
+HETNAM     044 N-{3-fluoro-4-[(7-methoxyquinolin-4-yl)oxy]phenyl}-1-[(
+HETNAM   2 044 2R)-2-hydroxypropyl]-5-methyl-3-oxo-2-phenyl-2,3-dihydr
+HETNAM   3 044 o-1H-pyrazole-4-carboxamide
+FORMUL      044    C30 H27 F1 N4 O5

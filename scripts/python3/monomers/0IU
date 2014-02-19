@@ -1,0 +1,107 @@
+RESIDUE   0IU     98
+CONECT      C1     4 N    H11  H12  H13 
+CONECT      C2     4 N    H21  H22  H23 
+CONECT      C      3 O    N    CA  
+CONECT      O      1 C   
+CONECT      N      3 C1   C2   C   
+CONECT      N1     3 C3   CA   CB  
+CONECT      C3     3 N1   O1   CN  
+CONECT      O1     1 C3  
+CONECT      CA     4 C    N1   HA2  HA3 
+CONECT      CB     4 N1   CG2  CG   HB  
+CONECT      CG2    4 CB   HG21 HG22 HG23
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CE2    3 CD2  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      C4     3 O2   CA1  N2  
+CONECT      O2     1 C4  
+CONECT      CA1    4 C4   CN   CB1  HA  
+CONECT      CN     4 C3   CA1  HN2  HN3 
+CONECT      CB1    4 CA1  CG1  HB1  HB2 
+CONECT      CG1    3 CB1  CD21 ND1 
+CONECT      CD21   3 CG1  SE2  HD21
+CONECT      SE2    2 CD21 CE11
+CONECT      CE11   3 SE2  ND1  NZ  
+CONECT      ND1    2 CG1  CE11
+CONECT      NZ     3 CE11 HNZ1 HNZ2
+CONECT      C11    4 C21  O11  C12  H121
+CONECT      C21    4 C11  C31  N2   H2  
+CONECT      C31    4 C21  C1'  H31  H32 
+CONECT      C1'    4 C31  C2'  C6'  H1' 
+CONECT      C2'    4 C1'  C3'  H2'1 H2'2
+CONECT      C3'    4 C2'  C4'  H3'1 H3'2
+CONECT      C4'    4 C3'  C5'  H4'1 H4'2
+CONECT      C5'    4 C4'  C6'  H5'1 H5'2
+CONECT      C6'    4 C1'  C5'  H6'1 H6'2
+CONECT      N2     3 C4   C21  HN22
+CONECT      O11    2 C11  HO1 
+CONECT      C12    4 C11  C22  O12  H122
+CONECT      C22    4 C12  C32  H211 H221
+CONECT      C32    4 C22  C41  C5   H3  
+CONECT      C41    4 C32  H41  H42  H43 
+CONECT      C5     4 C32  H51  H52  H53 
+CONECT      O12    2 C12  HO11
+CONECT      H11    1 C1  
+CONECT      H12    1 C1  
+CONECT      H13    1 C1  
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H23    1 C2  
+CONECT      HA2    1 CA  
+CONECT      HA3    1 CA  
+CONECT      HB     1 CB  
+CONECT      HG21   1 CG2 
+CONECT      HG22   1 CG2 
+CONECT      HG23   1 CG2 
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      HA     1 CA1 
+CONECT      HN2    1 CN  
+CONECT      HN3    1 CN  
+CONECT      HB1    1 CB1 
+CONECT      HB2    1 CB1 
+CONECT      HD21   1 CD21
+CONECT      HNZ1   1 NZ  
+CONECT      HNZ2   1 NZ  
+CONECT      H121   1 C11 
+CONECT      H2     1 C21 
+CONECT      H31    1 C31 
+CONECT      H32    1 C31 
+CONECT      H1'    1 C1' 
+CONECT      H2'1   1 C2' 
+CONECT      H2'2   1 C2' 
+CONECT      H3'1   1 C3' 
+CONECT      H3'2   1 C3' 
+CONECT      H4'1   1 C4' 
+CONECT      H4'2   1 C4' 
+CONECT      H5'1   1 C5' 
+CONECT      H5'2   1 C5' 
+CONECT      H6'1   1 C6' 
+CONECT      H6'2   1 C6' 
+CONECT      HN22   1 N2  
+CONECT      HO1    1 O11 
+CONECT      H122   1 C12 
+CONECT      H211   1 C22 
+CONECT      H221   1 C22 
+CONECT      H3     1 C32 
+CONECT      H41    1 C41 
+CONECT      H42    1 C41 
+CONECT      H43    1 C41 
+CONECT      H51    1 C5  
+CONECT      H52    1 C5  
+CONECT      H53    1 C5  
+CONECT      HO11   1 O12 
+END   
+HET    0IU             98
+HETSYN     0IU P2-P3 butanediamide renin inhibitor (1)
+HETNAM     0IU (2S)-2-[(2-amino-1,3-thiazol-4-yl)methyl]-N~1~-[(1S,2R,
+HETNAM   2 0IU 3R)-1-(cyclohexylmethyl)-2,3-dihydroxy-5-methylhexyl]-N
+HETNAM   3 0IU ~4~-[2-(dimethylamino)-2-oxoethyl]-N~4~-[(1S)-1-phenyle
+HETNAM   4 0IU thyl]butanediamide
+FORMUL      0IU    C34 H53 N5 O5 S1

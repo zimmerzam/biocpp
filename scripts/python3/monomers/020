@@ -1,0 +1,34 @@
+RESIDUE   020     29
+CONECT      FAB    1 CAC 
+CONECT      CAC    4 FAB  FAG  FAA  CAD 
+CONECT      FAG    1 CAC 
+CONECT      FAA    1 CAC 
+CONECT      CAD    3 CAC  CAE  CAH 
+CONECT      CAE    3 CAD  CAF  HAE 
+CONECT      CAF    3 CAE  CAJ  HAF 
+CONECT      CAH    3 CAD  CAI  HAH 
+CONECT      CAI    3 CAH  NAQ  CAJ 
+CONECT      NAQ    3 CAI  OAR  OAP 
+CONECT      OAR    1 NAQ 
+CONECT      OAP    1 NAQ 
+CONECT      CAJ    3 CAF  CAI  NAK 
+CONECT      NAK    3 CAJ  CAL  HNAK
+CONECT      CAL    4 NAK  CAM  HAL  HALA
+CONECT      CAM    3 CAL  CAS  OAN 
+CONECT      CAS    3 CAM  CAT  HAS 
+CONECT      OAN    2 CAM  CAO 
+CONECT      CAO    3 OAN  CAT  HAO 
+CONECT      CAT    3 CAS  CAO  HAT 
+CONECT      HAE    1 CAE 
+CONECT      HAF    1 CAF 
+CONECT      HAH    1 CAH 
+CONECT      HNAK   1 NAK 
+CONECT      HAL    1 CAL 
+CONECT      HALA   1 CAL 
+CONECT      HAS    1 CAS 
+CONECT      HAO    1 CAO 
+CONECT      HAT    1 CAT 
+END   
+HET    020             29
+HETNAM     020 N-(furan-2-ylmethyl)-2-nitro-4-(trifluoromethyl)aniline
+FORMUL      020    C12 H9 F3 N2 O3

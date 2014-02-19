@@ -1,0 +1,85 @@
+RESIDUE   0DV     76
+CONECT      CAQ    4 CAP  H1   H2   H3  
+CONECT      CAP    4 CAQ  CAR  CAN  H4  
+CONECT      CAR    4 CAP  H5   H6   H7  
+CONECT      CAN    3 CAP  CAF  CAM 
+CONECT      CAF    3 CAN  CAE  CAG 
+CONECT      CAM    4 CAN  CAL  H8   H9  
+CONECT      CAL    4 CAM  CAE  H10  H11 
+CONECT      CAE    4 CAF  CAL  CAO  CAD 
+CONECT      CAO    4 CAE  H12  H13  H14 
+CONECT      CAD    3 CAE  CAC  H15 
+CONECT      CAC    3 CAD  CAK  CAB 
+CONECT      CAK    4 CAC  CAV  CAJ  H16 
+CONECT      CAV    4 CAK  OBH  H17  H18 
+CONECT      OBH    2 CAV  H19 
+CONECT      CAJ    4 CAK  CAI  H20  H21 
+CONECT      CAI    4 CAJ  CAB  H22  H23 
+CONECT      CAB    4 CAC  CAI  CAA  H24 
+CONECT      CAA    4 CAB  CAS  CAH  H25 
+CONECT      CAS    4 CAA  H26  H27  H28 
+CONECT      CAH    4 CAA  OAU  CAG  H29 
+CONECT      OAU    2 CAH  H30 
+CONECT      CAG    4 CAF  CAH  O1   H31 
+CONECT      O1     2 CAG  C1  
+CONECT      C1     4 O1   O5   C2   H32 
+CONECT      O5     2 C1   C5  
+CONECT      C5     4 O5   C6   C4   H33 
+CONECT      C6     4 C5   O6   H34  H35 
+CONECT      O6     2 C6   H36 
+CONECT      C4     4 C5   O4   C3   H37 
+CONECT      O4     2 C4   H38 
+CONECT      C3     4 C4   O3   C2   H39 
+CONECT      O3     2 C3   H40 
+CONECT      C2     4 C1   C3   O2   H41 
+CONECT      O2     2 C2   H42 
+CONECT      H1     1 CAQ 
+CONECT      H2     1 CAQ 
+CONECT      H3     1 CAQ 
+CONECT      H4     1 CAP 
+CONECT      H5     1 CAR 
+CONECT      H6     1 CAR 
+CONECT      H7     1 CAR 
+CONECT      H8     1 CAM 
+CONECT      H9     1 CAM 
+CONECT      H10    1 CAL 
+CONECT      H11    1 CAL 
+CONECT      H12    1 CAO 
+CONECT      H13    1 CAO 
+CONECT      H14    1 CAO 
+CONECT      H15    1 CAD 
+CONECT      H16    1 CAK 
+CONECT      H17    1 CAV 
+CONECT      H18    1 CAV 
+CONECT      H19    1 OBH 
+CONECT      H20    1 CAJ 
+CONECT      H21    1 CAJ 
+CONECT      H22    1 CAI 
+CONECT      H23    1 CAI 
+CONECT      H24    1 CAB 
+CONECT      H25    1 CAA 
+CONECT      H26    1 CAS 
+CONECT      H27    1 CAS 
+CONECT      H28    1 CAS 
+CONECT      H29    1 CAH 
+CONECT      H30    1 OAU 
+CONECT      H31    1 CAG 
+CONECT      H32    1 C1  
+CONECT      H33    1 C5  
+CONECT      H34    1 C6  
+CONECT      H35    1 C6  
+CONECT      H36    1 O6  
+CONECT      H37    1 C4  
+CONECT      H38    1 O4  
+CONECT      H39    1 C3  
+CONECT      H40    1 O3  
+CONECT      H41    1 C2  
+CONECT      H42    1 O2  
+END   
+HET    0DV             76
+HETSYN     0DV Fusicoccin H
+HETNAM     0DV (4R,5R,6R,6aS,9S,9aE,10aR)-5-hydroxy-9-(hydroxymethyl)-
+HETNAM   2 0DV 6,10a-dimethyl-3-(propan-2-yl)-1,2,4,5,6,6a,7,8,9,10a-d
+HETNAM   3 0DV ecahydrodicyclopenta[a,d][8]annulen-4-yl alpha-D-gulopy
+HETNAM   4 0DV ranoside
+FORMUL      0DV    C26 H42 O8

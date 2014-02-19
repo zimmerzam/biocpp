@@ -1,0 +1,49 @@
+RESIDUE   0M1     43
+CONECT      C01    3 C02  C06  CL1 
+CONECT      C02    3 C01  C03  F08 
+CONECT      C03    3 C02  C04  H1  
+CONECT      C04    3 C03  C05  N09 
+CONECT      C05    3 C04  C06  H2  
+CONECT      C06    3 C01  C05  H3  
+CONECT      CL1    1 C01 
+CONECT      F08    1 C02 
+CONECT      N09    3 C04  C10  H4  
+CONECT      C10    3 N09  C11  O14 
+CONECT      C11    3 C10  N12  O13 
+CONECT      N12    3 C11  C15  H5  
+CONECT      O13    1 C11 
+CONECT      O14    1 C10 
+CONECT      C15    4 N12  C16  H6   H7  
+CONECT      C16    4 C15  C17  O20  H8  
+CONECT      C17    4 C16  O18  C21  H9  
+CONECT      O18    2 C17  C19 
+CONECT      C19    4 O18  O20  C23  C24 
+CONECT      O20    2 C16  C19 
+CONECT      C21    4 C17  N22  H10  H11 
+CONECT      N22    3 C21  H12  H13 
+CONECT      C23    4 C19  H15  H16  H17 
+CONECT      C24    4 C19  H18  H19  H20 
+CONECT      H1     1 C03 
+CONECT      H2     1 C05 
+CONECT      H3     1 C06 
+CONECT      H4     1 N09 
+CONECT      H5     1 N12 
+CONECT      H6     1 C15 
+CONECT      H7     1 C15 
+CONECT      H8     1 C16 
+CONECT      H9     1 C17 
+CONECT      H10    1 C21 
+CONECT      H11    1 C21 
+CONECT      H12    1 N22 
+CONECT      H13    1 N22 
+CONECT      H15    1 C23 
+CONECT      H16    1 C23 
+CONECT      H17    1 C23 
+CONECT      H18    1 C24 
+CONECT      H19    1 C24 
+CONECT      H20    1 C24 
+END   
+HET    0M1             43
+HETNAM     0M1 N-{[(4S,5S)-5-(aminomethyl)-2,2-dimethyl-1,3-dioxolan-4
+HETNAM   2 0M1 -yl]methyl}-N'-(4-chloro-3-fluorophenyl)ethanediamide
+FORMUL      0M1    C15 H19 Cl1 F1 N3 O4

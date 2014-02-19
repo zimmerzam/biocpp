@@ -1,0 +1,84 @@
+RESIDUE   0D6     77
+CONECT      N1     3 C1   C2   C6  
+CONECT      C1     3 N1   O1   N   
+CONECT      O1     1 C1  
+CONECT      C2     4 N1   C3   H21  H22 
+CONECT      C3     4 C2   N4   H31  H32 
+CONECT      N4     3 C3   C5   HN4 
+CONECT      C5     4 N4   C6   H51  H52 
+CONECT      C6     4 N1   C5   H61  H62 
+CONECT      N      3 C1   CA   H   
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N2  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     4 CB   CD1  CD2  HG  
+CONECT      CD1    4 CG   HD11 HD12 HD13
+CONECT      CD2    4 CG   HD21 HD22 HD23
+CONECT      C11    4 C21  S1   H11  H12 
+CONECT      C21    4 C11  C31  H211 H221
+CONECT      C31    4 C21  N2   C4   H3  
+CONECT      N2     3 C    C31  HN2 
+CONECT      C4     4 C31  C51  H41  H42 
+CONECT      C51    4 C4   C1'  H511 H521
+CONECT      C1'    3 C51  C2'  C6' 
+CONECT      C2'    3 C1'  C3'  H2' 
+CONECT      C3'    3 C2'  C4'  H3' 
+CONECT      C4'    3 C3'  C5'  H4' 
+CONECT      C5'    3 C4'  C6'  H5' 
+CONECT      C6'    3 C1'  C5'  H6' 
+CONECT      C12    3 C22  C61  H1  
+CONECT      C22    3 C12  C32  H2  
+CONECT      C32    3 C22  C41  H33 
+CONECT      C41    3 C32  S1   C52 
+CONECT      S1     4 C11  C41  O11  O2  
+CONECT      O11    1 S1  
+CONECT      O2     1 S1  
+CONECT      C52    3 C41  C61  H5  
+CONECT      C61    3 C12  C52  H6  
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H31    1 C3  
+CONECT      H32    1 C3  
+CONECT      HN4    1 N4  
+CONECT      H51    1 C5  
+CONECT      H52    1 C5  
+CONECT      H61    1 C6  
+CONECT      H62    1 C6  
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HG     1 CG  
+CONECT      HD11   1 CD1 
+CONECT      HD12   1 CD1 
+CONECT      HD13   1 CD1 
+CONECT      HD21   1 CD2 
+CONECT      HD22   1 CD2 
+CONECT      HD23   1 CD2 
+CONECT      H11    1 C11 
+CONECT      H12    1 C11 
+CONECT      H211   1 C21 
+CONECT      H221   1 C21 
+CONECT      H3     1 C31 
+CONECT      HN2    1 N2  
+CONECT      H41    1 C4  
+CONECT      H42    1 C4  
+CONECT      H511   1 C51 
+CONECT      H521   1 C51 
+CONECT      H2'    1 C2' 
+CONECT      H3'    1 C3' 
+CONECT      H4'    1 C4' 
+CONECT      H5'    1 C5' 
+CONECT      H6'    1 C6' 
+CONECT      H1     1 C12 
+CONECT      H2     1 C22 
+CONECT      H33    1 C32 
+CONECT      H5     1 C52 
+CONECT      H6     1 C61 
+END   
+HET    0D6             77
+HETSYN     0D6 APC3328
+HETNAM     0D6 N-{(1R)-3-phenyl-1-[2-(phenylsulfonyl)ethyl]propyl}-N~2
+HETNAM   2 0D6 ~-(piperazin-1-ylcarbonyl)-L-leucinamide
+FORMUL      0D6    C28 H40 N4 O4 S1

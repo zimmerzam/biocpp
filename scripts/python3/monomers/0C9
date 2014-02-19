@@ -1,0 +1,46 @@
+RESIDUE   0C9     40
+CONECT      N01    3 C09  C12  H1  
+CONECT      N02    2 C12  C13 
+CONECT      N03    2 C12  C15 
+CONECT      N04    3 C13  C16  H2  
+CONECT      C05    3 C06  C10  H3  
+CONECT      C06    3 C05  C07  C11 
+CONECT      C07    3 C06  C08  H4  
+CONECT      C08    3 C07  C09  H5  
+CONECT      C09    3 N01  C08  C10 
+CONECT      C10    3 C05  C09  H6  
+CONECT      C11    3 C06  O25  O26 
+CONECT      C12    3 N01  N02  N03 
+CONECT      C13    3 N02  N04  C14 
+CONECT      C14    3 C13  C15  H7  
+CONECT      C15    3 N03  C14  H8  
+CONECT      C16    3 N04  C17  C21 
+CONECT      C17    3 C16  C18  H9  
+CONECT      C18    3 C17  C19  H10 
+CONECT      C19    3 C18  C20  H11 
+CONECT      C20    3 C19  C21  H12 
+CONECT      C21    3 C16  C20  C22 
+CONECT      C22    3 C21  O23  O24 
+CONECT      O23    2 C22  H13 
+CONECT      O24    1 C22 
+CONECT      O25    1 C11 
+CONECT      O26    2 C11  H14 
+CONECT      H1     1 N01 
+CONECT      H2     1 N04 
+CONECT      H3     1 C05 
+CONECT      H4     1 C07 
+CONECT      H5     1 C08 
+CONECT      H6     1 C10 
+CONECT      H7     1 C14 
+CONECT      H8     1 C15 
+CONECT      H9     1 C17 
+CONECT      H10    1 C18 
+CONECT      H11    1 C19 
+CONECT      H12    1 C20 
+CONECT      H13    1 O23 
+CONECT      H14    1 O26 
+END   
+HET    0C9             40
+HETNAM     0C9 2-({2-[(4-carboxyphenyl)amino]pyrimidin-4-yl}amino)benz
+HETNAM   2 0C9 oic acid
+FORMUL      0C9    C18 H14 N4 O4

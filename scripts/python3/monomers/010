@@ -1,0 +1,21 @@
+RESIDUE   010     16
+CONECT      C      4 O    C6   H    HA  
+CONECT      O      2 C    HO  
+CONECT      C1     3 C2   C6   H1  
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   C6   H5  
+CONECT      C6     3 C    C1   C5  
+CONECT      H      1 C   
+CONECT      HA     1 C   
+CONECT      HO     1 O   
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+END   
+HET    010             16
+HETNAM     010 phenylmethanol
+FORMUL      010    C7 H8 O1

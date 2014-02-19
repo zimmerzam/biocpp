@@ -1,0 +1,59 @@
+RESIDUE   094     52
+CONECT      F1     1 C1  
+CONECT      C1     3 F1   C2   C24 
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   S1   C23 
+CONECT      S1     2 C4   C5  
+CONECT      C5     3 S1   C6   N3  
+CONECT      C6     3 C5   C7   C18 
+CONECT      C7     3 C6   C8   H7  
+CONECT      C8     3 C7   N1   C11 
+CONECT      N1     3 C8   C9   C12 
+CONECT      C9     3 N1   O1   N2  
+CONECT      O1     1 C9  
+CONECT      N2     3 C9   C10  HN2 
+CONECT      C10    4 N2   C11  H101 H102
+CONECT      C11    3 C8   C10  N3  
+CONECT      N3     2 C5   C11 
+CONECT      C12    3 N1   C13  C17 
+CONECT      C13    3 C12  CL1  C14 
+CONECT      CL1    1 C13 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C15    3 C14  C16  H15 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C17    3 C12  C16  CL2 
+CONECT      CL2    1 C17 
+CONECT      C18    3 C6   C19  C22 
+CONECT      C19    3 C18  C20  H19 
+CONECT      C20    4 C19  N4   H201 H202
+CONECT      N4     3 C20  C21  HN4 
+CONECT      C21    4 N4   C22  H211 H212
+CONECT      C22    4 C18  C21  H221 H222
+CONECT      C23    3 C4   F2   C24 
+CONECT      F2     1 C23 
+CONECT      C24    3 C1   C23  H24 
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H7     1 C7  
+CONECT      HN2    1 N2  
+CONECT      H101   1 C10 
+CONECT      H102   1 C10 
+CONECT      H14    1 C14 
+CONECT      H15    1 C15 
+CONECT      H16    1 C16 
+CONECT      H19    1 C19 
+CONECT      H201   1 C20 
+CONECT      H202   1 C20 
+CONECT      HN4    1 N4  
+CONECT      H211   1 C21 
+CONECT      H212   1 C21 
+CONECT      H221   1 C22 
+CONECT      H222   1 C22 
+CONECT      H24    1 C24 
+END   
+HET    094             52
+HETNAM     094 1-(2,6-DICHLOROPHENYL)-6-[(2,4-DIFLUOROPHENYL)SULFANYL]
+HETNAM   2 094 -7-(1,2,3,6-TETRAHYDRO-4-PYRIDINYL)-3,4-DIHYDROPYRIDO[3
+HETNAM   3 094 ,2-D]PYRIMIDIN-2(1H)-ONE
+FORMUL      094    C24 H18 Cl2 F2 N4 O1 S1

@@ -1,0 +1,42 @@
+RESIDUE   0AY     37
+CONECT      N      3 CA   H1N  H2N 
+CONECT      CA     4 N    CB   B    HA  
+CONECT      CB     4 CA   CG   H1B  H2B 
+CONECT      CG     4 CB   CD   H1G  H2G 
+CONECT      CD     4 CG   CE   H1D  H2D 
+CONECT      CE     4 CD   NZ   H1E  H2E 
+CONECT      NZ     3 CE   H1NZ H2NZ
+CONECT      B      3 CA   OXT  O   
+CONECT      OXT    2 B    C1  
+CONECT      C1     4 OXT  C2   H11  H21 
+CONECT      C2     4 C1   H12  H22  H32 
+CONECT      O      2 B    C3  
+CONECT      C3     4 O    C5   H13  H23 
+CONECT      C5     4 C3   H15  H25  H35 
+CONECT      H1N    1 N   
+CONECT      H2N    1 N   
+CONECT      HA     1 CA  
+CONECT      H1B    1 CB  
+CONECT      H2B    1 CB  
+CONECT      H1G    1 CG  
+CONECT      H2G    1 CG  
+CONECT      H1D    1 CD  
+CONECT      H2D    1 CD  
+CONECT      H1E    1 CE  
+CONECT      H2E    1 CE  
+CONECT      H1NZ   1 NZ  
+CONECT      H2NZ   1 NZ  
+CONECT      H11    1 C1  
+CONECT      H21    1 C1  
+CONECT      H12    1 C2  
+CONECT      H22    1 C2  
+CONECT      H32    1 C2  
+CONECT      H13    1 C3  
+CONECT      H23    1 C3  
+CONECT      H15    1 C5  
+CONECT      H25    1 C5  
+CONECT      H35    1 C5  
+END   
+HET    0AY             37
+HETNAM     0AY diethyl [(1R)-1,5-diaminopentyl]boronate
+FORMUL      0AY    C9 H23 B1 N2 O2

@@ -1,0 +1,59 @@
+RESIDUE   0JG     50
+CONECT      N01    3 C02  H1   H2  
+CONECT      C02    3 N01  C03  N29 
+CONECT      C03    3 C02  C04  C19 
+CONECT      C04    3 C03  N05  N27 
+CONECT      N05    3 C04  C06  C10 
+CONECT      C06    3 N05  C07  H3  
+CONECT      C07    3 C06  C08  H4  
+CONECT      C08    4 C07  O09  H5   H6  
+CONECT      O09    2 C08  H7  
+CONECT      C10    3 N05  C11  C19 
+CONECT      C11    4 C10  C12  H8   H9  
+CONECT      C12    4 C11  C13  C17  H10 
+CONECT      C13    3 C12  O14  O16 
+CONECT      O14    2 C13  C15 
+CONECT      C15    4 O14  H11  H12  H13 
+CONECT      O16    1 C13 
+CONECT      C17    2 C12  N18 
+CONECT      N18    1 C17 
+CONECT      C19    3 C03  C10  C20 
+CONECT      C20    3 C19  C21  C26 
+CONECT      C21    3 C20  C22  H14 
+CONECT      C22    3 C21  C23  H15 
+CONECT      C23    3 C22  C24  C25 
+CONECT      C24    4 C23  H16  H17  H18 
+CONECT      C25    3 C23  C26  H19 
+CONECT      C26    3 C20  C25  H20 
+CONECT      N27    2 C04  C28 
+CONECT      C28    3 N27  N29  H21 
+CONECT      N29    2 C02  C28 
+CONECT      H1     1 N01 
+CONECT      H2     1 N01 
+CONECT      H3     1 C06 
+CONECT      H4     1 C07 
+CONECT      H5     1 C08 
+CONECT      H6     1 C08 
+CONECT      H7     1 O09 
+CONECT      H8     1 C11 
+CONECT      H9     1 C11 
+CONECT      H10    1 C12 
+CONECT      H11    1 C15 
+CONECT      H12    1 C15 
+CONECT      H13    1 C15 
+CONECT      H14    1 C21 
+CONECT      H15    1 C22 
+CONECT      H16    1 C24 
+CONECT      H17    1 C24 
+CONECT      H18    1 C24 
+CONECT      H19    1 C25 
+CONECT      H20    1 C26 
+CONECT      H21    1 C28 
+END   
+HET    0JG             50
+HETSYN     0JG (E)-methyl 3-(4-amino-7-(3-hydroxypropyl)-5-p-tolyl-7H-
+HETSYN   2 0JG pyrrolo[2,3-d]pyrimidin-6-yl)-2-cyanoacrylate
+HETNAM     0JG methyl (2S)-3-{4-amino-7-[(1E)-3-hydroxyprop-1-en-1-yl]
+HETNAM   2 0JG -5-(4-methylphenyl)-7H-pyrrolo[2,3-d]pyrimidin-6-yl}-2-
+HETNAM   3 0JG cyanopropanoate
+FORMUL      0JG    C21 H21 N5 O3

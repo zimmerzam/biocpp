@@ -1,0 +1,33 @@
+RESIDUE   0GA     27
+CONECT      OAD    1 CAL 
+CONECT      CAL    3 OAD  OAB  CAN 
+CONECT      OAB    2 CAL  H1  
+CONECT      CAN    3 CAL  CAG  OAK 
+CONECT      CAG    3 CAN  CAA  H2  
+CONECT      CAA    4 CAG  H3   H4   H5  
+CONECT      OAK    2 CAN  CAP 
+CONECT      CAP    3 OAK  CAI  CAO 
+CONECT      CAI    3 CAP  CAH  H6  
+CONECT      CAH    3 CAI  CAJ  H7  
+CONECT      CAJ    3 CAH  CAQ  H8  
+CONECT      CAO    3 CAP  OAF  CAQ 
+CONECT      OAF    2 CAO  H9  
+CONECT      CAQ    3 CAJ  CAO  CAM 
+CONECT      CAM    3 CAQ  OAC  OAE 
+CONECT      OAC    2 CAM  H10 
+CONECT      OAE    1 CAM 
+CONECT      H1     1 OAB 
+CONECT      H2     1 CAG 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAA 
+CONECT      H5     1 CAA 
+CONECT      H6     1 CAI 
+CONECT      H7     1 CAH 
+CONECT      H8     1 CAJ 
+CONECT      H9     1 OAF 
+CONECT      H10    1 OAC 
+END   
+HET    0GA             27
+HETNAM     0GA 3-{[(1Z)-1-carboxyprop-1-en-1-yl]oxy}-2-hydroxybenzoic 
+HETNAM   2 0GA acid
+FORMUL      0GA    C11 H10 O6

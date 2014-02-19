@@ -1,0 +1,27 @@
+RESIDUE   00X     22
+CONECT      N30    3 C31  HN30 HN3A
+CONECT      O30    2 C35  HO30
+CONECT      C31    4 N30  C32  C35  H31 
+CONECT      C32    3 C31  C33  C36 
+CONECT      C33    3 C32  C34  H33 
+CONECT      C34    3 C33  C38  H34 
+CONECT      C35    4 O30  C31  C39  H35 
+CONECT      C36    3 C32  C37  C39 
+CONECT      C37    3 C36  C38  H37 
+CONECT      C38    3 C34  C37  H38 
+CONECT      C39    4 C35  C36  H39  H39A
+CONECT      HN30   1 N30 
+CONECT      HN3A   1 N30 
+CONECT      HO30   1 O30 
+CONECT      H31    1 C31 
+CONECT      H33    1 C33 
+CONECT      H34    1 C34 
+CONECT      H35    1 C35 
+CONECT      H37    1 C37 
+CONECT      H38    1 C38 
+CONECT      H39    1 C39 
+CONECT      H39A   1 C39 
+END   
+HET    00X             22
+HETNAM     00X (1S,2R)-1-amino-2,3-dihydro-1H-inden-2-ol
+FORMUL      00X    C9 H11 N1 O1

@@ -1,0 +1,42 @@
+RESIDUE   04N     36
+CONECT      C1     4 O1   C2   O5   H1  
+CONECT      O1     2 C1   H7  
+CONECT      C2     4 C1   N2   C3   H2  
+CONECT      N2     3 C2   HN2  HN2A
+CONECT      C3     4 C2   O3   C4   H3  
+CONECT      O3     2 C3   HO3 
+CONECT      C4     4 C3   O4   C5   H4  
+CONECT      O4     2 C4   CBP 
+CONECT      C5     4 C4   O5   C6   H5  
+CONECT      O5     2 C1   C5  
+CONECT      C6     4 C5   O6   H6   H6A 
+CONECT      O6     2 C6   CBP 
+CONECT      CAL    3 CAM  CAN  HAL 
+CONECT      CAM    3 CAL  CAO  HAM 
+CONECT      CAN    3 CAL  CAP  HAN 
+CONECT      CAO    3 CAM  CBC  HAO 
+CONECT      CAP    3 CAN  CBC  HAP 
+CONECT      CBC    3 CAO  CAP  CBP 
+CONECT      CBP    4 O4   O6   CBC  HBP 
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      HN2    1 N2  
+CONECT      HN2A   1 N2  
+CONECT      H3     1 C3  
+CONECT      HO3    1 O3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      HAL    1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAP    1 CAP 
+CONECT      HBP    1 CBP 
+CONECT      H7     1 O1  
+END   
+HET    04N             36
+HETNAM     04N 2-amino-2-deoxy-4,6-O-(phenylmethylidene)-alpha-D-gluco
+HETNAM   2 04N pyranose
+FORMUL      04N    C13 H17 N1 O5

@@ -1,0 +1,61 @@
+RESIDUE   0HM     55
+CONECT      CAB    3 CAC  CAA  H1  
+CONECT      CAC    3 CAB  CAD  H2  
+CONECT      CAD    3 CAC  CAE  H3  
+CONECT      CAE    3 CAD  CAF  H4  
+CONECT      CAF    3 CAE  CAA  H5  
+CONECT      CAA    3 CAB  CAF  CAL 
+CONECT      CAL    4 CAA  NAG  H6   H7  
+CONECT      NAG    3 CAL  CAK  CAH 
+CONECT      CAK    3 NAG  CAJ  H8  
+CONECT      CAJ    3 CAK  NAI  H9  
+CONECT      NAI    2 CAJ  CAH 
+CONECT      CAH    3 NAG  NAI  CBD 
+CONECT      CBD    4 CAH  NAN  H10  H11 
+CONECT      NAN    3 CBD  CAM  CAO 
+CONECT      CAM    3 NAN  CAQ  H12 
+CONECT      CAQ    3 CAM  CAR  H13 
+CONECT      CAR    3 CAQ  CAP  H14 
+CONECT      CAP    3 CAR  OBE  CAO 
+CONECT      OBE    2 CAP  H15 
+CONECT      CAO    3 NAN  CAP  CAS 
+CONECT      CAS    3 CAO  OAU  NAT 
+CONECT      OAU    1 CAS 
+CONECT      NAT    3 CAS  CAX  H16 
+CONECT      CAX    3 NAT  CAY  CAW 
+CONECT      CAY    3 CAX  CAZ  H17 
+CONECT      CAZ    3 CAY  CBA  H18 
+CONECT      CAW    3 CAX  CAV  H19 
+CONECT      CAV    3 CAW  CBA  H20 
+CONECT      CBA    3 CAZ  CAV  CBB 
+CONECT      CBB    4 CBA  NBC  H21  H22 
+CONECT      NBC    3 CBB  H23  H24 
+CONECT      H1     1 CAB 
+CONECT      H2     1 CAC 
+CONECT      H3     1 CAD 
+CONECT      H4     1 CAE 
+CONECT      H5     1 CAF 
+CONECT      H6     1 CAL 
+CONECT      H7     1 CAL 
+CONECT      H8     1 CAK 
+CONECT      H9     1 CAJ 
+CONECT      H10    1 CBD 
+CONECT      H11    1 CBD 
+CONECT      H12    1 CAM 
+CONECT      H13    1 CAQ 
+CONECT      H14    1 CAR 
+CONECT      H15    1 OBE 
+CONECT      H16    1 NAT 
+CONECT      H17    1 CAY 
+CONECT      H18    1 CAZ 
+CONECT      H19    1 CAW 
+CONECT      H20    1 CAV 
+CONECT      H21    1 CBB 
+CONECT      H22    1 CBB 
+CONECT      H23    1 NBC 
+CONECT      H24    1 NBC 
+END   
+HET    0HM             55
+HETNAM     0HM 2-{[4-(aminomethyl)phenyl]carbamoyl}-1-[(1-benzyl-1H-im
+HETNAM   2 0HM idazol-2-yl)methyl]-3-hydroxypyridinium
+FORMUL      0HM    C24 H24 N5 O2 1+

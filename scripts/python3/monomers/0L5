@@ -1,0 +1,92 @@
+RESIDUE   0L5     86
+CONECT      O36    1 C35 
+CONECT      C35    3 O36  C37  N34 
+CONECT      C37    4 C35  C38  H1   H2  
+CONECT      C38    4 C37  C39  H3   H4  
+CONECT      C39    4 C38  C40  H5   H6  
+CONECT      C40    4 C39  C41  H7   H8  
+CONECT      C41    4 C40  C42  H9   H10 
+CONECT      C42    4 C41  C43  H11  H12 
+CONECT      C43    4 C42  C44  H13  H14 
+CONECT      C44    4 C43  C45  H15  H16 
+CONECT      C45    4 C44  O46  H17  H18 
+CONECT      O46    2 C45  H19 
+CONECT      N34    3 C35  C33  H20 
+CONECT      C33    4 N34  C32  H21  H22 
+CONECT      C32    4 C33  C31  H23  H24 
+CONECT      C31    4 C32  C30  H25  H26 
+CONECT      C30    2 C31  C29 
+CONECT      C29    2 C30  C5  
+CONECT      C5     3 C29  C6   C4  
+CONECT      C6     3 C5   N1   H27 
+CONECT      N1     3 C6   C2   C1' 
+CONECT      C2     3 N1   O2   N3  
+CONECT      O2     1 C2  
+CONECT      N3     3 C2   C4   H28 
+CONECT      C4     3 C5   N3   O4  
+CONECT      O4     1 C4  
+CONECT      C1'    4 N1   O4'  C2'  H29 
+CONECT      O4'    2 C1'  C4' 
+CONECT      C4'    4 O4'  C3'  C5'  H30 
+CONECT      C3'    4 C4'  O3'  C2'  H31 
+CONECT      O3'    2 C3'  H32 
+CONECT      C2'    4 C1'  C3'  H33  H34 
+CONECT      C5'    4 C4'  O5'  H35  H36 
+CONECT      O5'    2 C5'  PA  
+CONECT      PA     4 O5'  O1A  O2A  O3A 
+CONECT      O1A    2 PA   H37 
+CONECT      O2A    1 PA  
+CONECT      O3A    2 PA   PB  
+CONECT      PB     4 O3A  O1B  O2B  O3B 
+CONECT      O1B    1 PB  
+CONECT      O2B    2 PB   H38 
+CONECT      O3B    2 PB   PG  
+CONECT      PG     4 O3B  O1G  O3G  O2G 
+CONECT      O1G    1 PG  
+CONECT      O3G    2 PG   H39 
+CONECT      O2G    2 PG   H40 
+CONECT      H1     1 C37 
+CONECT      H2     1 C37 
+CONECT      H3     1 C38 
+CONECT      H4     1 C38 
+CONECT      H5     1 C39 
+CONECT      H6     1 C39 
+CONECT      H7     1 C40 
+CONECT      H8     1 C40 
+CONECT      H9     1 C41 
+CONECT      H10    1 C41 
+CONECT      H11    1 C42 
+CONECT      H12    1 C42 
+CONECT      H13    1 C43 
+CONECT      H14    1 C43 
+CONECT      H15    1 C44 
+CONECT      H16    1 C44 
+CONECT      H17    1 C45 
+CONECT      H18    1 C45 
+CONECT      H19    1 O46 
+CONECT      H20    1 N34 
+CONECT      H21    1 C33 
+CONECT      H22    1 C33 
+CONECT      H23    1 C32 
+CONECT      H24    1 C32 
+CONECT      H25    1 C31 
+CONECT      H26    1 C31 
+CONECT      H27    1 C6  
+CONECT      H28    1 N3  
+CONECT      H29    1 C1' 
+CONECT      H30    1 C4' 
+CONECT      H31    1 C3' 
+CONECT      H32    1 O3' 
+CONECT      H33    1 C2' 
+CONECT      H34    1 C2' 
+CONECT      H35    1 C5' 
+CONECT      H36    1 C5' 
+CONECT      H37    1 O1A 
+CONECT      H38    1 O2B 
+CONECT      H39    1 O3G 
+CONECT      H40    1 O2G 
+END   
+HET    0L5             86
+HETNAM     0L5 2'-deoxy-5-{5-[(10-hydroxydecanoyl)amino]pent-1-yn-1-yl
+HETNAM   2 0L5 }uridine 5'-(tetrahydrogen triphosphate)
+FORMUL      0L5    C24 H40 N3 O16 P3

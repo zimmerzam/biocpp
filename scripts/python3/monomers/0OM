@@ -1,0 +1,33 @@
+RESIDUE   0OM     27
+CONECT      CAG    3 CAC  CAO  H1  
+CONECT      CAC    3 CAG  CAB  H2  
+CONECT      CAB    3 CAC  CAD  H3  
+CONECT      CAD    3 CAB  CAH  H4  
+CONECT      CAH    3 CAD  CAO  H5  
+CONECT      CAO    3 CAG  CAH  CAK 
+CONECT      CAK    4 CAO  OAM  H6   H7  
+CONECT      OAM    2 CAK  CAN 
+CONECT      CAN    3 OAM  OAA  CAP 
+CONECT      OAA    1 CAN 
+CONECT      CAP    3 CAN  CAI  CAJ 
+CONECT      CAI    3 CAP  CAE  H8  
+CONECT      CAE    3 CAI  CAF  H9  
+CONECT      CAF    3 CAE  NAL  H10 
+CONECT      NAL    2 CAF  CAJ 
+CONECT      CAJ    3 CAP  NAL  H11 
+CONECT      H1     1 CAG 
+CONECT      H2     1 CAC 
+CONECT      H3     1 CAB 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAH 
+CONECT      H6     1 CAK 
+CONECT      H7     1 CAK 
+CONECT      H8     1 CAI 
+CONECT      H9     1 CAE 
+CONECT      H10    1 CAF 
+CONECT      H11    1 CAJ 
+END   
+HET    0OM             27
+HETSYN     0OM Benzyl nicotinate
+HETNAM     0OM benzyl pyridine-3-carboxylate
+FORMUL      0OM    C13 H11 N1 O2

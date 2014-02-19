@@ -1,0 +1,63 @@
+RESIDUE   0J8     57
+CONECT      C4     3 C5   N3   NAS 
+CONECT      C5     3 C4   C6   CAL 
+CONECT      C6     3 C5   N1   NAX 
+CONECT      N1     2 C6   C2  
+CONECT      N3     2 C4   C2  
+CONECT      CAP    4 CAN  CBG  H1   H2  
+CONECT      CAN    4 CAP  NAW  H3   H4  
+CONECT      NAW    3 CAN  CAO  H5  
+CONECT      CAO    4 NAW  CAQ  H7   H8  
+CONECT      CAQ    4 CAO  CBG  H9   H10 
+CONECT      CBG    4 CAP  CAQ  NBI  H11 
+CONECT      NBI    3 CBG  CAM  NAT 
+CONECT      CAM    3 NBI  CBA  H12 
+CONECT      NAT    2 NBI  CAJ 
+CONECT      CAJ    3 NAT  CBA  H13 
+CONECT      CBA    3 CAM  CAJ  CAZ 
+CONECT      CAZ    3 CBA  CAL  CAI 
+CONECT      CAL    3 C5   CAZ  H14 
+CONECT      CAI    3 CAZ  NAS  H15 
+CONECT      NAS    2 C4   CAI 
+CONECT      C2     3 N1   N3   CBJ 
+CONECT      CBJ    4 C2   FAD  FAE  FAC 
+CONECT      FAD    1 CBJ 
+CONECT      FAE    1 CBJ 
+CONECT      FAC    1 CBJ 
+CONECT      NAX    3 C6   CAR  H16 
+CONECT      CAR    4 NAX  CAY  H17  H18 
+CONECT      CAY    3 CAR  CAK  CAG 
+CONECT      CAK    3 CAY  CBB  H19 
+CONECT      CAG    3 CAY  CAF  H20 
+CONECT      CAF    3 CAG  CAH  H21 
+CONECT      CAH    3 CAF  CBB  H22 
+CONECT      CBB    3 CAK  CAH  NBH 
+CONECT      NBH    3 CBB  OAB  OAA 
+CONECT      OAB    1 NBH 
+CONECT      OAA    1 NBH 
+CONECT      H1     1 CAP 
+CONECT      H2     1 CAP 
+CONECT      H3     1 CAN 
+CONECT      H4     1 CAN 
+CONECT      H5     1 NAW 
+CONECT      H7     1 CAO 
+CONECT      H8     1 CAO 
+CONECT      H9     1 CAQ 
+CONECT      H10    1 CAQ 
+CONECT      H11    1 CBG 
+CONECT      H12    1 CAM 
+CONECT      H13    1 CAJ 
+CONECT      H14    1 CAL 
+CONECT      H15    1 CAI 
+CONECT      H16    1 NAX 
+CONECT      H17    1 CAR 
+CONECT      H18    1 CAR 
+CONECT      H19    1 CAK 
+CONECT      H20    1 CAG 
+CONECT      H21    1 CAF 
+CONECT      H22    1 CAH 
+END   
+HET    0J8             57
+HETNAM     0J8 N-(3-nitrobenzyl)-6-[1-(piperidin-4-yl)-1H-pyrazol-4-yl
+HETNAM   2 0J8 ]-2-(trifluoromethyl)pyrido[2,3-d]pyrimidin-4-amine
+FORMUL      0J8    C23 H21 F3 N8 O2

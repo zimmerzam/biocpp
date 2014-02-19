@@ -1,0 +1,19 @@
+RESIDUE   0CT     14
+CONECT      NAF    3 CAH  NAE  H1  
+CONECT      CAH    3 NAF  CAC  CAI 
+CONECT      CAC    3 CAH  CAA  H2  
+CONECT      CAA    3 CAC  CAB  H3  
+CONECT      CAB    3 CAA  CAD  H4  
+CONECT      CAD    3 CAB  CAI  H5  
+CONECT      CAI    3 CAH  CAD  NAG 
+CONECT      NAG    2 CAI  NAE 
+CONECT      NAE    2 NAF  NAG 
+CONECT      H1     1 NAF 
+CONECT      H2     1 CAC 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAB 
+CONECT      H5     1 CAD 
+END   
+HET    0CT             14
+HETNAM     0CT 1H-benzotriazole
+FORMUL      0CT    C6 H5 N3

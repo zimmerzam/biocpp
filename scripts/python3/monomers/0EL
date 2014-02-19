@@ -1,0 +1,154 @@
+RESIDUE   0EL    146
+CONECT      O1     1 C   
+CONECT      C      3 O1   O2   N   
+CONECT      O2     2 C    CT  
+CONECT      CT     4 O2   C1   C2   C3  
+CONECT      C1     4 CT   H11  H12  H13 
+CONECT      C2     4 CT   H21  H22  H23 
+CONECT      C3     4 CT   H31  H32  H33 
+CONECT      N      3 C    CA   H   
+CONECT      CA     4 N    C4   CB   HA  
+CONECT      C4     3 CA   O    N1  
+CONECT      O      1 C4  
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CE2    3 CD2  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      N1     3 C4   CA1  H1  
+CONECT      CA1    4 N1   C5   CB1  HA1 
+CONECT      C5     3 CA1  O3   N2  
+CONECT      O3     1 C5  
+CONECT      CB1    4 CA1  CG1  HB21 HB31
+CONECT      CG1    3 CB1  ND1  CD21
+CONECT      ND1    3 CG1  CE11 HD11
+CONECT      CD21   3 CG1  NE2  HD21
+CONECT      CE11   3 ND1  NE2  HE11
+CONECT      NE2    3 CD21 CE11 HE21
+CONECT      N2     3 C5   CA2  H2  
+CONECT      CA2    4 N2   CB2  CH   HA2 
+CONECT      CB2    4 CA2  CG2  HB22 HB32
+CONECT      CG2    4 CB2  CD11 CD22 HG  
+CONECT      CD11   4 CG2  CE12 HD12 HD13
+CONECT      CD22   4 CG2  CE21 HD23 HD22
+CONECT      CE12   4 CD11 CZ1  HE12 HE13
+CONECT      CE21   4 CD22 CZ1  HE23 HE22
+CONECT      CZ1    4 CE12 CE21 HZ2  HZ3 
+CONECT      CH     4 CA2  OH   CM   HH  
+CONECT      OH     2 CH   HO  
+CONECT      CM     4 CH   CA21 HM1  HM2 
+CONECT      CA21   4 CM   CB21 C6   HA21
+CONECT      CB21   4 CA21 CG21 HB23 HB24
+CONECT      CG21   4 CB21 CD3  CD4  HG2 
+CONECT      CD3    4 CG21 HD31 HD32 HD33
+CONECT      CD4    4 CG21 HD41 HD42 HD43
+CONECT      C6     3 CA21 O4   N3  
+CONECT      O4     1 C6  
+CONECT      N3     3 C6   CA3  H3  
+CONECT      CA3    4 N3   C7   CB3  HA3 
+CONECT      C7     3 CA3  O5   N4  
+CONECT      O5     1 C7  
+CONECT      CB3    4 CA3  CG3  HB25 HB33
+CONECT      CG3    4 CB3  CD   HG21 HG3 
+CONECT      CD     4 CG3  CE   HD24 HD3 
+CONECT      CE     4 CD   NZ   HE24 HE3 
+CONECT      NZ     4 CE   HZ1  HZ21 HZ31
+CONECT      N4     3 C7   CA4  H4  
+CONECT      CA4    4 N4   C8   CB4  HA4 
+CONECT      C8     3 CA4  O6   OXT 
+CONECT      O6     1 C8  
+CONECT      CB4    4 CA4  CG4  HB26 HB34
+CONECT      CG4    3 CB4  CD12 CD23
+CONECT      CD12   3 CG4  CE13 HD14
+CONECT      CD23   3 CG4  CE22 HD25
+CONECT      CE13   3 CD12 CZ2  HE14
+CONECT      CE22   3 CD23 CZ2  HE25
+CONECT      CZ2    3 CE13 CE22 HZ4 
+CONECT      OXT    2 C8   HXT 
+CONECT      H11    1 C1  
+CONECT      H12    1 C1  
+CONECT      H13    1 C1  
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H23    1 C2  
+CONECT      H31    1 C3  
+CONECT      H32    1 C3  
+CONECT      H33    1 C3  
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      H1     1 N1  
+CONECT      HA1    1 CA1 
+CONECT      HB21   1 CB1 
+CONECT      HB31   1 CB1 
+CONECT      HD11   1 ND1 
+CONECT      HD21   1 CD21
+CONECT      HE11   1 CE11
+CONECT      HE21   1 NE2 
+CONECT      H2     1 N2  
+CONECT      HA2    1 CA2 
+CONECT      HB22   1 CB2 
+CONECT      HB32   1 CB2 
+CONECT      HG     1 CG2 
+CONECT      HD12   1 CD11
+CONECT      HD13   1 CD11
+CONECT      HD23   1 CD22
+CONECT      HD22   1 CD22
+CONECT      HE12   1 CE12
+CONECT      HE13   1 CE12
+CONECT      HE23   1 CE21
+CONECT      HE22   1 CE21
+CONECT      HZ2    1 CZ1 
+CONECT      HZ3    1 CZ1 
+CONECT      HH     1 CH  
+CONECT      HO     1 OH  
+CONECT      HM1    1 CM  
+CONECT      HM2    1 CM  
+CONECT      HA21   1 CA21
+CONECT      HB23   1 CB21
+CONECT      HB24   1 CB21
+CONECT      HG2    1 CG21
+CONECT      HD31   1 CD3 
+CONECT      HD32   1 CD3 
+CONECT      HD33   1 CD3 
+CONECT      HD41   1 CD4 
+CONECT      HD42   1 CD4 
+CONECT      HD43   1 CD4 
+CONECT      H3     1 N3  
+CONECT      HA3    1 CA3 
+CONECT      HB25   1 CB3 
+CONECT      HB33   1 CB3 
+CONECT      HG21   1 CG3 
+CONECT      HG3    1 CG3 
+CONECT      HD24   1 CD  
+CONECT      HD3    1 CD  
+CONECT      HE24   1 CE  
+CONECT      HE3    1 CE  
+CONECT      HZ1    1 NZ  
+CONECT      HZ21   1 NZ  
+CONECT      HZ31   1 NZ  
+CONECT      H4     1 N4  
+CONECT      HA4    1 CA4 
+CONECT      HB26   1 CB4 
+CONECT      HB34   1 CB4 
+CONECT      HD14   1 CD12
+CONECT      HD25   1 CD23
+CONECT      HE14   1 CE13
+CONECT      HE25   1 CE22
+CONECT      HZ4    1 CZ2 
+CONECT      HXT    1 OXT 
+END   
+HET    0EL            146
+HETNAM     0EL 6-ammonio-N-[(2R,4R,5R)-5-{[N-(tert-butoxycarbonyl)-L-p
+HETNAM   2 0EL henylalanyl-3-(1H-imidazol-3-ium-4-yl)-L-alanyl]amino}-
+HETNAM   3 0EL 6-cyclohexyl-4-hydroxy-2-(2-methylpropyl)hexanoyl]-L-no
+HETNAM   4 0EL rleucylphenylalanine
+FORMUL      0EL    C51 H78 N8 O9 2+

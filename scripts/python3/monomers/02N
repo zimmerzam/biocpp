@@ -1,0 +1,25 @@
+RESIDUE   02N     20
+CONECT      C20    4 C21  N16  H20  H20A
+CONECT      C21    3 C20  C22  C26 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C24    3 C23  C27  C25 
+CONECT      C26    3 C21  C25  H26 
+CONECT      N16    3 C20  HN16 H2  
+CONECT      C23    3 C22  C24  H23 
+CONECT      C27    4 C24  H27  H27A H27B
+CONECT      C25    3 C24  C26  H25 
+CONECT      H20    1 C20 
+CONECT      H20A   1 C20 
+CONECT      H22    1 C22 
+CONECT      H26    1 C26 
+CONECT      HN16   1 N16 
+CONECT      H23    1 C23 
+CONECT      H27    1 C27 
+CONECT      H27A   1 C27 
+CONECT      H27B   1 C27 
+CONECT      H25    1 C25 
+CONECT      H2     1 N16 
+END   
+HET    02N             20
+HETNAM     02N 1-(4-methylphenyl)methanamine
+FORMUL      02N    C8 H11 N1

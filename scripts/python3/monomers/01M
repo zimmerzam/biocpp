@@ -1,0 +1,30 @@
+RESIDUE   01M     25
+CONECT      C27    3 O28  C29  OXT 
+CONECT      O28    1 C27 
+CONECT      C29    4 C27  C30  C34  H29 
+CONECT      C30    4 C29  N31  H301 H302
+CONECT      N31    3 C30  C32  C35 
+CONECT      C32    4 N31  C33  H321 H322
+CONECT      C33    4 C32  C34  H331 H332
+CONECT      C34    4 C29  C33  H341 H342
+CONECT      C35    3 N31  N37  N36 
+CONECT      N37    2 C35  HN7 
+CONECT      N36    3 C35  HN61 HN62
+CONECT      H29    1 C29 
+CONECT      H301   1 C30 
+CONECT      H302   1 C30 
+CONECT      H321   1 C32 
+CONECT      H322   1 C32 
+CONECT      H331   1 C33 
+CONECT      H332   1 C33 
+CONECT      H341   1 C34 
+CONECT      H342   1 C34 
+CONECT      HN7    1 N37 
+CONECT      HN61   1 N36 
+CONECT      HN62   1 N36 
+CONECT      OXT    2 C27  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    01M             25
+HETNAM     01M (3S)-1-carbamimidoylpiperidine-3-carboxylic acid
+FORMUL      01M    C7 H13 N3 O2

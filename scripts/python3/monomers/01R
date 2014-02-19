@@ -1,0 +1,26 @@
+RESIDUE   01R     21
+CONECT      N19    3 C20  H19  H2  
+CONECT      C20    4 N19  C30  H201 H202
+CONECT      C30    4 C20  N27  H301 H302
+CONECT      N27    3 C30  C21  H27 
+CONECT      C21    3 N27  C22  C26 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C23    3 C22  N24  H23 
+CONECT      N24    2 C23  C25 
+CONECT      C25    3 N24  C26  H25 
+CONECT      C26    3 C21  C25  H26 
+CONECT      H19    1 N19 
+CONECT      H201   1 C20 
+CONECT      H202   1 C20 
+CONECT      H301   1 C30 
+CONECT      H302   1 C30 
+CONECT      H27    1 N27 
+CONECT      H22    1 C22 
+CONECT      H23    1 C23 
+CONECT      H25    1 C25 
+CONECT      H26    1 C26 
+CONECT      H2     1 N19 
+END   
+HET    01R             21
+HETNAM     01R N-(pyridin-4-yl)ethane-1,2-diamine
+FORMUL      01R    C7 H11 N3

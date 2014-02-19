@@ -1,0 +1,64 @@
+RESIDUE   034     58
+CONECT      C1     4 C2   H1   H1A  H1B 
+CONECT      C2     4 C1   C3   C4   H2  
+CONECT      C3     4 C2   H3   H3A  H3B 
+CONECT      CL3    1 C30 
+CONECT      C4     3 C2   O5   C8  
+CONECT      O5     2 C4   N6  
+CONECT      N6     2 O5   C7  
+CONECT      CL6    1 C35 
+CONECT      C7     3 N6   C8   C29 
+CONECT      C8     3 C4   C7   C9  
+CONECT      C9     4 C8   O10  H9   H9A 
+CONECT      O10    2 C9   C11 
+CONECT      C11    3 O10  C12  C16 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 C13  C15  C17 
+CONECT      C15    3 C14  C16  H15 
+CONECT      C16    3 C11  C15  H16 
+CONECT      C17    3 C14  C18  C25 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C18  C20  H19 
+CONECT      C20    3 C19  N21  C24 
+CONECT      N21    3 C20  C22  HN21
+CONECT      C22    3 N21  C23  C26 
+CONECT      C23    3 C22  C24  H23 
+CONECT      C24    3 C20  C23  C25 
+CONECT      C25    3 C17  C24  H25 
+CONECT      C26    3 C22  O27  O28 
+CONECT      O27    1 C26 
+CONECT      O28    2 C26  HO28
+CONECT      C29    3 C7   C30  C35 
+CONECT      C30    3 CL3  C29  C32 
+CONECT      C32    3 C30  C33  H32 
+CONECT      C33    3 C32  C34  H33 
+CONECT      C34    3 C33  C35  H34 
+CONECT      C35    3 CL6  C29  C34 
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      H3B    1 C3  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H15    1 C15 
+CONECT      H16    1 C16 
+CONECT      H18    1 C18 
+CONECT      H19    1 C19 
+CONECT      H23    1 C23 
+CONECT      H25    1 C25 
+CONECT      HO28   1 O28 
+CONECT      H32    1 C32 
+CONECT      H33    1 C33 
+CONECT      H34    1 C34 
+CONECT      HN21   1 N21 
+END   
+HET    034             58
+HETNAM     034 5-(4-{[3-(2,6-dichlorophenyl)-5-(propan-2-yl)-1,2-oxazo
+HETNAM   2 034 l-4-yl]methoxy}phenyl)-1H-indole-2-carboxylic acid
+FORMUL      034    C28 H22 Cl2 N2 O4

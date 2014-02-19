@@ -1,0 +1,54 @@
+RESIDUE   0OJ     49
+CONECT      OAF    2 PBC  H1  
+CONECT      PBC    4 OAF  OAG  OAB  OAS 
+CONECT      OAG    2 PBC  H2  
+CONECT      OAB    1 PBC 
+CONECT      OAS    2 PBC  PBE 
+CONECT      PBE    4 OAS  OAI  OAD  OAT 
+CONECT      OAI    1 PBE 
+CONECT      OAD    2 PBE  H3  
+CONECT      OAT    2 PBE  PBD 
+CONECT      PBD    4 OAT  OAH  OAC  OAR 
+CONECT      OAH    1 PBD 
+CONECT      OAC    2 PBD  H4  
+CONECT      OAR    2 PBD  CAL 
+CONECT      CAL    4 OAR  CAY  H5   H6  
+CONECT      CAY    4 CAL  CAZ  CAX  H7  
+CONECT      CAZ    4 CAY  CAN  CBB  H8  
+CONECT      CAN    4 CAZ  CBB  H9   H10 
+CONECT      CAX    4 CAY  OAE  CAM  H11 
+CONECT      OAE    2 CAX  H12 
+CONECT      CAM    4 CAX  CBB  H13  H14 
+CONECT      CBB    4 CAZ  CAN  CAM  N9  
+CONECT      N9     3 CBB  C8   C4  
+CONECT      C8     3 N9   N7   H15 
+CONECT      N7     2 C8   C5  
+CONECT      C5     3 N7   C4   C6  
+CONECT      C4     3 N9   C5   N3  
+CONECT      N3     2 C4   C2  
+CONECT      C2     3 N3   N1   H16 
+CONECT      N1     2 C2   C6  
+CONECT      C6     3 C5   N1   N6  
+CONECT      N6     3 C6   H17  H18 
+CONECT      H1     1 OAF 
+CONECT      H2     1 OAG 
+CONECT      H3     1 OAD 
+CONECT      H4     1 OAC 
+CONECT      H5     1 CAL 
+CONECT      H6     1 CAL 
+CONECT      H7     1 CAY 
+CONECT      H8     1 CAZ 
+CONECT      H9     1 CAN 
+CONECT      H10    1 CAN 
+CONECT      H11    1 CAX 
+CONECT      H12    1 OAE 
+CONECT      H13    1 CAM 
+CONECT      H14    1 CAM 
+CONECT      H15    1 C8  
+CONECT      H16    1 C2  
+CONECT      H17    1 N6  
+CONECT      H18    1 N6  
+END   
+HET    0OJ             49
+HETNAM     0OJ South-methanocarba-2'-deoxyadenosine triphosphate
+FORMUL      0OJ    C12 H18 N5 O11 P3

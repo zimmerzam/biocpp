@@ -1,0 +1,49 @@
+RESIDUE   0J9     43
+CONECT      N1     2 C2   C6  
+CONECT      C2     3 N1   N3   H1  
+CONECT      N3     2 C2   C4  
+CONECT      C4     3 N3   C5   NAW 
+CONECT      C5     3 C4   C6   CAR 
+CONECT      C6     3 N1   C5   NAD 
+CONECT      CAA    4 CAX  H2   H3   H4  
+CONECT      CAB    4 CAX  H5   H6   H7  
+CONECT      CAC    4 CAX  H8   H9   H10 
+CONECT      NAD    3 C6   H11  H12 
+CONECT      CAE    3 CAF  CAJ  H13 
+CONECT      CAF    3 CAE  CAL  H14 
+CONECT      CAI    3 CAQ  CAG  H15 
+CONECT      CAJ    3 CAE  CAS  H16 
+CONECT      CAK    3 CAS  CAG  H17 
+CONECT      CAL    3 CAF  CAT  H18 
+CONECT      NAO    2 CAR  NAW 
+CONECT      CAQ    3 CAI  CAR  CAT 
+CONECT      CAR    3 C5   NAO  CAQ 
+CONECT      CAS    3 CAJ  CAK  CAT 
+CONECT      CAT    3 CAL  CAQ  CAS 
+CONECT      NAW    3 C4   NAO  CAX 
+CONECT      CAX    4 CAA  CAB  CAC  NAW 
+CONECT      CAG    3 CAI  CAK  H19 
+CONECT      H1     1 C2  
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAA 
+CONECT      H5     1 CAB 
+CONECT      H6     1 CAB 
+CONECT      H7     1 CAB 
+CONECT      H8     1 CAC 
+CONECT      H9     1 CAC 
+CONECT      H10    1 CAC 
+CONECT      H11    1 NAD 
+CONECT      H12    1 NAD 
+CONECT      H13    1 CAE 
+CONECT      H14    1 CAF 
+CONECT      H15    1 CAI 
+CONECT      H16    1 CAJ 
+CONECT      H17    1 CAK 
+CONECT      H18    1 CAL 
+CONECT      H19    1 CAG 
+END   
+HET    0J9             43
+HETNAM     0J9 1-tert-butyl-3-(naphthalen-1-yl)-1H-pyrazolo[3,4-d]pyri
+HETNAM   2 0J9 midin-4-amine
+FORMUL      0J9    C19 H19 N5

@@ -1,0 +1,32 @@
+RESIDUE   03N     27
+CONECT      N24    3 C25  HN24 H2  
+CONECT      C25    4 N24  C26  H125 H225
+CONECT      C26    4 C25  C27  C31  H26 
+CONECT      C27    4 C26  C28  H127 H227
+CONECT      C28    4 C27  N29  H128 H228
+CONECT      N29    3 C28  C30  C32 
+CONECT      C30    4 N29  C31  H130 H230
+CONECT      C31    4 C26  C30  H131 H231
+CONECT      C32    3 N29  N33  N34 
+CONECT      N33    3 C32  H133 H233
+CONECT      N34    2 C32  H134
+CONECT      HN24   1 N24 
+CONECT      H125   1 C25 
+CONECT      H225   1 C25 
+CONECT      H26    1 C26 
+CONECT      H127   1 C27 
+CONECT      H227   1 C27 
+CONECT      H128   1 C28 
+CONECT      H228   1 C28 
+CONECT      H130   1 C30 
+CONECT      H230   1 C30 
+CONECT      H131   1 C31 
+CONECT      H231   1 C31 
+CONECT      H133   1 N33 
+CONECT      H233   1 N33 
+CONECT      H134   1 N34 
+CONECT      H2     1 N24 
+END   
+HET    03N             27
+HETNAM     03N 4-(aminomethyl)piperidine-1-carboximidamide
+FORMUL      03N    C7 H16 N4

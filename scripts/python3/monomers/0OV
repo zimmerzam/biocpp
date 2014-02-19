@@ -1,0 +1,48 @@
+RESIDUE   0OV     42
+CONECT      C24    3 C15  N20  N25 
+CONECT      C22    2 C21  N23 
+CONECT      C21    4 C22  N20  H1   H2  
+CONECT      C18    3 C16  C19  H3  
+CONECT      C16    3 C18  C15  O17 
+CONECT      C15    3 C24  C16  C13 
+CONECT      C6     4 C5   C7   H4   H5  
+CONECT      C4     4 C2   C5   H6   H7  
+CONECT      C2     4 C4   C1   C8   H8  
+CONECT      C1     4 C2   H9   H10  H11 
+CONECT      C11    3 O10  N12  N25 
+CONECT      C5     4 C6   C4   H12  H13 
+CONECT      C7     4 C6   C8   H14  H15 
+CONECT      C8     4 C2   C7   O10  H16 
+CONECT      O10    2 C11  C8  
+CONECT      N12    2 C11  C13 
+CONECT      C13    3 C15  N12  N14 
+CONECT      N14    3 C13  H17  H18 
+CONECT      O17    1 C16 
+CONECT      C19    3 C18  N20  H19 
+CONECT      N20    3 C24  C21  C19 
+CONECT      N23    1 C22 
+CONECT      N25    2 C24  C11 
+CONECT      H1     1 C21 
+CONECT      H2     1 C21 
+CONECT      H3     1 C18 
+CONECT      H4     1 C6  
+CONECT      H5     1 C6  
+CONECT      H6     1 C4  
+CONECT      H7     1 C4  
+CONECT      H8     1 C2  
+CONECT      H9     1 C1  
+CONECT      H10    1 C1  
+CONECT      H11    1 C1  
+CONECT      H12    1 C5  
+CONECT      H13    1 C5  
+CONECT      H14    1 C7  
+CONECT      H15    1 C7  
+CONECT      H16    1 C8  
+CONECT      H17    1 N14 
+CONECT      H18    1 N14 
+CONECT      H19    1 C19 
+END   
+HET    0OV             42
+HETNAM     0OV [4-amino-2-{[(1S,2R)-2-methylcyclohexyl]oxy}-5-oxopyrid
+HETNAM   2 0OV o[2,3-d]pyrimidin-8(5H)-yl]acetonitrile
+FORMUL      0OV    C16 H19 N5 O2

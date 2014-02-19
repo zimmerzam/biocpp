@@ -1,0 +1,36 @@
+RESIDUE   0H9     31
+CONECT      CAA    4 OAM  H1   H2   H3  
+CONECT      CAE    3 CAG  CAN  H4  
+CONECT      CAF    3 CAH  CAN  H5  
+CONECT      CAG    3 CAE  CAO  H6  
+CONECT      CAH    3 CAF  CAO  H7  
+CONECT      CAI    4 CAK  NAL  H8   H9  
+CONECT      CAJ    4 CAN  NAL  H10  H11 
+CONECT      CAK    4 CAI  SAP  H12  H13 
+CONECT      CAN    3 CAE  CAF  CAJ 
+CONECT      CAO    3 CAG  CAH  OAM 
+CONECT      NAL    3 CAI  CAJ  H14 
+CONECT      OAB    1 SAP 
+CONECT      OAC    2 SAP  H15 
+CONECT      OAD    1 SAP 
+CONECT      OAM    2 CAA  CAO 
+CONECT      SAP    4 CAK  OAB  OAC  OAD 
+CONECT      H1     1 CAA 
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAE 
+CONECT      H5     1 CAF 
+CONECT      H6     1 CAG 
+CONECT      H7     1 CAH 
+CONECT      H8     1 CAI 
+CONECT      H9     1 CAI 
+CONECT      H10    1 CAJ 
+CONECT      H11    1 CAJ 
+CONECT      H12    1 CAK 
+CONECT      H13    1 CAK 
+CONECT      H14    1 NAL 
+CONECT      H15    1 OAC 
+END   
+HET    0H9             31
+HETNAM     0H9 2-[(4-methoxybenzyl)amino]ethanesulfonic acid
+FORMUL      0H9    C10 H15 N1 O4 S1

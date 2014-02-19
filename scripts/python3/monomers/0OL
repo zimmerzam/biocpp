@@ -1,0 +1,34 @@
+RESIDUE   0OL     29
+CONECT      CAJ    4 CAH  NAN  H1   H2  
+CONECT      CAH    4 CAJ  CAG  H3   H4  
+CONECT      CAG    4 CAH  CAI  H5   H6  
+CONECT      CAI    4 CAG  CAK  H7   H8  
+CONECT      CAK    4 CAI  NAN  H9   H10 
+CONECT      NAN    3 CAJ  CAK  CAL 
+CONECT      CAL    3 NAN  OAA  CAM 
+CONECT      OAA    1 CAL 
+CONECT      CAM    3 CAL  CAE  CAF 
+CONECT      CAE    3 CAM  CAC  H11 
+CONECT      CAC    3 CAE  CAB  H12 
+CONECT      CAB    3 CAC  CAD  H13 
+CONECT      CAD    3 CAB  CAF  H14 
+CONECT      CAF    3 CAM  CAD  H15 
+CONECT      H1     1 CAJ 
+CONECT      H2     1 CAJ 
+CONECT      H3     1 CAH 
+CONECT      H4     1 CAH 
+CONECT      H5     1 CAG 
+CONECT      H6     1 CAG 
+CONECT      H7     1 CAI 
+CONECT      H8     1 CAI 
+CONECT      H9     1 CAK 
+CONECT      H10    1 CAK 
+CONECT      H11    1 CAE 
+CONECT      H12    1 CAC 
+CONECT      H13    1 CAB 
+CONECT      H14    1 CAD 
+CONECT      H15    1 CAF 
+END   
+HET    0OL             29
+HETNAM     0OL phenyl(piperidin-1-yl)methanone
+FORMUL      0OL    C12 H15 N1 O1

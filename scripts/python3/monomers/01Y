@@ -1,0 +1,27 @@
+RESIDUE   01Y     22
+CONECT      O32    1 C14 
+CONECT      C14    3 O32  C5   OXT 
+CONECT      C5     4 C14  O21  H5   H5A 
+CONECT      O21    2 C5   C44 
+CONECT      C44    4 O21  C49  C45  H44 
+CONECT      C49    4 C44  C48  H49  H49A
+CONECT      C48    4 C49  C47  H48  H48A
+CONECT      C47    4 C48  C45  H47  H47A
+CONECT      C45    4 C44  C47  H45  H45A
+CONECT      H5     1 C5  
+CONECT      H5A    1 C5  
+CONECT      H44    1 C44 
+CONECT      H49    1 C49 
+CONECT      H49A   1 C49 
+CONECT      H48    1 C48 
+CONECT      H48A   1 C48 
+CONECT      H47    1 C47 
+CONECT      H47A   1 C47 
+CONECT      H45    1 C45 
+CONECT      H45A   1 C45 
+CONECT      OXT    2 C14  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    01Y             22
+HETNAM     01Y (cyclopentyloxy)acetic acid
+FORMUL      01Y    C7 H12 O3

@@ -1,0 +1,24 @@
+RESIDUE   0HN     18
+CONECT      OAA    1 CAI 
+CONECT      CAI    3 OAA  OAB  CAJ 
+CONECT      OAB    2 CAI  H1  
+CONECT      CAJ    3 CAI  CAE  CAC 
+CONECT      CAE    3 CAJ  CAL  H2  
+CONECT      CAL    3 CAE  OAH  CAK 
+CONECT      OAH    2 CAL  CAF 
+CONECT      CAF    4 OAH  OAG  H3   H6  
+CONECT      OAG    2 CAF  CAK 
+CONECT      CAK    3 CAL  OAG  CAD 
+CONECT      CAD    3 CAK  CAC  H4  
+CONECT      CAC    3 CAJ  CAD  H5  
+CONECT      H1     1 OAB 
+CONECT      H2     1 CAE 
+CONECT      H3     1 CAF 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAC 
+CONECT      H6     1 CAF 
+END   
+HET    0HN             18
+HETSYN     0HN benzo[d][1,3]dioxole-5-carboxylic acid
+HETNAM     0HN 1,3-benzodioxole-5-carboxylic acid
+FORMUL      0HN    C8 H6 O4

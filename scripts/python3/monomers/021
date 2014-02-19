@@ -1,0 +1,28 @@
+RESIDUE   021     23
+CONECT      C14    3 O32  C15  OXT 
+CONECT      O32    1 C14 
+CONECT      C15    4 C14  N16  H15  H15A
+CONECT      N16    3 C15  C17  HN16
+CONECT      C17    4 N16  C21  C18  H17 
+CONECT      C21    4 C17  C20  H21  H21A
+CONECT      C20    4 C21  C19  H20  H20A
+CONECT      C19    4 C20  C18  H19  H19A
+CONECT      C18    4 C17  C19  H18  H18A
+CONECT      H15    1 C15 
+CONECT      H15A   1 C15 
+CONECT      HN16   1 N16 
+CONECT      H17    1 C17 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      H20    1 C20 
+CONECT      H20A   1 C20 
+CONECT      H19    1 C19 
+CONECT      H19A   1 C19 
+CONECT      H18    1 C18 
+CONECT      H18A   1 C18 
+CONECT      OXT    2 C14  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    021             23
+HETNAM     021 N-cyclopentylglycine
+FORMUL      021    C7 H13 N1 O2

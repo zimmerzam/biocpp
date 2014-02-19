@@ -1,0 +1,35 @@
+RESIDUE   01I     30
+CONECT      CAA    3 CAB  CAF  HAA 
+CONECT      CAB    3 CAA  CAC  CAK 
+CONECT      CAC    3 CAB  CAD  OAM 
+CONECT      CAD    3 CAC  CAE  HAD 
+CONECT      CAE    3 CAD  CAF  CAG 
+CONECT      CAF    3 CAA  CAE  CAJ 
+CONECT      CAG    3 CAE  CAH  CAN 
+CONECT      CAH    3 CAG  CAI  OAP 
+CONECT      CAI    3 CAH  CAJ  HAI 
+CONECT      CAJ    3 CAF  CAI  HAJ 
+CONECT      CAK    3 CAB  CAL  HAK 
+CONECT      CAL    3 CAK  OAM  CAR 
+CONECT      OAM    2 CAC  CAL 
+CONECT      CAN    3 CAG  CAO  HAN 
+CONECT      CAO    3 CAN  OAP  CAQ 
+CONECT      OAP    2 CAH  CAO 
+CONECT      CAQ    3 CAO  OAT  OAU 
+CONECT      CAR    3 CAL  OAS  OAV 
+CONECT      OAS    1 CAR 
+CONECT      OAT    2 CAQ  HOAT
+CONECT      OAU    1 CAQ 
+CONECT      OAV    2 CAR  HOAV
+CONECT      HAA    1 CAA 
+CONECT      HAD    1 CAD 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAN    1 CAN 
+CONECT      HOAT   1 OAT 
+CONECT      HOAV   1 OAV 
+END   
+HET    01I             30
+HETNAM     01I naphtho[2,1-b:7,6-b']difuran-2,8-dicarboxylic acid
+FORMUL      01I    C16 H8 O6

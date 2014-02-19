@@ -1,0 +1,75 @@
+RESIDUE   0JZ     66
+CONECT      SE1    2 C05  C07 
+CONECT      SE2    2 C12  C14 
+CONECT      SE3    2 C19  C21 
+CONECT      C01    3 C02  C21  N22 
+CONECT      C02    3 C01  N03  O25 
+CONECT      N03    3 C02  C04  HN03
+CONECT      C04    4 N03  C05  C28  H04 
+CONECT      C05    3 SE1  C04  N24 
+CONECT      C07    3 SE1  C08  H07 
+CONECT      C08    3 C07  C09  N24 
+CONECT      C09    3 C08  N10  O26 
+CONECT      N10    3 C09  C11  HN10
+CONECT      C11    4 N10  C12  C31  H11 
+CONECT      C12    3 SE2  C11  N23 
+CONECT      C14    3 SE2  C15  H14 
+CONECT      C15    3 C14  C16  N23 
+CONECT      C16    3 C15  N17  O27 
+CONECT      N17    3 C16  C18  HN17
+CONECT      C18    4 N17  C19  C34  H18 
+CONECT      C19    3 SE3  C18  N22 
+CONECT      C21    3 SE3  C01  H21 
+CONECT      N22    2 C01  C19 
+CONECT      N23    2 C12  C15 
+CONECT      N24    2 C05  C08 
+CONECT      O25    1 C02 
+CONECT      O26    1 C09 
+CONECT      O27    1 C16 
+CONECT      C28    4 C04  C29  C30  H28 
+CONECT      C29    4 C28  H29  H29A H29B
+CONECT      C30    4 C28  H30  H30A H30B
+CONECT      C31    4 C11  C32  C33  H31 
+CONECT      C32    4 C31  H32  H32A H32B
+CONECT      C33    4 C31  H33  H33A H33B
+CONECT      C34    4 C18  C35  C36  H34 
+CONECT      C35    4 C34  H35  H35A H35B
+CONECT      C36    4 C34  H36  H36A H36B
+CONECT      HN03   1 N03 
+CONECT      H04    1 C04 
+CONECT      H07    1 C07 
+CONECT      HN10   1 N10 
+CONECT      H11    1 C11 
+CONECT      H14    1 C14 
+CONECT      HN17   1 N17 
+CONECT      H18    1 C18 
+CONECT      H21    1 C21 
+CONECT      H28    1 C28 
+CONECT      H29    1 C29 
+CONECT      H29A   1 C29 
+CONECT      H29B   1 C29 
+CONECT      H30    1 C30 
+CONECT      H30A   1 C30 
+CONECT      H30B   1 C30 
+CONECT      H31    1 C31 
+CONECT      H32    1 C32 
+CONECT      H32A   1 C32 
+CONECT      H32B   1 C32 
+CONECT      H33    1 C33 
+CONECT      H33A   1 C33 
+CONECT      H33B   1 C33 
+CONECT      H34    1 C34 
+CONECT      H35    1 C35 
+CONECT      H35A   1 C35 
+CONECT      H35B   1 C35 
+CONECT      H36    1 C36 
+CONECT      H36A   1 C36 
+CONECT      H36B   1 C36 
+END   
+HET    0JZ             66
+HETSYN     0JZ cyclic-tris-(R)-valineselenazole, QZ59-RRR
+HETNAM     0JZ (4R,11R,18R)-4,11,18-tri(propan-2-yl)-6,13,20-triselena
+HETNAM   2 0JZ -3,10,17,22,23,24-hexaazatetracyclo[17.2.1.1~5,8~.1~12,
+HETNAM   3 0JZ 15~]tetracosa-1(21),5(24),7,12(23),14,19(22)-hexaene-2,
+HETNAM   4 0JZ 9,16-trione
+FORMUL      0JZ    C24 H30 N6 O3 Se3

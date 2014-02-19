@@ -1,0 +1,64 @@
+RESIDUE   0K5     57
+CONECT      C35    3 C34  C30  H1  
+CONECT      C33    3 C34  C32  H2  
+CONECT      C34    3 C35  C33  H3  
+CONECT      C32    3 C33  C31  H4  
+CONECT      C4     3 C7   N18  H5  
+CONECT      C7     3 C4   C5   C17 
+CONECT      C6     3 C8   C1   C14 
+CONECT      C9     3 C3   C2   H6  
+CONECT      C13    4 C5   N19  H7   H8  
+CONECT      C8     3 C6   C3   N20 
+CONECT      C16    4 C11  H9   H10  H11 
+CONECT      C3     3 C9   C8   H12 
+CONECT      C31    3 C32  C30  H13 
+CONECT      C1     3 C6   C2   H14 
+CONECT      C5     3 C7   C13  C10 
+CONECT      C30    3 C35  C31  O29 
+CONECT      C2     3 C9   C1   O29 
+CONECT      C10    3 C5   C11  O25 
+CONECT      C11    3 C16  C10  N18 
+CONECT      C14    3 C6   C15  H15 
+CONECT      C15    3 C14  C12  N19 
+CONECT      C12    3 C15  N20  O23 
+CONECT      C17    4 C7   O27  H16  H17 
+CONECT      N18    2 C4   C11 
+CONECT      N20    3 C8   C12  O26 
+CONECT      N19    3 C13  C15  H18 
+CONECT      O22    2 P28  H19 
+CONECT      O24    1 P28 
+CONECT      O23    1 C12 
+CONECT      O21    2 P28  H20 
+CONECT      O25    2 C10  H21 
+CONECT      O26    2 N20  H22 
+CONECT      O29    2 C30  C2  
+CONECT      O27    2 C17  P28 
+CONECT      P28    4 O22  O24  O21  O27 
+CONECT      H1     1 C35 
+CONECT      H2     1 C33 
+CONECT      H3     1 C34 
+CONECT      H4     1 C32 
+CONECT      H5     1 C4  
+CONECT      H6     1 C9  
+CONECT      H7     1 C13 
+CONECT      H8     1 C13 
+CONECT      H9     1 C16 
+CONECT      H10    1 C16 
+CONECT      H11    1 C16 
+CONECT      H12    1 C3  
+CONECT      H13    1 C31 
+CONECT      H14    1 C1  
+CONECT      H15    1 C14 
+CONECT      H16    1 C17 
+CONECT      H17    1 C17 
+CONECT      H18    1 N19 
+CONECT      H19    1 O22 
+CONECT      H20    1 O21 
+CONECT      H21    1 O25 
+CONECT      H22    1 O26 
+END   
+HET    0K5             57
+HETNAM     0K5 (5-hydroxy-4-{[(1-hydroxy-2-oxo-6-phenoxy-1,2-dihydroqu
+HETNAM   2 0K5 inolin-3-yl)amino]methyl}-6-methylpyridin-3-yl)methyl d
+HETNAM   3 0K5 ihydrogen phosphate
+FORMUL      0K5    C23 H22 N3 O8 P1

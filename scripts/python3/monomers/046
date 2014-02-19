@@ -1,0 +1,78 @@
+RESIDUE   046     71
+CONECT      F1     1 C2  
+CONECT      C2     4 F1   F3   F4   C5  
+CONECT      F3     1 C2  
+CONECT      F4     1 C2  
+CONECT      C5     3 C2   C6   C12 
+CONECT      C6     3 C5   C7   C51 
+CONECT      C7     3 C6   C9   H1  
+CONECT      C9     3 C7   C11  H2  
+CONECT      C11    3 C9   C12  N14 
+CONECT      C12    3 C5   C11  H3  
+CONECT      N14    3 C11  C16  H4  
+CONECT      C16    3 N14  O17  N18 
+CONECT      O17    1 C16 
+CONECT      N18    3 C16  C19  C26 
+CONECT      C19    4 N18  C22  H5   H31 
+CONECT      C22    4 C19  C25  H6   H32 
+CONECT      C25    3 C22  C26  C32 
+CONECT      C26    3 N18  C25  C27 
+CONECT      C27    3 C26  C29  H7  
+CONECT      C29    3 C27  C31  H8  
+CONECT      C31    3 C29  C32  O34 
+CONECT      C32    3 C25  C31  H9  
+CONECT      O34    2 C31  C35 
+CONECT      C35    3 O34  N36  C41 
+CONECT      N36    2 C35  C37 
+CONECT      C37    3 N36  N39  H10 
+CONECT      N39    2 C37  C40 
+CONECT      C40    3 N39  C41  N43 
+CONECT      C41    3 C35  C40  H11 
+CONECT      N43    3 C40  C45  H12 
+CONECT      C45    3 N43  O46  C47 
+CONECT      O46    1 C45 
+CONECT      C47    4 C45  H13  H14  H15 
+CONECT      C51    4 C6   N54  H16  H17 
+CONECT      N54    3 C51  C55  C65 
+CONECT      C55    4 N54  C58  H19  H20 
+CONECT      C58    4 C55  N61  H21  H22 
+CONECT      N61    3 C58  C62  C68 
+CONECT      C62    4 N61  C65  H24  H25 
+CONECT      C65    4 N54  C62  H26  H27 
+CONECT      C68    4 N61  H28  H29  H30 
+CONECT      H1     1 C7  
+CONECT      H2     1 C9  
+CONECT      H3     1 C12 
+CONECT      H4     1 N14 
+CONECT      H5     1 C19 
+CONECT      H6     1 C22 
+CONECT      H7     1 C27 
+CONECT      H8     1 C29 
+CONECT      H9     1 C32 
+CONECT      H10    1 C37 
+CONECT      H11    1 C41 
+CONECT      H12    1 N43 
+CONECT      H13    1 C47 
+CONECT      H14    1 C47 
+CONECT      H15    1 C47 
+CONECT      H16    1 C51 
+CONECT      H17    1 C51 
+CONECT      H19    1 C55 
+CONECT      H20    1 C55 
+CONECT      H21    1 C58 
+CONECT      H22    1 C58 
+CONECT      H24    1 C62 
+CONECT      H25    1 C62 
+CONECT      H26    1 C65 
+CONECT      H27    1 C65 
+CONECT      H28    1 C68 
+CONECT      H29    1 C68 
+CONECT      H30    1 C68 
+CONECT      H31    1 C19 
+CONECT      H32    1 C22 
+END   
+HET    046             71
+HETNAM     046 5-{[6-(acetylamino)pyrimidin-4-yl]oxy}-N-{4-[(4-methylp
+HETNAM   2 046 iperazin-1-yl)methyl]-3-(trifluoromethyl)phenyl}-2,3-di
+HETNAM   3 046 hydro-1H-indole-1-carboxamide
+FORMUL      046    C28 H30 F3 N7 O3

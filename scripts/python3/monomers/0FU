@@ -1,0 +1,23 @@
+RESIDUE   0FU     17
+CONECT      C4     3 N3   C5   O4  
+CONECT      N3     2 C4   C2  
+CONECT      C2     3 N3   NAA  N1  
+CONECT      NAA    3 C2   H1   H2  
+CONECT      N1     2 C2   C6  
+CONECT      C6     3 N1   NAB  C5  
+CONECT      NAB    3 C6   H3   H4  
+CONECT      C5     3 C4   C6   NAC 
+CONECT      NAC    3 C5   H7   H8  
+CONECT      O4     2 C4   H71 
+CONECT      H1     1 NAA 
+CONECT      H2     1 NAA 
+CONECT      H3     1 NAB 
+CONECT      H4     1 NAB 
+CONECT      H7     1 NAC 
+CONECT      H8     1 NAC 
+CONECT      H71    1 O4  
+END   
+HET    0FU             17
+HETSYN     0FU 4-hydroxy-2,5,6-triaminopyrimidine
+HETNAM     0FU 2,5,6-triaminopyrimidin-4-ol
+FORMUL      0FU    C4 H7 N5 O1

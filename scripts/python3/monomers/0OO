@@ -1,0 +1,32 @@
+RESIDUE   0OO     27
+CONECT      CAG    3 CAC  CAN  H1  
+CONECT      CAC    3 CAG  CAB  H2  
+CONECT      CAB    3 CAC  CAD  H3  
+CONECT      CAD    3 CAB  CAH  H4  
+CONECT      CAH    3 CAD  CAN  H5  
+CONECT      CAN    3 CAG  CAH  OAL 
+CONECT      OAL    2 CAN  CAO 
+CONECT      CAO    3 OAL  CAJ  CAI 
+CONECT      CAJ    3 CAO  CAM  H6  
+CONECT      CAI    3 CAO  CAE  H7  
+CONECT      CAE    3 CAI  CAF  H8  
+CONECT      CAF    3 CAE  CAM  H9  
+CONECT      CAM    3 CAJ  CAF  CAK 
+CONECT      CAK    4 CAM  OAA  H10  H11 
+CONECT      OAA    2 CAK  H12 
+CONECT      H1     1 CAG 
+CONECT      H2     1 CAC 
+CONECT      H3     1 CAB 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAH 
+CONECT      H6     1 CAJ 
+CONECT      H7     1 CAI 
+CONECT      H8     1 CAE 
+CONECT      H9     1 CAF 
+CONECT      H10    1 CAK 
+CONECT      H11    1 CAK 
+CONECT      H12    1 OAA 
+END   
+HET    0OO             27
+HETNAM     0OO (3-phenoxyphenyl)methanol
+FORMUL      0OO    C13 H12 O2

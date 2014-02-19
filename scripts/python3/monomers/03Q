@@ -1,0 +1,60 @@
+RESIDUE   03Q     53
+CONECT      O1     2 C2   HO1 
+CONECT      C2     4 O1   C3   H2   H2A 
+CONECT      C3     4 C2   O4   H3   H3A 
+CONECT      O4     2 C3   C5  
+CONECT      C5     4 O4   C6   H5   H5A 
+CONECT      C6     4 C5   N7   H6   H6A 
+CONECT      N7     3 C6   C8   C34 
+CONECT      C8     3 N7   C9   H8  
+CONECT      C9     3 C8   C10  H9  
+CONECT      C10    3 C9   N11  C34 
+CONECT      N11    2 C10  C12 
+CONECT      C12    3 N11  N13  H12 
+CONECT      N13    2 C12  C14 
+CONECT      C14    3 N13  N15  C34 
+CONECT      N15    3 C14  C16  HN15
+CONECT      C16    3 N15  C17  C33 
+CONECT      C17    3 C16  N18  H17 
+CONECT      N18    2 C17  C19 
+CONECT      C19    3 N18  O20  C31 
+CONECT      O20    2 C19  C21 
+CONECT      C21    3 O20  C22  C26 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C23    3 C22  C24  H23 
+CONECT      C24    3 C23  C25  H24 
+CONECT      C25    3 C24  C26  C27 
+CONECT      C26    3 C21  C25  H26 
+CONECT      C27    4 C25  F28  F29  F30 
+CONECT      F28    1 C27 
+CONECT      F29    1 C27 
+CONECT      F30    1 C27 
+CONECT      C31    3 C19  CL32 C33 
+CONECT      CL32   1 C31 
+CONECT      C33    3 C16  C31  H33 
+CONECT      C34    3 N7   C10  C14 
+CONECT      HO1    1 O1  
+CONECT      H2     1 C2  
+CONECT      H2A    1 C2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      H5     1 C5  
+CONECT      H5A    1 C5  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H8     1 C8  
+CONECT      H9     1 C9  
+CONECT      H12    1 C12 
+CONECT      HN15   1 N15 
+CONECT      H17    1 C17 
+CONECT      H22    1 C22 
+CONECT      H23    1 C23 
+CONECT      H24    1 C24 
+CONECT      H26    1 C26 
+CONECT      H33    1 C33 
+END   
+HET    03Q             53
+HETNAM     03Q 2-{2-[4-({5-chloro-6-[3-(trifluoromethyl)phenoxy]pyridi
+HETNAM   2 03Q n-3-yl}amino)-5H-pyrrolo[3,2-d]pyrimidin-5-yl]ethoxy}et
+HETNAM   3 03Q hanol
+FORMUL      03Q    C22 H19 Cl1 F3 N5 O3

@@ -1,0 +1,59 @@
+RESIDUE   0BW     53
+CONECT      CAO    4 CAM  NBB  H1   H2  
+CONECT      CAM    4 CAO  NBA  H3   H4  
+CONECT      NBA    3 CAM  CAC  CAN 
+CONECT      CAC    4 NBA  H6   H7   H8  
+CONECT      CAN    4 NBA  CAP  H9   H10 
+CONECT      CAP    4 CAN  NBB  H11  H12 
+CONECT      NBB    3 CAO  CAP  CAZ 
+CONECT      CAZ    3 NBB  CAJ  CAY 
+CONECT      CAJ    3 CAZ  CAI  H13 
+CONECT      CAI    3 CAJ  CAX  H14 
+CONECT      CAX    3 CAI  CAU  CAL 
+CONECT      CAU    3 CAX  OAE  OAR 
+CONECT      OAE    1 CAU 
+CONECT      OAR    2 CAU  CAA 
+CONECT      CAA    4 OAR  H15  H16  H17 
+CONECT      CAL    3 CAX  CAY  H18 
+CONECT      CAY    3 CAZ  CAL  NAQ 
+CONECT      NAQ    3 CAY  CAT  H19 
+CONECT      CAT    3 NAQ  OAD  CAW 
+CONECT      OAD    1 CAT 
+CONECT      CAW    3 CAT  CAK  CAH 
+CONECT      CAK    3 CAW  CAV  H20 
+CONECT      CAH    3 CAW  CAF  H21 
+CONECT      CAF    3 CAH  CAG  H22 
+CONECT      CAG    3 CAF  CAV  H23 
+CONECT      CAV    3 CAK  CAG  OAS 
+CONECT      OAS    2 CAV  CAB 
+CONECT      CAB    4 OAS  H24  H25  H26 
+CONECT      H1     1 CAO 
+CONECT      H2     1 CAO 
+CONECT      H3     1 CAM 
+CONECT      H4     1 CAM 
+CONECT      H6     1 CAC 
+CONECT      H7     1 CAC 
+CONECT      H8     1 CAC 
+CONECT      H9     1 CAN 
+CONECT      H10    1 CAN 
+CONECT      H11    1 CAP 
+CONECT      H12    1 CAP 
+CONECT      H13    1 CAJ 
+CONECT      H14    1 CAI 
+CONECT      H15    1 CAA 
+CONECT      H16    1 CAA 
+CONECT      H17    1 CAA 
+CONECT      H18    1 CAL 
+CONECT      H19    1 NAQ 
+CONECT      H20    1 CAK 
+CONECT      H21    1 CAH 
+CONECT      H22    1 CAF 
+CONECT      H23    1 CAG 
+CONECT      H24    1 CAB 
+CONECT      H25    1 CAB 
+CONECT      H26    1 CAB 
+END   
+HET    0BW             53
+HETNAM     0BW methyl 3-[(3-methoxybenzoyl)amino]-4-(4-methylpiperazin
+HETNAM   2 0BW -1-yl)benzoate
+FORMUL      0BW    C21 H25 N3 O4

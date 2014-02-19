@@ -1,0 +1,30 @@
+RESIDUE   011     25
+CONECT      C5     4 C4   C6   HAA  HAAA
+CONECT      C4     4 C5   C3   HAB  HABA
+CONECT      O      1 C1  
+CONECT      C6     4 C5   C7   HAU  HAUA
+CONECT      C3     4 C4   C2   HAV  HAVA
+CONECT      C7     4 C6   N    HAW  HAWA
+CONECT      C2     4 C3   C1   HAX  HAXA
+CONECT      N      3 C7   HNBA H2  
+CONECT      C1     3 O    C2   OXT 
+CONECT      HAA    1 C5  
+CONECT      HAAA   1 C5  
+CONECT      HAB    1 C4  
+CONECT      HABA   1 C4  
+CONECT      HAU    1 C6  
+CONECT      HAUA   1 C6  
+CONECT      HAV    1 C3  
+CONECT      HAVA   1 C3  
+CONECT      HAW    1 C7  
+CONECT      HAWA   1 C7  
+CONECT      HAX    1 C2  
+CONECT      HAXA   1 C2  
+CONECT      HNBA   1 N   
+CONECT      H2     1 N   
+CONECT      OXT    2 C1   HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    011             25
+HETNAM     011 7-aminoheptanoic acid
+FORMUL      011    C7 H15 N1 O2

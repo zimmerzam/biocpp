@@ -1,0 +1,60 @@
+RESIDUE   06X     53
+CONECT      CLAG   1 CAZ 
+CONECT      CAZ    3 CLAG CAJ  CBA 
+CONECT      CAJ    3 CAZ  CAH  H1  
+CONECT      CAH    3 CAJ  CAI  H2  
+CONECT      CAI    3 CAH  CAK  H3  
+CONECT      CAK    3 CAI  CBA  H4  
+CONECT      CBA    3 CAZ  CAK  CBB 
+CONECT      CBB    4 CBA  CAY  CAX  H25 
+CONECT      CAY    3 CBB  CAV  CAW 
+CONECT      CAV    3 CAY  OAF  OAS 
+CONECT      OAF    1 CAV 
+CONECT      OAS    2 CAV  CAL 
+CONECT      CAL    4 OAS  CAA  H5   H6  
+CONECT      CAA    4 CAL  H7   H8   H9  
+CONECT      CAX    3 CBB  CAU  CAT 
+CONECT      CAU    3 CAX  OAE  OAQ 
+CONECT      OAE    1 CAU 
+CONECT      OAQ    2 CAU  CAB 
+CONECT      CAB    4 OAQ  H10  H11  H12 
+CONECT      CAT    3 CAX  CAC  NAP 
+CONECT      CAC    4 CAT  H13  H14  H15 
+CONECT      NAP    3 CAT  CAW  H26 
+CONECT      CAW    3 CAY  NAP  CAO 
+CONECT      CAO    4 CAW  OAR  H16  H17 
+CONECT      OAR    2 CAO  CAN 
+CONECT      CAN    4 OAR  CAM  H18  H19 
+CONECT      CAM    4 CAN  NAD  H20  H21 
+CONECT      NAD    3 CAM  H22  H23 
+CONECT      H1     1 CAJ 
+CONECT      H2     1 CAH 
+CONECT      H3     1 CAI 
+CONECT      H4     1 CAK 
+CONECT      H5     1 CAL 
+CONECT      H6     1 CAL 
+CONECT      H7     1 CAA 
+CONECT      H8     1 CAA 
+CONECT      H9     1 CAA 
+CONECT      H10    1 CAB 
+CONECT      H11    1 CAB 
+CONECT      H12    1 CAB 
+CONECT      H13    1 CAC 
+CONECT      H14    1 CAC 
+CONECT      H15    1 CAC 
+CONECT      H16    1 CAO 
+CONECT      H17    1 CAO 
+CONECT      H18    1 CAN 
+CONECT      H19    1 CAN 
+CONECT      H20    1 CAM 
+CONECT      H21    1 CAM 
+CONECT      H22    1 NAD 
+CONECT      H23    1 NAD 
+CONECT      H25    1 CBB 
+CONECT      H26    1 NAP 
+END   
+HET    06X             53
+HETSYN     06X O3-ethyl O5-methyl 2-(2-azanylethoxymethyl)-4-(2-chloro
+HETSYN   2 06X phenyl)-6-methyl-1,4-dihydropyridine-3,5-dicarboxylate
+HETNAM     06X Amlodipine
+FORMUL      06X    C20 H25 Cl1 N2 O5

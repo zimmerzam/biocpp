@@ -1,0 +1,56 @@
+RESIDUE   01J     50
+CONECT      C10    3 O10  C11  OXT 
+CONECT      O10    1 C10 
+CONECT      C11    4 C10  C12  N13  H11 
+CONECT      C12    4 C11  C21  C31  H12 
+CONECT      N13    3 C11  C14  HN3 
+CONECT      C14    4 N13  O14  N41  H14 
+CONECT      O14    2 C14  HO4 
+CONECT      C21    3 C12  C22  C26 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C23    3 C22  C24  H23 
+CONECT      C24    3 C23  C25  H24 
+CONECT      C25    3 C24  C26  H25 
+CONECT      C26    3 C21  C25  H26 
+CONECT      C31    3 C12  C32  C36 
+CONECT      C32    3 C31  C33  H32 
+CONECT      C33    3 C32  C34  H33 
+CONECT      C34    3 C33  C35  H34 
+CONECT      C35    3 C34  C36  H35 
+CONECT      C36    3 C31  C35  H36 
+CONECT      N41    3 C14  C42  C46 
+CONECT      C42    4 N41  C43  H421 H422
+CONECT      C43    4 C42  O44  H431 H432
+CONECT      O44    2 C43  C45 
+CONECT      C45    4 O44  C46  H451 H452
+CONECT      C46    4 N41  C45  H461 H462
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      HN3    1 N13 
+CONECT      H14    1 C14 
+CONECT      HO4    1 O14 
+CONECT      H22    1 C22 
+CONECT      H23    1 C23 
+CONECT      H24    1 C24 
+CONECT      H25    1 C25 
+CONECT      H26    1 C26 
+CONECT      H32    1 C32 
+CONECT      H33    1 C33 
+CONECT      H34    1 C34 
+CONECT      H35    1 C35 
+CONECT      H36    1 C36 
+CONECT      H421   1 C42 
+CONECT      H422   1 C42 
+CONECT      H431   1 C43 
+CONECT      H432   1 C43 
+CONECT      H451   1 C45 
+CONECT      H452   1 C45 
+CONECT      H461   1 C46 
+CONECT      H462   1 C46 
+CONECT      OXT    2 C10  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    01J             50
+HETNAM     01J N-[(S)-hydroxy(morpholin-4-yl)methyl]-beta-phenyl-D-phe
+HETNAM   2 01J nylalanine
+FORMUL      01J    C20 H24 N2 O4

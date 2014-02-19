@@ -1,0 +1,69 @@
+RESIDUE   0N2     61
+CONECT      O41    1 C41 
+CONECT      C41    3 O41  C51  N31 
+CONECT      C51    3 C41  C5A  C61 
+CONECT      C5A    4 C51  H1   H2   H3  
+CONECT      C61    3 C51  N11  H4  
+CONECT      N31    3 C41  C21  H5  
+CONECT      C21    3 N31  O21  N11 
+CONECT      O21    1 C21 
+CONECT      N11    3 C61  C21  C1X 
+CONECT      C1X    4 N11  O4X  C2X  H6  
+CONECT      O4X    2 C1X  C4X 
+CONECT      C2X    4 C1X  C3X  H7   H8  
+CONECT      C3X    4 C2X  O3X  C4X  H9  
+CONECT      O3X    2 C3X  H10 
+CONECT      C4X    4 O4X  C3X  C5X  H11 
+CONECT      C5X    4 C4X  O5X  H12  H13 
+CONECT      O5X    2 C5X  P   
+CONECT      P      4 O5X  O1P  O2P  OPP 
+CONECT      O1P    2 P    H14 
+CONECT      O2P    1 P   
+CONECT      OPP    2 P    P2  
+CONECT      P2     4 OPP  O3P  O4P  O1  
+CONECT      O3P    1 P2  
+CONECT      O4P    2 P2   H15 
+CONECT      O1     2 P2   C1  
+CONECT      C1     4 O1   C2   O5   H16 
+CONECT      C2     4 C1   C3   H17  H18 
+CONECT      C3     4 C2   N3   C4   H19 
+CONECT      N3     3 C3   H20  H21 
+CONECT      C4     4 C3   O4   C5   H23 
+CONECT      O4     2 C4   H24 
+CONECT      C5     4 C4   O5   C6   H25 
+CONECT      O5     2 C1   C5  
+CONECT      C6     4 C5   H26  H27  H28 
+CONECT      H1     1 C5A 
+CONECT      H2     1 C5A 
+CONECT      H3     1 C5A 
+CONECT      H4     1 C61 
+CONECT      H5     1 N31 
+CONECT      H6     1 C1X 
+CONECT      H7     1 C2X 
+CONECT      H8     1 C2X 
+CONECT      H9     1 C3X 
+CONECT      H10    1 O3X 
+CONECT      H11    1 C4X 
+CONECT      H12    1 C5X 
+CONECT      H13    1 C5X 
+CONECT      H14    1 O1P 
+CONECT      H15    1 O4P 
+CONECT      H16    1 C1  
+CONECT      H17    1 C2  
+CONECT      H18    1 C2  
+CONECT      H19    1 C3  
+CONECT      H20    1 N3  
+CONECT      H21    1 N3  
+CONECT      H23    1 C4  
+CONECT      H24    1 O4  
+CONECT      H25    1 C5  
+CONECT      H26    1 C6  
+CONECT      H27    1 C6  
+CONECT      H28    1 C6  
+END   
+HET    0N2             61
+HETNAM     0N2 (2R,4S,5R,6R)-4-amino-5-hydroxy-6-methyltetrahydro-2H-p
+HETNAM   2 0N2 yran-2-yl [(2R,3S,5R)-3-hydroxy-5-(5-methyl-2,4-dioxo-3
+HETNAM   3 0N2 ,4-dihydropyrimidin-1(2H)-yl)tetrahydrofuran-2-yl]methy
+HETNAM   4 0N2 l dihydrogen diphosphate
+FORMUL      0N2    C16 H27 N3 O13 P2

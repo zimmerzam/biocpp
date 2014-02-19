@@ -1,0 +1,59 @@
+RESIDUE   097     52
+CONECT      N1     3 C4   C5   HN1 
+CONECT      C2     4 C1   H21  H22  H23 
+CONECT      O2     1 C10 
+CONECT      C4     3 N1   C14  O1  
+CONECT      O3     2 N3   HO3 
+CONECT      C5     4 N1   C6   C10  H5  
+CONECT      C6     4 C5   C8   C9   C7  
+CONECT      C8     4 C6   H81  H82  H83 
+CONECT      C9     4 C6   H91  H92  H93 
+CONECT      C10    3 O2   C5   N2  
+CONECT      C11    4 N2   H111 H112 H113
+CONECT      N3     3 O3   C12  HN3 
+CONECT      C12    3 N3   O4   C13 
+CONECT      O4     1 C12 
+CONECT      C13    4 C12  O5   C14  H28 
+CONECT      O5     2 C13  HO5 
+CONECT      C14    4 C4   C13  C15  H29 
+CONECT      C15    4 C14  C1   H151 H152
+CONECT      C1     4 C2   C15  C3   H1  
+CONECT      C3     4 C1   H31  H32  H33 
+CONECT      O1     1 C4  
+CONECT      C7     4 C6   H71  H72  H73 
+CONECT      N2     3 C10  C11  HN2 
+CONECT      HN1    1 N1  
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H23    1 C2  
+CONECT      HO3    1 O3  
+CONECT      H5     1 C5  
+CONECT      H81    1 C8  
+CONECT      H82    1 C8  
+CONECT      H83    1 C8  
+CONECT      H91    1 C9  
+CONECT      H92    1 C9  
+CONECT      H93    1 C9  
+CONECT      H111   1 C11 
+CONECT      H112   1 C11 
+CONECT      H113   1 C11 
+CONECT      HN3    1 N3  
+CONECT      HO5    1 O5  
+CONECT      H151   1 C15 
+CONECT      H152   1 C15 
+CONECT      H1     1 C1  
+CONECT      H31    1 C3  
+CONECT      H32    1 C3  
+CONECT      H33    1 C3  
+CONECT      H71    1 C7  
+CONECT      H72    1 C7  
+CONECT      H73    1 C7  
+CONECT      HN2    1 N2  
+CONECT      H28    1 C13 
+CONECT      H29    1 C14 
+END   
+HET    097             52
+HETSYN     097 MARIMASTAT
+HETNAM     097 (2S,3R)-N~4~-[(1S)-2,2-dimethyl-1-(methylcarbamoyl)prop
+HETNAM   2 097 yl]-N~1~,2-dihydroxy-3-(2-methylpropyl)butanediamide
+FORMUL      097    C15 H29 N3 O5

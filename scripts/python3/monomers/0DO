@@ -1,0 +1,99 @@
+RESIDUE   0DO     92
+CONECT      C1     3 C2   O1   N   
+CONECT      C2     4 C1   O1'  H21  H22 
+CONECT      C1'    3 C2'  C6'  O1' 
+CONECT      C2'    3 C1'  C3'  CM2 
+CONECT      C3'    3 C2'  C4'  H3' 
+CONECT      C4'    3 C3'  C5'  H4' 
+CONECT      C5'    3 C4'  C6'  H5' 
+CONECT      C6'    3 C1'  C5'  CM6 
+CONECT      CM2    4 C2'  HM21 HM22 HM23
+CONECT      CM6    4 C6'  HM61 HM62 HM63
+CONECT      O1     1 C1  
+CONECT      O1'    2 C2   C1' 
+CONECT      N      3 C1   CA   H   
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      4 CA   OXT  CM   HC  
+CONECT      OXT    2 C    HOR 
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CE2    3 CD2  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      CM     4 C    N1   HM2  HM3 
+CONECT      N1     3 CM   C21  C6  
+CONECT      C21    4 N1   C3   C7   H2  
+CONECT      C3     4 C21  C4   H31  H32 
+CONECT      C4     4 C3   C5   S    H42 
+CONECT      C5     4 C4   C6   H51  H52 
+CONECT      C6     4 N1   C5   H61  H62 
+CONECT      C7     3 C21  O    N2  
+CONECT      O      1 C7  
+CONECT      N11    2 C22  C61 
+CONECT      C22    3 N11  C31  H23 
+CONECT      C31    3 C22  C41  H3  
+CONECT      C41    3 C31  C51  S   
+CONECT      C51    3 C41  C61  H5  
+CONECT      C61    3 N11  C51  H6  
+CONECT      S      4 C4   C41  O1S  O2S 
+CONECT      O1S    1 S   
+CONECT      O2S    1 S   
+CONECT      N2     3 C7   C1'1 HN  
+CONECT      C1'1   4 N2   C2'1 C3'1 C4'1
+CONECT      C2'1   4 C1'1 H2'1 H2'2 H2'3
+CONECT      C3'1   4 C1'1 H3'1 H3'2 H3'3
+CONECT      C4'1   4 C1'1 H4'1 H4'2 H4'3
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H3'    1 C3' 
+CONECT      H4'    1 C4' 
+CONECT      H5'    1 C5' 
+CONECT      HM21   1 CM2 
+CONECT      HM22   1 CM2 
+CONECT      HM23   1 CM2 
+CONECT      HM61   1 CM6 
+CONECT      HM62   1 CM6 
+CONECT      HM63   1 CM6 
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HC     1 C   
+CONECT      HOR    1 OXT 
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      HM2    1 CM  
+CONECT      HM3    1 CM  
+CONECT      H2     1 C21 
+CONECT      H31    1 C3  
+CONECT      H32    1 C3  
+CONECT      H42    1 C4  
+CONECT      H51    1 C5  
+CONECT      H52    1 C5  
+CONECT      H61    1 C6  
+CONECT      H62    1 C6  
+CONECT      H23    1 C22 
+CONECT      H3     1 C31 
+CONECT      H5     1 C51 
+CONECT      H6     1 C61 
+CONECT      HN     1 N2  
+CONECT      H2'1   1 C2'1
+CONECT      H2'2   1 C2'1
+CONECT      H2'3   1 C2'1
+CONECT      H3'1   1 C3'1
+CONECT      H3'2   1 C3'1
+CONECT      H3'3   1 C3'1
+CONECT      H4'1   1 C4'1
+CONECT      H4'2   1 C4'1
+CONECT      H4'3   1 C4'1
+END   
+HET    0DO             92
+HETNAM     0DO (2R,4S)-N-tert-butyl-1-[(2S,3S)-3-{[(2,6-dimethylphenox
+HETNAM   2 0DO y)acetyl]amino}-2-hydroxy-4-phenylbutyl]-4-(pyridin-4-y
+HETNAM   3 0DO lsulfonyl)piperidine-2-carboxamide
+FORMUL      0DO    C35 H46 N4 O6 S1

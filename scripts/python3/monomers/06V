@@ -1,0 +1,61 @@
+RESIDUE   06V     55
+CONECT      N1     2 C2   C6  
+CONECT      C2     3 N1   N3   NAH 
+CONECT      N3     2 C2   C4  
+CONECT      C4     3 N3   C5   CAI 
+CONECT      C5     3 C4   C6   CAK 
+CONECT      C6     3 N1   C5   NAJ 
+CONECT      CAA    4 NAU  CAY  HAA  HAAA
+CONECT      NAH    3 C2   HNAH HNAA
+CONECT      CAI    4 C4   CAZ  HAI  HAIA
+CONECT      NAJ    3 C6   HNAJ HNAB
+CONECT      CAK    2 C5   CAL 
+CONECT      CAL    2 CAK  CAM 
+CONECT      CAM    4 CAL  CAN  CAO  HAM 
+CONECT      CAN    4 CAM  HAN  HANA HANB
+CONECT      CAO    3 CAM  CAP  CAT 
+CONECT      CAP    3 CAO  CAQ  HAP 
+CONECT      CAQ    3 CAP  CAR  OBA 
+CONECT      CAR    3 CAQ  CAS  HAR 
+CONECT      CAS    3 CAR  CAT  NAU 
+CONECT      CAT    3 CAO  CAS  HAT 
+CONECT      NAU    3 CAA  CAS  CAV 
+CONECT      CAV    4 NAU  CAW  HAV  HAVA
+CONECT      CAW    4 CAV  OAX  HAW  HAWA
+CONECT      OAX    2 CAW  CAY 
+CONECT      CAY    4 CAA  OAX  HAY  HAYA
+CONECT      CAZ    4 CAI  HAZ  HAZA HAZB
+CONECT      OBA    2 CAQ  CBB 
+CONECT      CBB    4 OBA  HBB  HBBA HBBB
+CONECT      HAA    1 CAA 
+CONECT      HAAA   1 CAA 
+CONECT      HNAH   1 NAH 
+CONECT      HNAA   1 NAH 
+CONECT      HAI    1 CAI 
+CONECT      HAIA   1 CAI 
+CONECT      HNAJ   1 NAJ 
+CONECT      HNAB   1 NAJ 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HANA   1 CAN 
+CONECT      HANB   1 CAN 
+CONECT      HAP    1 CAP 
+CONECT      HAR    1 CAR 
+CONECT      HAT    1 CAT 
+CONECT      HAV    1 CAV 
+CONECT      HAVA   1 CAV 
+CONECT      HAW    1 CAW 
+CONECT      HAWA   1 CAW 
+CONECT      HAY    1 CAY 
+CONECT      HAYA   1 CAY 
+CONECT      HAZ    1 CAZ 
+CONECT      HAZA   1 CAZ 
+CONECT      HAZB   1 CAZ 
+CONECT      HBB    1 CBB 
+CONECT      HBBA   1 CBB 
+CONECT      HBBB   1 CBB 
+END   
+HET    06V             55
+HETNAM     06V 6-ethyl-5-{(3R)-3-[3-methoxy-5-(morpholin-4-yl)phenyl]b
+HETNAM   2 06V ut-1-yn-1-yl}pyrimidine-2,4-diamine
+FORMUL      06V    C21 H27 N5 O2

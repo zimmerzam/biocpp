@@ -1,0 +1,78 @@
+RESIDUE   00N     70
+CONECT      C1     4 C2   N2   C8   H1  
+CONECT      N1     3 N2   C3   C4  
+CONECT      O1     1 C7  
+CONECT      C2     4 C1   C3   H2   H2A 
+CONECT      N2     3 C1   N1   C7  
+CONECT      O2     1 C8  
+CONECT      C3     4 N1   C2   H3   H3A 
+CONECT      N3     3 C6   HN3  HN3A
+CONECT      C4     4 N1   C5   H4   H4A 
+CONECT      C5     4 C4   C6   H5   H5A 
+CONECT      C6     4 N3   C5   C7   C9  
+CONECT      C7     3 O1   N2   C6  
+CONECT      C8     3 C1   O2   N   
+CONECT      C9     4 C6   C10  H9   H9A 
+CONECT      C10    3 C9   C11  C15 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C15    3 C10  C14  H15 
+CONECT      C      4 O    CA   C1X  H33 
+CONECT      N      3 C8   CA   HN  
+CONECT      O      2 C    H34 
+CONECT      CA     4 C    N    CB   HA  
+CONECT      CB     4 CA   CG   HB   HBA 
+CONECT      CD     4 NE   CG   HD   HDA 
+CONECT      NE     3 CD   CZ   HNE 
+CONECT      CG     4 CB   CD   HG   HGA 
+CONECT      CZ     3 NE   NH1  NH2 
+CONECT      C1X    3 C    N1X  S1X 
+CONECT      N1X    2 C1X  C2X 
+CONECT      S1X    2 C1X  C3X 
+CONECT      C2X    3 N1X  C3X  H2X 
+CONECT      C3X    3 S1X  C2X  H3X 
+CONECT      NH1    2 CZ   HNH1
+CONECT      NH2    3 CZ   HNH2 HNHA
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      H2A    1 C2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      HN3    1 N3  
+CONECT      HN3A   1 N3  
+CONECT      H4     1 C4  
+CONECT      H4A    1 C4  
+CONECT      H5     1 C5  
+CONECT      H5A    1 C5  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H14    1 C14 
+CONECT      H15    1 C15 
+CONECT      HN     1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HD     1 CD  
+CONECT      HDA    1 CD  
+CONECT      HNE    1 NE  
+CONECT      HG     1 CG  
+CONECT      HGA    1 CG  
+CONECT      H2X    1 C2X 
+CONECT      H3X    1 C3X 
+CONECT      HNH1   1 NH1 
+CONECT      HNH2   1 NH2 
+CONECT      HNHA   1 NH2 
+CONECT      H33    1 C   
+CONECT      H34    1 O   
+END   
+HET    00N             70
+HETSYN     00N MOL-127
+HETNAM     00N (1S,7S)-7-amino-7-benzyl-N-{(1S)-4-carbamimidamido-1-[(
+HETNAM   2 00N S)-hydroxy(1,3-thiazol-2-yl)methyl]butyl}-8-oxohexahydr
+HETNAM   3 00N o-1H-pyrazolo[1,2-a]pyridazine-1-carboxamide
+FORMUL      00N    C24 H34 N8 O3 S1

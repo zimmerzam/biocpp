@@ -1,0 +1,70 @@
+RESIDUE   0HL     63
+CONECT      CAN    3 CAS  CAG  H1  
+CONECT      CAS    3 CAN  CAY  CAX 
+CONECT      CAY    3 CAS  CBC  H2  
+CONECT      CBC    3 CAY  OBG  CBF 
+CONECT      OBG    2 CBC  CBI 
+CONECT      CBI    4 OBG  H3   H4   H5  
+CONECT      CBF    3 CBC  CBB  H6  
+CONECT      CBB    3 CBF  CAX  H7  
+CONECT      CAX    3 CAS  CBB  CAT 
+CONECT      CAT    3 CAX  CAO  H8  
+CONECT      CAO    3 CAT  CAG  H9  
+CONECT      CAG    3 CAN  CAO  SAC 
+CONECT      SAC    4 CAG  OAH  OAI  N   
+CONECT      OAH    1 SAC 
+CONECT      OAI    1 SAC 
+CONECT      N      3 SAC  CAD  CA  
+CONECT      CAD    4 N    CAJ  H10  H11 
+CONECT      CAJ    3 CAD  CAP  CAQ 
+CONECT      CAP    3 CAJ  CAU  H12 
+CONECT      CAU    3 CAP  SAV  H13 
+CONECT      SAV    2 CAU  CAQ 
+CONECT      CAQ    3 CAJ  SAV  H14 
+CONECT      CA     4 N    C    CB   H15 
+CONECT      C      3 CA   O    NAK 
+CONECT      O      1 C   
+CONECT      CB     4 CA   CAM  H16  H17 
+CONECT      CAM    4 CB   NAK  H18  H19 
+CONECT      NAK    3 C    CAM  CAR 
+CONECT      CAR    4 NAK  CAW  H20  H21 
+CONECT      CAW    3 CAR  CAZ  CBA 
+CONECT      CAZ    3 CAW  CBD  H22 
+CONECT      CBA    3 CAW  SBE  H23 
+CONECT      SBE    2 CBA  CBD 
+CONECT      CBD    3 CAZ  SBE  CBH 
+CONECT      CBH    3 CBD  NBK  NBJ 
+CONECT      NBK    2 CBH  H24 
+CONECT      NBJ    3 CBH  H25  H26 
+CONECT      H1     1 CAN 
+CONECT      H2     1 CAY 
+CONECT      H3     1 CBI 
+CONECT      H4     1 CBI 
+CONECT      H5     1 CBI 
+CONECT      H6     1 CBF 
+CONECT      H7     1 CBB 
+CONECT      H8     1 CAT 
+CONECT      H9     1 CAO 
+CONECT      H10    1 CAD 
+CONECT      H11    1 CAD 
+CONECT      H12    1 CAP 
+CONECT      H13    1 CAU 
+CONECT      H14    1 CAQ 
+CONECT      H15    1 CA  
+CONECT      H16    1 CB  
+CONECT      H17    1 CB  
+CONECT      H18    1 CAM 
+CONECT      H19    1 CAM 
+CONECT      H20    1 CAR 
+CONECT      H21    1 CAR 
+CONECT      H22    1 CAZ 
+CONECT      H23    1 CBA 
+CONECT      H24    1 NBK 
+CONECT      H25    1 NBJ 
+CONECT      H26    1 NBJ 
+END   
+HET    0HL             63
+HETNAM     0HL 4-{[(3R)-3-{[(7-methoxynaphthalen-2-yl)sulfonyl](thioph
+HETNAM   2 0HL en-3-ylmethyl)amino}-2-oxopyrrolidin-1-yl]methyl}thioph
+HETNAM   3 0HL ene-2-carboximidamide
+FORMUL      0HL    C26 H26 N4 O4 S3

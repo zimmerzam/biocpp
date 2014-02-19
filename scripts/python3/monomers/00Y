@@ -1,0 +1,39 @@
+RESIDUE   00Y     33
+CONECT      C      4 O    CA   C1X  H33 
+CONECT      N      3 CA   HN   H2  
+CONECT      O      2 C    H34 
+CONECT      CA     4 C    N    CB   HA  
+CONECT      CB     4 CA   CG   HB   HBA 
+CONECT      CD     4 NE   CG   HD   HDA 
+CONECT      NE     3 CD   CZ   HNE 
+CONECT      CG     4 CB   CD   HG   HGA 
+CONECT      CZ     3 NE   NH1  NH2 
+CONECT      C1X    3 C    N1X  S1X 
+CONECT      N1X    2 C1X  C2X 
+CONECT      S1X    2 C1X  C3X 
+CONECT      C2X    3 N1X  C3X  H2X 
+CONECT      C3X    3 S1X  C2X  H3X 
+CONECT      NH1    2 CZ   HNH1
+CONECT      NH2    3 CZ   HNH2 HNHA
+CONECT      HN     1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HD     1 CD  
+CONECT      HDA    1 CD  
+CONECT      HNE    1 NE  
+CONECT      HG     1 CG  
+CONECT      HGA    1 CG  
+CONECT      H2X    1 C2X 
+CONECT      H3X    1 C3X 
+CONECT      HNH1   1 NH1 
+CONECT      HNH2   1 NH2 
+CONECT      HNHA   1 NH2 
+CONECT      H33    1 C   
+CONECT      H34    1 O   
+CONECT      H2     1 N   
+END   
+HET    00Y             33
+HETNAM     00Y 1-[(4S,5S)-4-amino-5-hydroxy-5-(1,3-thiazol-2-yl)pentyl
+HETNAM   2 00Y ]guanidine
+FORMUL      00Y    C9 H17 N5 O1 S1

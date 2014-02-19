@@ -1,0 +1,29 @@
+RESIDUE   0OB     24
+CONECT      CAU    3 OAC  CAM  O1  
+CONECT      OAC    1 CAU 
+CONECT      CAM    4 CAU  CAN  H2   H3  
+CONECT      CAN    4 CAM  CAW  H4   H5  
+CONECT      CAW    3 CAN  CAK  SAS 
+CONECT      CAK    3 CAW  CAX  H6  
+CONECT      SAS    2 CAW  CAY 
+CONECT      CAX    3 CAK  CAY  CAI 
+CONECT      CAY    3 SAS  CAX  CAJ 
+CONECT      CAJ    3 CAY  CAH  H7  
+CONECT      CAH    3 CAJ  CAG  H8  
+CONECT      CAG    3 CAH  CAI  H9  
+CONECT      CAI    3 CAX  CAG  H10 
+CONECT      H2     1 CAM 
+CONECT      H3     1 CAM 
+CONECT      H4     1 CAN 
+CONECT      H5     1 CAN 
+CONECT      H6     1 CAK 
+CONECT      H7     1 CAJ 
+CONECT      H8     1 CAH 
+CONECT      H9     1 CAG 
+CONECT      H10    1 CAI 
+CONECT      O1     2 CAU  H1  
+CONECT      H1     1 O1  
+END   
+HET    0OB             24
+HETNAM     0OB 3-(1-benzothiophen-2-yl)propanoic acid
+FORMUL      0OB    C11 H10 O2 S1

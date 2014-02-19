@@ -1,0 +1,52 @@
+RESIDUE   0NV     46
+CONECT      C1     4 C2   C6   H1   H2  
+CONECT      C2     4 C1   N3   H3   H4  
+CONECT      N3     3 C2   C4   C19 
+CONECT      C4     4 N3   C5   H6   H7  
+CONECT      C5     4 C4   C6   H8   H9  
+CONECT      C6     4 C1   C5   N7   H10 
+CONECT      N7     3 C6   C8   C18 
+CONECT      C8     3 N7   N9   H11 
+CONECT      N9     2 C8   C10 
+CONECT      C10    3 N9   C11  C18 
+CONECT      C11    3 C10  N12  H12 
+CONECT      N12    2 C11  C13 
+CONECT      C13    3 N12  N14  C17 
+CONECT      N14    3 C13  C15  H5  
+CONECT      C15    3 N14  C16  H13 
+CONECT      C16    3 C15  C17  H14 
+CONECT      C17    3 C13  C16  C18 
+CONECT      C18    3 N7   C10  C17 
+CONECT      C19    4 N3   C20  H16  H17 
+CONECT      C20    3 C19  C21  C25 
+CONECT      C21    3 C20  C22  H18 
+CONECT      C22    3 C21  C23  H19 
+CONECT      C23    3 C22  C24  H20 
+CONECT      C24    3 C23  C25  H21 
+CONECT      C25    3 C20  C24  H22 
+CONECT      H1     1 C1  
+CONECT      H2     1 C1  
+CONECT      H3     1 C2  
+CONECT      H4     1 C2  
+CONECT      H6     1 C4  
+CONECT      H7     1 C4  
+CONECT      H8     1 C5  
+CONECT      H9     1 C5  
+CONECT      H10    1 C6  
+CONECT      H11    1 C8  
+CONECT      H12    1 C11 
+CONECT      H13    1 C15 
+CONECT      H14    1 C16 
+CONECT      H16    1 C19 
+CONECT      H17    1 C19 
+CONECT      H18    1 C21 
+CONECT      H19    1 C22 
+CONECT      H20    1 C23 
+CONECT      H21    1 C24 
+CONECT      H22    1 C25 
+CONECT      H5     1 N14 
+END   
+HET    0NV             46
+HETNAM     0NV 1-(1-benzylpiperidin-4-yl)-1,6-dihydroimidazo[4,5-d]pyr
+HETNAM   2 0NV rolo[2,3-b]pyridine
+FORMUL      0NV    C20 H21 N5

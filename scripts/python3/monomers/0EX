@@ -1,0 +1,67 @@
+RESIDUE   0EX     61
+CONECT      N1     3 C3   C17  H1  
+CONECT      C3     3 N1   C2   C16 
+CONECT      C2     3 C3   C4   H2  
+CONECT      C4     3 C2   C5   C19 
+CONECT      C5     3 C4   C6   N5  
+CONECT      C6     3 C5   C7   C16 
+CONECT      C7     4 C6   C8   H3   H4  
+CONECT      C8     4 C7   N2   H5   H6  
+CONECT      N2     3 C8   C9   H7  
+CONECT      C9     4 N2   C10  H9   H10 
+CONECT      C10    3 C9   C11  C15 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C15    3 C10  C14  H15 
+CONECT      C16    3 C3   C6   N3  
+CONECT      N3     2 C16  C17 
+CONECT      C17    3 N1   N3   N4  
+CONECT      N4     3 C17  C1   H17 
+CONECT      C1     4 N4   H18  H19  C20 
+CONECT      N5     2 C5   C18 
+CONECT      C18    3 N5   N6   N7  
+CONECT      N6     3 C18  H21  H22 
+CONECT      N7     3 C18  C19  H23 
+CONECT      C19    3 C4   N7   O1  
+CONECT      O1     1 C19 
+CONECT      H1     1 N1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C7  
+CONECT      H4     1 C7  
+CONECT      H5     1 C8  
+CONECT      H6     1 C8  
+CONECT      H7     1 N2  
+CONECT      H9     1 C9  
+CONECT      H10    1 C9  
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H14    1 C14 
+CONECT      H15    1 C15 
+CONECT      H17    1 N4  
+CONECT      H18    1 C1  
+CONECT      H19    1 C1  
+CONECT      H21    1 N6  
+CONECT      H22    1 N6  
+CONECT      H23    1 N7  
+CONECT      C20    4 C1   C21  H8   H16 
+CONECT      C21    3 C20  C22  C26 
+CONECT      C22    3 C21  C23  H20 
+CONECT      C23    3 C22  C24  H24 
+CONECT      C24    3 C23  C25  H25 
+CONECT      C25    3 C24  C26  H26 
+CONECT      C26    3 C21  C25  H27 
+CONECT      H8     1 C20 
+CONECT      H16    1 C20 
+CONECT      H20    1 C22 
+CONECT      H24    1 C23 
+CONECT      H25    1 C24 
+CONECT      H26    1 C25 
+CONECT      H27    1 C26 
+END   
+HET    0EX             61
+HETNAM     0EX 6-amino-4-[2-(benzylamino)ethyl]-2-[(2-phenylethyl)amin
+HETNAM   2 0EX o]-1,7-dihydro-8H-imidazo[4,5-g]quinazolin-8-one
+FORMUL      0EX    C26 H27 N7 O1

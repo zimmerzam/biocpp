@@ -1,0 +1,24 @@
+RESIDUE   0AH     19
+CONECT      N      3 CA   HN1  HN2 
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      CB     4 CA   O2   HBC1 HBC2
+CONECT      C1     3 O1   O2   C2  
+CONECT      O1     1 C1  
+CONECT      O2     2 CB   C1  
+CONECT      C2     4 C1   BR2  H2C1 H2C2
+CONECT      BR2    1 C2  
+CONECT      OXT    2 C    HXT 
+CONECT      HN1    1 N   
+CONECT      HN2    1 N   
+CONECT      HA     1 CA  
+CONECT      HBC1   1 CB  
+CONECT      HBC2   1 CB  
+CONECT      HXT    1 OXT 
+CONECT      H2C1   1 C2  
+CONECT      H2C2   1 C2  
+END   
+HET    0AH             19
+HETNAM     0AH O-(bromoacetyl)-L-serine
+FORMUL      0AH    C5 H8 Br1 N1 O4

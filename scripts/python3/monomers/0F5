@@ -1,0 +1,57 @@
+RESIDUE   0F5     51
+CONECT      C10    3 C12  C08  H10 
+CONECT      C13    4 C14  C12  H13  H13A
+CONECT      C15    3 O19  N16  C14 
+CONECT      C17    3 N16  O20  S18 
+CONECT      C21    4 C22  C26  N28  H21 
+CONECT      C22    4 C21  C23  H22  H22A
+CONECT      C24    4 C23  N27  C25  H24 
+CONECT      C26    4 C21  C25  H26  H26A
+CONECT      O19    1 C15 
+CONECT      N16    3 C15  C17  HN16
+CONECT      O20    1 C17 
+CONECT      S18    3 C17  C14  HS18
+CONECT      C14    3 C13  C15  S18 
+CONECT      C12    3 C10  C13  C11 
+CONECT      C11    3 C12  C07  H11 
+CONECT      C08    3 C10  C09  H08 
+CONECT      C09    3 C08  C07  H09 
+CONECT      C07    3 C11  C09  C03 
+CONECT      C03    3 C07  N02  C01 
+CONECT      N02    2 C03  C04 
+CONECT      C01    3 C03  N05  H01 
+CONECT      N05    2 C01  C06 
+CONECT      C06    3 N05  C04  H06 
+CONECT      C04    3 N02  C06  N28 
+CONECT      N28    3 C21  C04  HN28
+CONECT      C23    4 C22  C24  H23  H23A
+CONECT      N27    3 C24  HN27 HN2A
+CONECT      C25    4 C24  C26  H25  H25A
+CONECT      H10    1 C10 
+CONECT      H13    1 C13 
+CONECT      H13A   1 C13 
+CONECT      H21    1 C21 
+CONECT      H22    1 C22 
+CONECT      H22A   1 C22 
+CONECT      H24    1 C24 
+CONECT      H26    1 C26 
+CONECT      H26A   1 C26 
+CONECT      HN16   1 N16 
+CONECT      H11    1 C11 
+CONECT      H08    1 C08 
+CONECT      H09    1 C09 
+CONECT      H01    1 C01 
+CONECT      H06    1 C06 
+CONECT      HN28   1 N28 
+CONECT      H23    1 C23 
+CONECT      H23A   1 C23 
+CONECT      HN27   1 N27 
+CONECT      HN2A   1 N27 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      HS18   1 S18 
+END   
+HET    0F5             51
+HETNAM     0F5 5-(3-{6-[(trans-4-aminocyclohexyl)amino]pyrazin-2-yl}be
+HETNAM   2 0F5 nzyl)-2H-1lambda~4~,3-thiazole-2,4(3H)-dione
+FORMUL      0F5    C20 H23 N5 O2 S1

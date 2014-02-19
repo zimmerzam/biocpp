@@ -1,0 +1,36 @@
+RESIDUE   00G     31
+CONECT      C17    3 C16  N13  H17 
+CONECT      C16    3 C17  C15  H16 
+CONECT      C15    3 C16  C14  H15 
+CONECT      C14    3 C15  N13  H14 
+CONECT      N13    3 C17  C14  C12 
+CONECT      C12    4 N13  C11  H12  H12A
+CONECT      C11    4 C12  O10  H11  H11A
+CONECT      O10    2 C11  C3  
+CONECT      C3     3 O10  C2   C4  
+CONECT      C2     3 C3   C1   H2  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   C9   C6  
+CONECT      C9     3 C5   C8   H9  
+CONECT      C8     3 C9   N7   H8  
+CONECT      N7     3 C8   C6   HN7 
+CONECT      C6     3 C5   N7   C1  
+CONECT      C1     3 C2   C6   H1  
+CONECT      H17    1 C17 
+CONECT      H16    1 C16 
+CONECT      H15    1 C15 
+CONECT      H14    1 C14 
+CONECT      H12    1 C12 
+CONECT      H12A   1 C12 
+CONECT      H11    1 C11 
+CONECT      H11A   1 C11 
+CONECT      H2     1 C2  
+CONECT      H4     1 C4  
+CONECT      H9     1 C9  
+CONECT      H8     1 C8  
+CONECT      H1     1 C1  
+CONECT      HN7    1 N7  
+END   
+HET    00G             31
+HETNAM     00G 5-[2-(1H-pyrrol-1-yl)ethoxy]-1H-indole
+FORMUL      00G    C14 H14 N2 O1

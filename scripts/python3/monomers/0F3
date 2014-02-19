@@ -1,0 +1,29 @@
+RESIDUE   0F3     24
+CONECT      S1     4 O1   O2   N1   C3  
+CONECT      O1     1 S1  
+CONECT      O2     1 S1  
+CONECT      N1     3 S1   H1   H2  
+CONECT      C1     3 C2   C6   H3  
+CONECT      C2     3 C1   C3   H4  
+CONECT      C3     3 S1   C2   C4  
+CONECT      C4     3 C3   C5   H5  
+CONECT      C5     3 C4   C6   H6  
+CONECT      C6     3 C1   C5   N2  
+CONECT      N2     3 C6   S2   H7  
+CONECT      S2     4 N2   O3   O4   N3  
+CONECT      O3     1 S2  
+CONECT      O4     1 S2  
+CONECT      N3     3 S2   H8   H9  
+CONECT      H1     1 N1  
+CONECT      H2     1 N1  
+CONECT      H3     1 C1  
+CONECT      H4     1 C2  
+CONECT      H5     1 C4  
+CONECT      H6     1 C5  
+CONECT      H7     1 N2  
+CONECT      H8     1 N3  
+CONECT      H9     1 N3  
+END   
+HET    0F3             24
+HETNAM     0F3 4-(sulfamoylamino)benzenesulfonamide
+FORMUL      0F3    C6 H9 N3 O4 S2

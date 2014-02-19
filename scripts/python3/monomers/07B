@@ -1,0 +1,38 @@
+RESIDUE   07B     32
+CONECT      CBK    4 CAR  CBJ  OX0  HBK 
+CONECT      CAR    4 CBK  CBO  HAR1 HAR2
+CONECT      CBO    4 CAR  CBA  CBN  HBO 
+CONECT      CBA    3 CBO  OAE  OAT 
+CONECT      OAE    1 CBA 
+CONECT      OAT    2 CBA  CAB 
+CONECT      CAB    4 OAT  HAB1 HAB2 HAB3
+CONECT      CBN    4 CBO  CAZ  CAQ  HBN 
+CONECT      CAZ    3 CBN  OAD  OAS 
+CONECT      OAD    1 CAZ 
+CONECT      OAS    2 CAZ  CAA 
+CONECT      CAA    4 OAS  HAA1 HAA2 HAA3
+CONECT      CAQ    4 CBN  CBJ  HAQ1 HAQ2
+CONECT      CBJ    4 CBK  CAQ  OAV  HBJ 
+CONECT      OAV    2 CBJ  HAV 
+CONECT      OX0    2 CBK  HX0 
+CONECT      HBK    1 CBK 
+CONECT      HAR1   1 CAR 
+CONECT      HAR2   1 CAR 
+CONECT      HBJ    1 CBJ 
+CONECT      HX0    1 OX0 
+CONECT      HBO    1 CBO 
+CONECT      HBN    1 CBN 
+CONECT      HAB1   1 CAB 
+CONECT      HAB2   1 CAB 
+CONECT      HAB3   1 CAB 
+CONECT      HAQ1   1 CAQ 
+CONECT      HAQ2   1 CAQ 
+CONECT      HAA1   1 CAA 
+CONECT      HAA2   1 CAA 
+CONECT      HAA3   1 CAA 
+CONECT      HAV    1 OAV 
+END   
+HET    07B             32
+HETNAM     07B dimethyl (1S,2S,4S,5S)-4,5-dihydroxycyclohexane-1,2-dic
+HETNAM   2 07B arboxylate
+FORMUL      07B    C10 H16 O6

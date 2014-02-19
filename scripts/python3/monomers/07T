@@ -1,0 +1,47 @@
+RESIDUE   07T     41
+CONECT      OAD    1 CAR 
+CONECT      CAR    3 OAD  CAV  NAX 
+CONECT      CAV    3 CAR  NAW  CAS 
+CONECT      NAW    3 CAV  CAA  CAT 
+CONECT      CAA    4 NAW  H1   H2   H3  
+CONECT      CAT    3 NAW  CAK  CAU 
+CONECT      CAK    3 CAT  CAQ  H4  
+CONECT      CAQ    3 CAK  SAY  SAN 
+CONECT      SAY    3 CAQ  CAB  OAE 
+CONECT      CAB    4 SAY  H5   H6   H7  
+CONECT      OAE    1 SAY 
+CONECT      SAN    2 CAQ  CAU 
+CONECT      CAU    3 CAT  SAN  CAS 
+CONECT      CAS    3 CAV  CAU  CAJ 
+CONECT      CAJ    3 CAS  NAM  H9  
+CONECT      NAM    2 CAJ  NAX 
+CONECT      NAX    3 CAR  NAM  CAL 
+CONECT      CAL    4 NAX  CAP  H10  H11 
+CONECT      CAP    3 CAL  CAI  CAH 
+CONECT      CAI    3 CAP  CAO  H12 
+CONECT      CAH    3 CAP  CAF  H13 
+CONECT      CAF    3 CAH  CAG  H14 
+CONECT      CAG    3 CAF  CAO  H15 
+CONECT      CAO    3 CAI  CAG  NAC 
+CONECT      NAC    3 CAO  H16  H17 
+CONECT      H1     1 CAA 
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAK 
+CONECT      H5     1 CAB 
+CONECT      H6     1 CAB 
+CONECT      H7     1 CAB 
+CONECT      H9     1 CAJ 
+CONECT      H10    1 CAL 
+CONECT      H11    1 CAL 
+CONECT      H12    1 CAI 
+CONECT      H13    1 CAH 
+CONECT      H14    1 CAF 
+CONECT      H15    1 CAG 
+CONECT      H16    1 NAC 
+CONECT      H17    1 NAC 
+END   
+HET    07T             41
+HETNAM     07T 6-(3-aminobenzyl)-4-methyl-2-methylsulfinyl-4,6-dihydro
+HETNAM   2 07T -5H-thieno[2',3':4,5]pyrrolo[2,3-d]pyridazin-5-one
+FORMUL      07T    C17 H16 N4 O2 S2

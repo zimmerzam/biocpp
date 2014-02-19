@@ -1,0 +1,35 @@
+RESIDUE   04F     29
+CONECT      N19    3 C20  H15  H2  
+CONECT      C20    4 N19  C21  C24  H16 
+CONECT      C21    4 C20  O22  H17  S1  
+CONECT      O22    2 C21  H19 
+CONECT      C24    4 C20  C25  H20  H21 
+CONECT      C25    4 C24  C26  C29  H22 
+CONECT      C26    4 C25  C27  H23  H24 
+CONECT      C27    4 C26  N28  H25  H26 
+CONECT      N28    3 C27  C29  H27 
+CONECT      C29    3 C25  N28  O30 
+CONECT      O30    1 C29 
+CONECT      H15    1 N19 
+CONECT      H16    1 C20 
+CONECT      H17    1 C21 
+CONECT      H19    1 O22 
+CONECT      H20    1 C24 
+CONECT      H21    1 C24 
+CONECT      H22    1 C25 
+CONECT      H23    1 C26 
+CONECT      H24    1 C26 
+CONECT      H25    1 C27 
+CONECT      H26    1 C27 
+CONECT      H27    1 N28 
+CONECT      S1     4 C21  O1   O2   O3  
+CONECT      O1     1 S1  
+CONECT      O2     1 S1  
+CONECT      O3     2 S1   H31 
+CONECT      H31    1 O3  
+CONECT      H2     1 N19 
+END   
+HET    04F             29
+HETNAM     04F (1S,2S)-2-amino-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]
+HETNAM   2 04F propane-1-sulfonic acid
+FORMUL      04F    C7 H14 N2 O5 S1

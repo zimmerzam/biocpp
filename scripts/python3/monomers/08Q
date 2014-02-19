@@ -1,0 +1,50 @@
+RESIDUE   08Q     44
+CONECT      P      4 OP1  O5'  N4   OP3 
+CONECT      OP1    1 P   
+CONECT      C8'    4 C7'  S    H1   H2  
+CONECT      C7'    4 C8'  N4   H3   H4  
+CONECT      C5'    4 O5'  C4'  H5   H6  
+CONECT      O5'    2 P    C5' 
+CONECT      C4'    4 C5'  O4'  C3'  H7  
+CONECT      O4'    2 C4'  C1' 
+CONECT      C3'    4 C4'  O3'  C2'  H8  
+CONECT      O3'    2 C3'  H9  
+CONECT      C2'    4 C3'  C1'  H10  H11 
+CONECT      C1'    4 O4'  C2'  N1   H12 
+CONECT      N1     3 C1'  C2   C6  
+CONECT      C2     3 N1   O2   N3  
+CONECT      O2     1 C2  
+CONECT      N3     3 C2   C4   H13 
+CONECT      C4     3 N3   O4   C5  
+CONECT      N4     3 P    C7'  H14 
+CONECT      O4     1 C4  
+CONECT      C5     3 C4   C7   C6  
+CONECT      C7     4 C5   H15  H16  H17 
+CONECT      C6     3 N1   C5   H18 
+CONECT      S      2 C8'  H19 
+CONECT      OP3    2 P    HOP3
+CONECT      H1     1 C8' 
+CONECT      H2     1 C8' 
+CONECT      H3     1 C7' 
+CONECT      H4     1 C7' 
+CONECT      H5     1 C5' 
+CONECT      H6     1 C5' 
+CONECT      H7     1 C4' 
+CONECT      H8     1 C3' 
+CONECT      H9     1 O3' 
+CONECT      H10    1 C2' 
+CONECT      H11    1 C2' 
+CONECT      H12    1 C1' 
+CONECT      H13    1 N3  
+CONECT      H14    1 N4  
+CONECT      H15    1 C7  
+CONECT      H16    1 C7  
+CONECT      H17    1 C7  
+CONECT      H18    1 C6  
+CONECT      H19    1 S   
+CONECT      HOP3   1 OP3 
+END   
+HET    08Q             44
+HETNAM     08Q 5'-O-{(S)-hydroxy[(2-sulfanylethyl)amino]phosphoryl}thy
+HETNAM   2 08Q midine
+FORMUL      08Q    C12 H20 N3 O7 P1 S1

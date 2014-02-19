@@ -1,0 +1,67 @@
+RESIDUE   088     61
+CONECT      C1     4 C2   H1   H1A  H1B 
+CONECT      C2     4 C1   C3   C4   H2  
+CONECT      C3     4 C2   H3   H3A  H3B 
+CONECT      C4     3 C2   O5   C8  
+CONECT      O5     2 C4   N6  
+CONECT      N6     2 O5   C7  
+CONECT      C7     3 N6   C8   C30 
+CONECT      C8     3 C4   C7   C9  
+CONECT      C9     4 C8   O10  H9   H9A 
+CONECT      O10    2 C9   C11 
+CONECT      C11    3 O10  C12  C29 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 C13  N15  C28 
+CONECT      N15    3 C14  C16  C26 
+CONECT      C16    4 N15  C17  H16  H16A
+CONECT      C17    3 C16  C18  C22 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C18  C20  H19 
+CONECT      C20    3 C19  C21  H20 
+CONECT      C21    3 C20  C22  C23 
+CONECT      C22    3 C17  C21  H22 
+CONECT      C23    3 C21  O24  O25 
+CONECT      O24    2 C23  HO24
+CONECT      O25    1 C23 
+CONECT      C26    3 N15  C27  H26 
+CONECT      C27    3 C26  C28  H27 
+CONECT      C28    3 C14  C27  C29 
+CONECT      C29    3 C11  C28  H29 
+CONECT      C30    3 C7   C31  C36 
+CONECT      C31    3 C30  CL32 C33 
+CONECT      CL32   1 C31 
+CONECT      C33    3 C31  C34  H33 
+CONECT      C34    3 C33  C35  H34 
+CONECT      C35    3 C34  C36  H35 
+CONECT      C36    3 C30  C35  CL37
+CONECT      CL37   1 C36 
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      H3B    1 C3  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H18    1 C18 
+CONECT      H19    1 C19 
+CONECT      H20    1 C20 
+CONECT      H22    1 C22 
+CONECT      HO24   1 O24 
+CONECT      H26    1 C26 
+CONECT      H27    1 C27 
+CONECT      H29    1 C29 
+CONECT      H33    1 C33 
+CONECT      H34    1 C34 
+CONECT      H35    1 C35 
+END   
+HET    088             61
+HETNAM     088 3-[(5-{[3-(2,6-dichlorophenyl)-5-(1-methylethyl)isoxazo
+HETNAM   2 088 l-4-yl]methoxy}-1H-indol-1-yl)methyl]benzoic acid
+FORMUL      088    C29 H24 Cl2 N2 O4

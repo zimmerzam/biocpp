@@ -1,0 +1,31 @@
+RESIDUE   04P     26
+CONECT      C20    4 C27  H201 H202 OXT 
+CONECT      C27    4 C20  C32  C33  H27 
+CONECT      C32    4 C27  N37  H321 H322
+CONECT      C33    4 C27  C38  H331 H332
+CONECT      N37    3 C32  C40  C41 
+CONECT      C38    4 C33  C40  H381 H382
+CONECT      C40    4 N37  C38  H401 H402
+CONECT      C41    3 N37  N42  N43 
+CONECT      N42    2 C41  H42 
+CONECT      N43    3 C41  H431 H432
+CONECT      H201   1 C20 
+CONECT      H202   1 C20 
+CONECT      H27    1 C27 
+CONECT      H321   1 C32 
+CONECT      H322   1 C32 
+CONECT      H331   1 C33 
+CONECT      H332   1 C33 
+CONECT      H381   1 C38 
+CONECT      H382   1 C38 
+CONECT      H401   1 C40 
+CONECT      H402   1 C40 
+CONECT      H42    1 N42 
+CONECT      H431   1 N43 
+CONECT      H432   1 N43 
+CONECT      OXT    2 C20  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    04P             26
+HETNAM     04P (3R)-3-(hydroxymethyl)piperidine-1-carboximidamide
+FORMUL      04P    C7 H15 N3 O1

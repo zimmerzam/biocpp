@@ -1,0 +1,40 @@
+RESIDUE   035     35
+CONECT      C1     3 C2   O8   O9  
+CONECT      C2     4 C1   C3   O10  H2  
+CONECT      C3     4 C2   C4   H3   H3A 
+CONECT      C4     4 C3   C5   H4   H4A 
+CONECT      C5     4 C4   C6   H5   H5A 
+CONECT      C6     4 C5   C7   H6   H6A 
+CONECT      C7     4 C6   O11  H7   H7A 
+CONECT      O8     2 C1   HO8 
+CONECT      O9     1 C1  
+CONECT      O10    2 C2   P12 
+CONECT      O11    2 C7   P16 
+CONECT      P12    4 O10  O13  O14  O15 
+CONECT      O13    1 P12 
+CONECT      O14    2 P12  HO14
+CONECT      O15    2 P12  HO15
+CONECT      P16    4 O11  O17  O18  O19 
+CONECT      O17    2 P16  HO17
+CONECT      O18    2 P16  HO18
+CONECT      O19    1 P16 
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      H4     1 C4  
+CONECT      H4A    1 C4  
+CONECT      H5     1 C5  
+CONECT      H5A    1 C5  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H7     1 C7  
+CONECT      H7A    1 C7  
+CONECT      HO8    1 O8  
+CONECT      HO14   1 O14 
+CONECT      HO15   1 O15 
+CONECT      HO17   1 O17 
+CONECT      HO18   1 O18 
+END   
+HET    035             35
+HETNAM     035 (2S)-2,7-bis(phosphonooxy)heptanoic acid
+FORMUL      035    C7 H16 O10 P2

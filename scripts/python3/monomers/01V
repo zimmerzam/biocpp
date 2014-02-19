@@ -1,0 +1,22 @@
+RESIDUE   01V     17
+CONECT      N'     3 CA'  HN'  H2  
+CONECT      CA'    4 N'   CB'  HA11 HA12
+CONECT      CB'    3 CA'  CG'  CGB 
+CONECT      CG'    3 CB'  CD'  CL1 
+CONECT      CD'    3 CG'  CE'  HD' 
+CONECT      CE'    3 CD'  CDB  HE' 
+CONECT      CDB    3 CE'  CGB  CL2 
+CONECT      CGB    3 CB'  CDB  HG' 
+CONECT      CL1    1 CG' 
+CONECT      CL2    1 CDB 
+CONECT      HN'    1 N'  
+CONECT      HA11   1 CA' 
+CONECT      HA12   1 CA' 
+CONECT      HD'    1 CD' 
+CONECT      HE'    1 CE' 
+CONECT      HG'    1 CGB 
+CONECT      H2     1 N'  
+END   
+HET    01V             17
+HETNAM     01V 1-(2,5-dichlorophenyl)methanamine
+FORMUL      01V    C7 H7 Cl2 N1

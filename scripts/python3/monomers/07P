@@ -1,0 +1,178 @@
+RESIDUE   07P    171
+CONECT      CCL    4 CCK  H1   H2   H3  
+CONECT      CCK    4 CCL  CCJ  H4   H5  
+CONECT      CCJ    4 CCK  CCI  H6   H7  
+CONECT      CCI    4 CCJ  CCH  H8   H9  
+CONECT      CCH    4 CCI  CCG  H10  H11 
+CONECT      CCG    4 CCH  CCF  H12  H13 
+CONECT      CCF    4 CCG  CCE  H14  H15 
+CONECT      CCE    4 CCF  CCD  H16  H17 
+CONECT      CCD    4 CCE  CCC  H18  H19 
+CONECT      CCC    4 CCD  CCB  H20  H21 
+CONECT      CCB    4 CCC  CCA  CBZ  H22 
+CONECT      CCA    4 CCB  CBZ  H23  H24 
+CONECT      CBZ    4 CCB  CCA  CBY  H25 
+CONECT      CBY    4 CBZ  CAH  H26  H27 
+CONECT      CAH    4 CBY  CAI  H28  H29 
+CONECT      CAI    4 CAH  CAJ  H30  H31 
+CONECT      CAJ    4 CAI  CAF  H32  H33 
+CONECT      CAF    4 CAJ  CAE  H34  H35 
+CONECT      CAE    4 CAF  CAD  H36  H37 
+CONECT      CAD    4 CAE  CAC  H38  H39 
+CONECT      CAC    4 CAD  OAG  CAB  H40 
+CONECT      OAG    2 CAC  H41 
+CONECT      CAB    4 CAC  CAA  NAW  H42 
+CONECT      CAA    4 CAB  O1   H43  H44 
+CONECT      O1     2 CAA  C1  
+CONECT      C1     4 O1   O5   C2   H45 
+CONECT      O5     2 C1   C5  
+CONECT      C5     4 O5   C6   C4   H46 
+CONECT      C6     4 C5   O6   H47  H48 
+CONECT      O6     2 C6   H49 
+CONECT      C4     4 C5   O4   C3   H50 
+CONECT      O4     2 C4   H51 
+CONECT      C3     4 C4   O3   C2   H52 
+CONECT      O3     2 C3   H53 
+CONECT      C2     4 C1   C3   O2   H54 
+CONECT      O2     2 C2   H55 
+CONECT      NAW    3 CAB  CAX  H56 
+CONECT      CAX    3 NAW  OAY  CAZ 
+CONECT      OAY    1 CAX 
+CONECT      CAZ    4 CAX  CBA  H57  H58 
+CONECT      CBA    4 CAZ  CBB  H59  H60 
+CONECT      CBB    4 CBA  CBC  H61  H62 
+CONECT      CBC    4 CBB  CBD  H63  H64 
+CONECT      CBD    4 CBC  CBE  H65  H66 
+CONECT      CBE    4 CBD  CBF  H67  H68 
+CONECT      CBF    4 CBE  CBG  H69  H70 
+CONECT      CBG    4 CBF  CBH  H71  H72 
+CONECT      CBH    4 CBG  CBI  H73  H74 
+CONECT      CBI    4 CBH  CBJ  H75  H76 
+CONECT      CBJ    4 CBI  CBK  H77  H78 
+CONECT      CBK    4 CBJ  CBL  H79  H80 
+CONECT      CBL    4 CBK  CBM  H81  H82 
+CONECT      CBM    4 CBL  CBN  H83  H84 
+CONECT      CBN    4 CBM  CBO  H85  H86 
+CONECT      CBO    4 CBN  CBP  H87  H88 
+CONECT      CBP    4 CBO  CBQ  H89  H90 
+CONECT      CBQ    4 CBP  CBR  H91  H92 
+CONECT      CBR    4 CBQ  CBS  H93  H94 
+CONECT      CBS    4 CBR  CBT  H95  H96 
+CONECT      CBT    4 CBS  CBU  H97  H98 
+CONECT      CBU    4 CBT  CBV  H99  H100
+CONECT      CBV    4 CBU  CBW  H101 H102
+CONECT      CBW    4 CBV  CBX  H103 H104
+CONECT      CBX    4 CBW  H105 H106 H107
+CONECT      H1     1 CCL 
+CONECT      H2     1 CCL 
+CONECT      H3     1 CCL 
+CONECT      H4     1 CCK 
+CONECT      H5     1 CCK 
+CONECT      H6     1 CCJ 
+CONECT      H7     1 CCJ 
+CONECT      H8     1 CCI 
+CONECT      H9     1 CCI 
+CONECT      H10    1 CCH 
+CONECT      H11    1 CCH 
+CONECT      H12    1 CCG 
+CONECT      H13    1 CCG 
+CONECT      H14    1 CCF 
+CONECT      H15    1 CCF 
+CONECT      H16    1 CCE 
+CONECT      H17    1 CCE 
+CONECT      H18    1 CCD 
+CONECT      H19    1 CCD 
+CONECT      H20    1 CCC 
+CONECT      H21    1 CCC 
+CONECT      H22    1 CCB 
+CONECT      H23    1 CCA 
+CONECT      H24    1 CCA 
+CONECT      H25    1 CBZ 
+CONECT      H26    1 CBY 
+CONECT      H27    1 CBY 
+CONECT      H28    1 CAH 
+CONECT      H29    1 CAH 
+CONECT      H30    1 CAI 
+CONECT      H31    1 CAI 
+CONECT      H32    1 CAJ 
+CONECT      H33    1 CAJ 
+CONECT      H34    1 CAF 
+CONECT      H35    1 CAF 
+CONECT      H36    1 CAE 
+CONECT      H37    1 CAE 
+CONECT      H38    1 CAD 
+CONECT      H39    1 CAD 
+CONECT      H40    1 CAC 
+CONECT      H41    1 OAG 
+CONECT      H42    1 CAB 
+CONECT      H43    1 CAA 
+CONECT      H44    1 CAA 
+CONECT      H45    1 C1  
+CONECT      H46    1 C5  
+CONECT      H47    1 C6  
+CONECT      H48    1 C6  
+CONECT      H49    1 O6  
+CONECT      H50    1 C4  
+CONECT      H51    1 O4  
+CONECT      H52    1 C3  
+CONECT      H53    1 O3  
+CONECT      H54    1 C2  
+CONECT      H55    1 O2  
+CONECT      H56    1 NAW 
+CONECT      H57    1 CAZ 
+CONECT      H58    1 CAZ 
+CONECT      H59    1 CBA 
+CONECT      H60    1 CBA 
+CONECT      H61    1 CBB 
+CONECT      H62    1 CBB 
+CONECT      H63    1 CBC 
+CONECT      H64    1 CBC 
+CONECT      H65    1 CBD 
+CONECT      H66    1 CBD 
+CONECT      H67    1 CBE 
+CONECT      H68    1 CBE 
+CONECT      H69    1 CBF 
+CONECT      H70    1 CBF 
+CONECT      H71    1 CBG 
+CONECT      H72    1 CBG 
+CONECT      H73    1 CBH 
+CONECT      H74    1 CBH 
+CONECT      H75    1 CBI 
+CONECT      H76    1 CBI 
+CONECT      H77    1 CBJ 
+CONECT      H78    1 CBJ 
+CONECT      H79    1 CBK 
+CONECT      H80    1 CBK 
+CONECT      H81    1 CBL 
+CONECT      H82    1 CBL 
+CONECT      H83    1 CBM 
+CONECT      H84    1 CBM 
+CONECT      H85    1 CBN 
+CONECT      H86    1 CBN 
+CONECT      H87    1 CBO 
+CONECT      H88    1 CBO 
+CONECT      H89    1 CBP 
+CONECT      H90    1 CBP 
+CONECT      H91    1 CBQ 
+CONECT      H92    1 CBQ 
+CONECT      H93    1 CBR 
+CONECT      H94    1 CBR 
+CONECT      H95    1 CBS 
+CONECT      H96    1 CBS 
+CONECT      H97    1 CBT 
+CONECT      H98    1 CBT 
+CONECT      H99    1 CBU 
+CONECT      H100   1 CBU 
+CONECT      H101   1 CBV 
+CONECT      H102   1 CBV 
+CONECT      H103   1 CBW 
+CONECT      H104   1 CBW 
+CONECT      H105   1 CBX 
+CONECT      H106   1 CBX 
+CONECT      H107   1 CBX 
+END   
+HET    07P            171
+HETSYN     07P SMC124
+HETNAM     07P N-[(2S,3R)-10-[(1R,2R)-2-decylcyclopropyl]-1-(alpha-D-g
+HETNAM   2 07P alactopyranosyloxy)-3-hydroxydecan-2-yl]hexacosanamide
+FORMUL      07P    C55 H107 N1 O8

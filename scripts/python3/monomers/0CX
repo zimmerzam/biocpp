@@ -1,0 +1,71 @@
+RESIDUE   0CX     63
+CONECT      O4     1 C15 
+CONECT      C15    3 O4   C16  C14 
+CONECT      C16    4 C15  C24  C17  H1  
+CONECT      C24    4 C16  H2   H3   H4  
+CONECT      C17    4 C16  O5   C18  H5  
+CONECT      O5     2 C17  H6  
+CONECT      C18    4 C17  C19  H7   H8  
+CONECT      C19    4 C18  C20  H9   H10 
+CONECT      C20    4 C19  C21  H11  H12 
+CONECT      C21    4 C20  C22  O1   H13 
+CONECT      C22    4 C21  C23  H14  H15 
+CONECT      C23    4 C22  H16  H17  H18 
+CONECT      O1     2 C21  C1  
+CONECT      C14    3 C15  C13  C3  
+CONECT      C13    3 C14  C12  H20 
+CONECT      C12    4 C13  C11  C4   H22 
+CONECT      C11    4 C12  C10  C7   H23 
+CONECT      C10    4 C11  C9   H24  H25 
+CONECT      C9     4 C10  C8   O2   H26 
+CONECT      C8     4 C9   C7   H27  H28 
+CONECT      O2     2 C9   H29 
+CONECT      C7     4 C11  C8   C6   H30 
+CONECT      C6     3 C7   C5   H31 
+CONECT      C5     3 C6   C4   H32 
+CONECT      C4     4 C12  C5   C3   H33 
+CONECT      C3     4 C14  C4   C2   H34 
+CONECT      C2     4 C3   C1   H35  H36 
+CONECT      C1     3 O1   C2   O3  
+CONECT      O3     1 C1  
+CONECT      H1     1 C16 
+CONECT      H2     1 C24 
+CONECT      H3     1 C24 
+CONECT      H4     1 C24 
+CONECT      H5     1 C17 
+CONECT      H6     1 O5  
+CONECT      H7     1 C18 
+CONECT      H8     1 C18 
+CONECT      H9     1 C19 
+CONECT      H10    1 C19 
+CONECT      H11    1 C20 
+CONECT      H12    1 C20 
+CONECT      H13    1 C21 
+CONECT      H14    1 C22 
+CONECT      H15    1 C22 
+CONECT      H16    1 C23 
+CONECT      H17    1 C23 
+CONECT      H18    1 C23 
+CONECT      H20    1 C13 
+CONECT      H22    1 C12 
+CONECT      H23    1 C11 
+CONECT      H24    1 C10 
+CONECT      H25    1 C10 
+CONECT      H26    1 C9  
+CONECT      H27    1 C8  
+CONECT      H28    1 C8  
+CONECT      H29    1 O2  
+CONECT      H30    1 C7  
+CONECT      H31    1 C6  
+CONECT      H32    1 C5  
+CONECT      H33    1 C4  
+CONECT      H34    1 C3  
+CONECT      H35    1 C2  
+CONECT      H36    1 C2  
+END   
+HET    0CX             63
+HETNAM     0CX (2R,3aS,5aR,5bS,9S,13S,14R,16aS,16bR)-9-ethyl-2,13-dihy
+HETNAM   2 0CX droxy-14-methyl-2,3,3a,5a,5b,6,9,10,11,12,13,14,16a,16b
+HETNAM   3 0CX -tetradecahydro-1H-as-indaceno[3,2-d]oxacyclododecine-7
+HETNAM   4 0CX ,15-dione
+FORMUL      0CX    C24 H34 O5

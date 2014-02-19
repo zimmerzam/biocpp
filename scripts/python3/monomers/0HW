@@ -1,0 +1,59 @@
+RESIDUE   0HW     52
+CONECT      C11    4 C21  O5   H11  H12 
+CONECT      C21    4 C11  H21  H22  H23 
+CONECT      O5     2 C11  C1  
+CONECT      O1     1 C1  
+CONECT      C1     3 O5   O1   C2  
+CONECT      C2     4 C1   O2   C3   H2  
+CONECT      O2     2 C2   C3  
+CONECT      C3     4 C2   O2   C4   H31 
+CONECT      C4     3 C3   O4   N   
+CONECT      O4     1 C4  
+CONECT      N      3 C4   CA   H   
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG1  CG2  HB  
+CONECT      CG1    4 CB   CD1  HG12 HG13
+CONECT      CG2    4 CB   HG21 HG22 HG23
+CONECT      CD1    4 CG1  HD11 HD12 HD13
+CONECT      N1     3 C    CA1  CD  
+CONECT      CA1    4 N1   C5   CB1  HA1 
+CONECT      C5     3 CA1  O3   OXT 
+CONECT      O3     1 C5  
+CONECT      CB1    4 CA1  CG   HB2  HB3 
+CONECT      CG     4 CB1  CD   HG2  HG3 
+CONECT      CD     4 N1   CG   HD2  HD3 
+CONECT      OXT    2 C5   HXT 
+CONECT      H11    1 C11 
+CONECT      H12    1 C11 
+CONECT      H21    1 C21 
+CONECT      H22    1 C21 
+CONECT      H23    1 C21 
+CONECT      H2     1 C2  
+CONECT      H31    1 C3  
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HG12   1 CG1 
+CONECT      HG13   1 CG1 
+CONECT      HG21   1 CG2 
+CONECT      HG22   1 CG2 
+CONECT      HG23   1 CG2 
+CONECT      HD11   1 CD1 
+CONECT      HD12   1 CD1 
+CONECT      HD13   1 CD1 
+CONECT      HA1    1 CA1 
+CONECT      HB2    1 CB1 
+CONECT      HB3    1 CB1 
+CONECT      HG2    1 CG  
+CONECT      HG3    1 CG  
+CONECT      HD2    1 CD  
+CONECT      HD3    1 CD  
+CONECT      HXT    1 OXT 
+END   
+HET    0HW             52
+HETSYN     0HW CA030
+HETNAM     0HW N-[(3S)-4-ethoxy-3-hydroxy-4-oxobutanoyl]-L-isoleucyl-L
+HETNAM   2 0HW -proline
+FORMUL      0HW    C17 H26 N2 O7

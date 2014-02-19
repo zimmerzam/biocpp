@@ -1,0 +1,35 @@
+RESIDUE   0MG     29
+CONECT      N      3 CA   H    H2  
+CONECT      CA     4 N    C2   C3   H1  
+CONECT      C2     3 CA   O1   C   
+CONECT      O1     1 C2  
+CONECT      C3     4 CA   C4   H3   H4  
+CONECT      C4     4 C3   C5   H5   H6  
+CONECT      C5     4 C4   N2   H7   H8  
+CONECT      N2     3 C5   C6   H9  
+CONECT      C6     3 N2   N3   N4  
+CONECT      N3     3 C6   H10  H11 
+CONECT      N4     3 C6   H12  H13 
+CONECT      C      3 C2   O    OXT 
+CONECT      O      1 C   
+CONECT      OXT    2 C    HXT 
+CONECT      H      1 N   
+CONECT      H1     1 CA  
+CONECT      H3     1 C3  
+CONECT      H4     1 C3  
+CONECT      H5     1 C4  
+CONECT      H6     1 C4  
+CONECT      H7     1 C5  
+CONECT      H8     1 C5  
+CONECT      H9     1 N2  
+CONECT      H10    1 N3  
+CONECT      H11    1 N3  
+CONECT      H12    1 N4  
+CONECT      H13    1 N4  
+CONECT      HXT    1 OXT 
+CONECT      H2     1 N   
+END   
+HET    0MG             29
+HETNAM     0MG amino{[(4S)-4-amino-5-carboxy-5-oxopentyl]amino}methani
+HETNAM   2 0MG minium
+FORMUL      0MG    C7 H15 N4 O3 1+

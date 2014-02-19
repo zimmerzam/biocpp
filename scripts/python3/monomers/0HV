@@ -1,0 +1,40 @@
+RESIDUE   0HV     35
+CONECT      C01    3 C02  C06  H1  
+CONECT      C02    3 C01  C03  H2  
+CONECT      C03    3 C02  C04  H3  
+CONECT      C04    3 C03  C05  N07 
+CONECT      C05    3 C04  C06  H4  
+CONECT      C06    3 C01  C05  C18 
+CONECT      N07    3 C04  C08  H5  
+CONECT      C08    3 N07  C09  C13 
+CONECT      C09    3 C08  C10  H6  
+CONECT      C10    3 C09  C11  H7  
+CONECT      C11    3 C10  C12  N21 
+CONECT      C12    3 C11  C13  C14 
+CONECT      C13    3 C08  C12  C17 
+CONECT      C14    3 C12  C15  H8  
+CONECT      C15    3 C14  C16  H9  
+CONECT      C16    3 C15  C17  H10 
+CONECT      C17    3 C13  C16  H11 
+CONECT      C18    3 C06  O19  O20 
+CONECT      O19    2 C18  H12 
+CONECT      O20    1 C18 
+CONECT      N21    3 C11  O22  O23 
+CONECT      O22    1 N21 
+CONECT      O23    1 N21 
+CONECT      H1     1 C01 
+CONECT      H2     1 C02 
+CONECT      H3     1 C03 
+CONECT      H4     1 C05 
+CONECT      H5     1 N07 
+CONECT      H6     1 C09 
+CONECT      H7     1 C10 
+CONECT      H8     1 C14 
+CONECT      H9     1 C15 
+CONECT      H10    1 C16 
+CONECT      H11    1 C17 
+CONECT      H12    1 O19 
+END   
+HET    0HV             35
+HETNAM     0HV 3-[(4-nitronaphthalen-1-yl)amino]benzoic acid
+FORMUL      0HV    C17 H12 N2 O4

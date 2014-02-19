@@ -1,0 +1,53 @@
+RESIDUE   0LY     47
+CONECT      C2     3 C7   C3   BR  
+CONECT      C7     3 C2   C6   H1  
+CONECT      C6     3 C7   C5   H2  
+CONECT      C5     3 C6   N8   C4  
+CONECT      N8     3 C5   C9   H3  
+CONECT      C9     3 N8   O23  C10 
+CONECT      O23    1 C9  
+CONECT      C10    3 C9   O22  N11 
+CONECT      O22    1 C10 
+CONECT      N11    3 C10  C12  H4  
+CONECT      C12    4 N11  C17  C13  H5  
+CONECT      C17    4 C12  C16  H6   H7  
+CONECT      C16    4 C17  C21  C20  N15 
+CONECT      C21    4 C16  H8   H9   H10 
+CONECT      C20    4 C16  H11  H12  H13 
+CONECT      N15    3 C16  C14  H14 
+CONECT      C14    4 N15  C19  C18  C13 
+CONECT      C19    4 C14  H16  H17  H18 
+CONECT      C18    4 C14  H19  H20  H21 
+CONECT      C13    4 C12  C14  H22  H23 
+CONECT      C4     3 C5   C3   H24 
+CONECT      C3     3 C2   C4   H25 
+CONECT      BR     1 C2  
+CONECT      H1     1 C7  
+CONECT      H2     1 C6  
+CONECT      H3     1 N8  
+CONECT      H4     1 N11 
+CONECT      H5     1 C12 
+CONECT      H6     1 C17 
+CONECT      H7     1 C17 
+CONECT      H8     1 C21 
+CONECT      H9     1 C21 
+CONECT      H10    1 C21 
+CONECT      H11    1 C20 
+CONECT      H12    1 C20 
+CONECT      H13    1 C20 
+CONECT      H14    1 N15 
+CONECT      H16    1 C19 
+CONECT      H17    1 C19 
+CONECT      H18    1 C19 
+CONECT      H19    1 C18 
+CONECT      H20    1 C18 
+CONECT      H21    1 C18 
+CONECT      H22    1 C13 
+CONECT      H23    1 C13 
+CONECT      H24    1 C4  
+CONECT      H25    1 C3  
+END   
+HET    0LY             47
+HETNAM     0LY N-(4-bromophenyl)-N'-(2,2,6,6-tetramethylpiperidin-4-yl
+HETNAM   2 0LY )ethanediamide
+FORMUL      0LY    C17 H24 Br1 N3 O2

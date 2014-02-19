@@ -1,0 +1,72 @@
+RESIDUE   08F     65
+CONECT      S1     4 O1   O2   N6   C27 
+CONECT      O1     1 S1  
+CONECT      O2     1 S1  
+CONECT      S2     4 O3   O4   N3   C16 
+CONECT      O3     1 S2  
+CONECT      O4     1 S2  
+CONECT      C1     3 C7   C12  C15 
+CONECT      C2     3 C3   C4   H2  
+CONECT      C3     3 C2   C8   CL1 
+CONECT      C4     3 C2   C5   C7  
+CONECT      C5     3 C4   N1   C9  
+CONECT      N1     3 C5   C6   C11 
+CONECT      C6     3 N1   C7   C10 
+CONECT      C7     3 C1   C4   C6  
+CONECT      C8     3 C3   C9   H3  
+CONECT      C9     3 C5   C8   H4  
+CONECT      C10    3 C6   O5   N3  
+CONECT      C11    4 N1   C17  H5   H6  
+CONECT      O5     1 C10 
+CONECT      C12    3 C1   N2   O6  
+CONECT      N2     3 C12  C13  H1  
+CONECT      C13    3 N2   C14  H7  
+CONECT      C14    3 C13  C15  H8  
+CONECT      C15    3 C1   C14  H9  
+CONECT      O6     1 C12 
+CONECT      N3     3 S2   C10  H10 
+CONECT      C16    3 S2   C22  C26 
+CONECT      C17    3 C11  C18  C21 
+CONECT      C18    3 C17  C19  H11 
+CONECT      C19    3 C18  N4   H12 
+CONECT      N4     2 C19  C20 
+CONECT      C20    3 N4   C21  N5  
+CONECT      C21    3 C17  C20  H13 
+CONECT      N5     3 C20  H14  H15 
+CONECT      CL1    1 C3  
+CONECT      C22    3 C16  C23  H16 
+CONECT      C23    3 C22  C24  H17 
+CONECT      C24    3 C23  C25  H18 
+CONECT      C25    3 C24  C26  N6  
+CONECT      C26    3 C16  C25  H19 
+CONECT      N6     3 S1   C25  H20 
+CONECT      C27    4 S1   H21  H22  H23 
+CONECT      H2     1 C2  
+CONECT      H3     1 C8  
+CONECT      H4     1 C9  
+CONECT      H5     1 C11 
+CONECT      H6     1 C11 
+CONECT      H7     1 C13 
+CONECT      H8     1 C14 
+CONECT      H9     1 C15 
+CONECT      H10    1 N3  
+CONECT      H11    1 C18 
+CONECT      H12    1 C19 
+CONECT      H13    1 C21 
+CONECT      H14    1 N5  
+CONECT      H15    1 N5  
+CONECT      H16    1 C22 
+CONECT      H17    1 C23 
+CONECT      H18    1 C24 
+CONECT      H19    1 C26 
+CONECT      H20    1 N6  
+CONECT      H21    1 C27 
+CONECT      H22    1 C27 
+CONECT      H23    1 C27 
+CONECT      H1     1 N2  
+END   
+HET    08F             65
+HETNAM     08F 1-[(2-aminopyridin-4-yl)methyl]-5-chloro-N-({3-[(methyl
+HETNAM   2 08F sulfonyl)amino]phenyl}sulfonyl)-3-(2-oxo-1,2-dihydropyr
+HETNAM   3 08F idin-3-yl)-1H-indole-2-carboxamide
+FORMUL      08F    C27 H23 Cl1 N6 O6 S2

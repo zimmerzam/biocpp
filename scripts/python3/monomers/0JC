@@ -1,0 +1,33 @@
+RESIDUE   0JC     28
+CONECT      PT1    4 N1   N2   I1   I2  
+CONECT      N1     4 PT1  C1   H1   H14 
+CONECT      N2     4 PT1  C2   H2   H16 
+CONECT      C1     4 N1   C2   H3   H4  
+CONECT      C2     4 N2   C1   H5   H6  
+CONECT      I1     2 PT1  PT2 
+CONECT      H3     1 C1  
+CONECT      H4     1 C1  
+CONECT      H5     1 C2  
+CONECT      H6     1 C2  
+CONECT      H1     1 N1  
+CONECT      H14    1 N1  
+CONECT      H2     1 N2  
+CONECT      H16    1 N2  
+CONECT      I2     2 PT1  PT2 
+CONECT      PT2    4 I1   I2   N3   N4  
+CONECT      N3     4 PT2  C8   H9   H10 
+CONECT      N4     4 PT2  C9   H11  H12 
+CONECT      C8     4 N3   C9   H51  H7  
+CONECT      C9     4 N4   C8   H61  H8  
+CONECT      H51    1 C8  
+CONECT      H61    1 C9  
+CONECT      H7     1 C8  
+CONECT      H8     1 C9  
+CONECT      H9     1 N3  
+CONECT      H10    1 N3  
+CONECT      H11    1 N4  
+CONECT      H12    1 N4  
+END   
+HET    0JC             28
+HETNAM     0JC Di-mu-iodobis(ethylenediamine)diplatinum(II)
+FORMUL      0JC    C4 H16 I2 N4 Pt2 2+

@@ -1,0 +1,83 @@
+RESIDUE   0NR     76
+CONECT      C1     3 C2   C6   C13 
+CONECT      C2     3 C1   C3   H1  
+CONECT      C3     3 C2   C4   H2  
+CONECT      C4     3 C3   N5   H3  
+CONECT      N5     2 C4   C6  
+CONECT      C6     3 C1   N5   N7  
+CONECT      N7     3 C6   C8   C9  
+CONECT      C8     3 N7   C15  C19 
+CONECT      C9     3 N7   C10  C20 
+CONECT      C10    3 C9   C11  C13 
+CONECT      C11    4 C10  C12  H4   H5  
+CONECT      C12    3 C11  C24  C28 
+CONECT      C13    3 C1   C10  O14 
+CONECT      O14    1 C13 
+CONECT      C15    3 C8   C16  H6  
+CONECT      C16    3 C15  C17  H7  
+CONECT      C17    3 C16  C18  H8  
+CONECT      C18    3 C17  C19  H9  
+CONECT      C19    3 C8   C18  H10 
+CONECT      C20    3 C9   O21  O22 
+CONECT      O21    1 C20 
+CONECT      O22    2 C20  C23 
+CONECT      C23    4 O22  H11  H12  H13 
+CONECT      C24    3 C12  C25  H14 
+CONECT      C25    3 C24  C26  H15 
+CONECT      C26    3 C25  C27  C29 
+CONECT      C27    3 C26  C28  H16 
+CONECT      C28    3 C12  C27  H17 
+CONECT      C29    3 C26  O30  N31 
+CONECT      O30    1 C29 
+CONECT      N31    3 C29  C32  H18 
+CONECT      C32    4 N31  C33  C37  H19 
+CONECT      C33    4 C32  C34  C41  H20 
+CONECT      C34    4 C33  C35  H21  H22 
+CONECT      C35    4 C34  C36  C38  H23 
+CONECT      C36    4 C35  C37  H24  H25 
+CONECT      C37    4 C32  C36  C40  H26 
+CONECT      C38    4 C35  C39  H27  H28 
+CONECT      C39    4 C38  C40  C41  N42 
+CONECT      C40    4 C37  C39  H29  H30 
+CONECT      C41    4 C33  C39  H31  H32 
+CONECT      N42    3 C39  H33  H34 
+CONECT      H1     1 C2  
+CONECT      H2     1 C3  
+CONECT      H3     1 C4  
+CONECT      H4     1 C11 
+CONECT      H5     1 C11 
+CONECT      H6     1 C15 
+CONECT      H7     1 C16 
+CONECT      H8     1 C17 
+CONECT      H9     1 C18 
+CONECT      H10    1 C19 
+CONECT      H11    1 C23 
+CONECT      H12    1 C23 
+CONECT      H13    1 C23 
+CONECT      H14    1 C24 
+CONECT      H15    1 C25 
+CONECT      H16    1 C27 
+CONECT      H17    1 C28 
+CONECT      H18    1 N31 
+CONECT      H19    1 C32 
+CONECT      H20    1 C33 
+CONECT      H21    1 C34 
+CONECT      H22    1 C34 
+CONECT      H23    1 C35 
+CONECT      H24    1 C36 
+CONECT      H25    1 C36 
+CONECT      H26    1 C37 
+CONECT      H27    1 C38 
+CONECT      H28    1 C38 
+CONECT      H29    1 C40 
+CONECT      H30    1 C40 
+CONECT      H31    1 C41 
+CONECT      H32    1 C41 
+CONECT      H33    1 N42 
+CONECT      H34    1 N42 
+END   
+HET    0NR             76
+HETNAM     0NR methyl 3-(4-{[(1R,2S,3S,5S,7s)-5-aminotricyclo[3.3.1.1~
+HETNAM   2 0NR 3,7~]dec-2-yl]carbamoyl}benzyl)-4-oxo-1-phenyl-1,4-dihy
+HETNAM   3 0NR dro-1,8-naphthyridine-2-carboxylate
+FORMUL      0NR    C34 H34 N4 O4

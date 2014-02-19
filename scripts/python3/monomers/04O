@@ -1,0 +1,48 @@
+RESIDUE   04O     42
+CONECT      C11    4 O11  C21  O51  H11 
+CONECT      O11    2 C11  H2  
+CONECT      C16    3 C26  C45  C66 
+CONECT      C21    4 C11  N21  C31  H21 
+CONECT      N21    3 C21  HN21 HN2A
+CONECT      C26    3 C16  C36  H26 
+CONECT      C31    4 C21  O31  C41  H31 
+CONECT      O31    2 C31  HO31
+CONECT      C35    4 C45  CBJ  H35  H35A
+CONECT      C36    3 C26  C46  H36 
+CONECT      C41    4 C31  O41  C51  H41 
+CONECT      O41    2 C41  CBJ 
+CONECT      C45    4 C16  C35  H45  H45A
+CONECT      C46    3 C36  C56  H46 
+CONECT      C51    4 C41  O51  C61  H51 
+CONECT      O51    2 C11  C51 
+CONECT      C56    3 C46  C66  H56 
+CONECT      C61    4 C51  O61  H61  H61A
+CONECT      O61    2 C61  CBJ 
+CONECT      C66    3 C16  C56  H66 
+CONECT      CBJ    4 C35  O41  O61  HBJ 
+CONECT      H11    1 C11 
+CONECT      H21    1 C21 
+CONECT      HN21   1 N21 
+CONECT      HN2A   1 N21 
+CONECT      H26    1 C26 
+CONECT      H31    1 C31 
+CONECT      HO31   1 O31 
+CONECT      H35    1 C35 
+CONECT      H35A   1 C35 
+CONECT      H36    1 C36 
+CONECT      H41    1 C41 
+CONECT      H45    1 C45 
+CONECT      H45A   1 C45 
+CONECT      H46    1 C46 
+CONECT      H51    1 C51 
+CONECT      H56    1 C56 
+CONECT      H61    1 C61 
+CONECT      H61A   1 C61 
+CONECT      H66    1 C66 
+CONECT      HBJ    1 CBJ 
+CONECT      H2     1 O11 
+END   
+HET    04O             42
+HETNAM     04O 2-amino-2-deoxy-4,6-O-[(1R)-3-phenylpropylidene]-alpha-
+HETNAM   2 04O D-glucopyranose
+FORMUL      04O    C15 H21 N1 O5

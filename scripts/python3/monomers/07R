@@ -1,0 +1,43 @@
+RESIDUE   07R     37
+CONECT      O01    1 C02 
+CONECT      C02    3 O01  N03  N12 
+CONECT      N03    3 C02  C04  H1  
+CONECT      C04    4 N03  C05  H2   H3  
+CONECT      C05    3 C04  C06  C11 
+CONECT      C06    3 C05  C07  H4  
+CONECT      C07    3 C06  O08  C09 
+CONECT      O08    2 C07  H5  
+CONECT      C09    3 C07  C10  H6  
+CONECT      C10    3 C09  C11  H7  
+CONECT      C11    3 C05  C10  H8  
+CONECT      N12    3 C02  C13  H9  
+CONECT      C13    3 N12  N14  S23 
+CONECT      N14    2 C13  C15 
+CONECT      C15    3 N14  C16  C22 
+CONECT      C16    3 C15  C17  C21 
+CONECT      C17    3 C16  C18  H10 
+CONECT      C18    3 C17  N19  H11 
+CONECT      N19    2 C18  C20 
+CONECT      C20    3 N19  C21  H12 
+CONECT      C21    3 C16  C20  H13 
+CONECT      C22    3 C15  S23  H14 
+CONECT      S23    2 C13  C22 
+CONECT      H1     1 N03 
+CONECT      H2     1 C04 
+CONECT      H3     1 C04 
+CONECT      H4     1 C06 
+CONECT      H5     1 O08 
+CONECT      H6     1 C09 
+CONECT      H7     1 C10 
+CONECT      H8     1 C11 
+CONECT      H9     1 N12 
+CONECT      H10    1 C17 
+CONECT      H11    1 C18 
+CONECT      H12    1 C20 
+CONECT      H13    1 C21 
+CONECT      H14    1 C22 
+END   
+HET    07R             37
+HETNAM     07R 1-[(3-hydroxyphenyl)methyl]-3-(4-pyridin-4-yl-1,3-thiaz
+HETNAM   2 07R ol-2-yl)urea
+FORMUL      07R    C16 H14 N4 O2 S1

@@ -1,0 +1,38 @@
+RESIDUE   0AL     33
+CONECT      C1     4 C2   O5   OXT  H1  
+CONECT      C2     4 C1   C3   O2   H2  
+CONECT      C3     4 C2   C4   O3   H3  
+CONECT      C4     4 C3   C5   O4   H4  
+CONECT      C5     4 C4   C6   O5   H5  
+CONECT      C6     4 C5   C7   O6   H6  
+CONECT      C7     4 C6   O7   H7C1 H7C2
+CONECT      O2     2 C2   HA  
+CONECT      O3     2 C3   HB  
+CONECT      O4     2 C4   P   
+CONECT      O5     2 C1   C5  
+CONECT      O6     2 C6   HC  
+CONECT      O7     2 C7   H7  
+CONECT      P      4 O4   O2P  O3P  O4P 
+CONECT      O2P    2 P    H2P 
+CONECT      O3P    1 P   
+CONECT      O4P    2 P    H4P 
+CONECT      OXT    2 C1   HOT 
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      HOT    1 OXT 
+CONECT      H3     1 C3  
+CONECT      HA     1 O2  
+CONECT      H4     1 C4  
+CONECT      HB     1 O3  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H7C1   1 C7  
+CONECT      H7C2   1 C7  
+CONECT      HC     1 O6  
+CONECT      H7     1 O7  
+CONECT      H2P    1 O2P 
+CONECT      H4P    1 O4P 
+END   
+HET    0AL             33
+HETNAM     0AL 4-O-phosphono-D-glycero-beta-D-manno-heptopyranose
+FORMUL      0AL    C7 H15 O10 P1

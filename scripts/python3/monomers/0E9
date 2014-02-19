@@ -1,0 +1,114 @@
+RESIDUE   0E9    106
+CONECT      C1     3 O1   O2   N   
+CONECT      O1     1 C1  
+CONECT      O2     2 C1   C2  
+CONECT      C2     4 O2   C3   H21  H22 
+CONECT      C3     3 C2   C4   C8  
+CONECT      C4     3 C3   C5   H41 
+CONECT      C5     3 C4   C6   H51 
+CONECT      C6     3 C5   C7   H61 
+CONECT      C7     3 C6   C8   H71 
+CONECT      C8     3 C3   C7   H81 
+CONECT      N      3 C1   CA   H   
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N2  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG1  CG2  HB  
+CONECT      CG1    4 CB   HG11 HG12 HG13
+CONECT      CG2    4 CB   HG21 HG22 HG23
+CONECT      C11    4 C21  C1A  H11  H12 
+CONECT      C21    4 C11  N2   C31  H2  
+CONECT      N2     3 C    C21  HN22
+CONECT      C31    4 C21  O3   C41  H3  
+CONECT      O3     2 C31  HO3 
+CONECT      C41    4 C31  N4   C51  H4  
+CONECT      N4     3 C41  C9   HN42
+CONECT      C51    4 C41  C1B  H511 H52 
+CONECT      C1A    3 C11  C2A  C6A 
+CONECT      C2A    3 C1A  C3A  H2A 
+CONECT      C3A    3 C2A  C4A  H3A 
+CONECT      C4A    3 C3A  C5A  H4A 
+CONECT      C5A    3 C4A  C6A  H5A 
+CONECT      C6A    3 C1A  C5A  H6A 
+CONECT      C1B    3 C51  C2B  C6B 
+CONECT      C2B    3 C1B  C3B  H2B 
+CONECT      C3B    3 C2B  C4B  H3B 
+CONECT      C4B    3 C3B  C5B  H4B 
+CONECT      C5B    3 C4B  C6B  H5B 
+CONECT      C6B    3 C1B  C5B  H6B 
+CONECT      N1     3 CA1  C12  H1  
+CONECT      CA1    4 N1   C9   CB1  HA1 
+CONECT      C9     3 N4   CA1  O4  
+CONECT      O4     1 C9  
+CONECT      CB1    4 CA1  CG11 CG21 HB1 
+CONECT      CG11   4 CB1  HG14 HG15 HG16
+CONECT      CG21   4 CB1  HG24 HG25 HG26
+CONECT      C12    3 N1   O11  O21 
+CONECT      O11    1 C12 
+CONECT      O21    2 C12  C22 
+CONECT      C22    4 O21  C32  H211 H221
+CONECT      C32    3 C22  C42  C81 
+CONECT      C42    3 C32  C52  H411
+CONECT      C52    3 C42  C61  H512
+CONECT      C61    3 C52  C71  H611
+CONECT      C71    3 C61  C81  H711
+CONECT      C81    3 C32  C71  H811
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H41    1 C4  
+CONECT      H51    1 C5  
+CONECT      H61    1 C6  
+CONECT      H71    1 C7  
+CONECT      H81    1 C8  
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HG11   1 CG1 
+CONECT      HG12   1 CG1 
+CONECT      HG13   1 CG1 
+CONECT      HG21   1 CG2 
+CONECT      HG22   1 CG2 
+CONECT      HG23   1 CG2 
+CONECT      H11    1 C11 
+CONECT      H12    1 C11 
+CONECT      H2     1 C21 
+CONECT      HN22   1 N2  
+CONECT      H3     1 C31 
+CONECT      HO3    1 O3  
+CONECT      H4     1 C41 
+CONECT      HN42   1 N4  
+CONECT      H511   1 C51 
+CONECT      H52    1 C51 
+CONECT      H2A    1 C2A 
+CONECT      H3A    1 C3A 
+CONECT      H4A    1 C4A 
+CONECT      H5A    1 C5A 
+CONECT      H6A    1 C6A 
+CONECT      H2B    1 C2B 
+CONECT      H3B    1 C3B 
+CONECT      H4B    1 C4B 
+CONECT      H5B    1 C5B 
+CONECT      H6B    1 C6B 
+CONECT      H1     1 N1  
+CONECT      HA1    1 CA1 
+CONECT      HB1    1 CB1 
+CONECT      HG14   1 CG11
+CONECT      HG15   1 CG11
+CONECT      HG16   1 CG11
+CONECT      HG24   1 CG21
+CONECT      HG25   1 CG21
+CONECT      HG26   1 CG21
+CONECT      H211   1 C22 
+CONECT      H221   1 C22 
+CONECT      H411   1 C42 
+CONECT      H512   1 C52 
+CONECT      H611   1 C61 
+CONECT      H711   1 C71 
+CONECT      H811   1 C81 
+END   
+HET    0E9            106
+HETSYN     0E9 A-74704
+HETNAM     0E9 benzyl [(1R,4S,6S,9R)-4,6-dibenzyl-5-hydroxy-1,9-bis(1-
+HETNAM   2 0E9 methylethyl)-2,8,11-trioxo-13-phenyl-12-oxa-3,7,10-tria
+HETNAM   3 0E9 zatridec-1-yl]carbamate
+FORMUL      0E9    C43 H52 N4 O7

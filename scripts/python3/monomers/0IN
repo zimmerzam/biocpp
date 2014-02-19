@@ -1,0 +1,35 @@
+RESIDUE   0IN     30
+CONECT      CAE    3 CAF  CAG  CAI 
+CONECT      CAF    4 CAE  CAJ  HAF  HAFA
+CONECT      CAG    3 CAE  CAH  OAO 
+CONECT      CAH    3 CAG  NAK  CAM 
+CONECT      CAI    3 CAE  CAN  HAI 
+CONECT      CAJ    3 CAF  CAP  CAR 
+CONECT      NAK    2 CAH  CAQ 
+CONECT      NAL    2 CAP  CAS 
+CONECT      CAM    3 CAH  CAN  CAT 
+CONECT      CAN    3 CAI  CAM  HAN 
+CONECT      OAO    2 CAG  HOAO
+CONECT      CAP    3 CAJ  NAL  HAP 
+CONECT      CAQ    3 NAK  CAV  HAQ 
+CONECT      CAR    3 CAJ  CAU  HAR 
+CONECT      CAS    3 NAL  CAU  HAS 
+CONECT      CAT    3 CAM  CAV  HAT 
+CONECT      CAU    3 CAR  CAS  HAU 
+CONECT      CAV    3 CAQ  CAT  HAV 
+CONECT      HAF    1 CAF 
+CONECT      HAFA   1 CAF 
+CONECT      HAI    1 CAI 
+CONECT      HAN    1 CAN 
+CONECT      HOAO   1 OAO 
+CONECT      HAP    1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HAS    1 CAS 
+CONECT      HAT    1 CAT 
+CONECT      HAU    1 CAU 
+CONECT      HAV    1 CAV 
+END   
+HET    0IN             30
+HETNAM     0IN 7-(pyridin-3-ylmethyl)quinolin-8-ol
+FORMUL      0IN    C15 H12 N2 O1

@@ -1,0 +1,62 @@
+RESIDUE   0JL     55
+CONECT      CBF    4 CBE  H1   H2   H3  
+CONECT      CBE    3 CBF  CBB  NBD 
+CONECT      CBB    3 CBE  CBA  H4  
+CONECT      NBD    2 CBE  S   
+CONECT      S      2 NBD  CBA 
+CONECT      CBA    3 CBB  S    NAZ 
+CONECT      NAZ    3 CBA  CAT  CAY 
+CONECT      CAT    3 NAZ  CAS  OBG 
+CONECT      CAS    3 CAT  CAW  NAR 
+CONECT      OBG    1 CAT 
+CONECT      CAY    3 NAZ  CAX  H6  
+CONECT      CAX    3 CAY  CAW  H7  
+CONECT      CAW    3 CAS  CAX  NAV 
+CONECT      NAV    2 CAW  NAU 
+CONECT      NAU    2 NAV  NAR 
+CONECT      NAR    3 CAS  NAU  CAP 
+CONECT      CAP    4 NAR  CAQ  CAO  H8  
+CONECT      CAQ    4 CAP  H9   H10  H11 
+CONECT      CAO    3 CAP  CAI  CAN 
+CONECT      CAI    3 CAO  CAH  H12 
+CONECT      CAH    3 CAI  CAG  CAL 
+CONECT      CAG    3 CAH  CAF  H13 
+CONECT      CAN    3 CAO  CAM  H14 
+CONECT      CAM    3 CAN  CAL  H15 
+CONECT      CAL    3 CAH  CAM  NAK 
+CONECT      NAK    2 CAL  CAJ 
+CONECT      CAJ    3 NAK  CAF  H16 
+CONECT      CAF    3 CAG  CAJ  OAE 
+CONECT      OAE    2 CAF  CAD 
+CONECT      CAD    4 OAE  CAC  H17  H18 
+CONECT      CAC    4 CAD  OAB  H19  H20 
+CONECT      OAB    2 CAC  CAA 
+CONECT      CAA    4 OAB  H21  H22  H23 
+CONECT      H1     1 CBF 
+CONECT      H2     1 CBF 
+CONECT      H3     1 CBF 
+CONECT      H4     1 CBB 
+CONECT      H6     1 CAY 
+CONECT      H7     1 CAX 
+CONECT      H8     1 CAP 
+CONECT      H9     1 CAQ 
+CONECT      H10    1 CAQ 
+CONECT      H11    1 CAQ 
+CONECT      H12    1 CAI 
+CONECT      H13    1 CAG 
+CONECT      H14    1 CAN 
+CONECT      H15    1 CAM 
+CONECT      H16    1 CAJ 
+CONECT      H17    1 CAD 
+CONECT      H18    1 CAD 
+CONECT      H19    1 CAC 
+CONECT      H20    1 CAC 
+CONECT      H21    1 CAA 
+CONECT      H22    1 CAA 
+CONECT      H23    1 CAA 
+END   
+HET    0JL             55
+HETNAM     0JL 3-{(1S)-1-[3-(2-methoxyethoxy)quinolin-6-yl]ethyl}-5-(3
+HETNAM   2 0JL -methyl-1,2-thiazol-5-yl)-3,5-dihydro-4H-[1,2,3]triazol
+HETNAM   3 0JL o[4,5-c]pyridin-4-one
+FORMUL      0JL    C23 H22 N6 O3 S1

@@ -1,0 +1,25 @@
+RESIDUE   03V     19
+CONECT      C1     3 C2   C7   H1  
+CONECT      O1     2 C2   HO1 
+CONECT      C2     3 C1   O1   C3  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   C11 
+CONECT      C5     3 C4   C7   C8  
+CONECT      C7     3 C1   C5   H7  
+CONECT      C8     3 C5   C9   H8  
+CONECT      C9     3 C8   C10  H9  
+CONECT      C10    3 C9   C11  H10 
+CONECT      C11    3 C4   C10  H11 
+CONECT      H1     1 C1  
+CONECT      HO1    1 O1  
+CONECT      H3     1 C3  
+CONECT      H7     1 C7  
+CONECT      H8     1 C8  
+CONECT      H9     1 C9  
+CONECT      H10    1 C10 
+CONECT      H11    1 C11 
+END   
+HET    03V             19
+HETSYN     03V 2-Naphtol
+HETNAM     03V naphthalen-2-ol
+FORMUL      03V    C10 H8 O1

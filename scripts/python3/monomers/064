@@ -1,0 +1,65 @@
+RESIDUE   064     58
+CONECT      C1     3 N4   C2   C3  
+CONECT      N4     2 C1   O9  
+CONECT      C5     3 C10  C2   O9  
+CONECT      C6     4 C2   O11  H6   H6A 
+CONECT      C7     3 C3   C12  CL13
+CONECT      C8     3 C3   C14  CL15
+CONECT      C10    4 C5   C16  C17  H10 
+CONECT      C16    4 C10  H16  H16A H16B
+CONECT      C17    4 C10  H17  H17A H17B
+CONECT      C18    3 C20  C21  O11 
+CONECT      C19    3 C12  C14  H19 
+CONECT      C20    3 C18  C22  H20 
+CONECT      C21    3 C18  C23  H21 
+CONECT      C22    3 C20  C24  CL25
+CONECT      C23    3 C21  C24  H23 
+CONECT      C24    3 C22  C23  C26 
+CONECT      C26    3 C24  C27  H26 
+CONECT      C27    3 C26  C28  H27 
+CONECT      C28    3 C27  C29  C30 
+CONECT      C29    3 C28  C31  H29 
+CONECT      C30    3 C28  C32  H30 
+CONECT      C32    3 C30  C33  H32 
+CONECT      C2     3 C1   C5   C6  
+CONECT      C3     3 C1   C7   C8  
+CONECT      O9     2 N4   C5  
+CONECT      O11    2 C6   C18 
+CONECT      C12    3 C7   C19  H12 
+CONECT      CL13   1 C7  
+CONECT      C14    3 C8   C19  H14 
+CONECT      CL15   1 C8  
+CONECT      CL25   1 C22 
+CONECT      C31    3 C29  C33  C34 
+CONECT      C33    3 C32  C31  H33 
+CONECT      C34    3 C31  O35  O36 
+CONECT      O35    1 C34 
+CONECT      O36    2 C34  HO36
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H10    1 C10 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H16B   1 C16 
+CONECT      H17    1 C17 
+CONECT      H17A   1 C17 
+CONECT      H17B   1 C17 
+CONECT      H19    1 C19 
+CONECT      H20    1 C20 
+CONECT      H21    1 C21 
+CONECT      H23    1 C23 
+CONECT      H26    1 C26 
+CONECT      H27    1 C27 
+CONECT      H29    1 C29 
+CONECT      H30    1 C30 
+CONECT      H32    1 C32 
+CONECT      H12    1 C12 
+CONECT      H14    1 C14 
+CONECT      H33    1 C33 
+CONECT      HO36   1 O36 
+END   
+HET    064             58
+HETNAM     064 3-[(E)-2-(2-chloro-4-{[3-(2,6-dichlorophenyl)-5-(1-meth
+HETNAM   2 064 ylethyl)isoxazol-4-yl]methoxy}phenyl)ethenyl]benzoic ac
+HETNAM   3 064 id
+FORMUL      064    C28 H22 Cl3 N1 O4

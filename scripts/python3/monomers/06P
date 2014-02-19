@@ -1,0 +1,60 @@
+RESIDUE   06P     54
+CONECT      N4     3 C3   HN4  HN4A
+CONECT      C3     4 N4   C5   C2   H3  
+CONECT      C5     3 C3   O7   N6  
+CONECT      O7     1 C5  
+CONECT      C2     4 C3   C1   H2   H2A 
+CONECT      C1     3 C2   C8   C12 
+CONECT      C8     3 C1   C9   H8  
+CONECT      C12    3 C1   C11  H12 
+CONECT      C9     3 C8   C10  H9  
+CONECT      C11    3 C12  C10  H11 
+CONECT      C10    3 C9   C11  H10 
+CONECT      N6     3 C5   C13  C21 
+CONECT      C13    4 N6   C14  C19  H13 
+CONECT      C14    3 C13  O15  N16 
+CONECT      O15    1 C14 
+CONECT      C19    4 C13  C20  H19  H19A
+CONECT      C20    4 C19  C21  H20  H20A
+CONECT      C21    4 N6   C20  H21  H21A
+CONECT      N16    3 C14  C17  HN16
+CONECT      C17    4 N16  C18  H17  H17A
+CONECT      C18    3 C17  C22  C27 
+CONECT      C22    3 C18  C23  H22 
+CONECT      C23    3 C22  N24  H23 
+CONECT      N24    3 C23  C25  C26 
+CONECT      C25    4 N24  H25  H25A H25B
+CONECT      C26    3 N24  C27  H26 
+CONECT      C27    3 C18  C26  H27 
+CONECT      HN4    1 N4  
+CONECT      HN4A   1 N4  
+CONECT      H3     1 C3  
+CONECT      H2     1 C2  
+CONECT      H2A    1 C2  
+CONECT      H8     1 C8  
+CONECT      H12    1 C12 
+CONECT      H9     1 C9  
+CONECT      H11    1 C11 
+CONECT      H10    1 C10 
+CONECT      H13    1 C13 
+CONECT      H19    1 C19 
+CONECT      H19A   1 C19 
+CONECT      H20    1 C20 
+CONECT      H20A   1 C20 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      HN16   1 N16 
+CONECT      H17    1 C17 
+CONECT      H17A   1 C17 
+CONECT      H22    1 C22 
+CONECT      H23    1 C23 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      H25B   1 C25 
+CONECT      H26    1 C26 
+CONECT      H27    1 C27 
+END   
+HET    06P             54
+HETNAM     06P D-phenylalanyl-N-[(1-methylpyridinium-4-yl)methyl]-L-pr
+HETNAM   2 06P olinamide
+FORMUL      06P    C21 H27 N4 O2 1+

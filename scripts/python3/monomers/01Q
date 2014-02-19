@@ -1,0 +1,28 @@
+RESIDUE   01Q     23
+CONECT      N      2 C    H   
+CONECT      C      3 N    N1   C1  
+CONECT      N1     3 C    H11A H12 
+CONECT      C1     3 C    N2   C3  
+CONECT      N2     3 C1   C2   C5  
+CONECT      C2     4 N2   H21  H22  H23 
+CONECT      C3     3 C1   C4   H3  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 N2   C4   C6  
+CONECT      C6     4 C5   N3   H61  H62 
+CONECT      N3     3 C6   HN3  H2  
+CONECT      H      1 N   
+CONECT      H11A   1 N1  
+CONECT      H12    1 N1  
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H23    1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H61    1 C6  
+CONECT      H62    1 C6  
+CONECT      HN3    1 N3  
+CONECT      H2     1 N3  
+END   
+HET    01Q             23
+HETNAM     01Q 5-(aminomethyl)-1-methyl-1H-pyrrole-2-carboximidamide
+FORMUL      01Q    C7 H12 N4

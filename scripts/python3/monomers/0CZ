@@ -1,0 +1,39 @@
+RESIDUE   0CZ     33
+CONECT      CAM    3 CAI  CAS  H1  
+CONECT      CAI    3 CAM  CAQ  H2  
+CONECT      CAQ    3 CAI  OAA  CAJ 
+CONECT      OAA    2 CAQ  H3  
+CONECT      CAJ    3 CAQ  CAN  H4  
+CONECT      CAN    3 CAJ  CAS  H5  
+CONECT      CAS    3 CAM  CAN  CAW 
+CONECT      CAW    4 CAS  CAU  CAV  CAT 
+CONECT      CAU    4 CAW  FAD  FAE  FAC 
+CONECT      FAD    1 CAU 
+CONECT      FAE    1 CAU 
+CONECT      FAC    1 CAU 
+CONECT      CAV    4 CAW  FAG  FAH  FAF 
+CONECT      FAG    1 CAV 
+CONECT      FAH    1 CAV 
+CONECT      FAF    1 CAV 
+CONECT      CAT    3 CAW  CAO  CAP 
+CONECT      CAO    3 CAT  CAK  H6  
+CONECT      CAK    3 CAO  CAR  H7  
+CONECT      CAR    3 CAK  OAB  CAL 
+CONECT      OAB    2 CAR  H8  
+CONECT      CAL    3 CAR  CAP  H9  
+CONECT      CAP    3 CAT  CAL  H10 
+CONECT      H1     1 CAM 
+CONECT      H2     1 CAI 
+CONECT      H3     1 OAA 
+CONECT      H4     1 CAJ 
+CONECT      H5     1 CAN 
+CONECT      H6     1 CAO 
+CONECT      H7     1 CAK 
+CONECT      H8     1 OAB 
+CONECT      H9     1 CAL 
+CONECT      H10    1 CAP 
+END   
+HET    0CZ             33
+HETSYN     0CZ BISPHENOL AF
+HETNAM     0CZ 4,4'-(1,1,1,3,3,3-hexafluoropropane-2,2-diyl)diphenol
+FORMUL      0CZ    C15 H10 F6 O2

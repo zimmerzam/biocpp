@@ -1,0 +1,26 @@
+RESIDUE   0JD     21
+CONECT      OAA    2 CAJ  H1  
+CONECT      CAJ    3 OAA  OAB  CAM 
+CONECT      OAB    1 CAJ 
+CONECT      CAM    4 CAJ  OAI  CAG  H2  
+CONECT      OAI    2 CAM  CAL 
+CONECT      CAL    3 OAI  CAF  CAK 
+CONECT      CAF    3 CAL  CAD  H3  
+CONECT      CAD    3 CAF  CAC  H4  
+CONECT      CAC    3 CAD  CAE  H5  
+CONECT      CAE    3 CAC  CAK  H6  
+CONECT      CAK    3 CAL  CAE  OAH 
+CONECT      OAH    2 CAK  CAG 
+CONECT      CAG    4 CAM  OAH  H7   H8  
+CONECT      H1     1 OAA 
+CONECT      H2     1 CAM 
+CONECT      H3     1 CAF 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAC 
+CONECT      H6     1 CAE 
+CONECT      H7     1 CAG 
+CONECT      H8     1 CAG 
+END   
+HET    0JD             21
+HETNAM     0JD (2S)-2,3-dihydro-1,4-benzodioxine-2-carboxylic acid
+FORMUL      0JD    C9 H8 O4

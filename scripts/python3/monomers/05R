@@ -1,0 +1,23 @@
+RESIDUE   05R     18
+CONECT      CBE    3 OBF  CBG  OXT 
+CONECT      OBF    1 CBE 
+CONECT      CBG    4 CBE  CBH  HBG  HBGA
+CONECT      CBH    3 CBG  CBI  CBO 
+CONECT      CBI    3 CBH  CBJ  HBI 
+CONECT      CBJ    3 CBI  CBK  HBJ 
+CONECT      CBK    3 CBJ  CLL  CBM 
+CONECT      CLL    1 CBK 
+CONECT      CBM    3 CBK  CLN  CBO 
+CONECT      CLN    1 CBM 
+CONECT      CBO    3 CBH  CBM  HBO 
+CONECT      HBG    1 CBG 
+CONECT      HBGA   1 CBG 
+CONECT      HBI    1 CBI 
+CONECT      HBJ    1 CBJ 
+CONECT      HBO    1 CBO 
+CONECT      OXT    2 CBE  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    05R             18
+HETNAM     05R 2-(3,4-dichlorophenyl)ethanoic acid
+FORMUL      05R    C8 H6 Cl2 O2

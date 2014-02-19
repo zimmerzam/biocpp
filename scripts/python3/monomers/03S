@@ -1,0 +1,14 @@
+RESIDUE   03S      9
+CONECT      S10    4 O11  O12  C13  OXT 
+CONECT      O11    1 S10 
+CONECT      O12    1 S10 
+CONECT      C13    4 S10  H113 H213 H313
+CONECT      H113   1 C13 
+CONECT      H213   1 C13 
+CONECT      H313   1 C13 
+CONECT      OXT    2 S10  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    03S              9
+HETNAM     03S methanesulfonic acid
+FORMUL      03S    C1 H4 O3 S1

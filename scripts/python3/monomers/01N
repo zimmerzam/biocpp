@@ -1,0 +1,40 @@
+RESIDUE   01N     35
+CONECT      C      3 O    CA   OXT 
+CONECT      O      1 C   
+CONECT      CA     4 C    CB   N    H13 
+CONECT      CB     4 CA   CG   H141 H142
+CONECT      CG     4 CB   CD1  CD2  H15 
+CONECT      CD1    4 CG   CE1  H161 H162
+CONECT      CE1    4 CD1  CZ   H171 H172
+CONECT      CZ     4 CE1  CE2  H181 H182
+CONECT      CE2    4 CZ   CD2  H191 H192
+CONECT      CD2    4 CG   CE2  H201 H202
+CONECT      N      3 CA   C1   H5  
+CONECT      C1     4 N    C2   H211 H212
+CONECT      C2     3 C1   O21  O22 
+CONECT      O21    2 C2   HO2 
+CONECT      O22    1 C2  
+CONECT      H13    1 CA  
+CONECT      H141   1 CB  
+CONECT      H142   1 CB  
+CONECT      H15    1 CG  
+CONECT      H161   1 CD1 
+CONECT      H162   1 CD1 
+CONECT      H171   1 CE1 
+CONECT      H172   1 CE1 
+CONECT      H181   1 CZ  
+CONECT      H182   1 CZ  
+CONECT      H191   1 CE2 
+CONECT      H192   1 CE2 
+CONECT      H201   1 CD2 
+CONECT      H202   1 CD2 
+CONECT      H5     1 N   
+CONECT      H211   1 C1  
+CONECT      H212   1 C1  
+CONECT      HO2    1 O21 
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    01N             35
+HETNAM     01N N-(carboxymethyl)-3-cyclohexyl-D-alanine
+FORMUL      01N    C11 H19 N1 O4

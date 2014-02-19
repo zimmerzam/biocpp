@@ -1,0 +1,67 @@
+RESIDUE   01G     61
+CONECT      CAA    4 CAC  NAE  HAA1 HAA2
+CONECT      CAC    4 CAA  OAF  HAC1 HAC2
+CONECT      OAF    2 CAC  CAD 
+CONECT      CAD    4 OAF  CAB  HAD1 HAD2
+CONECT      CAB    4 CAD  NAE  HAB1 HAB2
+CONECT      NAE    3 CAA  CAB  C8  
+CONECT      C8     3 NAE  N7   N9  
+CONECT      N7     2 C8   C5  
+CONECT      C5     3 N7   C6   C4  
+CONECT      C6     3 C5   O6   N1  
+CONECT      O6     1 C6  
+CONECT      N1     3 C6   C2   HN1 
+CONECT      C2     3 N1   N2   N3  
+CONECT      N2     3 C2   HN21 HN22
+CONECT      N3     2 C2   C4  
+CONECT      C4     3 C5   N3   N9  
+CONECT      N9     3 C8   C4   C1' 
+CONECT      C1'    4 N9   O4'  C2'  H1' 
+CONECT      O4'    2 C1'  C4' 
+CONECT      C2'    4 C1'  O2'  C3'  H2' 
+CONECT      O2'    2 C2'  HO2'
+CONECT      C3'    4 C2'  O3'  C4'  H3' 
+CONECT      O3'    2 C3'  HO3'
+CONECT      C4'    4 O4'  C3'  C5'  H4' 
+CONECT      C5'    4 C4'  O5'  H5'1 H5'2
+CONECT      O5'    2 C5'  PA  
+CONECT      PA     4 O5'  O2A  O1A  O3A 
+CONECT      O2A    2 PA   HO2A
+CONECT      O1A    1 PA  
+CONECT      O3A    2 PA   PB  
+CONECT      PB     4 O3A  O2B  O1B  O3B 
+CONECT      O2B    2 PB   HO2B
+CONECT      O1B    1 PB  
+CONECT      O3B    2 PB   PG  
+CONECT      PG     4 O3B  O2G  O3G  O1G 
+CONECT      O2G    2 PG   HO2G
+CONECT      O3G    1 PG  
+CONECT      O1G    2 PG   HO1G
+CONECT      HAA1   1 CAA 
+CONECT      HAA2   1 CAA 
+CONECT      HAC1   1 CAC 
+CONECT      HAC2   1 CAC 
+CONECT      HAD1   1 CAD 
+CONECT      HAD2   1 CAD 
+CONECT      HAB1   1 CAB 
+CONECT      HAB2   1 CAB 
+CONECT      HN1    1 N1  
+CONECT      HN21   1 N2  
+CONECT      HN22   1 N2  
+CONECT      H1'    1 C1' 
+CONECT      H2'    1 C2' 
+CONECT      HO2'   1 O2' 
+CONECT      H3'    1 C3' 
+CONECT      HO3'   1 O3' 
+CONECT      H4'    1 C4' 
+CONECT      H5'1   1 C5' 
+CONECT      H5'2   1 C5' 
+CONECT      HO2A   1 O2A 
+CONECT      HO2B   1 O2B 
+CONECT      HO2G   1 O2G 
+CONECT      HO1G   1 O1G 
+END   
+HET    01G             61
+HETNAM     01G 8-morpholin-4-ylguanosine 5'-(tetrahydrogen triphosphat
+HETNAM   2 01G e)
+FORMUL      01G    C14 H23 N6 O15 P3

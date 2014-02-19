@@ -1,0 +1,82 @@
+RESIDUE   0NQ     73
+CONECT      O26    1 C24 
+CONECT      C24    3 O26  N23  C1  
+CONECT      N23    3 C24  C31  C22 
+CONECT      C31    4 N23  C32  H1   H2  
+CONECT      C32    4 C31  C33  H3   H4  
+CONECT      C33    4 C32  C36  C35  C34 
+CONECT      C36    4 C33  H5   H6   H7  
+CONECT      C35    4 C33  H8   H9   H10 
+CONECT      C34    4 C33  H11  H12  H13 
+CONECT      C22    4 N23  C27  C21  H14 
+CONECT      C27    4 C22  C30  C29  C28 
+CONECT      C30    4 C27  H15  H16  H17 
+CONECT      C29    4 C27  H18  H19  H20 
+CONECT      C28    4 C27  H21  H22  H23 
+CONECT      C21    3 C22  O25  C1  
+CONECT      O25    2 C21  H24 
+CONECT      C1     3 C24  C21  C2  
+CONECT      C2     3 C1   N5   N3  
+CONECT      N5     2 C2   P4  
+CONECT      P4     4 N5   O6   O7   C8  
+CONECT      O6     1 P4  
+CONECT      O7     2 P4   C19 
+CONECT      C19    4 O7   C20  H25  H26 
+CONECT      C20    4 C19  H27  H28  H29 
+CONECT      C8     3 P4   C13  C9  
+CONECT      C13    3 C8   C12  H30 
+CONECT      C12    3 C13  N14  C11 
+CONECT      N14    3 C12  S15  H31 
+CONECT      S15    4 N14  C18  O17  O16 
+CONECT      C18    4 S15  H32  H33  H34 
+CONECT      O17    1 S15 
+CONECT      O16    1 S15 
+CONECT      C11    3 C12  C10  H35 
+CONECT      C10    3 C11  C9   H36 
+CONECT      C9     3 C8   C10  N3  
+CONECT      N3     3 C2   C9   H37 
+CONECT      H1     1 C31 
+CONECT      H2     1 C31 
+CONECT      H3     1 C32 
+CONECT      H4     1 C32 
+CONECT      H5     1 C36 
+CONECT      H6     1 C36 
+CONECT      H7     1 C36 
+CONECT      H8     1 C35 
+CONECT      H9     1 C35 
+CONECT      H10    1 C35 
+CONECT      H11    1 C34 
+CONECT      H12    1 C34 
+CONECT      H13    1 C34 
+CONECT      H14    1 C22 
+CONECT      H15    1 C30 
+CONECT      H16    1 C30 
+CONECT      H17    1 C30 
+CONECT      H18    1 C29 
+CONECT      H19    1 C29 
+CONECT      H20    1 C29 
+CONECT      H21    1 C28 
+CONECT      H22    1 C28 
+CONECT      H23    1 C28 
+CONECT      H24    1 O25 
+CONECT      H25    1 C19 
+CONECT      H26    1 C19 
+CONECT      H27    1 C20 
+CONECT      H28    1 C20 
+CONECT      H29    1 C20 
+CONECT      H30    1 C13 
+CONECT      H31    1 N14 
+CONECT      H32    1 C18 
+CONECT      H33    1 C18 
+CONECT      H34    1 C18 
+CONECT      H35    1 C11 
+CONECT      H36    1 C10 
+CONECT      H37    1 N3  
+END   
+HET    0NQ             73
+HETSYN     0NQ IDX375
+HETNAM     0NQ N-{(1S)-3-[(5S)-5-tert-butyl-1-(3,3-dimethylbutyl)-4-hy
+HETNAM   2 0NQ droxy-2-oxo-2,5-dihydro-1H-pyrrol-3-yl]-1-ethoxy-1-oxid
+HETNAM   3 0NQ o-1,4-dihydro-2,4,1-benzodiazaphosphinin-7-yl}methanesu
+HETNAM   4 0NQ lfonamide
+FORMUL      0NQ    C24 H37 N4 O6 P1 S1

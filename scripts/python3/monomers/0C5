@@ -1,0 +1,44 @@
+RESIDUE   0C5     38
+CONECT      O01    1 C02 
+CONECT      C02    3 O01  C03  O25 
+CONECT      C03    3 C02  C04  C06 
+CONECT      C04    3 C03  C05  H1  
+CONECT      C05    3 C04  C08  H2  
+CONECT      C06    3 C03  C07  H3  
+CONECT      C07    3 C06  C08  H4  
+CONECT      C08    3 C05  C07  N09 
+CONECT      N09    3 C08  C10  H5  
+CONECT      C10    3 N09  N11  N24 
+CONECT      N11    2 C10  C12 
+CONECT      C12    3 N11  N13  C22 
+CONECT      N13    3 C12  C14  H6  
+CONECT      C14    3 N13  C15  C19 
+CONECT      C15    3 C14  C16  H7  
+CONECT      C16    3 C15  C17  H8  
+CONECT      C17    3 C16  C18  H9  
+CONECT      C18    3 C17  C19  H10 
+CONECT      C19    3 C14  C18  C20 
+CONECT      C20    2 C19  N21 
+CONECT      N21    1 C20 
+CONECT      C22    3 C12  C23  H11 
+CONECT      C23    3 C22  N24  H12 
+CONECT      N24    2 C10  C23 
+CONECT      O25    2 C02  H13 
+CONECT      H1     1 C04 
+CONECT      H2     1 C05 
+CONECT      H3     1 C06 
+CONECT      H4     1 C07 
+CONECT      H5     1 N09 
+CONECT      H6     1 N13 
+CONECT      H7     1 C15 
+CONECT      H8     1 C16 
+CONECT      H9     1 C17 
+CONECT      H10    1 C18 
+CONECT      H11    1 C22 
+CONECT      H12    1 C23 
+CONECT      H13    1 O25 
+END   
+HET    0C5             38
+HETNAM     0C5 4-({4-[(2-cyanophenyl)amino]pyrimidin-2-yl}amino)benzoi
+HETNAM   2 0C5 c acid
+FORMUL      0C5    C18 H13 N5 O2

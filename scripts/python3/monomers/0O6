@@ -1,0 +1,183 @@
+RESIDUE   0O6    174
+CONECT      C      3 O    CA   NCE 
+CONECT      N      3 CA   CAC  HN  
+CONECT      O      1 C   
+CONECT      CA     4 C    N    CB   HA  
+CONECT      CB     4 CA   CAA  HB   HBA 
+CONECT      CAA    4 CB   HAA  HAAA HAAB
+CONECT      CAB    4 CBD  HAB  HABA HABB
+CONECT      CAC    4 N    HAC  HACA HACB
+CONECT      CAD    4 NCB  HAD  HADA HADB
+CONECT      OAF    1 CCH 
+CONECT      OAG    1 CCI 
+CONECT      OAH    1 CCJ 
+CONECT      OAI    1 CCK 
+CONECT      OAJ    1 CCL 
+CONECT      OAK    2 CBI  HOAK
+CONECT      OAL    2 CBJ  HOAL
+CONECT      CAM    3 CAO  CAP  HAM 
+CONECT      CAN    3 CAQ  CAR  HAN 
+CONECT      CAO    3 CAM  CAS  HAO 
+CONECT      CAP    3 CAM  CAT  HAP 
+CONECT      CAQ    3 CAN  CAU  HAQ 
+CONECT      CAR    3 CAN  CAV  HAR 
+CONECT      CAS    3 CAO  CCO  HAS 
+CONECT      CAT    3 CAP  CCO  HAT 
+CONECT      CAU    3 CAQ  CCP  HAU 
+CONECT      CAV    3 CAR  CCP  HAV 
+CONECT      CAW    3 CAX  CCM  HAW 
+CONECT      CAX    3 CAW  CCN  HAX 
+CONECT      CAY    3 CAZ  CCM  HAY 
+CONECT      CAZ    3 CAY  CCN  HAZ 
+CONECT      CBA    3 CCQ  NDG  HBAA
+CONECT      CBB    3 CCR  NDH  HBB 
+CONECT      CBD    4 CAB  CCV  HBD  HBDA
+CONECT      CBE    4 CBG  CBK  HBE  HBEA
+CONECT      CBF    4 CBH  CBL  HBF  HBFA
+CONECT      CBG    4 CBE  CBU  HBG  HBGA
+CONECT      CBH    4 CBF  CBV  HBH  HBHA
+CONECT      CBI    4 OAK  CCS  HBI  HBIA
+CONECT      CBJ    4 OAL  CCT  HBJ  HBJA
+CONECT      CBK    4 CBE  CCM  HBK  HBKA
+CONECT      CBL    4 CBF  CCN  HBL  HBLA
+CONECT      CBM    4 CBO  CCS  HBM  HBMA
+CONECT      CBN    4 CBP  CCT  HBN  HBNA
+CONECT      CBO    4 CBM  CCW  HBO  HBOA
+CONECT      CBP    4 CBN  CCX  HBP  HBPA
+CONECT      CBQ    4 CBS  CCW  HBQ  HBQA
+CONECT      CBR    4 CBT  CCX  HBR  HBRA
+CONECT      CBS    4 CBQ  CCY  HBS  HBSA
+CONECT      CBT    4 CBR  CCZ  HBT  HBTA
+CONECT      CBU    4 CBG  NDG  HBU  HBUA
+CONECT      CBV    4 CBH  NDH  HBV  HBVA
+CONECT      NBW    2 NBY  CCQ 
+CONECT      NBX    2 NBZ  CCR 
+CONECT      NBY    2 NBW  NDG 
+CONECT      NBZ    2 NBX  NDH 
+CONECT      NCB    3 CAD  CCV  HNCB
+CONECT      NCC    3 CCI  CDA  HNCC
+CONECT      NCD    3 CCJ  CDB  HNCD
+CONECT      NCE    3 C    CDC  HNCE
+CONECT      NCF    3 CCH  CDD  HNCF
+CONECT      CCH    3 OAF  NCF  CCV 
+CONECT      CCI    3 OAG  NCC  CCY 
+CONECT      CCJ    3 OAH  NCD  CCZ 
+CONECT      CCK    3 OAI  CDC  NDE 
+CONECT      CCL    3 OAJ  CDD  NDF 
+CONECT      CCM    3 CAW  CAY  CBK 
+CONECT      CCN    3 CAX  CAZ  CBL 
+CONECT      CCO    3 CAS  CAT  CDA 
+CONECT      CCP    3 CAU  CAV  CDB 
+CONECT      CCQ    3 CBA  NBW  CDA 
+CONECT      CCR    3 CBB  NBX  CDB 
+CONECT      CCS    4 CBI  CBM  CDC  HCS 
+CONECT      CCT    4 CBJ  CBN  CDD  HCT 
+CONECT      CCV    4 CBD  NCB  CCH  HCV 
+CONECT      CCW    4 CBO  CBQ  NDE  HCW 
+CONECT      CCX    4 CBP  CBR  NDF  HCX 
+CONECT      CCY    4 CBS  CCI  NDE  HCY 
+CONECT      CCZ    4 CBT  CCJ  NDF  HCZ 
+CONECT      CDA    4 NCC  CCO  CCQ  HDA 
+CONECT      CDB    4 NCD  CCP  CCR  HDB 
+CONECT      CDC    4 NCE  CCK  CCS  HDC 
+CONECT      CDD    4 NCF  CCL  CCT  HDD 
+CONECT      NDE    3 CCK  CCW  CCY 
+CONECT      NDF    3 CCL  CCX  CCZ 
+CONECT      NDG    3 CBA  CBU  NBY 
+CONECT      NDH    3 CBB  CBV  NBZ 
+CONECT      HN     1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HAA    1 CAA 
+CONECT      HAAA   1 CAA 
+CONECT      HAAB   1 CAA 
+CONECT      HAB    1 CAB 
+CONECT      HABA   1 CAB 
+CONECT      HABB   1 CAB 
+CONECT      HAC    1 CAC 
+CONECT      HACA   1 CAC 
+CONECT      HACB   1 CAC 
+CONECT      HAD    1 CAD 
+CONECT      HADA   1 CAD 
+CONECT      HADB   1 CAD 
+CONECT      HOAK   1 OAK 
+CONECT      HOAL   1 OAL 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAP    1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HAS    1 CAS 
+CONECT      HAT    1 CAT 
+CONECT      HAU    1 CAU 
+CONECT      HAV    1 CAV 
+CONECT      HAW    1 CAW 
+CONECT      HAX    1 CAX 
+CONECT      HAY    1 CAY 
+CONECT      HAZ    1 CAZ 
+CONECT      HBAA   1 CBA 
+CONECT      HBB    1 CBB 
+CONECT      HBD    1 CBD 
+CONECT      HBDA   1 CBD 
+CONECT      HBE    1 CBE 
+CONECT      HBEA   1 CBE 
+CONECT      HBF    1 CBF 
+CONECT      HBFA   1 CBF 
+CONECT      HBG    1 CBG 
+CONECT      HBGA   1 CBG 
+CONECT      HBH    1 CBH 
+CONECT      HBHA   1 CBH 
+CONECT      HBI    1 CBI 
+CONECT      HBIA   1 CBI 
+CONECT      HBJ    1 CBJ 
+CONECT      HBJA   1 CBJ 
+CONECT      HBK    1 CBK 
+CONECT      HBKA   1 CBK 
+CONECT      HBL    1 CBL 
+CONECT      HBLA   1 CBL 
+CONECT      HBM    1 CBM 
+CONECT      HBMA   1 CBM 
+CONECT      HBN    1 CBN 
+CONECT      HBNA   1 CBN 
+CONECT      HBO    1 CBO 
+CONECT      HBOA   1 CBO 
+CONECT      HBP    1 CBP 
+CONECT      HBPA   1 CBP 
+CONECT      HBQ    1 CBQ 
+CONECT      HBQA   1 CBQ 
+CONECT      HBR    1 CBR 
+CONECT      HBRA   1 CBR 
+CONECT      HBS    1 CBS 
+CONECT      HBSA   1 CBS 
+CONECT      HBT    1 CBT 
+CONECT      HBTA   1 CBT 
+CONECT      HBU    1 CBU 
+CONECT      HBUA   1 CBU 
+CONECT      HBV    1 CBV 
+CONECT      HBVA   1 CBV 
+CONECT      HNCB   1 NCB 
+CONECT      HNCC   1 NCC 
+CONECT      HNCD   1 NCD 
+CONECT      HNCE   1 NCE 
+CONECT      HNCF   1 NCF 
+CONECT      HCS    1 CCS 
+CONECT      HCT    1 CCT 
+CONECT      HCV    1 CCV 
+CONECT      HCW    1 CCW 
+CONECT      HCX    1 CCX 
+CONECT      HCY    1 CCY 
+CONECT      HCZ    1 CCZ 
+CONECT      HDA    1 CDA 
+CONECT      HDB    1 CDB 
+CONECT      HDC    1 CDC 
+CONECT      HDD    1 CDD 
+END   
+HET    0O6            174
+HETNAM     0O6 (3S,6S,7S,9aS,3'S,6'S,7'S,9a'S)-N,N'-(benzene-1,4-diylb
+HETNAM   2 0O6 is{butane-4,1-diyl-1H-1,2,3-triazole-1,4-diyl[(S)-pheny
+HETNAM   3 0O6 lmethanediyl]})bis[7-(hydroxymethyl)-6-{[(2S)-2-(methyl
+HETNAM   4 0O6 amino)butanoyl]amino}-5-oxooctahydro-1H-pyrrolo[1,2-a]a
+HETNAM   5 0O6 zepine-3-carboxamide]
+FORMUL      0O6    C64 H88 N14 O8

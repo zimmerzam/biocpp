@@ -1,0 +1,25 @@
+RESIDUE   0N7     20
+CONECT      O13    1 C10 
+CONECT      C10    3 O13  N9   C3  
+CONECT      N9     3 C10  O12  C8  
+CONECT      O12    2 N9   H1  
+CONECT      C8     3 N9   O11  C7  
+CONECT      O11    1 C8  
+CONECT      C7     4 C8   C2   H2   H3  
+CONECT      C2     3 C7   C3   C1  
+CONECT      C3     3 C10  C2   C4  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   C6   H5  
+CONECT      C6     3 C5   C1   H6  
+CONECT      C1     3 C2   C6   H7  
+CONECT      H1     1 O12 
+CONECT      H2     1 C7  
+CONECT      H3     1 C7  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H7     1 C1  
+END   
+HET    0N7             20
+HETNAM     0N7 2-hydroxyisoquinoline-1,3(2H,4H)-dione
+FORMUL      0N7    C9 H7 N1 O3

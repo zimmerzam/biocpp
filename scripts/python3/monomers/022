@@ -1,0 +1,60 @@
+RESIDUE   022     53
+CONECT      C1     3 N2   N5   H1  
+CONECT      N2     3 C1   C3   C11 
+CONECT      C3     3 N2   C4   H3  
+CONECT      C4     3 C3   N5   H4  
+CONECT      N5     2 C1   C4  
+CONECT      C11    3 N2   C13  C17 
+CONECT      C13    3 C11  C14  H13 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C15    3 C14  C16  C24 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C17    3 C11  C16  H17 
+CONECT      C24    3 C15  C26  N29 
+CONECT      C26    3 C24  C27  H26 
+CONECT      C27    3 C26  C28  H27 
+CONECT      C28    3 C27  N29  C35 
+CONECT      N29    3 C24  C28  C45 
+CONECT      C35    4 C28  C37  H35  H35A
+CONECT      C37    4 C35  C38  H37  H37A
+CONECT      C38    3 C37  O41  O43 
+CONECT      O41    1 C38 
+CONECT      O43    2 C38  HO43
+CONECT      C45    3 N29  C47  C51 
+CONECT      C47    3 C45  C48  C64 
+CONECT      C48    3 C47  C49  H48 
+CONECT      C49    3 C48  C50  C58 
+CONECT      C50    3 C49  C51  H50 
+CONECT      C51    3 C45  C50  H51 
+CONECT      C58    3 C49  O59  N62 
+CONECT      O59    1 C58 
+CONECT      N62    3 C58  HN62 HN6A
+CONECT      C64    4 C47  H64  H64A H64B
+CONECT      H1     1 C1  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H13    1 C13 
+CONECT      H14    1 C14 
+CONECT      H16    1 C16 
+CONECT      H17    1 C17 
+CONECT      H26    1 C26 
+CONECT      H27    1 C27 
+CONECT      H35    1 C35 
+CONECT      H35A   1 C35 
+CONECT      H37    1 C37 
+CONECT      H37A   1 C37 
+CONECT      HO43   1 O43 
+CONECT      H48    1 C48 
+CONECT      H50    1 C50 
+CONECT      H51    1 C51 
+CONECT      HN62   1 N62 
+CONECT      HN6A   1 N62 
+CONECT      H64    1 C64 
+CONECT      H64A   1 C64 
+CONECT      H64B   1 C64 
+END   
+HET    022             53
+HETSYN     022 N6022
+HETNAM     022 3-{1-(4-carbamoyl-2-methylphenyl)-5-[4-(1H-imidazol-1-y
+HETNAM   2 022 l)phenyl]-1H-pyrrol-2-yl}propanoic acid
+FORMUL      022    C24 H22 N4 O3

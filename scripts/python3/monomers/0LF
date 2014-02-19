@@ -1,0 +1,45 @@
+RESIDUE   0LF     40
+CONECT      N      3 CA   CD   H2  
+CONECT      CA     4 N    C    CB   H02 
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      CD     4 N    CG   H33  H32 
+CONECT      CG     4 CD   CB   O26  H34 
+CONECT      CB     4 CA   CG   H36  H35 
+CONECT      O26    2 CG   C27 
+CONECT      C27    4 O26  C28  H44  H43 
+CONECT      C28    4 C27  C29  H46  H45 
+CONECT      C29    4 C28  C30  H48  H47 
+CONECT      C30    4 C29  C31  H49  H50 
+CONECT      C31    3 C30  C32  C36 
+CONECT      C32    3 C31  C33  H51 
+CONECT      C33    3 C32  C34  H52 
+CONECT      C34    3 C33  C35  H53 
+CONECT      C35    3 C34  C36  H54 
+CONECT      C36    3 C31  C35  H   
+CONECT      H02    1 CA  
+CONECT      H33    1 CD  
+CONECT      H32    1 CD  
+CONECT      H34    1 CG  
+CONECT      H36    1 CB  
+CONECT      H35    1 CB  
+CONECT      H44    1 C27 
+CONECT      H43    1 C27 
+CONECT      H46    1 C28 
+CONECT      H45    1 C28 
+CONECT      H48    1 C29 
+CONECT      H47    1 C29 
+CONECT      H49    1 C30 
+CONECT      H50    1 C30 
+CONECT      H51    1 C32 
+CONECT      H52    1 C33 
+CONECT      H53    1 C34 
+CONECT      H54    1 C35 
+CONECT      H      1 C36 
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+CONECT      H2     1 N   
+END   
+HET    0LF             40
+HETNAM     0LF (4R)-4-(4-phenylbutoxy)-L-proline
+FORMUL      0LF    C15 H21 N1 O3

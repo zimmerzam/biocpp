@@ -1,0 +1,51 @@
+RESIDUE   0KX     45
+CONECT      PG     4 O1G  O2G  O3G  O3B 
+CONECT      O1G    2 PG   H1  
+CONECT      O2G    1 PG  
+CONECT      O3G    2 PG   H2  
+CONECT      PB     4 O1B  O2B  O3B  N3A 
+CONECT      O1B    2 PB   H3  
+CONECT      O2B    1 PB  
+CONECT      O3B    2 PG   PB  
+CONECT      PA     4 O1A  O2A  N3A  O5' 
+CONECT      O1A    1 PA  
+CONECT      O2A    2 PA   H4  
+CONECT      N3A    3 PB   PA   H5  
+CONECT      O5'    2 PA   C5' 
+CONECT      C5'    4 O5'  C4'  H6   H7  
+CONECT      C4'    4 C5'  O4'  C3'  H8  
+CONECT      O4'    2 C4'  C1' 
+CONECT      C3'    4 C4'  O3'  C2'  H9  
+CONECT      O3'    2 C3'  H10 
+CONECT      C2'    4 C3'  C1'  H11  H12 
+CONECT      C1'    4 O4'  C2'  N1   H13 
+CONECT      N1     3 C1'  C2   C6  
+CONECT      C2     3 N1   N3   O2  
+CONECT      N3     2 C2   C4  
+CONECT      C4     3 N3   C5   N4  
+CONECT      C5     3 C4   C6   H14 
+CONECT      C6     3 N1   C5   H15 
+CONECT      O2     1 C2  
+CONECT      N4     3 C4   H16  H17 
+CONECT      H1     1 O1G 
+CONECT      H2     1 O3G 
+CONECT      H3     1 O1B 
+CONECT      H4     1 O2A 
+CONECT      H5     1 N3A 
+CONECT      H6     1 C5' 
+CONECT      H7     1 C5' 
+CONECT      H8     1 C4' 
+CONECT      H9     1 C3' 
+CONECT      H10    1 O3' 
+CONECT      H11    1 C2' 
+CONECT      H12    1 C2' 
+CONECT      H13    1 C1' 
+CONECT      H14    1 C5  
+CONECT      H15    1 C6  
+CONECT      H16    1 N4  
+CONECT      H17    1 N4  
+END   
+HET    0KX             45
+HETNAM     0KX 2'-deoxy-5'-O-[(R)-hydroxy{[(R)-hydroxy(phosphonooxy)ph
+HETNAM   2 0KX osphoryl]amino}phosphoryl]cytidine
+FORMUL      0KX    C9 H17 N4 O12 P3

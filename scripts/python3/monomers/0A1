@@ -1,0 +1,32 @@
+RESIDUE   0A1     27
+CONECT      N      3 CA   HN1  HN2 
+CONECT      CA     4 N    CB   C    HA  
+CONECT      CB     4 CA   CG   HBC1 HBC2
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CZ     3 CE1  OH   CE2 
+CONECT      OH     2 CZ   CM  
+CONECT      CM     4 OH   HMC1 HMC2 HMC3
+CONECT      CE2    3 CZ   CD2  HE2 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      OXT    2 C    HXT 
+CONECT      HN1    1 N   
+CONECT      HN2    1 N   
+CONECT      HA     1 CA  
+CONECT      HBC1   1 CB  
+CONECT      HBC2   1 CB  
+CONECT      HXT    1 OXT 
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HMC1   1 CM  
+CONECT      HMC2   1 CM  
+CONECT      HMC3   1 CM  
+END   
+HET    0A1             27
+HETNAM     0A1 O-methyl-L-tyrosine
+FORMUL      0A1    C10 H13 N1 O3

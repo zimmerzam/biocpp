@@ -1,0 +1,42 @@
+RESIDUE   07Z     36
+CONECT      C1     3 N2   C17  C21 
+CONECT      N2     3 C1   C3   HN2 
+CONECT      C3     3 N2   N4   S7  
+CONECT      N4     2 C3   C5  
+CONECT      C5     3 N4   C6   N8  
+CONECT      C6     3 C5   S7   C9  
+CONECT      S7     2 C3   C6  
+CONECT      N8     3 C5   HN8  HN8A
+CONECT      C9     3 C6   C10  O16 
+CONECT      C10    3 C9   C11  C15 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  N14  H13 
+CONECT      N14    2 C13  C15 
+CONECT      C15    3 C10  N14  H15 
+CONECT      O16    1 C9  
+CONECT      C17    3 C1   C18  H17 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C18  C20  C22 
+CONECT      C20    3 C19  C21  H20 
+CONECT      C21    3 C1   C20  H21 
+CONECT      C22    3 C19  O23  O24 
+CONECT      O23    1 C22 
+CONECT      O24    2 C22  HO24
+CONECT      HN2    1 N2  
+CONECT      HN8    1 N8  
+CONECT      HN8A   1 N8  
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H15    1 C15 
+CONECT      H17    1 C17 
+CONECT      H18    1 C18 
+CONECT      H20    1 C20 
+CONECT      H21    1 C21 
+CONECT      HO24   1 O24 
+END   
+HET    07Z             36
+HETNAM     07Z 4-{[4-amino-5-(pyridin-3-ylcarbonyl)-1,3-thiazol-2-yl]a
+HETNAM   2 07Z mino}benzoic acid
+FORMUL      07Z    C16 H12 N4 O3 S1

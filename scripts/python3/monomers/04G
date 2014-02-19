@@ -1,0 +1,29 @@
+RESIDUE   04G     23
+CONECT      O4     2 C23  HO4 
+CONECT      O5     2 C25  C28 
+CONECT      N6     2 C26  C27 
+CONECT      O6     1 C30 
+CONECT      C21    3 C22  C26  H21 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C23    3 O4   C22  C24 
+CONECT      C24    3 C23  C25  H24 
+CONECT      C25    3 O5   C24  C26 
+CONECT      C26    3 N6   C21  C25 
+CONECT      C27    3 N6   C28  C32 
+CONECT      C28    3 O5   C27  C29 
+CONECT      C29    3 C28  C30  H29 
+CONECT      C30    3 O6   C29  C31 
+CONECT      C31    3 C30  C32  H31 
+CONECT      C32    3 C27  C31  H32 
+CONECT      HO4    1 O4  
+CONECT      H21    1 C21 
+CONECT      H22    1 C22 
+CONECT      H24    1 C24 
+CONECT      H29    1 C29 
+CONECT      H31    1 C31 
+CONECT      H32    1 C32 
+END   
+HET    04G             23
+HETSYN     04G RESORUFIN
+HETNAM     04G 7-hydroxy-3H-phenoxazin-3-one
+FORMUL      04G    C12 H7 N1 O3

@@ -1,0 +1,11 @@
+RESIDUE   0HQ      5
+CONECT      C1     3 N1   H1   H2  
+CONECT      N1     2 C1   N2  
+CONECT      N2     1 N1  
+CONECT      H1     1 C1  
+CONECT      H2     1 C1  
+END   
+HET    0HQ              5
+HETSYN     0HQ DIAZOMETHYL GROUP
+HETNAM     0HQ diazomethane
+FORMUL      0HQ    C1 H2 N2

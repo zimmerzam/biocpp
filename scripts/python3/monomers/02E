@@ -1,0 +1,51 @@
+RESIDUE   02E     46
+CONECT      OP1    2 P    HOP1
+CONECT      OP4    2 P    H50 
+CONECT      OP3    2 P    C61 
+CONECT      C1     4 O2   HC11 HC12 HC13
+CONECT      C2     3 C3   O2   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     4 C3   C5   HC41 HC42
+CONECT      C5     4 C4   P    N6   HC5 
+CONECT      O2     2 C1   C2  
+CONECT      C61    3 OP3  C411 C421
+CONECT      OP2    2 P    C51 
+CONECT      C51    3 OP2  C52  C56 
+CONECT      C52    3 C51  C53  H52 
+CONECT      C53    3 C52  C54  H53 
+CONECT      C54    3 C53  C55  H54 
+CONECT      C55    3 C54  C56  H55 
+CONECT      C56    3 C51  C55  H56 
+CONECT      N6     3 C5   HN6  H1  
+CONECT      C411   3 C61  C451 H441
+CONECT      C421   3 C61  C431 H451
+CONECT      C431   3 C421 C441 H461
+CONECT      C441   3 C431 C451 H47 
+CONECT      C451   3 C411 C441 H48 
+CONECT      HOP1   1 OP1 
+CONECT      H50    1 OP4 
+CONECT      HC11   1 C1  
+CONECT      HC12   1 C1  
+CONECT      HC13   1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      HC41   1 C4  
+CONECT      HC42   1 C4  
+CONECT      HC5    1 C5  
+CONECT      H52    1 C52 
+CONECT      H53    1 C53 
+CONECT      H54    1 C54 
+CONECT      H55    1 C55 
+CONECT      H56    1 C56 
+CONECT      HN6    1 N6  
+CONECT      H441   1 C411
+CONECT      H451   1 C421
+CONECT      H461   1 C431
+CONECT      H47    1 C441
+CONECT      H48    1 C451
+CONECT      H1     1 N6  
+END   
+HET    02E             46
+HETNAM     02E (E,1S)-1-[dihydroxy(diphenoxy)-$l^{5}-phosphanyl]-4-met
+HETNAM   2 02E hoxy-but-3-en-1-amine
+FORMUL      02E    C17 H22 N1 O5 P1

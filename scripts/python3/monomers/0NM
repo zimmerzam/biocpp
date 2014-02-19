@@ -1,0 +1,9 @@
+RESIDUE   0NM      4
+CONECT      N      1 C   
+CONECT      C      2 N    O   
+CONECT      O      2 C    H   
+CONECT      H      1 O   
+END   
+HET    0NM              4
+HETNAM     0NM cyanic acid
+FORMUL      0NM    C1 H1 N1 O1

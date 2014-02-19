@@ -1,0 +1,23 @@
+RESIDUE   0AZ     18
+CONECT      N      3 CA   CD   H   
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     4 CB   CD   OD1  HG  
+CONECT      CD     4 N    CG   HD22 HD23
+CONECT      OD1    2 CG   HD1 
+CONECT      OXT    2 C    HXT 
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HG     1 CG  
+CONECT      HD22   1 CD  
+CONECT      HD23   1 CD  
+CONECT      HD1    1 OD1 
+CONECT      HXT    1 OXT 
+END   
+HET    0AZ             18
+HETNAM     0AZ (4R)-4-hydroxy-D-proline
+FORMUL      0AZ    C5 H9 N1 O3

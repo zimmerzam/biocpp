@@ -1,0 +1,23 @@
+RESIDUE   0CG     18
+CONECT      O20    1 P17 
+CONECT      P17    4 O20  O18  O19  O16 
+CONECT      O18    2 P17  H1  
+CONECT      O19    2 P17  H2  
+CONECT      O16    2 P17  P13 
+CONECT      P13    4 O16  O14  O15  O29 
+CONECT      O14    1 P13 
+CONECT      O15    2 P13  H3  
+CONECT      O29    2 P13  C28 
+CONECT      C28    4 O29  C27  H4   H5  
+CONECT      C27    2 C28  C30 
+CONECT      C30    2 C27  H6  
+CONECT      H1     1 O18 
+CONECT      H2     1 O19 
+CONECT      H3     1 O15 
+CONECT      H4     1 C28 
+CONECT      H5     1 C28 
+CONECT      H6     1 C30 
+END   
+HET    0CG             18
+HETNAM     0CG prop-2-yn-1-yl trihydrogen diphosphate
+FORMUL      0CG    C3 H6 O7 P2

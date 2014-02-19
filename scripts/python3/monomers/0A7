@@ -1,0 +1,26 @@
+RESIDUE   0A7     21
+CONECT      O01    1 C11 
+CONECT      C02    3 C03  C07  H02 
+CONECT      C03    3 C02  C04  H03 
+CONECT      C04    3 C03  C05  C10 
+CONECT      C05    3 C04  C06  C08 
+CONECT      C06    3 C05  C07  H06 
+CONECT      C07    3 C02  C06  H07 
+CONECT      C08    3 C05  O09  OXT 
+CONECT      O09    1 C08 
+CONECT      C10    4 C04  C11  H101 H102
+CONECT      C11    3 O01  C10  O12 
+CONECT      O12    2 C11  H12 
+CONECT      OXT    2 C08  HOT 
+CONECT      H02    1 C02 
+CONECT      H03    1 C03 
+CONECT      H07    1 C07 
+CONECT      H101   1 C10 
+CONECT      H102   1 C10 
+CONECT      H06    1 C06 
+CONECT      HOT    1 OXT 
+CONECT      H12    1 O12 
+END   
+HET    0A7             21
+HETNAM     0A7 2-(carboxymethyl)benzoic acid
+FORMUL      0A7    C9 H8 O4

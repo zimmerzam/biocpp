@@ -1,0 +1,56 @@
+RESIDUE   054     49
+CONECT      C1     3 C2   C4   C15 
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C6   H3  
+CONECT      C4     3 C1   C5   H4  
+CONECT      C5     3 C4   C6   C9  
+CONECT      C6     3 C3   C5   N7  
+CONECT      N7     3 C6   C8   C13 
+CONECT      C8     3 N7   C9   C10 
+CONECT      C9     3 C5   C8   N21 
+CONECT      C10    3 C8   O11  O12 
+CONECT      O11    1 C10 
+CONECT      O12    2 C10  HO12
+CONECT      C13    4 N7   C14  H13  H13A
+CONECT      C14    3 C13  C16  C20 
+CONECT      C15    4 C1   F32  F33  F34 
+CONECT      C16    3 C14  C17  H16 
+CONECT      C17    3 C16  N18  H17 
+CONECT      N18    2 C17  C19 
+CONECT      C19    3 N18  C20  N35 
+CONECT      C20    3 C14  C19  H20 
+CONECT      N21    3 C9   C22  C24 
+CONECT      C22    3 N21  N23  O26 
+CONECT      N23    3 C22  C29  HN23
+CONECT      C24    3 N21  O25  C28 
+CONECT      O25    1 C24 
+CONECT      O26    1 C22 
+CONECT      C27    3 C28  S31  H27 
+CONECT      C28    3 C24  C27  C29 
+CONECT      C29    3 N23  C28  C30 
+CONECT      C30    3 C29  S31  H30 
+CONECT      S31    2 C27  C30 
+CONECT      F32    1 C15 
+CONECT      F33    1 C15 
+CONECT      F34    1 C15 
+CONECT      N35    3 C19  HN35 HN3A
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      HO12   1 O12 
+CONECT      H13    1 C13 
+CONECT      H13A   1 C13 
+CONECT      H16    1 C16 
+CONECT      H17    1 C17 
+CONECT      H20    1 C20 
+CONECT      HN23   1 N23 
+CONECT      H27    1 C27 
+CONECT      H30    1 C30 
+CONECT      HN35   1 N35 
+CONECT      HN3A   1 N35 
+END   
+HET    054             49
+HETNAM     054 1-[(2-aminopyridin-4-yl)methyl]-3-(2,4-dioxo-1,2-dihydr
+HETNAM   2 054 othieno[3,4-d]pyrimidin-3(4H)-yl)-5-(trifluoromethyl)-1
+HETNAM   3 054 H-indole-2-carboxylic acid
+FORMUL      054    C22 H14 F3 N5 O4 S1

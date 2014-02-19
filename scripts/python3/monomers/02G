@@ -1,0 +1,28 @@
+RESIDUE   02G     23
+CONECT      C2     4 C3   C1   H01  H01A
+CONECT      C7     4 C6   S    H02  H02A
+CONECT      C6     4 C7   C5   H03  H03A
+CONECT      C5     3 C6   C4   H04 
+CONECT      C4     3 C5   C3   H05 
+CONECT      C3     4 C2   C4   O2   H06 
+CONECT      C1     3 C2   O1   OXT 
+CONECT      O2     2 C3   H2  
+CONECT      O1     1 C1  
+CONECT      S      2 C7   HS30
+CONECT      H01    1 C2  
+CONECT      H01A   1 C2  
+CONECT      H02    1 C7  
+CONECT      H02A   1 C7  
+CONECT      H03    1 C6  
+CONECT      H03A   1 C6  
+CONECT      H04    1 C5  
+CONECT      H05    1 C4  
+CONECT      H06    1 C3  
+CONECT      HS30   1 S   
+CONECT      H2     1 O2  
+CONECT      OXT    2 C1   HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    02G             23
+HETNAM     02G (3S,4E)-3-hydroxy-7-sulfanylhept-4-enoic acid
+FORMUL      02G    C7 H12 O3 S1

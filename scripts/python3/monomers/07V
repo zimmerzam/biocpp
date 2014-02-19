@@ -1,0 +1,31 @@
+RESIDUE   07V     25
+CONECT      CAG    4 CAJ  CAK  H1   H2  
+CONECT      CAJ    3 CAG  OAD  CAI 
+CONECT      OAD    1 CAJ 
+CONECT      CAI    3 CAJ  CAC  CAE 
+CONECT      CAC    4 CAI  H3   H4   H5  
+CONECT      CAE    3 CAI  CAF  H6  
+CONECT      CAF    4 CAE  CAK  H7   H8  
+CONECT      CAK    4 CAG  CAF  CAH  H9  
+CONECT      CAH    3 CAK  CAB  CAA 
+CONECT      CAB    4 CAH  H10  H11  H12 
+CONECT      CAA    3 CAH  H13  H14 
+CONECT      H1     1 CAG 
+CONECT      H2     1 CAG 
+CONECT      H3     1 CAC 
+CONECT      H4     1 CAC 
+CONECT      H5     1 CAC 
+CONECT      H6     1 CAE 
+CONECT      H7     1 CAF 
+CONECT      H8     1 CAF 
+CONECT      H9     1 CAK 
+CONECT      H10    1 CAB 
+CONECT      H11    1 CAB 
+CONECT      H12    1 CAB 
+CONECT      H13    1 CAA 
+CONECT      H14    1 CAA 
+END   
+HET    07V             25
+HETSYN     07V R-carvone
+HETNAM     07V (5R)-2-methyl-5-(prop-1-en-2-yl)cyclohex-2-en-1-one
+FORMUL      07V    C10 H14 O1

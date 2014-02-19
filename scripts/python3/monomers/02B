@@ -1,0 +1,34 @@
+RESIDUE   02B     29
+CONECT      S20    4 O21  O22  C11  O1  
+CONECT      O21    1 S20 
+CONECT      O22    1 S20 
+CONECT      C11    3 S20  C12  C16 
+CONECT      C12    3 C11  C13  C17 
+CONECT      C13    3 C12  C14  C18 
+CONECT      C14    3 C13  C15  O11 
+CONECT      C15    3 C14  C16  H151
+CONECT      C16    3 C11  C15  C10 
+CONECT      C17    4 C12  H171 H172 H173
+CONECT      C18    4 C13  H181 H182 H183
+CONECT      C10    4 C16  H101 H102 H103
+CONECT      O11    2 C14  C19 
+CONECT      C19    4 O11  H191 H192 H193
+CONECT      H151   1 C15 
+CONECT      H171   1 C17 
+CONECT      H172   1 C17 
+CONECT      H173   1 C17 
+CONECT      H181   1 C18 
+CONECT      H182   1 C18 
+CONECT      H183   1 C18 
+CONECT      H101   1 C10 
+CONECT      H102   1 C10 
+CONECT      H103   1 C10 
+CONECT      H191   1 C19 
+CONECT      H192   1 C19 
+CONECT      H193   1 C19 
+CONECT      O1     2 S20  H1  
+CONECT      H1     1 O1  
+END   
+HET    02B             29
+HETNAM     02B 4-methoxy-2,3,6-trimethylbenzenesulfonic acid
+FORMUL      02B    C10 H14 O4 S1

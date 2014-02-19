@@ -1,0 +1,67 @@
+RESIDUE   0OF     60
+CONECT      C1     4 C2   C7   C26  H1  
+CONECT      C2     3 C1   N3   O8  
+CONECT      N3     3 C2   C4   C24 
+CONECT      C4     3 N3   C5   C13 
+CONECT      C5     3 C4   N6   C10 
+CONECT      N6     3 C5   C7   C14 
+CONECT      C7     3 C1   N6   O9  
+CONECT      O8     1 C2  
+CONECT      O9     1 C7  
+CONECT      C10    3 C5   C11  H2  
+CONECT      C11    3 C10  C12  C20 
+CONECT      C12    3 C11  C13  H3  
+CONECT      C13    3 C4   C12  H4  
+CONECT      C14    3 N6   C15  C19 
+CONECT      C15    3 C14  C16  H5  
+CONECT      C16    3 C15  C17  H6  
+CONECT      C17    3 C16  C18  H7  
+CONECT      C18    3 C17  C19  H8  
+CONECT      C19    3 C14  C18  H9  
+CONECT      C20    4 C11  F21  F22  F23 
+CONECT      F21    1 C20 
+CONECT      F22    1 C20 
+CONECT      F23    1 C20 
+CONECT      C24    4 N3   C25  H10  H11 
+CONECT      C25    4 C24  H12  H13  H14 
+CONECT      C26    3 C1   C27  C31 
+CONECT      C27    3 C26  C28  H15 
+CONECT      C28    3 C27  C29  O32 
+CONECT      C29    3 C28  C30  H16 
+CONECT      C30    3 C29  C31  C33 
+CONECT      C31    3 C26  C30  H17 
+CONECT      O32    2 C28  H18 
+CONECT      C33    3 C30  C34  C38 
+CONECT      C34    3 C33  N35  H19 
+CONECT      N35    2 C34  C36 
+CONECT      C36    3 N35  C37  H20 
+CONECT      C37    3 C36  C38  H21 
+CONECT      C38    3 C33  C37  H22 
+CONECT      H1     1 C1  
+CONECT      H2     1 C10 
+CONECT      H3     1 C12 
+CONECT      H4     1 C13 
+CONECT      H5     1 C15 
+CONECT      H6     1 C16 
+CONECT      H7     1 C17 
+CONECT      H8     1 C18 
+CONECT      H9     1 C19 
+CONECT      H10    1 C24 
+CONECT      H11    1 C24 
+CONECT      H12    1 C25 
+CONECT      H13    1 C25 
+CONECT      H14    1 C25 
+CONECT      H15    1 C27 
+CONECT      H16    1 C29 
+CONECT      H17    1 C31 
+CONECT      H18    1 O32 
+CONECT      H19    1 C34 
+CONECT      H20    1 C36 
+CONECT      H21    1 C37 
+CONECT      H22    1 C38 
+END   
+HET    0OF             60
+HETNAM     0OF (3S)-1-ethyl-3-[3-hydroxy-5-(pyridin-3-yl)phenyl]-5-phe
+HETNAM   2 0OF nyl-7-(trifluoromethyl)-1H-1,5-benzodiazepine-2,4(3H,5H
+HETNAM   3 0OF )-dione
+FORMUL      0OF    C29 H22 F3 N3 O3

@@ -1,0 +1,32 @@
+RESIDUE   0OK     27
+CONECT      CAG    3 CAC  CAM  H1  
+CONECT      CAC    3 CAG  CAB  H2  
+CONECT      CAB    3 CAC  CAD  H3  
+CONECT      CAD    3 CAB  CAH  H4  
+CONECT      CAH    3 CAD  CAM  H5  
+CONECT      CAM    3 CAG  CAH  NAQ 
+CONECT      NAQ    3 CAM  CAK  CAN 
+CONECT      CAK    3 NAQ  NAL  H6  
+CONECT      NAL    2 CAK  CAO 
+CONECT      CAO    3 NAL  CAI  CAP 
+CONECT      CAI    3 CAO  CAE  H7  
+CONECT      CAE    3 CAI  CAF  H8  
+CONECT      CAF    3 CAE  CAJ  H9  
+CONECT      CAJ    3 CAF  CAP  H10 
+CONECT      CAP    3 CAO  CAJ  CAN 
+CONECT      CAN    3 NAQ  CAP  OAA 
+CONECT      OAA    1 CAN 
+CONECT      H1     1 CAG 
+CONECT      H2     1 CAC 
+CONECT      H3     1 CAB 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAH 
+CONECT      H6     1 CAK 
+CONECT      H7     1 CAI 
+CONECT      H8     1 CAE 
+CONECT      H9     1 CAF 
+CONECT      H10    1 CAJ 
+END   
+HET    0OK             27
+HETNAM     0OK 3-phenylquinazolin-4(3H)-one
+FORMUL      0OK    C14 H10 N2 O1

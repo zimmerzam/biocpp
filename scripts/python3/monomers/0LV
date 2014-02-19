@@ -1,0 +1,32 @@
+RESIDUE   0LV     27
+CONECT      CAH    4 CAM  CAK  H1   H2  
+CONECT      CAM    4 CAH  CAA  CAB  OAI 
+CONECT      CAA    4 CAM  H3   H4   H5  
+CONECT      CAB    4 CAM  H6   H7   H8  
+CONECT      OAI    2 CAM  CAL 
+CONECT      CAL    3 OAI  CAK  CAJ 
+CONECT      CAK    3 CAH  CAL  CAF 
+CONECT      CAF    3 CAK  CAD  H9  
+CONECT      CAD    3 CAF  CAE  H10 
+CONECT      CAE    3 CAD  CAJ  H11 
+CONECT      CAJ    3 CAL  CAE  CAG 
+CONECT      CAG    4 CAJ  OAC  H12  H13 
+CONECT      OAC    2 CAG  H14 
+CONECT      H1     1 CAH 
+CONECT      H2     1 CAH 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAA 
+CONECT      H5     1 CAA 
+CONECT      H6     1 CAB 
+CONECT      H7     1 CAB 
+CONECT      H8     1 CAB 
+CONECT      H9     1 CAF 
+CONECT      H10    1 CAD 
+CONECT      H11    1 CAE 
+CONECT      H12    1 CAG 
+CONECT      H13    1 CAG 
+CONECT      H14    1 OAC 
+END   
+HET    0LV             27
+HETNAM     0LV (2,2-dimethyl-2,3-dihydro-1-benzofuran-7-yl)methanol
+FORMUL      0LV    C11 H14 O2

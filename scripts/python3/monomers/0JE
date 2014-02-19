@@ -1,0 +1,53 @@
+RESIDUE   0JE     47
+CONECT      CAZ    4 CAY  H1   H2   H3  
+CONECT      CAY    4 CAZ  OAX  H4   H5  
+CONECT      OAX    2 CAY  CAB 
+CONECT      CAB    3 OAX  CAC  CAA 
+CONECT      CAC    3 CAB  CAI  H6  
+CONECT      CAA    3 CAB  FAW  CAD 
+CONECT      FAW    1 CAA 
+CONECT      CAD    3 CAA  CAH  H7  
+CONECT      CAH    3 CAD  NAG  CAI 
+CONECT      NAG    3 CAH  CAF  H8  
+CONECT      CAI    3 CAC  CAH  NAE 
+CONECT      NAE    2 CAI  CAF 
+CONECT      CAF    3 NAG  NAE  CAJ 
+CONECT      CAJ    3 CAF  NAK  CAN 
+CONECT      NAK    3 CAJ  NAL  H10 
+CONECT      NAL    2 NAK  CAM 
+CONECT      CAM    3 NAL  CAN  H11 
+CONECT      CAN    3 CAJ  CAM  NAO 
+CONECT      NAO    3 CAN  CAP  H12 
+CONECT      CAP    3 NAO  OAR  NAQ 
+CONECT      OAR    1 CAP 
+CONECT      NAQ    3 CAP  CAU  CAS 
+CONECT      CAU    4 NAQ  CAV  H13  H14 
+CONECT      CAV    4 CAU  H15  H16  H17 
+CONECT      CAS    4 NAQ  CAT  H18  H19 
+CONECT      CAT    4 CAS  H20  H21  H22 
+CONECT      H1     1 CAZ 
+CONECT      H2     1 CAZ 
+CONECT      H3     1 CAZ 
+CONECT      H4     1 CAY 
+CONECT      H5     1 CAY 
+CONECT      H6     1 CAC 
+CONECT      H7     1 CAD 
+CONECT      H8     1 NAG 
+CONECT      H10    1 NAK 
+CONECT      H11    1 CAM 
+CONECT      H12    1 NAO 
+CONECT      H13    1 CAU 
+CONECT      H14    1 CAU 
+CONECT      H15    1 CAV 
+CONECT      H16    1 CAV 
+CONECT      H17    1 CAV 
+CONECT      H18    1 CAS 
+CONECT      H19    1 CAS 
+CONECT      H20    1 CAT 
+CONECT      H21    1 CAT 
+CONECT      H22    1 CAT 
+END   
+HET    0JE             47
+HETNAM     0JE 3-[5-(5-ethoxy-6-fluoro-1H-benzimidazol-2-yl)-1H-pyrazo
+HETNAM   2 0JE l-4-yl]-1,1-diethylurea
+FORMUL      0JE    C17 H21 F1 N6 O2

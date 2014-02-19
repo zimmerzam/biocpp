@@ -1,0 +1,49 @@
+RESIDUE   0OR     43
+CONECT      O19    2 P20  H1  
+CONECT      P20    4 O19  O21  O22  O23 
+CONECT      O21    1 P20 
+CONECT      O22    2 P20  H2  
+CONECT      O23    2 P20  P24 
+CONECT      P24    4 O23  O25  O26  O27 
+CONECT      O25    1 P24 
+CONECT      O26    2 P24  H3  
+CONECT      O27    2 P24  C28 
+CONECT      C28    4 O27  C29  H4   H5  
+CONECT      C29    4 C28  C30  C31  C32 
+CONECT      C30    4 C29  H6   H7   H8  
+CONECT      C31    4 C29  H9   H10  H11 
+CONECT      C32    4 C29  O33  C34  H12 
+CONECT      O33    2 C32  H13 
+CONECT      C34    3 C32  O35  N36 
+CONECT      O35    1 C34 
+CONECT      N36    3 C34  C37  H14 
+CONECT      C37    4 N36  C38  H15  H16 
+CONECT      C38    4 C37  C39  H17  H18 
+CONECT      C39    3 C38  O40  N41 
+CONECT      O40    1 C39 
+CONECT      N41    3 C39  H19  H20 
+CONECT      H1     1 O19 
+CONECT      H2     1 O22 
+CONECT      H3     1 O26 
+CONECT      H4     1 C28 
+CONECT      H5     1 C28 
+CONECT      H6     1 C30 
+CONECT      H7     1 C30 
+CONECT      H8     1 C30 
+CONECT      H9     1 C31 
+CONECT      H10    1 C31 
+CONECT      H11    1 C31 
+CONECT      H12    1 C32 
+CONECT      H13    1 O33 
+CONECT      H14    1 N36 
+CONECT      H15    1 C37 
+CONECT      H16    1 C37 
+CONECT      H17    1 C38 
+CONECT      H18    1 C38 
+CONECT      H19    1 N41 
+CONECT      H20    1 N41 
+END   
+HET    0OR             43
+HETNAM     0OR N~3~-[(2R)-2-hydroxy-4-{[(S)-hydroxy(phosphonooxy)phosp
+HETNAM   2 0OR horyl]oxy}-3,3-dimethylbutanoyl]-beta-alaninamide
+FORMUL      0OR    C9 H20 N2 O10 P2

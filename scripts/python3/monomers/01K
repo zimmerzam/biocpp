@@ -1,0 +1,126 @@
+RESIDUE   01K    117
+CONECT      O1     2 P2   HO1 
+CONECT      P2     4 O1   O3   O37  O38 
+CONECT      O3     2 P2   P4  
+CONECT      P4     4 O3   O5   O35  O36 
+CONECT      O5     2 P4   C6  
+CONECT      C6     4 O5   C7   H6   H6A 
+CONECT      C7     4 C6   C8   C9   C10 
+CONECT      C8     4 C7   H8   H8A  H8B 
+CONECT      C9     4 C7   H9   H9A  H9B 
+CONECT      C10    4 C7   O11  C12  H10 
+CONECT      O11    2 C10  HO11
+CONECT      C12    3 C10  N13  O34 
+CONECT      N13    3 C12  C14  HN13
+CONECT      C14    4 N13  C15  H14  H14A
+CONECT      C15    4 C14  C16  H15  H15A
+CONECT      C16    3 C15  N17  O33 
+CONECT      N17    3 C16  C18  HN17
+CONECT      C18    4 N17  C19  H18  H18A
+CONECT      C19    4 C18  S20  H19  H19A
+CONECT      S20    2 C19  C21 
+CONECT      C21    4 S20  C22  H21  H21A
+CONECT      C22    3 C21  NZ   O32 
+CONECT      NZ     3 C22  CE   HNZ 
+CONECT      CE     4 NZ   CD   HE   HEA 
+CONECT      CD     4 CE   CG   HD   HDA 
+CONECT      CG     4 CD   CB   HG   HGA 
+CONECT      CB     4 CG   CA   HB   HBA 
+CONECT      CA     4 CB   N    C    HA  
+CONECT      N      3 CA   C61  HN  
+CONECT      C      3 CA   O    N64 
+CONECT      O      1 C   
+CONECT      O33    1 C16 
+CONECT      O34    1 C12 
+CONECT      O35    1 P4  
+CONECT      O36    2 P4   HO36
+CONECT      O37    1 P2  
+CONECT      O38    2 P2   C39 
+CONECT      C40    4 C41  C39  O60  H40 
+CONECT      C41    4 C40  O42  C47  H41 
+CONECT      O45    2 P43  HO45
+CONECT      O46    2 P43  HO46
+CONECT      C54    3 N50  C53  N55 
+CONECT      C63    4 C61  H63  H63A H63B
+CONECT      C61    3 N    C63  O62 
+CONECT      O62    1 C61 
+CONECT      N64    3 C    HN64 HN6A
+CONECT      O32    1 C22 
+CONECT      C39    4 O38  C40  H39  H39A
+CONECT      O60    2 C40  C49 
+CONECT      O42    2 C41  P43 
+CONECT      P43    4 O45  O46  O42  O44 
+CONECT      O44    1 P43 
+CONECT      C47    4 C41  O48  C49  H47 
+CONECT      O48    2 C47  HO48
+CONECT      C49    4 O60  C47  N50  H49 
+CONECT      N50    3 C54  C49  C51 
+CONECT      C51    3 N50  N52  H51 
+CONECT      N52    2 C51  C53 
+CONECT      C53    3 C54  N52  C58 
+CONECT      N55    2 C54  C56 
+CONECT      C56    3 N55  N57  H56 
+CONECT      N57    2 C56  C58 
+CONECT      C58    3 C53  N57  N59 
+CONECT      N59    3 C58  HN59 HN5A
+CONECT      HO1    1 O1  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H8     1 C8  
+CONECT      H8A    1 C8  
+CONECT      H8B    1 C8  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      H9B    1 C9  
+CONECT      H10    1 C10 
+CONECT      HO11   1 O11 
+CONECT      HN13   1 N13 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      H15    1 C15 
+CONECT      H15A   1 C15 
+CONECT      HN17   1 N17 
+CONECT      H18    1 C18 
+CONECT      H18A   1 C18 
+CONECT      H19    1 C19 
+CONECT      H19A   1 C19 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      HNZ    1 NZ  
+CONECT      HE     1 CE  
+CONECT      HEA    1 CE  
+CONECT      HD     1 CD  
+CONECT      HDA    1 CD  
+CONECT      HG     1 CG  
+CONECT      HGA    1 CG  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HA     1 CA  
+CONECT      HN     1 N   
+CONECT      HO36   1 O36 
+CONECT      H40    1 C40 
+CONECT      H41    1 C41 
+CONECT      HO45   1 O45 
+CONECT      HO46   1 O46 
+CONECT      H63    1 C63 
+CONECT      H63A   1 C63 
+CONECT      H63B   1 C63 
+CONECT      HN64   1 N64 
+CONECT      HN6A   1 N64 
+CONECT      H39    1 C39 
+CONECT      H39A   1 C39 
+CONECT      H47    1 C47 
+CONECT      HO48   1 O48 
+CONECT      H49    1 C49 
+CONECT      H51    1 C51 
+CONECT      H56    1 C56 
+CONECT      HN59   1 N59 
+CONECT      HN5A   1 N59 
+END   
+HET    01K            117
+HETSYN     01K Lysine-COENZYME A derivative
+HETNAM     01K [(2R,3S,4R,5R)-5-(6-amino-9H-purin-9-yl)-4-hydroxy-3-(p
+HETNAM   2 01K hosphonooxy)tetrahydrofuran-2-yl]methyl (3R,20R)-20-car
+HETNAM   3 01K bamoyl-3-hydroxy-2,2-dimethyl-4,8,14,22-tetraoxo-12-thi
+HETNAM   4 01K a-5,9,15,21-tetraazatricos-1-yl dihydrogen diphosphate
+FORMUL      01K    C31 H53 N10 O19 P3 S1

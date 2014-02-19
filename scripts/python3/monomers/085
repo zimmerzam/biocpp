@@ -1,0 +1,52 @@
+RESIDUE   085     45
+CONECT      CAM    3 CAZ  CAW  H1  
+CONECT      CAZ    3 CAM  OAS  CAY 
+CONECT      OAS    2 CAZ  CAN 
+CONECT      CAN    4 OAS  OAR  H2   H17 
+CONECT      OAR    2 CAN  CAY 
+CONECT      CAY    3 CAZ  OAR  CAL 
+CONECT      CAL    3 CAY  CAK  H3  
+CONECT      CAK    3 CAL  CAW  H4  
+CONECT      CAW    3 CAM  CAK  CBB 
+CONECT      CBB    3 CAW  NAP  CBC 
+CONECT      NAP    3 CBB  CBA  H5  
+CONECT      CBA    3 NAP  CAV  NAQ 
+CONECT      CAV    3 CBA  CAJ  CAI 
+CONECT      CAJ    3 CAV  CAH  H6  
+CONECT      CAH    3 CAJ  CAU  H7  
+CONECT      CAI    3 CAV  CAG  H8  
+CONECT      CAG    3 CAI  CAU  H9  
+CONECT      CAU    3 CAH  CAG  CAT 
+CONECT      CAT    3 CAU  OAB  NAA 
+CONECT      OAB    1 CAT 
+CONECT      NAA    3 CAT  H10  H11 
+CONECT      NAQ    2 CBA  CBC 
+CONECT      CBC    3 CBB  NAQ  CAX 
+CONECT      CAX    3 CBC  CAF  NAO 
+CONECT      CAF    3 CAX  CAD  H13 
+CONECT      CAD    3 CAF  CAC  H14 
+CONECT      CAC    3 CAD  CAE  H15 
+CONECT      CAE    3 CAC  NAO  H16 
+CONECT      NAO    2 CAX  CAE 
+CONECT      H1     1 CAM 
+CONECT      H2     1 CAN 
+CONECT      H3     1 CAL 
+CONECT      H4     1 CAK 
+CONECT      H5     1 NAP 
+CONECT      H6     1 CAJ 
+CONECT      H7     1 CAH 
+CONECT      H8     1 CAI 
+CONECT      H9     1 CAG 
+CONECT      H10    1 NAA 
+CONECT      H11    1 NAA 
+CONECT      H13    1 CAF 
+CONECT      H14    1 CAD 
+CONECT      H15    1 CAC 
+CONECT      H16    1 CAE 
+CONECT      H17    1 CAN 
+END   
+HET    085             45
+HETSYN     085 SB431542
+HETNAM     085 4-[5-(1,3-benzodioxol-5-yl)-4-(pyridin-2-yl)-1H-imidazo
+HETNAM   2 085 l-2-yl]benzamide
+FORMUL      085    C22 H16 N4 O3

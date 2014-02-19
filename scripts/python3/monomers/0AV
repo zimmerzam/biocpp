@@ -1,0 +1,45 @@
+RESIDUE   0AV     40
+CONECT      P      4 OP1  OP2  O5'  OXT 
+CONECT      OP1    1 P   
+CONECT      OP2    2 P    H15 
+CONECT      O5'    2 P    C5' 
+CONECT      C5'    4 O5'  C4'  H5'1 HA2 
+CONECT      C4'    4 C5'  O4'  C3'  HA  
+CONECT      O4'    2 C4'  C1' 
+CONECT      C3'    4 C4'  O3'  C2'  HB  
+CONECT      O3'    2 C3'  H3' 
+CONECT      C2'    4 C3'  O2'  C1'  HD  
+CONECT      O2'    2 C2'  CM  
+CONECT      C1'    4 O4'  C2'  N9   HC  
+CONECT      N9     3 C1'  C8   C4  
+CONECT      C8     3 N9   N7   H8  
+CONECT      N7     2 C8   C5  
+CONECT      C5     3 N7   C6   C4  
+CONECT      C6     3 C5   N6   N1  
+CONECT      N6     3 C6   H6N1 H6N2
+CONECT      N1     2 C6   C2  
+CONECT      C2     3 N1   N3   H2  
+CONECT      N3     2 C2   C4  
+CONECT      C4     3 N9   C5   N3  
+CONECT      CM     4 O2'  HMC1 HMC2 HMC3
+CONECT      OXT    2 P    H16 
+CONECT      H5'1   1 C5' 
+CONECT      HA2    1 C5' 
+CONECT      HA     1 C4' 
+CONECT      HB     1 C3' 
+CONECT      HC     1 C1' 
+CONECT      H3'    1 O3' 
+CONECT      HD     1 C2' 
+CONECT      HMC1   1 CM  
+CONECT      HMC2   1 CM  
+CONECT      HMC3   1 CM  
+CONECT      H8     1 C8  
+CONECT      H6N1   1 N6  
+CONECT      H6N2   1 N6  
+CONECT      H2     1 C2  
+CONECT      H15    1 OP2 
+CONECT      H16    1 OXT 
+END   
+HET    0AV             40
+HETNAM     0AV 2'-O-methyladenosine 5'-(dihydrogen phosphate)
+FORMUL      0AV    C11 H16 N5 O7 P1

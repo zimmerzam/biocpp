@@ -1,0 +1,73 @@
+RESIDUE   0NN     67
+CONECT      C4     3 C3   C5   H1  
+CONECT      C3     3 C4   C2   H2  
+CONECT      C2     3 C3   C1   H3  
+CONECT      O2     1 C16 
+CONECT      C1     3 C2   C6   C8  
+CONECT      O1     2 C7   C8  
+CONECT      N1     3 C10  C12  C13 
+CONECT      C10    4 N1   C9   H5   H6  
+CONECT      C11    4 C12  C8   H7   H8  
+CONECT      C12    4 N1   C11  H9   H10 
+CONECT      C13    4 N1   C14  H11  H12 
+CONECT      C14    4 C13  C15  H13  H14 
+CONECT      C15    4 C14  N2   H15  H16 
+CONECT      C16    3 O2   C17  N2  
+CONECT      C17    4 C16  C18  N3   H17 
+CONECT      C18    4 C17  C19  H18  H19 
+CONECT      C19    4 C18  C20  H20  H21 
+CONECT      N2     3 C15  C16  H22 
+CONECT      C20    4 C19  N3   H23  H24 
+CONECT      C21    4 C22  N3   H25  H26 
+CONECT      C22    3 C21  C23  C27 
+CONECT      C23    3 C22  C24  H27 
+CONECT      C24    3 C23  C25  H28 
+CONECT      C25    3 C24  C26  H29 
+CONECT      C26    3 C25  C27  H30 
+CONECT      C27    3 C22  C26  H31 
+CONECT      N3     3 C17  C20  C21 
+CONECT      C5     3 C4   C6   H33 
+CONECT      C6     3 C1   C5   C7  
+CONECT      C7     4 O1   C6   H34  H35 
+CONECT      C8     4 C1   O1   C11  C9  
+CONECT      C9     4 C10  C8   H36  H37 
+CONECT      H1     1 C4  
+CONECT      H2     1 C3  
+CONECT      H3     1 C2  
+CONECT      H5     1 C10 
+CONECT      H6     1 C10 
+CONECT      H7     1 C11 
+CONECT      H8     1 C11 
+CONECT      H9     1 C12 
+CONECT      H10    1 C12 
+CONECT      H11    1 C13 
+CONECT      H12    1 C13 
+CONECT      H13    1 C14 
+CONECT      H14    1 C14 
+CONECT      H15    1 C15 
+CONECT      H16    1 C15 
+CONECT      H17    1 C17 
+CONECT      H18    1 C18 
+CONECT      H19    1 C18 
+CONECT      H20    1 C19 
+CONECT      H21    1 C19 
+CONECT      H22    1 N2  
+CONECT      H23    1 C20 
+CONECT      H24    1 C20 
+CONECT      H25    1 C21 
+CONECT      H26    1 C21 
+CONECT      H27    1 C23 
+CONECT      H28    1 C24 
+CONECT      H29    1 C25 
+CONECT      H30    1 C26 
+CONECT      H31    1 C27 
+CONECT      H33    1 C5  
+CONECT      H34    1 C7  
+CONECT      H35    1 C7  
+CONECT      H36    1 C9  
+CONECT      H37    1 C9  
+END   
+HET    0NN             67
+HETNAM     0NN 1-benzyl-N-[3-(1'H,3H-spiro[2-benzofuran-1,4'-piperidin
+HETNAM   2 0NN ]-1'-yl)propyl]-D-prolinamide
+FORMUL      0NN    C27 H35 N3 O2

@@ -1,0 +1,53 @@
+RESIDUE   039     46
+CONECT      CAU    4 OAT  HAU1 HAU2 HAU3
+CONECT      OAT    2 CAU  CAP 
+CONECT      CAP    3 OAT  CAQ  CAH 
+CONECT      CAQ    3 CAP  CAR  HAQ 
+CONECT      CAR    3 CAQ  CAJ  HAR 
+CONECT      CAJ    3 CAR  CAI  HAJ 
+CONECT      CAI    3 CAJ  CAH  HAI 
+CONECT      CAH    3 CAP  CAI  NAG 
+CONECT      NAG    3 CAH  CAF  CAO 
+CONECT      CAF    3 NAG  OAB  CAE 
+CONECT      OAB    1 CAF 
+CONECT      CAE    3 CAF  CAD  CAM 
+CONECT      CAD    3 CAE  CL   CAC 
+CONECT      CL     1 CAD 
+CONECT      CAC    3 CAD  CAK  HAC 
+CONECT      CAK    3 CAC  CAL  HAK 
+CONECT      CAL    3 CAK  CAM  HAL 
+CONECT      CAM    3 CAE  CAL  NAN 
+CONECT      NAN    2 CAM  CAO 
+CONECT      CAO    3 NAG  NAN  CAS 
+CONECT      CAS    4 CAO  S6   HAS1 HAS2
+CONECT      S6     2 CAS  C6  
+CONECT      C6     3 S6   C5   N1  
+CONECT      C5     3 C6   N7   C4  
+CONECT      N7     2 C5   C8  
+CONECT      C8     3 N7   N9   H8  
+CONECT      N9     3 C8   C4   H9  
+CONECT      C4     3 C5   N9   N3  
+CONECT      N3     2 C4   C2  
+CONECT      C2     3 N3   N1   H2  
+CONECT      N1     2 C6   C2  
+CONECT      HAU1   1 CAU 
+CONECT      HAU2   1 CAU 
+CONECT      HAU3   1 CAU 
+CONECT      HAQ    1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HAJ    1 CAJ 
+CONECT      HAI    1 CAI 
+CONECT      HAC    1 CAC 
+CONECT      HAK    1 CAK 
+CONECT      HAL    1 CAL 
+CONECT      HAS1   1 CAS 
+CONECT      HAS2   1 CAS 
+CONECT      H8     1 C8  
+CONECT      H9     1 N9  
+CONECT      H2     1 C2  
+END   
+HET    039             46
+HETSYN     039 PIK-39
+HETNAM     039 2-((9H-PURIN-6-YLTHIO)METHYL)-5-CHLORO-3-(2-METHOXYPHEN
+HETNAM   2 039 YL)QUINAZOLIN-4(3H)-ONE
+FORMUL      039    C21 H15 Cl1 N6 O2 S1

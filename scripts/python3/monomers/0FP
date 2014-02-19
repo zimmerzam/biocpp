@@ -1,0 +1,122 @@
+RESIDUE   0FP    114
+CONECT      CA     4 C    CB   HA2  HA  
+CONECT      C      3 CA   O    N   
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HB1  HB2 
+CONECT      CG     4 CB   CD   HG1  HG2 
+CONECT      CD     4 CG   CE   HD1  HD2 
+CONECT      CE     4 CD   NZ   HE1  HE2 
+CONECT      NZ     3 CE   HZ1  HZ2 
+CONECT      N      3 C    CA1  H   
+CONECT      CA1    4 N    CB1  C1   HA1 
+CONECT      CB1    4 CA1  CG1  CG2  CG3 
+CONECT      CG1    4 CB1  HG11 HG12 HG13
+CONECT      CG2    4 CB1  HG21 HG22 HG23
+CONECT      CG3    4 CB1  HG31 HG32 HG33
+CONECT      C1     3 CA1  O1   N1  
+CONECT      O1     1 C1  
+CONECT      N1     3 C1   CA2  H1  
+CONECT      CA2    4 N1   CB2  C2   HA3 
+CONECT      CB2    4 CA2  CG11 CG21 CG31
+CONECT      CG11   4 CB2  HG14 HG15 HG16
+CONECT      CG21   4 CB2  HG24 HG25 HG26
+CONECT      CG31   4 CB2  HG34 HG35 HG36
+CONECT      C2     3 CA2  O2   N2  
+CONECT      O2     1 C2  
+CONECT      N2     3 C2   CA3  H2  
+CONECT      CA3    4 N2   CB3  C3   HA11
+CONECT      CB3    4 CA3  CG4  HB21 HB3 
+CONECT      CG4    3 CB3  OD1  ND2 
+CONECT      OD1    1 CG4 
+CONECT      ND2    3 CG4  CE1  CE2 
+CONECT      CE1    4 ND2  HE11 HE12 HE13
+CONECT      CE2    4 ND2  HE21 HE22 HE23
+CONECT      C3     3 CA3  O3   N3  
+CONECT      O3     1 C3  
+CONECT      N3     3 C3   CA4  H3  
+CONECT      CA4    4 N3   C4   CB4  HA4 
+CONECT      C4     4 CA4  O4   C11  H62 
+CONECT      O4     2 C4   H63 
+CONECT      CB4    4 CA4  HB11 HB22 HB31
+CONECT      C11    3 C4   O11  N21 
+CONECT      O11    1 C11 
+CONECT      N21    3 C11  C31  HN2 
+CONECT      C31    4 N21  C311 C41  HC3 
+CONECT      C311   4 C31  C32  H311 H312
+CONECT      C32    4 C311 H321 H322 H323
+CONECT      C41    3 C31  C5   C9  
+CONECT      C5     3 C41  C6   HC5 
+CONECT      C6     3 C5   C7   HC6 
+CONECT      C7     3 C6   C8   HC7 
+CONECT      C8     3 C7   C9   HC8 
+CONECT      C9     3 C41  C8   HC9 
+CONECT      HA2    1 CA  
+CONECT      HA     1 CA  
+CONECT      HB1    1 CB  
+CONECT      HB2    1 CB  
+CONECT      HG1    1 CG  
+CONECT      HG2    1 CG  
+CONECT      HD1    1 CD  
+CONECT      HD2    1 CD  
+CONECT      HE1    1 CE  
+CONECT      HE2    1 CE  
+CONECT      HZ1    1 NZ  
+CONECT      HZ2    1 NZ  
+CONECT      H      1 N   
+CONECT      HA1    1 CA1 
+CONECT      HG11   1 CG1 
+CONECT      HG12   1 CG1 
+CONECT      HG13   1 CG1 
+CONECT      HG21   1 CG2 
+CONECT      HG22   1 CG2 
+CONECT      HG23   1 CG2 
+CONECT      HG31   1 CG3 
+CONECT      HG32   1 CG3 
+CONECT      HG33   1 CG3 
+CONECT      H1     1 N1  
+CONECT      HA3    1 CA2 
+CONECT      HG14   1 CG11
+CONECT      HG15   1 CG11
+CONECT      HG16   1 CG11
+CONECT      HG24   1 CG21
+CONECT      HG25   1 CG21
+CONECT      HG26   1 CG21
+CONECT      HG34   1 CG31
+CONECT      HG35   1 CG31
+CONECT      HG36   1 CG31
+CONECT      H2     1 N2  
+CONECT      HA11   1 CA3 
+CONECT      HB21   1 CB3 
+CONECT      HB3    1 CB3 
+CONECT      HE11   1 CE1 
+CONECT      HE12   1 CE1 
+CONECT      HE13   1 CE1 
+CONECT      HE21   1 CE2 
+CONECT      HE22   1 CE2 
+CONECT      HE23   1 CE2 
+CONECT      H3     1 N3  
+CONECT      HA4    1 CA4 
+CONECT      HB11   1 CB4 
+CONECT      HB22   1 CB4 
+CONECT      HB31   1 CB4 
+CONECT      HN2    1 N21 
+CONECT      HC3    1 C31 
+CONECT      H311   1 C311
+CONECT      H312   1 C311
+CONECT      H321   1 C32 
+CONECT      H322   1 C32 
+CONECT      H323   1 C32 
+CONECT      HC5    1 C5  
+CONECT      HC6    1 C6  
+CONECT      HC7    1 C7  
+CONECT      HC8    1 C8  
+CONECT      HC9    1 C9  
+CONECT      H62    1 C4  
+CONECT      H63    1 O4  
+END   
+HET    0FP            114
+HETSYN     0FP BILC 408
+HETNAM     0FP N-(6-aminohexanoyl)-3-methyl-L-valyl-3-methyl-L-valyl-N
+HETNAM   2 0FP ~1~-[(2S,3S)-3-hydroxy-4-oxo-4-{[(1R)-1-phenylpropyl]am
+HETNAM   3 0FP ino}butan-2-yl]-N~4~,N~4~-dimethyl-L-aspartamide
+FORMUL      0FP    C37 H63 N7 O7

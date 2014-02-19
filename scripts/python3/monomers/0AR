@@ -1,0 +1,37 @@
+RESIDUE   0AR     31
+CONECT      C      3 O    CA   OXT 
+CONECT      N      3 CA   HN   HNA 
+CONECT      O      1 C   
+CONECT      CA     4 C    N    CB   HA  
+CONECT      CB     4 CA   CG   HB   HBA 
+CONECT      CD     4 NE   CG   HD   HDA 
+CONECT      NE     3 CD   CZ   HNE 
+CONECT      CG     4 CB   CD   HG   HGA 
+CONECT      CZ     3 NE   NH1  NH2 
+CONECT      C0B    3 O0C  C1B  NH2 
+CONECT      O0C    1 C0B 
+CONECT      C1B    4 C0B  H1B  H1BA H1BB
+CONECT      NH1    2 CZ   HNH1
+CONECT      NH2    3 CZ   C0B  HNH2
+CONECT      HN     1 N   
+CONECT      HNA    1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HD     1 CD  
+CONECT      HDA    1 CD  
+CONECT      HNE    1 NE  
+CONECT      HG     1 CG  
+CONECT      HGA    1 CG  
+CONECT      H1B    1 C1B 
+CONECT      H1BA   1 C1B 
+CONECT      H1BB   1 C1B 
+CONECT      HNH1   1 NH1 
+CONECT      HNH2   1 NH2 
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    0AR             31
+HETNAM     0AR N-[N-[(4S)-4-azanyl-5-hydroxy-5-oxo-pentyl]carbamimidoy
+HETNAM   2 0AR l]ethanamide
+FORMUL      0AR    C8 H16 N4 O3

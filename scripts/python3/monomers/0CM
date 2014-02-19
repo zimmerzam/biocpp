@@ -1,0 +1,26 @@
+RESIDUE   0CM     21
+CONECT      O12    2 P8   H1  
+CONECT      P8     4 O12  O13  O9   O7  
+CONECT      O13    1 P8  
+CONECT      O9     2 P8   H2  
+CONECT      O7     2 P8   P6  
+CONECT      P6     4 O7   O10  O11  O5  
+CONECT      O10    1 P6  
+CONECT      O11    2 P6   H3  
+CONECT      O5     2 P6   C4  
+CONECT      C4     4 O5   C3   H4   H5  
+CONECT      C3     2 C4   C2  
+CONECT      C2     2 C3   C1  
+CONECT      C1     4 C2   H6   H7   H8  
+CONECT      H1     1 O12 
+CONECT      H2     1 O9  
+CONECT      H3     1 O11 
+CONECT      H4     1 C4  
+CONECT      H5     1 C4  
+CONECT      H6     1 C1  
+CONECT      H7     1 C1  
+CONECT      H8     1 C1  
+END   
+HET    0CM             21
+HETNAM     0CM but-2-yn-1-yl trihydrogen diphosphate
+FORMUL      0CM    C4 H8 O7 P2

@@ -1,0 +1,61 @@
+RESIDUE   08S     54
+CONECT      C1     4 C21  H11C H12C H13C
+CONECT      C2     4 C21  H21C H22C H23C
+CONECT      C3     3 C5   C12  H3  
+CONECT      C4     3 C6   C12  H4  
+CONECT      C5     3 C3   C13  H5  
+CONECT      C6     3 C4   C13  H6  
+CONECT      C7     3 C8   C14  H7  
+CONECT      C8     3 C7   C15  H8  
+CONECT      C9     3 C14  C16  H9  
+CONECT      C10    4 C11  C12  H101 H102
+CONECT      C11    4 C10  N25  H111 H112
+CONECT      C12    3 C3   C4   C10 
+CONECT      C13    3 C5   C6   S33 
+CONECT      C14    3 C7   C9   F30 
+CONECT      C15    3 C8   C16  C17 
+CONECT      C16    3 C9   C15  S31 
+CONECT      C17    3 C15  C18  CL  
+CONECT      C18    3 C17  C22  S31 
+CONECT      C19    3 C21  N23  S32 
+CONECT      C20    3 N24  N26  S32 
+CONECT      C21    4 C1   C2   C19  H21 
+CONECT      C22    3 C18  N25  O27 
+CONECT      N23    2 C19  N24 
+CONECT      N24    2 C20  N23 
+CONECT      N25    3 C11  C22  H25 
+CONECT      N26    3 C20  S33  H26 
+CONECT      O27    1 C22 
+CONECT      O28    1 S33 
+CONECT      O29    1 S33 
+CONECT      F30    1 C14 
+CONECT      S31    2 C16  C18 
+CONECT      S32    2 C19  C20 
+CONECT      S33    4 C13  N26  O28  O29 
+CONECT      CL     1 C17 
+CONECT      H11C   1 C1  
+CONECT      H12C   1 C1  
+CONECT      H13C   1 C1  
+CONECT      H21    1 C21 
+CONECT      H21C   1 C2  
+CONECT      H22C   1 C2  
+CONECT      H23C   1 C2  
+CONECT      H3     1 C3  
+CONECT      H5     1 C5  
+CONECT      H4     1 C4  
+CONECT      H6     1 C6  
+CONECT      H7     1 C7  
+CONECT      H8     1 C8  
+CONECT      H9     1 C9  
+CONECT      H101   1 C10 
+CONECT      H102   1 C10 
+CONECT      H111   1 C11 
+CONECT      H112   1 C11 
+CONECT      H25    1 N25 
+CONECT      H26    1 N26 
+END   
+HET    08S             54
+HETNAM     08S 3-CHLORO-6-FLUORO-N-[2-[4-[(5-PROPAN-2-YL-1,3,4-THIADIA
+HETNAM   2 08S ZOL-2-YL)SULFAMOYL]PHENYL]ETHYL]-1-BENZOTHIOPHENE-2-CAR
+HETNAM   3 08S BOXAMIDE
+FORMUL      08S    C22 H20 Cl1 F1 N4 O3 S3

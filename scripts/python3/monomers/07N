@@ -1,0 +1,48 @@
+RESIDUE   07N     41
+CONECT      C1     4 C2   H1   H1A  H1B 
+CONECT      CL1    1 C4  
+CONECT      C2     3 C1   C3   N6  
+CONECT      CL2    1 C3  
+CONECT      C3     3 C2   CL2  C4  
+CONECT      C4     3 CL1  C3   C5  
+CONECT      C5     3 C4   N6   C8  
+CONECT      N6     3 C2   C5   HN6 
+CONECT      C8     3 C5   O9   N10 
+CONECT      O9     1 C8  
+CONECT      N10    3 C8   C11  HN10
+CONECT      C11    4 N10  C13  C17  H11 
+CONECT      C13    4 C11  C14  H13  H13A
+CONECT      C14    4 C13  N15  H14  H14A
+CONECT      N15    3 C14  C16  C20 
+CONECT      C16    4 N15  C17  H16  H16A
+CONECT      C17    4 C11  C16  F19  H17 
+CONECT      F19    1 C17 
+CONECT      C20    3 N15  N21  S24 
+CONECT      N21    2 C20  C22 
+CONECT      C22    3 N21  C23  H22 
+CONECT      C23    3 C22  S24  C25 
+CONECT      S24    2 C20  C23 
+CONECT      C25    3 C23  O26  O27 
+CONECT      O26    1 C25 
+CONECT      O27    2 C25  HO27
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+CONECT      HN10   1 N10 
+CONECT      H11    1 C11 
+CONECT      H13    1 C13 
+CONECT      H13A   1 C13 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H17    1 C17 
+CONECT      H22    1 C22 
+CONECT      HO27   1 O27 
+CONECT      HN6    1 N6  
+END   
+HET    07N             41
+HETNAM     07N 2-[(3S,4R)-4-{[(3,4-dichloro-5-methyl-1H-pyrrol-2-yl)ca
+HETNAM   2 07N rbonyl]amino}-3-fluoropiperidin-1-yl]-1,3-thiazole-5-ca
+HETNAM   3 07N rboxylic acid
+FORMUL      07N    C15 H15 Cl2 F1 N4 O3 S1

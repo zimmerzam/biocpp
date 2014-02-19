@@ -1,0 +1,56 @@
+RESIDUE   048     50
+CONECT      OAA    1 CAU 
+CONECT      OAB    1 CAV 
+CONECT      FAC    1 CAW 
+CONECT      CAD    3 CAE  CAF  HAD 
+CONECT      CAE    3 CAD  CAG  HAE 
+CONECT      CAF    3 CAD  CAH  HAF 
+CONECT      CAG    3 CAE  CAZ  HAG 
+CONECT      CAH    3 CAF  CAZ  HAH 
+CONECT      CAI    3 CAJ  CAW  HAI 
+CONECT      CAJ    3 CAI  CAY  HAJ 
+CONECT      CAK    3 CAL  CAX  HAK 
+CONECT      CAL    3 CAK  CBC  HAL 
+CONECT      CAM    3 CAX  CBA  HAM 
+CONECT      CAN    3 CAY  CBB  HAN 
+CONECT      CAO    4 CAP  CAQ  HAO  HAOA
+CONECT      CAP    4 CAO  CAR  HAP  HAPA
+CONECT      CAQ    4 CAO  CAU  HAQ  HAQA
+CONECT      CAR    4 CAP  CBA  HAR  HARA
+CONECT      NAS    3 CAV  CBB  HNAS
+CONECT      NAT    3 CAX  CAY  HNAT
+CONECT      CAU    3 OAA  CAQ  CBC 
+CONECT      CAV    3 OAB  NAS  CAZ 
+CONECT      CAW    3 FAC  CAI  CBB 
+CONECT      CAX    3 CAK  CAM  NAT 
+CONECT      CAY    3 CAJ  CAN  NAT 
+CONECT      CAZ    3 CAG  CAH  CAV 
+CONECT      CBA    3 CAM  CAR  CBC 
+CONECT      CBB    3 CAN  NAS  CAW 
+CONECT      CBC    3 CAL  CAU  CBA 
+CONECT      HAD    1 CAD 
+CONECT      HAE    1 CAE 
+CONECT      HAF    1 CAF 
+CONECT      HAG    1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAL    1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAOA   1 CAO 
+CONECT      HAP    1 CAP 
+CONECT      HAPA   1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAQA   1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HARA   1 CAR 
+CONECT      HNAS   1 NAS 
+CONECT      HNAT   1 NAT 
+END   
+HET    048             50
+HETNAM     048 N-{2-fluoro-5-[(5-oxo-6,7,8,9-tetrahydro-5H-benzo[7]ann
+HETNAM   2 048 ulen-2-yl)amino]phenyl}benzamide
+FORMUL      048    C24 H21 F1 N2 O2

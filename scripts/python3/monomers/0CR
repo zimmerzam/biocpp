@@ -1,0 +1,191 @@
+RESIDUE   0CR    177
+CONECT      N1     3 S1   HN1  HN1A
+CONECT      N2     2 N3   C71 
+CONECT      N3     2 N2   N4  
+CONECT      C01    4 C02  C21  H01  H01A
+CONECT      C02    3 C01  C03  C07 
+CONECT      C03    3 C02  C04  H03 
+CONECT      C04    3 C03  C05  O01 
+CONECT      C05    3 C04  C06  O02 
+CONECT      C06    3 C05  C07  H06 
+CONECT      C07    3 C02  C06  C08 
+CONECT      C08    4 C07  C09  H08  H08A
+CONECT      C09    3 C08  C10  C14 
+CONECT      C10    3 C09  C11  H10 
+CONECT      C11    3 C10  C12  O04 
+CONECT      C12    3 C11  C13  O05 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 C09  C13  C15 
+CONECT      C15    4 C14  C16  H15  H15A
+CONECT      C16    3 C15  C17  C21 
+CONECT      C17    3 C16  C18  H17 
+CONECT      C18    3 C17  C19  O07 
+CONECT      C19    3 C18  C20  O08 
+CONECT      C20    3 C19  C21  H20 
+CONECT      C21    3 C01  C16  C20 
+CONECT      C22    4 C23  C42  H22  H22A
+CONECT      C23    3 C22  C24  C28 
+CONECT      C24    3 C23  C25  H24 
+CONECT      C25    3 C24  C26  O09 
+CONECT      C26    3 C25  C27  O10 
+CONECT      C27    3 C26  C28  H27 
+CONECT      C28    3 C23  C27  C29 
+CONECT      C29    4 C28  C30  H29  H29A
+CONECT      C30    3 C29  C31  C35 
+CONECT      C31    3 C30  C32  H31 
+CONECT      C32    3 C31  C33  O03 
+CONECT      C33    3 C32  C34  O11 
+CONECT      C34    3 C33  C35  H34 
+CONECT      C35    3 C30  C34  C36 
+CONECT      C36    4 C35  C37  H36  H36A
+CONECT      C37    3 C36  C38  C42 
+CONECT      C38    3 C37  C39  H38 
+CONECT      C39    3 C38  C40  O06 
+CONECT      C40    3 C39  C41  O12 
+CONECT      C41    3 C40  C42  H41 
+CONECT      C42    3 C22  C37  C41 
+CONECT      C46    4 C47  O11  H46  H71 
+CONECT      C47    4 C46  O01  H47  H721
+CONECT      C51    4 O03  H51  H51A H51B
+CONECT      C52    4 C60  O12  H52  H73 
+CONECT      C56    4 O09  H56  H56A H56B
+CONECT      C57    4 O07  C70  H57  H57A
+CONECT      C58    4 O02  C71  H58  H58A
+CONECT      C59    4 O06  H59  H59A H59B
+CONECT      C60    4 C52  O04  H60  H74 
+CONECT      O01    2 C04  C47 
+CONECT      O02    2 C05  C58 
+CONECT      O03    2 C32  C51 
+CONECT      O04    2 C11  C60 
+CONECT      O05    2 C12  CT5 
+CONECT      O06    2 C39  C59 
+CONECT      O07    2 C18  C57 
+CONECT      O08    2 C19  CT3 
+CONECT      O09    2 C25  C56 
+CONECT      O10    2 C26  C70 
+CONECT      O11    2 C33  C46 
+CONECT      O12    2 C40  C52 
+CONECT      C61    3 C62  C67  S1  
+CONECT      C62    3 C61  C64  H62 
+CONECT      C64    3 C62  C65  H64 
+CONECT      C65    3 C64  C66  C68 
+CONECT      C66    3 C65  C67  H66 
+CONECT      C67    3 C61  C66  H67 
+CONECT      C68    4 C65  C69  H68  H68A
+CONECT      C69    4 C68  N4   H69  H69A
+CONECT      O13    1 S1  
+CONECT      O14    1 S1  
+CONECT      S1     4 N1   C61  O13  O14 
+CONECT      C70    4 C57  O10  H70  H70A
+CONECT      C71    3 N2   C58  C72 
+CONECT      C72    3 C71  N4   H72 
+CONECT      N4     3 N3   C69  C72 
+CONECT      CT5    4 O05  CN5  HT5  HT5A
+CONECT      CN5    3 CT5  CN6  NN7 
+CONECT      CN6    3 CN5  NN9  HN6 
+CONECT      NN7    2 CN5  NN8 
+CONECT      NN8    2 NN7  NN9 
+CONECT      NN9    3 CN6  NN8  CI5 
+CONECT      CI5    4 NN9  CI6  HI5  HI5A
+CONECT      CI6    4 CI5  CO5  HI6  HI6A
+CONECT      CO5    3 CI6  O51  O52 
+CONECT      O51    2 CO5  HO51
+CONECT      O52    1 CO5 
+CONECT      CO3    3 O31  O32  CI4 
+CONECT      O31    2 CO3  HO31
+CONECT      O32    1 CO3 
+CONECT      CI3    4 CI4  NN6  HI3  HI3A
+CONECT      CI4    4 CO3  CI3  HI4  HI4A
+CONECT      NN4    2 NN5  CN3 
+CONECT      NN5    2 NN4  NN6 
+CONECT      NN6    3 CI3  NN5  CN4 
+CONECT      CT3    4 O08  CN3  HT3  HT3A
+CONECT      CN3    3 NN4  CT3  CN4 
+CONECT      CN4    3 NN6  CN3  HN4 
+CONECT      HN1    1 N1  
+CONECT      HN1A   1 N1  
+CONECT      H01    1 C01 
+CONECT      H01A   1 C01 
+CONECT      H03    1 C03 
+CONECT      H06    1 C06 
+CONECT      H08    1 C08 
+CONECT      H08A   1 C08 
+CONECT      H10    1 C10 
+CONECT      H13    1 C13 
+CONECT      H15    1 C15 
+CONECT      H15A   1 C15 
+CONECT      H17    1 C17 
+CONECT      H20    1 C20 
+CONECT      H22    1 C22 
+CONECT      H22A   1 C22 
+CONECT      H24    1 C24 
+CONECT      H27    1 C27 
+CONECT      H29    1 C29 
+CONECT      H29A   1 C29 
+CONECT      H31    1 C31 
+CONECT      H34    1 C34 
+CONECT      H36    1 C36 
+CONECT      H36A   1 C36 
+CONECT      H38    1 C38 
+CONECT      H41    1 C41 
+CONECT      H46    1 C46 
+CONECT      H47    1 C47 
+CONECT      H51    1 C51 
+CONECT      H51A   1 C51 
+CONECT      H51B   1 C51 
+CONECT      H52    1 C52 
+CONECT      H56    1 C56 
+CONECT      H56A   1 C56 
+CONECT      H56B   1 C56 
+CONECT      H57    1 C57 
+CONECT      H57A   1 C57 
+CONECT      H58    1 C58 
+CONECT      H58A   1 C58 
+CONECT      H59    1 C59 
+CONECT      H59A   1 C59 
+CONECT      H59B   1 C59 
+CONECT      H60    1 C60 
+CONECT      H62    1 C62 
+CONECT      H64    1 C64 
+CONECT      H66    1 C66 
+CONECT      H67    1 C67 
+CONECT      H68    1 C68 
+CONECT      H68A   1 C68 
+CONECT      H69    1 C69 
+CONECT      H69A   1 C69 
+CONECT      H70    1 C70 
+CONECT      H70A   1 C70 
+CONECT      H72    1 C72 
+CONECT      HT5    1 CT5 
+CONECT      HT5A   1 CT5 
+CONECT      HN6    1 CN6 
+CONECT      HI5    1 CI5 
+CONECT      HI5A   1 CI5 
+CONECT      HI6    1 CI6 
+CONECT      HI6A   1 CI6 
+CONECT      HO51   1 O51 
+CONECT      HO31   1 O31 
+CONECT      HI3    1 CI3 
+CONECT      HI3A   1 CI3 
+CONECT      HI4    1 CI4 
+CONECT      HI4A   1 CI4 
+CONECT      HT3    1 CT3 
+CONECT      HT3A   1 CT3 
+CONECT      HN4    1 CN4 
+CONECT      H71    1 C46 
+CONECT      H721   1 C47 
+CONECT      H73    1 C52 
+CONECT      H74    1 C60 
+END   
+HET    0CR            177
+HETSYN     0CR 3,3'-{[14,21,28-trimethoxy-42-({1-[2-(4-sulfamoylphenyl
+HETSYN   2 0CR )ethyl]-1H-1,2,3-triazol-4-yl}methoxy)-9,12,30,33,43,46
+HETSYN   3 0CR -hexaoxadecacyclo[20.20.4.3~8,37~.3~16,29~.1~13,17~.1~3
+HETSYN   4 0CR 4,38~.0~3,40~.0~5,49~.0~19,24~.0~26,52~]tetrapentaconta
+HETSYN   5 0CR -1(42),2,5,7,13(54),14,16,19,21,23,26,28,34(47),35,37,4
+HETSYN   6 0CR 0,49,51-octadecaene-7,35-diyl]bis(oxymethanediyl-1H-1,2
+HETSYN   7 0CR ,3-triazole-4,1-diyl)}dipropanoic acid
+HETNAM     0CR MoMo-2-[4-(2-(4-(methoxy)-1H-1,2,3-triazol-1-yl)ethyl)b
+HETNAM   2 0CR enzenesulfonamide]-7,12-bis-[3-(4-(methoxy)-1H-1,2,3-tr
+HETNAM   3 0CR iazol-1-yl)propanoic acid]-cryptophane-A
+FORMUL      0CR    C74 H74 N10 O18 S1

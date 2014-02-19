@@ -1,0 +1,44 @@
+RESIDUE   0KC     38
+CONECT      CAS    4 CAR  CAP  H1   H2  
+CONECT      CAR    4 CAS  CAQ  H3   H4  
+CONECT      CAQ    4 CAR  CAT  H5   H6  
+CONECT      CAT    4 CAQ  CAP  H7   H8  
+CONECT      CAP    4 CAS  CAT  NAN  H9  
+CONECT      NAN    3 CAP  CAM  H10 
+CONECT      CAM    3 NAN  OAO  CAL 
+CONECT      OAO    1 CAM 
+CONECT      CAL    4 CAM  OAK  H11  H12 
+CONECT      OAK    2 CAL  CAB 
+CONECT      CAB    3 OAK  CAA  CAC 
+CONECT      CAA    3 CAB  CAF  H13 
+CONECT      CAF    3 CAA  CAE  H14 
+CONECT      CAE    3 CAF  CAD  H15 
+CONECT      CAD    3 CAE  CAC  H16 
+CONECT      CAC    3 CAB  CAD  PAG 
+CONECT      PAG    4 CAC  OAI  OAJ  OAH 
+CONECT      OAI    2 PAG  H17 
+CONECT      OAJ    1 PAG 
+CONECT      OAH    2 PAG  H18 
+CONECT      H1     1 CAS 
+CONECT      H2     1 CAS 
+CONECT      H3     1 CAR 
+CONECT      H4     1 CAR 
+CONECT      H5     1 CAQ 
+CONECT      H6     1 CAQ 
+CONECT      H7     1 CAT 
+CONECT      H8     1 CAT 
+CONECT      H9     1 CAP 
+CONECT      H10    1 NAN 
+CONECT      H11    1 CAL 
+CONECT      H12    1 CAL 
+CONECT      H13    1 CAA 
+CONECT      H14    1 CAF 
+CONECT      H15    1 CAE 
+CONECT      H16    1 CAD 
+CONECT      H17    1 OAI 
+CONECT      H18    1 OAH 
+END   
+HET    0KC             38
+HETNAM     0KC {2-[2-(cyclopentylamino)-2-oxoethoxy]phenyl}phosphonic 
+HETNAM   2 0KC acid
+FORMUL      0KC    C13 H18 N1 O5 P1

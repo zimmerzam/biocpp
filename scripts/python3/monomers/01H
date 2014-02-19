@@ -1,0 +1,25 @@
+RESIDUE   01H     20
+CONECT      N1     3 C2   HN11 HN12
+CONECT      C2     4 N1   C3   H21A H22A
+CONECT      C3     4 C2   C4   H31  H32 
+CONECT      C4     4 C3   C5   H41  H42 
+CONECT      C5     4 C4   N6   H51  H52 
+CONECT      N6     3 C5   N7   HN6 
+CONECT      N7     3 N6   HN7  H2  
+CONECT      HN11   1 N1  
+CONECT      HN12   1 N1  
+CONECT      H21A   1 C2  
+CONECT      H22A   1 C2  
+CONECT      H31    1 C3  
+CONECT      H32    1 C3  
+CONECT      H41    1 C4  
+CONECT      H42    1 C4  
+CONECT      H51    1 C5  
+CONECT      H52    1 C5  
+CONECT      HN6    1 N6  
+CONECT      HN7    1 N7  
+CONECT      H2     1 N7  
+END   
+HET    01H             20
+HETNAM     01H 4-hydrazinylbutan-1-amine
+FORMUL      01H    C4 H13 N3

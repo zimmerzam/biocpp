@@ -1,0 +1,29 @@
+RESIDUE   02Q     24
+CONECT      C28    3 C9   O29  OXT 
+CONECT      C38    4 C33  H38  H38A H38B
+CONECT      C33    3 C38  C34  C32 
+CONECT      C34    3 C33  C35  H34 
+CONECT      C35    3 C34  C37  H35 
+CONECT      C37    3 C35  C36  H37 
+CONECT      C36    3 C37  C32  H36 
+CONECT      C32    3 C33  C36  C31 
+CONECT      C31    4 C32  C9   H31  H31A
+CONECT      C9     4 C28  C31  H9   H9A 
+CONECT      O29    1 C28 
+CONECT      H38    1 C38 
+CONECT      H38A   1 C38 
+CONECT      H38B   1 C38 
+CONECT      H34    1 C34 
+CONECT      H35    1 C35 
+CONECT      H37    1 C37 
+CONECT      H36    1 C36 
+CONECT      H31    1 C31 
+CONECT      H31A   1 C31 
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      OXT    2 C28  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    02Q             24
+HETNAM     02Q 3-(2-methylphenyl)propanoic acid
+FORMUL      02Q    C10 H12 O2

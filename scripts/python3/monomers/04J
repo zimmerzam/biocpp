@@ -1,0 +1,59 @@
+RESIDUE   04J     52
+CONECT      C      3 N    O    C11 
+CONECT      N      3 C    CA   HN  
+CONECT      O      1 C   
+CONECT      N1     2 C2   C8A 
+CONECT      O1     1 CT  
+CONECT      C2     3 N1   N3   NA2 
+CONECT      O2     2 CT   HO2 
+CONECT      N3     2 C2   C4  
+CONECT      C4     3 N3   C4A  NA4 
+CONECT      N5     2 C6   C4A 
+CONECT      C6     3 N5   C7   C9  
+CONECT      C7     3 C6   N8   H7  
+CONECT      N8     2 C7   C8A 
+CONECT      C9     4 C6   N10  H9   H9A 
+CONECT      CA     4 N    CB   CT   HA  
+CONECT      CB     4 CA   CG   HB   HBA 
+CONECT      CD     3 CG   OE1  OE2 
+CONECT      CG     4 CB   CD   HG   HGA 
+CONECT      CT     3 O1   O2   CA  
+CONECT      N10    3 C9   C14  HN10
+CONECT      C11    3 C    C12  C16 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 N10  C13  C15 
+CONECT      C15    3 C14  C16  H15 
+CONECT      C16    3 C11  C15  H16 
+CONECT      C4A    3 C4   N5   C8A 
+CONECT      C8A    3 N1   N8   C4A 
+CONECT      NA2    3 C2   HNA2 HNAA
+CONECT      NA4    3 C4   HNA4 HNAB
+CONECT      OE1    1 CD  
+CONECT      OE2    2 CD   HOE2
+CONECT      HN     1 N   
+CONECT      HO2    1 O2  
+CONECT      H7     1 C7  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HG     1 CG  
+CONECT      HGA    1 CG  
+CONECT      HN10   1 N10 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H15    1 C15 
+CONECT      H16    1 C16 
+CONECT      HNA2   1 NA2 
+CONECT      HNAA   1 NA2 
+CONECT      HNA4   1 NA4 
+CONECT      HNAB   1 NA4 
+CONECT      HOE2   1 OE2 
+END   
+HET    04J             52
+HETSYN     04J N-(4-{[(2,4-diaminopteridin-6-yl)methyl]amino}benzoyl)-
+HETSYN   2 04J L-glutamic acid
+HETNAM     04J Aminopterin
+FORMUL      04J    C19 H20 N8 O5

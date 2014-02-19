@@ -1,0 +1,20 @@
+RESIDUE   013     15
+CONECT      C1     3 C2   N5   H1  
+CONECT      C2     3 C1   S3   C6  
+CONECT      S3     2 C2   C4  
+CONECT      C4     3 S3   N5   H4  
+CONECT      N5     2 C1   C4  
+CONECT      C6     4 C2   O7   H61  H62A
+CONECT      O7     2 C6   C10 
+CONECT      C10    3 O7   O24  OXT 
+CONECT      O24    1 C10 
+CONECT      H1     1 C1  
+CONECT      H4     1 C4  
+CONECT      H61    1 C6  
+CONECT      H62A   1 C6  
+CONECT      OXT    2 C10  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    013             15
+HETNAM     013 1,3-thiazol-5-ylmethyl hydrogen carbonate
+FORMUL      013    C5 H5 N1 O3 S1

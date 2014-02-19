@@ -1,0 +1,42 @@
+RESIDUE   0HD     37
+CONECT      C10    3 C09  C11  H1  
+CONECT      N12    3 C13  C02  H2  
+CONECT      C13    3 N12  C21  C14 
+CONECT      C15    3 C14  C16  C19 
+CONECT      C20    3 C21  C16  H3  
+CONECT      C21    3 C13  C20  H4  
+CONECT      O01    1 C02 
+CONECT      C02    3 N12  O01  N03 
+CONECT      N03    3 C02  C04  H5  
+CONECT      C04    4 N03  C05  H6   H7  
+CONECT      C05    4 C04  C06  H8   H9  
+CONECT      C06    3 C05  C07  C11 
+CONECT      C07    3 C06  C08  H10 
+CONECT      C08    3 C07  C09  H11 
+CONECT      C09    3 C10  C08  H12 
+CONECT      C11    3 C10  C06  H13 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C16    3 C15  C20  N17 
+CONECT      N17    3 C16  N18  H15 
+CONECT      N18    2 N17  C19 
+CONECT      C19    3 C15  N18  H16 
+CONECT      H1     1 C10 
+CONECT      H2     1 N12 
+CONECT      H3     1 C20 
+CONECT      H4     1 C21 
+CONECT      H5     1 N03 
+CONECT      H6     1 C04 
+CONECT      H7     1 C04 
+CONECT      H8     1 C05 
+CONECT      H9     1 C05 
+CONECT      H10    1 C07 
+CONECT      H11    1 C08 
+CONECT      H12    1 C09 
+CONECT      H13    1 C11 
+CONECT      H14    1 C14 
+CONECT      H15    1 N17 
+CONECT      H16    1 C19 
+END   
+HET    0HD             37
+HETNAM     0HD 1-(1H-indazol-5-yl)-3-(2-phenylethyl)urea
+FORMUL      0HD    C16 H16 N4 O1

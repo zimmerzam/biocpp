@@ -1,0 +1,25 @@
+RESIDUE   0JU     20
+CONECT      C      3 NF   CA   H1  
+CONECT      NF     2 C    H2  
+CONECT      CA     4 C    N    CB   H3  
+CONECT      N      3 CA   H4   H5  
+CONECT      CB     4 CA   CG   H7   H8  
+CONECT      CG     4 CB   CD   H9   H10 
+CONECT      CD     3 CG   OE   NE  
+CONECT      OE     1 CD  
+CONECT      NE     3 CD   H11  H12 
+CONECT      H1     1 C   
+CONECT      H2     1 NF  
+CONECT      H3     1 CA  
+CONECT      H4     1 N   
+CONECT      H5     1 N   
+CONECT      H7     1 CB  
+CONECT      H8     1 CB  
+CONECT      H9     1 CG  
+CONECT      H10    1 CG  
+CONECT      H11    1 NE  
+CONECT      H12    1 NE  
+END   
+HET    0JU             20
+HETNAM     0JU (4S,5Z)-4-amino-5-iminopentanamide
+FORMUL      0JU    C5 H11 N3 O1

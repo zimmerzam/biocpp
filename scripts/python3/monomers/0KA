@@ -1,0 +1,13 @@
+RESIDUE   0KA      8
+CONECT      AG1    3 S1   S3   S4  
+CONECT      FE1    3 S1   S2   S4  
+CONECT      FE2    3 S2   S3   S4  
+CONECT      FE3    3 S1   S2   S3  
+CONECT      S1     3 AG1  FE1  FE3 
+CONECT      S2     3 FE1  FE2  FE3 
+CONECT      S3     3 AG1  FE2  FE3 
+CONECT      S4     3 AG1  FE1  FE2 
+END   
+HET    0KA              8
+HETNAM     0KA SILVER/IRON/SULFUR CLUSTER
+FORMUL      0KA    Ag1 Fe3 S4

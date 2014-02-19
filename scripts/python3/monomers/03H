@@ -1,0 +1,26 @@
+RESIDUE   03H     20
+CONECT      CL     1 C2  
+CONECT      C1     3 O1   C2   O2  
+CONECT      O1     2 C1   HO1 
+CONECT      C2     4 CL   C1   C3   H2  
+CONECT      O2     1 C1  
+CONECT      C3     4 C2   C4   H3   H3A 
+CONECT      C4     4 C3   C5   C6   H4  
+CONECT      C5     4 C4   H5   H5A  H5B 
+CONECT      C6     4 C4   H6   H6A  H6B 
+CONECT      HO1    1 O1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      H5A    1 C5  
+CONECT      H5B    1 C5  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H6B    1 C6  
+END   
+HET    03H             20
+HETSYN     03H (S)-alpha-chloroisocaproate
+HETNAM     03H (2S)-2-chloro-4-methylpentanoic acid
+FORMUL      03H    C6 H11 Cl1 O2

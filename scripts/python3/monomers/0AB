@@ -1,0 +1,23 @@
+RESIDUE   0AB     18
+CONECT      N      3 CA   HN1  HA2 
+CONECT      CA     4 N    C    CB   HB  
+CONECT      C      3 CA   O    O1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG1  CG2  HA  
+CONECT      CG1    4 CB   HG11 HG12 HG13
+CONECT      CG2    3 CB   C1   HG2 
+CONECT      O1     2 C    C1  
+CONECT      C1     3 CG2  O1   H1  
+CONECT      HN1    1 N   
+CONECT      HA2    1 N   
+CONECT      HB     1 CA  
+CONECT      HA     1 CB  
+CONECT      HG11   1 CG1 
+CONECT      HG12   1 CG1 
+CONECT      HG13   1 CG1 
+CONECT      HG2    1 CG2 
+CONECT      H1     1 C1  
+END   
+HET    0AB             18
+HETNAM     0AB (3S,4S)-3-amino-4-methyl-3,4-dihydro-2H-pyran-2-one
+FORMUL      0AB    C6 H9 N1 O2

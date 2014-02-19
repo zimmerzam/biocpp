@@ -1,0 +1,30 @@
+RESIDUE   0FR     25
+CONECT      CAI    3 CAH  CAD  H1  
+CONECT      CAH    3 CAI  CAG  H2  
+CONECT      CAG    3 CAH  CAF  H3  
+CONECT      CAF    3 CAG  CAE  H4  
+CONECT      CAE    3 CAF  CAD  CAA 
+CONECT      CAD    3 CAI  CAE  NAC 
+CONECT      NAC    3 CAD  CAB  H5  
+CONECT      CAB    3 NAC  CAA  H6  
+CONECT      CAA    3 CAE  CAB  CAJ 
+CONECT      CAJ    3 CAA  OAP  CAK 
+CONECT      OAP    1 CAJ 
+CONECT      CAK    3 CAJ  OAL  CAO 
+CONECT      OAL    2 CAK  CAM 
+CONECT      CAM    3 OAL  CAN  H7  
+CONECT      CAN    3 CAM  CAO  H8  
+CONECT      CAO    3 CAK  CAN  H9  
+CONECT      H1     1 CAI 
+CONECT      H2     1 CAH 
+CONECT      H3     1 CAG 
+CONECT      H4     1 CAF 
+CONECT      H5     1 NAC 
+CONECT      H6     1 CAB 
+CONECT      H7     1 CAM 
+CONECT      H8     1 CAN 
+CONECT      H9     1 CAO 
+END   
+HET    0FR             25
+HETNAM     0FR furan-2-yl(1H-indol-3-yl)methanone
+FORMUL      0FR    C13 H9 N1 O2

@@ -1,0 +1,23 @@
+RESIDUE   0GF     18
+CONECT      C23    3 C24  O7   OXT 
+CONECT      C24    3 C23  C25  C29 
+CONECT      C25    3 C24  C26  H24 
+CONECT      C26    3 C25  C27  C30 
+CONECT      C27    3 C26  C28  BR  
+CONECT      C28    3 C27  C29  H25 
+CONECT      C29    3 C24  C28  H26 
+CONECT      C30    4 C26  H27  H28  H29 
+CONECT      O7     1 C23 
+CONECT      BR     1 C27 
+CONECT      H24    1 C25 
+CONECT      H25    1 C28 
+CONECT      H26    1 C29 
+CONECT      H27    1 C30 
+CONECT      H28    1 C30 
+CONECT      H29    1 C30 
+CONECT      OXT    2 C23  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    0GF             18
+HETNAM     0GF 4-bromo-3-methylbenzoic acid
+FORMUL      0GF    C8 H7 Br1 O2

@@ -1,0 +1,38 @@
+RESIDUE   0H5     32
+CONECT      C4     3 C3   C5   N7  
+CONECT      C6     3 C1   C5   H1  
+CONECT      C13    4 O11  H2   H3   H4  
+CONECT      C8     3 N7   N9   H5  
+CONECT      C18    3 C14  C17  H6  
+CONECT      C19    4 N16  H7   H8   H9  
+CONECT      C1     3 C6   C2   O11 
+CONECT      C2     3 C1   C3   H10 
+CONECT      C3     3 C4   C2   H11 
+CONECT      C5     3 C4   C6   C10 
+CONECT      N7     2 C4   C8  
+CONECT      N9     2 C8   C10 
+CONECT      C10    3 C5   N9   N12 
+CONECT      O11    2 C13  C1  
+CONECT      N12    3 C10  C14  H12 
+CONECT      C14    3 C18  N12  N15 
+CONECT      N15    2 C14  N16 
+CONECT      N16    3 C19  N15  C17 
+CONECT      C17    3 C18  N16  H13 
+CONECT      H1     1 C6  
+CONECT      H2     1 C13 
+CONECT      H3     1 C13 
+CONECT      H4     1 C13 
+CONECT      H5     1 C8  
+CONECT      H6     1 C18 
+CONECT      H7     1 C19 
+CONECT      H8     1 C19 
+CONECT      H9     1 C19 
+CONECT      H10    1 C2  
+CONECT      H11    1 C3  
+CONECT      H12    1 N12 
+CONECT      H13    1 C17 
+END   
+HET    0H5             32
+HETNAM     0H5 6-methoxy-N-(1-methyl-1H-pyrazol-3-yl)quinazolin-4-amin
+HETNAM   2 0H5 e
+FORMUL      0H5    C13 H13 N5 O1

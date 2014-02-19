@@ -1,0 +1,62 @@
+RESIDUE   09L     55
+CONECT      CAJ    4 CAK  CAI  H1   H2  
+CONECT      CAK    4 CAJ  CAI  H3   H4  
+CONECT      CAI    4 CAJ  CAK  CAL  H5  
+CONECT      CAL    3 CAI  OAB  NAE 
+CONECT      OAB    1 CAL 
+CONECT      NAE    3 CAL  CAM  CAN 
+CONECT      CAM    4 NAE  CAO  H6   H7  
+CONECT      CAO    4 CAM  NAF  H8   H9  
+CONECT      CAN    4 NAE  CAP  H10  H11 
+CONECT      CAP    4 CAN  NAF  H12  H13 
+CONECT      NAF    3 CAO  CAP  CAQ 
+CONECT      CAQ    3 NAF  OAC  CAR 
+CONECT      OAC    1 CAQ 
+CONECT      CAR    3 CAQ  CAS  CAU 
+CONECT      CAS    3 CAR  CAT  H14 
+CONECT      CAU    3 CAR  FAA  CAX 
+CONECT      FAA    1 CAU 
+CONECT      CAX    3 CAU  CAW  H15 
+CONECT      CAW    3 CAX  CAT  H16 
+CONECT      CAT    3 CAS  CAW  CAV 
+CONECT      CAV    4 CAT  CAY  H17  H18 
+CONECT      CAY    3 CAV  CAZ  NAG 
+CONECT      CAZ    3 CAY  CBB  CBA 
+CONECT      CBB    3 CAZ  CBE  H19 
+CONECT      CBE    3 CBB  CBF  H20 
+CONECT      CBF    3 CBE  CBD  H21 
+CONECT      CBD    3 CBF  CBA  H22 
+CONECT      CBA    3 CAZ  CBD  CBC 
+CONECT      CBC    3 CBA  OAD  NAH 
+CONECT      OAD    1 CBC 
+CONECT      NAH    3 CBC  NAG  H23 
+CONECT      NAG    2 CAY  NAH 
+CONECT      H1     1 CAJ 
+CONECT      H2     1 CAJ 
+CONECT      H3     1 CAK 
+CONECT      H4     1 CAK 
+CONECT      H5     1 CAI 
+CONECT      H6     1 CAM 
+CONECT      H7     1 CAM 
+CONECT      H8     1 CAO 
+CONECT      H9     1 CAO 
+CONECT      H10    1 CAN 
+CONECT      H11    1 CAN 
+CONECT      H12    1 CAP 
+CONECT      H13    1 CAP 
+CONECT      H14    1 CAS 
+CONECT      H15    1 CAX 
+CONECT      H16    1 CAW 
+CONECT      H17    1 CAV 
+CONECT      H18    1 CAV 
+CONECT      H19    1 CBB 
+CONECT      H20    1 CBE 
+CONECT      H21    1 CBF 
+CONECT      H22    1 CBD 
+CONECT      H23    1 NAH 
+END   
+HET    09L             55
+HETSYN     09L Olaparib
+HETNAM     09L 4-(3-{[4-(cyclopropylcarbonyl)piperazin-1-yl]carbonyl}-
+HETNAM   2 09L 4-fluorobenzyl)phthalazin-1(2H)-one
+FORMUL      09L    C24 H23 F1 N4 O3

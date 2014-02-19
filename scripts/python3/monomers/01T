@@ -1,0 +1,63 @@
+RESIDUE   01T     56
+CONECT      C5     3 C6   N4   C11 
+CONECT      C6     4 C5   C7   H6   H6A 
+CONECT      C7     4 C6   C8   C10  C9  
+CONECT      C8     4 C7   H8   H8A  H8B 
+CONECT      C10    4 C7   H10  H10A H10B
+CONECT      C15    3 C16  C3   C14 
+CONECT      C17    3 O19  O18  C16 
+CONECT      C20    3 C21  C26  C14 
+CONECT      C21    3 C20  C22  H21 
+CONECT      C22    3 C21  C23  H22 
+CONECT      C24    4 C23  H24  H24A H24B
+CONECT      C26    3 C20  C25  H26 
+CONECT      O19    2 C17  HO19
+CONECT      O18    1 C17 
+CONECT      C16    4 C15  C17  H16  H16A
+CONECT      C3     3 C15  C2   N4  
+CONECT      C2     4 C3   C1   H2   H2A 
+CONECT      C1     4 C2   H1   H1A  H1B 
+CONECT      N4     2 C5   C3  
+CONECT      C9     4 C7   H9   H9A  H9B 
+CONECT      C11    3 C5   C12  C14 
+CONECT      C12    4 C11  N13  H12  H12A
+CONECT      N13    3 C12  HN13 HN1A
+CONECT      C14    3 C15  C20  C11 
+CONECT      C25    3 C26  C23  H25 
+CONECT      C23    3 C22  C24  C25 
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H8     1 C8  
+CONECT      H8A    1 C8  
+CONECT      H8B    1 C8  
+CONECT      H10    1 C10 
+CONECT      H10A   1 C10 
+CONECT      H10B   1 C10 
+CONECT      H21    1 C21 
+CONECT      H22    1 C22 
+CONECT      H24    1 C24 
+CONECT      H24A   1 C24 
+CONECT      H24B   1 C24 
+CONECT      H26    1 C26 
+CONECT      HO19   1 O19 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H2     1 C2  
+CONECT      H2A    1 C2  
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      H9B    1 C9  
+CONECT      H12    1 C12 
+CONECT      H12A   1 C12 
+CONECT      HN13   1 N13 
+CONECT      HN1A   1 N13 
+CONECT      H25    1 C25 
+END   
+HET    01T             56
+HETSYN     01T TAK-100
+HETNAM     01T [5-(aminomethyl)-6-(2,2-dimethylpropyl)-2-ethyl-4-(4-me
+HETNAM   2 01T thylphenyl)pyridin-3-yl]acetic acid
+FORMUL      01T    C22 H30 N2 O2

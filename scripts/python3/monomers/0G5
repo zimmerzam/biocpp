@@ -1,0 +1,38 @@
+RESIDUE   0G5     33
+CONECT      N2     3 C11  H2   H1  
+CONECT      N4     3 C15  C16  H5  
+CONECT      C11    4 N2   C12  C13  H13 
+CONECT      C12    3 C11  O5   OXT 
+CONECT      C13    4 C11  C14  H14  H15 
+CONECT      C14    4 C13  C15  H16  H17 
+CONECT      C15    4 N4   C14  H18  H19 
+CONECT      C16    3 N4   C17  O6  
+CONECT      C17    3 C16  C18  C22 
+CONECT      C18    3 C17  C19  H20 
+CONECT      C19    3 C18  C20  H21 
+CONECT      C20    3 C19  C21  H22 
+CONECT      C21    3 C20  C22  I   
+CONECT      C22    3 C17  C21  H23 
+CONECT      O5     1 C12 
+CONECT      O6     1 C16 
+CONECT      I      1 C21 
+CONECT      H2     1 N2  
+CONECT      H5     1 N4  
+CONECT      H13    1 C11 
+CONECT      H14    1 C13 
+CONECT      H15    1 C13 
+CONECT      H16    1 C14 
+CONECT      H17    1 C14 
+CONECT      H18    1 C15 
+CONECT      H19    1 C15 
+CONECT      H20    1 C18 
+CONECT      H21    1 C19 
+CONECT      H22    1 C20 
+CONECT      H23    1 C22 
+CONECT      OXT    2 C12  HXT 
+CONECT      HXT    1 OXT 
+CONECT      H1     1 N2  
+END   
+HET    0G5             33
+HETNAM     0G5 N~5~-(3-iodobenzoyl)-L-ornithine
+FORMUL      0G5    C12 H15 I1 N2 O3

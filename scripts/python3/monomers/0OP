@@ -1,0 +1,35 @@
+RESIDUE   0OP     30
+CONECT      CAF    3 CAC  CAN  H1  
+CONECT      CAC    3 CAF  CAB  H2  
+CONECT      CAB    3 CAC  CAD  H3  
+CONECT      CAD    3 CAB  CAG  H4  
+CONECT      CAG    3 CAD  CAN  H5  
+CONECT      CAN    3 CAF  CAG  CAL 
+CONECT      CAL    4 CAN  OAM  H6   H7  
+CONECT      OAM    2 CAL  CAP 
+CONECT      CAP    3 OAM  CAJ  CAI 
+CONECT      CAJ    3 CAP  CAO  H8  
+CONECT      CAI    3 CAP  CAE  H9  
+CONECT      CAE    3 CAI  CAH  H10 
+CONECT      CAH    3 CAE  CAO  H11 
+CONECT      CAO    3 CAJ  CAH  CAK 
+CONECT      CAK    4 CAO  OAA  H12  H13 
+CONECT      OAA    2 CAK  H14 
+CONECT      H1     1 CAF 
+CONECT      H2     1 CAC 
+CONECT      H3     1 CAB 
+CONECT      H4     1 CAD 
+CONECT      H5     1 CAG 
+CONECT      H6     1 CAL 
+CONECT      H7     1 CAL 
+CONECT      H8     1 CAJ 
+CONECT      H9     1 CAI 
+CONECT      H10    1 CAE 
+CONECT      H11    1 CAH 
+CONECT      H12    1 CAK 
+CONECT      H13    1 CAK 
+CONECT      H14    1 OAA 
+END   
+HET    0OP             30
+HETNAM     0OP [3-(benzyloxy)phenyl]methanol
+FORMUL      0OP    C14 H14 O2

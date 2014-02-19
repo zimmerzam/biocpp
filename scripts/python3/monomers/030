@@ -1,0 +1,31 @@
+RESIDUE   030     25
+CONECT      C21    3 O22  O23  OXT 
+CONECT      O22    1 C21 
+CONECT      O23    2 C21  C24 
+CONECT      C24    4 O23  C25  C31  H24 
+CONECT      C25    4 C24  C26  H25  H25A
+CONECT      C26    4 C25  O27  C30  H26 
+CONECT      O27    2 C26  C28 
+CONECT      C28    4 O27  C29  H28  H28A
+CONECT      C29    4 C28  C30  O41  H29 
+CONECT      C30    4 C26  C29  C31  H30 
+CONECT      C31    4 C24  C30  H31  H31A
+CONECT      O41    2 C29  HO41
+CONECT      H24    1 C24 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      H26    1 C26 
+CONECT      H28    1 C28 
+CONECT      H28A   1 C28 
+CONECT      H29    1 C29 
+CONECT      H30    1 C30 
+CONECT      H31    1 C31 
+CONECT      H31A   1 C31 
+CONECT      HO41   1 O41 
+CONECT      OXT    2 C21  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    030             25
+HETNAM     030 (3R,3aR,5R,6aR)-3-hydroxyhexahydro-2H-cyclopenta[b]fura
+HETNAM   2 030 n-5-yl hydrogen carbonate
+FORMUL      030    C8 H12 O5

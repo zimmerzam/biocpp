@@ -1,0 +1,58 @@
+RESIDUE   05B     51
+CONECT      C1     4 C2   C6   C7   C11 
+CONECT      C2     4 C1   N3   H2   H2A 
+CONECT      N3     3 C2   C4   HN3 
+CONECT      C4     3 N3   O10  C12 
+CONECT      N5     3 C8   C9   HN5 
+CONECT      C6     4 C1   C9   H6   H6A 
+CONECT      C7     4 C1   C8   H7   H7A 
+CONECT      C8     4 N5   C7   H8   H8A 
+CONECT      C9     4 N5   C6   H9   H9A 
+CONECT      O10    1 C4  
+CONECT      C11    3 C1   C12  N15 
+CONECT      C12    3 C4   C11  C13 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 C13  N15  C16 
+CONECT      N15    3 C11  C14  HN15
+CONECT      C16    3 C14  C17  N21 
+CONECT      C17    3 C16  C18  H17 
+CONECT      C18    3 C17  N19  H18 
+CONECT      N19    2 C18  C20 
+CONECT      C20    3 N19  N21  C22 
+CONECT      N21    2 C16  C20 
+CONECT      C22    3 C20  C23  C25 
+CONECT      C23    3 C22  C24  H23 
+CONECT      C24    3 C23  C27  H24 
+CONECT      C25    3 C22  C26  H25 
+CONECT      C26    3 C25  C27  O30 
+CONECT      C27    3 C24  C26  O28 
+CONECT      O28    2 C27  C29 
+CONECT      C29    4 O28  O30  H29  H29A
+CONECT      O30    2 C26  C29 
+CONECT      H2     1 C2  
+CONECT      H2A    1 C2  
+CONECT      HN3    1 N3  
+CONECT      HN5    1 N5  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H7     1 C7  
+CONECT      H7A    1 C7  
+CONECT      H8     1 C8  
+CONECT      H8A    1 C8  
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      H13    1 C13 
+CONECT      HN15   1 N15 
+CONECT      H17    1 C17 
+CONECT      H18    1 C18 
+CONECT      H23    1 C23 
+CONECT      H24    1 C24 
+CONECT      H25    1 C25 
+CONECT      H29    1 C29 
+CONECT      H29A   1 C29 
+END   
+HET    05B             51
+HETNAM     05B 2'-[2-(1,3-benzodioxol-5-yl)pyrimidin-4-yl]-5',6'-dihyd
+HETNAM   2 05B rospiro[piperidine-4,7'-pyrrolo[3,2-c]pyridin]-4'(1'H)-
+HETNAM   3 05B one
+FORMUL      05B    C22 H21 N5 O3

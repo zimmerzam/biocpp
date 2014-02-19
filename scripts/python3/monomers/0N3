@@ -1,0 +1,36 @@
+RESIDUE   0N3     30
+CONECT      B03    3 O04  O05  C06 
+CONECT      O04    2 B03  H1  
+CONECT      O05    2 B03  H2  
+CONECT      C06    4 B03  N07  H3   H4  
+CONECT      N07    3 C06  S08  H5  
+CONECT      S08    4 N07  O09  O10  C11 
+CONECT      O09    1 S08 
+CONECT      O10    1 S08 
+CONECT      C11    4 S08  C12  H6   H7  
+CONECT      C12    3 C11  C13  C20 
+CONECT      C13    3 C12  C14  H8  
+CONECT      C14    3 C13  C15  H9  
+CONECT      C15    3 C14  C16  H10 
+CONECT      C16    3 C15  C17  C20 
+CONECT      C17    3 C16  O18  O19 
+CONECT      O18    2 C17  H11 
+CONECT      O19    1 C17 
+CONECT      C20    3 C12  C16  H12 
+CONECT      H1     1 O04 
+CONECT      H2     1 O05 
+CONECT      H3     1 C06 
+CONECT      H4     1 C06 
+CONECT      H5     1 N07 
+CONECT      H6     1 C11 
+CONECT      H7     1 C11 
+CONECT      H8     1 C13 
+CONECT      H9     1 C14 
+CONECT      H10    1 C15 
+CONECT      H11    1 O18 
+CONECT      H12    1 C20 
+END   
+HET    0N3             30
+HETNAM     0N3 3-({[(dihydroxyboranyl)methyl]sulfamoyl}methyl)benzoic 
+HETNAM   2 0N3 acid
+FORMUL      0N3    C9 H12 B1 N1 O6 S1

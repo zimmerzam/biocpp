@@ -1,0 +1,80 @@
+RESIDUE   00Q     73
+CONECT      N      3 CA   HN   HNA 
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    NX  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HB   HBA 
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CE2    3 CD2  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      NX     3 C    CAX  CDX 
+CONECT      CAX    4 NX   CX   CBX  HAX 
+CONECT      CX     3 CAX  OX   NY  
+CONECT      OX     1 CX  
+CONECT      CBX    4 CAX  CGX  HBX  HBXA
+CONECT      CGX    4 CBX  CDX  HGX  H17 
+CONECT      CDX    4 NX   CGX  HDX  H12 
+CONECT      CY     4 OY   CAY  C17  HY  
+CONECT      NY     3 CX   CAY  HNY 
+CONECT      OY     2 CY   HOY 
+CONECT      CAY    4 CY   NY   CBY  HAY 
+CONECT      CBY    4 CAY  CGY  HBY  HBYA
+CONECT      CDY    4 NEY  CGY  HDY  HDYA
+CONECT      NEY    3 CDY  CZY  HNEY
+CONECT      CGY    4 CBY  CDY  HGY  HGYA
+CONECT      NH1    2 CZY  HNH1
+CONECT      NH2    3 CZY  HNH2 HNHA
+CONECT      CZY    3 NEY  NH1  NH2 
+CONECT      S1     2 C17  C71 
+CONECT      N11    2 C17  C21 
+CONECT      C17    3 CY   S1   N11 
+CONECT      C21    3 N11  C31  C71 
+CONECT      C31    3 C21  C41  H31 
+CONECT      C41    3 C31  C51  H41 
+CONECT      C51    3 C41  C61  H51 
+CONECT      C61    3 C51  C71  H61 
+CONECT      C71    3 S1   C21  C61 
+CONECT      HN     1 N   
+CONECT      HNA    1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      HAX    1 CAX 
+CONECT      HBX    1 CBX 
+CONECT      HBXA   1 CBX 
+CONECT      HGX    1 CGX 
+CONECT      H17    1 CGX 
+CONECT      HDX    1 CDX 
+CONECT      H12    1 CDX 
+CONECT      HNH1   1 NH1 
+CONECT      HY     1 CY  
+CONECT      HNY    1 NY  
+CONECT      HOY    1 OY  
+CONECT      HAY    1 CAY 
+CONECT      HBY    1 CBY 
+CONECT      HBYA   1 CBY 
+CONECT      HDY    1 CDY 
+CONECT      HDYA   1 CDY 
+CONECT      HNEY   1 NEY 
+CONECT      HGY    1 CGY 
+CONECT      HGYA   1 CGY 
+CONECT      HNH2   1 NH2 
+CONECT      HNHA   1 NH2 
+CONECT      H31    1 C31 
+CONECT      H41    1 C41 
+CONECT      H51    1 C51 
+CONECT      H61    1 C61 
+END   
+HET    00Q             73
+HETSYN     00Q RWJ-30353
+HETNAM     00Q D-phenylalanyl-N-{(1S)-1-[(S)-1,3-benzothiazol-2-yl(hyd
+HETNAM   2 00Q roxy)methyl]-4-carbamimidamidobutyl}-L-prolinamide
+FORMUL      00Q    C27 H35 N7 O3 S1

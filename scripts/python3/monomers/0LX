@@ -1,0 +1,63 @@
+RESIDUE   0LX     57
+CONECT      O01    1 C02 
+CONECT      C02    3 O01  N03  C05 
+CONECT      N03    3 C02  O04  H1  
+CONECT      O04    2 N03  H2  
+CONECT      C05    4 C02  C06  C19  H3  
+CONECT      C06    4 C05  C07  H4   H5  
+CONECT      C07    4 C06  C08  H6   H7  
+CONECT      C08    4 C07  C09  H8   H9  
+CONECT      C09    4 C08  N10  H10  H11 
+CONECT      N10    3 C09  C11  H12 
+CONECT      C11    4 N10  C12  H14  H15 
+CONECT      C12    3 C11  C13  C17 
+CONECT      C13    3 C12  C14  H16 
+CONECT      C14    3 C13  C15  H17 
+CONECT      C15    3 C14  C16  F18 
+CONECT      C16    3 C15  C17  H18 
+CONECT      C17    3 C12  C16  H19 
+CONECT      F18    1 C15 
+CONECT      C19    4 C05  C20  H20  H21 
+CONECT      C20    4 C19  O21  C23  H22 
+CONECT      O21    2 C20  C22 
+CONECT      C22    4 O21  H23  H24  H25 
+CONECT      C23    3 C20  C24  C28 
+CONECT      C24    3 C23  C25  H26 
+CONECT      C25    3 C24  C26  H27 
+CONECT      C26    3 C25  C27  F29 
+CONECT      C27    3 C26  C28  H28 
+CONECT      C28    3 C23  C27  H29 
+CONECT      F29    1 C26 
+CONECT      H1     1 N03 
+CONECT      H2     1 O04 
+CONECT      H3     1 C05 
+CONECT      H4     1 C06 
+CONECT      H5     1 C06 
+CONECT      H6     1 C07 
+CONECT      H7     1 C07 
+CONECT      H8     1 C08 
+CONECT      H9     1 C08 
+CONECT      H10    1 C09 
+CONECT      H11    1 C09 
+CONECT      H12    1 N10 
+CONECT      H14    1 C11 
+CONECT      H15    1 C11 
+CONECT      H16    1 C13 
+CONECT      H17    1 C14 
+CONECT      H18    1 C16 
+CONECT      H19    1 C17 
+CONECT      H20    1 C19 
+CONECT      H21    1 C19 
+CONECT      H22    1 C20 
+CONECT      H23    1 C22 
+CONECT      H24    1 C22 
+CONECT      H25    1 C22 
+CONECT      H26    1 C24 
+CONECT      H27    1 C25 
+CONECT      H28    1 C27 
+CONECT      H29    1 C28 
+END   
+HET    0LX             57
+HETNAM     0LX (2S)-6-[(4-fluorobenzyl)amino]-2-[(2R)-2-(4-fluoropheny
+HETNAM   2 0LX l)-2-methoxyethyl]-N-hydroxyhexanamide
+FORMUL      0LX    C22 H28 F2 N2 O3

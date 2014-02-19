@@ -1,0 +1,84 @@
+RESIDUE   0OS     77
+CONECT      CBM    3 CAQ  CBL  O5  
+CONECT      CAQ    3 CBM  CBI  H2  
+CONECT      CBL    3 CBM  CAN  O4  
+CONECT      CAN    3 CBL  CAM  H1  
+CONECT      CAM    3 CAN  CBI  H5  
+CONECT      CBI    3 CAQ  CAM  CAV 
+CONECT      CAV    4 CBI  CAY  H6   H7  
+CONECT      CAY    4 CAV  CBO  H8   H9  
+CONECT      CBO    4 CAY  CBK  OBD  H10 
+CONECT      CBK    3 CBO  CAP  CAL 
+CONECT      CAP    3 CBK  CBJ  H11 
+CONECT      CAL    3 CBK  CAJ  H12 
+CONECT      CAJ    3 CAL  CAK  H13 
+CONECT      CAK    3 CAJ  CBJ  H14 
+CONECT      CBJ    3 CAP  CAK  O1  
+CONECT      OBD    2 CBO  C   
+CONECT      C      3 OBD  O    CA  
+CONECT      O      1 C   
+CONECT      CA     4 C    CB   N    H16 
+CONECT      CB     4 CA   CAT  H17  H18 
+CONECT      CAT    4 CB   CAU  H19  H20 
+CONECT      CAU    4 CAT  CAZ  H21  H22 
+CONECT      CAZ    4 CAU  N    H23  H24 
+CONECT      N      3 CA   CAZ  S1  
+CONECT      S1     4 N    OAE  OAF  CBN 
+CONECT      OAE    1 S1  
+CONECT      OAF    1 S1  
+CONECT      CBN    3 S1   CAR  CAS 
+CONECT      CAR    3 CBN  CBG  H27 
+CONECT      CBG    3 CAR  CL2  CAO 
+CONECT      CL2    1 CBG 
+CONECT      CAO    3 CBG  CBH  H28 
+CONECT      CBH    3 CAO  CL1  CAS 
+CONECT      CL1    1 CBH 
+CONECT      CAS    3 CBN  CBH  H29 
+CONECT      H2     1 CAQ 
+CONECT      H5     1 CAM 
+CONECT      H6     1 CAV 
+CONECT      H7     1 CAV 
+CONECT      H8     1 CAY 
+CONECT      H9     1 CAY 
+CONECT      H10    1 CBO 
+CONECT      H11    1 CAP 
+CONECT      H12    1 CAL 
+CONECT      H13    1 CAJ 
+CONECT      H14    1 CAK 
+CONECT      H16    1 CA  
+CONECT      H17    1 CB  
+CONECT      H18    1 CB  
+CONECT      H19    1 CAT 
+CONECT      H20    1 CAT 
+CONECT      H21    1 CAU 
+CONECT      H22    1 CAU 
+CONECT      H23    1 CAZ 
+CONECT      H24    1 CAZ 
+CONECT      H27    1 CAR 
+CONECT      H28    1 CAO 
+CONECT      H29    1 CAS 
+CONECT      O1     2 CBJ  C2  
+CONECT      C2     4 O1   H26  H30  C3  
+CONECT      H26    1 C2  
+CONECT      H30    1 C2  
+CONECT      C3     3 C2   O2   O3  
+CONECT      O2     2 C3   H33 
+CONECT      H33    1 O2  
+CONECT      O3     1 C3  
+CONECT      O4     2 CBL  C4  
+CONECT      C4     4 O4   H3   H4   H15 
+CONECT      H3     1 C4  
+CONECT      H4     1 C4  
+CONECT      H15    1 C4  
+CONECT      O5     2 CBM  C5  
+CONECT      C5     4 O5   H25  H31  H32 
+CONECT      H1     1 CAN 
+CONECT      H25    1 C5  
+CONECT      H31    1 C5  
+CONECT      H32    1 C5  
+END   
+HET    0OS             77
+HETNAM     0OS {3-[(1S)-1-[({(2S)-1-[(3,5-dichlorophenyl)sulfonyl]pipe
+HETNAM   2 0OS ridin-2-yl}carbonyl)oxy]-3-(3,4-dimethoxyphenyl)propyl]
+HETNAM   3 0OS phenoxy}acetic acid
+FORMUL      0OS    C31 H33 Cl2 N1 O9 S1

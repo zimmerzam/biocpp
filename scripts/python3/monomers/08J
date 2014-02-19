@@ -1,0 +1,43 @@
+RESIDUE   08J     36
+CONECT      CAU    3 CAK  CAV  CAO 
+CONECT      CAK    3 CAU  CAP  H1  
+CONECT      CAP    3 CAK  CLAC CAH 
+CONECT      CLAC   1 CAP 
+CONECT      CAH    3 CAP  CAI  H2  
+CONECT      CAI    3 CAH  CAV  H3  
+CONECT      CAV    3 CAU  CAI  NAW 
+CONECT      NAW    3 CAV  CAR  CAS 
+CONECT      CAR    3 NAW  CAA  NAN 
+CONECT      CAA    4 CAR  H4   H5   H6  
+CONECT      NAN    2 CAR  CAJ 
+CONECT      CAJ    3 NAN  CAS  H7  
+CONECT      CAS    3 NAW  CAJ  CAL 
+CONECT      CAL    4 CAS  NAM  H8   H9  
+CONECT      NAM    2 CAL  CAO 
+CONECT      CAO    3 CAU  NAM  CAT 
+CONECT      CAT    3 CAO  CAG  CAQ 
+CONECT      CAG    3 CAT  CAE  H10 
+CONECT      CAE    3 CAG  CAD  H11 
+CONECT      CAD    3 CAE  CAF  H12 
+CONECT      CAF    3 CAD  CAQ  H13 
+CONECT      CAQ    3 CAT  CAF  FAB 
+CONECT      FAB    1 CAQ 
+CONECT      H1     1 CAK 
+CONECT      H2     1 CAH 
+CONECT      H3     1 CAI 
+CONECT      H4     1 CAA 
+CONECT      H5     1 CAA 
+CONECT      H6     1 CAA 
+CONECT      H7     1 CAJ 
+CONECT      H8     1 CAL 
+CONECT      H9     1 CAL 
+CONECT      H10    1 CAG 
+CONECT      H11    1 CAE 
+CONECT      H12    1 CAD 
+CONECT      H13    1 CAF 
+END   
+HET    08J             36
+HETSYN     08J Midazolam
+HETNAM     08J 8-chloro-6-(2-fluorophenyl)-1-methyl-4H-imidazo[1,5-a][
+HETNAM   2 08J 1,4]benzodiazepine
+FORMUL      08J    C18 H13 Cl1 F1 N3

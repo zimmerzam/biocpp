@@ -1,0 +1,51 @@
+RESIDUE   087     45
+CONECT      C1     4 C2   H1   H1A  H1B 
+CONECT      CL1    1 C21 
+CONECT      C2     3 C1   C3   N6  
+CONECT      CL2    1 C4  
+CONECT      C3     3 C2   CL3  C4  
+CONECT      CL3    1 C3  
+CONECT      C4     3 CL2  C3   C5  
+CONECT      C5     3 C4   N6   C8  
+CONECT      N6     3 C2   C5   HN6 
+CONECT      C8     3 C5   O9   N10 
+CONECT      O9     1 C8  
+CONECT      N10    3 C8   C11  HN10
+CONECT      C11    4 N10  C12  C16  H11 
+CONECT      C12    4 C11  C13  H12  H12A
+CONECT      C13    4 C12  N14  H13  H13A
+CONECT      N14    3 C13  C15  C17 
+CONECT      C15    4 N14  C16  H15  H15A
+CONECT      C16    4 C11  C15  H16  H16A
+CONECT      C17    3 N14  C18  N22 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C18  C20  C24 
+CONECT      C20    3 C19  C21  H20 
+CONECT      C21    3 CL1  C20  N22 
+CONECT      N22    2 C17  C21 
+CONECT      C24    3 C19  O25  N26 
+CONECT      O25    1 C24 
+CONECT      N26    3 C24  HN26 HN2A
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+CONECT      HN10   1 N10 
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H12A   1 C12 
+CONECT      H13    1 C13 
+CONECT      H13A   1 C13 
+CONECT      H15    1 C15 
+CONECT      H15A   1 C15 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H18    1 C18 
+CONECT      H20    1 C20 
+CONECT      HN26   1 N26 
+CONECT      HN2A   1 N26 
+CONECT      HN6    1 N6  
+END   
+HET    087             45
+HETNAM     087 2-chloro-6-(4-{[(3,4-dichloro-5-methyl-1H-pyrrol-2-yl)c
+HETNAM   2 087 arbonyl]amino}piperidin-1-yl)pyridine-4-carboxamide
+FORMUL      087    C17 H18 Cl3 N5 O2

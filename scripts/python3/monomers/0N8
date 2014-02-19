@@ -1,0 +1,59 @@
+RESIDUE   0N8     53
+CONECT      CL2    1 C19 
+CONECT      C19    3 CL2  C18  C20 
+CONECT      C18    3 C19  C17  H1  
+CONECT      C17    3 C18  C16  H2  
+CONECT      C20    3 C19  C21  H3  
+CONECT      C21    3 C20  C16  H4  
+CONECT      C16    3 C17  C21  C15 
+CONECT      C15    4 C16  C11  H5   H6  
+CONECT      C11    4 C15  C10  C14  C12 
+CONECT      C10    4 C11  C9   H7   H8  
+CONECT      C9     4 C10  N8   H9   H10 
+CONECT      C14    3 C11  O27  C22 
+CONECT      O27    1 C14 
+CONECT      C22    3 C14  C23  H11 
+CONECT      C23    3 C22  O28  C24 
+CONECT      O28    2 C23  H14 
+CONECT      C24    3 C23  O26  O25 
+CONECT      O26    2 C24  H15 
+CONECT      O25    1 C24 
+CONECT      C12    4 C11  C13  H16  H17 
+CONECT      C13    4 C12  N8   H18  H19 
+CONECT      N8     3 C9   C13  C7  
+CONECT      C7     4 N8   C2   H21  H22 
+CONECT      C2     3 C7   C3   C1  
+CONECT      C3     3 C2   C4   H23 
+CONECT      C4     3 C3   C5   H24 
+CONECT      C5     3 C4   C6   H25 
+CONECT      C6     3 C5   C1   H26 
+CONECT      C1     3 C2   C6   H27 
+CONECT      H1     1 C18 
+CONECT      H2     1 C17 
+CONECT      H3     1 C20 
+CONECT      H4     1 C21 
+CONECT      H5     1 C15 
+CONECT      H6     1 C15 
+CONECT      H7     1 C10 
+CONECT      H8     1 C10 
+CONECT      H9     1 C9  
+CONECT      H10    1 C9  
+CONECT      H11    1 C22 
+CONECT      H14    1 O28 
+CONECT      H15    1 O26 
+CONECT      H16    1 C12 
+CONECT      H17    1 C12 
+CONECT      H18    1 C13 
+CONECT      H19    1 C13 
+CONECT      H21    1 C7  
+CONECT      H22    1 C7  
+CONECT      H23    1 C3  
+CONECT      H24    1 C4  
+CONECT      H25    1 C5  
+CONECT      H26    1 C6  
+CONECT      H27    1 C1  
+END   
+HET    0N8             53
+HETNAM     0N8 (2Z)-4-[1-benzyl-4-(4-chlorobenzyl)piperidin-4-yl]-2-hy
+HETNAM   2 0N8 droxy-4-oxobut-2-enoic acid
+FORMUL      0N8    C23 H24 Cl1 N1 O4

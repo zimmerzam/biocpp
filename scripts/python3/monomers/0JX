@@ -1,0 +1,29 @@
+RESIDUE   0JX     24
+CONECT      O20    1 P17 
+CONECT      P17    4 O20  O19  O18  O16 
+CONECT      O19    2 P17  H1  
+CONECT      O18    2 P17  H2  
+CONECT      O16    2 P17  P13 
+CONECT      P13    4 O16  O15  O14  O29 
+CONECT      O15    2 P13  H3  
+CONECT      O14    1 P13 
+CONECT      O29    2 P13  C28 
+CONECT      C28    4 O29  C27  H4   H5  
+CONECT      C27    4 C28  C30  H6   H7  
+CONECT      C30    3 C27  C13  H9  
+CONECT      C13    3 C30  O33  H11 
+CONECT      O33    2 C13  H12 
+CONECT      H1     1 O19 
+CONECT      H2     1 O18 
+CONECT      H3     1 O15 
+CONECT      H4     1 C28 
+CONECT      H5     1 C28 
+CONECT      H6     1 C27 
+CONECT      H7     1 C27 
+CONECT      H9     1 C30 
+CONECT      H11    1 C13 
+CONECT      H12    1 O33 
+END   
+HET    0JX             24
+HETNAM     0JX (3E)-4-hydroxybut-3-en-1-yl trihydrogen diphosphate
+FORMUL      0JX    C4 H10 O8 P2

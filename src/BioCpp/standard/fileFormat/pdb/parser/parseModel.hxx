@@ -41,7 +41,7 @@ typename BioCpp::io::model<atom_t>::type parseModel( char buffer[], eleDict& e, 
 	char* c_line = strtok(buffer, "\n");
 	while(c_line){
 		std::string line(c_line, std::find(c_line, c_line + 70, '\0'));
-		if(get_record(line) == ATOM){
+		if(get_record(line) == ATOM or get_record(line) == HETATM){
 			atom_t info = parseAtom<atom_t, eleDict, atmDict, resDict>(line, e, a, r);
 			all_info.push_back( std::make_pair( info.serial, info ) );
 		}

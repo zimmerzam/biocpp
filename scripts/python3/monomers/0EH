@@ -1,0 +1,39 @@
+RESIDUE   0EH     34
+CONECT      OAD    1 CAE 
+CONECT      CAE    3 OAD  CAF  O1  
+CONECT      CAF    4 CAE  CAA  CAB  NAC 
+CONECT      CAA    4 CAF  H2   H3   H4  
+CONECT      CAB    4 CAF  CAO  H5   H6  
+CONECT      NAC    3 CAF  H7   H8  
+CONECT      CAO    4 CAB  CAP  H10  H11 
+CONECT      CAP    4 CAO  CAQ  H12  H13 
+CONECT      CAQ    4 CAP  CAR  H14  H15 
+CONECT      CAR    4 CAQ  CAS  H16  H17 
+CONECT      CAS    4 CAR  CAT  H18  H19 
+CONECT      CAT    4 CAS  H20  H21  H22 
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAA 
+CONECT      H5     1 CAB 
+CONECT      H6     1 CAB 
+CONECT      H7     1 NAC 
+CONECT      H8     1 NAC 
+CONECT      H10    1 CAO 
+CONECT      H11    1 CAO 
+CONECT      H12    1 CAP 
+CONECT      H13    1 CAP 
+CONECT      H14    1 CAQ 
+CONECT      H15    1 CAQ 
+CONECT      H16    1 CAR 
+CONECT      H17    1 CAR 
+CONECT      H18    1 CAS 
+CONECT      H19    1 CAS 
+CONECT      H20    1 CAT 
+CONECT      H21    1 CAT 
+CONECT      H22    1 CAT 
+CONECT      O1     2 CAE  H1  
+CONECT      H1     1 O1  
+END   
+HET    0EH             34
+HETNAM     0EH (2R)-2-amino-2-methylnonanoic acid
+FORMUL      0EH    C10 H21 N1 O2

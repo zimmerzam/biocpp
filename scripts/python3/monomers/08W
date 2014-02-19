@@ -1,0 +1,50 @@
+RESIDUE   08W     43
+CONECT      O37    1 C36 
+CONECT      C36    3 O37  N38  C33 
+CONECT      N38    3 C36  C40  H1  
+CONECT      C40    4 N38  H2   H3   H4  
+CONECT      C33    3 C36  N32  C34 
+CONECT      N32    2 C33  C30 
+CONECT      C30    3 N32  N29  H5  
+CONECT      C34    3 C33  N29  H6  
+CONECT      N29    3 C30  C34  C6  
+CONECT      C6     3 N29  C7   C5  
+CONECT      C7     3 C6   C9   H7  
+CONECT      C9     3 C7   C17  C10 
+CONECT      C17    3 C9   O18  N16 
+CONECT      O18    1 C17 
+CONECT      N16    3 C17  N19  C15 
+CONECT      N19    3 N16  S21  H8  
+CONECT      S21    4 N19  O23  C24  O22 
+CONECT      O23    1 S21 
+CONECT      C24    4 S21  H9   H10  H11 
+CONECT      O22    1 S21 
+CONECT      C15    3 N16  O28  N13 
+CONECT      O28    1 C15 
+CONECT      N13    3 C15  C10  H12 
+CONECT      C10    3 C9   N13  C11 
+CONECT      C11    3 C10  C5   H13 
+CONECT      C5     3 C6   C11  C2  
+CONECT      C2     4 C5   F1   F3   F4  
+CONECT      F1     1 C2  
+CONECT      F3     1 C2  
+CONECT      F4     1 C2  
+CONECT      H1     1 N38 
+CONECT      H2     1 C40 
+CONECT      H3     1 C40 
+CONECT      H4     1 C40 
+CONECT      H5     1 C30 
+CONECT      H6     1 C34 
+CONECT      H7     1 C7  
+CONECT      H8     1 N19 
+CONECT      H9     1 C24 
+CONECT      H10    1 C24 
+CONECT      H11    1 C24 
+CONECT      H12    1 N13 
+CONECT      H13    1 C11 
+END   
+HET    08W             43
+HETNAM     08W N-methyl-1-{3-[(methylsulfonyl)amino]-2,4-dioxo-7-(trif
+HETNAM   2 08W luoromethyl)-1,2,3,4-tetrahydroquinazolin-6-yl}-1H-imid
+HETNAM   3 08W azole-4-carboxamide
+FORMUL      08W    C15 H13 F3 N6 O5 S1

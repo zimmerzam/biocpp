@@ -66,7 +66,12 @@ struct print_atom_t{
 														int& resName, char& chainId, int& resSeq, char& iCode, 
 														Eigen::Vector3d& coordinate, double& occupancy, 
 														double& tempFactor, int& element, double& charge ){
-	  out << "ATOM  ";
+	  if( resName < 1000 ){
+  	  out << "ATOM  ";
+  	}
+  	else{
+  	  out << "HETATM";
+  	}
 	  out << std::setw(5) << serial;
 	  out << " ";
 	  out << atom_dictionary.id_to_string[id];

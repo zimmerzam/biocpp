@@ -1,0 +1,79 @@
+RESIDUE   0EU     72
+CONECT      C1     3 C2   C6   C14 
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   C6   H5  
+CONECT      C6     3 C1   C5   S7  
+CONECT      S7     2 C6   C8  
+CONECT      C8     3 S7   N9   C14 
+CONECT      N9     3 C8   C10  HN9 
+CONECT      C10    3 N9   O10  N11 
+CONECT      O10    1 C10 
+CONECT      N11    3 C10  C35  HN11
+CONECT      C14    3 C1   C8   C15 
+CONECT      C15    3 C14  N15  O15 
+CONECT      N15    3 C15  C16  C18 
+CONECT      O15    1 C15 
+CONECT      C16    4 N15  C17  H16  H16A
+CONECT      C17    4 C16  C20  H17  H17A
+CONECT      C18    4 N15  C19  H18  H18A
+CONECT      C19    4 C18  C20  H19  H19A
+CONECT      C20    4 C17  C19  N20  H20 
+CONECT      N20    3 C20  C21  C24 
+CONECT      C21    4 N20  C22  H21  H21A
+CONECT      C22    4 C21  C23  H22  H22A
+CONECT      C23    4 C22  C25  H23  H23A
+CONECT      C24    4 N20  C25  H24  H24A
+CONECT      C25    4 C23  C24  C26  C28 
+CONECT      C26    3 C25  O26  O27 
+CONECT      O26    1 C26 
+CONECT      O27    2 C26  C29 
+CONECT      C28    4 C25  C29  H28  H28A
+CONECT      C29    4 O27  C28  C30  C31 
+CONECT      C30    4 C29  H30  H30A H30B
+CONECT      C31    4 C29  H31  H31A H31B
+CONECT      C35    4 N11  C36  H35  H35A
+CONECT      C36    4 C35  H36  H36A H36B
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      HN9    1 N9  
+CONECT      HN11   1 N11 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H17    1 C17 
+CONECT      H17A   1 C17 
+CONECT      H18    1 C18 
+CONECT      H18A   1 C18 
+CONECT      H19    1 C19 
+CONECT      H19A   1 C19 
+CONECT      H20    1 C20 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      H22    1 C22 
+CONECT      H22A   1 C22 
+CONECT      H23    1 C23 
+CONECT      H23A   1 C23 
+CONECT      H24    1 C24 
+CONECT      H24A   1 C24 
+CONECT      H28    1 C28 
+CONECT      H28A   1 C28 
+CONECT      H30    1 C30 
+CONECT      H30A   1 C30 
+CONECT      H30B   1 C30 
+CONECT      H31    1 C31 
+CONECT      H31A   1 C31 
+CONECT      H31B   1 C31 
+CONECT      H35    1 C35 
+CONECT      H35A   1 C35 
+CONECT      H36    1 C36 
+CONECT      H36A   1 C36 
+CONECT      H36B   1 C36 
+END   
+HET    0EU             72
+HETNAM     0EU 1-[3-({4-[(5S)-3,3-dimethyl-1-oxo-2-oxa-7-azaspiro[4.5]
+HETNAM   2 0EU dec-7-yl]piperidin-1-yl}carbonyl)-1-benzothiophen-2-yl]
+HETNAM   3 0EU -3-ethylurea
+FORMUL      0EU    C27 H36 N4 O4 S1

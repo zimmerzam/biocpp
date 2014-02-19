@@ -1,0 +1,26 @@
+RESIDUE   04U     20
+CONECT      O9     1 C8  
+CONECT      C8     3 O9   C10  OXT 
+CONECT      C10    4 C8   C25  N11  H10 
+CONECT      C25    4 C10  C24  H251 H252
+CONECT      C24    4 C25  N26  C23  H24 
+CONECT      N26    2 C24  N27 
+CONECT      N27    2 N26  N28 
+CONECT      N28    2 N27  H28 
+CONECT      C23    4 C24  N11  H231 H232
+CONECT      N11    3 C10  C23  H2  
+CONECT      H10    1 C10 
+CONECT      H251   1 C25 
+CONECT      H252   1 C25 
+CONECT      H24    1 C24 
+CONECT      H231   1 C23 
+CONECT      H232   1 C23 
+CONECT      H28    1 N28 
+CONECT      OXT    2 C8   HXT 
+CONECT      HXT    1 OXT 
+CONECT      H2     1 N11 
+END   
+HET    04U             20
+HETNAM     04U azanylidene-[(3S,5S)-5-carboxypyrrolidin-3-yl]imino-aza
+HETNAM   2 04U nium
+FORMUL      04U    C5 H9 N4 O2 1+

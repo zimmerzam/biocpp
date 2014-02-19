@@ -1,0 +1,38 @@
+RESIDUE   00O     33
+CONECT      C37    3 C26  C7   H37 
+CONECT      C26    3 C37  C25  H26 
+CONECT      C25    3 C26  C34  H25 
+CONECT      C34    3 C25  C23  H34 
+CONECT      C23    3 C34  C7   H23 
+CONECT      C7     3 C37  C23  CB  
+CONECT      CB     4 C7   CA   C1   HB1 
+CONECT      CA     4 CB   C    N    HA  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      N      3 CA   H    H2  
+CONECT      C1     3 CB   C6   C2  
+CONECT      C6     3 C1   C5   H6  
+CONECT      C5     3 C6   C4   H5  
+CONECT      C4     3 C5   C3   H4  
+CONECT      C3     3 C4   C2   H3  
+CONECT      C2     3 C1   C3   H2A 
+CONECT      H37    1 C37 
+CONECT      H26    1 C26 
+CONECT      H25    1 C25 
+CONECT      H34    1 C34 
+CONECT      H23    1 C23 
+CONECT      HB1    1 CB  
+CONECT      HA     1 CA  
+CONECT      H      1 N   
+CONECT      H2     1 N   
+CONECT      H6     1 C6  
+CONECT      H5     1 C5  
+CONECT      H4     1 C4  
+CONECT      H3     1 C3  
+CONECT      H2A    1 C2  
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    00O             33
+HETNAM     00O beta-phenyl-D-phenylalanine
+FORMUL      00O    C15 H15 N1 O2

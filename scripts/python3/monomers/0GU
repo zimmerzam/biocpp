@@ -1,0 +1,85 @@
+RESIDUE   0GU     78
+CONECT      F1     1 C2  
+CONECT      C2     4 F1   C3   C75  F78 
+CONECT      C3     4 C2   C6   H1   H2  
+CONECT      C6     4 C3   C9   H3   H4  
+CONECT      C9     4 C6   C10  C16  C72 
+CONECT      C10    4 C9   N13  H5   H6  
+CONECT      N13    3 C10  C15  H7  
+CONECT      C15    3 N13  C16  C22 
+CONECT      C16    3 C9   C15  C17 
+CONECT      C17    3 C16  C19  H8  
+CONECT      C19    3 C17  C20  C24 
+CONECT      C20    3 C19  C22  H9  
+CONECT      C22    3 C15  C20  F23 
+CONECT      F23    1 C22 
+CONECT      C24    4 C19  C27  H10  H11 
+CONECT      C27    4 C24  C29  C37  H12 
+CONECT      C29    4 C27  C31  O70  H13 
+CONECT      C31    4 C29  C33  N42  H14 
+CONECT      C33    4 C31  S36  H15  H16 
+CONECT      S36    4 C33  C37  O40  O41 
+CONECT      C37    4 C27  S36  H17  H18 
+CONECT      O40    1 S36 
+CONECT      O41    1 S36 
+CONECT      N42    3 C31  C44  H19 
+CONECT      C44    4 N42  C47  H21  H22 
+CONECT      C47    3 C44  C48  C55 
+CONECT      C48    3 C47  C50  H23 
+CONECT      C50    3 C48  C51  C57 
+CONECT      C51    3 C50  C53  H24 
+CONECT      C53    3 C51  C55  H25 
+CONECT      C55    3 C47  C53  H26 
+CONECT      C57    4 C50  C58  C62  C66 
+CONECT      C58    4 C57  H27  H28  H29 
+CONECT      C62    4 C57  H30  H31  H32 
+CONECT      C66    4 C57  H33  H34  H35 
+CONECT      O70    2 C29  H36 
+CONECT      C72    4 C9   C75  H37  H38 
+CONECT      C75    4 C2   C72  H39  H40 
+CONECT      F78    1 C2  
+CONECT      H1     1 C3  
+CONECT      H2     1 C3  
+CONECT      H3     1 C6  
+CONECT      H4     1 C6  
+CONECT      H5     1 C10 
+CONECT      H6     1 C10 
+CONECT      H7     1 N13 
+CONECT      H8     1 C17 
+CONECT      H9     1 C20 
+CONECT      H10    1 C24 
+CONECT      H11    1 C24 
+CONECT      H12    1 C27 
+CONECT      H13    1 C29 
+CONECT      H14    1 C31 
+CONECT      H15    1 C33 
+CONECT      H16    1 C33 
+CONECT      H17    1 C37 
+CONECT      H18    1 C37 
+CONECT      H19    1 N42 
+CONECT      H21    1 C44 
+CONECT      H22    1 C44 
+CONECT      H23    1 C48 
+CONECT      H24    1 C51 
+CONECT      H25    1 C53 
+CONECT      H26    1 C55 
+CONECT      H27    1 C58 
+CONECT      H28    1 C58 
+CONECT      H29    1 C58 
+CONECT      H30    1 C62 
+CONECT      H31    1 C62 
+CONECT      H32    1 C62 
+CONECT      H33    1 C66 
+CONECT      H34    1 C66 
+CONECT      H35    1 C66 
+CONECT      H36    1 O70 
+CONECT      H37    1 C72 
+CONECT      H38    1 C72 
+CONECT      H39    1 C75 
+CONECT      H40    1 C75 
+END   
+HET    0GU             78
+HETNAM     0GU (3R,4S,5S)-3-[(3-tert-butylbenzyl)amino]-5-[(4,4,7'-tri
+HETNAM   2 0GU fluoro-1',2'-dihydrospiro[cyclohexane-1,3'-indol]-5'-yl
+HETNAM   3 0GU )methyl]tetrahydro-2H-thiopyran-4-ol 1,1-dioxide
+FORMUL      0GU    C30 H39 F3 N2 O3 S1

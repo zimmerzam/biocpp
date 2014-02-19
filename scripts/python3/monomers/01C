@@ -1,0 +1,38 @@
+RESIDUE   01C     32
+CONECT      N      3 CA   HN3  H2  
+CONECT      CA     4 N    CB   C    H25 
+CONECT      CB     4 CA   CG   H261 H262
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   NE1  H30 
+CONECT      CD2    3 CG   CE2  CE3 
+CONECT      CE2    3 CD2  NE1  CZ2 
+CONECT      NE1    3 CD1  CE2  HN33
+CONECT      CZ2    3 CE2  CH2  H34 
+CONECT      CH2    3 CZ2  CZ3  H35 
+CONECT      CZ3    3 CH2  CE3  H36 
+CONECT      CE3    3 CD2  CZ3  H37 
+CONECT      C      3 CA   O    C1  
+CONECT      O      1 C   
+CONECT      C1     4 C    F11  F12  C2  
+CONECT      F11    1 C1  
+CONECT      F12    1 C1  
+CONECT      C2     4 C1   F21  F22  F23 
+CONECT      F21    1 C2  
+CONECT      F22    1 C2  
+CONECT      F23    1 C2  
+CONECT      HN3    1 N   
+CONECT      H25    1 CA  
+CONECT      H261   1 CB  
+CONECT      H262   1 CB  
+CONECT      H30    1 CD1 
+CONECT      HN33   1 NE1 
+CONECT      H34    1 CZ2 
+CONECT      H35    1 CH2 
+CONECT      H36    1 CZ3 
+CONECT      H37    1 CE3 
+CONECT      H2     1 N   
+END   
+HET    01C             32
+HETNAM     01C (4S)-4-amino-1,1,1,2,2-pentafluoro-5-(1H-indol-3-yl)pen
+HETNAM   2 01C tan-3-one
+FORMUL      01C    C13 H11 F5 N2 O1

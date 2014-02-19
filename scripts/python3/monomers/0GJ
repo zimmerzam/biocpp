@@ -1,0 +1,60 @@
+RESIDUE   0GJ     54
+CONECT      N      3 CA   H    H2  
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     4 CB   CD   HG2  HG3 
+CONECT      CD     3 CG   OE1  OE2 
+CONECT      OE1    1 CD  
+CONECT      OE2    2 CD   HE2 
+CONECT      N1     3 C    CA1  H1  
+CONECT      CA1    4 N1   C1   HA2  HA3 
+CONECT      C1     3 CA1  O1   N2  
+CONECT      O1     1 C1  
+CONECT      N2     3 C1   CA2  H3  
+CONECT      CA2    4 N2   C2   CB1  HA1 
+CONECT      C2     4 CA2  O2   C3   H27 
+CONECT      O2     2 C2   H28 
+CONECT      CB1    4 CA2  CG1  HB21 HB31
+CONECT      CG1    4 CB1  CD1  HG21 HG31
+CONECT      CD1    4 CG1  NE   HD2  HD3 
+CONECT      NE     3 CD1  CZ   HE  
+CONECT      CZ     3 NE   NH1  NH2 
+CONECT      NH1    3 CZ   HH11 HH12
+CONECT      NH2    3 CZ   HH21 HH22
+CONECT      C3     4 C2   CL   H11  H21 
+CONECT      CL     1 C3  
+CONECT      H      1 N   
+CONECT      H2     1 N   
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HG2    1 CG  
+CONECT      HG3    1 CG  
+CONECT      HE2    1 OE2 
+CONECT      H1     1 N1  
+CONECT      HA2    1 CA1 
+CONECT      HA3    1 CA1 
+CONECT      H3     1 N2  
+CONECT      HA1    1 CA2 
+CONECT      HB21   1 CB1 
+CONECT      HB31   1 CB1 
+CONECT      HG21   1 CG1 
+CONECT      HG31   1 CG1 
+CONECT      HD2    1 CD1 
+CONECT      HD3    1 CD1 
+CONECT      HE     1 NE  
+CONECT      HH11   1 NH1 
+CONECT      HH12   1 NH1 
+CONECT      HH21   1 NH2 
+CONECT      HH22   1 NH2 
+CONECT      H27    1 C2  
+CONECT      H28    1 O2  
+CONECT      H11    1 C3  
+CONECT      H21    1 C3  
+END   
+HET    0GJ             54
+HETNAM     0GJ L-alpha-glutamyl-N-{(1S)-4-{[amino(iminio)methyl]amino}
+HETNAM   2 0GJ -1-[(1S)-2-chloro-1-hydroxyethyl]butyl}glycinamide
+FORMUL      0GJ    C14 H28 Cl1 N6 O5 1+

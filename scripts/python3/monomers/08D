@@ -1,0 +1,35 @@
+RESIDUE   08D     28
+CONECT      O12    1 S10 
+CONECT      S10    4 O12  O11  C4   N13 
+CONECT      O11    1 S10 
+CONECT      C4     3 S10  C3   C5  
+CONECT      C3     3 C4   C2   H1  
+CONECT      C2     3 C3   C1   H2  
+CONECT      C5     3 C4   C6   H3  
+CONECT      C6     3 C5   C1   H4  
+CONECT      C1     3 C2   C6   N7  
+CONECT      N7     3 C1   H5   H6  
+CONECT      N13    3 S10  C15  H7  
+CONECT      C15    3 N13  N19  C16 
+CONECT      N19    2 C15  O18 
+CONECT      O18    2 N19  C17 
+CONECT      C17    3 O18  C16  C20 
+CONECT      C16    3 C15  C17  H8  
+CONECT      C20    4 C17  H9   H10  H11 
+CONECT      H1     1 C3  
+CONECT      H2     1 C2  
+CONECT      H3     1 C5  
+CONECT      H4     1 C6  
+CONECT      H5     1 N7  
+CONECT      H6     1 N7  
+CONECT      H7     1 N13 
+CONECT      H8     1 C16 
+CONECT      H9     1 C20 
+CONECT      H10    1 C20 
+CONECT      H11    1 C20 
+END   
+HET    08D             28
+HETSYN     08D 4-amino-N-(5-methyl-1,2-oxazol-3-yl)benzenesulfonamide,
+HETSYN   2 08D  SMX, SMZ
+HETNAM     08D Sulfamethoxazole
+FORMUL      08D    C10 H11 N3 O3 S1

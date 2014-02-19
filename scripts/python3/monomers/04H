@@ -1,0 +1,32 @@
+RESIDUE   04H     27
+CONECT      N19    3 C23  H19  H2  
+CONECT      C23    4 N19  C26  H231 H232
+CONECT      C26    4 C23  C28  C29  H26 
+CONECT      C28    4 C26  N30  H281 H282
+CONECT      C29    4 C26  C31  H291 H292
+CONECT      N30    3 C28  C32  C33 
+CONECT      C31    4 C29  C32  H311 H312
+CONECT      C32    4 N30  C31  H321 H322
+CONECT      C33    3 N30  N34  N35 
+CONECT      N34    3 C33  H341 H342
+CONECT      N35    2 C33  H35 
+CONECT      H19    1 N19 
+CONECT      H231   1 C23 
+CONECT      H232   1 C23 
+CONECT      H26    1 C26 
+CONECT      H281   1 C28 
+CONECT      H282   1 C28 
+CONECT      H291   1 C29 
+CONECT      H292   1 C29 
+CONECT      H311   1 C31 
+CONECT      H312   1 C31 
+CONECT      H321   1 C32 
+CONECT      H322   1 C32 
+CONECT      H341   1 N34 
+CONECT      H342   1 N34 
+CONECT      H35    1 N35 
+CONECT      H2     1 N19 
+END   
+HET    04H             27
+HETNAM     04H (3S)-3-(aminomethyl)piperidine-1-carboximidamide
+FORMUL      04H    C7 H16 N4

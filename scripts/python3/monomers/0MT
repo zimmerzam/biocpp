@@ -1,0 +1,55 @@
+RESIDUE   0MT     49
+CONECT      CAO    3 CAI  CAZ  H1  
+CONECT      CAI    3 CAO  CAW  H2  
+CONECT      CAW    3 CAI  CAU  CAJ 
+CONECT      CAU    3 CAW  OAD  OAA 
+CONECT      OAD    2 CAU  H3  
+CONECT      OAA    1 CAU 
+CONECT      CAJ    3 CAW  CAP  H4  
+CONECT      CAP    3 CAJ  CAZ  H5  
+CONECT      CAZ    3 CAO  CAP  NBF 
+CONECT      NBF    3 CAZ  CAV  CBE 
+CONECT      CAV    3 NBF  OAB  CBC 
+CONECT      OAB    1 CAV 
+CONECT      CBC    3 CAV  NAT  CBD 
+CONECT      NAT    3 CBC  NAS  H6  
+CONECT      NAS    2 NAT  CBB 
+CONECT      CBB    3 NAS  CAX  CBD 
+CONECT      CAX    3 CBB  CAK  CAL 
+CONECT      CAK    3 CAX  CAG  H7  
+CONECT      CAG    3 CAK  CAF  H8  
+CONECT      CAF    3 CAG  CAH  H9  
+CONECT      CAH    3 CAF  CAL  H10 
+CONECT      CAL    3 CAX  CAH  H11 
+CONECT      CBD    3 CBC  CBB  CBE 
+CONECT      CBE    4 NBF  CBD  CAY  H12 
+CONECT      CAY    3 CBE  CAM  CAN 
+CONECT      CAM    3 CAY  CAQ  H13 
+CONECT      CAQ    3 CAM  CBA  H14 
+CONECT      CBA    3 CAQ  NBG  CAR 
+CONECT      NBG    3 CBA  OAE  OAC 
+CONECT      OAE    1 NBG 
+CONECT      OAC    1 NBG 
+CONECT      CAR    3 CBA  CAN  H15 
+CONECT      CAN    3 CAY  CAR  H16 
+CONECT      H1     1 CAO 
+CONECT      H2     1 CAI 
+CONECT      H3     1 OAD 
+CONECT      H4     1 CAJ 
+CONECT      H5     1 CAP 
+CONECT      H6     1 NAT 
+CONECT      H7     1 CAK 
+CONECT      H8     1 CAG 
+CONECT      H9     1 CAF 
+CONECT      H10    1 CAH 
+CONECT      H11    1 CAL 
+CONECT      H12    1 CBE 
+CONECT      H13    1 CAM 
+CONECT      H14    1 CAQ 
+CONECT      H15    1 CAR 
+CONECT      H16    1 CAN 
+END   
+HET    0MT             49
+HETNAM     0MT 4-[(4R)-4-(4-nitrophenyl)-6-oxidanylidene-3-phenyl-1,4-
+HETNAM   2 0MT dihydropyrrolo[3,4-c]pyrazol-5-yl]benzoic acid
+FORMUL      0MT    C24 H16 N4 O5

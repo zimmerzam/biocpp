@@ -1,0 +1,68 @@
+RESIDUE   0F2     62
+CONECT      CAN    4 CAO  NAM  H1   H2  
+CONECT      CAO    4 CAN  OAP  H3   H4  
+CONECT      OAP    2 CAO  CAQ 
+CONECT      CAQ    4 OAP  CAR  H5   H6  
+CONECT      CAR    4 CAQ  NAM  H7   H8  
+CONECT      NAM    3 CAN  CAR  CAL 
+CONECT      CAL    4 NAM  CAK  H10  H11 
+CONECT      CAK    4 CAL  OAJ  H12  H13 
+CONECT      OAJ    2 CAK  CAD 
+CONECT      CAD    3 OAJ  CAA  CAE 
+CONECT      CAA    3 CAD  CAB  H14 
+CONECT      CAB    3 CAA  CAS  CAC 
+CONECT      CAS    4 CAB  CBB  CBC  OBF 
+CONECT      CBB    4 CAS  CBD  H15  H16 
+CONECT      CBD    4 CBB  H17  H18  H19 
+CONECT      CBC    4 CAS  CBE  H20  H21 
+CONECT      CBE    4 CBC  H22  H23  H24 
+CONECT      OBF    2 CAS  H25 
+CONECT      CAC    3 CAB  CAF  H26 
+CONECT      CAF    3 CAC  NAG  CAE 
+CONECT      NAG    3 CAF  CAH  H27 
+CONECT      CAE    3 CAD  CAF  CAI 
+CONECT      CAI    3 CAE  CAH  H28 
+CONECT      CAH    3 NAG  CAI  CAT 
+CONECT      CAT    3 CAH  CAW  NAU 
+CONECT      CAW    3 CAT  S1   CAX 
+CONECT      S1     3 CAW  CAZ  H9  
+CONECT      CAZ    3 S1   CAY  H29 
+CONECT      CAY    3 CAZ  CAX  H30 
+CONECT      CAX    3 CAW  CAY  NAV 
+CONECT      NAV    2 CAX  NAU 
+CONECT      NAU    2 CAT  NAV 
+CONECT      H1     1 CAN 
+CONECT      H2     1 CAN 
+CONECT      H3     1 CAO 
+CONECT      H4     1 CAO 
+CONECT      H5     1 CAQ 
+CONECT      H6     1 CAQ 
+CONECT      H7     1 CAR 
+CONECT      H8     1 CAR 
+CONECT      H10    1 CAL 
+CONECT      H11    1 CAL 
+CONECT      H12    1 CAK 
+CONECT      H13    1 CAK 
+CONECT      H14    1 CAA 
+CONECT      H15    1 CBB 
+CONECT      H16    1 CBB 
+CONECT      H17    1 CBD 
+CONECT      H18    1 CBD 
+CONECT      H19    1 CBD 
+CONECT      H20    1 CBC 
+CONECT      H21    1 CBC 
+CONECT      H22    1 CBE 
+CONECT      H23    1 CBE 
+CONECT      H24    1 CBE 
+CONECT      H25    1 OBF 
+CONECT      H26    1 CAC 
+CONECT      H27    1 NAG 
+CONECT      H28    1 CAI 
+CONECT      H29    1 CAZ 
+CONECT      H30    1 CAY 
+CONECT      H9     1 S1  
+END   
+HET    0F2             62
+HETNAM     0F2 3-{4-[2-(morpholin-4-yl)ethoxy]-2-(4lambda~4~-thieno[3,
+HETNAM   2 0F2 2-c]pyrazol-3-yl)-1H-indol-6-yl}pentan-3-ol
+FORMUL      0F2    C24 H30 N4 O3 S1

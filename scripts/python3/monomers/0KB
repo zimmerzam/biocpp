@@ -1,0 +1,44 @@
+RESIDUE   0KB     38
+CONECT      OAW    2 PAV  H1  
+CONECT      PAV    4 OAW  OAY  OAX  CAQ 
+CONECT      OAY    1 PAV 
+CONECT      OAX    2 PAV  H2  
+CONECT      CAQ    3 PAV  CAR  CAP 
+CONECT      CAR    3 CAQ  CAS  H3  
+CONECT      CAS    3 CAR  CAT  H4  
+CONECT      CAT    3 CAS  CAU  H5  
+CONECT      CAU    3 CAT  CAP  H6  
+CONECT      CAP    3 CAQ  CAU  OAO 
+CONECT      OAO    2 CAP  CAA 
+CONECT      CAA    4 OAO  CAB  H7   H8  
+CONECT      CAB    3 CAA  OAD  NAC 
+CONECT      OAD    1 CAB 
+CONECT      NAC    3 CAB  CAE  H9  
+CONECT      CAE    3 NAC  CAF  CAJ 
+CONECT      CAF    3 CAE  CAG  H10 
+CONECT      CAG    3 CAF  CAK  CAH 
+CONECT      CAK    4 CAG  FAM  FAN  FAL 
+CONECT      FAM    1 CAK 
+CONECT      FAN    1 CAK 
+CONECT      FAL    1 CAK 
+CONECT      CAH    3 CAG  CAI  H11 
+CONECT      CAI    3 CAH  CAJ  H12 
+CONECT      CAJ    3 CAE  CAI  H13 
+CONECT      H1     1 OAW 
+CONECT      H2     1 OAX 
+CONECT      H3     1 CAR 
+CONECT      H4     1 CAS 
+CONECT      H5     1 CAT 
+CONECT      H6     1 CAU 
+CONECT      H7     1 CAA 
+CONECT      H8     1 CAA 
+CONECT      H9     1 NAC 
+CONECT      H10    1 CAF 
+CONECT      H11    1 CAH 
+CONECT      H12    1 CAI 
+CONECT      H13    1 CAJ 
+END   
+HET    0KB             38
+HETNAM     0KB [2-(2-oxo-2-{[3-(trifluoromethyl)phenyl]amino}ethoxy)ph
+HETNAM   2 0KB enyl]phosphonic acid
+FORMUL      0KB    C15 H13 F3 N1 O5 P1

@@ -1,0 +1,49 @@
+RESIDUE   03L     43
+CONECT      OAA    1 CAT 
+CONECT      OAB    1 CAU 
+CONECT      OAC    2 CAT  HOAC
+CONECT      CLAD   1 CAV 
+CONECT      CLAE   1 CAW 
+CONECT      CAF    3 CAG  CAK  HAF 
+CONECT      CLAF   1 CAP 
+CONECT      CAG    3 CAF  CAL  HAG 
+CONECT      CAH    3 CAI  CAJ  HAH 
+CONECT      CAI    3 CAH  CAW  HAI 
+CONECT      CAJ    3 CAH  CAY  HAJ 
+CONECT      CAK    3 CAF  CAZ  HAK 
+CONECT      CAL    3 CAG  CBA  HAL 
+CONECT      CAM    3 CAO  CAV  HAM 
+CONECT      CAN    3 CAP  CAV  HAN 
+CONECT      CAO    3 CAM  CAX  HAO 
+CONECT      CAP    3 CLAF CAN  CAX 
+CONECT      CAQ    4 NAR  CBB  HAQ  HAQA
+CONECT      NAR    3 CAQ  CAU  HNAR
+CONECT      SAS    2 CAX  CAY 
+CONECT      CAT    3 OAA  OAC  CAZ 
+CONECT      CAU    3 OAB  NAR  CBA 
+CONECT      CAV    3 CLAD CAM  CAN 
+CONECT      CAW    3 CLAE CAI  CBB 
+CONECT      CAX    3 CAO  CAP  SAS 
+CONECT      CAY    3 CAJ  SAS  CBB 
+CONECT      CAZ    3 CAK  CAT  CBA 
+CONECT      CBA    3 CAL  CAU  CAZ 
+CONECT      CBB    3 CAQ  CAW  CAY 
+CONECT      HOAC   1 OAC 
+CONECT      HAF    1 CAF 
+CONECT      HAG    1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAL    1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAQ    1 CAQ 
+CONECT      HAQA   1 CAQ 
+CONECT      HNAR   1 NAR 
+END   
+HET    03L             43
+HETNAM     03L 2-({2-chloro-6-[(2,4-dichlorophenyl)sulfanyl]benzyl}car
+HETNAM   2 03L bamoyl)benzoic acid
+FORMUL      03L    C21 H14 Cl3 N1 O3 S1

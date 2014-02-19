@@ -1,0 +1,20 @@
+RESIDUE   03W     15
+CONECT      C1     4 O1   C2   O5   H1  
+CONECT      O1     2 C1   HO1 
+CONECT      C2     4 C1   O2   C3   H2  
+CONECT      O2     2 C2   HO2 
+CONECT      C3     4 C2   O3   H3   H3A 
+CONECT      O3     2 C3   HO3 
+CONECT      O5     2 C1   HO5 
+CONECT      HO1    1 O1  
+CONECT      H2     1 C2  
+CONECT      HO2    1 O2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      HO3    1 O3  
+CONECT      HO5    1 O5  
+CONECT      H1     1 C1  
+END   
+HET    03W             15
+HETNAM     03W (2R)-propane-1,1,2,3-tetrol
+FORMUL      03W    C3 H8 O4

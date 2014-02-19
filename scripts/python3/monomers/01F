@@ -1,0 +1,17 @@
+RESIDUE   01F     12
+CONECT      C      3 O    O1   OXT 
+CONECT      O      1 C   
+CONECT      O1     2 C    C1  
+CONECT      C1     4 O1   C2   H241 H242
+CONECT      C2     4 C1   H251 H252 H253
+CONECT      H241   1 C1  
+CONECT      H242   1 C1  
+CONECT      H251   1 C2  
+CONECT      H252   1 C2  
+CONECT      H253   1 C2  
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    01F             12
+HETNAM     01F ethyl hydrogen carbonate
+FORMUL      01F    C3 H6 O3

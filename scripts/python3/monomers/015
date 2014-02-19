@@ -1,0 +1,50 @@
+RESIDUE   015     45
+CONECT      N11    3 C12  H11  H2  
+CONECT      C12    4 N11  C13  C26  H12 
+CONECT      C13    4 C12  C14  O41  H13 
+CONECT      C14    4 C13  C15  H141 H142
+CONECT      C15    4 C14  C44  N58  H15 
+CONECT      C26    4 C12  C28  H261 H262
+CONECT      C28    3 C26  C31  C35 
+CONECT      C31    3 C28  C32  H31 
+CONECT      C32    3 C31  C33  H32 
+CONECT      C33    3 C32  C34  H33 
+CONECT      C34    3 C33  C35  H34 
+CONECT      C35    3 C28  C34  H35 
+CONECT      O41    2 C13  HO4 
+CONECT      C44    4 C15  C45  H441 H442
+CONECT      C45    3 C44  C48  C52 
+CONECT      C48    3 C45  C49  H48 
+CONECT      C49    3 C48  C50  H49 
+CONECT      C50    3 C49  C51  H50 
+CONECT      C51    3 C50  C52  H51 
+CONECT      C52    3 C45  C51  H52 
+CONECT      N58    3 C15  H58  H1  
+CONECT      H11    1 N11 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H141   1 C14 
+CONECT      H142   1 C14 
+CONECT      H15    1 C15 
+CONECT      H261   1 C26 
+CONECT      H262   1 C26 
+CONECT      H31    1 C31 
+CONECT      H32    1 C32 
+CONECT      H33    1 C33 
+CONECT      H34    1 C34 
+CONECT      H35    1 C35 
+CONECT      HO4    1 O41 
+CONECT      H441   1 C44 
+CONECT      H442   1 C44 
+CONECT      H48    1 C48 
+CONECT      H49    1 C49 
+CONECT      H50    1 C50 
+CONECT      H51    1 C51 
+CONECT      H52    1 C52 
+CONECT      H58    1 N58 
+CONECT      H2     1 N11 
+CONECT      H1     1 N58 
+END   
+HET    015             45
+HETNAM     015 (2S,3S,5S)-2,5-diamino-1,6-diphenylhexan-3-ol
+FORMUL      015    C18 H24 N2 O1

@@ -1,0 +1,30 @@
+RESIDUE   0FS     24
+CONECT      C01    3 C03  C05  H1  
+CONECT      C02    3 C03  C04  H2  
+CONECT      C03    3 C01  C02  H3  
+CONECT      C04    3 C02  C06  C12 
+CONECT      C05    3 C01  C06  C13 
+CONECT      C06    3 C04  C05  H4  
+CONECT      C07    3 N08  C11  O14 
+CONECT      N08    3 C07  C09  H5  
+CONECT      C09    3 N08  S10  O15 
+CONECT      S10    2 C09  C11 
+CONECT      C11    3 C07  S10  C13 
+CONECT      C12    4 C04  F16  F17  F18 
+CONECT      C13    3 C05  C11  H6  
+CONECT      O14    1 C07 
+CONECT      O15    1 C09 
+CONECT      F16    1 C12 
+CONECT      F17    1 C12 
+CONECT      F18    1 C12 
+CONECT      H1     1 C01 
+CONECT      H2     1 C02 
+CONECT      H3     1 C03 
+CONECT      H4     1 C06 
+CONECT      H5     1 N08 
+CONECT      H6     1 C13 
+END   
+HET    0FS             24
+HETNAM     0FS (5Z)-5-[3-(trifluoromethyl)benzylidene]-1,3-thiazolidin
+HETNAM   2 0FS e-2,4-dione
+FORMUL      0FS    C11 H6 F3 N1 O2 S1

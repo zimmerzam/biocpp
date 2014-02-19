@@ -1,0 +1,104 @@
+RESIDUE   01A     99
+CONECT      O7A    2 P3A  HO7A
+CONECT      P3A    4 O7A  O9A  O8A  O3A'
+CONECT      O9A    2 P3A  HO9A
+CONECT      O8A    1 P3A 
+CONECT      O3A'   2 P3A  C3A'
+CONECT      C3A'   4 O3A' C2A' C4A' H3A'
+CONECT      C2A'   4 C3A' O2A' C1A' H2A'
+CONECT      O2A'   2 C2A' H2AA
+CONECT      C1A'   4 C2A' N9A  O4A' H1A'
+CONECT      N9A    3 C1A' C4A  C8A 
+CONECT      C4A    3 N9A  C5A  N3A 
+CONECT      C5A    3 C4A  C6A  N7A 
+CONECT      C6A    3 C5A  N6A  N1A 
+CONECT      N6A    3 C6A  HN6A HN6B
+CONECT      N1A    2 C6A  C2A 
+CONECT      C2A    3 N1A  N3A  H2A 
+CONECT      N3A    2 C4A  C2A 
+CONECT      N7A    2 C5A  C8A 
+CONECT      C8A    3 N9A  N7A  H8A 
+CONECT      O4A'   2 C1A' C4A'
+CONECT      C4A'   4 C3A' O4A' C5A' H4A'
+CONECT      C5A'   4 C4A' O5A' H5A' H5AA
+CONECT      O5A'   2 C5A' P1A 
+CONECT      P1A    4 O5A' O1A  O2A  O3A 
+CONECT      O1A    1 P1A 
+CONECT      O2A    2 P1A  HO2A
+CONECT      O3A    2 P1A  P2A 
+CONECT      P2A    4 O3A  O4A  O5A  O6A 
+CONECT      O4A    1 P2A 
+CONECT      O5A    2 P2A  HO5A
+CONECT      O6A    2 P2A  CCP 
+CONECT      CCP    4 O6A  CBP  HCP  HCPA
+CONECT      CBP    4 CCP  CDP  CEP  CAP 
+CONECT      CDP    4 CBP  HDP  HDPA HDPB
+CONECT      CEP    4 CBP  HEP  HEPA HEPB
+CONECT      CAP    4 CBP  OAP  C9P  HAP 
+CONECT      OAP    2 CAP  HOAP
+CONECT      C9P    3 CAP  O9P  N8P 
+CONECT      O9P    1 C9P 
+CONECT      N8P    3 C9P  C7P  HN8P
+CONECT      C7P    4 N8P  C6P  H7P  H7PA
+CONECT      C6P    4 C7P  C5P  H6P  H6PA
+CONECT      C5P    3 C6P  O5P  N4P 
+CONECT      O5P    1 C5P 
+CONECT      N4P    3 C5P  C3P  HN4P
+CONECT      C3P    4 N4P  C2P  H3P  H3PA
+CONECT      C2P    4 C3P  S1P  H2P  H2PA
+CONECT      S1P    2 C2P  C1  
+CONECT      C1     4 S1P  C    H1   H1A 
+CONECT      C      3 C1   O2   C1' 
+CONECT      O2     1 C   
+CONECT      C1'    3 C    C6   C2  
+CONECT      C6     3 C1'  C5   H6  
+CONECT      C5     3 C6   C4   H5  
+CONECT      C2     3 C1'  C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C5   C3   CL4A
+CONECT      CL4A   1 C4  
+CONECT      HO7A   1 O7A 
+CONECT      HO9A   1 O9A 
+CONECT      H3A'   1 C3A'
+CONECT      H2A'   1 C2A'
+CONECT      H2AA   1 O2A'
+CONECT      H1A'   1 C1A'
+CONECT      HN6A   1 N6A 
+CONECT      HN6B   1 N6A 
+CONECT      H2A    1 C2A 
+CONECT      H8A    1 C8A 
+CONECT      H4A'   1 C4A'
+CONECT      H5A'   1 C5A'
+CONECT      H5AA   1 C5A'
+CONECT      HO2A   1 O2A 
+CONECT      HO5A   1 O5A 
+CONECT      HCP    1 CCP 
+CONECT      HCPA   1 CCP 
+CONECT      HDP    1 CDP 
+CONECT      HDPA   1 CDP 
+CONECT      HDPB   1 CDP 
+CONECT      HEP    1 CEP 
+CONECT      HEPA   1 CEP 
+CONECT      HEPB   1 CEP 
+CONECT      HAP    1 CAP 
+CONECT      HOAP   1 OAP 
+CONECT      HN8P   1 N8P 
+CONECT      H7P    1 C7P 
+CONECT      H7PA   1 C7P 
+CONECT      H6P    1 C6P 
+CONECT      H6PA   1 C6P 
+CONECT      HN4P   1 N4P 
+CONECT      H3P    1 C3P 
+CONECT      H3PA   1 C3P 
+CONECT      H2P    1 C2P 
+CONECT      H2PA   1 C2P 
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H6     1 C6  
+CONECT      H5     1 C5  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+END   
+HET    01A             99
+HETNAM     01A 4-Chlorophenacyl-coenzyme A
+FORMUL      01A    C29 H41 Cl1 N7 O17 P3 S1

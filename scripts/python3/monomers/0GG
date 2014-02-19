@@ -1,0 +1,40 @@
+RESIDUE   0GG     35
+CONECT      N4     3 C31  H4   H2  
+CONECT      N6     3 C33  C34  H7  
+CONECT      C31    4 N4   C32  C33  H32 
+CONECT      C32    3 C31  O8   OXT 
+CONECT      C33    4 N6   C31  H33  H34 
+CONECT      C34    3 N6   C35  O9  
+CONECT      C35    4 C34  C36  H35  H36 
+CONECT      C36    3 C35  C37  C41 
+CONECT      C37    3 C36  C38  H37 
+CONECT      C38    3 C37  C39  O10 
+CONECT      C39    3 C38  C40  O11 
+CONECT      C40    3 C39  C41  H38 
+CONECT      C41    3 C36  C40  H39 
+CONECT      C42    4 O10  H40  H41  H42 
+CONECT      O8     1 C32 
+CONECT      O9     1 C34 
+CONECT      O10    2 C38  C42 
+CONECT      O11    2 C39  H45 
+CONECT      H4     1 N4  
+CONECT      H7     1 N6  
+CONECT      H32    1 C31 
+CONECT      H33    1 C33 
+CONECT      H34    1 C33 
+CONECT      H35    1 C35 
+CONECT      H36    1 C35 
+CONECT      H37    1 C37 
+CONECT      H38    1 C40 
+CONECT      H39    1 C41 
+CONECT      H40    1 C42 
+CONECT      H41    1 C42 
+CONECT      H42    1 C42 
+CONECT      H45    1 O11 
+CONECT      H2     1 N4  
+CONECT      OXT    2 C32  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    0GG             35
+HETNAM     0GG 3-{[(4-hydroxy-3-methoxyphenyl)acetyl]amino}-D-alanine
+FORMUL      0GG    C12 H16 N2 O5

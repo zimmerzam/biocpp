@@ -1,0 +1,36 @@
+RESIDUE   08M     31
+CONECT      C21    3 O22  C23  OXT 
+CONECT      O22    1 C21 
+CONECT      C23    4 C21  N24  C31  H18 
+CONECT      N24    3 C23  H19  H2  
+CONECT      C31    4 C23  C32  H24  H25 
+CONECT      C32    4 C31  C33  H26  H27 
+CONECT      C33    4 C32  N34  H28  H29 
+CONECT      N34    3 C33  C35  H30 
+CONECT      C35    3 N34  O36  C37 
+CONECT      O36    1 C35 
+CONECT      C37    3 C35  N38  C42 
+CONECT      N38    2 C37  C39 
+CONECT      C39    3 N38  C40  H31 
+CONECT      C40    3 C39  N41  H32 
+CONECT      N41    2 C40  C42 
+CONECT      C42    3 C37  N41  H33 
+CONECT      H18    1 C23 
+CONECT      H19    1 N24 
+CONECT      H24    1 C31 
+CONECT      H25    1 C31 
+CONECT      H26    1 C32 
+CONECT      H27    1 C32 
+CONECT      H28    1 C33 
+CONECT      H29    1 C33 
+CONECT      H30    1 N34 
+CONECT      H31    1 C39 
+CONECT      H32    1 C40 
+CONECT      H33    1 C42 
+CONECT      H2     1 N24 
+CONECT      OXT    2 C21  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    08M             31
+HETNAM     08M N~5~-(pyrazin-2-ylcarbonyl)-L-ornithine
+FORMUL      08M    C10 H14 N4 O3

@@ -1,0 +1,48 @@
+RESIDUE   0LZ     42
+CONECT      N01    3 C02  C15  H1  
+CONECT      C02    3 N01  C03  O07 
+CONECT      C03    3 C02  N04  O06 
+CONECT      N04    3 C03  C05  H2  
+CONECT      C05    3 N04  C08  C12 
+CONECT      O06    1 C03 
+CONECT      O07    1 C02 
+CONECT      C08    3 C05  C09  H3  
+CONECT      C09    3 C08  C10  H4  
+CONECT      C10    3 C09  C11  CL1 
+CONECT      C11    3 C10  C12  F14 
+CONECT      C12    3 C05  C11  H5  
+CONECT      CL1    1 C10 
+CONECT      F14    1 C11 
+CONECT      C15    4 N01  C16  H7   H6  
+CONECT      C16    4 C15  N17  C21  H8  
+CONECT      N17    3 C16  C18  H9  
+CONECT      C18    4 N17  C19  H11  H12 
+CONECT      C19    4 C18  C20  H13  H14 
+CONECT      C20    3 C19  C21  C22 
+CONECT      C21    3 C16  C20  C25 
+CONECT      C22    3 C20  C23  H15 
+CONECT      C23    3 C22  C24  H16 
+CONECT      C24    3 C23  C25  H17 
+CONECT      C25    3 C21  C24  H18 
+CONECT      H1     1 N01 
+CONECT      H2     1 N04 
+CONECT      H3     1 C08 
+CONECT      H4     1 C09 
+CONECT      H5     1 C12 
+CONECT      H7     1 C15 
+CONECT      H6     1 C15 
+CONECT      H8     1 C16 
+CONECT      H9     1 N17 
+CONECT      H11    1 C18 
+CONECT      H12    1 C18 
+CONECT      H13    1 C19 
+CONECT      H14    1 C19 
+CONECT      H15    1 C22 
+CONECT      H16    1 C23 
+CONECT      H17    1 C24 
+CONECT      H18    1 C25 
+END   
+HET    0LZ             42
+HETNAM     0LZ N-(4-chloro-3-fluorophenyl)-N'-[(1S)-1,2,3,4-tetrahydro
+HETNAM   2 0LZ isoquinolin-1-ylmethyl]ethanediamide
+FORMUL      0LZ    C18 H17 Cl1 F1 N3 O2

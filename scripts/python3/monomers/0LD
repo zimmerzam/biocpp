@@ -1,0 +1,60 @@
+RESIDUE   0LD     53
+CONECT      C33    3 C32  C28  H1  
+CONECT      C32    3 C33  C31  H2  
+CONECT      C4     3 C20  C3   H3  
+CONECT      C13    4 C19  O24  H4   H5  
+CONECT      C20    3 C4   C16  C22 
+CONECT      C21    3 C19  N12  H6  
+CONECT      C18    3 C19  C17  C14 
+CONECT      C16    3 C20  N11  H7  
+CONECT      C19    3 C13  C21  C18 
+CONECT      C31    3 C32  C30  H8  
+CONECT      C30    3 C31  C29  H9  
+CONECT      C29    3 C30  C28  H10 
+CONECT      C28    3 C33  C29  N11 
+CONECT      C17    3 C18  C15  O26 
+CONECT      C15    3 C17  C1   N12 
+CONECT      C22    3 C20  N10  N9  
+CONECT      C3     3 C4   C2   N8  
+CONECT      C2     3 C3   N9   O5  
+CONECT      C1     4 C15  H11  H12  H13 
+CONECT      C14    4 C18  N8   H14  H15 
+CONECT      N12    2 C21  C15 
+CONECT      N10    2 C22  N11 
+CONECT      N11    3 C16  C28  N10 
+CONECT      N9     3 C22  C2   O25 
+CONECT      N8     3 C3   C14  H16 
+CONECT      O6     2 P23  H17 
+CONECT      O27    1 P23 
+CONECT      O5     1 C2  
+CONECT      O7     2 P23  H18 
+CONECT      O26    2 C17  H19 
+CONECT      O25    2 N9   H20 
+CONECT      O24    2 C13  P23 
+CONECT      P23    4 O6   O27  O7   O24 
+CONECT      H1     1 C33 
+CONECT      H2     1 C32 
+CONECT      H3     1 C4  
+CONECT      H4     1 C13 
+CONECT      H5     1 C13 
+CONECT      H6     1 C21 
+CONECT      H7     1 C16 
+CONECT      H8     1 C31 
+CONECT      H9     1 C30 
+CONECT      H10    1 C29 
+CONECT      H11    1 C1  
+CONECT      H12    1 C1  
+CONECT      H13    1 C1  
+CONECT      H14    1 C14 
+CONECT      H15    1 C14 
+CONECT      H16    1 N8  
+CONECT      H17    1 O6  
+CONECT      H18    1 O7  
+CONECT      H19    1 O26 
+CONECT      H20    1 O25 
+END   
+HET    0LD             53
+HETNAM     0LD (5-hydroxy-4-{[(7-hydroxy-6-oxo-2-phenyl-6,7-dihydro-2H
+HETNAM   2 0LD -pyrazolo[3,4-b]pyridin-5-yl)amino]methyl}-6-methylpyri
+HETNAM   3 0LD din-3-yl)methyl dihydrogen phosphate
+FORMUL      0LD    C20 H20 N5 O7 P1

@@ -1,0 +1,31 @@
+RESIDUE   014     25
+CONECT      F      1 C8  
+CONECT      CL     1 C10 
+CONECT      C1     3 O1   C2   O2  
+CONECT      N1     2 N2   C3  
+CONECT      O1     2 C1   HO1 
+CONECT      C2     3 C1   C3   C4  
+CONECT      N2     3 N1   C4   C5  
+CONECT      O2     1 C1  
+CONECT      C3     3 N1   C2   H3  
+CONECT      N3     3 C5   C6   HN3 
+CONECT      C4     3 C2   N2   H4  
+CONECT      N4     2 C5   C12 
+CONECT      C5     3 N2   N3   N4  
+CONECT      C6     3 N3   C7   C12 
+CONECT      C7     3 C6   C8   H7  
+CONECT      C8     3 F    C7   C10 
+CONECT      C10    3 CL   C8   C11 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 N4   C6   C11 
+CONECT      HO1    1 O1  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H7     1 C7  
+CONECT      H11    1 C11 
+CONECT      HN3    1 N3  
+END   
+HET    014             25
+HETNAM     014 1-(5-chloro-6-fluoro-1H-benzimidazol-2-yl)-1H-pyrazole-
+HETNAM   2 014 4-carboxylic acid
+FORMUL      014    C11 H6 Cl1 F1 N4 O2

@@ -1,0 +1,47 @@
+RESIDUE   07U     41
+CONECT      N1     3 C3   C18  H1  
+CONECT      C6     4 C10  C3   N7   C14 
+CONECT      C10    4 C6   H2   H3   H4  
+CONECT      C20    3 C21  N19  C32 
+CONECT      C21    3 C20  C23  H5  
+CONECT      C24    3 C23  N26  H6  
+CONECT      C3     4 N1   C6   H7   H8  
+CONECT      N7     3 C6   H9   H10 
+CONECT      C14    4 C6   H12  H13  H14 
+CONECT      C18    3 N1   N19  C31 
+CONECT      N19    2 C20  C18 
+CONECT      C23    3 C21  C24  C31 
+CONECT      N26    2 C24  C27 
+CONECT      C27    3 N26  C29  H15 
+CONECT      C29    3 C27  C31  H16 
+CONECT      C31    3 C18  C23  C29 
+CONECT      C32    3 C20  C33  C40 
+CONECT      C33    3 C32  C35  H17 
+CONECT      C35    3 C33  N37  H18 
+CONECT      N37    2 C35  C38 
+CONECT      C38    3 N37  C40  H19 
+CONECT      C40    3 C32  C38  H20 
+CONECT      H1     1 N1  
+CONECT      H2     1 C10 
+CONECT      H3     1 C10 
+CONECT      H4     1 C10 
+CONECT      H5     1 C21 
+CONECT      H6     1 C24 
+CONECT      H7     1 C3  
+CONECT      H8     1 C3  
+CONECT      H9     1 N7  
+CONECT      H10    1 N7  
+CONECT      H12    1 C14 
+CONECT      H13    1 C14 
+CONECT      H14    1 C14 
+CONECT      H15    1 C27 
+CONECT      H16    1 C29 
+CONECT      H17    1 C33 
+CONECT      H18    1 C35 
+CONECT      H19    1 C38 
+CONECT      H20    1 C40 
+END   
+HET    07U             41
+HETNAM     07U 2-methyl-N~1~-[3-(pyridin-4-yl)-2,6-naphthyridin-1-yl]p
+HETNAM   2 07U ropane-1,2-diamine
+FORMUL      07U    C17 H19 N5

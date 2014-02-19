@@ -1,0 +1,49 @@
+RESIDUE   08B     43
+CONECT      C1     4 C2   H1   H2   H3  
+CONECT      C2     3 C1   C3   N6  
+CONECT      C3     3 C2   C4   BR  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   N6   C8  
+CONECT      N6     3 C2   C5   H5  
+CONECT      C8     3 C5   O9   N10 
+CONECT      O9     1 C8  
+CONECT      N10    3 C8   C11  H6  
+CONECT      C11    4 N10  C12  C16  H7  
+CONECT      C12    4 C11  C13  H8   H9  
+CONECT      C13    4 C12  N14  H10  H11 
+CONECT      N14    3 C13  C15  C17 
+CONECT      C15    4 N14  C16  H12  H13 
+CONECT      C16    4 C11  C15  H14  H15 
+CONECT      C17    3 N14  C18  N22 
+CONECT      C18    3 C17  C19  N23 
+CONECT      C19    3 C18  C20  H16 
+CONECT      C20    3 C19  C21  H17 
+CONECT      C21    3 C20  N22  H18 
+CONECT      N22    2 C17  C21 
+CONECT      N23    3 C18  O24  O25 
+CONECT      O24    1 N23 
+CONECT      O25    1 N23 
+CONECT      BR     1 C3  
+CONECT      H1     1 C1  
+CONECT      H2     1 C1  
+CONECT      H3     1 C1  
+CONECT      H4     1 C4  
+CONECT      H5     1 N6  
+CONECT      H6     1 N10 
+CONECT      H7     1 C11 
+CONECT      H8     1 C12 
+CONECT      H9     1 C12 
+CONECT      H10    1 C13 
+CONECT      H11    1 C13 
+CONECT      H12    1 C15 
+CONECT      H13    1 C15 
+CONECT      H14    1 C16 
+CONECT      H15    1 C16 
+CONECT      H16    1 C19 
+CONECT      H17    1 C20 
+CONECT      H18    1 C21 
+END   
+HET    08B             43
+HETNAM     08B 4-bromo-5-methyl-N-[1-(3-nitropyridin-2-yl)piperidin-4-
+HETNAM   2 08B yl]-1H-pyrrole-2-carboxamide
+FORMUL      08B    C16 H18 Br1 N5 O3

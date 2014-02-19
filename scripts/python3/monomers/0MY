@@ -1,0 +1,48 @@
+RESIDUE   0MY     42
+CONECT      O2     1 S1  
+CONECT      S1     4 O2   O1   C14  N4  
+CONECT      O1     1 S1  
+CONECT      C14    3 S1   C17  C15 
+CONECT      C17    3 C14  C18  H17 
+CONECT      C18    3 C17  CL1  C19 
+CONECT      CL1    1 C18 
+CONECT      C19    3 C18  C16  H19 
+CONECT      C16    3 C19  C15  H16 
+CONECT      C15    3 C14  C16  H15 
+CONECT      N4     3 S1   C11  HN4 
+CONECT      C11    3 N4   C10  C12 
+CONECT      C10    3 C11  C9   H10 
+CONECT      C9     3 C10  C8   H9  
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  C8   H13 
+CONECT      C8     3 C9   C13  C1  
+CONECT      C1     3 C8   C4   C2  
+CONECT      C4     3 C1   C6   H4  
+CONECT      C6     3 C4   C5   C7  
+CONECT      C5     3 C6   N3   N2  
+CONECT      N3     3 C5   HN3  HN3A
+CONECT      N2     2 C5   N1  
+CONECT      C7     3 C6   N1   C3  
+CONECT      N1     3 N2   C7   HN1 
+CONECT      C3     3 C7   C2   H3  
+CONECT      C2     3 C1   C3   H2  
+CONECT      H17    1 C17 
+CONECT      H19    1 C19 
+CONECT      H16    1 C16 
+CONECT      H15    1 C15 
+CONECT      HN4    1 N4  
+CONECT      H10    1 C10 
+CONECT      H9     1 C9  
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H4     1 C4  
+CONECT      HN3    1 N3  
+CONECT      HN3A   1 N3  
+CONECT      HN1    1 N1  
+CONECT      H3     1 C3  
+CONECT      H2     1 C2  
+END   
+HET    0MY             42
+HETNAM     0MY N-[4-(3-amino-1H-indazol-5-yl)phenyl]-3-chlorobenzenesu
+HETNAM   2 0MY lfonamide
+FORMUL      0MY    C19 H15 Cl1 N4 O2 S1

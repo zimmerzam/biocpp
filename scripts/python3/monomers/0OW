@@ -1,0 +1,51 @@
+RESIDUE   0OW     45
+CONECT      N1     3 C2   H1   H2  
+CONECT      C2     3 N1   C4   O3  
+CONECT      C4     3 C2   C5   C16 
+CONECT      C5     3 C4   N6   N7  
+CONECT      C10    4 C11  C14  O9   H3  
+CONECT      C11    4 C10  C12  H4   H5  
+CONECT      C12    4 C11  C13  H6   H7  
+CONECT      C13    4 C12  C14  H8   H9  
+CONECT      C14    4 C10  C13  H10  H11 
+CONECT      O3     1 C2  
+CONECT      N6     3 C5   H12  H13 
+CONECT      N7     2 C5   C8  
+CONECT      C8     3 N7   O9   N15 
+CONECT      O9     2 C10  C8  
+CONECT      N15    2 C8   C16 
+CONECT      C16    3 C4   N15  O17 
+CONECT      O17    2 C16  C18 
+CONECT      C18    4 O17  C20  C23  H14 
+CONECT      C20    4 C18  C21  H15  H16 
+CONECT      C21    4 C20  C22  H17  H18 
+CONECT      C22    4 C21  C23  H19  H20 
+CONECT      C23    4 C18  C22  O25  H21 
+CONECT      O25    2 C23  H22 
+CONECT      H1     1 N1  
+CONECT      H2     1 N1  
+CONECT      H3     1 C10 
+CONECT      H4     1 C11 
+CONECT      H5     1 C11 
+CONECT      H6     1 C12 
+CONECT      H7     1 C12 
+CONECT      H8     1 C13 
+CONECT      H9     1 C13 
+CONECT      H10    1 C14 
+CONECT      H11    1 C14 
+CONECT      H12    1 N6  
+CONECT      H13    1 N6  
+CONECT      H14    1 C18 
+CONECT      H15    1 C20 
+CONECT      H16    1 C20 
+CONECT      H17    1 C21 
+CONECT      H18    1 C21 
+CONECT      H19    1 C22 
+CONECT      H20    1 C22 
+CONECT      H21    1 C23 
+CONECT      H22    1 O25 
+END   
+HET    0OW             45
+HETNAM     0OW 4-amino-2-(cyclopentyloxy)-6-{[(1R,2S)-2-hydroxycyclope
+HETNAM   2 0OW ntyl]oxy}pyrimidine-5-carboxamide
+FORMUL      0OW    C15 H22 N4 O4

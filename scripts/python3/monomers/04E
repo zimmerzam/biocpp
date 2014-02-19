@@ -1,0 +1,13 @@
+RESIDUE   04E      8
+CONECT      C1     3 O1   CH3  OXT 
+CONECT      O1     1 C1  
+CONECT      CH3    4 C1   H1   H2   I1  
+CONECT      H1     1 CH3 
+CONECT      H2     1 CH3 
+CONECT      I1     1 CH3 
+CONECT      OXT    2 C1   HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    04E              8
+HETNAM     04E iodoacetic acid
+FORMUL      04E    C2 H3 I1 O2

@@ -1,0 +1,51 @@
+RESIDUE   0JR     45
+CONECT      OAE    1 CAU 
+CONECT      CAU    3 OAE  CAV  NAR 
+CONECT      CAV    4 CAU  OAG  CAW  H13 
+CONECT      OAG    2 CAV  H14 
+CONECT      CAW    4 CAV  CAB  CAC  CAP 
+CONECT      CAB    4 CAW  H15  H16  H17 
+CONECT      CAC    4 CAW  H18  H19  H20 
+CONECT      CAP    4 CAW  OAS  H21  H22 
+CONECT      OAS    2 CAP  H23 
+CONECT      NAR    3 CAU  CAN  H12 
+CONECT      CAN    4 NAR  CAO  H11  H10 
+CONECT      CAO    4 CAN  CAT  H8   H9  
+CONECT      CAT    3 CAO  OAD  NAQ 
+CONECT      OAD    1 CAT 
+CONECT      NAQ    3 CAT  CAM  H7  
+CONECT      CAM    4 NAQ  CAL  H5   H6  
+CONECT      CAL    3 CAM  C2   C4  
+CONECT      C2     3 CAL  N1   H4  
+CONECT      N1     2 C2   C6  
+CONECT      C6     3 N1   C5   H3  
+CONECT      C5     3 C6   C4   H2  
+CONECT      C4     3 CAL  C5   H1  
+CONECT      H13    1 CAV 
+CONECT      H14    1 OAG 
+CONECT      H15    1 CAB 
+CONECT      H16    1 CAB 
+CONECT      H17    1 CAB 
+CONECT      H18    1 CAC 
+CONECT      H19    1 CAC 
+CONECT      H20    1 CAC 
+CONECT      H21    1 CAP 
+CONECT      H22    1 CAP 
+CONECT      H23    1 OAS 
+CONECT      H12    1 NAR 
+CONECT      H11    1 CAN 
+CONECT      H10    1 CAN 
+CONECT      H8     1 CAO 
+CONECT      H9     1 CAO 
+CONECT      H7     1 NAQ 
+CONECT      H5     1 CAM 
+CONECT      H6     1 CAM 
+CONECT      H4     1 C2  
+CONECT      H3     1 C6  
+CONECT      H2     1 C5  
+CONECT      H1     1 C4  
+END   
+HET    0JR             45
+HETNAM     0JR (2R)-2,4-dihydroxy-3,3-dimethyl-N-{3-oxo-3-[(pyridin-3-
+HETNAM   2 0JR ylmethyl)amino]propyl}butanamide
+FORMUL      0JR    C15 H23 N3 O4

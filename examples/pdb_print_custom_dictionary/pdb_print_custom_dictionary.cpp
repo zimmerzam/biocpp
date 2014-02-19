@@ -21,34 +21,28 @@ typedef BioCpp::residue::dictionary_t residue_dictionary;
 typedef BioCpp::io::pdb::print_atom_t< element_dictionary, atom_dictionary, residue_dictionary > print_atom_t;
 
 int main( int argc, char* argv[] ){
-  const char* filename = argc>1 ? argv[1] : "2RNM.pdb"; // if a pdb is passed, read that. else read an example pdb
+  const char* pdb_filename = argv[1];
+  const char* dic_filename = argv[2];
+  const char* moi_filename = argv[3];
   
-  // reading element dictionary...
-  libconfig::Config ele_cfg;
-  ele_cfg.readFile(argv[2]);
-  libconfig::Setting& ele_root = ele_cfg.getRoot();
+  // reading dictionaries
+  libconfig::Config cfg;
+  cfg.readFile(dic_filename);
+  libconfig::Setting& root = cfg.getRoot();
   element_dictionary eleDict;
-  eleDict.importSetting( ele_root);
-  // reading atom dictionary...
-  libconfig::Config atm_cfg;
-  atm_cfg.readFile(argv[3]);
-  libconfig::Setting& atm_root = atm_cfg.getRoot();
+  eleDict.importSetting(root,{"elements"});
   atom_dictionary atmDict;
-  atmDict.importSetting(atm_root);
-  // reading residue dictionary...
-  libconfig::Config res_cfg;
-  res_cfg.readFile(argv[4]);
-  libconfig::Setting& res_root = res_cfg.getRoot();
+  atmDict.importSetting(root,{"atoms"});
   residue_dictionary resDict;
-  resDict.importSetting(res_root);
+  resDict.importSetting(root,{"residues"});
   
-  BioCpp::io::pdb::file PDB(filename, 0); // read the pdb file. 
+  BioCpp::io::pdb::file PDB(pdb_filename, 0); // read the pdb file. 
 	
-	model mdl = PDB.readModel<atom>(1);
+	model mdl = PDB.readModel<atom>(1, eleDict, atmDict, resDict);
 	print_atom_t printer(std::cout, eleDict, atmDict, resDict);
 //	BioCpp::Iterate<atom>(mdl,printer);
 
-  BioCpp::residue::dictionary.writeSetting("out.cfg", "residues");
+//  BioCpp::residue::dictionary.writeSetting("out.cfg", "residues");
 	
   return 0;
 }

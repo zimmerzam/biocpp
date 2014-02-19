@@ -1,0 +1,22 @@
+RESIDUE   0FL     17
+CONECT      C1     3 O1   N    H1  
+CONECT      O1     1 C1  
+CONECT      N      3 C1   CA   H2  
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      CB     4 CA   N2   HB1  HB2 
+CONECT      OXT    2 C    HXT 
+CONECT      N2     3 CB   HA1  HB3 
+CONECT      H1     1 C1  
+CONECT      H2     1 N   
+CONECT      HA     1 CA  
+CONECT      HB1    1 CB  
+CONECT      HB2    1 CB  
+CONECT      HA1    1 N2  
+CONECT      HXT    1 OXT 
+CONECT      HB3    1 N2  
+END   
+HET    0FL             17
+HETNAM     0FL 3-amino-N-formyl-L-alanine
+FORMUL      0FL    C4 H8 N2 O3

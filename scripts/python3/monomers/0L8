@@ -1,0 +1,40 @@
+RESIDUE   0L8     34
+CONECT      C1     3 C2   C6   C16 
+CONECT      C2     3 C1   C3   H1  
+CONECT      C3     3 C2   C4   BR1 
+CONECT      C4     3 C3   C5   C7  
+CONECT      C5     3 C4   C6   C13 
+CONECT      C6     3 C1   C5   H2  
+CONECT      C7     3 C4   C8   C12 
+CONECT      C8     3 C7   C9   H3  
+CONECT      C9     3 C8   C10  H4  
+CONECT      C10    3 C9   C11  O14 
+CONECT      C11    3 C10  C12  H5  
+CONECT      C12    3 C7   C11  H6  
+CONECT      C13    3 C5   C14  C17 
+CONECT      O14    2 C10  H7  
+CONECT      BR1    1 C3  
+CONECT      C16    4 C1   O17  H8   H9  
+CONECT      O17    2 C16  H10 
+CONECT      C14    3 C13  C15  H11 
+CONECT      C17    3 C13  O1   H12 
+CONECT      C15    3 C14  O1   H13 
+CONECT      O1     2 C17  C15 
+CONECT      H1     1 C2  
+CONECT      H2     1 C6  
+CONECT      H3     1 C8  
+CONECT      H4     1 C9  
+CONECT      H5     1 C11 
+CONECT      H6     1 C12 
+CONECT      H7     1 O14 
+CONECT      H8     1 C16 
+CONECT      H9     1 C16 
+CONECT      H10    1 O17 
+CONECT      H11    1 C14 
+CONECT      H12    1 C17 
+CONECT      H13    1 C15 
+END   
+HET    0L8             34
+HETNAM     0L8 2'-bromo-6'-(furan-3-yl)-4'-(hydroxymethyl)biphenyl-4-o
+HETNAM   2 0L8 l
+FORMUL      0L8    C17 H13 Br1 O3

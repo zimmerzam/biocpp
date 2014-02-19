@@ -1,0 +1,137 @@
+RESIDUE   03F    130
+CONECT      C1     4 C2   O1A  H1   H1A 
+CONECT      C2     4 C1   N2   C3   H2  
+CONECT      N2     3 C2   CAA  HN2 
+CONECT      C3     4 C2   O3   C4   H3  
+CONECT      O3     2 C3   HO3 
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   C6   H5  
+CONECT      C6     4 C5   C7   H6   H6A 
+CONECT      C7     4 C6   C8   H7   H7A 
+CONECT      C8     4 C7   C9   H8   H8A 
+CONECT      C9     4 C8   C10  H9   H9A 
+CONECT      C10    4 C9   C11  H10  H10A
+CONECT      C11    4 C10  C12  H11  H11A
+CONECT      C12    4 C11  C13  H12  H12A
+CONECT      C13    4 C12  C14  H13  H13A
+CONECT      C14    4 C13  C15  H14  H14A
+CONECT      C15    4 C14  C16  H15  H15A
+CONECT      C16    4 C15  C17  H16  H16A
+CONECT      C17    4 C16  C18  H17  H17A
+CONECT      C18    4 C17  H18  H18A H18B
+CONECT      C1A    4 O1A  C2A  O6A  H1AA
+CONECT      O1A    2 C1   C1A 
+CONECT      C2A    4 C1A  O2A  C3A  H2A 
+CONECT      O2A    2 C2A  HO2A
+CONECT      C3A    4 C2A  O3A  C4A  H3A 
+CONECT      O3A    2 C3A  HO3A
+CONECT      C4A    4 C3A  O4A  C5M  H4A 
+CONECT      O4A    2 C4A  HO4A
+CONECT      O5A    2 C6A  HO5A
+CONECT      C5M    4 C4A  C6A  O6A  H5M 
+CONECT      C6A    4 O5A  C5M  H6AA H6AB
+CONECT      O6A    2 C1A  C5M 
+CONECT      CAA    3 N2   OAA  CAB 
+CONECT      OAA    1 CAA 
+CONECT      CAB    4 CAA  CAC  HAB  HABA
+CONECT      CAC    4 CAB  CAD  HAC  HACA
+CONECT      CAD    4 CAC  CAE  HAD  HADA
+CONECT      CAE    4 CAD  CAF  HAE  HAEA
+CONECT      CAF    4 CAE  CAG  HAF  HAFA
+CONECT      CAG    4 CAF  CAH  HAG  HAGA
+CONECT      CAH    4 CAG  CAI  HAH  HAHA
+CONECT      CAI    3 CAH  CAJ  HAI 
+CONECT      CAJ    3 CAI  CAK  HAJ 
+CONECT      CAK    4 CAJ  CAL  HAK  HAKA
+CONECT      CAL    4 CAK  CAM  HAL  HALA
+CONECT      CAM    4 CAL  CAN  HAM  HAMA
+CONECT      CAN    4 CAM  CAO  HAN  HANA
+CONECT      CAO    4 CAN  CAP  HAO  HAOA
+CONECT      CAP    4 CAO  CAQ  HAP  HAPA
+CONECT      CAQ    4 CAP  CAR  HAQ  HAQA
+CONECT      CAR    4 CAQ  H1AR HAR  HARA
+CONECT      HO4A   1 O4A 
+CONECT      H2     1 C2  
+CONECT      HO3A   1 O3A 
+CONECT      HO2A   1 O2A 
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H10    1 C10 
+CONECT      H10A   1 C10 
+CONECT      H1     1 C1  
+CONECT      H11    1 C11 
+CONECT      H1A    1 C1  
+CONECT      H11A   1 C11 
+CONECT      H1AA   1 C1A 
+CONECT      H12    1 C12 
+CONECT      H12A   1 C12 
+CONECT      H1AR   1 CAR 
+CONECT      H2A    1 C2A 
+CONECT      H13    1 C13 
+CONECT      H13A   1 C13 
+CONECT      H3A    1 C3A 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      H4A    1 C4A 
+CONECT      H15    1 C15 
+CONECT      H5     1 C5  
+CONECT      H15A   1 C15 
+CONECT      HO5A   1 O5A 
+CONECT      H5M    1 C5M 
+CONECT      H6     1 C6  
+CONECT      H16    1 C16 
+CONECT      H6A    1 C6  
+CONECT      H16A   1 C16 
+CONECT      H7     1 C7  
+CONECT      H17    1 C17 
+CONECT      H7A    1 C7  
+CONECT      H17A   1 C17 
+CONECT      H8     1 C8  
+CONECT      H18    1 C18 
+CONECT      H8A    1 C8  
+CONECT      H18A   1 C18 
+CONECT      H18B   1 C18 
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      H6AA   1 C6A 
+CONECT      H6AB   1 C6A 
+CONECT      HAB    1 CAB 
+CONECT      HABA   1 CAB 
+CONECT      HAC    1 CAC 
+CONECT      HACA   1 CAC 
+CONECT      HAD    1 CAD 
+CONECT      HADA   1 CAD 
+CONECT      HAE    1 CAE 
+CONECT      HAEA   1 CAE 
+CONECT      HAF    1 CAF 
+CONECT      HAFA   1 CAF 
+CONECT      HAG    1 CAG 
+CONECT      HAGA   1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAHA   1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAKA   1 CAK 
+CONECT      HAL    1 CAL 
+CONECT      HALA   1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAMA   1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HN2    1 N2  
+CONECT      HANA   1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAOA   1 CAO 
+CONECT      HO3    1 O3  
+CONECT      HAP    1 CAP 
+CONECT      HAPA   1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAQA   1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HARA   1 CAR 
+END   
+HET    03F            130
+HETSYN     03F N-(9Z-octadecenoyl)-1--glucosyl-sphing-4-enine
+HETNAM     03F (9Z)-N-[(2S,3R,4E)-1-(beta-D-glucopyranosyloxy)-3-hydro
+HETNAM   2 03F xyoctadec-4-en-2-yl]octadec-9-enamide
+FORMUL      03F    C42 H79 N1 O8

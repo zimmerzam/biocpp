@@ -1,0 +1,43 @@
+RESIDUE   08K     37
+CONECT      CLA    1 CAP 
+CONECT      CAP    3 CLA  CAJ  CAH 
+CONECT      CAJ    3 CAP  CAS  H1  
+CONECT      CAS    3 CAJ  CAO  CAU 
+CONECT      CAO    3 CAS  CAQ  NAL 
+CONECT      CAQ    3 CAO  CAG  CAF 
+CONECT      CAG    3 CAQ  CAE  H2  
+CONECT      CAE    3 CAG  CAC  H3  
+CONECT      CAC    3 CAE  CAD  H4  
+CONECT      CAD    3 CAC  CAF  H5  
+CONECT      CAF    3 CAQ  CAD  H6  
+CONECT      NAL    2 CAO  NAK 
+CONECT      NAK    3 NAL  C23  CAT 
+CONECT      C23    4 NAK  H7   H8   H9  
+CONECT      CAT    3 NAK  NAV  NAN 
+CONECT      NAV    3 CAT  CAR  CAU 
+CONECT      CAR    3 NAV  CAA  NAM 
+CONECT      CAA    4 CAR  H10  H11  H12 
+CONECT      NAM    2 CAR  NAN 
+CONECT      NAN    2 CAT  NAM 
+CONECT      CAU    3 CAS  NAV  CAI 
+CONECT      CAI    3 CAU  CAH  H13 
+CONECT      CAH    3 CAP  CAI  H14 
+CONECT      H1     1 CAJ 
+CONECT      H2     1 CAG 
+CONECT      H3     1 CAE 
+CONECT      H4     1 CAC 
+CONECT      H5     1 CAD 
+CONECT      H6     1 CAF 
+CONECT      H7     1 C23 
+CONECT      H8     1 C23 
+CONECT      H9     1 C23 
+CONECT      H10    1 CAA 
+CONECT      H11    1 CAA 
+CONECT      H12    1 CAA 
+CONECT      H13    1 CAI 
+CONECT      H14    1 CAH 
+END   
+HET    08K             37
+HETNAM     08K 8-chloro-1,4-dimethyl-6-phenyl-4H-[1,2,4]triazolo[4,3-a
+HETNAM   2 08K ][1,3,4]benzotriazepine
+FORMUL      08K    C17 H14 Cl1 N5

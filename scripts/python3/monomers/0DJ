@@ -1,0 +1,38 @@
+RESIDUE   0DJ     32
+CONECT      C1     3 C2   N6   H1  
+CONECT      C2     3 C1   C3   C12 
+CONECT      C3     3 C2   C4   H2  
+CONECT      C4     3 C3   C5   N7  
+CONECT      C5     3 C4   N6   N9  
+CONECT      N6     2 C1   C5  
+CONECT      N7     3 C4   C8   C10 
+CONECT      C8     3 N7   N9   O11 
+CONECT      N9     3 C5   C8   H3  
+CONECT      C10    4 N7   H4   H5   H6  
+CONECT      O11    1 C8  
+CONECT      C12    3 C2   C13  C17 
+CONECT      C13    3 C12  C14  H7  
+CONECT      C14    3 C13  C15  H8  
+CONECT      C15    3 C14  C16  H9  
+CONECT      C16    3 C15  C17  C18 
+CONECT      C17    3 C12  C16  H10 
+CONECT      C18    3 C16  O19  N20 
+CONECT      O19    1 C18 
+CONECT      N20    3 C18  H11  H12 
+CONECT      H1     1 C1  
+CONECT      H2     1 C3  
+CONECT      H3     1 N9  
+CONECT      H4     1 C10 
+CONECT      H5     1 C10 
+CONECT      H6     1 C10 
+CONECT      H7     1 C13 
+CONECT      H8     1 C14 
+CONECT      H9     1 C15 
+CONECT      H10    1 C17 
+CONECT      H11    1 N20 
+CONECT      H12    1 N20 
+END   
+HET    0DJ             32
+HETNAM     0DJ 3-(1-methyl-2-oxo-2,3-dihydro-1H-imidazo[4,5-b]pyridin-
+HETNAM   2 0DJ 6-yl)benzamide
+FORMUL      0DJ    C14 H12 N4 O2

@@ -1,0 +1,21 @@
+RESIDUE   04S     16
+CONECT      N29    3 C30  HN29 H2  
+CONECT      C30    4 N29  C31  C34  H30 
+CONECT      C31    4 C30  N32  H31  H31A
+CONECT      N32    3 C31  C33  HN32
+CONECT      C33    4 N32  C34  H33  H33A
+CONECT      C34    4 C30  C33  H34  H34A
+CONECT      HN29   1 N29 
+CONECT      H30    1 C30 
+CONECT      H31    1 C31 
+CONECT      H31A   1 C31 
+CONECT      HN32   1 N32 
+CONECT      H33    1 C33 
+CONECT      H33A   1 C33 
+CONECT      H34    1 C34 
+CONECT      H34A   1 C34 
+CONECT      H2     1 N29 
+END   
+HET    04S             16
+HETNAM     04S (3R)-pyrrolidin-3-amine
+FORMUL      04S    C4 H10 N2

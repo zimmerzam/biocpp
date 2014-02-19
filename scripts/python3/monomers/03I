@@ -1,0 +1,74 @@
+RESIDUE   03I     68
+CONECT      C1     3 C2   C6   C8  
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   O7  
+CONECT      C5     3 C4   C6   H5  
+CONECT      C6     3 C1   C5   H6  
+CONECT      O7     2 C4   C25 
+CONECT      C8     3 C1   C9   C13 
+CONECT      C9     3 C8   C10  H9  
+CONECT      C10    3 C9   C11  H10 
+CONECT      C11    3 C10  C12  C14 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C8   C12  H13 
+CONECT      C14    4 C11  C15  H14  H14A
+CONECT      C15    4 C14  C16  H15  H15A
+CONECT      C16    4 C15  C17  S18  C22 
+CONECT      C17    3 C16  N23  O24 
+CONECT      S18    4 C16  C19  O20  O21 
+CONECT      C19    4 S18  H19  H19A H19B
+CONECT      O20    1 S18 
+CONECT      O21    1 S18 
+CONECT      C22    4 C16  H22  H22A H22B
+CONECT      N23    3 C17  O28  HN23
+CONECT      O24    1 C17 
+CONECT      C25    4 O7   C26  H25  H25A
+CONECT      C26    4 C25  C27  H26  H26A
+CONECT      C27    4 C26  N29  H27  H27A
+CONECT      O28    2 N23  HO28
+CONECT      N29    3 C27  C30  C34 
+CONECT      C30    4 N29  C31  H30  H30A
+CONECT      C31    4 C30  O32  H31  H31A
+CONECT      O32    2 C31  C33 
+CONECT      C33    4 O32  C34  H33  H33A
+CONECT      C34    4 N29  C33  H34  H34A
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H9     1 C9  
+CONECT      H10    1 C10 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      H15    1 C15 
+CONECT      H15A   1 C15 
+CONECT      H19    1 C19 
+CONECT      H19A   1 C19 
+CONECT      H19B   1 C19 
+CONECT      H22    1 C22 
+CONECT      H22A   1 C22 
+CONECT      H22B   1 C22 
+CONECT      HN23   1 N23 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      H26    1 C26 
+CONECT      H26A   1 C26 
+CONECT      H27    1 C27 
+CONECT      H27A   1 C27 
+CONECT      HO28   1 O28 
+CONECT      H30    1 C30 
+CONECT      H30A   1 C30 
+CONECT      H31    1 C31 
+CONECT      H31A   1 C31 
+CONECT      H33    1 C33 
+CONECT      H33A   1 C33 
+CONECT      H34    1 C34 
+CONECT      H34A   1 C34 
+END   
+HET    03I             68
+HETNAM     03I (2R)-N-hydroxy-2-methyl-2-(methylsulfonyl)-4-{4'-[3-(mo
+HETNAM   2 03I rpholin-4-yl)propoxy]biphenyl-4-yl}butanamide
+FORMUL      03I    C25 H34 N2 O6 S1

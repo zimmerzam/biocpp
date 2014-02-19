@@ -1,0 +1,79 @@
+RESIDUE   0BD     72
+CONECT      C1     4 C2   C6   O49  H1  
+CONECT      C2     4 C1   C3   O55  H2  
+CONECT      C3     4 C2   C4   O7   H3  
+CONECT      C4     4 C3   O5   C57  H4  
+CONECT      O5     2 C4   C6  
+CONECT      C6     4 C1   O5   O16  H6  
+CONECT      O7     2 C3   C10 
+CONECT      O16    2 C6   C18 
+CONECT      C18    4 O16  C19  C    H18 
+CONECT      C19    4 C18  C22  H19  H19A
+CONECT      C22    4 C19  C14  C13  H22 
+CONECT      O49    2 C1   HO49
+CONECT      O55    2 C2   HO55
+CONECT      C57    4 C4   O61  H57  H57A
+CONECT      O61    2 C57  HO61
+CONECT      C10    4 O7   O71  C17  H10 
+CONECT      C14    4 C22  H14  H14A H14B
+CONECT      C13    4 C22  H13  H13A H13B
+CONECT      C      4 C18  C12  H    HA  
+CONECT      C12    4 C    C16  C15  H12 
+CONECT      C16    4 C12  H16  H16A H16B
+CONECT      C15    4 C12  H15  H15A H15B
+CONECT      O71    2 C10  C181
+CONECT      C17    4 C10  C191 O8   H31 
+CONECT      C181   4 O71  C20  C21  H32 
+CONECT      C191   4 C17  C20  O9   H33 
+CONECT      C20    4 C181 C191 O10  H34 
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H6     1 C6  
+CONECT      H18    1 C18 
+CONECT      H19    1 C19 
+CONECT      H19A   1 C19 
+CONECT      H22    1 C22 
+CONECT      HO49   1 O49 
+CONECT      HO55   1 O55 
+CONECT      H57    1 C57 
+CONECT      H57A   1 C57 
+CONECT      HO61   1 O61 
+CONECT      H10    1 C10 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      H14B   1 C14 
+CONECT      H13    1 C13 
+CONECT      H13A   1 C13 
+CONECT      H13B   1 C13 
+CONECT      H      1 C   
+CONECT      HA     1 C   
+CONECT      H12    1 C12 
+CONECT      H16    1 C16 
+CONECT      H16A   1 C16 
+CONECT      H16B   1 C16 
+CONECT      H15    1 C15 
+CONECT      H15A   1 C15 
+CONECT      H15B   1 C15 
+CONECT      O8     2 C17  H37 
+CONECT      H31    1 C17 
+CONECT      C21    4 C181 H35  O11  H36 
+CONECT      H32    1 C181
+CONECT      O9     2 C191 H38 
+CONECT      H33    1 C191
+CONECT      O10    2 C20  H39 
+CONECT      H34    1 C20 
+CONECT      H35    1 C21 
+CONECT      O11    2 C21  H40 
+CONECT      H36    1 C21 
+CONECT      H37    1 O8  
+CONECT      H38    1 O9  
+CONECT      H39    1 O10 
+CONECT      H40    1 O11 
+END   
+HET    0BD             72
+HETSYN     0BD 2,6-dimethyl-4-heptyl 4-O-methyl-beta-D-glucopyranoside
+HETNAM     0BD 3-methyl-1-(2-methylpropyl)butyl 4-O-beta-L-gulopyranos
+HETNAM   2 0BD yl-beta-D-glucopyranoside
+FORMUL      0BD    C21 H40 O11

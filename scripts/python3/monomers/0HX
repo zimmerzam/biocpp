@@ -1,0 +1,47 @@
+RESIDUE   0HX     41
+CONECT      C4     4 C5   C3   H1   H2  
+CONECT      C5     4 C4   H3   H4   H5  
+CONECT      C6     4 C11  O1   O2   H6  
+CONECT      C11    4 C6   C10  N1   H7  
+CONECT      C7     3 C8   C9   O2  
+CONECT      C8     3 C7   O3   O4  
+CONECT      C9     3 C7   C10  H8  
+CONECT      C10    4 C11  C9   O5   H9  
+CONECT      C12    3 C13  N1   O6  
+CONECT      C13    4 C12  H10  H11  H12 
+CONECT      N1     3 C11  C12  H13 
+CONECT      C3     4 C4   C2   O1   H14 
+CONECT      C1     4 C2   H15  H16  H17 
+CONECT      C2     4 C3   C1   H18  H19 
+CONECT      O1     2 C6   C3  
+CONECT      O2     2 C6   C7  
+CONECT      O3     2 C8   H20 
+CONECT      O4     1 C8  
+CONECT      O5     2 C10  H21 
+CONECT      O6     1 C12 
+CONECT      H1     1 C4  
+CONECT      H2     1 C4  
+CONECT      H3     1 C5  
+CONECT      H4     1 C5  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H7     1 C11 
+CONECT      H8     1 C9  
+CONECT      H9     1 C10 
+CONECT      H10    1 C13 
+CONECT      H11    1 C13 
+CONECT      H12    1 C13 
+CONECT      H13    1 N1  
+CONECT      H14    1 C3  
+CONECT      H15    1 C1  
+CONECT      H16    1 C1  
+CONECT      H17    1 C1  
+CONECT      H18    1 C2  
+CONECT      H19    1 C2  
+CONECT      H20    1 O3  
+CONECT      H21    1 O5  
+END   
+HET    0HX             41
+HETNAM     0HX pentan-3-yl 2-(acetylamino)-2,4-dideoxy-alpha-L-threo-h
+HETNAM   2 0HX ex-4-enopyranosiduronic acid
+FORMUL      0HX    C13 H21 N1 O6

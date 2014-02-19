@@ -1,0 +1,31 @@
+RESIDUE   03E     26
+CONECT      O      1 C   
+CONECT      CAO    4 CAP  CAQ  HAO  HAOA
+CONECT      CAP    4 CAO  CAR  HAP  H12 
+CONECT      CAQ    4 CAO  CAS  HAQ  HAQA
+CONECT      CAR    4 CAP  CAT  HAR  H13 
+CONECT      CAS    4 CAQ  CA   HAS  HASA
+CONECT      CAT    4 CAR  CA   HAT  HATA
+CONECT      N      3 CA   HN   H2  
+CONECT      C      3 O    CA   OXT 
+CONECT      CA     4 CAS  CAT  N    C   
+CONECT      HAO    1 CAO 
+CONECT      HAOA   1 CAO 
+CONECT      HAP    1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAQA   1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HAS    1 CAS 
+CONECT      HASA   1 CAS 
+CONECT      HAT    1 CAT 
+CONECT      HATA   1 CAT 
+CONECT      HN     1 N   
+CONECT      OXT    2 C    HXT 
+CONECT      H12    1 CAP 
+CONECT      H13    1 CAR 
+CONECT      H2     1 N   
+CONECT      HXT    1 OXT 
+END   
+HET    03E             26
+HETNAM     03E 1-aminocycloheptanecarboxylic acid
+FORMUL      03E    C8 H15 N1 O2

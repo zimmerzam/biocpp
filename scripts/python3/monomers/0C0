@@ -1,0 +1,53 @@
+RESIDUE   0C0     47
+CONECT      N01    2 C05  C06 
+CONECT      N02    2 C06  C07 
+CONECT      N03    3 C07  C09  H1  
+CONECT      N04    3 C06  C16  H2  
+CONECT      C05    3 N01  C08  H3  
+CONECT      C06    3 N01  N02  N04 
+CONECT      C07    3 N02  N03  C08 
+CONECT      C08    3 C05  C07  H4  
+CONECT      C09    3 N03  C10  C14 
+CONECT      C10    3 C09  C11  H5  
+CONECT      C11    3 C10  C12  H6  
+CONECT      C12    3 C11  C13  H7  
+CONECT      C13    3 C12  C14  H8  
+CONECT      C14    3 C09  C13  C15 
+CONECT      C15    3 C14  C23  C27 
+CONECT      C16    3 N04  C17  C21 
+CONECT      C17    3 C16  C18  H9  
+CONECT      C18    3 C17  C19  H10 
+CONECT      C19    3 C18  C20  C22 
+CONECT      C20    3 C19  C21  H11 
+CONECT      C21    3 C16  C20  H12 
+CONECT      C22    3 C19  O28  O29 
+CONECT      C23    3 C15  C24  H13 
+CONECT      C24    3 C23  C25  H14 
+CONECT      C25    3 C24  C26  H15 
+CONECT      C26    3 C25  C27  H16 
+CONECT      C27    3 C15  C26  H17 
+CONECT      O28    1 C22 
+CONECT      O29    2 C22  H18 
+CONECT      H1     1 N03 
+CONECT      H2     1 N04 
+CONECT      H3     1 C05 
+CONECT      H4     1 C08 
+CONECT      H5     1 C10 
+CONECT      H6     1 C11 
+CONECT      H7     1 C12 
+CONECT      H8     1 C13 
+CONECT      H9     1 C17 
+CONECT      H10    1 C18 
+CONECT      H11    1 C20 
+CONECT      H12    1 C21 
+CONECT      H13    1 C23 
+CONECT      H14    1 C24 
+CONECT      H15    1 C25 
+CONECT      H16    1 C26 
+CONECT      H17    1 C27 
+CONECT      H18    1 O29 
+END   
+HET    0C0             47
+HETNAM     0C0 4-{[4-(biphenyl-2-ylamino)pyrimidin-2-yl]amino}benzoic 
+HETNAM   2 0C0 acid
+FORMUL      0C0    C23 H18 N4 O2

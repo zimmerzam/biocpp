@@ -1,0 +1,33 @@
+RESIDUE   0FA     28
+CONECT      C      3 O    N1   CA  
+CONECT      N      3 P    CA   HN  
+CONECT      O      1 C   
+CONECT      P      4 N    O1   O2   O3  
+CONECT      N1     3 C    HN1  HN1A
+CONECT      O1     2 P    HO1 
+CONECT      O2     2 P    HO2 
+CONECT      O3     1 P   
+CONECT      CA     4 C    N    CB   HA  
+CONECT      CB     4 CA   CG   HB   HBA 
+CONECT      CG     4 CB   CD1  CD2  HG  
+CONECT      CD1    4 CG   HD1  HD1A HD1B
+CONECT      CD2    4 CG   HD2  HD2A HD2B
+CONECT      HN     1 N   
+CONECT      HN1    1 N1  
+CONECT      HN1A   1 N1  
+CONECT      HO1    1 O1  
+CONECT      HO2    1 O2  
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HG     1 CG  
+CONECT      HD1    1 CD1 
+CONECT      HD1A   1 CD1 
+CONECT      HD1B   1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HD2A   1 CD2 
+CONECT      HD2B   1 CD2 
+END   
+HET    0FA             28
+HETNAM     0FA N~2~-phosphono-L-leucinamide
+FORMUL      0FA    C6 H15 N2 O4 P1

@@ -1,0 +1,24 @@
+RESIDUE   02D     19
+CONECT      C1     3 C2   S5   C6  
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   S5   C9  
+CONECT      S5     2 C1   C4  
+CONECT      C6     3 C1   N7   N8  
+CONECT      N7     2 C6   HN7 
+CONECT      N8     3 C6   HN81 HN82
+CONECT      C9     4 C4   N10  H91  H92 
+CONECT      N10    3 C9   HN10 H1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      HN7    1 N7  
+CONECT      HN81   1 N8  
+CONECT      HN82   1 N8  
+CONECT      H91    1 C9  
+CONECT      H92    1 C9  
+CONECT      HN10   1 N10 
+CONECT      H1     1 N10 
+END   
+HET    02D             19
+HETNAM     02D 5-(aminomethyl)thiophene-2-carboximidamide
+FORMUL      02D    C6 H9 N3 S1

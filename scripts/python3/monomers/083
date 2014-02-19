@@ -1,0 +1,51 @@
+RESIDUE   083     45
+CONECT      N2     3 C7   H21N H22N
+CONECT      C7     3 N2   C6   N3  
+CONECT      C6     3 C7   N1   N6  
+CONECT      N1     2 C6   C4  
+CONECT      C4     3 N1   C5   C3  
+CONECT      C5     4 C4   H51C H52C H53C
+CONECT      C3     3 C4   C2   H3  
+CONECT      N6     2 C6   C2  
+CONECT      C2     3 C3   N6   C1  
+CONECT      C1     4 C2   H11C H12C H13C
+CONECT      N3     2 C7   C8  
+CONECT      C8     3 N3   C21  N4  
+CONECT      C21    3 C8   C20  C16 
+CONECT      C20    3 C21  C19  H20 
+CONECT      C19    3 C20  C18  H19 
+CONECT      C18    3 C19  C17  H18 
+CONECT      C17    3 C18  C16  H17 
+CONECT      C16    3 C21  C17  C15 
+CONECT      C15    3 C16  C9   H15 
+CONECT      C9     3 C15  N4   C10 
+CONECT      N4     2 C8   C9  
+CONECT      C10    3 C9   N5   C11 
+CONECT      N5     2 C10  C14 
+CONECT      C14    3 N5   C13  H14 
+CONECT      C13    3 C14  C12  H13 
+CONECT      C12    3 C13  C11  H12 
+CONECT      C11    3 C10  C12  H11 
+CONECT      H21N   1 N2  
+CONECT      H22N   1 N2  
+CONECT      H51C   1 C5  
+CONECT      H52C   1 C5  
+CONECT      H53C   1 C5  
+CONECT      H3     1 C3  
+CONECT      H11C   1 C1  
+CONECT      H12C   1 C1  
+CONECT      H13C   1 C1  
+CONECT      H20    1 C20 
+CONECT      H19    1 C19 
+CONECT      H18    1 C18 
+CONECT      H17    1 C17 
+CONECT      H15    1 C15 
+CONECT      H11    1 C11 
+CONECT      H14    1 C14 
+CONECT      H13    1 C13 
+CONECT      H12    1 C12 
+END   
+HET    083             45
+HETNAM     083 4,6-dimethyl-N'-(3-pyridin-2-ylisoquinolin-1-yl)pyrimid
+HETNAM   2 083 ine-2-carboximidamide
+FORMUL      083    C21 H18 N6

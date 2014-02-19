@@ -1,0 +1,25 @@
+RESIDUE   0OC     20
+CONECT      CAA    4 NAJ  H1   H2   H3  
+CONECT      NAJ    3 CAA  CAB  SAK 
+CONECT      CAB    4 NAJ  H4   H5   H6  
+CONECT      SAK    4 NAJ  OAC  OAD  CAI 
+CONECT      OAC    1 SAK 
+CONECT      OAD    1 SAK 
+CONECT      CAI    3 SAK  CAF  CAG 
+CONECT      CAF    3 CAI  CAE  H7  
+CONECT      CAE    3 CAF  SAH  H8  
+CONECT      SAH    2 CAE  CAG 
+CONECT      CAG    3 CAI  SAH  H9  
+CONECT      H1     1 CAA 
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAB 
+CONECT      H5     1 CAB 
+CONECT      H6     1 CAB 
+CONECT      H7     1 CAF 
+CONECT      H8     1 CAE 
+CONECT      H9     1 CAG 
+END   
+HET    0OC             20
+HETNAM     0OC N,N-dimethylthiophene-3-sulfonamide
+FORMUL      0OC    C6 H9 N1 O2 S2

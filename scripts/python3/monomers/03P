@@ -1,0 +1,71 @@
+RESIDUE   03P     63
+CONECT      N1     2 C1   C   
+CONECT      N3     3 C7   C8   HN3 
+CONECT      C4     3 C5   N2   H4  
+CONECT      C5     3 C4   C2   H5  
+CONECT      C6     4 C7   N2   H6   H6A 
+CONECT      C7     4 N3   C6   H7   H7A 
+CONECT      C8     3 N3   O    C9  
+CONECT      C10    3 C15  C11  N4  
+CONECT      C13    3 O1   C12  C14 
+CONECT      C15    3 C10  C14  H15 
+CONECT      C17    3 C18  C16  H17 
+CONECT      C20    3 C21  C22  C19 
+CONECT      C21    3 C20  C16  H21 
+CONECT      C22    4 C20  F2   F    F1  
+CONECT      C24    4 C23  H24  H24A H24B
+CONECT      F2     1 C22 
+CONECT      F      1 C22 
+CONECT      F1     1 C22 
+CONECT      C19    3 C20  C18  H19 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C16    3 C17  C21  O1  
+CONECT      O1     2 C13  C16 
+CONECT      C12    3 C13  CL   C11 
+CONECT      CL     1 C12 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C14    3 C13  C15  H14 
+CONECT      N4     3 C10  C1   HN4 
+CONECT      C1     3 N1   N4   C3  
+CONECT      C      3 N1   N    H   
+CONECT      C3     3 C1   C2   N2  
+CONECT      C2     3 C5   C3   N   
+CONECT      N      2 C    C2  
+CONECT      N2     3 C4   C6   C3  
+CONECT      O      1 C8  
+CONECT      C9     4 C8   C23  H9   H9A 
+CONECT      C23    4 C24  C9   O2   C25 
+CONECT      O2     2 C23  HO2 
+CONECT      C25    4 C23  H25  H25A H25B
+CONECT      HN3    1 N3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H7     1 C7  
+CONECT      H7A    1 C7  
+CONECT      H15    1 C15 
+CONECT      H17    1 C17 
+CONECT      H21    1 C21 
+CONECT      H24    1 C24 
+CONECT      H24A   1 C24 
+CONECT      H24B   1 C24 
+CONECT      H19    1 C19 
+CONECT      H18    1 C18 
+CONECT      H11    1 C11 
+CONECT      H14    1 C14 
+CONECT      HN4    1 N4  
+CONECT      H      1 C   
+CONECT      H9     1 C9  
+CONECT      H9A    1 C9  
+CONECT      HO2    1 O2  
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      H25B   1 C25 
+END   
+HET    03P             63
+HETSYN     03P TAK-285
+HETNAM     03P N-{2-[4-({3-chloro-4-[3-(trifluoromethyl)phenoxy]phenyl
+HETNAM   2 03P }amino)-5H-pyrrolo[3,2-d]pyrimidin-5-yl]ethyl}-3-hydrox
+HETNAM   3 03P y-3-methylbutanamide
+FORMUL      03P    C26 H25 Cl1 F3 N5 O3

@@ -1,0 +1,67 @@
+RESIDUE   0FX     62
+CONECT      O4P    2 P2   H1  
+CONECT      P2     4 O4P  O3P  O1G  OPP 
+CONECT      O3P    1 P2  
+CONECT      O1G    2 P2   C1G 
+CONECT      C1G    4 O1G  C2G  O5G  H2  
+CONECT      C2G    4 C1G  O2G  C3G  H3  
+CONECT      O2G    2 C2G  H4  
+CONECT      C3G    4 C2G  O3G  C4G  H5  
+CONECT      O3G    2 C3G  H6  
+CONECT      C4G    4 C3G  N4A  C5G  H7  
+CONECT      N4A    3 C4G  H8   H9  
+CONECT      C5G    4 C4G  C6G  O5G  H11 
+CONECT      C6G    4 C5G  H12  H13  H14 
+CONECT      O5G    2 C1G  C5G 
+CONECT      OPP    2 P2   P   
+CONECT      P      4 OPP  O1P  O2P  O5  
+CONECT      O1P    2 P    H15 
+CONECT      O2P    1 P   
+CONECT      O5     2 P    C5  
+CONECT      C5     4 O5   C4   H16  H17 
+CONECT      C4     4 C5   O4   C3   H18 
+CONECT      O4     2 C4   C1  
+CONECT      C3     4 C4   O3   C2   H19 
+CONECT      O3     2 C3   H20 
+CONECT      C2     4 C3   C1   H21  H22 
+CONECT      C1     4 O4   C2   N11  H23 
+CONECT      N11    3 C1   C61  C21 
+CONECT      C61    3 N11  C51  H24 
+CONECT      C51    3 C61  C5A  C41 
+CONECT      C5A    4 C51  H25  H26  H27 
+CONECT      C21    3 N11  O21  N31 
+CONECT      O21    1 C21 
+CONECT      N31    3 C21  C41  H28 
+CONECT      C41    3 C51  N31  O41 
+CONECT      O41    1 C41 
+CONECT      H1     1 O4P 
+CONECT      H2     1 C1G 
+CONECT      H3     1 C2G 
+CONECT      H4     1 O2G 
+CONECT      H5     1 C3G 
+CONECT      H6     1 O3G 
+CONECT      H7     1 C4G 
+CONECT      H8     1 N4A 
+CONECT      H9     1 N4A 
+CONECT      H11    1 C5G 
+CONECT      H12    1 C6G 
+CONECT      H13    1 C6G 
+CONECT      H14    1 C6G 
+CONECT      H15    1 O1P 
+CONECT      H16    1 C5  
+CONECT      H17    1 C5  
+CONECT      H18    1 C4  
+CONECT      H19    1 C3  
+CONECT      H20    1 O3  
+CONECT      H21    1 C2  
+CONECT      H22    1 C2  
+CONECT      H23    1 C1  
+CONECT      H24    1 C61 
+CONECT      H25    1 C5A 
+CONECT      H26    1 C5A 
+CONECT      H27    1 C5A 
+CONECT      H28    1 N31 
+END   
+HET    0FX             62
+HETNAM     0FX dTDP-4-amino-4,6-dideoxyglucose
+FORMUL      0FX    C16 H27 N3 O14 P2

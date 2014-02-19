@@ -1,0 +1,27 @@
+RESIDUE   0AA     22
+CONECT      N      3 CA   HN1  HA2 
+CONECT      CA     4 N    C    CB   HB  
+CONECT      C      3 CA   O    O1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG1  CG2  HA  
+CONECT      CG1    4 CB   HG11 HG12 HG13
+CONECT      CG2    4 CB   HG21 HG22 HG23
+CONECT      O1     2 C    C1  
+CONECT      C1     4 O1   H1C1 H1C2 H1C3
+CONECT      HN1    1 N   
+CONECT      HA2    1 N   
+CONECT      HB     1 CA  
+CONECT      HA     1 CB  
+CONECT      HG11   1 CG1 
+CONECT      HG12   1 CG1 
+CONECT      HG13   1 CG1 
+CONECT      HG21   1 CG2 
+CONECT      HG22   1 CG2 
+CONECT      HG23   1 CG2 
+CONECT      H1C1   1 C1  
+CONECT      H1C2   1 C1  
+CONECT      H1C3   1 C1  
+END   
+HET    0AA             22
+HETNAM     0AA methyl L-valinate
+FORMUL      0AA    C6 H13 N1 O2

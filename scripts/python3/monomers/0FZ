@@ -1,0 +1,44 @@
+RESIDUE   0FZ     38
+CONECT      CAB    4 OAR  H1   H2   H3  
+CONECT      OAR    2 CAB  CAX 
+CONECT      CAX    3 OAR  CAM  CAW 
+CONECT      CAM    3 CAX  CAT  H4  
+CONECT      CAW    3 CAX  CAL  H5  
+CONECT      CAL    3 CAW  CAG  H6  
+CONECT      CAG    3 CAL  CAT  CAS 
+CONECT      CAT    3 CAM  CAG  CAO 
+CONECT      CAO    4 CAT  CAN  H7   H8  
+CONECT      CAN    4 CAO  NAP  H9   H10 
+CONECT      NAP    2 CAN  CAS 
+CONECT      CAS    3 CAG  NAP  CAU 
+CONECT      CAU    3 CAS  CAI  CAH 
+CONECT      CAI    3 CAU  CAK  H14 
+CONECT      CAK    3 CAI  CAV  H15 
+CONECT      CAH    3 CAU  CAJ  H16 
+CONECT      CAJ    3 CAH  CAV  H17 
+CONECT      CAV    3 CAK  CAJ  SAY 
+CONECT      SAY    4 CAV  OAE  OAF  NAC 
+CONECT      OAE    1 SAY 
+CONECT      OAF    1 SAY 
+CONECT      NAC    3 SAY  H18  H19 
+CONECT      H1     1 CAB 
+CONECT      H2     1 CAB 
+CONECT      H3     1 CAB 
+CONECT      H4     1 CAM 
+CONECT      H5     1 CAW 
+CONECT      H6     1 CAL 
+CONECT      H7     1 CAO 
+CONECT      H8     1 CAO 
+CONECT      H9     1 CAN 
+CONECT      H10    1 CAN 
+CONECT      H14    1 CAI 
+CONECT      H15    1 CAK 
+CONECT      H16    1 CAH 
+CONECT      H17    1 CAJ 
+CONECT      H18    1 NAC 
+CONECT      H19    1 NAC 
+END   
+HET    0FZ             38
+HETNAM     0FZ 4-(6-methoxy-3,4-dihydroisoquinolin-1-yl)benzenesulfona
+HETNAM   2 0FZ mide
+FORMUL      0FZ    C16 H16 N2 O3 S1

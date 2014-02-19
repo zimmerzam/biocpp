@@ -1,0 +1,60 @@
+RESIDUE   02H     54
+CONECT      N1     3 C2   HN1  H1  
+CONECT      C4     4 C7   C3   H4   H4A 
+CONECT      C5     4 C15  C2   H5   H5A 
+CONECT      C7     4 C4   C8   N6   H7  
+CONECT      C8     4 C7   C9   H8   H8A 
+CONECT      C10    3 C9   C11  H10 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C15    3 C5   C20  C16 
+CONECT      C17    3 C16  C18  H17 
+CONECT      C20    3 C15  C19  H20 
+CONECT      C2     4 N1   C5   C3   H2  
+CONECT      C3     4 C4   C2   O51  H3  
+CONECT      N6     3 C7   HN6  H6  
+CONECT      C9     3 C8   C10  C14 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 C13  C11  H12 
+CONECT      C14    3 C13  C9   H14 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C18    3 C17  C19  C44 
+CONECT      C19    3 C20  C18  H19 
+CONECT      C44    3 C18  C45  C49 
+CONECT      C45    3 C44  N46  H45 
+CONECT      N46    2 C45  C47 
+CONECT      C47    3 N46  C48  H47 
+CONECT      C48    3 C47  C49  H48 
+CONECT      C49    3 C44  C48  H49 
+CONECT      O51    2 C3   HO51
+CONECT      HN1    1 N1  
+CONECT      H4     1 C4  
+CONECT      H4A    1 C4  
+CONECT      H5     1 C5  
+CONECT      H5A    1 C5  
+CONECT      H7     1 C7  
+CONECT      H8     1 C8  
+CONECT      H8A    1 C8  
+CONECT      H10    1 C10 
+CONECT      H13    1 C13 
+CONECT      H17    1 C17 
+CONECT      H20    1 C20 
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      HN6    1 N6  
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H14    1 C14 
+CONECT      H16    1 C16 
+CONECT      H19    1 C19 
+CONECT      H45    1 C45 
+CONECT      H47    1 C47 
+CONECT      H48    1 C48 
+CONECT      H49    1 C49 
+CONECT      HO51   1 O51 
+CONECT      H1     1 N1  
+CONECT      H6     1 N6  
+END   
+HET    02H             54
+HETNAM     02H (2S,3S,5S)-2,5-diamino-6-phenyl-1-[4-(pyridin-3-yl)phen
+HETNAM   2 02H yl]hexan-3-ol
+FORMUL      02H    C23 H27 N3 O1

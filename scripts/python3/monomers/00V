@@ -1,0 +1,33 @@
+RESIDUE   00V     28
+CONECT      C      4 O    CA   CX   H40 
+CONECT      N      3 CA   HN   H2  
+CONECT      O      2 C    HO  
+CONECT      CA     4 C    N    CB   HA  
+CONECT      CB     4 CA   CG   HB   H41 
+CONECT      CD     4 CE   CG   HD   HDA 
+CONECT      CE     4 CD   NZ   HE   H42 
+CONECT      CG     4 CB   CD   HG   H43 
+CONECT      CX     3 C    OX   OXT 
+CONECT      OX     1 CX  
+CONECT      NZ     3 CE   HNZ  H44 
+CONECT      HN     1 N   
+CONECT      HO     1 O   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HD     1 CD  
+CONECT      HDA    1 CD  
+CONECT      HE     1 CE  
+CONECT      HG     1 CG  
+CONECT      HNZ    1 NZ  
+CONECT      H40    1 C   
+CONECT      H41    1 CB  
+CONECT      H42    1 CE  
+CONECT      H43    1 CG  
+CONECT      H44    1 NZ  
+CONECT      H2     1 N   
+CONECT      OXT    2 CX   HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    00V             28
+HETNAM     00V (2S,3S)-3,7-diamino-2-hydroxyheptanoic acid
+FORMUL      00V    C7 H16 N2 O3

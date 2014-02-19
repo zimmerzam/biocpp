@@ -1,0 +1,25 @@
+RESIDUE   0F9     20
+CONECT      CAC    3 CAD  CAB  H1  
+CONECT      CAD    3 CAC  NAE  H2  
+CONECT      NAE    3 CAD  NAF  H3  
+CONECT      NAF    2 NAE  CAB 
+CONECT      CAB    3 CAC  NAF  CAA 
+CONECT      CAA    3 CAB  CAK  CAG 
+CONECT      CAK    3 CAA  CAJ  H4  
+CONECT      CAJ    3 CAK  CL1  CAI 
+CONECT      CL1    1 CAJ 
+CONECT      CAI    3 CAJ  CAH  H5  
+CONECT      CAH    3 CAI  CAG  H6  
+CONECT      CAG    3 CAA  CAH  OAM 
+CONECT      OAM    2 CAG  H7  
+CONECT      H1     1 CAC 
+CONECT      H2     1 CAD 
+CONECT      H3     1 NAE 
+CONECT      H4     1 CAK 
+CONECT      H5     1 CAI 
+CONECT      H6     1 CAH 
+CONECT      H7     1 OAM 
+END   
+HET    0F9             20
+HETNAM     0F9 4-chloro-2-(1H-pyrazol-3-yl)phenol
+FORMUL      0F9    C9 H7 Cl1 N2 O1

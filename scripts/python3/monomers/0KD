@@ -1,0 +1,40 @@
+RESIDUE   0KD     34
+CONECT      C1     3 C2   C5   H1  
+CONECT      C2     3 C1   S3   H2  
+CONECT      S3     2 C2   C4  
+CONECT      C4     3 S3   C5   H3  
+CONECT      C5     3 C1   C4   C6  
+CONECT      C6     3 C5   N7   N10 
+CONECT      N7     3 C6   C8   H4  
+CONECT      C8     3 N7   C9   N11 
+CONECT      C9     3 C8   N10  C14 
+CONECT      N10    2 C6   C9  
+CONECT      N11    2 C8   C12 
+CONECT      C12    3 N11  C13  H6  
+CONECT      C13    3 C12  C14  H7  
+CONECT      C14    3 C9   C13  C15 
+CONECT      C15    3 C14  N16  O23 
+CONECT      N16    3 C15  C17  H8  
+CONECT      C17    3 N16  C18  C22 
+CONECT      C18    3 C17  C19  H9  
+CONECT      C19    3 C18  C20  H10 
+CONECT      C20    3 C19  N21  H11 
+CONECT      N21    2 C20  C22 
+CONECT      C22    3 C17  N21  H12 
+CONECT      O23    1 C15 
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C4  
+CONECT      H4     1 N7  
+CONECT      H6     1 C12 
+CONECT      H7     1 C13 
+CONECT      H8     1 N16 
+CONECT      H9     1 C18 
+CONECT      H10    1 C19 
+CONECT      H11    1 C20 
+CONECT      H12    1 C22 
+END   
+HET    0KD             34
+HETNAM     0KD N-(pyridin-3-yl)-2-(thiophen-3-yl)-3H-imidazo[4,5-b]pyr
+HETNAM   2 0KD idine-7-carboxamide
+FORMUL      0KD    C16 H11 N5 O1 S1

@@ -1,0 +1,48 @@
+RESIDUE   0NH     42
+CONECT      C1     4 C2   H1   H1A  H1B 
+CONECT      C2     4 C1   C3   C7   N12 
+CONECT      C3     4 C2   C4   H3   H3A 
+CONECT      C4     4 C3   N5   H4   H4A 
+CONECT      N5     3 C4   C6   S8  
+CONECT      C6     4 N5   C7   H6   H6A 
+CONECT      C7     4 C2   C6   H7   H7A 
+CONECT      S8     4 N5   O9   O10  C11 
+CONECT      O9     1 S8  
+CONECT      O10    1 S8  
+CONECT      C11    4 S8   H11  H11A H11B
+CONECT      N12    3 C2   C13  C16 
+CONECT      C13    3 N12  N14  H13 
+CONECT      N14    2 C13  C15 
+CONECT      C15    3 N14  C16  C24 
+CONECT      C16    3 N12  C15  C17 
+CONECT      C17    3 C16  C18  C22 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C18  N20  H19 
+CONECT      N20    3 C19  C22  HN20
+CONECT      C22    3 C17  N20  N23 
+CONECT      N23    2 C22  C24 
+CONECT      C24    3 C15  N23  H24 
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      H4     1 C4  
+CONECT      H4A    1 C4  
+CONECT      H6     1 C6  
+CONECT      H6A    1 C6  
+CONECT      H7     1 C7  
+CONECT      H7A    1 C7  
+CONECT      H11    1 C11 
+CONECT      H11A   1 C11 
+CONECT      H11B   1 C11 
+CONECT      H13    1 C13 
+CONECT      H18    1 C18 
+CONECT      H19    1 C19 
+CONECT      HN20   1 N20 
+CONECT      H24    1 C24 
+END   
+HET    0NH             42
+HETNAM     0NH 1-[4-methyl-1-(methylsulfonyl)piperidin-4-yl]-1,6-dihyd
+HETNAM   2 0NH roimidazo[4,5-d]pyrrolo[2,3-b]pyridine
+FORMUL      0NH    C15 H19 N5 O2 S1

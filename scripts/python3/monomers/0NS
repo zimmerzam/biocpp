@@ -1,0 +1,47 @@
+RESIDUE   0NS     41
+CONECT      CAX    4 OAW  H1   H2   H3  
+CONECT      OAW    2 CAX  CAE 
+CONECT      CAE    3 OAW  CAF  CAD 
+CONECT      CAF    3 CAE  CAA  H4  
+CONECT      CAA    3 CAF  CAB  H5  
+CONECT      CAB    3 CAA  CAC  H6  
+CONECT      CAC    3 CAB  CAD  H7  
+CONECT      CAD    3 CAE  CAC  SAT 
+CONECT      SAT    4 CAD  OAU  OAV  NAG 
+CONECT      OAU    1 SAT 
+CONECT      OAV    1 SAT 
+CONECT      NAG    3 SAT  CAH  H8  
+CONECT      CAH    3 NAG  CAM  CAI 
+CONECT      CAM    3 CAH  CAL  H9  
+CONECT      CAL    3 CAM  CAQ  CAK 
+CONECT      CAQ    4 CAL  NAP  H10  H11 
+CONECT      NAP    3 CAQ  CAS  CAO 
+CONECT      CAS    4 NAP  H12  H13  H14 
+CONECT      CAO    3 NAP  OAR  NAN 
+CONECT      OAR    1 CAO 
+CONECT      NAN    3 CAO  CAK  H15 
+CONECT      CAK    3 CAL  NAN  CAJ 
+CONECT      CAJ    3 CAK  CAI  H16 
+CONECT      CAI    3 CAH  CAJ  H17 
+CONECT      H1     1 CAX 
+CONECT      H2     1 CAX 
+CONECT      H3     1 CAX 
+CONECT      H4     1 CAF 
+CONECT      H5     1 CAA 
+CONECT      H6     1 CAB 
+CONECT      H7     1 CAC 
+CONECT      H8     1 NAG 
+CONECT      H9     1 CAM 
+CONECT      H10    1 CAQ 
+CONECT      H11    1 CAQ 
+CONECT      H12    1 CAS 
+CONECT      H13    1 CAS 
+CONECT      H14    1 CAS 
+CONECT      H15    1 NAN 
+CONECT      H16    1 CAJ 
+CONECT      H17    1 CAI 
+END   
+HET    0NS             41
+HETNAM     0NS 2-methoxy-N-(3-methyl-2-oxo-1,2,3,4-tetrahydroquinazoli
+HETNAM   2 0NS n-6-yl)benzenesulfonamide
+FORMUL      0NS    C16 H17 N3 O4 S1

@@ -1,0 +1,65 @@
+RESIDUE   0EJ     59
+CONECT      C1     4 C2   C6   O11  H1  
+CONECT      C2     4 C1   C3   O12  H2  
+CONECT      C3     4 C2   C4   O13  H3  
+CONECT      C4     4 C3   C5   O14  H4  
+CONECT      C5     4 C4   C6   O15  H5  
+CONECT      C6     4 C1   C5   O16  H6  
+CONECT      O11    2 C1   PA1 
+CONECT      O12    2 C2   PA2 
+CONECT      O13    2 C3   PA3 
+CONECT      O14    2 C4   PA4 
+CONECT      O15    2 C5   CA5 
+CONECT      O16    2 C6   PA6 
+CONECT      O21    2 PA1  HO21
+CONECT      O22    2 PA2  HO22
+CONECT      O23    2 PA3  HO23
+CONECT      O24    2 PA4  HO24
+CONECT      O25    1 CA5 
+CONECT      O26    2 PA6  HO26
+CONECT      O31    2 PA1  HO31
+CONECT      O32    1 PA2 
+CONECT      O33    1 PA3 
+CONECT      O34    1 PA4 
+CONECT      O36    2 PA6  HO36
+CONECT      O41    1 PA1 
+CONECT      O42    2 PA2  HO42
+CONECT      O43    2 PA3  HO43
+CONECT      O44    2 PA4  HO44
+CONECT      O45    2 PB5  HO45
+CONECT      O46    1 PA6 
+CONECT      O55    2 PB5  HO55
+CONECT      O65    1 PB5 
+CONECT      PA1    4 O11  O21  O31  O41 
+CONECT      PA2    4 O12  O22  O32  O42 
+CONECT      PA3    4 O13  O23  O33  O43 
+CONECT      PA4    4 O14  O24  O34  O44 
+CONECT      CA5    3 O15  O25  CB5 
+CONECT      PA6    4 O16  O26  O36  O46 
+CONECT      CB5    4 CA5  PB5  HB5  HB5A
+CONECT      PB5    4 O45  O55  O65  CB5 
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      HO21   1 O21 
+CONECT      HO22   1 O22 
+CONECT      HO23   1 O23 
+CONECT      HO24   1 O24 
+CONECT      HO26   1 O26 
+CONECT      HO31   1 O31 
+CONECT      HO36   1 O36 
+CONECT      HO42   1 O42 
+CONECT      HO43   1 O43 
+CONECT      HO44   1 O44 
+CONECT      HO45   1 O45 
+CONECT      HO55   1 O55 
+CONECT      HB5    1 CB5 
+CONECT      HB5A   1 CB5 
+END   
+HET    0EJ             59
+HETNAM     0EJ (2-oxo-2-{[(1s,2R,3S,4s,5R,6S)-2,3,4,5,6-pentakis(phosp
+HETNAM   2 0EJ honooxy)cyclohexyl]oxy}ethyl)phosphonic acid
+FORMUL      0EJ    C8 H20 O25 P6

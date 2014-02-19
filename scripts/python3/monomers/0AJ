@@ -1,0 +1,24 @@
+RESIDUE   0AJ     19
+CONECT      CA     4 CB   HAC1 HAC2 HAC3
+CONECT      CB     4 CA   SG   S    HB  
+CONECT      SG     2 CB   CD  
+CONECT      CD     4 SG   HDC1 HDC2 HDC3
+CONECT      S      2 CB   C1  
+CONECT      C1     4 S    C2   H1C1 H1C2
+CONECT      C2     4 C1   H2C1 H2C2 H2C3
+CONECT      HAC1   1 CA  
+CONECT      HAC2   1 CA  
+CONECT      HAC3   1 CA  
+CONECT      HB     1 CB  
+CONECT      HDC1   1 CD  
+CONECT      HDC2   1 CD  
+CONECT      HDC3   1 CD  
+CONECT      H1C1   1 C1  
+CONECT      H1C2   1 C1  
+CONECT      H2C1   1 C2  
+CONECT      H2C2   1 C2  
+CONECT      H2C3   1 C2  
+END   
+HET    0AJ             19
+HETNAM     0AJ (1R)-1-(ethylsulfanyl)-1-(methylsulfanyl)ethane
+FORMUL      0AJ    C5 H12 S2

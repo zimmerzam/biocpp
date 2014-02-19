@@ -1,0 +1,32 @@
+RESIDUE   00M     27
+CONECT      C60    4 N    C61  C68  H60 
+CONECT      N      3 C60  H    H2  
+CONECT      O60    2 C68  HO60
+CONECT      C61    4 C60  C62  H61  H61A
+CONECT      O      1 C   
+CONECT      C62    3 C61  C63  C67 
+CONECT      C63    3 C62  C64  H63 
+CONECT      C64    3 C63  C65  H64 
+CONECT      C65    3 C64  C66  H65 
+CONECT      C66    3 C65  C67  H66 
+CONECT      C67    3 C62  C66  H67 
+CONECT      C68    4 C60  O60  C    H68 
+CONECT      C      3 O    C68  OXT 
+CONECT      H60    1 C60 
+CONECT      H      1 N   
+CONECT      H2     1 N   
+CONECT      HO60   1 O60 
+CONECT      H61    1 C61 
+CONECT      H61A   1 C61 
+CONECT      H63    1 C63 
+CONECT      H64    1 C64 
+CONECT      H65    1 C65 
+CONECT      H66    1 C66 
+CONECT      H67    1 C67 
+CONECT      H68    1 C68 
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    00M             27
+HETNAM     00M (2R,3S)-3-amino-2-hydroxy-4-phenylbutanoic acid
+FORMUL      00M    C10 H13 N1 O3

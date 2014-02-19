@@ -1,0 +1,73 @@
+RESIDUE   00R     66
+CONECT      C01    4 C02  C06  H01  H01A
+CONECT      C02    4 C01  C03  N20  H02 
+CONECT      C03    4 C02  C04  H03  H03A
+CONECT      C04    4 C03  C05  H04  H04A
+CONECT      C05    4 C04  C06  C22  H05 
+CONECT      C06    4 C01  C05  H06  H06A
+CONECT      N07    3 C08  C12  C31 
+CONECT      C08    3 N07  O09  N10 
+CONECT      O09    1 C08 
+CONECT      N10    3 C08  N11  C14 
+CONECT      N11    3 N10  C12  C17 
+CONECT      C12    3 N07  N11  O13 
+CONECT      O13    1 C12 
+CONECT      C14    4 N10  C15  H14  H14A
+CONECT      C15    3 C14  C16  H15 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C17    4 N11  C16  C18  H17 
+CONECT      C18    3 C17  O19  N20 
+CONECT      O19    1 C18 
+CONECT      N20    3 C02  C18  HN20
+CONECT      C22    3 C05  N23  C26 
+CONECT      N23    3 C22  C24  HN23
+CONECT      C24    3 N23  N25  N27 
+CONECT      N25    2 C24  C26 
+CONECT      C26    3 C22  N25  H26 
+CONECT      N27    3 C24  HN27 HN2A
+CONECT      C31    4 N07  C32  H31  H31A
+CONECT      C32    4 C31  S33  H32  H32A
+CONECT      S33    4 C32  O34  O35  C36 
+CONECT      O34    1 S33 
+CONECT      O35    1 S33 
+CONECT      C36    3 S33  C37  C41 
+CONECT      C37    3 C36  C38  H37 
+CONECT      C38    3 C37  C39  H38 
+CONECT      C39    3 C38  C40  H39 
+CONECT      C40    3 C39  C41  H40 
+CONECT      C41    3 C36  C40  H41 
+CONECT      H01    1 C01 
+CONECT      H01A   1 C01 
+CONECT      H02    1 C02 
+CONECT      H03    1 C03 
+CONECT      H03A   1 C03 
+CONECT      H04    1 C04 
+CONECT      H04A   1 C04 
+CONECT      H05    1 C05 
+CONECT      H06    1 C06 
+CONECT      H06A   1 C06 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      H15    1 C15 
+CONECT      H16    1 C16 
+CONECT      H17    1 C17 
+CONECT      HN20   1 N20 
+CONECT      H26    1 C26 
+CONECT      HN27   1 N27 
+CONECT      HN2A   1 N27 
+CONECT      H31    1 C31 
+CONECT      H31A   1 C31 
+CONECT      H32    1 C32 
+CONECT      H32A   1 C32 
+CONECT      H37    1 C37 
+CONECT      H38    1 C38 
+CONECT      H39    1 C39 
+CONECT      H40    1 C40 
+CONECT      H41    1 C41 
+CONECT      HN23   1 N23 
+END   
+HET    00R             66
+HETNAM     00R (5S)-N-[trans-4-(2-amino-1H-imidazol-5-yl)cyclohexyl]-1
+HETNAM   2 00R ,3-dioxo-2-[2-(phenylsulfonyl)ethyl]-2,3,5,8-tetrahydro
+HETNAM   3 00R -1H-[1,2,4]triazolo[1,2-a]pyridazine-5-carboxamide
+FORMUL      00R    C24 H29 N7 O5 S1

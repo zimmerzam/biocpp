@@ -1,0 +1,59 @@
+RESIDUE   0FW     53
+CONECT      OAA    1 CAX 
+CONECT      OAB    2 CAY  HOAB
+CONECT      OAC    1 CAZ 
+CONECT      OAD    2 CAX  HOAD
+CONECT      OAE    1 CAY 
+CONECT      CAF    3 CAG  CAH  HAF 
+CONECT      CAG    3 CAF  CAL  HAG 
+CONECT      CAH    3 CAF  CAM  HAH 
+CONECT      CAI    3 CAJ  CAK  HAI 
+CONECT      CAJ    3 CAI  CBA  HAJ 
+CONECT      CAK    3 CAI  CBB  HAK 
+CONECT      CAL    3 CAG  CBE  HAL 
+CONECT      CAM    3 CAH  CBE  HAM 
+CONECT      CAN    3 CAS  CBC  HAN 
+CONECT      CAO    3 CAQ  CBD  HAO 
+CONECT      CAP    3 CAR  CBD  HAP 
+CONECT      CAQ    3 CAO  CBF  HAQ 
+CONECT      CAR    3 CAP  CBF  HAR 
+CONECT      CAS    3 CAN  CBG  HAS 
+CONECT      CAT    3 CBA  CBB  HAT 
+CONECT      CAU    3 CBC  CBH  HAU 
+CONECT      NAV    3 CAZ  CBA  HNAV
+CONECT      OAW    2 CBB  CBC 
+CONECT      CAX    3 OAA  OAD  CBG 
+CONECT      CAY    3 OAB  OAE  CBH 
+CONECT      CAZ    3 OAC  NAV  CBD 
+CONECT      CBA    3 CAJ  CAT  NAV 
+CONECT      CBB    3 CAK  CAT  OAW 
+CONECT      CBC    3 CAN  CAU  OAW 
+CONECT      CBD    3 CAO  CAP  CAZ 
+CONECT      CBE    3 CAL  CAM  CBF 
+CONECT      CBF    3 CAQ  CAR  CBE 
+CONECT      CBG    3 CAS  CAX  CBH 
+CONECT      CBH    3 CAU  CAY  CBG 
+CONECT      HOAB   1 OAB 
+CONECT      HOAD   1 OAD 
+CONECT      HAF    1 CAF 
+CONECT      HAG    1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAL    1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAP    1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HAS    1 CAS 
+CONECT      HAT    1 CAT 
+CONECT      HAU    1 CAU 
+CONECT      HNAV   1 NAV 
+END   
+HET    0FW             53
+HETNAM     0FW 4-{3-[(biphenyl-4-ylcarbonyl)amino]phenoxy}benzene-1,2-
+HETNAM   2 0FW dicarboxylic acid
+FORMUL      0FW    C27 H19 N1 O6

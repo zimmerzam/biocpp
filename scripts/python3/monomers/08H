@@ -1,0 +1,42 @@
+RESIDUE   08H     35
+CONECT      CAS    3 CAJ  CAU  CAO 
+CONECT      CAJ    3 CAS  CAP  H1  
+CONECT      CAP    3 CAJ  CLAB CAH 
+CONECT      CLAB   1 CAP 
+CONECT      CAH    3 CAP  CAI  H2  
+CONECT      CAI    3 CAH  CAU  H3  
+CONECT      CAU    3 CAS  CAI  NAV 
+CONECT      NAV    3 CAU  CAR  CAT 
+CONECT      CAR    3 NAV  CAA  NAM 
+CONECT      CAA    4 CAR  H4   H5   H6  
+CONECT      NAM    2 CAR  NAN 
+CONECT      NAN    2 NAM  CAT 
+CONECT      CAT    3 NAV  NAN  CAK 
+CONECT      CAK    4 CAT  NAL  H7   H8  
+CONECT      NAL    2 CAK  CAO 
+CONECT      CAO    3 CAS  NAL  CAQ 
+CONECT      CAQ    3 CAO  CAF  CAG 
+CONECT      CAF    3 CAQ  CAD  H12 
+CONECT      CAD    3 CAF  CAC  H13 
+CONECT      CAC    3 CAD  CAE  H14 
+CONECT      CAE    3 CAC  CAG  H15 
+CONECT      CAG    3 CAQ  CAE  H16 
+CONECT      H1     1 CAJ 
+CONECT      H2     1 CAH 
+CONECT      H3     1 CAI 
+CONECT      H4     1 CAA 
+CONECT      H5     1 CAA 
+CONECT      H6     1 CAA 
+CONECT      H7     1 CAK 
+CONECT      H8     1 CAK 
+CONECT      H12    1 CAF 
+CONECT      H13    1 CAD 
+CONECT      H14    1 CAC 
+CONECT      H15    1 CAE 
+CONECT      H16    1 CAG 
+END   
+HET    08H             35
+HETSYN     08H ALPRAZOLAM
+HETNAM     08H 8-chloro-1-methyl-6-phenyl-4H-[1,2,4]triazolo[4,3-a][1,
+HETNAM   2 08H 4]benzodiazepine
+FORMUL      08H    C17 H13 Cl1 N4

@@ -1,0 +1,60 @@
+RESIDUE   0J3     54
+CONECT      CAQ    4 CAO  NBE  H1   H2  
+CONECT      CAO    4 CAQ  NBD  H3   H4  
+CONECT      NBD    3 CAO  CAA  CAP 
+CONECT      CAA    4 NBD  H6   H7   H8  
+CONECT      CAP    4 NBD  CAR  H9   H10 
+CONECT      CAR    4 CAP  NBE  H11  H12 
+CONECT      NBE    3 CAQ  CAR  CAX 
+CONECT      CAX    3 NBE  CAM  CAJ 
+CONECT      CAM    3 CAX  CBB  H13 
+CONECT      CBB    3 CAM  CBA  CAZ 
+CONECT      CAJ    3 CAX  NAT  H14 
+CONECT      NAT    2 CAJ  CBA 
+CONECT      CBA    3 CBB  NAT  CAN 
+CONECT      CAN    3 CBA  CAY  H15 
+CONECT      CAY    3 CAN  CBF  CAL 
+CONECT      CBF    4 CAY  FAE  FAF  FAD 
+CONECT      FAE    1 CBF 
+CONECT      FAF    1 CBF 
+CONECT      FAD    1 CBF 
+CONECT      CAL    3 CAY  CAZ  H16 
+CONECT      CAZ    3 CBB  CAL  NAU 
+CONECT      NAU    3 CAZ  CAS  H17 
+CONECT      CAS    4 NAU  CAV  H18  H19 
+CONECT      CAV    3 CAS  CAK  CAH 
+CONECT      CAK    3 CAV  CAW  H20 
+CONECT      CAH    3 CAV  CAG  H21 
+CONECT      CAG    3 CAH  CAI  H22 
+CONECT      CAI    3 CAG  CAW  H23 
+CONECT      CAW    3 CAK  CAI  NBC 
+CONECT      NBC    3 CAW  OAC  OAB 
+CONECT      OAC    1 NBC 
+CONECT      OAB    1 NBC 
+CONECT      H1     1 CAQ 
+CONECT      H2     1 CAQ 
+CONECT      H3     1 CAO 
+CONECT      H4     1 CAO 
+CONECT      H6     1 CAA 
+CONECT      H7     1 CAA 
+CONECT      H8     1 CAA 
+CONECT      H9     1 CAP 
+CONECT      H10    1 CAP 
+CONECT      H11    1 CAR 
+CONECT      H12    1 CAR 
+CONECT      H13    1 CAM 
+CONECT      H14    1 CAJ 
+CONECT      H15    1 CAN 
+CONECT      H16    1 CAL 
+CONECT      H17    1 NAU 
+CONECT      H18    1 CAS 
+CONECT      H19    1 CAS 
+CONECT      H20    1 CAK 
+CONECT      H21    1 CAH 
+CONECT      H22    1 CAG 
+CONECT      H23    1 CAI 
+END   
+HET    0J3             54
+HETNAM     0J3 3-(4-methylpiperazin-1-yl)-N-(3-nitrobenzyl)-7-(trifluo
+HETNAM   2 0J3 romethyl)quinolin-5-amine
+FORMUL      0J3    C22 H22 F3 N5 O2

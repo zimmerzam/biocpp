@@ -1,0 +1,66 @@
+RESIDUE   04A     59
+CONECT      OAA    1 CBB 
+CONECT      OAB    1 CBC 
+CONECT      CAC    3 CAE  CAF  HAC 
+CONECT      CAD    3 CAG  CAH  HAD 
+CONECT      CAE    3 CAC  CAI  HAE 
+CONECT      CAF    3 CAC  CAJ  HAF 
+CONECT      CAG    3 CAD  CAK  HAG 
+CONECT      CAH    3 CAD  CAL  HAH 
+CONECT      CAI    3 CAE  CBD  HAI 
+CONECT      CAJ    3 CAF  CBD  HAJ 
+CONECT      CAK    3 CAG  CBE  HAK 
+CONECT      CAL    3 CAH  CBE  HAL 
+CONECT      CAM    4 CAO  SAY  HAM  HAMA
+CONECT      CAN    4 CAP  SAY  HAN  HANA
+CONECT      CAO    4 CAM  CBF  HAO  HAOA
+CONECT      CAP    4 CAN  CBG  HAP  HAPA
+CONECT      CAQ    4 CBB  CBD  HAQ  HAQA
+CONECT      CAR    4 CBC  CBE  HAR  HARA
+CONECT      NAS    2 NAU  CBF 
+CONECT      NAT    2 NAV  CBG 
+CONECT      NAU    2 NAS  CBH 
+CONECT      NAV    2 NAT  CBI 
+CONECT      NAW    3 CBB  CBH  HNAW
+CONECT      NAX    3 CBC  CBI  HNAX
+CONECT      SAY    2 CAM  CAN 
+CONECT      SAZ    2 CBF  CBH 
+CONECT      SBA    2 CBG  CBI 
+CONECT      CBB    3 OAA  CAQ  NAW 
+CONECT      CBC    3 OAB  CAR  NAX 
+CONECT      CBD    3 CAI  CAJ  CAQ 
+CONECT      CBE    3 CAK  CAL  CAR 
+CONECT      CBF    3 CAO  NAS  SAZ 
+CONECT      CBG    3 CAP  NAT  SBA 
+CONECT      CBH    3 NAU  NAW  SAZ 
+CONECT      CBI    3 NAV  NAX  SBA 
+CONECT      HAC    1 CAC 
+CONECT      HAD    1 CAD 
+CONECT      HAE    1 CAE 
+CONECT      HAF    1 CAF 
+CONECT      HAG    1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAL    1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAMA   1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HANA   1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAOA   1 CAO 
+CONECT      HAP    1 CAP 
+CONECT      HAPA   1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAQA   1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HARA   1 CAR 
+CONECT      HNAW   1 NAW 
+CONECT      HNAX   1 NAX 
+END   
+HET    04A             59
+HETSYN     04A BPTES
+HETNAM     04A N,N'-[sulfanediylbis(ethane-2,1-diyl-1,3,4-thiadiazole-
+HETNAM   2 04A 5,2-diyl)]bis(2-phenylacetamide)
+FORMUL      04A    C24 H24 N6 O2 S3

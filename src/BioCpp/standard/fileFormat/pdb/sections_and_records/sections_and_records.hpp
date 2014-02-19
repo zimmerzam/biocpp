@@ -91,7 +91,7 @@ enum record_id{
 	ATOM,  /*!< An atom entry in coordinate section */
 	ANISOU,
 	TER, /*!< Specifies the end of a chain */
-	HETATM,
+	HETATM, /*!< HET record*/
 	ENDMDL, /*!< Specifies the end of a model */
 	CONECT,
 	MASTER,

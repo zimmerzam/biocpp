@@ -1,0 +1,30 @@
+RESIDUE   02V     25
+CONECT      N      3 C1   CA   H2  
+CONECT      C1     4 N    H17  H17A H17B
+CONECT      CA     4 N    C19  C    H18 
+CONECT      C19    3 CA   C20  C21 
+CONECT      C20    3 C19  C22  H20 
+CONECT      C21    3 C19  C23  H21 
+CONECT      C22    3 C20  C24  H1  
+CONECT      C23    3 C21  C24  O2  
+CONECT      C24    3 C22  C23  O1  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      O2     2 C23  HO81
+CONECT      H17    1 C1  
+CONECT      H17A   1 C1  
+CONECT      H17B   1 C1  
+CONECT      H18    1 CA  
+CONECT      H20    1 C20 
+CONECT      H21    1 C21 
+CONECT      HO81   1 O2  
+CONECT      H2     1 N   
+CONECT      H1     1 C22 
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+CONECT      O1     2 C24  H3  
+CONECT      H3     1 O1  
+END   
+HET    02V             25
+HETNAM     02V (2S)-(3,4-dihydroxyphenyl)(methylamino)ethanoic acid
+FORMUL      02V    C9 H11 N1 O4

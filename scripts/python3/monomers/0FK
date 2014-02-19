@@ -1,0 +1,27 @@
+RESIDUE   0FK     22
+CONECT      CAG    3 CAI  CAC  H1  
+CONECT      CAI    3 CAG  CAH  H2  
+CONECT      CAH    3 CAI  CAN  CAB 
+CONECT      CAN    3 CAH  CAL  H3  
+CONECT      CAL    3 CAN  CAM  H4  
+CONECT      CAM    3 CAL  CAE  H5  
+CONECT      CAE    3 CAM  OAK  CAB 
+CONECT      OAK    2 CAE  H6  
+CONECT      CAB    3 CAH  CAE  NAA 
+CONECT      NAA    2 CAB  CAC 
+CONECT      CAC    3 CAG  NAA  CAD 
+CONECT      CAD    3 CAC  OAF  NAJ 
+CONECT      OAF    1 CAD 
+CONECT      NAJ    3 CAD  H7   H8  
+CONECT      H1     1 CAG 
+CONECT      H2     1 CAI 
+CONECT      H3     1 CAN 
+CONECT      H4     1 CAL 
+CONECT      H5     1 CAM 
+CONECT      H6     1 OAK 
+CONECT      H7     1 NAJ 
+CONECT      H8     1 NAJ 
+END   
+HET    0FK             22
+HETNAM     0FK 8-hydroxyquinoline-2-carboxamide
+FORMUL      0FK    C10 H8 N2 O2

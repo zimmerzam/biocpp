@@ -48,6 +48,7 @@ class file{
     int n_models;                                /*!< Total number of models found in the file */
     seqres_record TseqRes;                       /*!< The sequence as read from SEQRES record  */
     seqres_record RseqRes;                       /*!< The sequence as read from ATOM record    */
+    std::map<char, std::list<int> > HETseqRes;
     
     /* \brief Default constructor is void */
     file(const char* spp_name, int init_flag){};

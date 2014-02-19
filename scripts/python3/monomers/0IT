@@ -1,0 +1,71 @@
+RESIDUE   0IT     63
+CONECT      C3     4 S    C11  H11  H2A 
+CONECT      S      4 C3   O2S  O1S  N   
+CONECT      C11    3 C3   C6   C21 
+CONECT      C6     3 C11  C5   H6  
+CONECT      C5     3 C6   C4   H5  
+CONECT      C4     3 C5   C31  H4  
+CONECT      C31    3 C4   C21  H3  
+CONECT      C21    3 C11  C31  H21 
+CONECT      O2S    1 S   
+CONECT      O1S    1 S   
+CONECT      N      3 S    CA   H   
+CONECT      CA     4 N    CB   C    HA  
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     4 CB   CD   HG2  HG3 
+CONECT      CD     4 CG   N1   HD1  HD2 
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      N1     3 CD   C    CA1 
+CONECT      CA1    4 N1   C1   HA2  HA3 
+CONECT      C1     3 CA1  O1   N2  
+CONECT      O1     1 C1  
+CONECT      N2     3 C1   CA2  H2  
+CONECT      CA2    4 N2   C2   CB1  HA1 
+CONECT      C2     3 CA2  O2   HXT 
+CONECT      O2     1 C2  
+CONECT      CB1    4 CA2  CG1  HB21 HB31
+CONECT      CG1    4 CB1  CD1  HG21 HG31
+CONECT      CD1    4 CG1  NE   HD21 HD31
+CONECT      NE     3 CD1  CZ   HE  
+CONECT      CZ     3 NE   NH1  NH2 
+CONECT      NH1    3 CZ   HH11 HH12
+CONECT      NH2    3 CZ   HH21 HH22
+CONECT      H11    1 C3  
+CONECT      H2A    1 C3  
+CONECT      H6     1 C6  
+CONECT      H5     1 C5  
+CONECT      H4     1 C4  
+CONECT      H3     1 C31 
+CONECT      H21    1 C21 
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HG2    1 CG  
+CONECT      HG3    1 CG  
+CONECT      HD1    1 CD  
+CONECT      HD2    1 CD  
+CONECT      HA2    1 CA1 
+CONECT      HA3    1 CA1 
+CONECT      HXT    1 C2  
+CONECT      H2     1 N2  
+CONECT      HA1    1 CA2 
+CONECT      HB21   1 CB1 
+CONECT      HB31   1 CB1 
+CONECT      HG21   1 CG1 
+CONECT      HG31   1 CG1 
+CONECT      HD21   1 CD1 
+CONECT      HD31   1 CD1 
+CONECT      HE     1 NE  
+CONECT      HH11   1 NH1 
+CONECT      HH12   1 NH1 
+CONECT      HH21   1 NH2 
+CONECT      HH22   1 NH2 
+END   
+HET    0IT             63
+HETSYN     0IT CVS1578
+HETNAM     0IT amino({(4S)-4-[({(3S)-3-[(benzylsulfonyl)amino]-2-oxopi
+HETNAM   2 0IT peridin-1-yl}acetyl)amino]-5-oxopentyl}amino)methanimin
+HETNAM   3 0IT ium
+FORMUL      0IT    C20 H31 N6 O5 S1 1+

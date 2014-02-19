@@ -1,0 +1,96 @@
+RESIDUE   01E     87
+CONECT      CA     4 CB   C    HA1  HA2 
+CONECT      CB     4 CA   CG1  CG2  CG3 
+CONECT      CG1    4 CB   H11  H12  H13 
+CONECT      CG2    4 CB   H21  H22  H23 
+CONECT      CG3    4 CB   H31  H32  H33 
+CONECT      C      3 CA   O    N   
+CONECT      O      1 C   
+CONECT      N      3 C    CA1  H   
+CONECT      CA1    4 N    CB1  C1   HA  
+CONECT      CB1    4 CA1  CG11 CG21 CG31
+CONECT      CG11   4 CB1  HG11 HG12 HG13
+CONECT      CG21   4 CB1  HG21 HG22 HG23
+CONECT      CG31   4 CB1  HG31 HG32 HG33
+CONECT      C1     3 CA1  O1   N1  
+CONECT      O1     1 C1  
+CONECT      N1     3 C1   CA2  H1  
+CONECT      CA2    4 N1   CB2  C2   HA3 
+CONECT      CB2    4 CA2  CG   HB2  HB3 
+CONECT      CG     3 CB2  OD1  ND2 
+CONECT      OD1    1 CG  
+CONECT      ND2    3 CG   CE1  CE2 
+CONECT      CE1    3 ND2  CH1  HE1 
+CONECT      CH1    3 CE1  CH2  HH1 
+CONECT      CE2    3 ND2  CH2  HE2 
+CONECT      CH2    3 CH1  CE2  HH2 
+CONECT      C2     3 CA2  O2   N2  
+CONECT      O2     1 C2  
+CONECT      N2     3 C2   CA3  H2  
+CONECT      CA3    4 N2   C3   CB3  HA4 
+CONECT      C3     4 CA3  O3   C11  H43 
+CONECT      O3     2 C3   H44 
+CONECT      CB3    4 CA3  HB1  HB21 HB31
+CONECT      C11    3 C3   O11  N21 
+CONECT      O11    1 C11 
+CONECT      N21    3 C11  C31  HN2 
+CONECT      C31    4 N21  C4   H311 H321
+CONECT      C4     3 C31  C5   C9  
+CONECT      C5     3 C4   C6   H5  
+CONECT      C6     3 C5   C7   H6  
+CONECT      C7     3 C6   I7   C8  
+CONECT      I7     1 C7  
+CONECT      C8     3 C7   C9   H8  
+CONECT      C9     3 C4   C8   H9  
+CONECT      HA1    1 CA  
+CONECT      HA2    1 CA  
+CONECT      H11    1 CG1 
+CONECT      H12    1 CG1 
+CONECT      H13    1 CG1 
+CONECT      H21    1 CG2 
+CONECT      H22    1 CG2 
+CONECT      H23    1 CG2 
+CONECT      H31    1 CG3 
+CONECT      H32    1 CG3 
+CONECT      H33    1 CG3 
+CONECT      H      1 N   
+CONECT      HA     1 CA1 
+CONECT      HG11   1 CG11
+CONECT      HG12   1 CG11
+CONECT      HG13   1 CG11
+CONECT      HG21   1 CG21
+CONECT      HG22   1 CG21
+CONECT      HG23   1 CG21
+CONECT      HG31   1 CG31
+CONECT      HG32   1 CG31
+CONECT      HG33   1 CG31
+CONECT      H1     1 N1  
+CONECT      HA3    1 CA2 
+CONECT      HB2    1 CB2 
+CONECT      HB3    1 CB2 
+CONECT      HE1    1 CE1 
+CONECT      HH1    1 CH1 
+CONECT      HE2    1 CE2 
+CONECT      HH2    1 CH2 
+CONECT      H2     1 N2  
+CONECT      HA4    1 CA3 
+CONECT      HB1    1 CB3 
+CONECT      HB21   1 CB3 
+CONECT      HB31   1 CB3 
+CONECT      HN2    1 N21 
+CONECT      H311   1 C31 
+CONECT      H321   1 C31 
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H8     1 C8  
+CONECT      H9     1 C9  
+CONECT      H43    1 C3  
+CONECT      H44    1 O3  
+END   
+HET    01E             87
+HETSYN     01E BILC 821
+HETNAM     01E (2S)-2-(3,3-dimethylbutanoylamino)-N-[(2S)-1-[[(2S,3S)-
+HETNAM   2 01E 3-hydroxy-4-[(4-iodophenyl)methylamino]-4-oxo-butan-2-y
+HETNAM   3 01E l]amino]-1,4-dioxo-4-pyrrol-1-yl-butan-2-yl]-3,3-dimeth
+HETNAM   4 01E yl-butanamide
+FORMUL      01E    C31 H44 I1 N5 O6

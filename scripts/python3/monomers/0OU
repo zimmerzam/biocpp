@@ -1,0 +1,50 @@
+RESIDUE   0OU     44
+CONECT      CAI    3 CAS  CAU  H1  
+CONECT      CAS    3 CAI  CL1  CAH 
+CONECT      CL1    1 CAS 
+CONECT      CAH    3 CAS  CAT  H2  
+CONECT      CAT    3 CAH  CL2  CAJ 
+CONECT      CL2    1 CAT 
+CONECT      CAJ    3 CAT  CAU  H3  
+CONECT      CAU    3 CAI  CAJ  CAO 
+CONECT      CAO    4 CAU  NAP  H4   H5  
+CONECT      NAP    3 CAO  CAM  H6  
+CONECT      CAM    4 NAP  CAL  H8   H9  
+CONECT      CAL    4 CAM  CAN  H10  H11 
+CONECT      CAN    4 CAL  NAQ  H12  H13 
+CONECT      NAQ    3 CAN  CAV  H14 
+CONECT      CAV    3 NAQ  CAK  NAR 
+CONECT      CAK    3 CAV  CAW  H15 
+CONECT      CAW    3 CAK  OAA  CAY 
+CONECT      OAA    1 CAW 
+CONECT      CAY    3 CAW  CAG  CAX 
+CONECT      CAG    3 CAY  CAE  H17 
+CONECT      CAE    3 CAG  CAD  H18 
+CONECT      CAD    3 CAE  CAF  H19 
+CONECT      CAF    3 CAD  CAX  H20 
+CONECT      CAX    3 CAY  CAF  NAR 
+CONECT      NAR    3 CAV  CAX  H7  
+CONECT      H1     1 CAI 
+CONECT      H2     1 CAH 
+CONECT      H3     1 CAJ 
+CONECT      H4     1 CAO 
+CONECT      H5     1 CAO 
+CONECT      H6     1 NAP 
+CONECT      H8     1 CAM 
+CONECT      H9     1 CAM 
+CONECT      H10    1 CAL 
+CONECT      H11    1 CAL 
+CONECT      H12    1 CAN 
+CONECT      H13    1 CAN 
+CONECT      H14    1 NAQ 
+CONECT      H15    1 CAK 
+CONECT      H17    1 CAG 
+CONECT      H18    1 CAE 
+CONECT      H19    1 CAD 
+CONECT      H20    1 CAF 
+CONECT      H7     1 NAR 
+END   
+HET    0OU             44
+HETNAM     0OU 2-({3-[(3,5-dichlorobenzyl)amino]propyl}amino)quinolin-
+HETNAM   2 0OU 4(1H)-one
+FORMUL      0OU    C19 H19 Cl2 N3 O1

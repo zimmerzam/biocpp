@@ -1,0 +1,40 @@
+RESIDUE   0J6     34
+CONECT      O14    1 C13 
+CONECT      C13    3 O14  C15  N12 
+CONECT      C15    3 C13  C20  C16 
+CONECT      C20    3 C15  C19  H1  
+CONECT      C19    3 C20  C23  C18 
+CONECT      C23    3 C19  N22  H2  
+CONECT      N22    3 C23  N21  H3  
+CONECT      N21    2 N22  C18 
+CONECT      C18    3 C19  N21  C17 
+CONECT      C17    3 C18  C16  H4  
+CONECT      C16    3 C15  C17  H5  
+CONECT      N12    3 C13  C8   H6  
+CONECT      C8     3 N12  C7   C9  
+CONECT      C7     3 C8   C6   H7  
+CONECT      C9     3 C8   C10  H8  
+CONECT      C10    3 C9   C11  H9  
+CONECT      C11    3 C10  C6   H10 
+CONECT      C6     3 C7   C11  C2  
+CONECT      C2     3 C6   N3   N1  
+CONECT      N3     3 C2   N4   H11 
+CONECT      N4     2 N3   N5  
+CONECT      N5     2 N4   N1  
+CONECT      N1     2 C2   N5  
+CONECT      H1     1 C20 
+CONECT      H2     1 C23 
+CONECT      H3     1 N22 
+CONECT      H4     1 C17 
+CONECT      H5     1 C16 
+CONECT      H6     1 N12 
+CONECT      H7     1 C7  
+CONECT      H8     1 C9  
+CONECT      H9     1 C10 
+CONECT      H10    1 C11 
+CONECT      H11    1 N3  
+END   
+HET    0J6             34
+HETNAM     0J6 N-[3-(1H-tetrazol-5-yl)phenyl]-2H-indazole-5-carboxamid
+HETNAM   2 0J6 e
+FORMUL      0J6    C15 H11 N7 O1

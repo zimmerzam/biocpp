@@ -1,0 +1,25 @@
+RESIDUE   08P     19
+CONECT      OAY    2 CAS  H1  
+CONECT      CAS    3 OAY  OAX  CAR 
+CONECT      OAX    1 CAS 
+CONECT      CAR    3 CAS  OAW  N   
+CONECT      OAW    1 CAR 
+CONECT      N      3 CAR  CA   H   
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      OXT    2 C    H2  
+CONECT      CB     4 CA   S    HB2  HB3 
+CONECT      S      2 CB   H3  
+CONECT      H1     1 OAY 
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      H2     1 OXT 
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      H3     1 S   
+END   
+HET    08P             19
+HETSYN     08P N-oxalyl-D-cysteine
+HETNAM     08P N-(carboxycarbonyl)-D-cysteine
+FORMUL      08P    C5 H7 N1 O5 S1

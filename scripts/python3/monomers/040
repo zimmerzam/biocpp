@@ -1,0 +1,30 @@
+RESIDUE   040     25
+CONECT      C01    4 C02  H01  H01A H01B
+CONECT      C02    3 C01  C03  C15 
+CONECT      C03    3 C02  C04  C12 
+CONECT      C04    3 C03  O05  C06 
+CONECT      O05    1 C04 
+CONECT      C06    4 C04  C07  H06  H06A
+CONECT      C07    3 C06  C08  O11 
+CONECT      C08    3 C07  O09  O10 
+CONECT      O09    1 C08 
+CONECT      O10    2 C08  HO10
+CONECT      O11    1 C07 
+CONECT      C12    3 C03  C13  H12 
+CONECT      C13    3 C12  C14  H13 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C15    3 C02  C14  H15 
+CONECT      H01    1 C01 
+CONECT      H01A   1 C01 
+CONECT      H01B   1 C01 
+CONECT      H06    1 C06 
+CONECT      H06A   1 C06 
+CONECT      HO10   1 O10 
+CONECT      H12    1 C12 
+CONECT      H13    1 C13 
+CONECT      H14    1 C14 
+CONECT      H15    1 C15 
+END   
+HET    040             25
+HETNAM     040 4-(2-methylphenyl)-2,4-dioxobutanoic acid
+FORMUL      040    C11 H10 O4

@@ -1,0 +1,81 @@
+RESIDUE   06F     74
+CONECT      CAA    4 CBC  HAA  HAAA HAAB
+CONECT      CAB    4 CBM  HAB  HABA HABB
+CONECT      CAC    4 CBM  HAC  HACA HACB
+CONECT      CAD    4 CBM  HAD  HADA HADB
+CONECT      OAE    1 CBA 
+CONECT      OAF    1 CBB 
+CONECT      CAG    3 CAH  CAI  HAG 
+CONECT      CAH    3 CAG  CBD  HAH 
+CONECT      CAI    3 CAG  CBE  HAI 
+CONECT      CAJ    3 CAM  CBC  HAJ 
+CONECT      CAK    3 CAN  CBC  HAK 
+CONECT      CAL    3 CAO  CBF  HAL 
+CONECT      CAM    3 CAJ  CBG  HAM 
+CONECT      CAN    3 CAK  CBG  HAN 
+CONECT      CAO    3 CAL  CBK  HAO 
+CONECT      CAP    3 CBD  CBE  HAP 
+CONECT      CAQ    3 CBF  CBH  HAQ 
+CONECT      CAR    3 CBI  CBJ  HAR 
+CONECT      CAS    4 CAT  CAU  HAS  HASA
+CONECT      CAT    4 CAS  CAV  HAT  HATA
+CONECT      CAU    4 CAS  CBA  HAU  HAUA
+CONECT      CAV    4 CAT  CBH  HAV  HAVA
+CONECT      NAW    2 CBJ  NBL 
+CONECT      NAX    3 CBB  CBD  HNAX
+CONECT      NAY    3 CBB  CBI  HNAY
+CONECT      NAZ    3 CBE  CBF  HNAZ
+CONECT      CBA    3 OAE  CAU  CBK 
+CONECT      CBB    3 OAF  NAX  NAY 
+CONECT      CBC    3 CAA  CAJ  CAK 
+CONECT      CBD    3 CAH  CAP  NAX 
+CONECT      CBE    3 CAI  CAP  NAZ 
+CONECT      CBF    3 CAL  CAQ  NAZ 
+CONECT      CBG    3 CAM  CAN  NBL 
+CONECT      CBH    3 CAQ  CAV  CBK 
+CONECT      CBI    3 CAR  NAY  NBL 
+CONECT      CBJ    3 CAR  NAW  CBM 
+CONECT      CBK    3 CAO  CBA  CBH 
+CONECT      NBL    3 NAW  CBG  CBI 
+CONECT      CBM    4 CAB  CAC  CAD  CBJ 
+CONECT      HAA    1 CAA 
+CONECT      HAAA   1 CAA 
+CONECT      HAAB   1 CAA 
+CONECT      HAB    1 CAB 
+CONECT      HABA   1 CAB 
+CONECT      HABB   1 CAB 
+CONECT      HAC    1 CAC 
+CONECT      HACA   1 CAC 
+CONECT      HACB   1 CAC 
+CONECT      HAD    1 CAD 
+CONECT      HADA   1 CAD 
+CONECT      HADB   1 CAD 
+CONECT      HAG    1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAK    1 CAK 
+CONECT      HAL    1 CAL 
+CONECT      HAM    1 CAM 
+CONECT      HAN    1 CAN 
+CONECT      HAO    1 CAO 
+CONECT      HAP    1 CAP 
+CONECT      HAQ    1 CAQ 
+CONECT      HAR    1 CAR 
+CONECT      HAS    1 CAS 
+CONECT      HASA   1 CAS 
+CONECT      HAT    1 CAT 
+CONECT      HATA   1 CAT 
+CONECT      HAU    1 CAU 
+CONECT      HAUA   1 CAU 
+CONECT      HAV    1 CAV 
+CONECT      HAVA   1 CAV 
+CONECT      HNAX   1 NAX 
+CONECT      HNAY   1 NAY 
+CONECT      HNAZ   1 NAZ 
+END   
+HET    06F             74
+HETNAM     06F 1-[3-tert-butyl-1-(4-methylphenyl)-1H-pyrazol-5-yl]-3-{
+HETNAM   2 06F 3-[(5-oxo-6,7,8,9-tetrahydro-5H-benzo[7]annulen-2-yl)am
+HETNAM   3 06F ino]phenyl}urea
+FORMUL      06F    C32 H35 N5 O2

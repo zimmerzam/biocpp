@@ -1,0 +1,32 @@
+RESIDUE   0CJ     27
+CONECT      O25    1 C13 
+CONECT      C13    3 O25  C22  C30 
+CONECT      C22    4 C13  H1   H2   H3  
+CONECT      C30    4 C13  C27  H4   H5  
+CONECT      C27    4 C30  C28  H6   H7  
+CONECT      C28    4 C27  O29  H8   H9  
+CONECT      O29    2 C28  P13 
+CONECT      P13    4 O29  O15  O14  O16 
+CONECT      O15    2 P13  H10 
+CONECT      O14    1 P13 
+CONECT      O16    2 P13  P17 
+CONECT      P17    4 O16  O20  O18  O19 
+CONECT      O20    1 P17 
+CONECT      O18    2 P17  H11 
+CONECT      O19    2 P17  H12 
+CONECT      H1     1 C22 
+CONECT      H2     1 C22 
+CONECT      H3     1 C22 
+CONECT      H4     1 C30 
+CONECT      H5     1 C30 
+CONECT      H6     1 C27 
+CONECT      H7     1 C27 
+CONECT      H8     1 C28 
+CONECT      H9     1 C28 
+CONECT      H10    1 O15 
+CONECT      H11    1 O18 
+CONECT      H12    1 O19 
+END   
+HET    0CJ             27
+HETNAM     0CJ 4-oxopentyl trihydrogen diphosphate
+FORMUL      0CJ    C5 H12 O8 P2

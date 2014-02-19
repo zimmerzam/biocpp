@@ -1,0 +1,41 @@
+RESIDUE   0KH     35
+CONECT      OAC    2 PAW  H1  
+CONECT      PAW    4 OAC  OAD  OAB  CAV 
+CONECT      OAD    2 PAW  H2  
+CONECT      OAB    1 PAW 
+CONECT      CAV    3 PAW  CAM  CAU 
+CONECT      CAM    3 CAV  CAH  H3  
+CONECT      CAH    3 CAM  CAG  H4  
+CONECT      CAG    3 CAH  CAL  H5  
+CONECT      CAL    3 CAG  CAU  H6  
+CONECT      CAU    3 CAV  CAL  OAP 
+CONECT      OAP    2 CAU  CAN 
+CONECT      CAN    4 OAP  CAQ  H7   H8  
+CONECT      CAQ    3 CAN  OAA  NAO 
+CONECT      OAA    1 CAQ 
+CONECT      NAO    3 CAQ  CAS  H9  
+CONECT      CAS    3 NAO  CAT  CAK 
+CONECT      CAT    3 CAS  CL1  CAR 
+CONECT      CL1    1 CAT 
+CONECT      CAR    3 CAT  CL2  CAJ 
+CONECT      CL2    1 CAR 
+CONECT      CAJ    3 CAR  CAI  H10 
+CONECT      CAI    3 CAJ  CAK  H11 
+CONECT      CAK    3 CAS  CAI  H12 
+CONECT      H1     1 OAC 
+CONECT      H2     1 OAD 
+CONECT      H3     1 CAM 
+CONECT      H4     1 CAH 
+CONECT      H5     1 CAG 
+CONECT      H6     1 CAL 
+CONECT      H7     1 CAN 
+CONECT      H8     1 CAN 
+CONECT      H9     1 NAO 
+CONECT      H10    1 CAJ 
+CONECT      H11    1 CAI 
+CONECT      H12    1 CAK 
+END   
+HET    0KH             35
+HETNAM     0KH (2-{2-[(2,3-dichlorophenyl)amino]-2-oxoethoxy}phenyl)ph
+HETNAM   2 0KH osphonic acid
+FORMUL      0KH    C14 H12 Cl2 N1 O5 P1

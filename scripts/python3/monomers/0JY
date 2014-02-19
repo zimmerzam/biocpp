@@ -1,0 +1,30 @@
+RESIDUE   0JY     25
+CONECT      O      1 C   
+CONECT      C      3 O    CA   O1  
+CONECT      CA     4 C    N    CB   H2  
+CONECT      N      3 CA   H3   H4  
+CONECT      CB     4 CA   CAI  H6   H7  
+CONECT      CAI    4 CB   CAB  CAC  CAA 
+CONECT      CAB    4 CAI  H8   H9   H10 
+CONECT      CAC    4 CAI  H11  H12  H13 
+CONECT      CAA    4 CAI  H14  H15  H16 
+CONECT      H2     1 CA  
+CONECT      H3     1 N   
+CONECT      H4     1 N   
+CONECT      H6     1 CB  
+CONECT      H7     1 CB  
+CONECT      H8     1 CAB 
+CONECT      H9     1 CAB 
+CONECT      H10    1 CAB 
+CONECT      H11    1 CAC 
+CONECT      H12    1 CAC 
+CONECT      H13    1 CAC 
+CONECT      H14    1 CAA 
+CONECT      H15    1 CAA 
+CONECT      H16    1 CAA 
+CONECT      O1     2 C    H1  
+CONECT      H1     1 O1  
+END   
+HET    0JY             25
+HETNAM     0JY 4-methyl-L-leucine
+FORMUL      0JY    C7 H15 N1 O2

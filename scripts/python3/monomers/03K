@@ -1,0 +1,40 @@
+RESIDUE   03K     34
+CONECT      N1L    3 CAO  CAR  HN1L
+CONECT      N2A    3 CAN  HN2A HN2B
+CONECT      N3K    3 N4M  CAS  HN3K
+CONECT      N4M    2 N3K  CAR 
+CONECT      OAB    1 CAN 
+CONECT      OAC    1 CAO 
+CONECT      CAD    3 CAF  CAP  HAD 
+CONECT      CAE    3 CAG  CAP  HAE 
+CONECT      CAF    3 CAD  CAQ  HAF 
+CONECT      CAG    3 CAE  CAQ  HAG 
+CONECT      CAH    3 CAR  CAS  HAH 
+CONECT      CAI    4 CAJ  CAT  HAI  HAIA
+CONECT      CAJ    4 CAI  CAT  HAJ  HAJA
+CONECT      CAN    3 N2A  OAB  CAP 
+CONECT      CAO    3 N1L  OAC  CAQ 
+CONECT      CAP    3 CAD  CAE  CAN 
+CONECT      CAQ    3 CAF  CAG  CAO 
+CONECT      CAR    3 N1L  N4M  CAH 
+CONECT      CAS    3 N3K  CAH  CAT 
+CONECT      CAT    4 CAI  CAJ  CAS  HAT 
+CONECT      HN1L   1 N1L 
+CONECT      HN2A   1 N2A 
+CONECT      HN2B   1 N2A 
+CONECT      HAD    1 CAD 
+CONECT      HAE    1 CAE 
+CONECT      HAF    1 CAF 
+CONECT      HAG    1 CAG 
+CONECT      HAH    1 CAH 
+CONECT      HAI    1 CAI 
+CONECT      HAIA   1 CAI 
+CONECT      HAJ    1 CAJ 
+CONECT      HAJA   1 CAJ 
+CONECT      HAT    1 CAT 
+CONECT      HN3K   1 N3K 
+END   
+HET    03K             34
+HETNAM     03K N-(5-cyclopropyl-1H-pyrazol-3-yl)benzene-1,4-dicarboxam
+HETNAM   2 03K ide
+FORMUL      03K    C14 H14 N4 O2

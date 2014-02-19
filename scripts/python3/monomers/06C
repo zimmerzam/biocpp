@@ -1,0 +1,11 @@
+RESIDUE   06C      5
+CONECT      C1     4 H    HA   HB   I1  
+CONECT      H      1 C1  
+CONECT      HA     1 C1  
+CONECT      HB     1 C1  
+CONECT      I1     1 C1  
+END   
+HET    06C              5
+HETSYN     06C Methyl iodine
+HETNAM     06C Iodomethane
+FORMUL      06C    C1 H3 I1

@@ -1,0 +1,71 @@
+RESIDUE   03X     64
+CONECT      N1     2 C6   C7  
+CONECT      N3     3 C20  C23  N4  
+CONECT      C4     3 C5   C1   H4  
+CONECT      C5     3 C4   C6   C9  
+CONECT      C6     3 N1   C5   C3  
+CONECT      C7     3 N1   C8   H7  
+CONECT      C8     3 C7   C9   H8  
+CONECT      C10    3 C13  C17  O1  
+CONECT      C13    3 C10  C14  F1  
+CONECT      C15    3 C14  C16  N2  
+CONECT      C17    3 C10  C16  H17 
+CONECT      C20    3 N3   C22  C19 
+CONECT      C21    3 C19  O5   N4  
+CONECT      C22    4 C20  H22  H22A H22B
+CONECT      C24    3 N4   C25  C29 
+CONECT      C26    3 C25  C27  H26 
+CONECT      C28    3 C27  C29  H28 
+CONECT      C11    4 O3   H11  H11A H11B
+CONECT      O3     2 C11  C2  
+CONECT      C2     3 O3   C3   C1  
+CONECT      C3     3 C6   C2   H3  
+CONECT      C1     3 C4   C2   O2  
+CONECT      O2     2 C1   C12 
+CONECT      C12    4 O2   H12  H12A H12B
+CONECT      C9     3 C5   C8   O1  
+CONECT      O1     2 C10  C9  
+CONECT      C14    3 C13  C15  H14 
+CONECT      F1     1 C13 
+CONECT      C16    3 C15  C17  H16 
+CONECT      N2     3 C15  C18  HN2 
+CONECT      C18    3 N2   O4   C19 
+CONECT      O4     1 C18 
+CONECT      C19    3 C20  C21  C18 
+CONECT      O5     1 C21 
+CONECT      C23    4 N3   H23  H23A H23B
+CONECT      N4     3 N3   C21  C24 
+CONECT      C25    3 C24  C26  H25 
+CONECT      C27    3 C26  C28  H27 
+CONECT      C29    3 C24  C28  H29 
+CONECT      H4     1 C4  
+CONECT      H7     1 C7  
+CONECT      H8     1 C8  
+CONECT      H17    1 C17 
+CONECT      H22    1 C22 
+CONECT      H22A   1 C22 
+CONECT      H22B   1 C22 
+CONECT      H26    1 C26 
+CONECT      H28    1 C28 
+CONECT      H11    1 C11 
+CONECT      H11A   1 C11 
+CONECT      H11B   1 C11 
+CONECT      H3     1 C3  
+CONECT      H12    1 C12 
+CONECT      H12A   1 C12 
+CONECT      H12B   1 C12 
+CONECT      H14    1 C14 
+CONECT      H16    1 C16 
+CONECT      HN2    1 N2  
+CONECT      H23    1 C23 
+CONECT      H23A   1 C23 
+CONECT      H23B   1 C23 
+CONECT      H25    1 C25 
+CONECT      H27    1 C27 
+CONECT      H29    1 C29 
+END   
+HET    03X             64
+HETNAM     03X N-{4-[(6,7-dimethoxyquinolin-4-yl)oxy]-3-fluorophenyl}-
+HETNAM   2 03X 1,5-dimethyl-3-oxo-2-phenyl-2,3-dihydro-1H-pyrazole-4-c
+HETNAM   3 03X arboxamide
+FORMUL      03X    C29 H25 F1 N4 O5

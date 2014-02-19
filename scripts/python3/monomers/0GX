@@ -1,0 +1,65 @@
+RESIDUE   0GX     58
+CONECT      CBD    4 CAT  H1   H2   H3  
+CONECT      CAT    4 CBD  CAS  H4   H5  
+CONECT      CAS    4 CAT  OAR  H6   H7  
+CONECT      OAR    2 CAS  CAN 
+CONECT      CAN    3 OAR  SAO  CAM 
+CONECT      SAO    2 CAN  CAK 
+CONECT      CAM    3 CAN  BR1  CAL 
+CONECT      BR1    1 CAM 
+CONECT      CAL    3 CAM  CAP  CAK 
+CONECT      CAP    4 CAL  H8   H9   H10 
+CONECT      CAK    3 SAO  CAL  CAI 
+CONECT      CAI    3 CAK  OAJ  NAE 
+CONECT      OAJ    1 CAI 
+CONECT      NAE    3 CAI  CAD  CAA 
+CONECT      CAD    4 NAE  CAC  CAG  H11 
+CONECT      CAC    4 CAD  CAB  H12  H13 
+CONECT      CAG    4 CAD  CAH  H14  H15 
+CONECT      CAH    4 CAG  CAA  H16  H17 
+CONECT      CAA    4 NAE  CAH  CAF  H18 
+CONECT      CAF    4 CAA  CAB  H19  H20 
+CONECT      CAB    4 CAC  CAF  CAU  H21 
+CONECT      CAU    3 CAB  CAZ  CAV 
+CONECT      CAZ    3 CAU  CAY  H22 
+CONECT      CAV    3 CAU  FBA  CAW 
+CONECT      FBA    1 CAV 
+CONECT      CAW    3 CAV  CAX  H23 
+CONECT      CAX    3 CAW  CAY  H24 
+CONECT      CAY    3 CAZ  CAX  CBB 
+CONECT      CBB    4 CAY  NBC  H25  H26 
+CONECT      NBC    3 CBB  H27  H28 
+CONECT      H1     1 CBD 
+CONECT      H2     1 CBD 
+CONECT      H3     1 CBD 
+CONECT      H4     1 CAT 
+CONECT      H5     1 CAT 
+CONECT      H6     1 CAS 
+CONECT      H7     1 CAS 
+CONECT      H8     1 CAP 
+CONECT      H9     1 CAP 
+CONECT      H10    1 CAP 
+CONECT      H11    1 CAD 
+CONECT      H12    1 CAC 
+CONECT      H13    1 CAC 
+CONECT      H14    1 CAG 
+CONECT      H15    1 CAG 
+CONECT      H16    1 CAH 
+CONECT      H17    1 CAH 
+CONECT      H18    1 CAA 
+CONECT      H19    1 CAF 
+CONECT      H20    1 CAF 
+CONECT      H21    1 CAB 
+CONECT      H22    1 CAZ 
+CONECT      H23    1 CAW 
+CONECT      H24    1 CAX 
+CONECT      H25    1 CBB 
+CONECT      H26    1 CBB 
+CONECT      H27    1 NBC 
+CONECT      H28    1 NBC 
+END   
+HET    0GX             58
+HETNAM     0GX {(3-exo)-3-[5-(aminomethyl)-2-fluorophenyl]-8-azabicycl
+HETNAM   2 0GX o[3.2.1]oct-8-yl}(4-bromo-3-methyl-5-propoxythiophen-2-
+HETNAM   3 0GX yl)methanone
+FORMUL      0GX    C23 H28 Br1 F1 N2 O2 S1

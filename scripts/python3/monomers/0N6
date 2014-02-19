@@ -1,0 +1,63 @@
+RESIDUE   0N6     57
+CONECT      C9     3 C5   C8   H1  
+CONECT      C5     3 C9   C3   C4  
+CONECT      C3     4 C5   C2   H2   H3  
+CONECT      C2     4 C3   N1   H4   H5  
+CONECT      N1     3 C2   C1   H6  
+CONECT      C1     4 N1   C4   H8   H9  
+CONECT      C4     3 C5   C1   C6  
+CONECT      C6     3 C4   C7   H10 
+CONECT      C7     3 C6   C8   H11 
+CONECT      C8     3 C9   C7   S1  
+CONECT      S1     4 C8   O1   O3   N2  
+CONECT      O1     1 S1  
+CONECT      O3     1 S1  
+CONECT      N2     3 S1   C10  H12 
+CONECT      C10    4 N2   C12  C11  H13 
+CONECT      C12    3 C10  O2   N3  
+CONECT      O2     1 C12 
+CONECT      N3     3 C12  C13  C16 
+CONECT      C13    4 N3   C14  H14  H15 
+CONECT      C14    4 C13  C15  H16  H17 
+CONECT      C15    4 C14  C16  H18  H19 
+CONECT      C16    4 N3   C15  H20  H21 
+CONECT      C11    4 C10  C17  H22  H23 
+CONECT      C17    3 C11  C22  C18 
+CONECT      C22    3 C17  C21  H24 
+CONECT      C18    3 C17  C19  H25 
+CONECT      C19    3 C18  C20  H26 
+CONECT      C20    3 C19  C21  H27 
+CONECT      C21    3 C22  C20  C23 
+CONECT      C23    2 C21  N4  
+CONECT      N4     1 C23 
+CONECT      H1     1 C9  
+CONECT      H2     1 C3  
+CONECT      H3     1 C3  
+CONECT      H4     1 C2  
+CONECT      H5     1 C2  
+CONECT      H6     1 N1  
+CONECT      H8     1 C1  
+CONECT      H9     1 C1  
+CONECT      H10    1 C6  
+CONECT      H11    1 C7  
+CONECT      H12    1 N2  
+CONECT      H13    1 C10 
+CONECT      H14    1 C13 
+CONECT      H15    1 C13 
+CONECT      H16    1 C14 
+CONECT      H17    1 C14 
+CONECT      H18    1 C15 
+CONECT      H19    1 C15 
+CONECT      H20    1 C16 
+CONECT      H21    1 C16 
+CONECT      H22    1 C11 
+CONECT      H23    1 C11 
+CONECT      H24    1 C22 
+CONECT      H25    1 C18 
+CONECT      H26    1 C19 
+CONECT      H27    1 C20 
+END   
+HET    0N6             57
+HETNAM     0N6 (R)-(3-(3-cyanophenyl)-1-oxo-1-(pyrrolidin-1-yl)propan-
+HETNAM   2 0N6 2-yl)-1,2,3,4-tetrahydroisoquinoline-6-sulfonamide
+FORMUL      0N6    C23 H26 N4 O3 S1

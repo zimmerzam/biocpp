@@ -1,0 +1,29 @@
+RESIDUE   01X     24
+CONECT      N'     3 CA'  H'   H2  
+CONECT      CA'    4 N'   CB'  HA'1 HA'2
+CONECT      CB'    3 CA'  CG'  CGB 
+CONECT      CG'    3 CB'  CD'  OL  
+CONECT      CD'    3 CG'  CE'  HD' 
+CONECT      CE'    3 CD'  CDB  HE' 
+CONECT      CDB    3 CE'  CGB  CL  
+CONECT      CGB    3 CB'  CDB  HG' 
+CONECT      CL     1 CDB 
+CONECT      OL     2 CG'  CF  
+CONECT      CF     4 OL   CH   HF1  HF2 
+CONECT      CH     3 CF   OH   OXT 
+CONECT      OH     1 CH  
+CONECT      H'     1 N'  
+CONECT      HA'1   1 CA' 
+CONECT      HA'2   1 CA' 
+CONECT      HD'    1 CD' 
+CONECT      HE'    1 CE' 
+CONECT      HG'    1 CGB 
+CONECT      HF1    1 CF  
+CONECT      HF2    1 CF  
+CONECT      H2     1 N'  
+CONECT      OXT    2 CH   HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    01X             24
+HETNAM     01X [2-(aminomethyl)-4-chlorophenoxy]acetic acid
+FORMUL      01X    C9 H10 Cl1 N1 O3

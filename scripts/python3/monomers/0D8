@@ -1,0 +1,19 @@
+RESIDUE   0D8     14
+CONECT      OH     2 C8   H2  
+CONECT      N3     3 CA3  H3   H1  
+CONECT      CA3    4 N3   C7   HA21 HA3 
+CONECT      C7     4 CA3  C8   H89  H99 
+CONECT      C8     4 OH   C7   H14  H24 
+CONECT      H3     1 N3  
+CONECT      HA21   1 CA3 
+CONECT      HA3    1 CA3 
+CONECT      H14    1 C8  
+CONECT      H24    1 C8  
+CONECT      H89    1 C7  
+CONECT      H99    1 C7  
+CONECT      H2     1 OH  
+CONECT      H1     1 N3  
+END   
+HET    0D8             14
+HETNAM     0D8 3-aminopropan-1-ol
+FORMUL      0D8    C3 H9 N1 O1

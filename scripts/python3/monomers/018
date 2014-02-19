@@ -1,0 +1,35 @@
+RESIDUE   018     29
+CONECT      OAR    1 NAQ 
+CONECT      NAQ    3 OAR  OAP  CAI 
+CONECT      OAP    1 NAQ 
+CONECT      CAI    3 NAQ  CAH  CAJ 
+CONECT      CAH    3 CAI  CAD  HAH 
+CONECT      CAD    3 CAH  CAC  CAE 
+CONECT      CAC    4 CAD  FAA  FAG  FAB 
+CONECT      FAA    1 CAC 
+CONECT      FAG    1 CAC 
+CONECT      FAB    1 CAC 
+CONECT      CAJ    3 CAI  CAF  NAK 
+CONECT      CAF    3 CAJ  CAE  HAF 
+CONECT      CAE    3 CAD  CAF  HAE 
+CONECT      NAK    3 CAJ  CAL  HNAK
+CONECT      CAL    4 NAK  CAM  HAL  HALA
+CONECT      CAM    3 CAL  CAN  CAS 
+CONECT      CAN    3 CAM  SAO  HAN 
+CONECT      SAO    2 CAN  CAT 
+CONECT      CAT    3 SAO  CAS  HAT 
+CONECT      CAS    3 CAM  CAT  HAS 
+CONECT      HAH    1 CAH 
+CONECT      HAF    1 CAF 
+CONECT      HAE    1 CAE 
+CONECT      HNAK   1 NAK 
+CONECT      HAL    1 CAL 
+CONECT      HALA   1 CAL 
+CONECT      HAN    1 CAN 
+CONECT      HAT    1 CAT 
+CONECT      HAS    1 CAS 
+END   
+HET    018             29
+HETNAM     018 2-nitro-N-(thiophen-3-ylmethyl)-4-(trifluoromethyl)anil
+HETNAM   2 018 ine
+FORMUL      018    C12 H9 F3 N2 O2 S1

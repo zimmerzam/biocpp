@@ -1,0 +1,100 @@
+RESIDUE   0BU     92
+CONECT      OAA    1 CBP 
+CONECT      OAB    1 CBQ 
+CONECT      OAC    1 CBR 
+CONECT      OAD    2 SCI  HOAD
+CONECT      OAE    1 SCI 
+CONECT      OAF    1 SCJ 
+CONECT      OAG    1 SCJ 
+CONECT      OAH    1 SCK 
+CONECT      OAI    1 SCK 
+CONECT      OAJ    1 SCL 
+CONECT      OAK    2 SCL  HOAK
+CONECT      OAL    1 SCM 
+CONECT      OAM    1 SCM 
+CONECT      OAN    1 SCN 
+CONECT      OAO    2 SCN  HOAO
+CONECT      OAP    1 SCI 
+CONECT      OAQ    2 SCJ  HOAQ
+CONECT      OAR    2 SCK  HOAR
+CONECT      OAS    1 SCL 
+CONECT      OAT    2 SCM  HOAT
+CONECT      OAU    1 SCN 
+CONECT      CAV    3 CAX  CAZ  HAV 
+CONECT      CAW    3 CAY  CBA  HAW 
+CONECT      CAX    3 CAV  CBS  HAX 
+CONECT      CAY    3 CAW  CBT  HAY 
+CONECT      CAZ    3 CAV  CBU  HAZ 
+CONECT      CBA    3 CAW  CBV  HBA 
+CONECT      CBB    3 CBD  CBY  HBB 
+CONECT      CBC    3 CBE  CBZ  HBC 
+CONECT      CBD    3 CBB  CCA  HBD 
+CONECT      CBE    3 CBC  CCB  HBE 
+CONECT      CBF    3 CBS  CBU  HBF 
+CONECT      CBG    3 CBT  CBV  HBG 
+CONECT      CBH    3 CBW  CCC  HBH 
+CONECT      CBI    3 CBX  CCD  HBI 
+CONECT      CBJ    3 CBW  CCE  HBJ 
+CONECT      CBK    3 CBX  CCF  HBK 
+CONECT      NBL    3 CBP  CBS  HNBL
+CONECT      NBM    3 CBP  CBT  HNBM
+CONECT      NBN    3 CBQ  CBY  HNBN
+CONECT      NBO    3 CBR  CBZ  HNBO
+CONECT      CBP    3 OAA  NBL  NBM 
+CONECT      CBQ    3 OAB  NBN  CBU 
+CONECT      CBR    3 OAC  NBO  CBV 
+CONECT      CBS    3 CAX  CBF  NBL 
+CONECT      CBT    3 CAY  CBG  NBM 
+CONECT      CBU    3 CAZ  CBF  CBQ 
+CONECT      CBV    3 CBA  CBG  CBR 
+CONECT      CBW    3 CBH  CBJ  SCI 
+CONECT      CBX    3 CBI  CBK  SCJ 
+CONECT      CBY    3 CBB  NBN  CCG 
+CONECT      CBZ    3 CBC  NBO  CCH 
+CONECT      CCA    3 CBD  CCE  SCK 
+CONECT      CCB    3 CBE  CCF  SCL 
+CONECT      CCC    3 CBH  CCG  SCM 
+CONECT      CCD    3 CBI  CCH  SCN 
+CONECT      CCE    3 CBJ  CCA  CCG 
+CONECT      CCF    3 CBK  CCB  CCH 
+CONECT      CCG    3 CBY  CCC  CCE 
+CONECT      CCH    3 CBZ  CCD  CCF 
+CONECT      SCI    4 OAD  OAE  OAP  CBW 
+CONECT      SCJ    4 OAF  OAG  OAQ  CBX 
+CONECT      SCK    4 OAH  OAI  OAR  CCA 
+CONECT      SCL    4 OAJ  OAK  OAS  CCB 
+CONECT      SCM    4 OAL  OAM  OAT  CCC 
+CONECT      SCN    4 OAN  OAO  OAU  CCD 
+CONECT      HOAD   1 OAD 
+CONECT      HOAK   1 OAK 
+CONECT      HOAO   1 OAO 
+CONECT      HOAQ   1 OAQ 
+CONECT      HOAR   1 OAR 
+CONECT      HOAT   1 OAT 
+CONECT      HAV    1 CAV 
+CONECT      HAW    1 CAW 
+CONECT      HAX    1 CAX 
+CONECT      HAY    1 CAY 
+CONECT      HAZ    1 CAZ 
+CONECT      HBA    1 CBA 
+CONECT      HBB    1 CBB 
+CONECT      HBC    1 CBC 
+CONECT      HBD    1 CBD 
+CONECT      HBE    1 CBE 
+CONECT      HBF    1 CBF 
+CONECT      HBG    1 CBG 
+CONECT      HBH    1 CBH 
+CONECT      HBI    1 CBI 
+CONECT      HBJ    1 CBJ 
+CONECT      HBK    1 CBK 
+CONECT      HNBL   1 NBL 
+CONECT      HNBM   1 NBM 
+CONECT      HNBN   1 NBN 
+CONECT      HNBO   1 NBO 
+END   
+HET    0BU             92
+HETSYN     0BU NF023
+HETNAM     0BU 8-({3-[({3-[(4,6,8-trisulfonaphthalen-1-yl)carbamoyl]ph
+HETNAM   2 0BU enyl}carbamoyl)amino]benzoyl}amino)naphthalene-1,3,5-tr
+HETNAM   3 0BU isulfonic acid
+FORMUL      0BU    C35 H26 N4 O21 S6

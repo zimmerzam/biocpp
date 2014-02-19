@@ -1,0 +1,77 @@
+RESIDUE   0IV     69
+CONECT      C      4 C1   S    H1   H2A 
+CONECT      C1     3 C    C2   C6  
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   C6   H5  
+CONECT      C6     3 C1   C5   H6  
+CONECT      S      4 C    O1S  O2S  N   
+CONECT      O1S    1 S   
+CONECT      O2S    1 S   
+CONECT      N      3 S    CA   H   
+CONECT      CA     4 N    CB   C7   HA  
+CONECT      CB     4 CA   CG   HB2  HB3 
+CONECT      CG     4 CB   CD   HG2  HG3 
+CONECT      CD     4 CG   N1   HD1  HD2 
+CONECT      C7     3 CA   O    N1  
+CONECT      O      1 C7  
+CONECT      N1     3 CD   C7   CA1 
+CONECT      CA1    4 N1   C8   HA2  HA3 
+CONECT      C8     3 CA1  O1   N2  
+CONECT      O1     1 C8  
+CONECT      C21    4 C31  C11  H21  H22 
+CONECT      C31    4 C21  NE   H31  H32 
+CONECT      N2     3 C8   CA2  HN2 
+CONECT      CA2    4 N2   C9   CB1  HA1 
+CONECT      C9     3 CA2  O2   H99 
+CONECT      O2     1 C9  
+CONECT      CB1    4 CA2  CG1  HB1  HB21
+CONECT      CZ     3 NE   NH1  NH2 
+CONECT      NE     3 C31  CZ   CD1 
+CONECT      C11    4 C21  CG1  H11  H12 
+CONECT      CG1    4 CB1  C11  CD1  HG  
+CONECT      CD1    4 NE   CG1  HD11 HD21
+CONECT      NH1    2 CZ   HN1 
+CONECT      NH2    3 CZ   HN21 HN22
+CONECT      H1     1 C   
+CONECT      H2A    1 C   
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H5     1 C5  
+CONECT      H6     1 C6  
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      HG2    1 CG  
+CONECT      HG3    1 CG  
+CONECT      HD1    1 CD  
+CONECT      HD2    1 CD  
+CONECT      HA2    1 CA1 
+CONECT      HA3    1 CA1 
+CONECT      H21    1 C21 
+CONECT      H22    1 C21 
+CONECT      H31    1 C31 
+CONECT      H32    1 C31 
+CONECT      HN2    1 N2  
+CONECT      HA1    1 CA2 
+CONECT      HB1    1 CB1 
+CONECT      HB21   1 CB1 
+CONECT      H11    1 C11 
+CONECT      H12    1 C11 
+CONECT      HG     1 CG1 
+CONECT      HD11   1 CD1 
+CONECT      HD21   1 CD1 
+CONECT      HN1    1 NH1 
+CONECT      HN21   1 NH2 
+CONECT      HN22   1 NH2 
+CONECT      H99    1 C9  
+END   
+HET    0IV             69
+HETSYN     0IV CVS1694
+HETNAM     0IV 2-{(3S)-3-[(benzylsulfonyl)amino]-2-oxopiperidin-1-yl}-
+HETNAM   2 0IV N-{(2S)-1-[(3R)-1-carbamimidoylpiperidin-3-yl]-3-oxopro
+HETNAM   3 0IV pan-2-yl}acetamide
+FORMUL      0IV    C23 H34 N6 O5 S1

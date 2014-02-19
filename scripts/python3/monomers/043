@@ -1,0 +1,27 @@
+RESIDUE   043     22
+CONECT      O01    1 C02 
+CONECT      C02    3 O01  O03  C04 
+CONECT      O03    2 C02  HO03
+CONECT      C04    3 C02  O05  C06 
+CONECT      O05    1 C04 
+CONECT      C06    4 C04  C07  H06  H06A
+CONECT      C07    3 C06  O08  C09 
+CONECT      O08    1 C07 
+CONECT      C09    3 C07  C10  C15 
+CONECT      C10    3 C09  C11  H10 
+CONECT      C11    3 C10  C12  H11 
+CONECT      C12    3 C11  C13  H12 
+CONECT      C13    3 C12  BR14 C15 
+CONECT      BR14   1 C13 
+CONECT      C15    3 C09  C13  H15 
+CONECT      HO03   1 O03 
+CONECT      H06    1 C06 
+CONECT      H06A   1 C06 
+CONECT      H10    1 C10 
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H15    1 C15 
+END   
+HET    043             22
+HETNAM     043 4-(3-bromophenyl)-2,4-dioxobutanoic acid
+FORMUL      043    C10 H7 Br1 O4

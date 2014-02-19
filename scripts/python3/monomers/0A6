@@ -1,0 +1,26 @@
+RESIDUE   0A6     21
+CONECT      O01    1 C02 
+CONECT      C02    3 O01  C03  O10 
+CONECT      C03    4 C02  O04  C05  H03 
+CONECT      O04    2 C03  H04 
+CONECT      C05    4 C03  C06  H051 H052
+CONECT      C06    3 C05  O07  OXT 
+CONECT      O07    1 C06 
+CONECT      C08    4 C09  O10  H081 H082
+CONECT      C09    4 C08  H091 H092 H093
+CONECT      O10    2 C02  C08 
+CONECT      OXT    2 C06  HOT 
+CONECT      H03    1 C03 
+CONECT      H04    1 O04 
+CONECT      H051   1 C05 
+CONECT      H052   1 C05 
+CONECT      HOT    1 OXT 
+CONECT      H081   1 C08 
+CONECT      H082   1 C08 
+CONECT      H091   1 C09 
+CONECT      H092   1 C09 
+CONECT      H093   1 C09 
+END   
+HET    0A6             21
+HETNAM     0A6 (3R)-4-ethoxy-3-hydroxy-4-oxobutanoic acid
+FORMUL      0A6    C6 H10 O5

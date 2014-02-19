@@ -1,0 +1,132 @@
+RESIDUE   0GM    123
+CONECT      C      3 O    CA   N   
+CONECT      O      1 C   
+CONECT      CA     4 C    CB1  CB2  HA  
+CONECT      CB1    4 CA   C1A  HB1  HB1A
+CONECT      C1A    3 CB1  C2A  C12 
+CONECT      C2A    3 C1A  C3A  H2A 
+CONECT      C3A    3 C2A  C4A  H3A 
+CONECT      C4A    3 C3A  C11  H4A 
+CONECT      C11    3 C4A  C5A  C12 
+CONECT      C5A    3 C11  C6A  H5A 
+CONECT      C6A    3 C5A  C7A  H6A 
+CONECT      C7A    3 C6A  C8A  H7A 
+CONECT      C8A    3 C7A  C12  H8A 
+CONECT      C12    3 C1A  C11  C8A 
+CONECT      CB2    4 CA   C1B  HB2  HB2A
+CONECT      C1B    3 CB2  C2B  C14 
+CONECT      C2B    3 C1B  C3B  H2B 
+CONECT      C3B    3 C2B  C4B  H3B 
+CONECT      C4B    3 C3B  C13  H4B 
+CONECT      C13    3 C4B  C5B  C14 
+CONECT      C5B    3 C13  C6B  H5B 
+CONECT      C6B    3 C5B  C7B  H6B 
+CONECT      C7B    3 C6B  C8B  H7B 
+CONECT      C8B    3 C7B  C14  H8B 
+CONECT      C14    3 C1B  C13  C8B 
+CONECT      N      3 C    CA1  HN  
+CONECT      CA1    4 N    C1   CB   HA1 
+CONECT      C1     3 CA1  O1   N1  
+CONECT      O1     1 C1  
+CONECT      CB     4 CA1  CG   HB   HBA 
+CONECT      CG     4 CB   CD   HG   HGA 
+CONECT      CD     3 CG   OE1  N4  
+CONECT      OE1    1 CD  
+CONECT      N1     3 C1   CA2  HN1 
+CONECT      CA2    4 N1   CB3  CH   HA2 
+CONECT      CB3    4 CA2  CG1  HB3  HB3A
+CONECT      CG1    4 CB3  CD1  CD2  HG1 
+CONECT      CD1    4 CG1  HD1  HD1A HD1B
+CONECT      CD2    4 CG1  HD2  HD2A HD2B
+CONECT      CH     4 CA2  OH   CM   HH  
+CONECT      OH     2 CH   HOH 
+CONECT      CM     4 CH   C2   HM   HMA 
+CONECT      C2     3 CM   O2   N2  
+CONECT      O2     1 C2  
+CONECT      N2     3 C2   CA3  HN2 
+CONECT      CA3    4 N2   C3   CB4  HA3 
+CONECT      C3     3 CA3  O3   N3  
+CONECT      O3     1 C3  
+CONECT      CB4    4 CA3  CG2  HB4  HB4A
+CONECT      CG2    4 CB4  CD3  CD4  H17 
+CONECT      CD3    4 CG2  HD3  HD3A H13 
+CONECT      CD4    4 CG2  HD4  HD4A HD4B
+CONECT      N3     3 C3   CA4  HN3 
+CONECT      CA4    4 N3   CG3  HA4  HA4A
+CONECT      CG3    3 CA4  CD5  CD6 
+CONECT      CD5    3 CG3  CE1  HD5 
+CONECT      CD6    3 CG3  CE2  HD6 
+CONECT      CE1    3 CD5  CZ   CB5 
+CONECT      CE2    3 CD6  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      CB5    4 CE1  N4   HB5  HB5A
+CONECT      N4     3 CD   CB5  HN4 
+CONECT      HA     1 CA  
+CONECT      HB1    1 CB1 
+CONECT      HB1A   1 CB1 
+CONECT      H2A    1 C2A 
+CONECT      H3A    1 C3A 
+CONECT      H4A    1 C4A 
+CONECT      H5A    1 C5A 
+CONECT      H6A    1 C6A 
+CONECT      H7A    1 C7A 
+CONECT      H8A    1 C8A 
+CONECT      HB2    1 CB2 
+CONECT      HB2A   1 CB2 
+CONECT      H2B    1 C2B 
+CONECT      H3B    1 C3B 
+CONECT      H4B    1 C4B 
+CONECT      H5B    1 C5B 
+CONECT      H6B    1 C6B 
+CONECT      H7B    1 C7B 
+CONECT      H8B    1 C8B 
+CONECT      HN     1 N   
+CONECT      HA1    1 CA1 
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HG     1 CG  
+CONECT      HGA    1 CG  
+CONECT      HN1    1 N1  
+CONECT      HA2    1 CA2 
+CONECT      HB3    1 CB3 
+CONECT      HB3A   1 CB3 
+CONECT      HG1    1 CG1 
+CONECT      HD1    1 CD1 
+CONECT      HD1A   1 CD1 
+CONECT      HD1B   1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HD2A   1 CD2 
+CONECT      HD2B   1 CD2 
+CONECT      HH     1 CH  
+CONECT      HOH    1 OH  
+CONECT      HM     1 CM  
+CONECT      HMA    1 CM  
+CONECT      HN2    1 N2  
+CONECT      HA3    1 CA3 
+CONECT      HB4    1 CB4 
+CONECT      HB4A   1 CB4 
+CONECT      H17    1 CG2 
+CONECT      HD3    1 CD3 
+CONECT      HD3A   1 CD3 
+CONECT      H13    1 CD3 
+CONECT      HD4    1 CD4 
+CONECT      HD4A   1 CD4 
+CONECT      HD4B   1 CD4 
+CONECT      HN3    1 N3  
+CONECT      HA4    1 CA4 
+CONECT      HA4A   1 CA4 
+CONECT      HD5    1 CD5 
+CONECT      HD6    1 CD6 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      HB5    1 CB5 
+CONECT      HB5A   1 CB5 
+CONECT      HN4    1 N4  
+END   
+HET    0GM            123
+HETSYN     0GM CP-129,541
+HETNAM     0GM N-[(5S,9S,10S,13S)-9-hydroxy-5,10-bis(2-methylpropyl)-4
+HETNAM   2 0GM ,7,12,16-tetraoxo-3,6,11,17-tetraazabicyclo[17.3.1]tric
+HETNAM   3 0GM osa-1(23),19,21-trien-13-yl]-3-(naphthalen-1-yl)-2-(nap
+HETNAM   4 0GM hthalen-1-ylmethyl)propanamide
+FORMUL      0GM    C51 H61 N5 O6

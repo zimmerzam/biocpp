@@ -1,0 +1,66 @@
+RESIDUE   07S     60
+CONECT      C1     3 C2   N6   H1  
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   C11 
+CONECT      C5     3 C4   N6   H4  
+CONECT      N6     2 C1   C5  
+CONECT      C11    3 C4   S12  C15 
+CONECT      S12    2 C11  C13 
+CONECT      C13    3 S12  N14  N16 
+CONECT      N14    2 C13  C15 
+CONECT      C15    3 C11  N14  H5  
+CONECT      N16    3 C13  C17  H6  
+CONECT      C17    3 N16  N18  C22 
+CONECT      N18    2 C17  C19 
+CONECT      C19    3 N18  C20  H7  
+CONECT      C20    3 C19  C21  H8  
+CONECT      C21    3 C20  C22  N26 
+CONECT      C22    3 C17  C21  H9  
+CONECT      N26    3 C21  C27  C31 
+CONECT      C27    4 N26  C28  H10  H11 
+CONECT      C28    4 C27  N29  H12  H13 
+CONECT      N29    3 C28  C30  C40 
+CONECT      C30    4 N29  C31  H15  H16 
+CONECT      C31    4 N26  C30  H17  H18 
+CONECT      C40    4 N29  C41  H19  H20 
+CONECT      C41    3 C40  N44  O58 
+CONECT      N44    3 C41  C45  C49 
+CONECT      C45    4 N44  C46  H21  H22 
+CONECT      C46    4 C45  O47  H23  H24 
+CONECT      O47    2 C46  C48 
+CONECT      C48    4 O47  C49  H25  H26 
+CONECT      C49    4 N44  C48  H27  H28 
+CONECT      O58    1 C41 
+CONECT      H1     1 C1  
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C5  
+CONECT      H5     1 C15 
+CONECT      H6     1 N16 
+CONECT      H7     1 C19 
+CONECT      H8     1 C20 
+CONECT      H9     1 C22 
+CONECT      H10    1 C27 
+CONECT      H11    1 C27 
+CONECT      H12    1 C28 
+CONECT      H13    1 C28 
+CONECT      H15    1 C30 
+CONECT      H16    1 C30 
+CONECT      H17    1 C31 
+CONECT      H18    1 C31 
+CONECT      H19    1 C40 
+CONECT      H20    1 C40 
+CONECT      H21    1 C45 
+CONECT      H22    1 C45 
+CONECT      H23    1 C46 
+CONECT      H24    1 C46 
+CONECT      H25    1 C48 
+CONECT      H26    1 C48 
+CONECT      H27    1 C49 
+CONECT      H28    1 C49 
+END   
+HET    07S             60
+HETNAM     07S 1-(morpholin-4-yl)-2-[4-(2-{[5-(pyridin-3-yl)-1,3-thiaz
+HETNAM   2 07S ol-2-yl]amino}pyridin-4-yl)piperazin-1-yl]ethanone
+FORMUL      07S    C23 H27 N7 O2 S1

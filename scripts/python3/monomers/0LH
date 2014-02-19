@@ -1,0 +1,29 @@
+RESIDUE   0LH     24
+CONECT      CAG    3 CAF  NAL  H1  
+CONECT      CAF    3 CAG  CAJ  H2  
+CONECT      CAJ    3 CAF  CAD  CAK 
+CONECT      CAD    3 CAJ  CAB  H3  
+CONECT      CAB    3 CAD  CAC  H4  
+CONECT      CAC    3 CAB  CAE  H5  
+CONECT      CAE    3 CAC  CAK  H6  
+CONECT      CAK    3 CAJ  CAE  NAL 
+CONECT      NAL    3 CAG  CAK  CAI 
+CONECT      CAI    4 NAL  CAH  H7   H8  
+CONECT      CAH    4 CAI  NAA  H9   H10 
+CONECT      NAA    3 CAH  H11  H12 
+CONECT      H1     1 CAG 
+CONECT      H2     1 CAF 
+CONECT      H3     1 CAD 
+CONECT      H4     1 CAB 
+CONECT      H5     1 CAC 
+CONECT      H6     1 CAE 
+CONECT      H7     1 CAI 
+CONECT      H8     1 CAI 
+CONECT      H9     1 CAH 
+CONECT      H10    1 CAH 
+CONECT      H11    1 NAA 
+CONECT      H12    1 NAA 
+END   
+HET    0LH             24
+HETNAM     0LH 2-(1H-indol-1-yl)ethanamine
+FORMUL      0LH    C10 H12 N2

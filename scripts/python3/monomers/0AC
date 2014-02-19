@@ -1,0 +1,38 @@
+RESIDUE   0AC     33
+CONECT      N      3 CA   HN1  HN2 
+CONECT      CA     4 N    CB   C2   HA  
+CONECT      CB     4 CA   CG   HBC1 HBC2
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CE2    3 CD2  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      C1     4 C2   CA1  H1C1 H1C2
+CONECT      C2     4 CA   C1   O    H2  
+CONECT      O      2 C2   H   
+CONECT      CA1    4 C1   C    HA11 HA12
+CONECT      C      3 CA1  O1   OXT 
+CONECT      O1     1 C   
+CONECT      OXT    2 C    HXT 
+CONECT      HN1    1 N   
+CONECT      HN2    1 N   
+CONECT      HA     1 CA  
+CONECT      HBC1   1 CB  
+CONECT      HBC2   1 CB  
+CONECT      H2     1 C2  
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      H1C1   1 C1  
+CONECT      H1C2   1 C1  
+CONECT      HA11   1 CA1 
+CONECT      HA12   1 CA1 
+CONECT      H      1 O   
+CONECT      HXT    1 OXT 
+END   
+HET    0AC             33
+HETNAM     0AC (4S,5S)-5-amino-4-hydroxy-6-phenylhexanoic acid
+FORMUL      0AC    C12 H17 N1 O3

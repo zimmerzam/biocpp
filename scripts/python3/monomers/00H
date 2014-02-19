@@ -1,0 +1,39 @@
+RESIDUE   00H     33
+CONECT      N12    3 C13  HN12 HN1A
+CONECT      C13    4 N12  C14  P21  H13 
+CONECT      C14    4 C13  C15  H14  H14A
+CONECT      C15    3 C14  C16  C20 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C17    3 C16  C18  H17 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C18  C20  H19 
+CONECT      C20    3 C15  C19  H20 
+CONECT      P21    4 C13  O22  O23  C24 
+CONECT      O22    2 P21  HO22
+CONECT      O23    1 P21 
+CONECT      C24    4 P21  C25  H24  H24A
+CONECT      C25    4 C24  C26  H25  H25A
+CONECT      C26    3 C25  O27  OXT 
+CONECT      O27    1 C26 
+CONECT      HN12   1 N12 
+CONECT      HN1A   1 N12 
+CONECT      H13    1 C13 
+CONECT      H14    1 C14 
+CONECT      H14A   1 C14 
+CONECT      H16    1 C16 
+CONECT      H17    1 C17 
+CONECT      H18    1 C18 
+CONECT      H19    1 C19 
+CONECT      H20    1 C20 
+CONECT      HO22   1 O22 
+CONECT      H24    1 C24 
+CONECT      H24A   1 C24 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      OXT    2 C26  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    00H             33
+HETNAM     00H 3-[(R)-[(1R)-1-amino-2-phenylethyl](hydroxy)phosphoryl]
+HETNAM   2 00H propanoic acid
+FORMUL      00H    C11 H16 N1 O4 P1

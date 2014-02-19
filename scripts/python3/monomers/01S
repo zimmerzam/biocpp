@@ -1,0 +1,49 @@
+RESIDUE   01S     43
+CONECT      N      3 OH   C1   HN  
+CONECT      OH     2 N    HOH 
+CONECT      C1     3 N    O1   CA  
+CONECT      O1     1 C1  
+CONECT      CA     4 C1   CB   C    HA  
+CONECT      CB     4 CA   CG   HB1  HB2 
+CONECT      CG     4 CB   CD1  CD2  HG  
+CONECT      CD1    4 CG   HD11 HD12 HD13
+CONECT      CD2    4 CG   HD21 HD22 HD23
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      N1     3 C    CA1  H   
+CONECT      CA1    4 N1   C2   CB1  HA1 
+CONECT      C2     3 CA1  O2   N2  
+CONECT      O2     1 C2  
+CONECT      CB1    4 CA1  HB11 HB21 HB3 
+CONECT      N2     3 C2   CA2  H1  
+CONECT      CA2    4 N2   C3   HA2  HA3 
+CONECT      C3     3 CA2  O3   N3  
+CONECT      O3     1 C3  
+CONECT      N3     3 C3   HN1  HN2 
+CONECT      HN     1 N   
+CONECT      HOH    1 OH  
+CONECT      HA     1 CA  
+CONECT      HB1    1 CB  
+CONECT      HB2    1 CB  
+CONECT      HG     1 CG  
+CONECT      HD11   1 CD1 
+CONECT      HD12   1 CD1 
+CONECT      HD13   1 CD1 
+CONECT      HD21   1 CD2 
+CONECT      HD22   1 CD2 
+CONECT      HD23   1 CD2 
+CONECT      H      1 N1  
+CONECT      HA1    1 CA1 
+CONECT      HB11   1 CB1 
+CONECT      HB21   1 CB1 
+CONECT      HB3    1 CB1 
+CONECT      H1     1 N2  
+CONECT      HA2    1 CA2 
+CONECT      HA3    1 CA2 
+CONECT      HN1    1 N3  
+CONECT      HN2    1 N3  
+END   
+HET    01S             43
+HETNAM     01S N-[(2R)-2-(hydroxycarbamoyl)-4-methylpentanoyl]-L-alany
+HETNAM   2 01S lglycinamide
+FORMUL      01S    C12 H22 N4 O5

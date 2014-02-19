@@ -1,0 +1,74 @@
+RESIDUE   0LI     66
+CONECT      N1     2 C84  C1  
+CONECT      N3     3 C20  C21  C24 
+CONECT      C4     2 C5   C3  
+CONECT      C5     3 C4   C6   C10 
+CONECT      C6     3 C5   C7   C11 
+CONECT      C7     3 C6   C8   H7  
+CONECT      C8     3 C7   C9   H8  
+CONECT      C10    3 C5   C9   H10 
+CONECT      C13    3 N2   C14  C18 
+CONECT      C15    3 C14  C16  H15 
+CONECT      C17    3 C16  C18  C19 
+CONECT      C20    4 N3   C16  H20  H20A
+CONECT      C21    4 N3   C22  H21  H21A
+CONECT      C22    4 C21  N4   H22  H22A
+CONECT      C24    4 N3   C23  H24  H24A
+CONECT      C81    3 C82  C84  H81 
+CONECT      C82    3 C81  C83  H82 
+CONECT      C83    3 C82  N81  H83 
+CONECT      N81    2 C83  N82 
+CONECT      N82    3 N81  C84  C2  
+CONECT      C84    3 N1   C81  N82 
+CONECT      C1     3 N1   C2   H1  
+CONECT      C2     3 N82  C1   C3  
+CONECT      C3     2 C4   C2  
+CONECT      C9     3 C8   C10  C12 
+CONECT      C11    4 C6   H11  H11A H11B
+CONECT      C12    3 C9   O1   N2  
+CONECT      O1     1 C12 
+CONECT      N2     3 C13  C12  HN2 
+CONECT      C14    3 C13  C15  H14 
+CONECT      C16    3 C15  C17  C20 
+CONECT      C18    3 C13  C17  H18 
+CONECT      C19    4 C17  F1   F2   F3  
+CONECT      F1     1 C19 
+CONECT      F2     1 C19 
+CONECT      F3     1 C19 
+CONECT      C23    4 C24  N4   H23  H23A
+CONECT      C25    4 N4   H25  H25A H25B
+CONECT      N4     3 C22  C23  C25 
+CONECT      H7     1 C7  
+CONECT      H8     1 C8  
+CONECT      H10    1 C10 
+CONECT      H15    1 C15 
+CONECT      H20    1 C20 
+CONECT      H20A   1 C20 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      H22    1 C22 
+CONECT      H22A   1 C22 
+CONECT      H24    1 C24 
+CONECT      H24A   1 C24 
+CONECT      H81    1 C81 
+CONECT      H82    1 C82 
+CONECT      H83    1 C83 
+CONECT      H1     1 C1  
+CONECT      H11    1 C11 
+CONECT      H11A   1 C11 
+CONECT      H11B   1 C11 
+CONECT      HN2    1 N2  
+CONECT      H14    1 C14 
+CONECT      H18    1 C18 
+CONECT      H23    1 C23 
+CONECT      H23A   1 C23 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      H25B   1 C25 
+END   
+HET    0LI             66
+HETSYN     0LI Ponatinib
+HETNAM     0LI 3-(imidazo[1,2-b]pyridazin-3-ylethynyl)-4-methyl-N-{4-[
+HETNAM   2 0LI (4-methylpiperazin-1-yl)methyl]-3-(trifluoromethyl)phen
+HETNAM   3 0LI yl}benzamide
+FORMUL      0LI    C29 H27 F3 N6 O1

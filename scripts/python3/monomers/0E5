@@ -1,0 +1,28 @@
+RESIDUE   0E5     23
+CONECT      C1     4 C2   H1   H2   H3  
+CONECT      C2     4 C1   C3   H4   H5  
+CONECT      C3     4 C2   C4   C19  O3  
+CONECT      C4     4 C3   H6   H7   H8  
+CONECT      N1     3 C19  H30  H10 
+CONECT      C19    4 C3   N1   C20  H31 
+CONECT      C20    3 C19  O6   OXT 
+CONECT      O6     1 C20 
+CONECT      H1     1 C1  
+CONECT      H2     1 C1  
+CONECT      H3     1 C1  
+CONECT      H4     1 C2  
+CONECT      H5     1 C2  
+CONECT      H6     1 C4  
+CONECT      H7     1 C4  
+CONECT      H8     1 C4  
+CONECT      H30    1 N1  
+CONECT      H31    1 C19 
+CONECT      OXT    2 C20  HXT 
+CONECT      HXT    1 OXT 
+CONECT      H10    1 N1  
+CONECT      O3     2 C3   H9  
+CONECT      H9     1 O3  
+END   
+HET    0E5             23
+HETNAM     0E5 (2S,3R)-2-azanyl-3-methyl-3-oxidanyl-pentanoic acid
+FORMUL      0E5    C6 H13 N1 O3

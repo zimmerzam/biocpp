@@ -1,0 +1,52 @@
+RESIDUE   0JN     46
+CONECT      N1     2 C2   C6  
+CONECT      C2     3 N1   N3   H1  
+CONECT      N3     2 C2   C4  
+CONECT      C4     3 N3   C5   NAX 
+CONECT      C5     3 C4   C6   CAS 
+CONECT      C6     3 N1   C5   NAD 
+CONECT      CAA    4 CAY  H2   H3   H4  
+CONECT      CAB    4 CAY  H5   H6   H7  
+CONECT      CAE    3 CAF  CAI  H8  
+CONECT      CAF    3 CAE  CAK  H9  
+CONECT      CAG    3 CAH  CAJ  H10 
+CONECT      CAH    3 CAG  CAR  H11 
+CONECT      CAI    3 CAE  CAT  H12 
+CONECT      CAJ    3 CAG  CAT  H13 
+CONECT      CAR    3 CAH  CAM  CAU 
+CONECT      CAS    3 C5   NAP  CAM 
+CONECT      CAT    3 CAI  CAJ  CAU 
+CONECT      NAX    3 C4   CAY  NAP 
+CONECT      CAY    4 CAA  CAB  NAX  CAC 
+CONECT      CAC    4 CAY  H14  H15  H16 
+CONECT      NAP    2 CAS  NAX 
+CONECT      NAD    3 C6   H17  H18 
+CONECT      CAM    4 CAR  CAS  H19  H20 
+CONECT      CAU    3 CAR  CAT  CAK 
+CONECT      CAK    3 CAF  CAU  H21 
+CONECT      H1     1 C2  
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAA 
+CONECT      H5     1 CAB 
+CONECT      H6     1 CAB 
+CONECT      H7     1 CAB 
+CONECT      H8     1 CAE 
+CONECT      H9     1 CAF 
+CONECT      H10    1 CAG 
+CONECT      H11    1 CAH 
+CONECT      H12    1 CAI 
+CONECT      H13    1 CAJ 
+CONECT      H14    1 CAC 
+CONECT      H15    1 CAC 
+CONECT      H16    1 CAC 
+CONECT      H17    1 NAD 
+CONECT      H18    1 NAD 
+CONECT      H19    1 CAM 
+CONECT      H20    1 CAM 
+CONECT      H21    1 CAK 
+END   
+HET    0JN             46
+HETNAM     0JN 1-tert-butyl-3-(naphthalen-1-ylmethyl)-1H-pyrazolo[3,4-
+HETNAM   2 0JN d]pyrimidin-4-amine
+FORMUL      0JN    C20 H21 N5

@@ -1,0 +1,22 @@
+RESIDUE   03Y     17
+CONECT      CB     4 CA   SG   HB2  HB3 
+CONECT      C      3 CA   O    OXT 
+CONECT      CA     4 CB   C    CM   N   
+CONECT      CM     4 CA   H21  H21A H21B
+CONECT      N      3 CA   H    H2  
+CONECT      O      1 C   
+CONECT      SG     2 CB   HG  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      H21    1 CM  
+CONECT      H21A   1 CM  
+CONECT      H21B   1 CM  
+CONECT      H      1 N   
+CONECT      H2     1 N   
+CONECT      HG     1 SG  
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    03Y             17
+HETNAM     03Y 2-methyl-L-cysteine
+FORMUL      03Y    C4 H9 N1 O2 S1

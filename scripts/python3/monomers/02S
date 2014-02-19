@@ -1,0 +1,34 @@
+RESIDUE   02S     29
+CONECT      C8     3 C27  C34  C30 
+CONECT      C27    3 C8   O28  OXT 
+CONECT      O28    1 C27 
+CONECT      C34    3 C8   C33  H34 
+CONECT      C33    3 C34  C32  H33 
+CONECT      C30    3 C8   C31  H30 
+CONECT      C31    3 C30  C32  H31 
+CONECT      C32    3 C33  C31  O35 
+CONECT      O35    2 C32  C36 
+CONECT      C36    4 O35  C37  H36  H36A
+CONECT      C37    3 C36  C38  C42 
+CONECT      C38    3 C37  C39  H38 
+CONECT      C39    3 C38  C40  H39 
+CONECT      C40    3 C39  C41  H40 
+CONECT      C41    3 C40  C42  H41 
+CONECT      C42    3 C37  C41  H42 
+CONECT      H34    1 C34 
+CONECT      H33    1 C33 
+CONECT      H30    1 C30 
+CONECT      H31    1 C31 
+CONECT      H36    1 C36 
+CONECT      H36A   1 C36 
+CONECT      H38    1 C38 
+CONECT      H39    1 C39 
+CONECT      H40    1 C40 
+CONECT      H41    1 C41 
+CONECT      H42    1 C42 
+CONECT      OXT    2 C27  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    02S             29
+HETNAM     02S 4-(benzyloxy)benzoic acid
+FORMUL      02S    C14 H12 O3

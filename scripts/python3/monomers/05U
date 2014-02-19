@@ -1,0 +1,37 @@
+RESIDUE   05U     32
+CONECT      N3     3 C11  H33  H2  
+CONECT      C11    4 N3   C12  C16  H34 
+CONECT      C12    4 C11  C13  H35  H36 
+CONECT      C13    4 C12  C15  C14  H37 
+CONECT      C15    4 C13  H38  H39  H40 
+CONECT      C14    4 C13  H41  H42  H43 
+CONECT      C16    4 C11  O6   C17  H44 
+CONECT      O6     2 C16  H45 
+CONECT      C17    4 C16  C23  C18  H46 
+CONECT      C23    4 C17  H47  H48  H49 
+CONECT      C18    4 C17  H50  H51  H52 
+CONECT      H33    1 N3  
+CONECT      H34    1 C11 
+CONECT      H35    1 C12 
+CONECT      H36    1 C12 
+CONECT      H37    1 C13 
+CONECT      H38    1 C15 
+CONECT      H39    1 C15 
+CONECT      H40    1 C15 
+CONECT      H41    1 C14 
+CONECT      H42    1 C14 
+CONECT      H43    1 C14 
+CONECT      H44    1 C16 
+CONECT      H45    1 O6  
+CONECT      H46    1 C17 
+CONECT      H47    1 C23 
+CONECT      H48    1 C23 
+CONECT      H49    1 C23 
+CONECT      H50    1 C18 
+CONECT      H51    1 C18 
+CONECT      H52    1 C18 
+CONECT      H2     1 N3  
+END   
+HET    05U             32
+HETNAM     05U (3S,4S)-4-azanyl-2,6-dimethyl-heptan-3-ol
+FORMUL      05U    C9 H21 N1 O1

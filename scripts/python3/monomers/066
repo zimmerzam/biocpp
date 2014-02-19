@@ -1,0 +1,69 @@
+RESIDUE   066     63
+CONECT      O5     1 C26 
+CONECT      C26    3 O5   N4   C8  
+CONECT      N4     3 C26  HN4  HN4A
+CONECT      C8     3 C26  C9   C7  
+CONECT      C9     3 C8   N2   H9  
+CONECT      N2     2 C9   C10 
+CONECT      C10    3 N2   C16  C11 
+CONECT      C16    3 C10  C15  C7  
+CONECT      C15    3 C16  C14  H15 
+CONECT      C14    3 C15  S    C13 
+CONECT      S      4 C14  O3   C17  O2  
+CONECT      O3     1 S   
+CONECT      C17    3 S    C22  C18 
+CONECT      C22    3 C17  C21  H22 
+CONECT      C21    3 C22  C23  C20 
+CONECT      C23    3 C21  N3   O4  
+CONECT      N3     3 C23  C25  C24 
+CONECT      C25    4 N3   H25  H25A H25B
+CONECT      C24    4 N3   H24  H24A H24B
+CONECT      O4     1 C23 
+CONECT      C20    3 C21  C19  H20 
+CONECT      C19    3 C20  C18  H19 
+CONECT      C18    3 C17  C19  H18 
+CONECT      O2     1 S   
+CONECT      C13    3 C14  C11  H13 
+CONECT      C11    3 C10  C13  C12 
+CONECT      C12    4 C11  H12  H12A H12B
+CONECT      C7     3 C8   C16  N1  
+CONECT      N1     3 C7   C6   HN1 
+CONECT      C6     3 N1   C27  C5  
+CONECT      C27    3 C6   C2   H27 
+CONECT      C5     3 C6   C4   H5  
+CONECT      C4     3 C5   C3   H4  
+CONECT      C3     3 C4   C2   H3  
+CONECT      C2     3 C27  C3   O1  
+CONECT      O1     2 C2   C1  
+CONECT      C1     4 O1   H1   H1A  H1B 
+CONECT      HN4    1 N4  
+CONECT      HN4A   1 N4  
+CONECT      H9     1 C9  
+CONECT      H15    1 C15 
+CONECT      H22    1 C22 
+CONECT      H25    1 C25 
+CONECT      H25A   1 C25 
+CONECT      H25B   1 C25 
+CONECT      H24    1 C24 
+CONECT      H24A   1 C24 
+CONECT      H24B   1 C24 
+CONECT      H20    1 C20 
+CONECT      H19    1 C19 
+CONECT      H18    1 C18 
+CONECT      H13    1 C13 
+CONECT      H12    1 C12 
+CONECT      H12A   1 C12 
+CONECT      H12B   1 C12 
+CONECT      HN1    1 N1  
+CONECT      H27    1 C27 
+CONECT      H5     1 C5  
+CONECT      H4     1 C4  
+CONECT      H3     1 C3  
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H1B    1 C1  
+END   
+HET    066             63
+HETNAM     066 6-{[3-(dimethylcarbamoyl)phenyl]sulfonyl}-4-[(3-methoxy
+HETNAM   2 066 phenyl)amino]-8-methylquinoline-3-carboxamide
+FORMUL      066    C27 H26 N4 O5 S1

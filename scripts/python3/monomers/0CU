@@ -1,0 +1,19 @@
+RESIDUE   0CU     14
+CONECT      CAK    3 NAG  CAJ  CAI 
+CONECT      NAG    3 CAK  NAE  H1  
+CONECT      NAE    2 NAG  NAF 
+CONECT      NAF    2 NAE  CAJ 
+CONECT      CAJ    3 CAK  NAF  CAD 
+CONECT      CAD    3 CAJ  CAH  H2  
+CONECT      CAH    3 CAD  CLA  CAC 
+CONECT      CLA    1 CAH 
+CONECT      CAC    3 CAH  CAI  H3  
+CONECT      CAI    3 CAK  CAC  CLB 
+CONECT      CLB    1 CAI 
+CONECT      H1     1 NAG 
+CONECT      H2     1 CAD 
+CONECT      H3     1 CAC 
+END   
+HET    0CU             14
+HETNAM     0CU 5,7-dichloro-1H-benzotriazole
+FORMUL      0CU    C6 H3 Cl2 N3

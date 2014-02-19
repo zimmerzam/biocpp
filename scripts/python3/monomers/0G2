@@ -1,0 +1,58 @@
+RESIDUE   0G2     52
+CONECT      CBB    4 CAY  H1   H2   H3  
+CONECT      CAY    4 CBB  CAS  H4   H5  
+CONECT      CAS    4 CAY  CAZ  OBA  CAH 
+CONECT      CAZ    4 CAS  CBC  H6   H7  
+CONECT      CBC    4 CAZ  H8   H9   H10 
+CONECT      OBA    2 CAS  H11 
+CONECT      CAH    3 CAS  CAI  CAG 
+CONECT      CAI    3 CAH  CAD  H12 
+CONECT      CAG    3 CAH  CAF  H13 
+CONECT      CAF    3 CAG  CAE  H14 
+CONECT      CAE    3 CAF  CAB  CAD 
+CONECT      CAB    3 CAE  CAA  H15 
+CONECT      CAD    3 CAI  CAE  NAC 
+CONECT      NAC    3 CAD  CAA  H16 
+CONECT      CAA    3 CAB  NAC  CAJ 
+CONECT      CAJ    3 CAA  NAK  CAM 
+CONECT      NAK    3 CAJ  NAL  H17 
+CONECT      NAL    2 NAK  CAN 
+CONECT      CAN    3 NAL  CAO  CAM 
+CONECT      CAO    3 CAN  CAP  H18 
+CONECT      CAM    3 CAJ  CAN  SAQ 
+CONECT      SAQ    2 CAM  CAP 
+CONECT      CAP    3 CAO  SAQ  CAR 
+CONECT      CAR    3 CAP  CAT  CAX 
+CONECT      CAT    3 CAR  CAU  H19 
+CONECT      CAU    3 CAT  CAV  H20 
+CONECT      CAV    3 CAU  CAW  H21 
+CONECT      CAW    3 CAV  CAX  H22 
+CONECT      CAX    3 CAR  CAW  H23 
+CONECT      H1     1 CBB 
+CONECT      H2     1 CBB 
+CONECT      H3     1 CBB 
+CONECT      H4     1 CAY 
+CONECT      H5     1 CAY 
+CONECT      H6     1 CAZ 
+CONECT      H7     1 CAZ 
+CONECT      H8     1 CBC 
+CONECT      H9     1 CBC 
+CONECT      H10    1 CBC 
+CONECT      H11    1 OBA 
+CONECT      H12    1 CAI 
+CONECT      H13    1 CAG 
+CONECT      H14    1 CAF 
+CONECT      H15    1 CAB 
+CONECT      H16    1 NAC 
+CONECT      H17    1 NAK 
+CONECT      H18    1 CAO 
+CONECT      H19    1 CAT 
+CONECT      H20    1 CAU 
+CONECT      H21    1 CAV 
+CONECT      H22    1 CAW 
+CONECT      H23    1 CAX 
+END   
+HET    0G2             52
+HETNAM     0G2 3-[2-(5-phenyl-2H-thieno[3,2-c]pyrazol-3-yl)-1H-indol-6
+HETNAM   2 0G2 -yl]pentan-3-ol
+FORMUL      0G2    C24 H23 N3 O1 S1

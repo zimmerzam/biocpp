@@ -1,0 +1,27 @@
+RESIDUE   0AK     22
+CONECT      N      3 CA   HN1  HN2 
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HBC1 HBC2
+CONECT      CG     3 CB   OD1  OD2 
+CONECT      OD1    1 CG  
+CONECT      OD2    2 CG   C1  
+CONECT      C1     4 OD2  C2   H1C1 H1C2
+CONECT      C2     4 C1   CL   H2C1 H2C2
+CONECT      CL     1 C2  
+CONECT      OXT    2 C    HXT 
+CONECT      HN1    1 N   
+CONECT      HN2    1 N   
+CONECT      HA     1 CA  
+CONECT      HBC1   1 CB  
+CONECT      HBC2   1 CB  
+CONECT      HXT    1 OXT 
+CONECT      H1C1   1 C1  
+CONECT      H1C2   1 C1  
+CONECT      H2C1   1 C2  
+CONECT      H2C2   1 C2  
+END   
+HET    0AK             22
+HETNAM     0AK (2S)-2-amino-4-(2-chloroethoxy)-4-oxobutanoic acid
+FORMUL      0AK    C6 H10 Cl1 N1 O4

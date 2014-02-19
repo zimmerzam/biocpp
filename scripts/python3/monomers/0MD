@@ -1,0 +1,98 @@
+RESIDUE   0MD     91
+CONECT      CAA    4 CAQ  H1   H2   H3  
+CONECT      CAQ    4 CAA  CBQ  H4   H5  
+CONECT      CBQ    4 CAQ  CAX  CBT  H6  
+CONECT      CAX    4 CBQ  CAS  H7   H8  
+CONECT      CAS    4 CAX  CAU  H9   H10 
+CONECT      CAU    4 CAS  CBB  H11  H12 
+CONECT      CBB    4 CAU  CBT  H13  H14 
+CONECT      CBT    4 CBQ  CBB  OAI  CBJ 
+CONECT      OAI    2 CBT  H15 
+CONECT      CBJ    3 CBT  OAG  CBI 
+CONECT      OAG    1 CBJ 
+CONECT      CBI    3 CBJ  OAF  N   
+CONECT      OAF    1 CBI 
+CONECT      N      3 CBI  CBA  CA  
+CONECT      CBA    4 N    CAT  H16  H17 
+CONECT      CAT    4 CBA  CAR  H18  H19 
+CONECT      CAR    4 CAT  CB   H20  H21 
+CONECT      CB     4 CAR  CA   H22  H23 
+CONECT      CA     4 N    CB   C    H24 
+CONECT      C      3 CA   O    OBF 
+CONECT      O      1 C   
+CONECT      OBF    2 C    CBP 
+CONECT      CBP    4 OBF  CAZ  CBM  H25 
+CONECT      CAZ    4 CBP  CAV  H26  H27 
+CONECT      CAV    4 CAZ  CBK  H28  H29 
+CONECT      CBK    3 CAV  CAO  CAM 
+CONECT      CAO    3 CBK  CBO  H30 
+CONECT      CAM    3 CBK  CAN  H31 
+CONECT      CAN    3 CAM  CBN  H32 
+CONECT      CBN    3 CAN  OBC  CBO 
+CONECT      OBC    2 CBN  CAB 
+CONECT      CAB    4 OBC  H33  H34  H35 
+CONECT      CBO    3 CAO  CBN  OBD 
+CONECT      OBD    2 CBO  CAC 
+CONECT      CAC    4 OBD  H36  H37  H38 
+CONECT      CBM    3 CBP  CAP  CAL 
+CONECT      CAP    3 CBM  CBL  H39 
+CONECT      CAL    3 CBM  CAJ  H40 
+CONECT      CAJ    3 CAL  CAK  H41 
+CONECT      CAK    3 CAJ  CBL  H42 
+CONECT      CBL    3 CAP  CAK  OBE 
+CONECT      OBE    2 CBL  CAW 
+CONECT      CAW    4 OBE  CBG  H43  H44 
+CONECT      CBG    3 CAW  OAH  OAD 
+CONECT      OAH    1 CBG 
+CONECT      OAD    2 CBG  H45 
+CONECT      H1     1 CAA 
+CONECT      H2     1 CAA 
+CONECT      H3     1 CAA 
+CONECT      H4     1 CAQ 
+CONECT      H5     1 CAQ 
+CONECT      H6     1 CBQ 
+CONECT      H7     1 CAX 
+CONECT      H8     1 CAX 
+CONECT      H9     1 CAS 
+CONECT      H10    1 CAS 
+CONECT      H11    1 CAU 
+CONECT      H12    1 CAU 
+CONECT      H13    1 CBB 
+CONECT      H14    1 CBB 
+CONECT      H15    1 OAI 
+CONECT      H16    1 CBA 
+CONECT      H17    1 CBA 
+CONECT      H18    1 CAT 
+CONECT      H19    1 CAT 
+CONECT      H20    1 CAR 
+CONECT      H21    1 CAR 
+CONECT      H22    1 CB  
+CONECT      H23    1 CB  
+CONECT      H24    1 CA  
+CONECT      H25    1 CBP 
+CONECT      H26    1 CAZ 
+CONECT      H27    1 CAZ 
+CONECT      H28    1 CAV 
+CONECT      H29    1 CAV 
+CONECT      H30    1 CAO 
+CONECT      H31    1 CAM 
+CONECT      H32    1 CAN 
+CONECT      H33    1 CAB 
+CONECT      H34    1 CAB 
+CONECT      H35    1 CAB 
+CONECT      H36    1 CAC 
+CONECT      H37    1 CAC 
+CONECT      H38    1 CAC 
+CONECT      H39    1 CAP 
+CONECT      H40    1 CAL 
+CONECT      H41    1 CAJ 
+CONECT      H42    1 CAK 
+CONECT      H43    1 CAW 
+CONECT      H44    1 CAW 
+CONECT      H45    1 OAD 
+END   
+HET    0MD             91
+HETNAM     0MD {3-[(1R)-3-(3,4-dimethoxyphenyl)-1-({[(2S)-1-{[(1R,2S)-
+HETNAM   2 0MD 2-ethyl-1-hydroxycyclohexyl](oxo)acetyl}piperidin-2-yl]
+HETNAM   3 0MD carbonyl}oxy)propyl]phenoxy}acetic acid
+FORMUL      0MD    C35 H45 N1 O10

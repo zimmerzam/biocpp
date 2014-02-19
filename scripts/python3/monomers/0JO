@@ -1,0 +1,40 @@
+RESIDUE   0JO     34
+CONECT      O      1 C   
+CONECT      C      3 O    OXT  CA  
+CONECT      OXT    2 C    H1  
+CONECT      CA     3 C    CB   N   
+CONECT      CB     3 CA   H2   H3  
+CONECT      N      2 CA   C4A 
+CONECT      C4A    3 N    C4   H4  
+CONECT      C4     3 C4A  C3   C5  
+CONECT      C3     3 C4   O3   C2  
+CONECT      O3     2 C3   H5  
+CONECT      C2     3 C3   C2A  N1  
+CONECT      C2A    4 C2   H6   H7   H8  
+CONECT      N1     2 C2   C6  
+CONECT      C6     3 N1   C5   H9  
+CONECT      C5     3 C4   C6   C5A 
+CONECT      C5A    4 C5   OP4  H10  H11 
+CONECT      OP4    2 C5A  P   
+CONECT      P      4 OP4  OP3  OP1  OP2 
+CONECT      OP3    1 P   
+CONECT      OP1    2 P    H12 
+CONECT      OP2    2 P    H13 
+CONECT      H1     1 OXT 
+CONECT      H2     1 CB  
+CONECT      H3     1 CB  
+CONECT      H4     1 C4A 
+CONECT      H5     1 O3  
+CONECT      H6     1 C2A 
+CONECT      H7     1 C2A 
+CONECT      H8     1 C2A 
+CONECT      H9     1 C6  
+CONECT      H10    1 C5A 
+CONECT      H11    1 C5A 
+CONECT      H12    1 OP1 
+CONECT      H13    1 OP2 
+END   
+HET    0JO             34
+HETNAM     0JO 2-{[(E)-{3-hydroxy-2-methyl-5-[(phosphonooxy)methyl]pyr
+HETNAM   2 0JO idin-4-yl}methylidene]amino}prop-2-enoic acid
+FORMUL      0JO    C11 H13 N2 O7 P1

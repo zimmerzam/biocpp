@@ -1,0 +1,19 @@
+RESIDUE   02A     14
+CONECT      N25    3 C28  C26  H2  
+CONECT      C28    4 N25  C29  C27  H28 
+CONECT      C29    3 C28  O30  OXT 
+CONECT      O30    1 C29 
+CONECT      C27    4 C28  C26  H271 H272
+CONECT      C26    4 N25  C27  H261 H262
+CONECT      H28    1 C28 
+CONECT      H271   1 C27 
+CONECT      H272   1 C27 
+CONECT      H261   1 C26 
+CONECT      H262   1 C26 
+CONECT      H2     1 N25 
+CONECT      OXT    2 C29  HXT 
+CONECT      HXT    1 OXT 
+END   
+HET    02A             14
+HETNAM     02A (2S)-azetidine-2-carboxylic acid
+FORMUL      02A    C4 H7 N1 O2

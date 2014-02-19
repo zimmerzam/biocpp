@@ -1,0 +1,16 @@
+RESIDUE   0CL     11
+CONECT      CL1    1 C2  
+CONECT      C2     4 CL1  C3   H2   H2A 
+CONECT      C3     4 C2   C4   H3   H3A 
+CONECT      C4     4 C3   CL5  H4   H4A 
+CONECT      CL5    1 C4  
+CONECT      H2     1 C2  
+CONECT      H2A    1 C2  
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+CONECT      H4     1 C4  
+CONECT      H4A    1 C4  
+END   
+HET    0CL             11
+HETNAM     0CL 1,3-dichloropropane
+FORMUL      0CL    C3 H6 Cl2

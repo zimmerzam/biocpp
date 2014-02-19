@@ -1,0 +1,24 @@
+RESIDUE   025     19
+CONECT      C1     3 S11  C2   C10 
+CONECT      S11    4 C1   O24  O25  O1  
+CONECT      O24    1 S11 
+CONECT      O25    1 S11 
+CONECT      C2     3 C1   C3   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   H4  
+CONECT      C5     3 C4   C6   C10 
+CONECT      C6     4 C5   F61  F1   F6  
+CONECT      F61    1 C6  
+CONECT      F1     1 C6  
+CONECT      F6     1 C6  
+CONECT      C10    3 C1   C5   H10 
+CONECT      H2     1 C2  
+CONECT      H3     1 C3  
+CONECT      H4     1 C4  
+CONECT      H10    1 C10 
+CONECT      O1     2 S11  H1  
+CONECT      H1     1 O1  
+END   
+HET    025             19
+HETNAM     025 3-(trifluoromethyl)benzenesulfonic acid
+FORMUL      025    C7 H5 F3 O3 S1

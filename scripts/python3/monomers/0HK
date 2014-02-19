@@ -1,0 +1,56 @@
+RESIDUE   0HK     48
+CONECT      C28    3 O29  O11  C30 
+CONECT      O29    1 C28 
+CONECT      C31    3 C34  S37  C30 
+CONECT      C32    3 C41  S44  C30 
+CONECT      C34    3 C31  C35  H1  
+CONECT      C35    3 C34  C36  H2  
+CONECT      C36    3 C35  S37  H3  
+CONECT      C41    3 C32  C42  H4  
+CONECT      C42    3 C41  C43  H5  
+CONECT      C43    3 C42  S44  H6  
+CONECT      O10    2 C8   C9  
+CONECT      O11    2 C28  C5  
+CONECT      O33    2 C30  H7  
+CONECT      S37    2 C31  C36 
+CONECT      S44    2 C32  C43 
+CONECT      C1     4 N2   H8   H9   H10 
+CONECT      C3     4 C4   C9   N2   H11 
+CONECT      C4     4 C3   C5   H12  H13 
+CONECT      C5     4 O11  C4   C6   H14 
+CONECT      C6     4 C5   C7   H15  H16 
+CONECT      C7     4 C6   C8   N2   H17 
+CONECT      C8     4 O10  C7   C9   H18 
+CONECT      C9     4 O10  C3   C8   H19 
+CONECT      C12    4 N2   H20  H21  H22 
+CONECT      C30    4 C28  C31  C32  O33 
+CONECT      N2     4 C1   C3   C7   C12 
+CONECT      H1     1 C34 
+CONECT      H2     1 C35 
+CONECT      H3     1 C36 
+CONECT      H4     1 C41 
+CONECT      H5     1 C42 
+CONECT      H6     1 C43 
+CONECT      H7     1 O33 
+CONECT      H8     1 C1  
+CONECT      H9     1 C1  
+CONECT      H10    1 C1  
+CONECT      H11    1 C3  
+CONECT      H12    1 C4  
+CONECT      H13    1 C4  
+CONECT      H14    1 C5  
+CONECT      H15    1 C6  
+CONECT      H16    1 C6  
+CONECT      H17    1 C7  
+CONECT      H18    1 C8  
+CONECT      H19    1 C9  
+CONECT      H20    1 C12 
+CONECT      H21    1 C12 
+CONECT      H22    1 C12 
+END   
+HET    0HK             48
+HETSYN     0HK Tiotropium
+HETNAM     0HK (1R,2R,4S,5S,7S)-7-{[hydroxy(dithiophen-2-yl)acetyl]oxy
+HETNAM   2 0HK }-9,9-dimethyl-3-oxa-9-azoniatricyclo[3.3.1.0~2,4~]nona
+HETNAM   3 0HK ne
+FORMUL      0HK    C19 H22 N1 O4 S2 1+

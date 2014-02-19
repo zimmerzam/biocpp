@@ -1,0 +1,24 @@
+RESIDUE   0DQ     19
+CONECT      N25    3 C26  H25  H2  
+CONECT      C26    3 N25  C27  S30 
+CONECT      C27    3 C26  N28  C31 
+CONECT      N28    2 C27  N29 
+CONECT      N29    2 N28  S30 
+CONECT      S30    2 C26  N29 
+CONECT      C31    3 C27  C32  C36 
+CONECT      C32    3 C31  C33  H26 
+CONECT      C33    3 C32  C34  H27 
+CONECT      C34    3 C33  C35  H28 
+CONECT      C35    3 C34  C36  H29 
+CONECT      C36    3 C31  C35  H30 
+CONECT      H25    1 N25 
+CONECT      H26    1 C32 
+CONECT      H27    1 C33 
+CONECT      H28    1 C34 
+CONECT      H29    1 C35 
+CONECT      H30    1 C36 
+CONECT      H2     1 N25 
+END   
+HET    0DQ             19
+HETNAM     0DQ 4-phenyl-1,2,3-thiadiazol-5-amine
+FORMUL      0DQ    C8 H7 N3 S1

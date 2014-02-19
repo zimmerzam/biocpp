@@ -1,0 +1,45 @@
+RESIDUE   0C7     39
+CONECT      CL2    1 C02 
+CONECT      C02    3 CL2  C03  C07 
+CONECT      C03    3 C02  C04  H1  
+CONECT      C04    3 C03  C05  H2  
+CONECT      C05    3 C04  C06  H3  
+CONECT      C06    3 C05  C07  H4  
+CONECT      C07    3 C02  C06  N08 
+CONECT      N08    3 C07  C09  H5  
+CONECT      C09    3 N08  C10  N26 
+CONECT      C10    3 C09  C11  H6  
+CONECT      C11    3 C10  N12  H7  
+CONECT      N12    2 C11  C13 
+CONECT      C13    3 N12  N14  N26 
+CONECT      N14    3 C13  C15  H8  
+CONECT      C15    3 N14  C16  C25 
+CONECT      C16    3 C15  C17  H9  
+CONECT      C17    3 C16  C18  H10 
+CONECT      C18    3 C17  C19  C24 
+CONECT      C19    3 C18  N20  N23 
+CONECT      N20    3 C19  N21  H11 
+CONECT      N21    2 N20  N22 
+CONECT      N22    2 N21  N23 
+CONECT      N23    2 C19  N22 
+CONECT      C24    3 C18  C25  H12 
+CONECT      C25    3 C15  C24  H13 
+CONECT      N26    2 C09  C13 
+CONECT      H1     1 C03 
+CONECT      H2     1 C04 
+CONECT      H3     1 C05 
+CONECT      H4     1 C06 
+CONECT      H5     1 N08 
+CONECT      H6     1 C10 
+CONECT      H7     1 C11 
+CONECT      H8     1 N14 
+CONECT      H9     1 C16 
+CONECT      H10    1 C17 
+CONECT      H11    1 N20 
+CONECT      H12    1 C24 
+CONECT      H13    1 C25 
+END   
+HET    0C7             39
+HETNAM     0C7 N~4~-(2-chlorophenyl)-N~2~-[4-(1H-tetrazol-5-yl)phenyl]
+HETNAM   2 0C7 pyrimidine-2,4-diamine
+FORMUL      0C7    C17 H13 Cl1 N8

@@ -1,0 +1,69 @@
+RESIDUE   0G7     62
+CONECT      N      3 CA   HN   HNA 
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   CG   HB   HBA 
+CONECT      CG     3 CB   CD1  CD2 
+CONECT      CD1    3 CG   CE1  HD1 
+CONECT      CD2    3 CG   CE2  HD2 
+CONECT      CE1    3 CD1  CZ   HE1 
+CONECT      CE2    3 CD2  CZ   HE2 
+CONECT      CZ     3 CE1  CE2  HZ  
+CONECT      N1     3 C    CA1  CD  
+CONECT      CA1    4 N1   C1   CB1  HA1 
+CONECT      C1     3 CA1  O1   N2  
+CONECT      O1     1 C1  
+CONECT      CB1    4 CA1  CG1  HB1  HB1A
+CONECT      CG1    4 CB1  CD   HG1  H31 
+CONECT      CD     4 N1   CG1  HD   H29 
+CONECT      N2     3 C1   CA2  HN2 
+CONECT      CA2    4 N2   C2   CB2  HA2 
+CONECT      C2     3 CA2  O2   C3  
+CONECT      O2     1 C2  
+CONECT      CB2    4 CA2  CG2  HB2  HB2A
+CONECT      CG2    4 CB2  CD3  HG2  HG2A
+CONECT      CD3    4 CG2  NE   HD3  HD3A
+CONECT      NE     3 CD3  CZ1  HNE 
+CONECT      CZ1    3 NE   NH1  NH2 
+CONECT      NH1    3 CZ1  HNH1 HNHA
+CONECT      NH2    2 CZ1  HNH2
+CONECT      C3     4 C2   CL1  H3   H3A 
+CONECT      CL1    1 C3  
+CONECT      HN     1 N   
+CONECT      HNA    1 N   
+CONECT      HA     1 CA  
+CONECT      HB     1 CB  
+CONECT      HBA    1 CB  
+CONECT      HD1    1 CD1 
+CONECT      HD2    1 CD2 
+CONECT      HE1    1 CE1 
+CONECT      HE2    1 CE2 
+CONECT      HZ     1 CZ  
+CONECT      HA1    1 CA1 
+CONECT      HB1    1 CB1 
+CONECT      HB1A   1 CB1 
+CONECT      HG1    1 CG1 
+CONECT      H31    1 CG1 
+CONECT      HD     1 CD  
+CONECT      H29    1 CD  
+CONECT      HN2    1 N2  
+CONECT      HA2    1 CA2 
+CONECT      HB2    1 CB2 
+CONECT      HB2A   1 CB2 
+CONECT      HG2    1 CG2 
+CONECT      HG2A   1 CG2 
+CONECT      HD3    1 CD3 
+CONECT      HD3A   1 CD3 
+CONECT      HNE    1 NE  
+CONECT      HNH1   1 NH1 
+CONECT      HNHA   1 NH1 
+CONECT      HNH2   1 NH2 
+CONECT      H3     1 C3  
+CONECT      H3A    1 C3  
+END   
+HET    0G7             62
+HETSYN     0G7 d-Phe-Pro-Arg chloromethylketone (PPACK)
+HETNAM     0G7 D-phenylalanyl-N-[(3S)-6-carbamimidamido-1-chloro-2-oxo
+HETNAM   2 0G7 hexan-3-yl]-L-prolinamide
+FORMUL      0G7    C21 H31 Cl1 N6 O3

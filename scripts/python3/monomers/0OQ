@@ -1,0 +1,49 @@
+RESIDUE   0OQ     43
+CONECT      OAB    1 CAU 
+CONECT      CAU    3 OAB  CAL  NAY 
+CONECT      CAL    3 CAU  CAF  H1  
+CONECT      CAF    3 CAL  CAG  H2  
+CONECT      CAG    3 CAF  CAT  H3  
+CONECT      CAT    3 CAG  NAY  CAW 
+CONECT      NAY    3 CAU  CAT  CAP 
+CONECT      CAP    4 NAY  CAV  H4   H5  
+CONECT      CAV    4 CAP  CAN  CAM  H6  
+CONECT      CAN    4 CAV  NAX  H7   H8  
+CONECT      CAM    4 CAV  CAW  H9   H10 
+CONECT      CAW    4 CAT  CAM  CAO  H11 
+CONECT      CAO    4 CAW  NAX  H12  H13 
+CONECT      NAX    3 CAN  CAO  CAQ 
+CONECT      CAQ    3 NAX  OAA  CAR 
+CONECT      OAA    1 CAQ 
+CONECT      CAR    3 CAQ  CAH  CAI 
+CONECT      CAH    3 CAR  CAJ  H14 
+CONECT      CAJ    3 CAH  CAS  H15 
+CONECT      CAS    3 CAJ  CAZ  CAK 
+CONECT      CAZ    4 CAS  FAD  FAE  FAC 
+CONECT      FAD    1 CAZ 
+CONECT      FAE    1 CAZ 
+CONECT      FAC    1 CAZ 
+CONECT      CAK    3 CAS  CAI  H16 
+CONECT      CAI    3 CAR  CAK  H17 
+CONECT      H1     1 CAL 
+CONECT      H2     1 CAF 
+CONECT      H3     1 CAG 
+CONECT      H4     1 CAP 
+CONECT      H5     1 CAP 
+CONECT      H6     1 CAV 
+CONECT      H7     1 CAN 
+CONECT      H8     1 CAN 
+CONECT      H9     1 CAM 
+CONECT      H10    1 CAM 
+CONECT      H11    1 CAW 
+CONECT      H12    1 CAO 
+CONECT      H13    1 CAO 
+CONECT      H14    1 CAH 
+CONECT      H15    1 CAJ 
+CONECT      H16    1 CAK 
+CONECT      H17    1 CAI 
+END   
+HET    0OQ             43
+HETNAM     0OQ (1R,5S)-3-[4-(trifluoromethyl)benzoyl]-1,2,3,4,5,6-hexa
+HETNAM   2 0OQ hydro-8H-1,5-methanopyrido[1,2-a][1,5]diazocin-8-one
+FORMUL      0OQ    C19 H17 F3 N2 O2

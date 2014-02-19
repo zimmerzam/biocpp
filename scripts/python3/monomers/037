@@ -1,0 +1,30 @@
+RESIDUE   037     24
+CONECT      C      3 O    CA   OXT 
+CONECT      N      3 CA   CD   H   
+CONECT      O      1 C   
+CONECT      CA     4 C    N    CB   HA  
+CONECT      CB     4 CA   CG   CBE  HB2 
+CONECT      CG     4 CB   CD   CD2  HG2 
+CONECT      CBE    4 CB   CBF  HBE  HBEA
+CONECT      CBF    4 CBE  CD2  HBF  HBFA
+CONECT      CD     4 N    CG   HD2  HD3 
+CONECT      CD2    4 CG   CBF  H1   HD2A
+CONECT      HA     1 CA  
+CONECT      HB2    1 CB  
+CONECT      HG2    1 CG  
+CONECT      HBE    1 CBE 
+CONECT      HBEA   1 CBE 
+CONECT      HBF    1 CBF 
+CONECT      HBFA   1 CBF 
+CONECT      HD2    1 CD  
+CONECT      HD3    1 CD  
+CONECT      H1     1 CD2 
+CONECT      HD2A   1 CD2 
+CONECT      OXT    2 C    HXT 
+CONECT      HXT    1 OXT 
+CONECT      H      1 N   
+END   
+HET    037             24
+HETNAM     037 (1S,3aR,6aS)-octahydrocyclopenta[c]pyrrole-1-carboxylic
+HETNAM   2 037  acid
+FORMUL      037    C8 H13 N1 O2

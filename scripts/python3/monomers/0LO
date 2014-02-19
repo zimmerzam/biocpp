@@ -1,0 +1,29 @@
+RESIDUE   0LO     24
+CONECT      CAF    3 CAD  CAN  H1  
+CONECT      CAD    3 CAF  CAC  H2  
+CONECT      CAC    3 CAD  CAE  H3  
+CONECT      CAE    3 CAC  CAG  H4  
+CONECT      CAG    3 CAE  CAN  H5  
+CONECT      CAN    3 CAF  CAG  CAO 
+CONECT      CAO    3 CAN  CAJ  CAI 
+CONECT      CAJ    3 CAO  CAM  H6  
+CONECT      CAI    3 CAO  NAK  H7  
+CONECT      NAK    2 CAI  CAH 
+CONECT      CAH    3 NAK  CAM  H8  
+CONECT      CAM    3 CAJ  CAH  CAL 
+CONECT      CAL    3 CAM  OAB  OAA 
+CONECT      OAB    2 CAL  H9  
+CONECT      OAA    1 CAL 
+CONECT      H1     1 CAF 
+CONECT      H2     1 CAD 
+CONECT      H3     1 CAC 
+CONECT      H4     1 CAE 
+CONECT      H5     1 CAG 
+CONECT      H6     1 CAJ 
+CONECT      H7     1 CAI 
+CONECT      H8     1 CAH 
+CONECT      H9     1 OAB 
+END   
+HET    0LO             24
+HETNAM     0LO 5-phenylpyridine-3-carboxylic acid
+FORMUL      0LO    C12 H9 N1 O2

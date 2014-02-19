@@ -1,0 +1,49 @@
+RESIDUE   0D3     43
+CONECT      C1     3 O1   C2   N   
+CONECT      O1     1 C1  
+CONECT      C2     4 C1   C3   C'   H2  
+CONECT      C3     4 C2   C1'  H31  H32 
+CONECT      C1'    3 C3   C2'  C6' 
+CONECT      C2'    3 C1'  C3'  H2' 
+CONECT      C3'    3 C2'  C4'  H3' 
+CONECT      C4'    3 C3'  C5'  H4' 
+CONECT      C5'    3 C4'  C6'  H5' 
+CONECT      C6'    3 C1'  C5'  H6' 
+CONECT      C'     4 C2   S'   H'1  H'2 
+CONECT      S'     2 C'   HS' 
+CONECT      N      3 C1   CA   H   
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      CB     4 CA   HB1  HB2  HB3 
+CONECT      N1     3 C    CA1  H1  
+CONECT      CA1    4 N1   C4   HA2  HA3 
+CONECT      C4     3 CA1  O2   N2  
+CONECT      O2     1 C4  
+CONECT      N2     3 C4   HN1  HN2 
+CONECT      H2     1 C2  
+CONECT      H31    1 C3  
+CONECT      H32    1 C3  
+CONECT      H2'    1 C2' 
+CONECT      H3'    1 C3' 
+CONECT      H4'    1 C4' 
+CONECT      H5'    1 C5' 
+CONECT      H6'    1 C6' 
+CONECT      H'1    1 C'  
+CONECT      H'2    1 C'  
+CONECT      HS'    1 S'  
+CONECT      H      1 N   
+CONECT      HA     1 CA  
+CONECT      HB1    1 CB  
+CONECT      HB2    1 CB  
+CONECT      HB3    1 CB  
+CONECT      H1     1 N1  
+CONECT      HA2    1 CA1 
+CONECT      HA3    1 CA1 
+CONECT      HN1    1 N2  
+CONECT      HN2    1 N2  
+END   
+HET    0D3             43
+HETNAM     0D3 N-[(2S)-2-benzyl-3-sulfanylpropanoyl]-L-alanylglycinami
+HETNAM   2 0D3 de
+FORMUL      0D3    C15 H21 N3 O3 S1

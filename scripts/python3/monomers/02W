@@ -1,0 +1,31 @@
+RESIDUE   02W     26
+CONECT      C1     4 C2   N4   H1   H1A 
+CONECT      C2     4 C1   N1   H2   H2A 
+CONECT      N1     3 C2   HN1  H3  
+CONECT      C14    3 C15  C19  N3  
+CONECT      C15    3 C14  C16  H15 
+CONECT      C16    3 C15  C17  H16 
+CONECT      C17    3 C16  C18  H17 
+CONECT      C18    3 C17  C19  H18 
+CONECT      C19    3 C14  C18  N4  
+CONECT      N3     2 C14  C20 
+CONECT      N4     3 C1   C19  C20 
+CONECT      C20    3 N3   N4   C21 
+CONECT      C21    4 C20  H21  H21A H21B
+CONECT      H1     1 C1  
+CONECT      H1A    1 C1  
+CONECT      H2     1 C2  
+CONECT      H2A    1 C2  
+CONECT      HN1    1 N1  
+CONECT      H15    1 C15 
+CONECT      H16    1 C16 
+CONECT      H17    1 C17 
+CONECT      H18    1 C18 
+CONECT      H21    1 C21 
+CONECT      H21A   1 C21 
+CONECT      H21B   1 C21 
+CONECT      H3     1 N1  
+END   
+HET    02W             26
+HETNAM     02W 2-(2-methyl-1H-benzimidazol-1-yl)ethanamine
+FORMUL      02W    C10 H13 N3

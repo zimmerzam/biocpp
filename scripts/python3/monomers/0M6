@@ -1,0 +1,58 @@
+RESIDUE   0M6     51
+CONECT      CAK    3 CAI  CAV  H1  
+CONECT      CAI    3 CAK  CAH  H2  
+CONECT      CAH    3 CAI  CAJ  H3  
+CONECT      CAJ    3 CAH  CAL  H4  
+CONECT      CAL    3 CAJ  CAV  H5  
+CONECT      CAV    3 CAK  CAL  NAP 
+CONECT      NAP    3 CAV  CAU  H6  
+CONECT      CAU    3 NAP  SAG  N   
+CONECT      SAG    1 CAU 
+CONECT      N      3 CAU  CA   H7  
+CONECT      CA     4 N    CB   C    H8  
+CONECT      CB     4 CA   CG   H9   H10 
+CONECT      CG     4 CB   CD2  CD1  H11 
+CONECT      CD2    4 CG   H12  H13  H14 
+CONECT      CD1    4 CG   H15  H16  H17 
+CONECT      C      3 CA   O    NAQ 
+CONECT      O      1 C   
+CONECT      NAQ    3 C    CAZ  H18 
+CONECT      CAZ    4 NAQ  CAX  CAN  H19 
+CONECT      CAX    4 CAZ  OAF  H20  H21 
+CONECT      OAF    2 CAX  H22 
+CONECT      CAN    4 CAZ  CAM  H23  H24 
+CONECT      CAM    4 CAN  OAE  H25  H26 
+CONECT      OAE    2 CAM  H27 
+CONECT      H1     1 CAK 
+CONECT      H2     1 CAI 
+CONECT      H3     1 CAH 
+CONECT      H4     1 CAJ 
+CONECT      H5     1 CAL 
+CONECT      H6     1 NAP 
+CONECT      H7     1 N   
+CONECT      H8     1 CA  
+CONECT      H9     1 CB  
+CONECT      H10    1 CB  
+CONECT      H11    1 CG  
+CONECT      H12    1 CD2 
+CONECT      H13    1 CD2 
+CONECT      H14    1 CD2 
+CONECT      H15    1 CD1 
+CONECT      H16    1 CD1 
+CONECT      H17    1 CD1 
+CONECT      H18    1 NAQ 
+CONECT      H19    1 CAZ 
+CONECT      H20    1 CAX 
+CONECT      H21    1 CAX 
+CONECT      H22    1 OAF 
+CONECT      H23    1 CAN 
+CONECT      H24    1 CAN 
+CONECT      H25    1 CAM 
+CONECT      H26    1 CAM 
+CONECT      H27    1 OAE 
+END   
+HET    0M6             51
+HETSYN     0M6 SNJ-1715, bound form
+HETNAM     0M6 N-[(2S)-1,4-dihydroxybutan-2-yl]-N~2~-(phenylcarbamothi
+HETNAM   2 0M6 oyl)-L-leucinamide
+FORMUL      0M6    C17 H27 N3 O3 S1

@@ -1,0 +1,62 @@
+RESIDUE   0DY     55
+CONECT      N      3 OH   C1   HN  
+CONECT      OH     2 N    HOH 
+CONECT      C1     3 N    O1   CA  
+CONECT      O1     1 C1  
+CONECT      CA     4 C1   CB   C    HA  
+CONECT      CB     4 CA   CG   HB1  HB2 
+CONECT      CG     4 CB   CD1  CD2  HG  
+CONECT      CD1    4 CG   HD11 HD12 HD13
+CONECT      CD2    4 CG   HD21 HD22 HD23
+CONECT      C      3 CA   O    N1  
+CONECT      O      1 C   
+CONECT      N1     3 C    CA1  H   
+CONECT      CA1    4 N1   C2   CB1  HA1 
+CONECT      C2     3 CA1  O2   N2  
+CONECT      O2     1 C2  
+CONECT      CB1    4 CA1  CG1  HB21 HB3 
+CONECT      CG1    3 CB1  OD1  ND2 
+CONECT      OD1    1 CG1 
+CONECT      ND2    3 CG1  HD24 HD25
+CONECT      N2     3 C2   CB2  HN1 
+CONECT      CB2    4 N2   CG2  HB11 HB22
+CONECT      CG2    3 CB2  CD11 CD21
+CONECT      CD11   3 CG2  CE1  HD14
+CONECT      CE1    3 CD11 CZ   HC11
+CONECT      CD21   3 CG2  CE2  HC21
+CONECT      CE2    3 CD21 CZ   NE2 
+CONECT      CZ     3 CE1  CE2  HCZ1
+CONECT      NE2    3 CE2  HE21 HE22
+CONECT      HN     1 N   
+CONECT      HOH    1 OH  
+CONECT      HA     1 CA  
+CONECT      HB1    1 CB  
+CONECT      HB2    1 CB  
+CONECT      HG     1 CG  
+CONECT      HD11   1 CD1 
+CONECT      HD12   1 CD1 
+CONECT      HD13   1 CD1 
+CONECT      HD21   1 CD2 
+CONECT      HD22   1 CD2 
+CONECT      HD23   1 CD2 
+CONECT      H      1 N1  
+CONECT      HA1    1 CA1 
+CONECT      HB21   1 CB1 
+CONECT      HB3    1 CB1 
+CONECT      HD24   1 ND2 
+CONECT      HD25   1 ND2 
+CONECT      HN1    1 N2  
+CONECT      HB11   1 CB2 
+CONECT      HB22   1 CB2 
+CONECT      HD14   1 CD11
+CONECT      HC11   1 CE1 
+CONECT      HC21   1 CD21
+CONECT      HCZ1   1 CZ  
+CONECT      HE21   1 NE2 
+CONECT      HE22   1 NE2 
+END   
+HET    0DY             55
+HETSYN     0DY HONH-iBM-Asn-NHBn(m-NH2)
+HETNAM     0DY N~1~-(3-aminobenzyl)-N~2~-[(2R)-2-(hydroxycarbamoyl)-4-
+HETNAM   2 0DY methylpentanoyl]-L-aspartamide
+FORMUL      0DY    C18 H27 N5 O5

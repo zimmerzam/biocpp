@@ -1,0 +1,31 @@
+RESIDUE   0JW     25
+CONECT      N2     1 C12 
+CONECT      C12    2 N2   C10 
+CONECT      C10    3 C12  C11  C9  
+CONECT      C11    4 C10  O14  N12  H1  
+CONECT      O14    2 C11  H2  
+CONECT      N12    3 C11  H3   H4  
+CONECT      C9     3 C10  C5   H6  
+CONECT      C5     3 C9   C6   C4  
+CONECT      C6     3 C5   C1   H7  
+CONECT      C1     3 C6   O7   C2  
+CONECT      O7     2 C1   H8  
+CONECT      C4     3 C5   C3   H9  
+CONECT      C3     3 C4   C2   H10 
+CONECT      C2     3 C1   C3   O8  
+CONECT      O8     2 C2   H11 
+CONECT      H1     1 C11 
+CONECT      H2     1 O14 
+CONECT      H3     1 N12 
+CONECT      H4     1 N12 
+CONECT      H6     1 C9  
+CONECT      H7     1 C6  
+CONECT      H8     1 O7  
+CONECT      H9     1 C4  
+CONECT      H10    1 C3  
+CONECT      H11    1 O8  
+END   
+HET    0JW             25
+HETNAM     0JW (2E)-2-[(R)-amino(hydroxy)methyl]-3-(3,4-dihydroxypheny
+HETNAM   2 0JW l)prop-2-enenitrile
+FORMUL      0JW    C10 H10 N2 O3

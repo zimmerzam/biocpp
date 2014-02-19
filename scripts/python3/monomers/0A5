@@ -1,0 +1,19 @@
+RESIDUE   0A5     14
+CONECT      C1     4 C4   BR1  H    HA  
+CONECT      C2     3 O1   C3   OXT 
+CONECT      O1     1 C2  
+CONECT      C3     4 C2   C4   H2   H2A 
+CONECT      C4     4 C1   C3   H3   H3A 
+CONECT      OXT    2 C2   HXT 
+CONECT      BR1    1 C1  
+CONECT      H      1 C1  
+CONECT      HA     1 C1  
+CONECT      H2     1 C3  
+CONECT      H2A    1 C3  
+CONECT      H3     1 C4  
+CONECT      H3A    1 C4  
+CONECT      HXT    1 OXT 
+END   
+HET    0A5             14
+HETNAM     0A5 4-bromobutanoic acid
+FORMUL      0A5    C4 H7 Br1 O2

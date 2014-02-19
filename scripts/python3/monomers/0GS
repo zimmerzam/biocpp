@@ -1,0 +1,62 @@
+RESIDUE   0GS     55
+CONECT      BR1    1 C2  
+CONECT      C2     3 BR1  C3   C8  
+CONECT      C3     3 C2   C4   N53 
+CONECT      C4     3 C3   C5   F52 
+CONECT      C5     3 C4   C7   H1  
+CONECT      C7     3 C5   C8   C10 
+CONECT      C8     3 C2   C7   H2  
+CONECT      C10    4 C7   C13  H3   H4  
+CONECT      C13    4 C10  C15  C23  H5  
+CONECT      C15    4 C13  C17  O50  H6  
+CONECT      C17    4 C15  C19  N28  H7  
+CONECT      C19    4 C17  S22  H8   H9  
+CONECT      S22    4 C19  C23  O26  O27 
+CONECT      C23    4 C13  S22  H10  H11 
+CONECT      O26    1 S22 
+CONECT      O27    1 S22 
+CONECT      N28    3 C17  C30  H12 
+CONECT      C30    4 N28  C33  H14  H15 
+CONECT      C33    3 C30  C34  C41 
+CONECT      C34    3 C33  C36  H16 
+CONECT      C36    3 C34  C37  C43 
+CONECT      C37    3 C36  C39  H17 
+CONECT      C39    3 C37  C41  H18 
+CONECT      C41    3 C33  C39  H19 
+CONECT      C43    4 C36  F44  F45  C46 
+CONECT      F44    1 C43 
+CONECT      F45    1 C43 
+CONECT      C46    4 C43  H20  H21  H22 
+CONECT      O50    2 C15  H23 
+CONECT      F52    1 C4  
+CONECT      N53    3 C3   H24  H25 
+CONECT      H1     1 C5  
+CONECT      H2     1 C8  
+CONECT      H3     1 C10 
+CONECT      H4     1 C10 
+CONECT      H5     1 C13 
+CONECT      H6     1 C15 
+CONECT      H7     1 C17 
+CONECT      H8     1 C19 
+CONECT      H9     1 C19 
+CONECT      H10    1 C23 
+CONECT      H11    1 C23 
+CONECT      H12    1 N28 
+CONECT      H14    1 C30 
+CONECT      H15    1 C30 
+CONECT      H16    1 C34 
+CONECT      H17    1 C37 
+CONECT      H18    1 C39 
+CONECT      H19    1 C41 
+CONECT      H20    1 C46 
+CONECT      H21    1 C46 
+CONECT      H22    1 C46 
+CONECT      H23    1 O50 
+CONECT      H24    1 N53 
+CONECT      H25    1 N53 
+END   
+HET    0GS             55
+HETNAM     0GS (3S,4S,5R)-3-(4-amino-3-bromo-5-fluorobenzyl)-5-{[3-(1,
+HETNAM   2 0GS 1-difluoroethyl)benzyl]amino}tetrahydro-2H-thiopyran-4-
+HETNAM   3 0GS ol 1,1-dioxide
+FORMUL      0GS    C21 H24 Br1 F3 N2 O3 S1

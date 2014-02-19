@@ -1,0 +1,27 @@
+RESIDUE   07K     22
+CONECT      C10    3 C09  C11  H1  
+CONECT      C01    3 C02  C06  C11 
+CONECT      C02    3 C01  N03  C08 
+CONECT      N03    2 C02  C04 
+CONECT      C04    3 N03  C05  H2  
+CONECT      C05    3 C04  C06  H3  
+CONECT      C06    3 C01  C05  N07 
+CONECT      N07    3 C06  H4   H5  
+CONECT      C08    3 C02  C09  C12 
+CONECT      C09    3 C10  C08  H6  
+CONECT      C11    3 C10  C01  H7  
+CONECT      C12    4 C08  H8   H9   H10 
+CONECT      H1     1 C10 
+CONECT      H2     1 C04 
+CONECT      H3     1 C05 
+CONECT      H4     1 N07 
+CONECT      H5     1 N07 
+CONECT      H6     1 C09 
+CONECT      H7     1 C11 
+CONECT      H8     1 C12 
+CONECT      H9     1 C12 
+CONECT      H10    1 C12 
+END   
+HET    07K             22
+HETNAM     07K 8-methylquinolin-4-amine
+FORMUL      07K    C10 H10 N2

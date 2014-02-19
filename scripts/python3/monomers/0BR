@@ -1,0 +1,56 @@
+RESIDUE   0BR     50
+CONECT      CAX    4 OAB  H1   H2   H3  
+CONECT      OAB    2 CAX  CAV 
+CONECT      CAV    3 OAB  CAS  CAW 
+CONECT      CAS    3 CAV  CAP  H4  
+CONECT      CAP    3 CAS  CAR  CAN 
+CONECT      CAW    3 CAV  CAU  H5  
+CONECT      CAU    3 CAW  CAR  H6  
+CONECT      CAR    3 CAP  CAU  NAD 
+CONECT      NAD    2 CAR  CAT 
+CONECT      CAT    3 NAD  CAQ  H7  
+CONECT      CAQ    3 CAT  CAN  H8  
+CONECT      CAN    3 CAP  CAQ  CAL 
+CONECT      CAL    4 CAN  OAA  CAF  H9  
+CONECT      OAA    2 CAL  H10 
+CONECT      CAF    4 CAL  CAG  NAC  H11 
+CONECT      CAG    4 CAF  CAE  H12  H13 
+CONECT      CAE    4 CAG  CAI  CAH  H14 
+CONECT      CAI    4 CAE  CAK  H15  H16 
+CONECT      CAK    4 CAI  NAC  H17  H18 
+CONECT      NAC    3 CAF  CAK  CAJ 
+CONECT      CAJ    4 NAC  CAH  H20  H21 
+CONECT      CAH    4 CAE  CAJ  CAM  H22 
+CONECT      CAM    4 CAH  CAO  H23  H24 
+CONECT      CAO    4 CAM  H25  H26  H27 
+CONECT      H1     1 CAX 
+CONECT      H2     1 CAX 
+CONECT      H3     1 CAX 
+CONECT      H4     1 CAS 
+CONECT      H5     1 CAW 
+CONECT      H6     1 CAU 
+CONECT      H7     1 CAT 
+CONECT      H8     1 CAQ 
+CONECT      H9     1 CAL 
+CONECT      H10    1 OAA 
+CONECT      H11    1 CAF 
+CONECT      H12    1 CAG 
+CONECT      H13    1 CAG 
+CONECT      H14    1 CAE 
+CONECT      H15    1 CAI 
+CONECT      H16    1 CAI 
+CONECT      H17    1 CAK 
+CONECT      H18    1 CAK 
+CONECT      H20    1 CAJ 
+CONECT      H21    1 CAJ 
+CONECT      H22    1 CAH 
+CONECT      H23    1 CAM 
+CONECT      H24    1 CAM 
+CONECT      H25    1 CAO 
+CONECT      H26    1 CAO 
+CONECT      H27    1 CAO 
+END   
+HET    0BR             50
+HETNAM     0BR (4beta,8alpha,9R)-6'-methoxy-10,11-dihydrocinchonan-9-o
+HETNAM   2 0BR l
+FORMUL      0BR    C20 H26 N2 O2

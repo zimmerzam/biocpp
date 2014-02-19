@@ -1,0 +1,71 @@
+RESIDUE   0JH     61
+CONECT      N01    3 C02  H1   H2  
+CONECT      C02    3 N01  C03  N32 
+CONECT      C03    3 C02  C04  C22 
+CONECT      C04    3 C03  N05  N30 
+CONECT      N05    3 C04  C06  C10 
+CONECT      C06    4 N05  C07  H3   H4  
+CONECT      C07    4 C06  C08  H5   H6  
+CONECT      C08    4 C07  O09  H7   H8  
+CONECT      O09    2 C08  H9  
+CONECT      C10    3 N05  C11  C22 
+CONECT      C11    4 C10  C12  H10  H11 
+CONECT      C12    4 C11  C13  C20  H12 
+CONECT      C13    3 C12  O14  O19 
+CONECT      O14    2 C13  C15 
+CONECT      C15    4 O14  C16  C17  C18 
+CONECT      C16    4 C15  H13  H14  H15 
+CONECT      C17    4 C15  H16  H17  H18 
+CONECT      C18    4 C15  H19  H20  H21 
+CONECT      O19    1 C13 
+CONECT      C20    2 C12  N21 
+CONECT      N21    1 C20 
+CONECT      C22    3 C03  C10  C23 
+CONECT      C23    3 C22  C24  C29 
+CONECT      C24    3 C23  C25  H22 
+CONECT      C25    3 C24  C26  H23 
+CONECT      C26    3 C25  C27  C28 
+CONECT      C27    4 C26  H24  H25  H26 
+CONECT      C28    3 C26  C29  H27 
+CONECT      C29    3 C23  C28  H28 
+CONECT      N30    2 C04  C31 
+CONECT      C31    3 N30  N32  H29 
+CONECT      N32    2 C02  C31 
+CONECT      H1     1 N01 
+CONECT      H2     1 N01 
+CONECT      H3     1 C06 
+CONECT      H4     1 C06 
+CONECT      H5     1 C07 
+CONECT      H6     1 C07 
+CONECT      H7     1 C08 
+CONECT      H8     1 C08 
+CONECT      H9     1 O09 
+CONECT      H10    1 C11 
+CONECT      H11    1 C11 
+CONECT      H12    1 C12 
+CONECT      H13    1 C16 
+CONECT      H14    1 C16 
+CONECT      H15    1 C16 
+CONECT      H16    1 C17 
+CONECT      H17    1 C17 
+CONECT      H18    1 C17 
+CONECT      H19    1 C18 
+CONECT      H20    1 C18 
+CONECT      H21    1 C18 
+CONECT      H22    1 C24 
+CONECT      H23    1 C25 
+CONECT      H24    1 C27 
+CONECT      H25    1 C27 
+CONECT      H26    1 C27 
+CONECT      H27    1 C28 
+CONECT      H28    1 C29 
+CONECT      H29    1 C31 
+END   
+HET    0JH             61
+HETSYN     0JH (E)-tert-butyl 3-(4-amino-7-(3-hydroxypropyl)-5-p-tolyl
+HETSYN   2 0JH -7H-pyrrolo[2,3-d]pyrimidin-6-yl)-2-cyanoacrylate, boun
+HETSYN   3 0JH d form
+HETNAM     0JH tert-butyl (2S)-3-[4-amino-7-(3-hydroxypropyl)-5-(4-met
+HETNAM   2 0JH hylphenyl)-7H-pyrrolo[2,3-d]pyrimidin-6-yl]-2-cyanoprop
+HETNAM   3 0JH anoate
+FORMUL      0JH    C24 H29 N5 O3

@@ -1,0 +1,23 @@
+RESIDUE   0F1     18
+CONECT      CL1    1 C2  
+CONECT      C2     3 CL1  C1   C3  
+CONECT      C1     3 C2   C6   H1  
+CONECT      C6     3 C1   C5   H2  
+CONECT      C3     3 C2   C4   H3  
+CONECT      C4     3 C3   C5   S   
+CONECT      C5     3 C6   C4   C8  
+CONECT      C8     3 C5   CL2  C7  
+CONECT      CL2    1 C8  
+CONECT      S      2 C4   C7  
+CONECT      C7     3 C8   S    C9  
+CONECT      C9     3 C7   O1   O2  
+CONECT      O1     2 C9   H4  
+CONECT      O2     1 C9  
+CONECT      H1     1 C1  
+CONECT      H2     1 C6  
+CONECT      H3     1 C3  
+CONECT      H4     1 O1  
+END   
+HET    0F1             18
+HETNAM     0F1 3,6-dichloro-1-benzothiophene-2-carboxylic acid
+FORMUL      0F1    C9 H4 Cl2 O2 S1

@@ -1,0 +1,81 @@
+RESIDUE   0CA     74
+CONECT      C13    3 C14  C18  C35 
+CONECT      C30    3 C31  C32  C29 
+CONECT      C14    3 C13  C11  H1  
+CONECT      C16    3 C21  N15  C17 
+CONECT      C21    4 C16  C38  C39  H2  
+CONECT      C22    3 C23  C25  C20 
+CONECT      C23    3 C22  C24  H3  
+CONECT      C24    3 C23  C27  H4  
+CONECT      C25    3 C22  C26  H5  
+CONECT      C26    3 C25  C27  C31 
+CONECT      C27    3 C24  C26  C28 
+CONECT      C11    3 C14  C12  O10 
+CONECT      N9     2 C7   H6  
+CONECT      C2     4 C3   N1   H9   H10 
+CONECT      C3     4 C2   C4   H11  H12 
+CONECT      C4     4 C3   C5   O10  H13 
+CONECT      C5     4 C4   C6   H14  H15 
+CONECT      C6     4 C5   N1   H16  H17 
+CONECT      C7     3 N9   N1   C8  
+CONECT      C31    3 C30  C26  H19 
+CONECT      C32    3 C30  N33  N34 
+CONECT      N33    2 C32  H20 
+CONECT      N34    3 C32  H21  H22 
+CONECT      C29    3 C30  C28  H23 
+CONECT      C28    3 C27  C29  H24 
+CONECT      C20    4 C22  N15  H25  H26 
+CONECT      N15    3 C16  C20  C19 
+CONECT      C38    4 C21  H27  H28  H29 
+CONECT      C39    4 C21  H30  H31  H32 
+CONECT      C17    3 C16  C18  H33 
+CONECT      C18    3 C13  C17  C19 
+CONECT      C35    3 C13  O36  O37 
+CONECT      O36    2 C35  H34 
+CONECT      O37    1 C35 
+CONECT      C19    3 N15  C18  C12 
+CONECT      C12    3 C11  C19  H35 
+CONECT      O10    2 C11  C4  
+CONECT      N1     3 C2   C6   C7  
+CONECT      C8     4 C7   H37  H38  H39 
+CONECT      H1     1 C14 
+CONECT      H2     1 C21 
+CONECT      H3     1 C23 
+CONECT      H4     1 C24 
+CONECT      H5     1 C25 
+CONECT      H9     1 C2  
+CONECT      H10    1 C2  
+CONECT      H11    1 C3  
+CONECT      H12    1 C3  
+CONECT      H13    1 C4  
+CONECT      H14    1 C5  
+CONECT      H15    1 C5  
+CONECT      H16    1 C6  
+CONECT      H17    1 C6  
+CONECT      H19    1 C31 
+CONECT      H20    1 N33 
+CONECT      H21    1 N34 
+CONECT      H22    1 N34 
+CONECT      H23    1 C29 
+CONECT      H24    1 C28 
+CONECT      H25    1 C20 
+CONECT      H26    1 C20 
+CONECT      H27    1 C38 
+CONECT      H28    1 C38 
+CONECT      H29    1 C38 
+CONECT      H30    1 C39 
+CONECT      H31    1 C39 
+CONECT      H32    1 C39 
+CONECT      H33    1 C17 
+CONECT      H34    1 O36 
+CONECT      H35    1 C12 
+CONECT      H37    1 C8  
+CONECT      H38    1 C8  
+CONECT      H39    1 C8  
+CONECT      H6     1 N9  
+END   
+HET    0CA             74
+HETNAM     0CA 1-[(7-carbamimidoylnaphthalen-2-yl)methyl]-6-({1-[(1Z)-
+HETNAM   2 0CA ethanimidoyl]piperidin-4-yl}oxy)-2-(propan-2-yl)-1H-ind
+HETNAM   3 0CA ole-4-carboxylic acid
+FORMUL      0CA    C31 H35 N5 O3

@@ -1,0 +1,29 @@
+RESIDUE   0A8     24
+CONECT      N      3 CA   HN1  HN2 
+CONECT      CA     4 N    C    CB   HA  
+CONECT      C      3 CA   O    OXT 
+CONECT      O      1 C   
+CONECT      CB     4 CA   SG   HBC1 HBC2
+CONECT      SG     2 CB   C1  
+CONECT      C1     3 SG   O1   N1  
+CONECT      O1     1 C1  
+CONECT      N1     3 C1   C2   H1  
+CONECT      C2     4 N1   C3   H2C1 H2C2
+CONECT      C3     4 C2   CL1  H3C1 H3C2
+CONECT      CL1    1 C3  
+CONECT      OXT    2 C    HXT 
+CONECT      HN1    1 N   
+CONECT      HN2    1 N   
+CONECT      HA     1 CA  
+CONECT      HBC1   1 CB  
+CONECT      HBC2   1 CB  
+CONECT      HXT    1 OXT 
+CONECT      H1     1 N1  
+CONECT      H2C1   1 C2  
+CONECT      H2C2   1 C2  
+CONECT      H3C1   1 C3  
+CONECT      H3C2   1 C3  
+END   
+HET    0A8             24
+HETNAM     0A8 S-[(2-chloroethyl)carbamoyl]-L-cysteine
+FORMUL      0A8    C6 H11 Cl1 N2 O3 S1

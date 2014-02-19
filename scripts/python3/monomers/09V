@@ -1,0 +1,18 @@
+RESIDUE   09V     13
+CONECT      O1     2 C1   H1  
+CONECT      C1     4 O1   C2   H2   H3  
+CONECT      C2     4 C1   C3   C4   H4  
+CONECT      C3     4 C2   C4   H5   H6  
+CONECT      C4     4 C2   C3   H7   H8  
+CONECT      H1     1 O1  
+CONECT      H2     1 C1  
+CONECT      H3     1 C1  
+CONECT      H4     1 C2  
+CONECT      H5     1 C3  
+CONECT      H6     1 C3  
+CONECT      H7     1 C4  
+CONECT      H8     1 C4  
+END   
+HET    09V             13
+HETNAM     09V cyclopropylmethanol
+FORMUL      09V    C4 H8 O1
